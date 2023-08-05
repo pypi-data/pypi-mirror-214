@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: sci-annot-eval
+Version: 0.0.7
+Summary: The evaluation component of the sci-annot framework
+Home-page: https://github.com/Dzeri96/sci-annot-eval
+Author: Dzeri96
+Keywords: sci-annot,object,detection,evaluation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: coloredlogs (==15.0.1)
+Requires-Dist: lapsolver (==1.1.0)
+Requires-Dist: mypy (==1.3.0)
+Requires-Dist: numpy (==1.22.3)
+Requires-Dist: opencv-python (==4.5.5.64)
+Requires-Dist: pandas (==1.4.2)
+Requires-Dist: pdf2image (==1.16.0)
+Requires-Dist: pyarrow (==7.0.0)
+Requires-Dist: pytz (==2022.1)
+Requires-Dist: tomli (==2.0.1) ; python_version < "3.11"
+Requires-Dist: python-dateutil (==2.8.2) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: six (==1.16.0) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: humanfriendly (==10.0) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4"
+Requires-Dist: mypy-extensions (==1.0.0) ; python_version >= "3.5"
+Requires-Dist: pillow (==9.1.0) ; python_version >= "3.7"
+Requires-Dist: typing-extensions (==4.6.3) ; python_version >= "3.7"
+
+# Sci-Annot Evaluation Component
+This package was developed as part of my master's thesis and used in the evaluation stage.
+
+It produces per-page confusion matrices with multiple classes for predictions in the field of Object Detection, with inter-object dependencies also supported.
+
+# Installation
+This tool is packaged under the name [sci-annot-eval](https://pypi.org/project/sci-annot-eval/).
+
+You can install it like `pip install sci-annot-eval`, or `conda install sci-annot-eval`.
+
+# Development Setup
+If you wish to work on this project locally, you'll need:
+- python3.9+
+- pipenv
+
+To set up the dependencies, just run `pipenv install` in the project root.
+From that point on, you can do `pipenv shell`, which will launch your custom python environment with all of the dependencies installed.
+
+## TODO
+Fix logging

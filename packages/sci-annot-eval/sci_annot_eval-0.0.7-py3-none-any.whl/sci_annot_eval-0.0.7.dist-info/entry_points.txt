@@ -1,0 +1,2 @@
+[console_scripts]
+sci_annot_eval = cli_entrypoint:main
