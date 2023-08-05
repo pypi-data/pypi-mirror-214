@@ -1,0 +1,18 @@
+$def with (request, response, output)
+$# $var title: <code>gpt-3.5-turbo</code>
+
+<p><big><strong>$request</strong></big></p>
+
+<p>$response.usage.prompt_tokens + $response.usage.completion_tokens tokens used</p>
+
+<link rel=stylesheet href=$tx.origin/static/solarized.css>
+<style>
+div.highlight {
+  font-size: .65em; }
+.linenodiv .normal {
+  display: none; }
+.code div pre {
+  overflow-x: auto;
+  white-space: pre; }
+</style>
+$:output

@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "webint-ai"
+version = "0.0.4"
+description = "interface artificial intelligence"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "AGPL-3.0-or-later"
+packages = [{include = "webint_ai"}]
+
+[tool.poetry.plugins."webapps"]
+ai = "webint_ai:app"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+webint = ">=0.0"
+openai = "^0.27.2"
+markdown = "^3.4.1"
+
+[tool.poetry.group.dev.dependencies]
+gmpg = {path="../gmpg", develop=true}
+
+# [[tool.poetry.source]]
+# name = "main"
+# url = "https://ragt.ag/code/pypi"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
