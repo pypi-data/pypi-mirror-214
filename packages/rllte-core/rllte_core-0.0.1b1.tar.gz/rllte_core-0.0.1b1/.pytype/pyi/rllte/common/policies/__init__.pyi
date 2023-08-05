@@ -1,0 +1,14 @@
+# (generated with --quick)
+
+import rllte.common.policies.distributed_actor_critic
+import rllte.common.policies.off_policy_deterministic_actor_double_critic
+import rllte.common.policies.off_policy_stochastic_actor_double_critic
+import rllte.common.policies.on_policy_decoupled_actor_critic
+import rllte.common.policies.on_policy_shared_actor_critic
+from typing import Type
+
+DistributedActorCritic: Type[rllte.common.policies.distributed_actor_critic.DistributedActorCritic]
+OffPolicyDeterministicActorDoubleCritic: Type[rllte.common.policies.off_policy_deterministic_actor_double_critic.OffPolicyDeterministicActorDoubleCritic]
+OffPolicyStochasticActorDoubleCritic: Type[rllte.common.policies.off_policy_stochastic_actor_double_critic.OffPolicyStochasticActorDoubleCritic]
+OnPolicyDecoupledActorCritic: Type[rllte.common.policies.on_policy_decoupled_actor_critic.OnPolicyDecoupledActorCritic]
+OnPolicySharedActorCritic: Type[rllte.common.policies.on_policy_shared_actor_critic.OnPolicySharedActorCritic]
