@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: interactivenlp
+Version: 0.1.1
+Summary: Interactive NLP
+Author: Chunxu Yang
+Author-email: chunxuyang@ucla.edu
+License: MIT
+Platform: all
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# Interactive NLP
+
+A basic interactive-nlp helper functions.
