@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: peewee-jsonfield
+Version: 0.0.1
+Summary: JSONField for Peewee
+Author: Mark Smirnov
+Author-email: mark@mark99.ru
+License: MIT License
+Platform: any
+License-File: LICENSE
