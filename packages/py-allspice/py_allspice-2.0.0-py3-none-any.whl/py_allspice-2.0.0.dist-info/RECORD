@@ -1,0 +1,11 @@
+allspice/__init__.py,sha256=AxJuw3DZdk3pH1mhLCBL5aW5OrKm_Bg_heX6vrwIlnM,533
+allspice/allspice.py,sha256=yWsAGMxB2vcUqelIj3XA9E-YsZ8vp-vTuLMBUZnkz0Q,15124
+allspice/apiobject.py,sha256=A_qQXsE-MvaY3HAlQ4FB4VSyPPnQ5UIYULVetpJIOQw,36903
+allspice/baseapiobject.py,sha256=FrLSVYU6EwtW7ze1prnoGW1PYqIZcWASBmSkD_tNgCU,4233
+allspice/exceptions.py,sha256=-EHaRrNMIgX5T-vfMHrGbs0EsjeW3430RR8GRxofY3A,876
+allspice/ratelimiter.py,sha256=-P4hAErxE9qvRJWlq56qaNtXPHj_M-5_KISd6eDZWp8,1148
+py_allspice-2.0.0.dist-info/LICENSE,sha256=siPF7p0wgOZ20EiUX5CYfrUHKAURSS5A8xc-Url73P0,1109
+py_allspice-2.0.0.dist-info/METADATA,sha256=rvk1PwvQnoWnaHcq1RGQQtWjysOZ2dVSM5b-_ti2UUw,3749
+py_allspice-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py_allspice-2.0.0.dist-info/top_level.txt,sha256=r4-LUhFeGLPXoGnthzqqmIRjOn3iwgaOIrf0j_yko68,9
+py_allspice-2.0.0.dist-info/RECORD,,
