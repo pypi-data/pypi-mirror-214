@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/isovec/Element.py
+src/isovec/Isotope.py
+src/isovec/Mixture.py
+src/isovec/Molecule.py
+src/isovec/__init__.py
+src/isovec/conversion.py
+src/isovec/elements.py
+src/isovec/exceptions.py
+src/isovec/isotopes.py
+src/isovec/printer.py
+src/isovec.egg-info/PKG-INFO
+src/isovec.egg-info/SOURCES.txt
+src/isovec.egg-info/dependency_links.txt
+src/isovec.egg-info/top_level.txt
