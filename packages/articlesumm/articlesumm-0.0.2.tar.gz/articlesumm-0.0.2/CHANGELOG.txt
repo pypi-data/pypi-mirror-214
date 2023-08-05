@@ -1,0 +1,12 @@
+CHANGELOG
+=================
+
+0.0.1 (06/06/2023)
+------------------
+- First Release
+------------------
+0.0.2 (15/06/2023)
+-Second Release
+
+Added patch for Package description.
+
