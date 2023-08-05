@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+interactivenlp/__init__.py
+interactivenlp/server.py
+interactivenlp/types.py
+interactivenlp.egg-info/PKG-INFO
+interactivenlp.egg-info/SOURCES.txt
+interactivenlp.egg-info/dependency_links.txt
+interactivenlp.egg-info/requires.txt
+interactivenlp.egg-info/top_level.txt
