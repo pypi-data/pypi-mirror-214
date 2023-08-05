@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_adxl343/__init__.py", "github:jposada202020/MicroPython_ADXL343/micropython_adxl343/__init__.py"],
+    ["micropython_adxl343/i2c_helpers.py", "github:jposada202020/MicroPython_ADXL343/micropython_adxl343/i2c_helpers.py"],
+    ["micropython_adxl343/adxl343.py", "github:jposada202020/MicroPython_ADXL343/micropython_adxl343/adxl343.py"]
+  ],
+  "version": "0.1"
+}
