@@ -1,0 +1,10 @@
+from kaiju_tools.app import *
+from kaiju_tools.rpc import JSONRPCServer
+from kaiju_tools.http import RPCClientService
+from kaiju_tools.streams import StreamRPCClient
+
+service_class_registry.register_class(LoggingService)
+service_class_registry.register_class(Scheduler)
+service_class_registry.register_class(JSONRPCServer)
+service_class_registry.register_class(RPCClientService)
+service_class_registry.register_class(StreamRPCClient)
