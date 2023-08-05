@@ -1,0 +1,9 @@
+webint_ai/__init__.py,sha256=ok_DouIg4BV6EZV8tEzEaa27n3B-NcAh8rnwwWkU12c,3953
+webint_ai/templates/__init__.py,sha256=vvSVdg1nFod7SKYCSL1LCUvXavCDD2hYnqBAVjGuttY,156
+webint_ai/templates/chat.html,sha256=HyrSpBU3QVEeLQ0LVf96AgCIKG6BEtx52pCFsXVdOsE,84
+webint_ai/templates/chat_response.html,sha256=r-vr5skw2xC6Me-OoMM_gdZNDRcIGD2nJRBM7iEruvE,433
+webint_ai/templates/index.html,sha256=2QEapqTlIkIiJY7lBEw2swJBOAMLczoqCSs0I4yOm8M,367
+webint_ai-0.0.4.dist-info/METADATA,sha256=OxZxtIpnwBbDbaR3HINMt-4DJkaOijzrUnPhwKvP1MY,512
+webint_ai-0.0.4.dist-info/entry_points.txt,sha256=TsZW6qSVdZUuOcZhaskg9-o8QzPJrjNtUaG0Vt_EWZ4,28
+webint_ai-0.0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+webint_ai-0.0.4.dist-info/RECORD,,
