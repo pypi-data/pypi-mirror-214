@@ -1,0 +1,45 @@
+{
+  "name": "@bokeh/ipywidgets_bokeh",
+  "version": "1.5.0",
+  "description": "Allows embedding of Jupyter widgets in Bokeh applications.",
+  "keywords": [
+    "bokeh",
+    "jupyter",
+    "ipywidgets",
+    "extension"
+  ],
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bokeh/ipywidgets_bokeh.git"
+  },
+  "dependencies": {
+    "@bokeh/bokehjs": "~3.1.0",
+    "@jupyter-widgets/html-manager": "~1.0.5"
+  },
+  "devDependencies": {
+    "css-loader": "~6.7.3",
+    "file-loader": "~6.2.0",
+    "style-loader": "~3.3.1",
+    "typescript": "~5.0.2",
+    "url-loader": "~4.1.1",
+    "webpack": "~5.76.3",
+    "webpack-cli": "~5.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0"
+  },
+  "scripts": {
+    "dev": "tsc; webpack --mode=development",
+    "build": "tsc && webpack --mode=production",
+    "clean": "rimraf dist",
+    "prepack": "npm run clean && npm run build",
+    "test": "echo 'TODO'",
+    "lint": "eslint -c eslint.json src/**/*.ts"
+  },
+  "files": [
+    "dist/lib/**/*.{js,js.map,d.ts}",
+    "dist/*.{js,js.map,d.ts,eot,svg,ttf,woff,woff2}"
+  ],
+  "main": "dist/ipywidgets_bokeh.js"
+}
