@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: FreeAI
+Version: 1.0.2
+Summary: FreeAI is a powerful Python package that utilizes the advanced capabilities of GPT (Generative Pre-trained Transformer) models for text generation. It allows users to generate creative and context-aware text based on a given prompt. Whether you need to generate code snippets, creative writing pieces, or technical documentation, FreeAI has got you covered.
+Home-page: UNKNOWN
+Author: Ashiq Hussain
+Author-email: imseldrith@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
