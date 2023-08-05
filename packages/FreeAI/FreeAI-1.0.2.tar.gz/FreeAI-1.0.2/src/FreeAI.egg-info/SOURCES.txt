@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/FreeAI/__init__.py
+src/FreeAI/generator.py
+src/FreeAI.egg-info/PKG-INFO
+src/FreeAI.egg-info/SOURCES.txt
+src/FreeAI.egg-info/dependency_links.txt
+src/FreeAI.egg-info/requires.txt
+src/FreeAI.egg-info/top_level.txt
