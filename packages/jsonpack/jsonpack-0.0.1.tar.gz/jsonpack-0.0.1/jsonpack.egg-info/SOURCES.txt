@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jsonpack/__init__.py
+jsonpack/exceptions.py
+jsonpack/node.py
+jsonpack/util.py
+jsonpack.egg-info/PKG-INFO
+jsonpack.egg-info/SOURCES.txt
+jsonpack.egg-info/dependency_links.txt
+jsonpack.egg-info/top_level.txt

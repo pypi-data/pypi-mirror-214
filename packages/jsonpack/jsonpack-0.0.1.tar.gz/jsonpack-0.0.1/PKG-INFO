@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: jsonpack
+Version: 0.0.1
+Summary: Easily create JSON packs for your Python Application.
+Home-page: https://github.com/legopitstop/jsonpack
+Author: Legopitstop
+Author-email: officiallegopitstop@gmail.com
+License: MIT
+Keywords: json,pack,manifest,scripts,events,components,Pillow
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jsonpack
+This library allows you to create packs using JSON files to configure your Python Application.
+
+## Features
+- Supports JSON, YAML, ZIP and most image formats
+- Includes the loading of Python files from packs to easily expand your app's features
+- Easily reload all packs without having to restart your application.
+- JSON and YAML validation to make sure your file is properly configured.
+
+See the docs for more information.
+
+## Optional Dependencies
+|Name|Required|Description|
+|--|--|--|
+|[Pillow](https://pypi.org/project/Pillow/) | No | For image/* mimetypes |
+|[PyYAML](https://pypi.org/project/PyYAML/) | No | For application/yaml mimetype |
