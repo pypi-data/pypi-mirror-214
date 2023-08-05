@@ -1,0 +1,13 @@
+pz-rail-base
+click
+pyaml
+
+[dev]
+pz-rail-pipelines[full]
+jupyter
+seaborn
+coverage
+pytest
+pytest-cov
+pre-commit
+pylint
