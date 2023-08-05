@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-dynamic-loader
+Version: 0.0.3
+Summary: API for dynamically loading Python classes from Google Cloud Storage or Secret Manager.
+Author-email: David Harcombe <david.harcombe@gmail.com>
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-secret-manager (>=2.8.0)
+Requires-Dist: google-cloud-storage (>=2.9.0)
+
+# Dynamic Class Loader
+
