@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+QBsimpleAPI.egg-info/PKG-INFO
+QBsimpleAPI.egg-info/SOURCES.txt
+QBsimpleAPI.egg-info/dependency_links.txt
+QBsimpleAPI.egg-info/requires.txt
+QBsimpleAPI.egg-info/top_level.txt
+qBittorrentWebUIsimpleAPI/QBsimpleAPI.py
+qBittorrentWebUIsimpleAPI/__init__.py
