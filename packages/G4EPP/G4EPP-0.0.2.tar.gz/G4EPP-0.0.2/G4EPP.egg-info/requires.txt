@@ -1,0 +1,10 @@
+matplotlib
+pandas
+numpy
+scipy
+seaborn
+collections
+os
+wget
+seaborn
+pickle
