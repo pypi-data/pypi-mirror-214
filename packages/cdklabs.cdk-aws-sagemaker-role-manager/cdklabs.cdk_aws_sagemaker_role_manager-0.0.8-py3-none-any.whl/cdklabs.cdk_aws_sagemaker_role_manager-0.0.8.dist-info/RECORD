@@ -1,0 +1,10 @@
+cdklabs/cdk_aws_sagemaker_role_manager/__init__.py,sha256=vJtRwYWBYuDapX6LPyigtYCJ7nWCx9mKchB8gkSqzW4,157030
+cdklabs/cdk_aws_sagemaker_role_manager/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdklabs/cdk_aws_sagemaker_role_manager/_jsii/__init__.py,sha256=TxOSEzuEeVkqXgGuIATM2Rf_I4Ks6uGcCyMLLGBElIk,449
+cdklabs/cdk_aws_sagemaker_role_manager/_jsii/cdk-aws-sagemaker-role-manager@0.0.8.jsii.tgz,sha256=arRzx6yhUniwa73a5OhDvl1dbt74fpgt38NAumUJNlU,57129
+cdklabs.cdk_aws_sagemaker_role_manager-0.0.8.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdklabs.cdk_aws_sagemaker_role_manager-0.0.8.dist-info/METADATA,sha256=Oix6S0zzBGdEXWFlAN36L51BIgALbb2lwmAi1cKvphk,10840
+cdklabs.cdk_aws_sagemaker_role_manager-0.0.8.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+cdklabs.cdk_aws_sagemaker_role_manager-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cdklabs.cdk_aws_sagemaker_role_manager-0.0.8.dist-info/top_level.txt,sha256=Vs44V5-Co6j_Qx_ucqQGxTOZFFDDj84KkvQ3MpexszY,8
+cdklabs.cdk_aws_sagemaker_role_manager-0.0.8.dist-info/RECORD,,
