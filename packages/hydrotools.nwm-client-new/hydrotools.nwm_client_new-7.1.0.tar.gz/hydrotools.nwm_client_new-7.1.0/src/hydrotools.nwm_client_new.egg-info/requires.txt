@@ -1,0 +1,15 @@
+numpy>=1.20.0
+pandas
+xarray
+beautifulsoup4
+google-cloud-storage
+dask
+pyarrow
+aiohttp
+aiofiles
+netcdf4
+tables
+pint
+
+[develop]
+pytest
