@@ -1,0 +1,62 @@
+site_name: VIPickle
+repo_name: h4c5/vipickle
+repo_url: https://github.com/h4c5/vipickle
+edit_uri: edit/main/docs/
+
+# see
+theme:
+    name: material
+    logo: assets/images/logo.svg
+    favicon: assets/images/icon.svg
+    language: en
+    palette:
+        - scheme: default
+          toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+          primary: amber
+
+        - scheme: slate
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+          primary: amber
+    features:
+        - content.code.annotate
+
+nav:
+    - Home: index.md
+    - Code Reference: reference/
+
+extra:
+    alternate:
+        - name: English
+          link: /
+          lang: en
+        - name: Français
+          link: /fr/
+          lang: fr
+
+plugins:
+    - search
+    - gen-files:
+          scripts:
+              - docs/gen_ref_pages.py
+    - literate-nav:
+          nav_file: SUMMARY.md
+    - section-index
+    - mkdocstrings:
+          handlers:
+              python:
+                  options:
+                      docstring_style: google
+                      show_docstring_attributes: true
+
+markdown_extensions:
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences

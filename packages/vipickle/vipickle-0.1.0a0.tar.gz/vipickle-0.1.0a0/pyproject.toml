@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=65", "setuptools_scm[toml]>=7"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vipickle"
+description = "vipickle is a tiny python package for saving instances with unpickable attributes"
+authors = [
+    { name = "Hakim Cheikh", email = "hakimcheikh@yahoo.fr" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8,<4.0"
+dependencies = ["loguru", "orjson"]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://github.com/h4c5/vipickle"
+documentation = "https://github.com/h4c5/vipickle"
+repository = "https://github.com/h4c5/vipickle"
+"Bug Tracker" = "https://github.com/h4c5/vipickle"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+write_to = "src/vipickle/_version.py"
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "bandit[toml]",
+    "pytest>=7.0",
+    "pytest-cov>=3.0",
+    "pytest-datadir>=1.0",
+    "numpy"
+]
+test = [
+    "pytest>=7.0",
+    "pytest-cov>=3.0",
+    "pytest-datadir>=1.0",
+    "nox>=2022",
+    "numpy"
+]
+doc = [
+    "mkdocs-material>=8.0",
+    "mkdocstrings[python]",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-section-index",
+]
+
+[project.scripts]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=vipickle --cov-fail-under=80 --cov-config=.coveragerc"
+
+[tool.ruff]
+src = ["src"]
+select = [
+    "E",
+    "F",
+    "D",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+skips = ["B403", "B301"] # skip pickle related issues
