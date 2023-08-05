@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/filterframes/__init__.py
+src/filterframes/filterframes.py
+src/filterframes.egg-info/PKG-INFO
+src/filterframes.egg-info/SOURCES.txt
+src/filterframes.egg-info/dependency_links.txt
+src/filterframes.egg-info/requires.txt
+src/filterframes.egg-info/top_level.txt
+tests/test_filterframes.py
