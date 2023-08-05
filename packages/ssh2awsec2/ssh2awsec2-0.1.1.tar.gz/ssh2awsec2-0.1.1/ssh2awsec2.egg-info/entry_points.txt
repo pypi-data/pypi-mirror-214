@@ -1,0 +1,3 @@
+[console_scripts]
+ssh2awsec2 = ssh2awsec2.cli.main:run
+sshec2 = ssh2awsec2.cli.main:run
