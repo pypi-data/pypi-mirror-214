@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: zeroshot
+Version: 0.1.0
+Summary: Image classifier with zero-shot learning.
+Project-URL: Homepage, https://github.com/moonshinelabs/zeroshot-python
+Author-email: Zeroshot Maintainers <hello@usezeroshot.com>
+Keywords: classifier,cv,zeroshot
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: onnxruntime
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# Zeroshot Python
+Image classification for the masses
