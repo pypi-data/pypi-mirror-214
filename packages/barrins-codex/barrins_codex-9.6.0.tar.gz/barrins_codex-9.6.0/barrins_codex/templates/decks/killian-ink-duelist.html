@@ -1,0 +1,34 @@
+{% extends "decks/_layout_decks.html" %}
+
+### PRESENTATION ###
+{% block first_paragraph %}
+    Il s'agit d'un deck agressif basé sur des créatures et la capacité de
+    Killian pour tirer le meilleur des interactions.
+{% endblock %}
+{% block second_paragraph %}
+    La mécanique du deck est à mi-chemin entre les archétypes Weenie White,
+    Heroic et Hatebear. Ce mélange donne des parties rarement identiques. Cela
+    peut être un avantage en tournoi pour ne pas que l'adversaire puisse
+    adapter son style de jeu entre les parties d'une ronde.
+{% endblock %}
+{% block third_paragraph %}{% endblock %}
+
+
+### LISTES ###
+{% block liste %}
+{{ decklist("https://www.moxfield.com/decks/wzX1H7_6lEmqRMJnQHZCzw", "Decklist budget", outline=True)}}
+{% endblock %}
+
+
+### MATCHS ###
+{% block matchs %}
+{{ match.card2("/matchs/kari-zev-vs-killian-budget", "Ce match propose deux decks dont les versions ont été bridées à 100 EUR au jour du match. Lequel des deux triomphera ?") }}
+{% endblock %}
+
+
+### PILOTES ###
+{% block pilotes %}
+<div class="col-sm-4">
+    {{ pilote.domino(played_on="12 avril 2022") }}
+</div>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "pilotes/_layout_pilotes.html" %}
+
+{% set fichier="img/profile/Louis.png" %}
+{% set name="Louis « Imperia86 »" %}
+
+### PRESENTATION ###
+{% block first_paragraph %}
+    Joueur depuis la sortie de Dominaria en 2018, Louis a découvert la scène compétitive en 2019. Joueur de multiples formats, Il investit beaucoup de son temps libre dans Magic. Son projet le plus récent, {{ external("https://mtg-agenda.fr/", "MTG-AGENDA", _class="text-reset") }}
+     , permet de suivre les tournois prévus partout en France.
+{% endblock %}
+{% block second_paragraph %}
+    Bien qu'il préfère les decks midrange, il pilote différents archétypes dans un contexte compétitif pour continuer à s'améliorer. Il a été demi-finaliste du Magic Fest Online du 5 et 6 avril 2020 en standard avec Temur Reclamation.
+{% endblock %}
+{% block third_paragraph %}
+    Louis est sur {{ external("https://twitter.com/LouisGuich", "Twitter", _class="text-reset") }} et a rejoint plusieurs serveurs Discord mis en place par la communauté Magic.
+{% endblock %}
+
+### DECKS ###
+{% block decks %}
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    <div class="col-sm-4">
+        {{ deck.card("/decks/bjornawernog", "img/split-crop/bjorna-wernog.jpg") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/cecilywernog", "img/split-crop/cecily-wernog.jpg") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/doran-the-siege-tower") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/dragonlord-ojutai") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/grist-the-hunger-tide") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/gut-true-soul-zealot", "img/split-crop/gut-boros.jpg") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/juri-master-of-the-revue") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/kari-zev-skyship-raider") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/nivmizzet-reborn") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/the-beamtown-bullies") }}
+    </div>
+</div>
+{% endblock %}
+
+### MATCHS ###
+{% block matchs %}
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    <div class="col-sm-4">
+        {{ match.card("/matchs/aminatou-vs-beamtown") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/bjornawernog-vs-grist") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/cecilywernog-vs-kroxa") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/doran-vs-marchesa") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/esika-vs-niv-5c") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/grist-vs-minscboo") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/grist-vs-sythis") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/gut-boros-vs-yoshimaru-boros") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/juri-vs-sai") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/kari-zev-vs-killian-budget") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/kari-zev-vs-marath") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/livioprava-vs-ojutai") }}
+    </div>
+</div>
+{% endblock %}

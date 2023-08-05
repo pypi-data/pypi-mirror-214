@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block banner %}
+<div class="barrins-codex-banner"></div>
+{% endblock %}
+
+
+{% block article %}
+<article class="col-8 ms-auto me-auto my-4">
+    <p>
+        {% block ogdesc %}
+        Les ressources présentées ici sont issues d'une série de livestream
+        organisée par la chaine Les Chroniques du Commander. L'objectif est que
+        des joueuses et des joueurs habitué·e·s du format puissent présenter
+        des decks qui peuvent être rencontrés en tournoi et proposent une
+        analyse du deck et d'un matchup en particulier.
+        {% endblock %}
+    </p>
+</article>
+
+{{ separateur() }}
+<div class="col-12 bg-header py-4 mt-1 mb-2">
+    <div class="col-8 ms-auto me-auto">
+        <h2>Voir les 10 derniers replays</h2>
+    </div>
+</div>
+<article class="col-8 mx-auto row py-3 d-flex flex-wrap justify-content-around">
+    {% include "match_carousel.html" %}
+    <div style="clear:both;"></div>
+</article>
+{% endblock %}
