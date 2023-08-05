@@ -1,0 +1,10 @@
+LICENSE,sha256=EavhXoJ2QFMSUSMI5E32W5UmzuSlbRyxz0StVXXZmU0,1071
+pytest_unused_fixtures/__init__.py,sha256=Lfii3J2qX-1ZBtWIiKq-HGhNnSkiym0Y4EI-CV9Ky3A,115
+pytest_unused_fixtures/options.py,sha256=C7pb86aDljhzhpw1Ivht7QOUSWejlpakcpeyCt2L3jk,1196
+pytest_unused_fixtures/plugin.py,sha256=sF8d4-wxHIp6T0MIJk-Bs_RryqUH0p9EIjRfqiSdRuI,3848
+pytest_unused_fixtures/xdist.py,sha256=fF9IUi_XW8V0ZUsEtcTQy8BXXhMY_SNgO_u-sX4552A,1512
+pytest_unused_fixtures-0.1.0.dist-info/LICENSE,sha256=EavhXoJ2QFMSUSMI5E32W5UmzuSlbRyxz0StVXXZmU0,1071
+pytest_unused_fixtures-0.1.0.dist-info/METADATA,sha256=ofOGYDHF8tO9pKFjUjTL1GTlCgm_HC3REY9MgODn0Ek,2282
+pytest_unused_fixtures-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+pytest_unused_fixtures-0.1.0.dist-info/entry_points.txt,sha256=XSyhvlJ98zDsmmvSpha0N1nkplD2S14ZgcDM6tefy9Y,58
+pytest_unused_fixtures-0.1.0.dist-info/RECORD,,
