@@ -1,0 +1,10 @@
+chardetng_py-0.2.1.dist-info/METADATA,sha256=OZvHtnkEUpnXvMiSSvNF8uodxGECBOewys0spYkIvRg,3295
+chardetng_py-0.2.1.dist-info/WHEEL,sha256=E3AEajrLTQBgXnUe572sx0_gZPZKDzLzJLpOeYX44YA,127
+chardetng_py-0.2.1.dist-info/license_files/LICENSE,sha256=OWSAsyMPHg3eF8UWMzG8brfPrHXaSuoLWQg5099pSsQ,1067
+chardetng_py/__init__.py,sha256=w2iUlly70nqu021uGLCcKo3fDB_iskf-NG11zgx8_kU,277
+chardetng_py/api.py,sha256=p21qpD-T2LEi6DgGUDtObRtXMbZRZ89C7HoOBVM_gm0,2693
+chardetng_py/_rust.pyi,sha256=20bK7LKFOykzrzvazERBzFtgyl-HEUcPr8H_aTYgHNA,429
+chardetng_py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chardetng_py/compat.py,sha256=GkiMRyLGvZ7qPBQ1YXwZOTYawPnRAZbnNPEiek5Tepg,1379
+chardetng_py/_rust.cpython-38-s390x-linux-gnu.so,sha256=_XFoNp082UYPyGeWmKGZwkcG0-9Nux78m9qa2RWt8oM,879112
+chardetng_py-0.2.1.dist-info/RECORD,,
