@@ -1,0 +1,16 @@
+pysd>=3.9.0
+numpy>=1.23.4
+netcdf4 >=1.6.2
+drb_driver_eurostat>=1.1.0
+drb_driver_file>=1.1.0
+drb_driver_json>=1.1.0
+pyshp>=2.3.1
+pandas>=1.5.3
+sismic>=1.6.3
+plantuml>=0.3.0
+agentpy>=0.1.5
+networkx>=3.0
+PyYAML>=6.0
+azure-core>=1.26.0
+azure-digitaltwins-core>=1.2.0
+azure-identity>=1.12.0
