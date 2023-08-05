@@ -1,0 +1,12 @@
+bashbuddy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bashbuddy/__main__.py,sha256=2GegDaM2Rlo5hfpDvUcwqq08UJrgmUhIPEMHTfMLXRI,594
+bashbuddy/agent.py,sha256=9mQVK80N_-37zwctezGsd8aI0pvG9N0hY31rz4k6_YI,2119
+bashbuddy/config.py,sha256=L950OGSwowXzRcOQbQjh9zQ84ASRb8lps9c1OYUZMQ4,504
+bashbuddy/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bashbuddy/tools/file_tree.py,sha256=LXNW-0Ab2xhnmeokCOIwI7HRQnUfCdhosZdGqUfmBNk,3512
+bashbuddy/tools/persistent_bash.py,sha256=8UI2X4e2ZYQQNcDdNLEGsvsMVo6-H7HBaLkRkrU19_M,1945
+bashbuddy-0.3.0.dist-info/LICENSE.md,sha256=Xt7yqWeQlLn-SDsif8cN8vSTT3uHnt_RwqhhUbh6tNQ,1061
+bashbuddy-0.3.0.dist-info/METADATA,sha256=Ejl6gmpgnvF0LbuNg05OLSoCehGK3idFUSnpVL_wol8,4716
+bashbuddy-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+bashbuddy-0.3.0.dist-info/entry_points.txt,sha256=X-MtucjfbSE7spxVioJK4wN-LFD6bRgRSggaD4-EG8c,52
+bashbuddy-0.3.0.dist-info/RECORD,,
