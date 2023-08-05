@@ -1,0 +1,14 @@
+YOLOV5D/__init__.py,sha256=iDuuqzVPDQ98iVOM6iZWvr_MdpGUe7_OQa9JY4CrQbc,70
+YOLOV5D/detect.py,sha256=F9veWMpn9wwPeO-S5A8UTU_-q8dfnREiugrMCBMWczs,13925
+YOLOV5D/detectCopy.py,sha256=Q_d6cpE27O7cDJO6djKOatobroaevKhtlDXRb8nJkls,10738
+YOLOV5D/detectCopy1.py,sha256=VnOEnz2kN3vfidMEhitI00dAN-1KI28b2uigoRak-U8,10669
+YOLOV5D/detectCopy2.py,sha256=-ce_oEy3_xz80fCaBnsSZxum-aBSUcyPG2VtL3Fpyrk,17389
+YOLOV5D/export.py,sha256=vhrCM8TLqHRGIPuvtVVzo0uCKPv1Kv-2O_ZsBUppW9A,28058
+YOLOV5D/hubconf.py,sha256=zded6AzOPrN6T2Bu7yDMK9m7FKCcDxh88N72T0fxUvU,6445
+YOLOV5D/sh_video.py,sha256=rmoBBZJLR9AgsCjpaWLMNy-9xCTaSAEQRqbYqgLvdSc,4692
+YOLOV5D/test.py,sha256=QMLaEVZufKOTHPvj9ln5EKOLRtFZ56fRgEbZ3vgS7jM,26
+YOLOV5D/train.py,sha256=GGR7V-1Pv-AIuA1p9Vf7nQf8h0_iyr3XQM1rg5n6JpU,33797
+BKaiyolov5-1.0.dist-info/METADATA,sha256=CgxCdDM6MTOsFbjAAXwy4pBk2c-lZ2b6Nkl39CadRo4,149
+BKaiyolov5-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BKaiyolov5-1.0.dist-info/top_level.txt,sha256=g1ONe25gPvyEtpvUbdsCjzl0bsf85aFwFswklP4D7cc,8
+BKaiyolov5-1.0.dist-info/RECORD,,
