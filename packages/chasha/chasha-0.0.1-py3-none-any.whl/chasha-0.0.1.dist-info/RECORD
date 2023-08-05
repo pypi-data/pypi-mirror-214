@@ -1,0 +1,12 @@
+chasha/__init__.py,sha256=tEzYPel2zWzi6TrnLhorzZEkk_0lZAZDjVzZJBEHElg,644
+chasha/core.py,sha256=yd2ebJJcLgexcuK9wb4SUL3drbLSOIIcAM6OMh3siZw,22034
+chasha/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chasha/contrib/client_session.py,sha256=u97rvDyTiN_rPxQifB58SmCxyOeuuYIwh-U8G9zYgh0,2153
+chasha/contrib/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chasha/contrib/adapters/wsgi.py,sha256=7FvR7L6k5xZjIe6E6Gr4i0V10TLBEmHFLqMjnMTrw0g,2896
+chasha/contrib/adapters/yandex.py,sha256=y33vg9Q-wBuxl8ov_tyLVYnjGgneOm_9P49GRE6dRME,1656
+chasha-0.0.1.dist-info/LICENSE.txt,sha256=pRv4rThecKUvEXhBZFwdRyfUqDSOw5jSCi2cZF8vrH0,1073
+chasha-0.0.1.dist-info/METADATA,sha256=LV55DsSPnruo6RDiyZzNODYJDGg7Zi4xuGun2OHZBbY,5555
+chasha-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chasha-0.0.1.dist-info/top_level.txt,sha256=sWG977KVEjERemFT8utjvOqjaWCM9CY8nI3tzFuerJw,7
+chasha-0.0.1.dist-info/RECORD,,
