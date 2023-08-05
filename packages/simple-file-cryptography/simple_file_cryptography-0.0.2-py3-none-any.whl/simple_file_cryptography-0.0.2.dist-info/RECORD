@@ -1,0 +1,11 @@
+simple_file_cryptography/__about__.py,sha256=_JsqyiZrxjiMJ2u4JBiZL90qCWfa45nU0cuq4nNUyVE,147
+simple_file_cryptography/__init__.py,sha256=gD8DngkqdtUEIcQ8dv0RFGaMjLz2IbfVooEaBeaiJRs,124
+simple_file_cryptography/__main__.py,sha256=UHca8y-vz6rBsn5ww8DrxwLz0rnP62h2TElDrkMKuAI,2291
+simple_file_cryptography/crypto_utility.py,sha256=hBCZgOEtBMwASw--4ahEJDaLvBNLkx-58L0CbViqiO4,2840
+simple_file_cryptography/gui.py,sha256=5EZ9-khQo7ilu1oPkZ0DE1MybA5IgvO0z7Z0bJsd_cs,3609
+simple_file_cryptography/mode.py,sha256=vL_Jk6H_l5nkDnTeptn7u0XgHkw3ZF64qfy2AimXs3I,96
+simple_file_cryptography/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_file_cryptography-0.0.2.dist-info/METADATA,sha256=p5sBtbT6tPTza2dZmr3EEy0Y69F4mDpxoDKO2vltxPM,2618
+simple_file_cryptography-0.0.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+simple_file_cryptography-0.0.2.dist-info/licenses/LICENSE.txt,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+simple_file_cryptography-0.0.2.dist-info/RECORD,,
