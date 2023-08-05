@@ -1,0 +1,44 @@
+#__version__='0.4.0'
+#__imas_commit__='dd6854b4d07'
+#__imas_version__='3.38.1'
+from idspy_dictionaries.ids_camera_visible.idspy_camera_visible import (
+    CameraVisible,
+    CameraVisibleChannel,
+    CameraVisibleDetector,
+    CameraVisibleFrame,
+    CameraVisibleGeometryMatrix,
+    CameraVisibleGeometryMatrixInterpolated,
+    CameraVisibleGeometryMatrixStep2,
+    Code,
+    DetectorAperture,
+    GeometryMatrixEmission,
+    IdentifierStatic,
+    IdsProperties,
+    IdsProvenance,
+    IdsProvenanceNode,
+    Library,
+    Rzphi0DStatic,
+    X1X21DStatic,
+    Xyz0DStatic,
+)
+
+__all__ = [
+    "CameraVisible",
+    "CameraVisibleChannel",
+    "CameraVisibleDetector",
+    "CameraVisibleFrame",
+    "CameraVisibleGeometryMatrix",
+    "CameraVisibleGeometryMatrixInterpolated",
+    "CameraVisibleGeometryMatrixStep2",
+    "Code",
+    "DetectorAperture",
+    "GeometryMatrixEmission",
+    "IdentifierStatic",
+    "IdsProperties",
+    "IdsProvenance",
+    "IdsProvenanceNode",
+    "Library",
+    "Rzphi0DStatic",
+    "X1X21DStatic",
+    "Xyz0DStatic",
+]

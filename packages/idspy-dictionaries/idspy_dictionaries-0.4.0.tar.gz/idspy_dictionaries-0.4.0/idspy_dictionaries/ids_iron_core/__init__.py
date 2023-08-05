@@ -1,0 +1,40 @@
+#__version__='0.4.0'
+#__imas_commit__='dd6854b4d07'
+#__imas_version__='3.38.1'
+from idspy_dictionaries.ids_iron_core.idspy_iron_core import (
+    AnnulusStatic,
+    ArcsOfCircleStatic,
+    Code,
+    IdsProperties,
+    IdsProvenance,
+    IdsProvenanceNode,
+    IronCore,
+    IronCoreSegment,
+    Library,
+    ObliqueStatic,
+    Outline2DGeometryStatic,
+    RectangleStatic,
+    Rz0DStatic,
+    Rz1DStatic,
+    SignalFlt1D,
+    ThickLineStatic,
+)
+
+__all__ = [
+    "AnnulusStatic",
+    "ArcsOfCircleStatic",
+    "Code",
+    "IdsProperties",
+    "IdsProvenance",
+    "IdsProvenanceNode",
+    "IronCore",
+    "IronCoreSegment",
+    "Library",
+    "ObliqueStatic",
+    "Outline2DGeometryStatic",
+    "RectangleStatic",
+    "Rz0DStatic",
+    "Rz1DStatic",
+    "SignalFlt1D",
+    "ThickLineStatic",
+]
