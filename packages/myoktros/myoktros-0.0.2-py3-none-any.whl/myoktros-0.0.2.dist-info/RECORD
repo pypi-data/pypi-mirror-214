@@ -1,0 +1,10 @@
+myoktros/__init__.py,sha256=k2PAKXsUNkVBYasNlZophusw3vDL3mVd-VqxV0BAQvM,4374
+myoktros/gesture.py,sha256=skNNpKK_NRSXwe5fmjT8IxEOpQN_yI_fOIbzjMt6PWI,2054
+myoktros/kt_mode.py,sha256=EpsZQwV9itiWvG77sU0YD3n8XWEC3CWdzsVFvDFypRk,128
+myoktros/myo_manager.py,sha256=Pu5bCWd1sM2aSwU1rN_O-wPvgLPmkvn_XDa91spm-3Y,6158
+myoktros/ros.py,sha256=E3auIlWVF2KpIYeu8Q9f8AVfEA1_9UD5YQQO-nkXmVQ,4337
+myoktros-0.0.2.dist-info/LICENSE,sha256=IXm5wCZ6xvfiH0CSnqNv5Z0ivbLCariytJ-gkCH4iaU,1091
+myoktros-0.0.2.dist-info/METADATA,sha256=fei3yS1o_uqpdVaw7u-VnFCx9VM80nMdDhJo5mse140,4437
+myoktros-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+myoktros-0.0.2.dist-info/entry_points.txt,sha256=1o_ptx-le27Syhuvphm9jMpQ5TDERzzVyzhiNKGEyHw,48
+myoktros-0.0.2.dist-info/RECORD,,
