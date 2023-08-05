@@ -1,0 +1,13 @@
+termgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+termgpt/chat.py,sha256=a6MHDw8a7-fegO_kWrDvXelI4YKVk4O6baBCUzSDcjg,1541
+termgpt/roles.py,sha256=K67PGxIdyVM9pEREHJsdB3umWXR6IVIeohO1bxYn4o8,1176
+termgpt/version.py,sha256=Ocl79hbbH8_jdr5dGC90VR1cAvZc05Rc0tkZttUnMjo,22
+termgpt/models/__init__.py,sha256=j9E7mfqFGW_4ikfu3Kok7Q_pHYnqafcg37cd9jfPQYE,116
+termgpt/models/anthropic.py,sha256=o5wuL0NqSk9vta76dZVOgyWGxJ14VSX-L98Tld85i7M,1325
+termgpt/models/base.py,sha256=SIRIZqn9TbhYG-CMz6FT89-cEM0f97z7n8JEtGIOKPQ,3185
+termgpt/models/openai.py,sha256=rC0aIM0F7902FkKQQw2SwTCH-l_luGDQcfEec2pMXPc,1992
+termgpt-0.8.1.dist-info/METADATA,sha256=ojd8TrI61COcT4qGnj5A1PXyZuDVGqp9XOxw_bgP8j4,635
+termgpt-0.8.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+termgpt-0.8.1.dist-info/entry_points.txt,sha256=HtB8kZJ54CEYSnCnDCpHYHj6B4mEJAXGbh688KF7D8Y,97
+termgpt-0.8.1.dist-info/top_level.txt,sha256=ztbHbQLu7wzlB8VVQ3OM04IGz3Y4IJYkSCcwhRvjSHw,8
+termgpt-0.8.1.dist-info/RECORD,,

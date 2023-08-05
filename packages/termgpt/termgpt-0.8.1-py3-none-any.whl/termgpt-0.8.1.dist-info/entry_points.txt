@@ -1,0 +1,4 @@
+[console_scripts]
+claude = termgpt.chat:claude
+gpt3 = termgpt.chat:gpt3
+gpt4 = termgpt.chat:gpt4
