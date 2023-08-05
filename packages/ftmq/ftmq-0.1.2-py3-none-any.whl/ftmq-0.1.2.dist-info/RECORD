@@ -1,0 +1,13 @@
+ftmq/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+ftmq/cli.py,sha256=h9vAnar6FNfiURIxqUrEUMfLXITxZpliHBklf8ge0dI,1221
+ftmq/exceptions.py,sha256=ifvhlxVWqvNDv8EGYdTGuvYwVV-s0K_mbbwL7vBZiHk,43
+ftmq/filters.py,sha256=9EcrmkSYZd2Z_DqbyeLHRlCEAiRRwP3DGca--gXbMSE,5115
+ftmq/io.py,sha256=xclWoWSJ8cXWNnleyr7643RVW5sSDpqm_HLPZy6tRS8,1593
+ftmq/query.py,sha256=1oBpMwztw34quUAm1hp_t2YPBL6lc6pw5hd8WQwRVqA,1784
+ftmq/types.py,sha256=N1I8aaA2x8xlCSRZtTmT9lb2HQqqvC2FHVy2sCICX4s,383
+ftmq/util.py,sha256=n5HQTfVnn2jvbx4_UlHzLKu-IyvJyD7-ukjum6bRMao,523
+ftmq-0.1.2.dist-info/LICENSE,sha256=8L5tCP-nH-QOLedTkhFFVjSvrbu1fyOi6daMQOZd2eQ,1077
+ftmq-0.1.2.dist-info/METADATA,sha256=K_BQo3DT_fBz0OonpnkuXgQdDFpRFeGkUM7mr-GTRgI,5161
+ftmq-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ftmq-0.1.2.dist-info/entry_points.txt,sha256=YGDCjEiPgAMaQ5MqFKH8m-XIybehSXgarDucSlmeK3E,37
+ftmq-0.1.2.dist-info/RECORD,,
