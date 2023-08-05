@@ -1,0 +1,15 @@
+captcha_solver/__init__.py,sha256=ISF8aaXt6a7tz-fxE34NbVMmYn5BDGhX2e5mfB4OfPU,153
+captcha_solver/error.py,sha256=2sQyGfBpe7DIG71gvsQC0c5yq118_cOPtb1LKhoE_w4,599
+captcha_solver/network.py,sha256=M7SX4avtM_kWdYHggkHUjUm1IBsKslIJDW15H5Lkrhg,1142
+captcha_solver/solver.py,sha256=qBLoXBLe5ZTk34dS3-BpRl9-n0Jx-TZkpdKX2xbtf3g,5748
+captcha_solver/types.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+googlesearch/__init__.py,sha256=2Xgrpbziw_BWOBBEwpCtud8ZAJSdmA9hAQZmdOL2d3U,2554
+googlesearch/user_agents.py,sha256=UbOl4pR31Hu0sR3ipb5vRSpNmP2_IAjw1tAvJ1yrUbU,41874
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_browser.py,sha256=Bu38KmnQCC2GgCnaqr-ENd_Y0YPHttdNP_CuIZi4ecE,829
+tests/test_solver.py,sha256=8YG6Bh_V3AWHWGaJDci4UeBEwBDCNhYiUPWJbsZr620,5395
+Humanoid-0.0.0.dist-info/LICENSE.md,sha256=iWunOnatHr8ad1iPKwuZ1FhZme81LZdvx63qD9Wi6HY,1057
+Humanoid-0.0.0.dist-info/METADATA,sha256=qTnxABcseVgMv_Vf-I4Sz0_bbUr35n-aMnr_tVDil8o,5442
+Humanoid-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Humanoid-0.0.0.dist-info/top_level.txt,sha256=v6CwbEgAn_rs-TPoSiYx0NJQ4rXlrqywiWE4UowWgsc,34
+Humanoid-0.0.0.dist-info/RECORD,,
