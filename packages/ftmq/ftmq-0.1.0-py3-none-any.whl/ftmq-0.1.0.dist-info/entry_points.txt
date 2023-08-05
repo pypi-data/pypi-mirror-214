@@ -1,0 +1,3 @@
+[console_scripts]
+investigraph=ftmq.cli:cli
+
