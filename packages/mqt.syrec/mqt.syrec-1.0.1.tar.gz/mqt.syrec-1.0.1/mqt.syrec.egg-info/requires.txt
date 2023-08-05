@@ -1,0 +1,23 @@
+PyQt6<6.6.0,>=6.2.3
+
+[coverage]
+pytest-cov[toml]
+
+[dev]
+mqt.syrec[coverage,docs,test]
+
+[docs]
+sphinx>=5.1.1
+sphinx-rtd-theme
+sphinxcontrib-bibtex~=2.5
+sphinx-copybutton
+sphinx-hoverxref
+sphinxext.opengraph
+sphinx_rtd_dark_mode
+pybtex>=0.24
+
+[docs:python_version < "3.10"]
+importlib_metadata>=3.6
+
+[test]
+pytest>=7
