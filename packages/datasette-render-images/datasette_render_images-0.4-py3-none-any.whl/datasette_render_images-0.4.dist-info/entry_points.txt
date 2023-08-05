@@ -1,0 +1,2 @@
+[datasette]
+render_images = datasette_render_images
