@@ -1,0 +1,5 @@
+_test_*
+__pycache__
+/testing
+.vscode
+/dist
