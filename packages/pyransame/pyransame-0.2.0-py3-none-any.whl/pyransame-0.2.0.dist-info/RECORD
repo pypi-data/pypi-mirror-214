@@ -1,0 +1,11 @@
+pyransame/__init__.py,sha256=Q_1WdHXShPZh6wY2SE-F5ibmFj0-yD5d5k6C44HlH3E,195
+pyransame/_version.py,sha256=dQUHa1PGpJsNE2x_SQFxtOX-jousEqplwH1bdsk6mnE,160
+pyransame/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyransame/surface.py,sha256=tXWDLeeq-Y3vQXz2vVqMCiJVhl3uMxhbrj4wILvyTa0,3504
+pyransame/util.py,sha256=sfLU7QgpgafZwcF_ZaN1PNokzUgKfeJu4B82jQsiFjY,11199
+pyransame/volume.py,sha256=-d9VlJ_4FXDpMR2apQeu1Dw6RCZ2s-CXxDZMNRsaxh4,4042
+pyransame-0.2.0.dist-info/LICENSE,sha256=PCsEeourVAznTnmOEnL7EGPvKX6oFMqpGRKj42MGPYk,1070
+pyransame-0.2.0.dist-info/METADATA,sha256=YhtpD8M6mKvsHjc5R9l_W46zaKN0d1SR_euWMDMFZUU,1269
+pyransame-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyransame-0.2.0.dist-info/top_level.txt,sha256=xInBbtjfni1IuHqQkItxFBp7nzU9rSj53DzFcwsJhBY,10
+pyransame-0.2.0.dist-info/RECORD,,
