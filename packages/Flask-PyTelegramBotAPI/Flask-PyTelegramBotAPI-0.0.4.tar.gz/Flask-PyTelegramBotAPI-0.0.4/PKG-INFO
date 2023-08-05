@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Flask-PyTelegramBotAPI
+Version: 0.0.4
+Summary: Интеграция Flask c PyTelegramBotAPI
+Home-page: https://github.com/kuzmichus/flask-pytelegrambotapi
+Author: kuzmichus
+License-File: LICENSE
