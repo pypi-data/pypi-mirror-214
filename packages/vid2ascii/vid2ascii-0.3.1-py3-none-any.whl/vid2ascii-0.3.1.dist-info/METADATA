@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: vid2ascii
+Version: 0.3.1
+Summary: Video to ASCII converter
+Project-URL: Homepage, https://github.com/flocto/vid2ascii
+Project-URL: Bug Tracker, https://github.com/flocto/vid2ascii/issues
+Author-email: flocto <flocto@duck.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy>=1.23.4
+Requires-Dist: opencv-python>=4.6.0.66
+Description-Content-Type: text/markdown
+
+# vid2ascii
+Ever wanted to play videos in your terminal, except you get none of the actual quality and only ascii characters? Well, now you can!
+
+## Requirements
+- opencv-python
+- numpy
+- tqdm
+
+## Installation
+```bash
+pip install vid2ascii
+```
+
+3rd complete re-write since its inception, hopefully this final version sticks.
