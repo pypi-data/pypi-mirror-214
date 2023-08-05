@@ -1,0 +1,8 @@
+floodgate_rs-0.1.2.dist-info/METADATA,sha256=P7KAkEpMh1_uwuVnlAaxvhaPrWpDQI6Id1qTV2PYDFY,1002
+floodgate_rs-0.1.2.dist-info/RECORD,,
+floodgate_rs-0.1.2.dist-info/WHEEL,sha256=QVx-HWnRzKuH0aelkB99QvCgUnCQfatBqs1f6imeWC4,149
+floodgate_rs-0.1.2.dist-info/license_files/LICENSE,sha256=Z7A98gU-OhKlFruS0v83jJ2MZx0Rj8ojwdgXbzUm49s,1068
+floodgate/__init__.py,sha256=zA65BTVv-L7KEqH_COUdZpKI80BAfLq-J5yKW21jOgI,186
+floodgate/floodgate.pyi,sha256=dLpGpjqsYUwZWyd0c7H4VyVp3bMvnS6LYXvScnty7_w,11914
+floodgate/floodgate.cpython-310-x86_64-linux-gnu.so,sha256=mreqJoBM7C4iPSqaRz5KFz3ZOIF3ETnIsklNCqsScKE,4704128
+floodgate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
