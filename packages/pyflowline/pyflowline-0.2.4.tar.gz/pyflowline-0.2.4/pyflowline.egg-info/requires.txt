@@ -1,0 +1,9 @@
+numpy
+gdal
+netCDF4
+shapely
+
+[visualization]
+cython
+matplotlib
+cartopy>=0.21.0
