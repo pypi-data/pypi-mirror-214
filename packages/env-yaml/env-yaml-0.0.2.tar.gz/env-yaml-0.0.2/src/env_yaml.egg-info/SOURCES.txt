@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/env_yaml.egg-info/PKG-INFO
+src/env_yaml.egg-info/SOURCES.txt
+src/env_yaml.egg-info/dependency_links.txt
+src/env_yaml.egg-info/requires.txt
+src/env_yaml.egg-info/top_level.txt
