@@ -1,0 +1,9 @@
+README.md
+datasette_render_images.py
+setup.py
+datasette_render_images.egg-info/PKG-INFO
+datasette_render_images.egg-info/SOURCES.txt
+datasette_render_images.egg-info/dependency_links.txt
+datasette_render_images.egg-info/entry_points.txt
+datasette_render_images.egg-info/requires.txt
+datasette_render_images.egg-info/top_level.txt
