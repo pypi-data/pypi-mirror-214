@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: roo
+Version: 0.17.0
+Summary: A package manager to handle R environments
+Home-page: https://github.com/AstraZeneca/roo
+License: Apache-2.0
+Keywords: R,packaging,environment,validation
+Author: Stefano Borini
+Author-email: stefano.borini@astrazeneca.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: R
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: GitPython (>=3.1.13,<4.0.0)
+Requires-Dist: atomicwrites (>=1.4,<2.0)
+Requires-Dist: beautifulsoup4 (>=4.8.2,<5.0.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: packaging (>=20.1,<21.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: rich (>=11.0.0,<12.0.0)
+Requires-Dist: toml (>=0.10.0,<0.11.0)
+Project-URL: Repository, https://github.com/AstraZeneca/roo
+Description-Content-Type: text/markdown
+
+# Roo - manages environments and dependencies in R
+
+[![Maturity Level](https://img.shields.io/badge/Maturity%20Level-Under%20Development-orange)](https://img.shields.io/badge/Maturity%20Level-Under%20Development-orange)
+
+# Description
+
+Roo is a python program that handles R dependencies and R environments,
+ensuring environment reproducibility that satisfy dependency constraints.
+If you are familiar with python poetry or pip it aims at being the same.
+While apparently similar to packrat or renv, Roo is way more powerful.
+
+As a data scientist using e.g. RStudio you are unlikely to benefit from Roo,
+but if you need to create production R code, it's a much safer choice to
+define a consistent and reliable environment of dependencies. It also provides
+functionalities that helps in maintaining different environments at the same time.
+
+# Installation
+
+Roo is written in python and requires python 3.8 or above.
+It runs on any platform, and it can be installed from pypi with:
+
+    pip install roo
+
+Dependencies will be installed automatically.
+
+# Documentation
+
+- [Rationale](docs/rationale.md)
+- [Basic Usage](docs/usage.md)
+- [Advanced Usage](docs/advanced.md)
+- [Troubleshooting](docs/troubleshooting.md)
+
