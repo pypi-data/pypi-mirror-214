@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% macro liste(liste) %}
+    {% for item in liste %}
+        {{ match.card3(item) }}
+    {% endfor %}
+{% endmacro %}
+
+{% block banner %}
+<div class="barrins-codex-banner">
+    Liste des matchs
+</div>
+{% endblock %}
+
+{% set list = request.args.get('l') or "" %}
+
+{% block article %}
+<article class="col-8 ms-auto me-auto my-4">
+    {% block ogdesc %}
+    Liste des matché joués lors des soirées sur
+    {{ external("https://www.twitch.tv/leschroniquesducommander", "<i class='fa-brands fa-twitch'></i> Twitch", _class="text-reset")}}.
+    Une analyse des parties et des liens vers les decks joués sont disponibles
+    sur chaque page de deck.
+    {% endblock %}
+</article>
+{{ separateur() }}
+
+<div class="col-12 bg-header py-4 mt-1 mb-2">
+    <div class="col-8 ms-auto me-auto">
+        <h2>Liste des matches</h2>
+    </div>
+</div>
+<article class="col-8 ms-auto me-auto my-4">
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    {{ liste(all_matchs) }}
+</div>
+</article>
+{% endblock %}

@@ -1,0 +1,129 @@
+{% extends "pilotes/_layout_pilotes.html" %}
+
+{% set fichier="img/profile/Martin.png" %}
+{% set name="Martin « Spigushe »" %}
+
+### PRESENTATION ###
+{% block first_paragraph %}
+    Joueur depuis 2012, Martin s'est intéressé au contexte compétitif assez tardivement. Très investi dans le format Duel Commander, Martin est consultant pour le comité des règles du format.
+{% endblock %}
+{% block second_paragraph %}
+    Sa passion pour les phases d'attaque lui a valu de travailler de manière extensive sur des decks désormais bannis (Arahbo, Roar of the World et Winota, Joiner of Forces par exemple).
+{% endblock %}
+{% block third_paragraph %}
+    Martin est arbitre, rédacteur du {{ link('', "Barrin's Codex", _class="text-reset") }} et organisateur de tournois avec l'association locale qu'il préside.
+{% endblock %}
+
+### DECKS ###
+{% block decks %}
+<div class="row py-3 d-flex flex-wrap justify-content-around">
+    <div class="col-sm-4">
+        {{ deck.card("/decks/aminatou-the-fateshifter") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/dennick-pious-apprentice") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/elmarsophina", "img/split-crop/elmar-sophina.jpg") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/ghyrson-starn-kelermorph") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/grist-the-hunger-tide") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/kinnan-bonder-prodigy") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/leovold-emissary-of-trest") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/maelstrom-wanderer") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/marath-will-of-the-wild") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/minsc-beloved-ranger") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/raff-weatherlight-stalwart") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/raffine-scheming-seer") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/sai-master-thopterist") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/soul-of-windgrace") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/saskia-the-unyielding") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/sygg-river-cutthroat") }}
+    </div>
+    <div class="col-sm-4">
+        {{ deck.card("/decks/sythis-harvests-hand") }}
+    </div>
+</div>
+{% endblock %}
+
+### MATCHS ###
+{% block matchs %}
+<div class="row py-2 mb-2 d-flex justify-content-around">
+    <div class="col-sm-4">
+        {{ match.card("/matchs/adeliz-vs-kinnan") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/aminatou-vs-klothys") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/bjornawernog-vs-grist") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/dennick-vs-hinata") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/elmarsophina-vs-shorikai") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/erinis-selesnya-vs-raff") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/ghyrson-vs-nivmizzet") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/grist-vs-sythis") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/jori-en-vs-maelstrom-wanderer") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/jori-en-vs-sygg") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/juri-vs-sai") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/kari-zev-vs-saskia") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/kari-zev-vs-marath") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/leovold-vs-yoshimaru-naya") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/minsc-vs-shorikai") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/raffine-vs-soul-of-windgrace") }}
+    </div>
+    <div class="col-sm-4">
+        {{ match.card("/matchs/raffine-vs-tivit") }}
+    </div>
+</div>
+{% endblock %}
