@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mkdocs_gitlinks
+Version: 0.0.1
+Summary: Mkdocs Gitlinks
+Author-email: Ben Donnelly <b.w.donnelly1@gmail.com>
+License-Expression: Apache-2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >3.7
+Requires-Dist: mkdocs>=1.1.2
+Description-Content-Type: text/markdown
+
+# MKDocs Gitlinks
