@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rtex
+Version: 0.0.1
+Summary: *Unofficial* client for the Rtex API server
+Author-email: Estelle Poulin <dev@inspiredby.es>
+License: MIT
+Project-URL: homepage, https://github.com/estheruary/python-rtex
+Project-URL: repository, https://github.com/estheruary/python-rtex
+Project-URL: changelog, https://github.com/estheruary/python-rtex/-/blob/main/CHANGELOG.md
+Keywords: rtex,latex,math
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
