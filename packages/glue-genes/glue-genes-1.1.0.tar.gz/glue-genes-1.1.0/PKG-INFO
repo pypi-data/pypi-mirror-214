@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: glue-genes
+Version: 1.1.0
+Summary: Multidimensional data visualization for genomics
+Home-page: https://gluesolutions.github.io/glue-genes/
+Author: glue solutions inc.
+Author-email: jfoster@gluesolutions.io
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: BSD License
+Provides: glue_genes
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: qt5
+Provides-Extra: qt6
+Provides-Extra: openslide
+License-File: LICENSE
+
+![glue_genes_logo_stacked](https://user-images.githubusercontent.com/3639698/137145077-2c2c9011-68bd-4770-9d58-494bf7632a33.png)
+
+
+The glue-genes meta-package
+===========================
+
+[glue genes](https://github.com/gluesolutions/glue-genes) is a custom version of the [glue software](https://glueviz.org) for the 
+visual exploration of genomics data, developed in partnership with [The Jackson Laboratory](https://jax.org).
+
+### Features
+
+glue genes provides all the core features of glue:
+
+* Interactive, linked statistical graphics
+* A user interface for 'glueing' together multiple datasets with complicated relationships
+* A highly scriptable and extendable environment
+
+In addition, glue genes provides:
+
+* Data loaders for genomics data file formats such as .bed, .bigwig, .h5ad, and .loom
+* Viewers including: 2D Heatmap, Small Multiples, QTL Viewer
+* Menubar plug-ins to facilitate analysis of single-cell transcriptomics data
+
+### Install
+
+See [the glue genes documentation](https://glue-genes.readthedocs.io/en/latest/how-to/installation.html) for installation help.
+
+We recommend installing into a new virtual environment. 
+
+`pip install glue-genes[qt6]`
+
+### Usage
+
+After installation, glue (with the glue genes plug-ins loaded) can be invoked at the terminal:
+`glue`
+
+
+### Development
+
+glue genes is under active development. Please file all bug reports as github issues. 
