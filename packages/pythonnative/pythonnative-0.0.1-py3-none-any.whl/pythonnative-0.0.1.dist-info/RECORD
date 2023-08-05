@@ -1,0 +1,9 @@
+pythonnative/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythonnative/pythonnative.py,sha256=wyHGJUvKq5B8RUpWwGuvgXpDIpThROHLkbYXPKvz2tU,1996
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pythonnative.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythonnative-0.0.1.dist-info/LICENSE,sha256=G0g7050oCZZfhzCCOuYOMvkO0W_swctAWrxQRSqyroQ,1068
+pythonnative-0.0.1.dist-info/METADATA,sha256=7P3xP8SUlEoW8dR4QWhPVC3B9fazE8gLrdoml_ljPjc,1287
+pythonnative-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pythonnative-0.0.1.dist-info/top_level.txt,sha256=_I-vTzLFGXYxdYR_7L4O7peNijGQsSS7sN_HhsFZj3A,19
+pythonnative-0.0.1.dist-info/RECORD,,
