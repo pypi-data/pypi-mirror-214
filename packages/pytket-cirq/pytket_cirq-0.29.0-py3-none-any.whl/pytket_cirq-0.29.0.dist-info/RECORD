@@ -1,0 +1,12 @@
+pytket/extensions/cirq/__init__.py,sha256=zv21Rl0-KH4X9vGHrT3EEj7Y0InGiF9g5eSozvFrq9o,1123
+pytket/extensions/cirq/_metadata.py,sha256=etRg59C4rsbe9d3F4ulH9F89H2bEiw5OGW6T72NMYLc,70
+pytket/extensions/cirq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytket/extensions/cirq/backends/__init__.py,sha256=vRDXj55PJKRTXK6dA1Xiv-aki0Wq8q1b3Fi82VOw4hI,893
+pytket/extensions/cirq/backends/cirq.py,sha256=TSgje2rVV6SGLt1tgs4Dhjjcs7CECTVj1hD_taYcyiw,18390
+pytket/extensions/cirq/backends/cirq_convert.py,sha256=e6ClLBdS8ibpZ8SN8_aV6HIbuXllPlSJxn-SmZH4Bzs,12975
+pytket/extensions/cirq/backends/cirq_utils.py,sha256=NNg0UpFh88woHl7MGXwM_ytUST9a-UZ9YGQ4gzvtY5M,3141
+pytket_cirq-0.29.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pytket_cirq-0.29.0.dist-info/METADATA,sha256=Yv4UDDy6TTUXtEqnWqEDqCzxYzOus1jfj7kSuBs5Jp4,4140
+pytket_cirq-0.29.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytket_cirq-0.29.0.dist-info/top_level.txt,sha256=GsvCQQpJ7P8Vrx4ydtbjs36yufXiD59vSbbQFtFgcQ0,7
+pytket_cirq-0.29.0.dist-info/RECORD,,
