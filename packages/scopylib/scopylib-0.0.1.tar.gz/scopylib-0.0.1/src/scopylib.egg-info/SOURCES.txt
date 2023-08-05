@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/Raylib/__init__.py
+src/Raylib/routines.py
+src/scopylib.egg-info/PKG-INFO
+src/scopylib.egg-info/SOURCES.txt
+src/scopylib.egg-info/dependency_links.txt
+src/scopylib.egg-info/top_level.txt
