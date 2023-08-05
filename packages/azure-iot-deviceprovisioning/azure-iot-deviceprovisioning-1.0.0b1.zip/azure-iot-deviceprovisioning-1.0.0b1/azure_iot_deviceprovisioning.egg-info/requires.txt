@@ -1,0 +1,6 @@
+azure-core<2.0.0,>=1.24.0
+isodate<1.0.0,>=0.6.1
+typing-extensions>=4.3.0
+
+[aio]
+azure-core[aio]<2.0.0,>=1.24.0
