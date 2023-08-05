@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+J/Numpy.py
+J/Simpy.py
+J/__init__.py
+J/calculo.py
+J/ejemplox.py
+J/m/Numpy.py
+J/m/Simpy.py
+J/m/__init__.py
+J/m/calculo.py
+J/m/ejemplox.py
+fpec2.egg-info/PKG-INFO
+fpec2.egg-info/SOURCES.txt
+fpec2.egg-info/dependency_links.txt
+fpec2.egg-info/top_level.txt
