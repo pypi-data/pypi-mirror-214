@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tinyflask
+Version: 0.0.1
+Summary: tinyflask Python Web Framework built for learning purposes.
+Home-page: UNKNOWN
+Author: Rahul Dubey
+Author-email: rahuldubey.vjti@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+tinyflask Python Web Framework built for learning purposes.
+
