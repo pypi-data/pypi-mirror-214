@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: DexonlineParser
+Version: 0.0.2
+Summary: Dexonline Parser package
+Project-URL: Homepage, https://github.com/Bodhi2011/DexParser
+Project-URL: Bug Tracker, https://github.com/Bodhi2011/DexParser/issues
+Author-email: Eric Floyd <erixefb@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
