@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: QBsimpleAPI
+Version: 0.0.2
+Summary: 用于与qbittorrent webui通讯的简易api接口
+Home-page: https://github.com/small-bili/qBittorrentWebUI-simple-API
+Author: slexce
+Author-email: sim69732@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: requests
+
+# QBsimpleAPI
+简易的基于qiBittorrentWebUI的API
