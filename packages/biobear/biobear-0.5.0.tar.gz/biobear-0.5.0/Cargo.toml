@@ -1,0 +1,15 @@
+[package]
+edition = "2021"
+name = "biobear"
+version = "0.5.0"
+
+[lib]
+crate-type = ["cdylib"]
+name = "biobear"
+
+[dependencies]
+arrow = {version = "40", features = ["pyarrow"]}
+datafusion = "26"
+exon = {version = "0.1.1-alpha.7", features = ["all"]}
+pyo3 = "0.18.3"
+tokio = {version = "1", features = ["rt"]}
