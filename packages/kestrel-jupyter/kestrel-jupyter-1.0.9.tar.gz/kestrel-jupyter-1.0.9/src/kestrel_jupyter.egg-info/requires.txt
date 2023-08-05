@@ -1,0 +1,4 @@
+kestrel-lang>=1.6.0
+jupyterlab-server==2.15.2
+jupyterlab
+jupyter_client
