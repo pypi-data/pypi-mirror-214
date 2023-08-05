@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: robocorp-vault
+Version: 0.4.0
+Summary: Robocorp Control Room Vault API integration library
+Author: Fabio Z.
+Author-email: fabio@robocorp.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cryptography (>=41.0.1,<42.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: requests (>=2.31,<3.0)
+Description-Content-Type: text/markdown
+
+# Robocorp Control Room Vault API library
+
+`robocorp-vault` is a library which provides read and write access to the
+`Vault` at `Robocorp Control Room`.
+
+
+## Usage
+
+
+```python    
+from robocorp import vault
+
+def reading_secrets():
+    secrets_container = vault.get_secret('secret_name')
+    print(f"Username: {secrets_container['username']}")
+    print(f"My secrets: {secrets_container}")
+
+def modifying_secrets():
+    secret = vault.get_secret("swaglabs")
+    secret["username"] = "nobody"
+    vault.set_secret(secret)
+```
