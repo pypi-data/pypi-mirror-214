@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+openai_ratelimiter/__init__.py
+openai_ratelimiter/base.py
+openai_ratelimiter/defs.py
+openai_ratelimiter.egg-info/PKG-INFO
+openai_ratelimiter.egg-info/SOURCES.txt
+openai_ratelimiter.egg-info/dependency_links.txt
+openai_ratelimiter.egg-info/requires.txt
+openai_ratelimiter.egg-info/top_level.txt
