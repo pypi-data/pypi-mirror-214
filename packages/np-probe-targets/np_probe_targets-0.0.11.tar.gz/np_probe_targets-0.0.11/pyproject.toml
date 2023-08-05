@@ -1,0 +1,84 @@
+[project]
+name = "np_probe_targets"
+version = "0.0.11"
+description = "Tools for Neuropixels probe insertion: providing suggested targets, recording actual insertions, storing notes."
+authors = [
+    { name = "bjhardcastle", email = "ben.hardcastle@alleninstitute.org" },
+]
+dependencies = [
+    "ipywidgets>=7",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+dev = [
+    "bump>=1.3.2",
+]
+
+[project.urls]
+Repository = "https://github.com/AllenInstitute/np_probe_targets"
+Issues = "https://github.com/AllenInstitute/np_probe_targets/issues"
+
+[tool.pdm.build]
+includes = [
+    "src/np_probe_targets",
+]
+
+[tool.pdm.scripts]
+ruff = "ruff check src --fix-only"
+blue = "blue src"
+pytest = "pytest --cov"
+bump = "bump -p pyproject.toml"
+
+[tool.pdm.scripts.prebuild]
+composite = [
+    "blue",
+    "ruff",
+    "pytest",
+]
+
+[tool.pdm.scripts.build]
+composite = [
+    "prebuild",
+    "pdm build",
+]
+
+[tool.pdm.scripts.dry-run]
+composite = [
+    "prebuild",
+    "pdm build",
+    "pdm publish --no-build --repository https://test.pypi.org/simple",
+]
+
+[tool.pdm.scripts.publish]
+composite = [
+    "prebuild",
+    "pdm build",
+    "pdm publish --no-build",
+]
+
+[tool.pdm.scripts.pub]
+composite = [
+    "bump",
+    "pdm publish",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
