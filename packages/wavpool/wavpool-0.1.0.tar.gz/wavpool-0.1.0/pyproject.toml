@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "WavPool"
+version = "0.1.0"
+description = "A network block with built in spacial and scale decomposition."
+authors = ["M. Voetberg <maggiev@fnal.gov>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.13.1"
+numpy = "^1.24.2"
+PyWavelets = "^1.4.1"
+pandas = "^1.5.3"
+torchvision = "^0.14.1"
+jupyter = "^1.0.0"
+kymatio = "^0.3.0"
+bayesian-optimization = "^1.4.2"
+torcheval = "^0.0.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+pre-commit = "^3.0.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
