@@ -1,0 +1,9 @@
+grai_source_bigquery/__init__.py,sha256=25eQVqx7w28xVXpGW0ZnnN6z4XrHJzggrE6xHh20UeM,168
+grai_source_bigquery/adapters.py,sha256=BdjW23dZOzDrUQP9GBkJzyjEKT7SlVCymlILhf__s5s,8650
+grai_source_bigquery/base.py,sha256=EvOxROmlCjMiFTmr0TvySpIqa0Hwl_NgWyP8a2rQdvM,2078
+grai_source_bigquery/loader.py,sha256=iwF2jdveOUHdqgVvgK33pgdIFbvL00dr_CFvhDKQrkE,13790
+grai_source_bigquery/models.py,sha256=PDoIX6-DX2kmbZxjPOaDC2CXTALX65xgPoEkoacyscI,6222
+grai_source_bigquery/package_definitions.py,sha256=psSXjmyvwAOTcsjW2cVsm3wPstM8FTgYKAUdvqqoGYI,199
+grai_source_bigquery-0.1.1.dist-info/METADATA,sha256=Lobli-KsF9ujC4X0s3dulHyQAGIo92pA0rrrk7zjR5c,1169
+grai_source_bigquery-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+grai_source_bigquery-0.1.1.dist-info/RECORD,,
