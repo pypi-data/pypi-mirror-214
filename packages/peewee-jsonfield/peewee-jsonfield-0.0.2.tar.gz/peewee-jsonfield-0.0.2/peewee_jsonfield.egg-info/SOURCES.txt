@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jsonfield/jsonfield.py
+peewee_jsonfield.egg-info/PKG-INFO
+peewee_jsonfield.egg-info/SOURCES.txt
+peewee_jsonfield.egg-info/dependency_links.txt
+peewee_jsonfield.egg-info/requires.txt
+peewee_jsonfield.egg-info/top_level.txt
