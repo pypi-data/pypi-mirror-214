@@ -1,0 +1,15 @@
+setup.py
+BKaiyolov5.egg-info/PKG-INFO
+BKaiyolov5.egg-info/SOURCES.txt
+BKaiyolov5.egg-info/dependency_links.txt
+BKaiyolov5.egg-info/top_level.txt
+YOLOV5D/__init__.py
+YOLOV5D/detect.py
+YOLOV5D/detectCopy.py
+YOLOV5D/detectCopy1.py
+YOLOV5D/detectCopy2.py
+YOLOV5D/export.py
+YOLOV5D/hubconf.py
+YOLOV5D/sh_video.py
+YOLOV5D/test.py
+YOLOV5D/train.py
