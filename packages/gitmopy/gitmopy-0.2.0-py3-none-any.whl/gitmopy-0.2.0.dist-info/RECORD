@@ -1,0 +1,10 @@
+gitmopy/__init__.py,sha256=UQgIhonTlK0Y2o5NX67kRkJxzU2pwhTEaY2TmkHMcBg,73
+gitmopy/cli.py,sha256=bYdTbJfpvSvGIXpDSI-silJok2A-JDzjT6R5WJmvsFY,6968
+gitmopy/history.py,sha256=3Rbp7RuXjTAWoXsVEhgkEBkP-Jkoi6kXKoRdlyZGH3Y,3655
+gitmopy/prompt.py,sha256=5SxdT7Sn2BzHSvGXXjo-_Uy_WFqmJJuUjsj248k5DyE,7161
+gitmopy/utils.py,sha256=qWI0ISFFUKJmrWtsqL2DNhYTRZhJ-PrG0h5ikS-5yY8,18938
+gitmopy-0.2.0.dist-info/entry_points.txt,sha256=AVkN1EMOFTmktE_ps8PzJgotl-qjLWQNe3DQP9egKZM,43
+gitmopy-0.2.0.dist-info/LICENSE,sha256=oGCV3ZUzdWM6BHMOuwrEgd8lf93Dd8qrMr1VORb9ZUc,1071
+gitmopy-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+gitmopy-0.2.0.dist-info/METADATA,sha256=R96ktBzVOMzkW7YMMaGzEgr2EBoyaqBHLrlhp1nl7NI,4607
+gitmopy-0.2.0.dist-info/RECORD,,
