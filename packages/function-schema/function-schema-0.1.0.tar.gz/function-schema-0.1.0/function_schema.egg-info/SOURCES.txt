@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+function_schema/__init__.py
+function_schema/cli.py
+function_schema/core.py
+function_schema.egg-info/PKG-INFO
+function_schema.egg-info/SOURCES.txt
+function_schema.egg-info/dependency_links.txt
+function_schema.egg-info/entry_points.txt
+function_schema.egg-info/requires.txt
+function_schema.egg-info/top_level.txt

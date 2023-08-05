@@ -1,0 +1,2 @@
+[console_scripts]
+function_schema = function_schema.cli:main
