@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: django-persian-admin-panel
+Version: 1.0
+Summary: django-persian-admin-panel is a Django app for fast and easy use of Persian fonts in the Django admin panel.
+Home-page: https://github.com/Younes-karimi-313/django-persian-admin-panel
+Download-URL: https://github.com/Younes-karimi-313/django-persian-admin-panel/archive/1.0.tar.gz
+Author: Younes Karimi
+Author-email: youneskarimi313@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/Younes-karimi-313/django-persian-admin-panel#readme
+Project-URL: Issues, https://github.com/Younes-karimi-313/django-persian-admin-panel/issues
+Keywords: django,persian,admin,panel
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.7
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Build Tools
+Requires: django(>=1.7)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# django-persian-admin-panel
+django-persian-admin-panel is a Django app for fast and easy use of Persian fonts in the Django admin panel.
+## Installation
+- Run `pip install django-persian-admin-panel`
+- Add `persian-admin` to `settings.INSTALLED_APPS` **before** `django.contrib.admin`
+```python
+INSTALLED_APPS = (
+    #...
+    "persian-admin",
+    #...
+    "django.contrib.admin",
+    #...
+)
+
+```
+- Run `python manage.py migrate`
+- Restart your application server
+- Visit http://127.0.0.1:8000/admin/
