@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+pkce
+soupsieve
+pyyaml
+websockets
