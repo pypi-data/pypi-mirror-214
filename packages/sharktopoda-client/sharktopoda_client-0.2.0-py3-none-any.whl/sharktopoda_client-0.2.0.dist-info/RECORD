@@ -1,0 +1,9 @@
+sharktopoda_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sharktopoda_client/client.py,sha256=_isgH5lpeaK8coSBiZ774ek6t0b-1mJa4N0Wpg6xmGA,15426
+sharktopoda_client/dto.py,sha256=yPt9X4hG7nI1E92STnhL0NIAq1P4ftjDQ6zkUZ8KQxQ,3870
+sharktopoda_client/log.py,sha256=UIrNri1IqDYf16S2eZrtdASTOMBXMfQ1-4rtj7DQXlQ,1208
+sharktopoda_client/udp.py,sha256=HqNILzrgkryT0T82b9u71l0IZpU9-R3SR0jDddlq_b8,4329
+sharktopoda_client-0.2.0.dist-info/LICENSE,sha256=GV6UQtKAniSjMBOxlp0tA9plebHbYQQMSLcVySoYBjo,1070
+sharktopoda_client-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+sharktopoda_client-0.2.0.dist-info/METADATA,sha256=T3BkZ4Bf7eFjkiaPBDdUvItvSQDuvWzXvudmoWl8tgk,513
+sharktopoda_client-0.2.0.dist-info/RECORD,,
