@@ -1,0 +1,6 @@
+more_itertools>=6.0.0
+plover>=4.0.0.dev12
+
+[:platform_system != "Windows"]
+pyusb>=1.0.0
+pyusb_libusb1_backend
