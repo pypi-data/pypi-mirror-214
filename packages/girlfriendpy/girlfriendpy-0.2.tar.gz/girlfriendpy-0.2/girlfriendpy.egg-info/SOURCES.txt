@@ -1,0 +1,7 @@
+README.md
+gf.py
+setup.py
+girlfriendpy.egg-info/PKG-INFO
+girlfriendpy.egg-info/SOURCES.txt
+girlfriendpy.egg-info/dependency_links.txt
+girlfriendpy.egg-info/top_level.txt
