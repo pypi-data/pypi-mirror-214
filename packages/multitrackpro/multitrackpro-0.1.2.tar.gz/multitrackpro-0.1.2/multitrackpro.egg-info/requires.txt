@@ -1,0 +1,5 @@
+boxmot>=10.0.13
+linetimer>=0.1.5
+numpy==1.23.1
+opencv-python>=4.7.0
+pyqt6>=6.5.1
