@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vid2ascii"
+version = "0.3.1"
+authors = [
+  { name="flocto", email="flocto@duck.com" },
+]
+description = "Video to ASCII converter"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy >= 1.23.4",
+    "opencv-python>=4.6.0.66"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/flocto/vid2ascii"
+"Bug Tracker" = "https://github.com/flocto/vid2ascii/issues"

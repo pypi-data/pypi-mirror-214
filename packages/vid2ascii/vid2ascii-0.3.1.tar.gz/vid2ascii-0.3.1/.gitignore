@@ -1,0 +1,11 @@
+.gitignore
+
+.venv/*
+__pycache__/*
+*/__pycache__/*
+
+tests/*
+dist/*
+
+old/*
+test.py
