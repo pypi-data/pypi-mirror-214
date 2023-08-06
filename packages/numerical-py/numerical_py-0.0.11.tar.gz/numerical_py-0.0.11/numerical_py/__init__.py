@@ -1,0 +1,1 @@
+from integrals import trapezoidal_rule, three_eights_rule
