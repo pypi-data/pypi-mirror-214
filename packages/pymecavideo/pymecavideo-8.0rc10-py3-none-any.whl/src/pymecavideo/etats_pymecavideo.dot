@@ -1,0 +1,19 @@
+digraph Q {
+  node [shape=record];
+
+  Z    [label = "début"];
+  A   [label = "A"];
+  AB   [label = "AB"];
+  B   [label = "B"];
+  C    [label = "Échelle\nC"];
+  D   [label = "D"];
+  E   [label = "Série d'objets\nE"];
+
+  Z -> {A D};
+  A -> AB -> B;
+  A -> D;
+  A -> C -> A;
+  B -> D;
+  D -> C -> D;
+  D -> E -> D
+}
