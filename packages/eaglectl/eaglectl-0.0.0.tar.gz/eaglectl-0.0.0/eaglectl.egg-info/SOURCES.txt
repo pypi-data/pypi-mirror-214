@@ -1,0 +1,6 @@
+README.md
+setup.py
+eaglectl.egg-info/PKG-INFO
+eaglectl.egg-info/SOURCES.txt
+eaglectl.egg-info/dependency_links.txt
+eaglectl.egg-info/top_level.txt
