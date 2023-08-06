@@ -1,0 +1,10 @@
+src/lispy/__init__.py,sha256=BNizXaccrOrpWVbF1qVceAxBHDVGX9npH3nhr0Qxi24,228
+src/lispy/__main__.py,sha256=rKokO6VbfY04ZL3lQia-WJF2wAw8tedW1NGaEduRVdE,2311
+src/lispy/revealjs_template.py,sha256=3kDfJhGNegAOI8-YYJphBaBkNuC-326uDEqKnezUIFA,489
+src/lispy/slideEdit.py,sha256=k0SepByjWBl46A0z_Cia8E2_1Zsq82v9mqzxQTftq5c,4420
+src/lispy/text2audio.py,sha256=xK4w_NAaOdtrhQ7wRVLq3xdzfPLGfRgForuO27uMQm4,1746
+lispi-0.0.2.dist-info/METADATA,sha256=Mt5UOPrrubcfl9_t1gJ-dazXPId4rxhjMAOHMJpfvJg,4163
+lispi-0.0.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+lispi-0.0.2.dist-info/entry_points.txt,sha256=NvvPL0pVOws1vx3TdFfuJarrvDt5Xqk3tX028GEWk00,46
+lispi-0.0.2.dist-info/licenses/LICENSE,sha256=4mT_lp7iCFlMUtNrV3g-_f4HZNeYjhDSH7HBDmBmxxs,1073
+lispi-0.0.2.dist-info/RECORD,,
