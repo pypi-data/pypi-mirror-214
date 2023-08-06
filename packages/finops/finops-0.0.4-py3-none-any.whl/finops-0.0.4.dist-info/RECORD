@@ -1,0 +1,10 @@
+finops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finops/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finops/data/shareholders.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_shareholders.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finops-0.0.4.dist-info/LICENSE,sha256=vCDOhz9fdpBfriXcT3csGO4w-nKkMJQeNYWEom8mB_k,1544
+finops-0.0.4.dist-info/METADATA,sha256=nthQJIgEVMqtD86c6VUmJoocuDC5PqMiMQ8tUQU5oro,681
+finops-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+finops-0.0.4.dist-info/top_level.txt,sha256=TGbmsWm6Wu6ucjsLa1fPbjuwO10_tw9KBpdO8Vhvi6k,13
+finops-0.0.4.dist-info/RECORD,,
