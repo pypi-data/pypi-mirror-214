@@ -1,0 +1,16 @@
+bearclaw/__init__.py,sha256=ZygAIkX6Nbjag1czWdQa-yP-GM1mBE_9ss21Xh__JFc,34
+bearclaw/_version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+bearclaw/feature_extraction.py,sha256=mxOFQlp250cNcgbDdR1uTQp_XHgMHtfqBKrBmUQ4b7w,3180
+bearclaw/preprocessing.py,sha256=igMjfL6ZLKdCyrypIZLBDXu7odDwfryR4fCEWW1bGDU,4045
+bearclaw/transforms.py,sha256=YwiBq0-HHcJXe_ZHThWFjl1OyuVa1WKR591a8PEIjmY,2910
+bearclaw/io/__init__.py,sha256=k8eWgtvUk2J09znUtJT9_4rz9f-6HUZckUIG8zJ79zU,3676
+bearclaw/io/tso.py,sha256=KK-9v-5sBWlu6WbunKvz4_dWtCYl5Z7d74TORUrhr6g,2559
+bearclaw/io/vcf.py,sha256=_Ro7nFeyDuJGcTbq3-G8xnqajex5xLotU13mFenUCSo,5200
+bearclaw/resources/COSMIC_v3.3_CN_GRCh37.txt,sha256=EDsK14KdDK1vsBoYBCuyFymXZ4Q4OJ87Z_gm5eACBx0,18940
+bearclaw/resources/COSMIC_v3.3_DBS_GRCh37.txt,sha256=iPeEB0o6AIGA8TrQj8DsxfIrXNPuzXsUiccfGwSz6qM,17759
+bearclaw/resources/COSMIC_v3.3_ID_GRCh37.txt,sha256=o0VhcguYci5e46OJiohVDcwfUbKTZRpZ6Q4yvd7sRpE,29808
+bearclaw/resources/COSMIC_v3.3_SBS_GRCh37.txt,sha256=L0pygHkg95F9QkqK6tqSg8kNW3kok_4oeid75U6wjLo,149327
+bearclaw-0.0.3.dist-info/METADATA,sha256=7VYmqYO7CMaMXakkWiOoz2SWIAg0QHJaIsOwWB9CXGM,1463
+bearclaw-0.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+bearclaw-0.0.3.dist-info/licenses/LICENSE,sha256=VbL3SeezkaROfSbPjnjB0G7BWK4MvFWmQA7JIgga1As,1071
+bearclaw-0.0.3.dist-info/RECORD,,
