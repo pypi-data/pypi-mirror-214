@@ -1,0 +1,9 @@
+f1_23_telemetry/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+f1_23_telemetry/appendices.py,sha256=41RPwOklwztwo1gkqhOzVVX5vKRPttzQDgJC5VYu_zQ,14825
+f1_23_telemetry/listener.py,sha256=gMHeZTVh67kseHy7mslLJo-zIAmp-9RowmwsvfHpCjM,861
+f1_23_telemetry/main.py,sha256=u_lxLcMpAlp0fJ1dAo0EiOFvobrvyETsn9jukULRA6A,759
+f1_23_telemetry/packets.py,sha256=7zYojJQQadEX0Y-D9nRmZdfhJ6IO0LXKTQPNS7Ah-5Y,59696
+f1_23_telemetry-0.0.1.dist-info/METADATA,sha256=RvQnLdcm-49geIQdg3wLDEKm9qc2PRQDvB75R-2e_Os,2357
+f1_23_telemetry-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+f1_23_telemetry-0.0.1.dist-info/licenses/LICENSE,sha256=q2qGQgr8YV_vYEMO_zWPo3awB5KEGWWrRr78vA32R7o,1069
+f1_23_telemetry-0.0.1.dist-info/RECORD,,
