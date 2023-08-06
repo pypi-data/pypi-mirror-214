@@ -1,0 +1,11 @@
+erniebot/__init__.py,sha256=Bpxa9QRzz5Tx5vikTMXSjQWEYU7IsmCGZYkSOoyctdA,38
+erniebot/erniebot.py,sha256=kYg8x5IvfOrFD5W5rHAjtTJRG2S7vXW6Eje-O0DIOQs,487
+erniebot/error/__init__.py,sha256=8psp3VWJ-XfpoGhD29GHuMm84QbnlSuCFSABKRuH5UA,36
+erniebot/error/customerror.py,sha256=Rd9KKQn9uVCrkNK68LrAODfJz8SducDCNWzC2Iql8bA,148
+erniebot/service/__init__.py,sha256=aX731BbAK4QpwqUMV3Q9BTyzVLzGYItn-arWetRu0zY,28
+erniebot/service/explain.py,sha256=NsItEOtnx-NmUolb5CPqTGGHFyyalAwVo0lR6ifj92I,2301
+erniechatbotsdk-0.0.3.dist-info/LICENSE,sha256=TjWvuaqOu_Y90foZqIlWeEd78zs23DtChlHl35ZCINw,1058
+erniechatbotsdk-0.0.3.dist-info/METADATA,sha256=kTzWA148ZaZ4hZJXGeIVQb993iwJEaW988Qx5HvLFqQ,2426
+erniechatbotsdk-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+erniechatbotsdk-0.0.3.dist-info/top_level.txt,sha256=Cw1D5syw_LwcQbnjfKsYtUCxR45w64VicOZ2edCG20o,9
+erniechatbotsdk-0.0.3.dist-info/RECORD,,
