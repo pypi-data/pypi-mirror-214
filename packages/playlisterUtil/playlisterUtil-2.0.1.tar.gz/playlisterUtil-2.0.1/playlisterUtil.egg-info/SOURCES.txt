@@ -1,0 +1,6 @@
+setup.py
+playlisterUtil.egg-info/PKG-INFO
+playlisterUtil.egg-info/SOURCES.txt
+playlisterUtil.egg-info/dependency_links.txt
+playlisterUtil.egg-info/requires.txt
+playlisterUtil.egg-info/top_level.txt
