@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tsclassification/__init__.py
+tsclassification/classifier.py
+tsclassification/sample_methods.py
+tsclassification.egg-info/PKG-INFO
+tsclassification.egg-info/SOURCES.txt
+tsclassification.egg-info/dependency_links.txt
+tsclassification.egg-info/requires.txt
+tsclassification.egg-info/top_level.txt
