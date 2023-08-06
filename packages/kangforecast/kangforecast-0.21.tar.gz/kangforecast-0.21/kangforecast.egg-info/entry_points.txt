@@ -1,0 +1,3 @@
+[console_scripts]
+kangforecast_command = kangforecast.main:main
+
