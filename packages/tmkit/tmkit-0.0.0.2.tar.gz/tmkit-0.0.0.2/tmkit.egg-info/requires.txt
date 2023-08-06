@@ -1,0 +1,7 @@
+scikit-learn
+pandas
+numpy
+biopandas
+xmltramp2==3.1.1
+biopython==1.79
+pyfiglet==0.8.post1
