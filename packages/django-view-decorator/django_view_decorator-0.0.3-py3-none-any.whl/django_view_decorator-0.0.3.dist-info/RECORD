@@ -1,0 +1,12 @@
+django_view_decorator/__about__.py,sha256=BwHo-wL7pE6S7Pw-3z9rPSWx_x804f72vyDG1qNUYnI,140
+django_view_decorator/__init__.py,sha256=i03f52jz6-mAW2lvatRO1EIRA_f7L3b7kCKbFmaUuys,212
+django_view_decorator/apps.py,sha256=AZ5I85Yl3PiSR_xywbGaNnopOb6URMUM2x1a1YSx_aE,2428
+django_view_decorator/conf.py,sha256=d6UxYxl0ZD0chTDD9k96DKxT3QDsFjxrrTlK5Cbz9jc,394
+django_view_decorator/decorators.py,sha256=kEqVKcw8ds-HKMPs0GFEsyaQ6-Py1v4XFXvOBXgULAI,3171
+django_view_decorator/urls.py,sha256=JqBurkwEx3l_12DfNeRwB-Bt9LaJ_CYWUE4xYG-04eo,94
+django_view_decorator/urls_utils.py,sha256=M7Bfch_ZY08VEjWBbeALpADPYoEDExuAIPVFP_gY04k,774
+django_view_decorator/management/commands/list_views.py,sha256=M2vO12KQQxm6C7NOGaYncvk0Qh0h6lHBf75rrFR8Gxg,810
+django_view_decorator-0.0.3.dist-info/METADATA,sha256=n9MzSKW4ASd4SmhYofxHNR5o4hucx3DAdMedgHsPyvU,2322
+django_view_decorator-0.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_view_decorator-0.0.3.dist-info/licenses/LICENSE.txt,sha256=RIKrabjPAf9PaD3INmSk6SGUJRipnysyGLC8N9KgM4Y,1110
+django_view_decorator-0.0.3.dist-info/RECORD,,
