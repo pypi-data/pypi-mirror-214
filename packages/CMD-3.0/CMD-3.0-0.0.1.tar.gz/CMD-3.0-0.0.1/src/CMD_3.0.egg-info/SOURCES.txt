@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/new.py
+src/CMD/__init__.py
+src/CMD/main.py
+src/CMD_3.0.egg-info/PKG-INFO
+src/CMD_3.0.egg-info/SOURCES.txt
+src/CMD_3.0.egg-info/dependency_links.txt
+src/CMD_3.0.egg-info/top_level.txt

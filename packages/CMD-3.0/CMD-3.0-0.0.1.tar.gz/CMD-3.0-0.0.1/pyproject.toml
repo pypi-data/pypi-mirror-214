@@ -1,0 +1,20 @@
+[build-system]
+requires = ["ansicolors","setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "CMD-3.0"
+version = "0.0.1"
+authors = [{name="mrMonos",email="panekmichas@gmail.com"}]
+description = "New support module for CLI"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Operating System :: OS Independent",
+    "Natural Language :: Polish",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mrMonos/CMD-3"
+"Bug Tracker" = "https://github.com/mrMonos/CMD-3/issues"

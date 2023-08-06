@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: CMD-3.0
+Version: 0.0.1
+Summary: New support module for CLI
+Author-email: mrMonos <panekmichas@gmail.com>
+Project-URL: Homepage, https://github.com/mrMonos/CMD-3
+Project-URL: Bug Tracker, https://github.com/mrMonos/CMD-3/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Polish
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# CMD-3.0
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
