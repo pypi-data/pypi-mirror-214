@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/lotr/__init__.py
+src/lotr/lotr.py
+src/nrh_lotr.egg-info/PKG-INFO
+src/nrh_lotr.egg-info/SOURCES.txt
+src/nrh_lotr.egg-info/dependency_links.txt
+src/nrh_lotr.egg-info/requires.txt
+src/nrh_lotr.egg-info/top_level.txt
+tests/test_sdk.py
