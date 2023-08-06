@@ -1,0 +1,6 @@
+{
+  "urls": [
+    ["micropython_ds3502/examples/ds3502_simpletest.py", "github:jposada202020/MicroPython_DS3502/examples/ds3502_simpletest.py"]
+  ],
+  "version": "0.1"
+}

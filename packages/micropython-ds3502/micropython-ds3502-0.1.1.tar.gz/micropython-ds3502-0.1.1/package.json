@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_ds3502/__init__.py", "github:jposada202020/MicroPython_DS3502/micropython_ds3502/__init__.py"],
+    ["micropython_ds3502/i2c_helpers.py", "github:jposada202020/MicroPython_DS3502/micropython_ds3502/i2c_helpers.py"],
+    ["micropython_ds3502/ds3502.py", "github:jposada202020/MicroPython_DS3502/micropython_ds3502/ds3502.py"]
+  ],
+  "version": "0.1"
+}
