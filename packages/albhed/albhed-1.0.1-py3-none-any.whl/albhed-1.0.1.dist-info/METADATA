@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: albhed
+Version: 1.0.1
+Summary: Converts ASCII into Al Bhed
+Author: Chris Pressland
+Author-email: mail@cpressland.io
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Al Bhed
+
+Simple CLI and Library that translates ASCII into Al Bhed
+
+Python:
+
+```python
+from albhed import albhed
+
+albhed("Hello, World!")
+'Rammu, Funmt!'
+```
+
+Shell:
+
+```shell
+albhed Hello, World!
+Rammu, Funmt!
+```
+
