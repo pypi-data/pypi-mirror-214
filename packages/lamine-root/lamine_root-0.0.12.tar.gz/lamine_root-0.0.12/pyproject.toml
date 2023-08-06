@@ -1,0 +1,6 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+    "wheel","pyjnius","plyer","kivy"
+]
+build-backend = "setuptools.build_meta"
