@@ -1,0 +1,31 @@
+[project]
+name = "k8s_deployment_status"
+version = "0.0.5"
+authors = [{ name = "saltgen", email = "sdnirvana94@gmail.com" }]
+description = "Provides deployment status details for any Kubernetes pod"
+readme = "README.md"
+keywords = ["openshift", "ecs", "kubernetes", "deployment", "status", "devops", "k8s", "pod", "container"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.6"
+dependencies = [
+    "kubernetes>=26.1.0",
+    "requests>=2.25.1"
+]
+
+[project.urls]
+homepage = "https://github.com/saltgen/k8s_deployment_status"
+repository = "https://github.com/saltgen/k8s_deployment_status"
+issues = "https://github.com/saltgen/k8s_deployment_status/issues"
+
+[options.packages.find]
+where = "src"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"

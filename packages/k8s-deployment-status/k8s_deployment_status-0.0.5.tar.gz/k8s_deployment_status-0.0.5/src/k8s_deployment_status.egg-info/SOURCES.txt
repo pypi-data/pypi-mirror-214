@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/k8s_deployment_status/__init__.py
+src/k8s_deployment_status/config.py
+src/k8s_deployment_status/main.py
+src/k8s_deployment_status.egg-info/PKG-INFO
+src/k8s_deployment_status.egg-info/SOURCES.txt
+src/k8s_deployment_status.egg-info/dependency_links.txt
+src/k8s_deployment_status.egg-info/requires.txt
+src/k8s_deployment_status.egg-info/top_level.txt
