@@ -1,0 +1,3 @@
+[console_scripts]
+dtg=docker_tags_getter.main:main
+
