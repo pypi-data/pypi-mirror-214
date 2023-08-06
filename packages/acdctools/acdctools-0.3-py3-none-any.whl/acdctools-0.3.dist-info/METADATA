@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: acdctools
+Version: 0.3
+Summary: Collection of tools used by Cell-ACDC and spotMAX
+Home-page: https://github.com/SchmollerLab/acdc_tools
+Author: Francesco Padovani
+Author-email: francesco.padovani@helmholtz-munich.de
+Project-URL: Author contact, https://www.helmholtz-munich.de/ife/about-us/people/staff-detail/ma/8873/Dr.-Padovani/index.html
+Project-URL: Schmoller lab, https://www.helmholtz-munich.de/ife/research/kurt-schmoller-cell-and-organelle-size-control/research/index.html
+Keywords: live-cell imaging,cell segmentation,cell tracking,cell cycle annotations,image analysis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: natsort
+Requires-Dist: opencv-python-headless
+Provides-Extra: gui
+Requires-Dist: qtpy ; extra == 'gui'
+Requires-Dist: PyQt6 ; extra == 'gui'
+Requires-Dist: pyqtgraph ; extra == 'gui'
+
+# Acdc Tools
+
+Collection of tools (widgets, utils, io functions, etc.) used by [Cell-ACDC](https://github.com/SchmollerLab/Cell_ACDC) and spotMAX.
