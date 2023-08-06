@@ -1,0 +1,6 @@
+setup.py
+ADTomo.egg-info/PKG-INFO
+ADTomo.egg-info/SOURCES.txt
+ADTomo.egg-info/dependency_links.txt
+ADTomo.egg-info/requires.txt
+ADTomo.egg-info/top_level.txt
