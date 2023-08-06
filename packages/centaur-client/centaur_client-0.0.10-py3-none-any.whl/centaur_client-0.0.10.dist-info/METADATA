@@ -1,0 +1,183 @@
+Metadata-Version: 2.1
+Name: centaur-client
+Version: 0.0.10
+Summary: Centaur Client Python Sdk Library
+Home-page: https://github.com/alibaba/proxima
+Author: Alibaba
+Author-email: centaur@alibaba-inc.com
+License: Apache 2.0
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: grpcio (>=1.22.0)
+Requires-Dist: protobuf (<4.0.0,>=3.8.0)
+Requires-Dist: aiohttp (>=3.1.0)
+
+# Centaur Client Python Library
+
+Centaur provides fully-managed, serverless, scalable vector-database service for building various machine learning applications. The Centaur client SDK is your gateway to access the Centaur service.
+
+## Installation
+To install the Centaur client Python SDK, simply run:
+```shell
+pip install centaur-client
+```
+
+## QuickStart
+You can use `Client` api to communicate with Centaur service.
+
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+```
+
+## Sample Code
+
+### Create a Collection
+`Client` host various `Collection` APIs for interacting with Centaur service.
+
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+client.create("YOUR-COLLECTION-NAME", dimension=4)
+```
+
+### List Collections
+
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+rsp = client.list()
+if rsp:
+    collection_list = rsp.output
+    print("collection_list:", collection_list)
+```
+
+### Describe Collection
+
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+rsp = client.describe("YOUR-COLLECTION-NAME")
+if rsp:
+    collection_meta = rsp.output
+    print("collection_meta:", collection_meta)
+```
+
+### Delete Collection
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+client.delete("YOUR-COLLECTION-NAME")
+```
+
+### Get a Collection Instance
+
+`Collection` provides APIs for accessing `Doc` and `Partition`
+
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+collection = client.get("YOUR-COLLECTION-NAME")
+if collection:
+    print("collection:", collection)
+```
+
+### Describe Collection Statistics
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+collection = client.get("YOUR-COLLECTION-NAME")
+rsp = collection.stats()
+if rsp:
+    collection_stats = rsp.output
+    print("collection_stats:", collection_stats)
+```
+
+### Insert/Update/Upsert Docs
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+collection = client.get("YOUR-COLLECTION-NAME")
+collection.upsert(("YOUR-DOC-ID", [0.1, 0.2], {'price': 100, 'type': "dress"}))
+```
+
+### Query a Collection
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+collection = client.get("YOUR-COLLECTION-NAME")
+rsp = collection.query([0.1, 0.2], 
+                       topk=100, 
+                       output_fields=["price"], 
+                       include_vector=True)
+if rsp:
+    doc_list = rsp.output
+    print("doc_list:", doc_list)
+```
+
+### Delete Docs
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+collection = client.get("YOUR-COLLECTION-NAME")
+collection.delete("YOUR-DOC-ID")
+```
+
+### Fetch Docs
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+collection = client.get("YOUR-COLLECTION-NAME")
+rsp = collection.fetch("YOUR-DOC-ID")
+if rsp:
+    doc_dict = rsp.output
+    print("doc_dict:", doc_dict)
+```
+
+### Create a Collection Partition
+```python
+import centaur
+
+client = centaur.Client(api_key="YOUR-CENTAUR-API-KEY")
+collection = client.get("YOUR-COLLECTION-NAME")
+collection.create_partition("YOUR-PARTITION-NAME")
+```
+
+## Centaur Response
+```python
+from centaur import CentaurCode
+
+@dataclasses
+class CentaurResponse(object):
+    code: CentaurCode
+    message: str
+    request_id: str
+    output: Any
+```
+
+## License
+This project is licensed under the Apache License (Version 2.0).
