@@ -1,0 +1,9 @@
+license.txt
+setup.py
+addnumcsy1234/__init__.py
+addnumcsy1234/add_num.py
+addnumcsy1234/run.py
+addnumcsy1234.egg-info/PKG-INFO
+addnumcsy1234.egg-info/SOURCES.txt
+addnumcsy1234.egg-info/dependency_links.txt
+addnumcsy1234.egg-info/top_level.txt
