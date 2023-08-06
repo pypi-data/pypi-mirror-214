@@ -1,0 +1,15 @@
+pyscal_rdf/__init__.py,sha256=XmYdS2jjdtgH8zvrmQDqmWTe52ofCAU8ufy6kp9-5Vs,47
+pyscal_rdf/encoder.py,sha256=10LQ1gsE8z3pqXpuu_VOxZaryoZePXfKT8_fWxB9KK0,455
+pyscal_rdf/graph.py,sha256=6sPKXDsWE1hm0VqZmEjKfcuwL-7v5vaY2tWEh5-dhXU,29501
+pyscal_rdf/json_io.py,sha256=iDANAbLLpHPxAZjly0sHIvW8qfgQqVnur9oWxjBupf4,589
+pyscal_rdf/network.py,sha256=IH_P_Ier5HlVp7RdJ2Kewjb9uGXfNtIUIpoDSBIzKdc,10906
+pyscal_rdf/properties.py,sha256=AHkivfvpajh8xkD94EcTEnpcd0J4yEccmQNnP-fMK2M,1971
+pyscal_rdf/queries.py,sha256=aFYfdwcLxHdI_qqHrrUbycZKpbUeBud8bYnSzJ7kj4U,4613
+pyscal_rdf/rdfutils.py,sha256=pyIzEywz7FZ2ynT0qN7sRRah8d2ciCAU7wXPY0DENw0,2325
+pyscal_rdf/structure.py,sha256=pcFwNuxRXe0hObPrdb-kaVg8AeYwHYZCREZvLmkWMLc,7725
+pyscal_rdf/visualize.py,sha256=D-z-mRXp_ySrosnv9uqsJWs7NMjTSklU4R-J4kJfxV4,6329
+pyscal_rdf-0.0.4.dist-info/LICENSE,sha256=o9DBgBn1FhRpYmlqPpkaKrSKBONKBJpK5ZGReH8BSb4,1063
+pyscal_rdf-0.0.4.dist-info/METADATA,sha256=u28F4_csAEgytzhIcjVUAN6PEZfALxtsLaANXvObDzU,2429
+pyscal_rdf-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyscal_rdf-0.0.4.dist-info/top_level.txt,sha256=x5uN4qWAmBnWW5q-z6NoYOmlhkJkduykzXfkk6ArB-M,11
+pyscal_rdf-0.0.4.dist-info/RECORD,,
