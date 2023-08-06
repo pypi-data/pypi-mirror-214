@@ -1,0 +1,13 @@
+{
+  "urls": [
+    ["micropython_bma220/bma220_tap_sensing.py", "github:jposada202020/MicroPython_BMA220/micropython_bma220/bma220_tap_sensing.py"],
+    ["micropython_bma220/bma220_orientation.py", "github:jposada202020/MicroPython_BMA220/micropython_bma220/bma220_orientation.py"],
+    ["micropython_bma220/bma220.py", "github:jposada202020/MicroPython_BMA220/micropython_bma220/bma220.py"],
+    ["micropython_bma220/bma220_slope.py", "github:jposada202020/MicroPython_BMA220/micropython_bma220/bma220_slope.py"],
+    ["micropython_bma220/bma220_lowg_detection.py", "github:jposada202020/MicroPython_BMA220/micropython_bma220/bma220_lowg_detection.py"],
+    ["micropython_bma220/bma220_const.py", "github:jposada202020/MicroPython_BMA220/micropython_bma220/bma220_const.py"],
+    ["micropython_bma220/i2c_helpers.py", "github:jposada202020/MicroPython_BMA220/micropython_bma220/i2c_helpers.py"],
+    ["micropython_bma220/__init__.py", "github:jposada202020/MicroPython_BMA220/micropython_bma220/__init__.py"]
+  ],
+  "version": "0.1"
+}
