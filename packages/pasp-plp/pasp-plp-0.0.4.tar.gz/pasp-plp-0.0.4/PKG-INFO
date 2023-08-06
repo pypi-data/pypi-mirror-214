@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pasp-plp
+Version: 0.0.4
+Summary: Probabilistic Answer Set Programming
+Author-email: Renato Lui Geh <renatogeh@gmail.com>
+License: MIT
+Project-URL: Repository, https://github.com/RenatoGeh/pasp
+Project-URL: Issues, https://github.com/RenatoGeh/pasp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: torch
+License-File: LICENSE
+
+# PASP - Probabilistic Answer Set Programming
+
+[![Tests](https://github.com/kamel-usp/dpasp/actions/workflows/tests.yml/badge.svg)](https://github.com/kamel-usp/dpasp/actions/workflows/tests.yml)
+[![Docs](https://github.com/kamel-usp/dpasp/actions/workflows/docs.yml/badge.svg)](https://github.com/kamel-usp/dpasp/actions/workflows/docs.yml)
+[![](https://img.shields.io/badge/docs-master-blue.svg)](https://renatogeh.github.io/pasp)
+[![GitHub](https://img.shields.io/github/license/kamel-usp/dpasp?color=blue&label=License)](https://github.com/kamel-usp/dpasp/blob/master/LICENSE)
+
+Please see [Learning dPASP Through Examples](http://kamel.ime.usp.br/pages/learn_dpasp) for more information.
