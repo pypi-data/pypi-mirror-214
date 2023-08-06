@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: renderg-sdk
+Version: 0.1.1
+Summary: www.renderg.com
+Home-page: https://github.com/renderg-repo/renderg-sdk.git
+Author: RenderG
+Author-email: support@renderg.com
+Requires-Dist: requests
+Requires-Dist: tenacity
+
