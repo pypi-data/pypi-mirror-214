@@ -1,0 +1,22 @@
+from fastapi import FastAPI, Depends
+from pydantic import *
+from typing import *
+
+app = FastAPI(
+    title="{{ env.name }}",
+    version="{{ env.version }}"
+)
+
+{% for endpoint, tool in env.tools.items() %}
+
+{{ tool.input_class_raw_schema }}
+
+
+{{ tool.function }}
+
+@app.get("/{{ endpoint }}")
+async def {{ endpoint }}_get(input: {{ tool.input_class_name}} = Depends()):
+    """{{ tool.description }}"""
+    return {{ tool.function_name }}(**input.dict())
+
+{% endfor %}

@@ -1,0 +1,4 @@
+jinja2
+pydantic
+datamodel_code_generator
+importlib_metadata
