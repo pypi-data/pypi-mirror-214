@@ -1,0 +1,81 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "WoW_Commodities"
+description = 'Download World of Warcraft commodities auction data for the specified region.'
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LGPL-3.0-or-later"
+keywords = [
+  "World of Warcraft",
+  "Auction House",
+  "Commodities",
+]
+authors = [
+  { name = "Aluizio, R.", email = "gambit01@bol.com.br" },
+]
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "Operating System :: OS Independent",
+  "Development Status :: 5 - Production/Stable",
+  "Topic :: Games/Entertainment",
+]
+dependencies = [
+  "pandas~=2.0",
+  "requests~=2.31",
+  "argparse~=1.4",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/Godrigos/WoW_Commodities#readme"
+Issues = "https://github.com/Godrigos/WoW_Commodities/issues"
+Source = "https://github.com/Godrigos/WoW_Commodities"
+
+[project.gui-scripts]
+wow-commodities = "app:main"
+
+[tool.hatch.version]
+path = "src/__about__.py"
+
+[tool.hatch.build]
+exclude = [
+  "/.vscode",
+  ".gitignore",
+  ".env",
+  "/src/get_item_id.py",
+]
+include = [
+  "app.py",
+  "/src",
+]
+HATCH_BUILD_CLEAN = "true"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+]
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=src/seqFinder --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "src/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
