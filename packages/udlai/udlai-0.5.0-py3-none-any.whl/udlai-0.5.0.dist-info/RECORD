@@ -1,0 +1,12 @@
+udlai/__init__.py,sha256=lFwL7SdC6sA9ZA7PLCjtMLic2EGYMPBqAnEvlON1xxw,1441
+udlai/_version.py,sha256=anIdYr6muU0U1Mh17yxqoYJ6mfDqcyO951CL3hSBkBk,497
+udlai/feature_api.py,sha256=njA6AJNBBiudnjtoFiDWRI7o_sVZm_CzvqifcO4dK5U,16028
+udlai/geocoding_api.py,sha256=m4ifmOvn77xY40xk1KO188qfI2xh-3iqghif1ErtNRM,5011
+udlai/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+udlai/tests/test_feature_api.py,sha256=TPnMGlXZy1r_oTzd6M0VdQHWMBFi1BsfcE1i9Vefdo0,6662
+udlai/tests/test_geocoding.py,sha256=TWVsCmAu0sczeQ4wClWGehIAPxidS6D8dj7q3ES7Vdc,2212
+udlai-0.5.0.dist-info/LICENSE,sha256=yb1YWqUeXig_e-UQoO9GLUwF09ImiNE8f1ImCOD0-LQ,1067
+udlai-0.5.0.dist-info/METADATA,sha256=FNScyVegRY0p2P-e5oDBnlY_9eAkDJ2sTBMbtgvrI7k,4711
+udlai-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+udlai-0.5.0.dist-info/top_level.txt,sha256=1j1HKKiH8LwjuV8AElDxCO33CSWYUQQI6wYjGjDC6Sw,6
+udlai-0.5.0.dist-info/RECORD,,
