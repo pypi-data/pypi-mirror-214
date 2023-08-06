@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pymsasdax/__init__.py
+src/pymsasdax/dax.py
+src/pymsasdax.egg-info/PKG-INFO
+src/pymsasdax.egg-info/SOURCES.txt
+src/pymsasdax.egg-info/dependency_links.txt
+src/pymsasdax.egg-info/requires.txt
+src/pymsasdax.egg-info/top_level.txt

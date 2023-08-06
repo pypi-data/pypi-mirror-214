@@ -1,0 +1,8 @@
+dateparser
+pandas
+pythonnet
+
+[dev]
+black
+bumpver
+pip-tools
