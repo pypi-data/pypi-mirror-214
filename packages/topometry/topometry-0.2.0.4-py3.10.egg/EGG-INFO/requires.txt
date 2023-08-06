@@ -1,0 +1,7 @@
+matplotlib
+numba
+numpy
+pandas
+scikit-learn
+scipy
+setuptools
