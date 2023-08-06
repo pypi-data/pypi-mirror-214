@@ -1,0 +1,10 @@
+bs_common_fastapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bs_common_fastapi/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bs_common_fastapi/common/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bs_common_fastapi/common/config/base.py,sha256=NHMzuvn2VpK9Pi3vUTPyOXmqjEDWRyYpRILev5_EueQ,925
+bs_common_fastapi/common/exception/__init__.py,sha256=F4KYr9qOa480FG1KUuYGWrorxmT7PQygLGYS_NDuvsQ,387
+bs_common_fastapi/common/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bs_common_fastapi/common/model/base_default_model.py,sha256=fIY82RMzsu_z2FII3wvxRJoE_GvhkeH7cozYgqunm7I,797
+bs_common_fastapi-0.1.0.dist-info/METADATA,sha256=IVUaSMF49VeZg4P_UGV2_bKar9JqP8-KlwgBnvs5BY8,516
+bs_common_fastapi-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bs_common_fastapi-0.1.0.dist-info/RECORD,,
