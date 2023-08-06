@@ -1,0 +1,3 @@
+[console_scripts]
+rx=reflex.rx:main
+
