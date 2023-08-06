@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pygal_maps_ua/UKR-ADM1_simplified.Svg
+pygal_maps_ua/UKR-ADM1_simplified_ordlo.Svg
+pygal_maps_ua/__init__.py
+pygal_maps_ua/maps.py
+pygal_maps_ua.egg-info/PKG-INFO
+pygal_maps_ua.egg-info/SOURCES.txt
+pygal_maps_ua.egg-info/dependency_links.txt
+pygal_maps_ua.egg-info/entry_points.txt
+pygal_maps_ua.egg-info/requires.txt
+pygal_maps_ua.egg-info/top_level.txt
+pygal_maps_ua/test/__init__.py
+pygal_maps_ua/test/test_maps.py

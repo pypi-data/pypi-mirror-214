@@ -1,0 +1,5 @@
+[pygal.maps]
+ua = pygal_maps_ua.maps
+
+[pygal.test.test_maps]
+ua = pygal_maps_ua.test.test_maps
