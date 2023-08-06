@@ -1,0 +1,86 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "pyhaloxml"
+version = "2.5.3"
+description = "Read and write the annotation files from Halo"
+readme = "README.md"
+authors = [{ name = "Rolf Harkes", email = "r.harkes@nki.nl" }]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["Halo", "reader", "annotation"]
+dependencies = [
+    "lxml >= 4.9",
+    "geojson>=2.5",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+shapely = ["shapely"]
+dev = ["black", "bumpver", "pytest", "mypy", "setuptools", "build", "twine"]
+
+[project.urls]
+Homepage = "https://github.com/rharkes/pyhaloxml"
+
+[tool.bumpver]
+current_version = "2.5.3"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"src/pyhaloxml/version.py" = [
+    "{version}"
+]
+"docs/source/conf.py" = [
+    'release = "{version}"',
+    'version = "{version}"'
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py310', 'py311']
+
+[tool.pytest.ini_options]
+pythonpath = [
+  './src'
+]
+
+[tool.mypy]
+python_version = '3.11'
+mypy_path = "src"
+packages = "pyhaloxml"
+strict = true
+
+[[tool.mypy.overrides]]
+module = "lxml.*"
+ignore_missing_imports  = true
+
+[[tool.mypy.overrides]]
+module = "geojson.*"
+ignore_missing_imports  = true
+
+[[tool.mypy.overrides]]
+module = "shapely.*"
+ignore_missing_imports  = true
+
+[tool.maturin]
+python-source = "src"
+module-name = "pyhaloxml.pyhaloxml_rs"
+
+[tool.cibuildwheel]
+before-all = "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y"
+environment = "PATH=$PATH:/root/.cargo/bin"
+build = "cp310-*"
+skip = "*-musllinux_i686"
