@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: haidarlibs
+Version: 0.0.12
+Summary: A Secure and Powerful Python-Pyrogram Based Library For Haidar-Pyro.
+Home-page: https://github.com/XhaidarX/Haidarlibs
+Author: Haidar
+Author-email: cosmospanas70@gmail.com
+License: GNU AFFERO GENERAL PUBLIC LICENSE (v3)
+Project-URL: Bug Tracker, https://github.com/XhaidarX/Haidarlibs/issues
+Project-URL: Documentation, https://t.me/kynansupport
+Project-URL: Source Code, https://github.com/XhaidarX/Haidarlibs
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.7, <3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Haidarlibs Library
+
+Core library of [Haidar-Pyro](https://github.com/XhaidarX/Haidar-Pyro), a python based telegram userbot.
+
+[![CodeFactor](https://www.codefactor.io/repository/github/XhaidarX/Haidarlibs/badge)](https://www.codefactor.io/repository/github/XhaidarX/Haidarlibs)
+[![PyPI - Version](https://img.shields.io/pypi/v/py-Haidar-Pyro?style=round)](https://pypi.org/project/haidarlibs)    
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/py-Haidar-Pyro?label=DOWNLOADS&style=round)](https://pypi.org/project/haidarlibs)    
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/XhaidarX/Haidar-Pyro/graphs/commit-activity)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/XhaidarX/Haidar-Pyro)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+
+# Installation
+```bash
+pip3 install -U py-Haidar
+```
+
+# Documentation 
+[![Documentation](https://img.shields.io/badge/Documentation-haidarlibs-blue)](http://haidar.tech/)
+
+
+
+See more working plugins on [the offical repository](https://github.com/XhaidarX/Haidar-Pyro)!
+
+> Made with 💕 by [Haidar](https://t.me/kenapatagdar).    
+
+
+# License
+[![License](https://www.gnu.org/graphics/agplv3-155x51.png)](LICENSE)   
+Ultroid is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
+
+# Credits
+* [![Haidar-Devs](https://img.shields.io/static/v1?label=Haidar&message=devs&color=critical)](https://t.me/kenapatagdar)
