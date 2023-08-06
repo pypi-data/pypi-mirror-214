@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "bs-common-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Bruno Segato <brunosegatoit@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bs_common_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.97.0"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.11.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+flake8-quotes = "^3.3.2"
+pytest = "^7.3.2"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.taskipy.tasks]
+lint = "flake8 . && isort --check --diff ."
