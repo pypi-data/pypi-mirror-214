@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pdf-docx-pic
+Version: 3.1.1.2023.6.18.17.33.46
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: GPU
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Django :: 4.2
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >=2.6
+Requires-Dist: ttkbootstrap (<1.11,>=1.10)
+Requires-Dist: pdf2docx (!=0.5.4,>=0.5.2)
+Requires-Dist: docx2pdf (>=0.1.8)
+Requires-Dist: PyMuPDF (>=1.22.1)
+Requires-Dist: Pillow (<10.0,>=9.3.0)
+Requires-Dist: wheel (!=0.38.2,<0.41,>=0.38)
+
