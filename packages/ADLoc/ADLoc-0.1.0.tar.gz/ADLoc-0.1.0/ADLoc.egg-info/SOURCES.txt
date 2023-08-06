@@ -1,0 +1,6 @@
+setup.py
+ADLoc.egg-info/PKG-INFO
+ADLoc.egg-info/SOURCES.txt
+ADLoc.egg-info/dependency_links.txt
+ADLoc.egg-info/requires.txt
+ADLoc.egg-info/top_level.txt
