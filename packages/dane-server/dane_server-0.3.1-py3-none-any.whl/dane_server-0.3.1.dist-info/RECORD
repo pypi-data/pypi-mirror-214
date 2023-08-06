@@ -1,0 +1,12 @@
+dane_server/RabbitMQListener.py,sha256=fwm5ez1rswWJ58PSRvdSD7D0irTIxfJV1ufYy33dxzw,2993
+dane_server/RabbitMQPublisher.py,sha256=4ciCJ71TpA0xnKfMPJtfMqCyEilb8m1D2UQ0vCNFNuM,1411
+dane_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dane_server/api.py,sha256=GQY3ljjw-s1zF9bzO8lBArrttN2H3pumuCg490MyiYs,28595
+dane_server/handler.py,sha256=MY3mWH8Ep95GKR5_hey0-0uvxHOv1C2_0IPxIWwQNbQ,1024
+dane_server/server.py,sha256=OiM44vnPJB6QY30QC69I2ITUvfrG5gg5rByC3wcaTQw,3828
+dane_server/web/index.html,sha256=gt6swXRibDg8yLuKJVFZcJ68p2EegKEc4nRun5C1MtE,13411
+dane_server/web/js/index.js,sha256=dU-XQJ6rb3hLLS2C156dEZc-szdO_XxNWNGAROIMiLQ,15484
+dane_server-0.3.1.dist-info/METADATA,sha256=D0Tug1YFIOX4KDaTVkcjpHMf7UlajvcSP4WLvqBrd9I,5629
+dane_server-0.3.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dane_server-0.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dane_server-0.3.1.dist-info/RECORD,,
