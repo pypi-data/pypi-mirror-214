@@ -1,0 +1,43 @@
+# !!! Remember to update version here and in the code !!! 
+# (ಠ_ಠ)  -- I wish poetry could just read version from the package
+
+[tool.poetry]
+name = "sshclick"
+homepage = "https://github.com/karlot/sshclick"
+version = "0.6.1"
+description = "SSH Config manager"
+authors = ["Karlo Tisaj <karlot@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.1"
+rich = "^13.3"
+textual = "^0.26"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3"
+
+
+[tool.poetry.scripts]
+sshc = "sshclick.main:cli"
+ssht = "sshclick.main_tui:tui"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
