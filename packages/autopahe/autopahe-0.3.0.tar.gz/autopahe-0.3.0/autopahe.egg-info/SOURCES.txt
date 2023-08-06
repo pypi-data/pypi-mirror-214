@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+autopahe/__init__.py
+autopahe/auto_pahe.py
+autopahe/test.py
+autopahe.egg-info/PKG-INFO
+autopahe.egg-info/SOURCES.txt
+autopahe.egg-info/dependency_links.txt
+autopahe.egg-info/entry_points.txt
+autopahe.egg-info/requires.txt
+autopahe.egg-info/top_level.txt
