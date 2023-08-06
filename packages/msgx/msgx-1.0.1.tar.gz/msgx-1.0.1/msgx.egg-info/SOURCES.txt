@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+msgx.egg-info/PKG-INFO
+msgx.egg-info/SOURCES.txt
+msgx.egg-info/dependency_links.txt
+msgx.egg-info/requires.txt
+msgx.egg-info/top_level.txt
+python/__init__.py
+python/_version.py
+python/constants.py
+python/deserialise.py
+python/msg_definitions.py
+python/msgx.capnp
+python/ndarray.capnp
