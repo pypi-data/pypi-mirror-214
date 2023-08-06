@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: evatr-client
+Version: 0.1.0
+Summary: A client for: https://evatr.bff-online.de/eVatR/
+Home-page: https://github.com/CeeDiii/evatr-client
+Download-URL: https://github.com/CeeDiii/evatr-client/archive/refs/tags/v0.1.0.tar.gz
+Author: CeeDiii
+License: MIT
+Keywords: python,uid,vat,uid prüfung,vat validation,evatr,evatr client,evatr python client
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+A client to validate EU-VAT numbers with the official German tool that can be found here: https://evatr.bff-online.de/eVatR/
