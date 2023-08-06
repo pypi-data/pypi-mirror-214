@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: taskhub
+Version: 0.7.1
+Summary: 一个任务分发与结果收集中间件
+Home-page: https://github.com/iridesc/taskhub
+Author: Irid Zhang
+Author-email: irid.zzy@gmail.com
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Requires-Dist: retry
+Requires-Dist: loger
+
+UNKNOWN
+
+
