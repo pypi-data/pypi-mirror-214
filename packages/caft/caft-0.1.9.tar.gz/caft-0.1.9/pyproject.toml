@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=46.4.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
+ignore-magic = true
+ignore-semiprivate = true
+ignore-private = true
+ignore-property-decorators = true
+ignore-module = false
+ignore-nested-functions = true
+ignore-nested-classes = true
+ignore-setters = true
+exclude = ["**/utils/", "**/_version.py", ".eggs/", "build/", "**/.ipynb_checkpoints", "cache/", "**/cache/"]
+fail-under = 99
+ignore-regex = ["^get$", "^mock_.*", ".*BaseClass.*", "test.*"]
+verbose = 1
+whitelist-regex = []
+
+[tool.isort]
+profile = "black"
+line_length = 80
+
+[tool.black]
+line-length = 80
