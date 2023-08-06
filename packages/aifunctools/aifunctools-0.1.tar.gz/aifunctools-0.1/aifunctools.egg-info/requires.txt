@@ -1,0 +1,5 @@
+openai
+docstring-parser
+
+[test]
+pytest
