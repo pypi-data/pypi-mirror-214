@@ -1,0 +1,9 @@
+tmcsh/__init__.py,sha256=bmIFrygWCROx-tLGwxvl_NqCv3kq2BBR50--tU2e3s0,26
+tmcsh/cli.py,sha256=EszGEt16sgsF71c4ra4LCl2QIJAtmaiHLG2h76p7G1Q,2035
+tmcsh/device_chooser.py,sha256=scTxOm1OdXbZrPwCBdLDVGFQrgJ742-BPFbjto5laqA,2930
+tmcsh/tmc_callbacks.py,sha256=EgA-ia7qJfjhXlFgFIyAHfGBs19F_e2DaiWpi1X33_k,1759
+tmcsh-0.1.0.dist-info/METADATA,sha256=PwWGc1-BGifwKBgR36f5oVo5lWlUDSOD9I0yf288IUo,1994
+tmcsh-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tmcsh-0.1.0.dist-info/entry_points.txt,sha256=thZjNJaUhupaKQHW2GFxsnxLpNP85iuENcUqv2SZDHE,41
+tmcsh-0.1.0.dist-info/top_level.txt,sha256=T8IaAzXp45-ByEbBg3-JiQHWyscQ-82rHjKHP5uEDaQ,6
+tmcsh-0.1.0.dist-info/RECORD,,
