@@ -1,0 +1,13 @@
+PyYAML
+pandas>=2.0.2
+progress
+ase
+numpy
+cclib
+matplotlib
+seaborn
+cffi
+goodvibes
+py3Dmol
+ipywidgets
+dbstep
