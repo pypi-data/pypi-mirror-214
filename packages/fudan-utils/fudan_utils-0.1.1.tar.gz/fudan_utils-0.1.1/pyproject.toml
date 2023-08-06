@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fudan-utils"
+version = "0.1.1"
+description = "Fudan UIS Login Utilities and More"
+authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{ include = "fudan_utils" }]
+license = "MIT"
+homepage = "https://github.com/tddschn/fudan-utils"
+repository = "https://github.com/tddschn/fudan-utils"
+classifiers = ["Topic :: Utilities"]
+keywords = ["Fudan University"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tddschn/fudan-utils/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
