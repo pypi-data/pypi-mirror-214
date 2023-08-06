@@ -1,0 +1,1 @@
+from calor_pared_compuesta_lineal.ParedCompuesta import ParedCompuesta

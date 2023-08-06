@@ -1,0 +1,217 @@
+Metadata-Version: 2.1
+Name: calor-pared-compuesta-lineal
+Version: 0.0.1
+Summary: Esta es la descripcion de mi paquete
+Home-page: https://github.com/Valarg0502/calor_pared_compuesta_lineal
+Download-URL: https://github.com/Valarg0502/calor_pared_compuesta_lineal/tarball/0.0.1
+Author: Valentina Argüellez Angulo
+Author-email: valentina.arguellez@gmail.com
+License: MIT
+Keywords: transferencia de calor,pared compuesta,termodinamica
+Description-Content-Type: text/markdown
+
+# calor_pared_compuesta_lineal
+## Transferencia de calor lineal en paredes compuestas en serie
+
+### Valentina Argüellez Angulo
+### Programación 2 - Uiversidad Indistrial de Santander - Sede Barbosa
+### 2023-1
+
+Librería para calcular transferencia de calor lineal en paredes compuestas dispuestas en serie.
+Solo incluye mecanismos de conducción y convección, ignora la radiación.
+Presenta funciones auxiliares para cálculo de resistencias, coeficientes, y solución de paredes compuestas
+
+## Lista de funciones
+<ul>
+<li>calcular_pared_compuesta</li>
+    
+    """
+    Calcula la transferencia de calor en una pared compuesta
+
+    Parámetros
+    ----------
+    condiciones_interior : list
+        Condiciones interiores {T: temperatura [°C], h: coeficiente de convección [W/m^2°C]}
+    capas : list
+        Lista de capas de la pared compuesta {L: longitud [m], k: conductividad [W/m°C]}
+    condiciones_exterior : list
+        Condiciones exteriores {T: temperatura [°C], h: coeficiente de convección [W/m^2°C]}
+    area : float
+        Área de transferencia de calor [m^2]
+
+    Retorna
+    -------
+    {
+        Q: flujo de calor [W],
+        T_interior: temperatura interior [°C],
+        T_paredes: lista de temperaturas de las paredes [°C],
+        T_exterior: temperatura exterior [°C],
+        R_tot: resistencia total [°C/W],
+        R_conveccion_interna: resistencia a convección interna [°C/W],
+        R_capas: lista de resistencias a conducción [°C/W]
+        R_conveccion_externa: resistencia a convección externa [°C/W],
+        fig: gráfico de temperaturas a lo largo de la pared compuesta
+    }
+    """
+
+    ## Ejemplo de uso:
+    
+    from calor_pared_compuesta_lineal import ParedCompuesta
+    
+    ejemplo_pared_compuesta = {
+        'condiciones_interior': {
+            'T': 20,
+            'h': 10
+        },
+        'capas': [
+            {
+                'L': 0.004,
+                'k': 0.78,
+                'nombre': 'Vidrio'
+            },
+            {
+                'L': 0.01,
+                'k': 0.026,
+                'nombre': 'Aire'
+            },
+            {
+                'L': 0.004,
+                'k': 0.78,
+                'nombre': 'Vidrio'
+            }
+        ],
+        'condiciones_exterior': {
+            'T': -10,
+            'h': 40
+        },
+        'area': 0.8*1.5
+    }
+    pared = ParedCompuesta()
+    resultado = pared.calcular_pared_compuesta(**ejemplo_pared_compuesta)
+    print(resultado)
+    resultado['fig'].show()
+    input("PRESS ENTER TO CONTINUE.")
+
+<li>resistencia_conveccion</li>
+
+    """
+    Calcula la resistencia a transferencia de calor por convección
+
+    Parámetros
+    ----------
+    alfa : float
+        Coeficiente de transferencia de calor por convección [W/m^2°C]
+    A : float
+        Área de transferencia de calor [m^2]
+
+    Retorna
+    -------
+    R : float
+        Resistencia a transferencia de calor por convección [°C/W]
+    """
+
+<li>resistencia_conduccion</li>
+
+    """
+    Calcula la resistencia a transferencia de calor por conducción
+
+    Parámetros
+    ----------
+    L : float
+        Longitud de transferencia de calor [m]
+    k : float
+        Conductividad térmica [W/m°C]
+    A : float
+        Área de transferencia de calor [m^2]
+    
+    Retorna
+    -------
+    R : float
+        Resistencia a transferencia de calor por conducción [°C/W]
+    """
+
+<li>flujo_calor</li>
+
+    """
+    Calcula el flujo de calor
+
+    Parámetros
+    ----------
+    R_tot : float
+        Resistencia total a transferencia de calor [°C/W]
+    T1 : float
+        Temperatura 1 [°C]
+    T2 : float
+        Temperatura 2 [°C]
+
+    Retorna
+    -------
+    Q : float
+        Flujo de calor [W]
+    """
+
+<li>temperatura</li>
+
+    """
+    Calcula la temperatura
+
+    Parámetros
+    ----------
+    R_tot : float
+        Resistencia total a transferencia de calor [°C/W]
+    Q : float
+        Flujo de calor [W]
+    T1 : float
+        Temperatura 1 [°C]
+
+    Retorna
+    -------
+    T2 : float
+        Temperatura 2 [°C]
+    """
+
+<li>coeficiente_conductividad</li>
+
+    """
+    Calcula el coeficiente de conductividad
+
+    Parámetros
+    ----------
+    A : float
+        Área de transferencia de calor [m^2]
+    L : float
+        Longitud de transferencia de calor [m]
+    T1 : float
+        Temperatura 1 [°C]
+    T2 : float
+        Temperatura 2 [°C]
+    Q : float
+        Flujo de calor [W]
+
+    Retorna
+    -------
+    k : float
+        Coeficiente de conductividad [W/m°]
+    """
+
+<li>coeficiente_conveccion</li>
+
+    """
+    Calcula el coeficiente de convección
+
+    Parámetros
+    ----------
+    A : float
+        Área de transferencia de calor [m^2]
+    T1 : float
+        Temperatura 1 [°C]
+    T2 : float
+        Temperatura 2 [°C]
+    Q : float
+        Flujo de calor [W]
+
+    Retorna
+    -------
+    alfa : float
+        Coeficiente de convección [W/m^2°C]
+    """
