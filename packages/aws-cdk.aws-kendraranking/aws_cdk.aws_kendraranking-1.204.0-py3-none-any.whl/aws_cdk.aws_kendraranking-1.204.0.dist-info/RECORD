@@ -1,0 +1,10 @@
+aws_cdk/aws_kendraranking/__init__.py,sha256=vBo1Zx05qFYPrtCDsXw7AZhzNu4laOKoxwGR3ec2tPk,24836
+aws_cdk/aws_kendraranking/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_kendraranking/_jsii/__init__.py,sha256=oCJVoFObHzCKoYUh8CHlF00rjq03Iw3eLHap0nGNjsM,432
+aws_cdk/aws_kendraranking/_jsii/aws-kendraranking@1.204.0.jsii.tgz,sha256=mDKEJ8j1VrsG9xjPRQckx3qYdGdHPcC8NFUtqQQ8UMA,25166
+aws_cdk.aws_kendraranking-1.204.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_kendraranking-1.204.0.dist-info/METADATA,sha256=MKW2YHruVr31x0Dqw63G58SjYSmjfOqkmFxn-kEIG04,3346
+aws_cdk.aws_kendraranking-1.204.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_kendraranking-1.204.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_cdk.aws_kendraranking-1.204.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_kendraranking-1.204.0.dist-info/RECORD,,
