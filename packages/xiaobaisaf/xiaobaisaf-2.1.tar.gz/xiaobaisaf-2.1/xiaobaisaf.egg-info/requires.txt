@@ -1,0 +1,11 @@
+adbutils
+allure-pytest
+ddddocr
+loguru
+httpx
+jira
+bs4
+lxml
+pypinyin
+webdriver_manager
+xiaobaiauto2
