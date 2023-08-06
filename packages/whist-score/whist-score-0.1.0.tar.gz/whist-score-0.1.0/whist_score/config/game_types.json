@@ -1,0 +1,25 @@
+[
+    {"id": 1, "type": "Vragen en Meegaan", "name": "Vragen en Meegaan 8", "number_of_tricks": 8},
+    {"id": 2, "type": "Vragen en Meegaan", "name": "Vragen en Meegaan 9", "number_of_tricks": 9},
+    {"id": 3, "type": "Vragen en Meegaan", "name": "Vragen en Meegaan 10", "number_of_tricks": 10},
+    {"id": 4, "type": "Vragen en Meegaan", "name": "Vragen en Meegaan 11", "number_of_tricks": 11},
+    {"id": 5, "type": "Vragen en Meegaan", "name": "Vragen en Meegaan 12", "number_of_tricks": 12},
+    {"id": 6, "type": "Vragen en Meegaan", "name": "Vragen en Meegaan 13", "number_of_tricks": 13},
+    {"id": 7, "type": "Solo", "name": "Solo 6", "number_of_tricks": 6},
+    {"id": 8, "type": "Solo", "name": "Solo 7", "number_of_tricks": 7},
+    {"id": 9, "type": "Solo", "name": "Solo 8", "number_of_tricks": 8},
+    {
+        "id": 10,"type": "Troel", 
+        "name": "Troel",
+        "number_of_tricks": {"trump_kept": 8, "trump_changed": 9}
+    },
+    {"id": 11, "type": "Abondance", "name": "Abondance 9", "number_of_tricks": 9},
+    {"id": 12, "type": "Abondance", "name": "Abondance 10", "number_of_tricks": 10},
+    {"id": 13, "type": "Abondance", "name": "Abondance 11", "number_of_tricks": 11},
+    {"id": 14, "type": "Miserie", "name": "Kleine Miserie", "number_of_tricks": 0},
+    {"id": 15, "type": "Miserie", "name": "Piccolo", "number_of_tricks": 1},
+    {"id": 16, "type": "Miserie", "name": "Grote Miserie", "number_of_tricks": 0},
+    {"id": 17, "type": "Miserie", "name": "Grote Miserie op tafel", "number_of_tricks": 0},
+    {"id": 18, "type": "Abondance", "name": "Kleine Solo Slim", "number_of_tricks": 12},
+    {"id": 19, "type": "Abondance", "name": "Grote Solo Slim", "number_of_tricks": 13}
+]
