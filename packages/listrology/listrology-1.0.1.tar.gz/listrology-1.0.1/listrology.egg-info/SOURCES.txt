@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+listrology/__init__.py
+listrology.egg-info/PKG-INFO
+listrology.egg-info/SOURCES.txt
+listrology.egg-info/dependency_links.txt
+listrology.egg-info/top_level.txt
