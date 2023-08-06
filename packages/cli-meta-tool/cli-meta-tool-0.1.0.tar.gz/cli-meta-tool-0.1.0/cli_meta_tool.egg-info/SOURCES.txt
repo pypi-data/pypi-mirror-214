@@ -1,0 +1,12 @@
+setup.py
+cliMetaTool/__init__.py
+cliMetaTool/_const.py
+cliMetaTool/meta_change.py
+cliMetaTool/meta_change_detect.py
+cliMetaTool/utils.py
+cliMetaTool/data/blob_config.ini
+cli_meta_tool.egg-info/PKG-INFO
+cli_meta_tool.egg-info/SOURCES.txt
+cli_meta_tool.egg-info/dependency_links.txt
+cli_meta_tool.egg-info/requires.txt
+cli_meta_tool.egg-info/top_level.txt

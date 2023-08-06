@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cli-meta-tool
+Version: 0.1.0
+Summary: A tool for cli metadata management
+Author: Microsoft Corporation
+Author-email: azpycli@microsoft.com
+License: MIT
+
+A tool for cli metadata management
