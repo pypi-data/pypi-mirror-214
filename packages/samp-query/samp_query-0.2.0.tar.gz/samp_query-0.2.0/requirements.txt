@@ -1,0 +1,3 @@
+trio
+# See: https://github.com/PyYoshi/cChardet/issues/81#issuecomment-1329126634
+faust-cchardet
