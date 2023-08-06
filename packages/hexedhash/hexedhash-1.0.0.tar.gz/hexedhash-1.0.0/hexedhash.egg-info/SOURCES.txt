@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hexedhash/__init__.py
+hexedhash/hashgen.py
+hexedhash.egg-info/PKG-INFO
+hexedhash.egg-info/SOURCES.txt
+hexedhash.egg-info/dependency_links.txt
+hexedhash.egg-info/top_level.txt

@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: hexedhash
+Version: 1.0.0
+Summary: Creates hash by salt + hex
+Home-page: https://github.com/ltcp-security
+Author: maj0r
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hexedhash
+A module to create a hash from text by translating the text into a hex, adding a "salt" and trimming out the extra parts.
+
+### How to use
+Using the module is very easy. Here are a couple of examples.
+#### First example
+```python
+from hexedhash import Hasher
+hash01 = Hasher(prefix="ltcp", salt="hash::189dj")
+
+if __name__ == "__main__":
+    print(hash01.makehash("Hello world!"))
+```
+Output:
+```
+ltcp[3a6f3a203177386f]
+```
+
+#### Second example
+```python
+from hexedhash import Hasher
+if __name__ == "__main__":
+    print(Hasher().makehash("Hello world!"))
+```
+Output:
+```
+ltcp[5f6f73206577636f]
+```
