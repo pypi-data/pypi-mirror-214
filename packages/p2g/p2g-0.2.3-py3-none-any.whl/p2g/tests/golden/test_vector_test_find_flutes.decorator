@@ -1,0 +1,27 @@
+@p2g.must_be(
+"( mx = Var[flutes[0]]           )",
+"  #101= #200",
+"( for i in flutes[1:]:          )",
+"  #102= 201.",
+"N1000",
+"  IF [#102 GE 210.] GOTO 1002",
+"  #100= #[#102]",
+"(     if i > mx:                )",
+"  IF [#100 LE #101] GOTO 1003",
+"(         mx = i                )",
+"  #101= #100",
+"  GOTO 1004",
+"N1003",
+"N1004",
+"  #102= #102 + 1.",
+"  GOTO 1000",
+"N1002",
+)
+
+def test_find_flutes():
+    i = p2g.Var()
+    flutes = p2g.Fixed[10](addr=200)
+    mx = p2g.Var(flutes[0])
+    for i in flutes[1:]:
+        if i > mx:
+            mx = i

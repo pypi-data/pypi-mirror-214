@@ -1,0 +1,15 @@
+@p2g.must_be(
+"( for i in range[10]:           )",
+"  #101= 0.",
+"N1000",
+"  IF [#101 GE 10.] GOTO 1002",
+'(     dprint[f"got {i}"]        )',
+"DPRNT[got*[#101]]",
+"  #101= #101 + 1.",
+"  GOTO 1000",
+"N1002",
+)
+
+def test_for0():
+    for i in range(10):
+        dprint(f"got {i}")

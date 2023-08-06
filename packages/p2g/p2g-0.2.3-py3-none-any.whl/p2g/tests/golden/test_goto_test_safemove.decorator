@@ -1,0 +1,9 @@
+@p2g.must_be(
+"( z3.                           )",
+"  G65 R9810 F7.",
+"( x1.y2.                        )",
+"  G65 R9810 F7.",
+)
+
+def test_safemove():
+    p2g.goto.r9810.feed(7).z_then_xy(1, 2, 3)

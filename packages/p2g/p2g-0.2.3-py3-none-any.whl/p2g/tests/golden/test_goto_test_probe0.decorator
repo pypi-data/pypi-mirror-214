@@ -1,0 +1,8 @@
+@p2g.must_be(
+"( x1.y2.                        )",
+"  G01 G90 G31 M79 F20.",
+)
+
+def test_probe0():
+    mgoto = p2g.goto.mcode("M79").feed(20)
+    mgoto.probe(1, 2)

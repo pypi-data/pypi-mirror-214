@@ -1,0 +1,18 @@
+@p2g.must_be(
+"( x1.y2.                        )",
+"  G01 G90 F20.",
+"( x1.y3.                        )",
+"  G01 G90 F20.",
+"( x3.y4.                        )",
+"  G01 G91 F20.",
+"( GotoWorker[want_bp_=False, space_=<MovementSpace.WORK: 1>, order_=<MovementOrder.XYZ: 1>, relorabs_=<MovementRelOrAbs.ABSOLUTE: 2>, feed_=20, probe_=False, mcode_=''] )",
+)
+
+def test_goto_abs():
+    mgoto = p2g.goto.absolute.feed(20)
+    mgoto(1, 2)
+    mgoto(1, 3)
+    xgoto = mgoto.relative
+    xgoto(3, 4)
+
+    p2g.comment(mgoto)

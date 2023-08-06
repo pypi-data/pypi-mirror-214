@@ -1,0 +1,9 @@
+@p2g.must_be(
+"( x1.y2.                        )",
+"  G01 G91 F9.",
+"( z3.                           )",
+"  G01 G91 F9.",
+)
+
+def test_order1():
+    p2g.goto.xy_then_z.feed(9).relative(1, 2, 3)

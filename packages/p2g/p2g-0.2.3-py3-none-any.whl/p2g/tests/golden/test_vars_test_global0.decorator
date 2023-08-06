@@ -1,0 +1,11 @@
+@p2g.must_be(
+"( PR = Fixed[191, 200 + 3, addr=402])",
+"  #402= 191.",
+"  #403= 203.",
+"( dst[0] = num                  )",
+"  #302= 123.",
+)
+
+def test_global0():
+    dst = p2g.Fixed(addr=302)
+    dst[0] = num

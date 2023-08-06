@@ -1,0 +1,8 @@
+@p2g.must_be(
+'( dprint[f"this is {x:5.2f}"]   )',
+"DPRNT[this*is*19.00]",
+)
+
+def test_dprint2():
+    x = 19
+    p2g.dprint(f"this is {x:5.2f}")
