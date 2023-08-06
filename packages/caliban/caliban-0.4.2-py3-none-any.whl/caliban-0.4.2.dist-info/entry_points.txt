@@ -1,0 +1,3 @@
+[console_scripts]
+caliban = caliban.main:main
+expansion = caliban.expansion:main
