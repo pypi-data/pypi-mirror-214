@@ -1,0 +1,9 @@
+from kaiju_tools.app import service_class_registry
+from .transport import DatabaseService
+from .migrations import DatabaseMigrationService
+from .sql_service import SQLService
+from .fixtures import FixtureService
+
+service_class_registry.register_class(DatabaseService)
+service_class_registry.register_class(DatabaseMigrationService)
+service_class_registry.register_class(FixtureService)
