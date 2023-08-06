@@ -1,0 +1,10 @@
+textureminer/__init__.py,sha256=xr13hZg0afjIS3--McQgW_9W40rmzTD_TvPgUR56AQk,280
+textureminer/__main__.py,sha256=vjJK5GfZ3d4wXi9Qwbjo78MET36OOfO8wGteAfXEbZk,3289
+textureminer/bedrock.py,sha256=7zem9K6xC_cuFCoYRgoGv3L0HTCMqC4_kTCzvwTLJ0k,5820
+textureminer/common.py,sha256=nLlWZqvn36R5yMd1lKlefqWeeboNErq9zD2byUk8ilM,7721
+textureminer/java.py,sha256=6q4RXHgt-TrZ7roXGBRpjsZpqLYzIEDtqsvltHpXNrY,6252
+textureminer/texts.py,sha256=LPKN2Prx93WqceK79qLPFKQYqc1GHrkENUB0odJqa70,1978
+textureminer-1.0.0.dist-info/METADATA,sha256=73zkDMUPnrlAXGxkf-7KTNTIKdbdTsc2YXVn3OmG3Zk,3684
+textureminer-1.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+textureminer-1.0.0.dist-info/licenses/LICENSE,sha256=YnFVN9M9TQofAv4D6GHt3_HaxidppGpjN9qQF8EcJ4w,1080
+textureminer-1.0.0.dist-info/RECORD,,
