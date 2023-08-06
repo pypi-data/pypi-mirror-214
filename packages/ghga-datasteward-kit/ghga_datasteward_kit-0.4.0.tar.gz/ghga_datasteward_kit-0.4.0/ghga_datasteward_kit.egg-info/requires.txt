@@ -1,0 +1,6 @@
+hexkit[mongodb,s3]==0.10.0
+httpx==0.23.3
+ghga-connector==0.3.3
+metldata==0.2.3
+
+[all]
