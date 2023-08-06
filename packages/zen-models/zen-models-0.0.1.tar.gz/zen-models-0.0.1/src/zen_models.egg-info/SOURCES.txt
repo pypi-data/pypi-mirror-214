@@ -1,0 +1,8 @@
+README.txt
+setup.cfg
+setup.py
+src/zen_models.egg-info/PKG-INFO
+src/zen_models.egg-info/SOURCES.txt
+src/zen_models.egg-info/dependency_links.txt
+src/zen_models.egg-info/requires.txt
+src/zen_models.egg-info/top_level.txt
