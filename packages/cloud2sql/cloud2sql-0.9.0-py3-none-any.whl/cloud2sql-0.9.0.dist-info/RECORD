@@ -1,0 +1,10 @@
+cloud2sql/__init__.py,sha256=Fm3oTfdXZuvWY3pzSPf_OfLljkNu7nOtozRWW9QRjrg,476
+cloud2sql/__main__.py,sha256=5Mc4nHektmU1_7sytUj24P9u1HCyM92P392hPOENMA0,3497
+cloud2sql/collect.py,sha256=6m_-hhl5Hbj4kmmm4c0zcZKSnIUglC7N0NcvcbPieGc,8861
+cloud2sql/util.py,sha256=5ljMdKXJuFOVBrZoO2tdA2Or1vvC-Sxxr3NVQn-0HHI,3075
+cloud2sql-0.9.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cloud2sql-0.9.0.dist-info/METADATA,sha256=lWaYl92scaSJIHgngnXmCnk_sTMDlIoZZ6zR3zySpRI,7086
+cloud2sql-0.9.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cloud2sql-0.9.0.dist-info/entry_points.txt,sha256=1WtVhQkWINENB3pEb9PLMZrnVggKe_xzFHM0NKHk5JE,54
+cloud2sql-0.9.0.dist-info/top_level.txt,sha256=dDilfeSpIQW2QJujBhyXIJOMBIkm9DmJRCJO_Kgb-6s,10
+cloud2sql-0.9.0.dist-info/RECORD,,
