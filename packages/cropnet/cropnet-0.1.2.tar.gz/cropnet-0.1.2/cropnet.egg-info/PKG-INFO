@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cropnet
+Version: 0.1.2
+Summary: A Python package for the CropNet dataset
+Author: Anonymous AI4Science
+Author-email: anonymous.ai4science@gmail.com
+License: Free for non-commercial use
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
