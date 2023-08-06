@@ -1,0 +1,16 @@
+bob/__init__.py,sha256=Gg-7B5GGEitxEiXVgj2SLHmS4AhRRYyvhfzeEPyQ0z0,129
+bob/learn/__init__.py,sha256=Gg-7B5GGEitxEiXVgj2SLHmS4AhRRYyvhfzeEPyQ0z0,129
+bob/learn/em/__init__.py,sha256=1p89B1eT9OOgRkRhknrgj6KFpJlPm4kLbdo3nHO-9uM,856
+bob/learn/em/factor_analysis.py,sha256=hxhRccd4fNplEENicIPZxMBf78rYlMLs7EuRKWhBKnk,64905
+bob/learn/em/gmm.py,sha256=ZyuGWI4k7flKLEh3gvTAhblDNu6Sq5-N0K_yqAf39U4,36780
+bob/learn/em/ivector.py,sha256=58DdkzJ0u3g5Q-GL7wTbePoOJAHkZCPRVxdsdV4q44w,11641
+bob/learn/em/kmeans.py,sha256=HxFlxCoqP-URaSZzNnfbuZzA0_X9aoGPCYZrgSuVBmk,14475
+bob/learn/em/linear_scoring.py,sha256=gzK6DL7M2fxIrE2yzjlMy93T0A_apV8vJAXckbKt--M,3170
+bob/learn/em/utils.py,sha256=nfmIfFp2if5XzK3ZKcP38msC1yhCyox_L1uW0xFzygk,917
+bob/learn/em/wccn.py,sha256=nJomiRAs2H7gzLH7oieyFmOBjnhFbjNbmOrMg5iWQgg,3100
+bob/learn/em/whitening.py,sha256=o5Vlw7h3_3qvTw_gv3lUAsVZmp_d-B17k41A6uLnH9s,2526
+bob.learn.em-3.3.0.dist-info/LICENSE,sha256=MTjaX89IkioKwGsAQXsIUB93gergbiFrKXJ8i9_K9ps,1541
+bob.learn.em-3.3.0.dist-info/METADATA,sha256=gP2qf1Mta7iOPDxvdKiRMd9EqXj_ToJs8iRgLXF3bB8,3858
+bob.learn.em-3.3.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+bob.learn.em-3.3.0.dist-info/top_level.txt,sha256=GhcHu1Tl-03t3Rnwety08eAiynh548g0jajU-klq6OI,4
+bob.learn.em-3.3.0.dist-info/RECORD,,
