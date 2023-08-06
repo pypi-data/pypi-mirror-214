@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fxwarriorspdf/__init__.py
+fxwarriorspdf/pdf2image.py
+fxwarriorspdf/pdf2text.py
+fxwarriorspdf.egg-info/PKG-INFO
+fxwarriorspdf.egg-info/SOURCES.txt
+fxwarriorspdf.egg-info/dependency_links.txt
+fxwarriorspdf.egg-info/top_level.txt
