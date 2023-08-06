@@ -1,0 +1,12 @@
+rapidocr_web/__init__.py,sha256=JmySAOGOURKrbjdme2lVdTbDKaclr00IBKeVIa0_n30,73
+rapidocr_web/ocrweb.py,sha256=2YUp91COzzuJW5_XKwfng0-9VwtGXeRSOA3Kw_DAyfg,1264
+rapidocr_web/task.py,sha256=UVgdPds1NeZTtBnh_hjZiULUKOs_J1cU_hcQDm1Y5ts,3043
+rapidocr_web/static/css/favicon.ico,sha256=CBE1NF6iiIax8WqZVR-vPRaPTcmWjlTWsk1fzEbSd8c,16958
+rapidocr_web/static/css/main.css,sha256=2HcVvoa5oSQONnuC6IjjmBd127Jv9Y5EFJGy32nTEZk,2065
+rapidocr_web/static/js/jquery-3.0.0.min.js,sha256=JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0,86341
+rapidocr_web/templates/index.html,sha256=xUe3Xce289Of4XTfeafPTX5JMRsOTdgv2Md5EQwxm48,8202
+rapidocr_web-0.1.7.dist-info/METADATA,sha256=h1DtauYNAwI-zqCb9P8zzL46hN9wY1kmT8Dxahb9t34,2008
+rapidocr_web-0.1.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rapidocr_web-0.1.7.dist-info/entry_points.txt,sha256=ivlPn9JP6ziblPQyG6N4H4cXfrJZ9FD5rvSYhnEc8cU,59
+rapidocr_web-0.1.7.dist-info/top_level.txt,sha256=dArjxF38AFvTF1Ae-mGaxBhwnETUJ4sLF_nQ93HC5A4,13
+rapidocr_web-0.1.7.dist-info/RECORD,,
