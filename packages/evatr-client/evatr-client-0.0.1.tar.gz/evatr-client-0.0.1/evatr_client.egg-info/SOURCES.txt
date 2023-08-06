@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+evatr-client/__init__.py
+evatr-client/evatr_client.py
+evatr-client/status_codes.py
+evatr-client/util.py
+evatr_client.egg-info/PKG-INFO
+evatr_client.egg-info/SOURCES.txt
+evatr_client.egg-info/dependency_links.txt
+evatr_client.egg-info/requires.txt
+evatr_client.egg-info/top_level.txt
