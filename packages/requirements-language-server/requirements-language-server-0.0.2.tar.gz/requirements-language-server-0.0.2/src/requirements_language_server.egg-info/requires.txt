@@ -1,0 +1,8 @@
+jinja2
+pip-cache
+pip-tools
+platformdirs
+pygls
+
+[dev]
+pytest-cov
