@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: stock-downloader
+Version: 0.3
+Author: Adam Sierakowski
+License-File: LICENSE
+Requires-Dist: yfinance
+
