@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: emailalert
+Version: 1.1.5
+Summary: A simple library for sending alert email with attachmment
+Author: ks lim
+Author-email: kianseng.lim@sony.com
+
