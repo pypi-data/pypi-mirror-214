@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/Oasys.D3PLOT.egg-info/PKG-INFO
+src/Oasys.D3PLOT.egg-info/SOURCES.txt
+src/Oasys.D3PLOT.egg-info/dependency_links.txt
+src/Oasys.D3PLOT.egg-info/requires.txt
+src/Oasys.D3PLOT.egg-info/top_level.txt
+src/Oasys/D3PLOT/__init__.py
+src/Oasys/D3PLOT/placeholder.py
