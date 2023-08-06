@@ -1,0 +1,2 @@
+[console_scripts]
+pyquirc_decode = quirc.__main__:main

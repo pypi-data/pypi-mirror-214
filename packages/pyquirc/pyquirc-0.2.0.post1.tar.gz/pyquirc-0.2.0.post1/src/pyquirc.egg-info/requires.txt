@@ -1,0 +1,6 @@
+
+[tests]
+pytest
+qrcode
+pillow
+numpy
