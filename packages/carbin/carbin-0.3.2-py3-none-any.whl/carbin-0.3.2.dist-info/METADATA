@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: carbin
+Version: 0.3.2
+Summary: Cmake package retrieval
+Home-page: https://github.com/gottingen/carbin
+Author: Jeff li
+Author-email: bohuli2048@gmial.com
+License: boost
+License-File: LICENSE
+Requires-Dist: click (>=6.6)
+Requires-Dist: six (>=1.10)
+
