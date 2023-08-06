@@ -1,0 +1,15 @@
+nwebclient/__init__.py,sha256=_0zU0t6DgxIaHJB6UpH71MHPjARsBG2-EiFggqpKhvM,10413
+nwebclient/__main__.py,sha256=e1vKU9FQ9dFOSeB0GhnP8jxg183bihrT87Lq1TLDhrI,2584
+nwebclient/crypt.py,sha256=mxPU7NiQAnM8HG3MDvlRPzSm8xUGPwdb1_5jNUHCjtM,3671
+nwebclient/image_classification.py,sha256=2zE7NRp9PBJ-NHaOkA2n5zF4dZSPwclzDiBXVW2P00Y,5653
+nwebclient/nlp.py,sha256=jVi0VYmK32S_DaSmLCDzD6id2u3lmlOotwPwgEpGyhA,3545
+nwebclient/sd.py,sha256=8lry4T9SVfFoKWsM51PRUjZKrWBy0hkAVJfvJ24Uwd0,16618
+nwebclient/sdb.py,sha256=l3yNJOUQbY3k5l5TUK1HUokCJzf-aBcHRQWOpGZ97TU,8878
+nwebclient/ticker.py,sha256=1OmBUo5DArPvDRMHFe2FUPdxaJwsv4m59dM3YO6NYCM,4114
+nwebclient/ws.py,sha256=fR-46P7UTJ3b9Y71DSxwjju_E4bqeW80MnLY8H0c7lI,1740
+nwebclient-1.0.156.dist-info/LICENSE,sha256=iHACckj_MvncI0OeRMm4p6Ys2dR1bOdS4zfSLXM56ZQ,1060
+nwebclient-1.0.156.dist-info/METADATA,sha256=tmPZ4Ru4tMMragijjA_-ntBG8Yl98Xjfv0osJLt75h4,1160
+nwebclient-1.0.156.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nwebclient-1.0.156.dist-info/entry_points.txt,sha256=1eKdb8uwjBQ5qPR0k8QF8Pzm034rWK-9MQ9px2Stks4,143
+nwebclient-1.0.156.dist-info/top_level.txt,sha256=b1THmIuzXmSSCrttonQpkHH41RvQJSwxLKeJfbG44xQ,11
+nwebclient-1.0.156.dist-info/RECORD,,
