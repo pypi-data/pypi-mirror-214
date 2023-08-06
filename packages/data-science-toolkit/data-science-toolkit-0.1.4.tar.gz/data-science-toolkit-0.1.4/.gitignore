@@ -1,0 +1,11 @@
+venv
+.idea
+*.pyc
+__pycache__/
+*.csv
+**/data
+*.ipynb_checkpoints
+*.vscode
+dist/
+local_kitchen.py
+data_science_toolkit.egg-info/
