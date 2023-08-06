@@ -1,0 +1,13 @@
+shaho/Device.py,sha256=3lOLdSKMl6Y0TjstoZYHkqgvxMoHcIqOMw8_YcpYCMg,443
+shaho/WebAdress.py,sha256=qHLVR3y3QToGtV0boOki40EQer87hJ7f60OOtuz_DNk,1311
+shaho/__init__.py,sha256=esRPFvd9ZcaLtdaQeuCiA0VZGaaa_lCGYYFym0_o00s,14
+shaho/clines_ph_web.py,sha256=mCWDbY4d3QIOd4qbKo1GT0v1bBmSibF6y4bDnvNFUBc,375
+shaho/copyright.py,sha256=xXSbULLpYN3-4hickaUKLEGGaZBAsD9QKTiPook66MA,52
+shaho/encoder.py,sha256=vbXn_TIr5FKvUsRMQOibE8JmXV55SB-21eo0j2hJcTU,1954
+shaho/mb.py,sha256=XkIO54IS0csKqch-FI6gT9Gl8mgJHbSnRuorYUX9l3M,77456
+shaho/send_server.py,sha256=eNr24cZgzfJWeXlwgF0zDvcNKEo4gYt2JPhtb2x299w,293
+shaho-1.0.0.dist-info/LICENCE,sha256=GrXuW9qQOj-r-jSRBuyUQRnPuYq6BGoF_d5vngz-sj4,1081
+shaho-1.0.0.dist-info/METADATA,sha256=xieGgBpwt2zB0Ekhpg7mPlb3_gSZ2N0K7fgIb8x4WsI,901
+shaho-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+shaho-1.0.0.dist-info/top_level.txt,sha256=GGaHgUewW_RhXC1eSjfSTCBfdGI1rVokBHHr8QEedF0,6
+shaho-1.0.0.dist-info/RECORD,,
