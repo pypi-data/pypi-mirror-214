@@ -1,0 +1,9 @@
+agentai/__init__.py,sha256=jbRfPvDa3IARGm1G9UXSdq685C2B0I4TIWffvXClOQI,264
+agentai/api.py,sha256=rFgQBnNhsuinPb-ONgbm4QwgM9uCiZX9uBqX7m-iou8,3305
+agentai/conversation.py,sha256=CyoG3lUJb5kib-KXqbf9nBKjpYDUb4tSFpGd4AfuH54,946
+agentai/openai_function.py,sha256=EZZjtdvI6jHPLU54AK6CM_JfLREcT8n0ea1IjdVSbVw,5291
+agentai/sqlite_utils.py,sha256=5z6iKtWF5Px7Y2HG-GRjgm2u6qxFMMHcUwMdY7IU4Yo,2039
+agentai-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+agentai-0.0.3.dist-info/METADATA,sha256=nUqJuUdRuz-JQdaxRh73hb4Cd11Y3OdgpB2ZdvEalTw,7637
+agentai-0.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+agentai-0.0.3.dist-info/RECORD,,
