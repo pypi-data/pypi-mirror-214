@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+fernanda.egg-info/PKG-INFO
+fernanda.egg-info/SOURCES.txt
+fernanda.egg-info/dependency_links.txt
+fernanda.egg-info/top_level.txt
+progra/__init__.py
+progra/ahorcado.py
