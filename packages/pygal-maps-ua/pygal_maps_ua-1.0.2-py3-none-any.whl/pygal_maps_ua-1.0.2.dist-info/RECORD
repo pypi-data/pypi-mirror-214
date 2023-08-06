@@ -1,0 +1,12 @@
+pygal_maps_ua/UKR-ADM1_simplified.Svg,sha256=3KmyvLiCUDIwL0AqTQ7-X2bhi02HXB557VJ-v3a7fpg,422143
+pygal_maps_ua/UKR-ADM1_simplified_ordlo.Svg,sha256=d9IH-3tmnAfCwXosz_JAtd0g-hLGTdgoVHEvr5GAPL8,282968
+pygal_maps_ua/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygal_maps_ua/maps.py,sha256=wlBKH_yz08JZOXzm7KtI10cQzaIf36PprQVdKSYqmLE,4839
+pygal_maps_ua/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygal_maps_ua/test/test_maps.py,sha256=cfV5cJcbogBY1YUxdUBk8VcrvvXPN1qsmohiRLmMNWM,1093
+pygal_maps_ua-1.0.2.dist-info/LICENSE,sha256=uY-7N9tbI7xc_c0WeTIGpacSCnsB91N05eCIg3bkaRw,35140
+pygal_maps_ua-1.0.2.dist-info/METADATA,sha256=ObM0Cy15u8_HHyqq6XarcQ98C6_qsMKfoLjGMnXdkwc,8638
+pygal_maps_ua-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pygal_maps_ua-1.0.2.dist-info/entry_points.txt,sha256=AOE5rESh_wVBBlePZKp5hA4tRc1Bgqip9SDso8uHnW4,95
+pygal_maps_ua-1.0.2.dist-info/top_level.txt,sha256=8ZTyG-sVQMb6iqple_jm5ssvtg0EGuyUUqq2n-SbyQA,14
+pygal_maps_ua-1.0.2.dist-info/RECORD,,
