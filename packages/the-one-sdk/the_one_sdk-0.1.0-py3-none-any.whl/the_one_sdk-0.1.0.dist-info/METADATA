@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: the-one-sdk
+Version: 0.1.0
+Summary: LOTR SDK for interacting with the Lord of the Rings API
+Home-page: UNKNOWN
+Author: Olayiwola Ayoola
+Author-email: olusameze@email.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
