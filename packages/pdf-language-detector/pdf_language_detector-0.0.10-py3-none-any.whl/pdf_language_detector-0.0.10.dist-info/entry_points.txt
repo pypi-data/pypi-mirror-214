@@ -1,0 +1,4 @@
+[console_scripts]
+pdf-language-detector=src.cli:app
+pld=src.cli:app
+
