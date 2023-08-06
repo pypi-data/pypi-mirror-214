@@ -1,0 +1,12 @@
+ssg_sea/VERSION,sha256=ViNosgpkvpVlG7gka3Qg9_zlVTjf-Zmu-qeGYqFNDTk,5
+ssg_sea/__init__.py,sha256=cKVa4Dd7hsq7tLfiyttMYkUZDfVaHqj9NLGYdYd94LA,144
+ssg_sea/extract_skills.py,sha256=tntcPQx6pqpieOJAozKcQwtLrpY6BAFgzZzO2DAcyfA,8029
+ssg_sea/params.yaml,sha256=TvKIpNXmY99eOmFJ6ES6GysxaZkpLnQ0hL9zRjNB6mQ,164
+ssg_sea/utils.py,sha256=eMVPRAnwqibO9IOQBn0lqfy4aTv8_RSozcqw1VSpU_M,6952
+ssg_sea/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssg_sea/config/core.py,sha256=LsYnqDRFybWapfVI4lGNldn6pdTC0XgHdOrHCfTLe2Q,488
+ssg_sea/data/pickle.pkl,sha256=IFxtaN96wMPC66Zy5lB-l2wJM62ywJyZMp6wo29qks8,964604
+ssg_sea-1.6.0.dist-info/METADATA,sha256=go4YhqevPzf_KcfQHr8poObonkLuDwILhIeIngsutGo,1059
+ssg_sea-1.6.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ssg_sea-1.6.0.dist-info/top_level.txt,sha256=zqqSqd9wZU2ddub1hA9DBWuBWxfOsaWOtZY9O1g7AMY,8
+ssg_sea-1.6.0.dist-info/RECORD,,

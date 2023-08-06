@@ -1,0 +1,10 @@
+extract_skills:
+  model_version: 1.6.0
+
+api:
+  api_version: 0.0.2
+
+tests:
+  test_file: data/test_course_data.csv
+  text_column: Course Description
+  test_index: 28
