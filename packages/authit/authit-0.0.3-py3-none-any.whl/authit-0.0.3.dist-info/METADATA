@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: authit
+Version: 0.0.3
+Summary: An identity platform
+Author: Muthu
+Author-email: contact@muthupandian.in
+Description-Content-Type: text/markdown
+Requires-Dist: bcrypt
+
+# authr
+Identity platform
