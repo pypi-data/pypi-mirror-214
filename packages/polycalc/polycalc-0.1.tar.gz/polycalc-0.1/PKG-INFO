@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: polycalc
+Version: 0.1
+Summary: A small program that does basic calculus operations with polynomials.
+Home-page: https://github.com/gellison321/polycalc
+Author: Grant Ellison
+Author-email: gellison321@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/gellison321/polycalc/archive/refs/tags/0.2.tar.gz
+Description: UNKNOWN
+Keywords: polynomial,calculus,calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9

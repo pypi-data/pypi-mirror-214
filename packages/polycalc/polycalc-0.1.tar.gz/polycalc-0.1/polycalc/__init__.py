@@ -1,0 +1,1 @@
+from polycalc.polynomial import Polynomial
