@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "baekjoonapi"
+version = "0.2.4"
+description = "BaekjoonAPI for Python"
+repository = "https://github.com/misilelab/baekjoonapi"
+authors = ["MisileLaboratory"]
+license = "MisileLab License"
+readme = "README.md"
+packages = [{ include = "bojapi" }]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+requests = "2.31.0"
+bs4 = "0.0.1"
+lxml = "4.9.2"
+random-user-agent = "1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
