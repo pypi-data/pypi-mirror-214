@@ -1,0 +1,5 @@
+setup.py
+src/TkBook.egg-info/PKG-INFO
+src/TkBook.egg-info/SOURCES.txt
+src/TkBook.egg-info/dependency_links.txt
+src/TkBook.egg-info/top_level.txt
