@@ -1,0 +1,11 @@
+README.md
+setup.py
+tessti/__init__.py
+tessti/main.py
+tessti/scheduler.py
+tessti.egg-info/PKG-INFO
+tessti.egg-info/SOURCES.txt
+tessti.egg-info/dependency_links.txt
+tessti.egg-info/not-zip-safe
+tessti.egg-info/requires.txt
+tessti.egg-info/top_level.txt
