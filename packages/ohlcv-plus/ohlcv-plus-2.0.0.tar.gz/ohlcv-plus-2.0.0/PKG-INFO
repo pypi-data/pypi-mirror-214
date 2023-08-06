@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ohlcv-plus
+Version: 2.0.0
+Summary: Crypto OHLCV data downloader.
+Home-page: https://github.com/Shaft-3796/OHLCV-Plus
+Download-URL: https://github.com/Shaft-3796/OHLCV-Plus/archive/refs/tags/2.0.0.tar.gz
+Author: Shaft
+License-File: LICENSE
