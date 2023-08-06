@@ -1,0 +1,13 @@
+sponsorblock/__init__.py,sha256=C54cAIzKaZnfylNchMaDMQaZvlX3cV7h7dpcGuNQnL0,474
+sponsorblock/__main__.py,sha256=Er5H1RE3iU4oFLBiCHPhSdTAQ2G8vfU_HTTXt4E-cmU,1934
+sponsorblock/client.py,sha256=u2TqQyqZOdhazh84glJvHIEkLOeY5Y2uP91N6A7ZLaM,40631
+sponsorblock/database.py,sha256=PkiBuPRPWoTkj0FR8feitTaHLqV59InyB6mRciRAl3w,45
+sponsorblock/errors.py,sha256=UO4wmPFgYvFdoLQFnVvX8cu5CHLcvRm8_BxPNqI9Uno,1481
+sponsorblock/models.py,sha256=vUM40Rq7Umdw_M8GDW8GN3Ba7QeaoxFmPCxBlnDs5hY,10444
+sponsorblock/utils.py,sha256=-UaKa5lUVWeokjxhRLZ7ZGX1X_cyTpUoDbR7gxTfHXk,4023
+sponsorblock.py-0.2.3.dist-info/LICENSE,sha256=zpI9t2aXOA3b3AVrFFPg3Yl97zWG9A5hwKNROhQAkzA,1089
+sponsorblock.py-0.2.3.dist-info/METADATA,sha256=kJ0TLwNunoZ5n32p7Ei9fDyLD-UMPvHIOYL0LjuK8_w,8040
+sponsorblock.py-0.2.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sponsorblock.py-0.2.3.dist-info/entry_points.txt,sha256=4WpyBPdnC3sm-yLcyi048_gl2NoB6RiymBAqAmfp0yo,59
+sponsorblock.py-0.2.3.dist-info/top_level.txt,sha256=rhADjNgMw3yTx0DRbnh8jM-mHseOUOt8E4_gv4LVGDA,13
+sponsorblock.py-0.2.3.dist-info/RECORD,,
