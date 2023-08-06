@@ -1,0 +1,15 @@
+datadm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadm/agent.py,sha256=gwls9GDcT5KV2ihLVGoLncVfVWN1TIWQsIqVhN5xtCI,3360
+datadm/app.py,sha256=poUABQvsv8zkPeCxxD7knFU9X9DpoiT8-ZZWWZT6V-Q,14435
+datadm/backend.py,sha256=4ZMbT38CL0RnAIaZzC9co3ZbxT3uvhM4b3pbHHknKJ4,3071
+datadm/conversation.py,sha256=3vOEv-itaucvlFHM3vLOAUG5murSt5i1JCN6mxdjxz0,4763
+datadm/repl.py,sha256=Ry3TmN57mWWOKRFAc-qxGyQDuh29wFwbijvi7EhRxIU,7161
+datadm/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadm/agents/baseline.py,sha256=aZmVrLQw3JSmk872zI_Y-tR00q2oSSBAj9KrWPmTK-o,2165
+datadm/agents/cotmultistep.py,sha256=DwzW6JahOHpZvQI7rAXHrVlyoiAE7r8kJYYJDrICM_A,2674
+datadm-0.3.0.dist-info/LICENSE,sha256=gSnOLapiMYnt4aIKENIMxy5MqfDXZkud5e0ux4CIYaA,1073
+datadm-0.3.0.dist-info/METADATA,sha256=ILqZOFUkOAqegJ4LpwplymoCZS5k2XVS-2CUgPN9CRg,6047
+datadm-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+datadm-0.3.0.dist-info/entry_points.txt,sha256=PZgR-IfdyF_xYjDalOcBA6Y--49j4_MWUrTqmjhRSD0,43
+datadm-0.3.0.dist-info/top_level.txt,sha256=5suXArekWNAyEixP1pv7c7cJe7_s95DO2CK3yJGDhMw,7
+datadm-0.3.0.dist-info/RECORD,,
