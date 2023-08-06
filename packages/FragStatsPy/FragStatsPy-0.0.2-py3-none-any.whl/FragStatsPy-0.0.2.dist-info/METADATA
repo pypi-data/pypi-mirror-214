@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: FragStatsPy
+Version: 0.0.2
+Summary: A Python wrapper for Fragstats.
+Author-email: Scott Lawson <scott.lawson@uvm.edu>
+License: MIT License
+        
+        Copyright (c) 2023 Scott Lawson - UVM
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/sclaw/FragStatsPy
+Keywords: Landsacape metrics,spatial statistics,fragstats
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: gdal ; extra == 'dev'
+
+<img src="images/main.JPG" alt= “FragStatsPy”>
+
+
+## Python Wrapper for Fragstats
+
+FragStatsPy a wrapper to [Fragstats](https://fragstats.org/) that allows for automated model setup and execution.  While Fragstats currently provides a command-line tool for model execution, it does not provide command-line tools for model setup.  FragStatsPy begins to fill that gap by providing functions to generate and manipulate Fragstats models from within Python.
+
+Current functionality includes
+* Model database generation
+* Loading landscape layers
+* Setting the output base path
+* Defining a sampling strategy
+* Linking user-defined tiles
+* A general purpose SQL editor to allow for complete model manipulation (for savvy users)
+* Access to the Fragstats native run commands (command-line)
+
+## Example Code
+
+The code below will setup and run a Fragstats model to calculate the mean and standard deviation of patch sizes per user-defined region.
+```python
+import src.frag_model as fspy
+
+model = fspy.FragModel('model_py.fca')
+model.set_output_base_path('model_outputs')
+model.load_landscape_layer("geomorphic_patches.tif")
+model.set_user_provided_tiles("regions.tif")
+model.set_sampling_strategy(strategy='user_tiles', landscape=True)
+model.toggle_metric(level='l', metric='AREA', stat='MN', on=True)
+model.toggle_metric(level='l', metric='AREA', stat='SD', on=True)
+model.run_model()
+results = model.get_results()
+```
