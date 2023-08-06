@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Cryptode
+Version: 1.1.0
+Summary: A cryptography framework with 50+ algorithms
+Author: Arya Praneil Pritesh
+Author-email: aryapraneil@gmail.com
+Requires-Dist: argon2-cffi (==21.3.0)
+Requires-Dist: argon2-cffi-bindings (==21.2.0)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: pywin32 (==305)
+Requires-Dist: pywin32-ctypes (==0.2.0)
+Requires-Dist: bcrypt (==4.0.1)
+Requires-Dist: numpy (==1.22.1)
+
