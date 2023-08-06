@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/yud102023.egg-info/PKG-INFO
+src/yud102023.egg-info/SOURCES.txt
+src/yud102023.egg-info/dependency_links.txt
+src/yud102023.egg-info/top_level.txt
