@@ -1,0 +1,2 @@
+[console_scripts]
+webuipy = webuipy.__main__:main

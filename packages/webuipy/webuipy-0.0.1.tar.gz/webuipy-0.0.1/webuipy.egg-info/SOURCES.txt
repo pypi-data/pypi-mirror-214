@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+webuipy/__init__.py
+webuipy/__main__.py
+webuipy/config.cfg
+webuipy/viewer.py
+webuipy.egg-info/PKG-INFO
+webuipy.egg-info/SOURCES.txt
+webuipy.egg-info/dependency_links.txt
+webuipy.egg-info/entry_points.txt
+webuipy.egg-info/requires.txt
+webuipy.egg-info/top_level.txt
