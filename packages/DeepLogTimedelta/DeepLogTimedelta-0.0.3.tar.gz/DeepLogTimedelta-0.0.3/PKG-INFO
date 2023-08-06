@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: DeepLogTimedelta
+Version: 0.0.3
+Summary: a deeplog implementation for timedelta
+Home-page: https://github.com/sasniy/DeeplogTimedelta
+Author: Rustam Zhientaev
+License: MIT
