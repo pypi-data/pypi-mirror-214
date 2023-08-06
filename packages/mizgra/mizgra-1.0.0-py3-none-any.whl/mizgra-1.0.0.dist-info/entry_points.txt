@@ -1,0 +1,2 @@
+[console_scripts]
+mizgra = mizgra.__main__:main

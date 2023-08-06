@@ -1,0 +1,15 @@
+mizgra/__init__.py,sha256=NsrHJnPmzS2mLgG20MJ7FLodNbIJr9k0kBih4i8e-g8,411
+mizgra/__main__.py,sha256=NobifE00q5E9CHDKih5sShhcQECdQIFI08wLldfTkjw,25325
+mizgra/config.py,sha256=Nf2z37H_AJENePdU2XLw1i1eWcwEHARRzVsriS9S4LM,2449
+mizgra/outputs/__init__.py,sha256=6DcCpFZUITHqvOsCPUDwEebsvUXw-s2oecbHN36ZVXs,56
+mizgra/outputs/graphml.py,sha256=CqSzLBqcEABaPpBaoSayMYeUv9BK4i5EI4MQxIR8R-k,2603
+mizgra/outputs/output_format.py,sha256=S9wYmfhMknLhFW1kP7ynOevL2_TV423bBDOdjbz55c8,663
+mizgra/outputs/yarspg.py,sha256=380Elb0_-TN-c5vSwHRcJL9A3KnkKoEhNPzlbWRlgZE,1410
+mizgra/resources/metadata.xml,sha256=NvS_EIbA55fQp4w6crewGq90BP8C36MJWmVRjl1cwTs,1085
+mizgra/resources/rdf_data.nt,sha256=nxfqT4Kgf0zsBrpTLiOO9qz4_bnLnNuf63iAHrNd6-Q,1467169
+mizgra-1.0.0.dist-info/LICENSE,sha256=Lg9txkFyxA31tlKeCnUmbWMdp80X_cGa1HbDADcLWo8,1074
+mizgra-1.0.0.dist-info/METADATA,sha256=vct222AFbxhc5gHtF4-pnhtmTAKqseb8iT6SCfgAiTU,11662
+mizgra-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mizgra-1.0.0.dist-info/entry_points.txt,sha256=yVgF8Ni3Jwovg0qvGKGSLwHhn6lmXmzWGAdLseC_Lus,48
+mizgra-1.0.0.dist-info/top_level.txt,sha256=TFV6pu7pNEGABPwWrK1MELOg0nBxCKqH-G2PlHkTMAw,7
+mizgra-1.0.0.dist-info/RECORD,,
