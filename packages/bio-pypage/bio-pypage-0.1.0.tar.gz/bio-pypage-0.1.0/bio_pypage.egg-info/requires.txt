@@ -1,0 +1,12 @@
+numpy
+pandas
+numba
+tqdm
+scipy
+sphinx
+numpydoc
+pydata-sphinx-theme
+sphinx-autodoc-typehints
+pytest
+pybiomart
+matplotlib
