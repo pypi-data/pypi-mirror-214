@@ -1,0 +1,11 @@
+setuptools_scm
+
+[:python_version >= "3.6"]
+importlib-metadata
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[tests]
+pytest>=3.3.0
