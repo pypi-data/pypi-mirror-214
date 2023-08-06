@@ -1,0 +1,8 @@
+kaxi/__init__.py,sha256=x_pJiRPK1FNYiur_sIYDuuWkDvL9hMk0iT13q0LcHAg,74
+kaxi/log.py,sha256=AjmfzgXEvrxDB8OFrDJVP4CExji5th9INjOIo1IgdUU,807
+kaxi/main.py,sha256=FsQ6VKixhc2cVmoCyDbzW1kwZguefrPEcISObR8GjLw,282
+kaxi/runner.py,sha256=GTkwwO0qCy-QxsYgNNjNC-IOM868nRrocfG5I05WbjY,3666
+kaxi-0.1.0.dist-info/METADATA,sha256=zhrSWSVBhjpSNcwweGa3PV58MgzEpfy4YcsGTlz9fzQ,601
+kaxi-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+kaxi-0.1.0.dist-info/entry_points.txt,sha256=XvONG5ACVJnbI5hHolXj_xWz1T-EdFSLeP59EDxQm4w,38
+kaxi-0.1.0.dist-info/RECORD,,
