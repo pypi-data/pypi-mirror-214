@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parsagon/__init__.py,sha256=iGc2whoqcwf266KOLjO4YHNHHXwXm-kbWjp_zKJOB18,46
+parsagon/api.py,sha256=6PiOBFe8Fq9iSiqLw44Uz5xCUS3tkmCw34YzOqGSBzQ,3634
+parsagon/custom_function.py,sha256=oEj28qItaHUnsvLIHD7kg5QL3J3aO6rW6xKKP-H-Drs,770
+parsagon/executor.py,sha256=p5yHyUhqRyE5pihUS5hMLZsWOwbYL1tSWrEmt29M-NA,10607
+parsagon/main.py,sha256=hJfEZuJYXr-tn2hzCm8aLwU2zKFQv2mc0kqQksgFkaQ,5625
+parsagon/settings.py,sha256=07rtqfr6CLZdY_QMP3-3L3r-0FmsciGHZ_A8s6d8z1A,1085
+parsagon/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parsagon-0.6.0.dist-info/METADATA,sha256=PRn_hzHunVZ5au06O6n1Hfh85QDnwWgx1m9ko-JqPtw,2049
+parsagon-0.6.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+parsagon-0.6.0.dist-info/entry_points.txt,sha256=hNAIAzIjC_T2QePdqhzPH_Tel4XKoT3FA2Kf-140Klk,141
+parsagon-0.6.0.dist-info/top_level.txt,sha256=xGJFmxOu0AyQHbFRRB8j6R2WrwpGWPyxtLIPdW9jKA0,18
+parsagon-0.6.0.dist-info/RECORD,,

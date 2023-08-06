@@ -1,0 +1,4 @@
+[console_scripts]
+parsagon-create = parsagon.main:create_cli
+parsagon-detail = parsagon.main:detail_cli
+parsagon-run = parsagon.main:run_cli
