@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: h3r
+Version: 0.1.0
+Summary: H3R wrapper for Python.
+License: MIT
+Author: Danilo Horta
+Author-email: horta@ebi.ac.uk
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cffi
+Description-Content-Type: text/markdown
+
+# h3r-py
+
+H3R wrapper for Python.
+
