@@ -1,0 +1,49 @@
+from ...modular import name
+
+identifier ::= r"[a-zA-Z][a-zA-Z0-9_]*" ;
+
+symbol = r"\[|\]|\{|\}|\(|\)|<|>|\'|\"|=|\||\.|,|;|-|\+|\*|\?|\n|\t|\r|\f|\b"
+ignored = r" |\t|\r|\f|\b"
+newline = "\n"
+
+assign = r"::=|:|="
+optional_op = "?"
+zero_or_more = "*"
+one_or_more = "+"
+except = "-"
+
+# comments
+any_characters = r".*"
+single_line = "#" { any_characters - "\n" } 
+multiline = "(*" { any_characters - "*)" } "*)"
+comment = single_line 
+        | multiline
+
+(* 
+    multiline 
+    comment
+*)
+single_quote_string = "'" { any_characters - "'" } "'"
+double_quote_string = '"' { any_characters - '"' } '"'
+string_literal = single_quote_string | double_quote_string
+regex = "r" string_literal
+
+terminator = ";" | "."
+
+term = "(" rhs ")"
+     | "[" rhs "]"
+     | "{" rhs "}"
+     | string_literal
+     | identifier { "." identifier }
+
+factor = term optional_op
+       | term zero_or_more
+       | term one_or_more
+       | term except term
+       | term
+
+rhs = factor { "|" factor }
+
+rule = identifier assign rhs [ terminator ]
+
+grammar = { comment | rule }

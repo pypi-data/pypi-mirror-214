@@ -1,0 +1,1484 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    GREATER
+    LESS
+
+Grammar
+
+Rule 0     S' -> start
+Rule 1     start -> grammar start
+Rule 2     start -> grammar
+Rule 3     grammar -> comment
+Rule 4     grammar -> import
+Rule 5     grammar -> rule
+Rule 6     grammar -> newline
+Rule 7     newline -> NEWLINE newline
+Rule 8     newline -> NEWLINE
+Rule 9     comment -> COMMENT
+Rule 10    import -> import_statement newline
+Rule 11    import -> import_statement
+Rule 12    import -> from_statement newline
+Rule 13    import -> from_statement
+Rule 14    import_statement -> NAME import_items
+Rule 15    from_statement -> NAME dotted_name NAME ASTERISK
+Rule 16    from_statement -> NAME dotted_name NAME import_items
+Rule 17    dotted_name -> dots name_parts
+Rule 18    dotted_name -> name_parts
+Rule 19    dots -> DOT dots
+Rule 20    dots -> DOT
+Rule 21    name_parts -> NAME DOT name_parts
+Rule 22    name_parts -> NAME
+Rule 23    import_items -> import_name , import_items
+Rule 24    import_items -> import_name
+Rule 25    import_name -> NAME NAME NAME
+Rule 26    import_name -> NAME
+Rule 27    import_items_multiline -> LPAR NEWLINE import_name NEWLINE RPAR
+Rule 28    rule -> NAME ASSIGN rhs terminator
+Rule 29    rule -> NAME ASSIGN rhs
+Rule 30    rhs -> factor NEWLINE VBAR rhs
+Rule 31    rhs -> factor VBAR rhs
+Rule 32    rhs -> factor NEWLINE
+Rule 33    rhs -> factor rhs
+Rule 34    rhs -> factor
+Rule 35    factor -> term OPTIONAL
+Rule 36    factor -> term ASTERISK
+Rule 37    factor -> term PLUS
+Rule 38    factor -> term MINUS term
+Rule 39    factor -> term
+Rule 40    term_group -> factor NEWLINE VBAR term_group
+Rule 41    term_group -> factor VBAR term_group
+Rule 42    term_group -> factor term_group
+Rule 43    term_group -> factor
+Rule 44    term -> LPAR term_group RPAR
+Rule 45    term -> LSQB term_group RSQB
+Rule 46    term -> LBRACE term_group RBRACE
+Rule 47    term -> regex
+Rule 48    term -> string
+Rule 49    term -> name
+Rule 50    regex -> REGEX
+Rule 51    string -> STRING
+Rule 52    name -> NAME
+Rule 53    terminator -> SEMICOLON
+Rule 54    terminator -> DOT
+
+Terminals, with rules where they appear
+
+,                    : 23
+ASSIGN               : 28 29
+ASTERISK             : 15 36
+COMMENT              : 9
+DOT                  : 19 20 21 54
+GREATER              : 
+LBRACE               : 46
+LESS                 : 
+LPAR                 : 27 44
+LSQB                 : 45
+MINUS                : 38
+NAME                 : 14 15 15 16 16 21 22 25 25 25 26 28 29 52
+NEWLINE              : 7 8 27 27 30 32 40
+OPTIONAL             : 35
+PLUS                 : 37
+RBRACE               : 46
+REGEX                : 50
+RPAR                 : 27 44
+RSQB                 : 45
+SEMICOLON            : 53
+STRING               : 51
+VBAR                 : 30 31 40 41
+error                : 
+
+Nonterminals, with rules where they appear
+
+comment              : 3
+dots                 : 17 19
+dotted_name          : 15 16
+factor               : 30 31 32 33 34 40 41 42 43
+from_statement       : 12 13
+grammar              : 1 2
+import               : 4
+import_items         : 14 16 23
+import_items_multiline : 
+import_name          : 23 24 27
+import_statement     : 10 11
+name                 : 49
+name_parts           : 17 18 21
+newline              : 6 7 10 12
+regex                : 47
+rhs                  : 28 29 30 31 33
+rule                 : 5
+start                : 1 0
+string               : 48
+term                 : 35 36 37 38 38 39
+term_group           : 40 41 42 44 45 46
+terminator           : 28
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . start
+    (1) start -> . grammar start
+    (2) start -> . grammar
+    (3) grammar -> . comment
+    (4) grammar -> . import
+    (5) grammar -> . rule
+    (6) grammar -> . newline
+    (9) comment -> . COMMENT
+    (10) import -> . import_statement newline
+    (11) import -> . import_statement
+    (12) import -> . from_statement newline
+    (13) import -> . from_statement
+    (28) rule -> . NAME ASSIGN rhs terminator
+    (29) rule -> . NAME ASSIGN rhs
+    (7) newline -> . NEWLINE newline
+    (8) newline -> . NEWLINE
+    (14) import_statement -> . NAME import_items
+    (15) from_statement -> . NAME dotted_name NAME ASTERISK
+    (16) from_statement -> . NAME dotted_name NAME import_items
+
+    COMMENT         shift and go to state 7
+    NAME            shift and go to state 10
+    NEWLINE         shift and go to state 11
+
+    start                          shift and go to state 1
+    grammar                        shift and go to state 2
+    comment                        shift and go to state 3
+    import                         shift and go to state 4
+    rule                           shift and go to state 5
+    newline                        shift and go to state 6
+    import_statement               shift and go to state 8
+    from_statement                 shift and go to state 9
+
+state 1
+
+    (0) S' -> start .
+
+
+
+state 2
+
+    (1) start -> grammar . start
+    (2) start -> grammar .
+    (1) start -> . grammar start
+    (2) start -> . grammar
+    (3) grammar -> . comment
+    (4) grammar -> . import
+    (5) grammar -> . rule
+    (6) grammar -> . newline
+    (9) comment -> . COMMENT
+    (10) import -> . import_statement newline
+    (11) import -> . import_statement
+    (12) import -> . from_statement newline
+    (13) import -> . from_statement
+    (28) rule -> . NAME ASSIGN rhs terminator
+    (29) rule -> . NAME ASSIGN rhs
+    (7) newline -> . NEWLINE newline
+    (8) newline -> . NEWLINE
+    (14) import_statement -> . NAME import_items
+    (15) from_statement -> . NAME dotted_name NAME ASTERISK
+    (16) from_statement -> . NAME dotted_name NAME import_items
+
+    $end            reduce using rule 2 (start -> grammar .)
+    COMMENT         shift and go to state 7
+    NAME            shift and go to state 10
+    NEWLINE         shift and go to state 11
+
+    grammar                        shift and go to state 2
+    start                          shift and go to state 12
+    comment                        shift and go to state 3
+    import                         shift and go to state 4
+    rule                           shift and go to state 5
+    newline                        shift and go to state 6
+    import_statement               shift and go to state 8
+    from_statement                 shift and go to state 9
+
+state 3
+
+    (3) grammar -> comment .
+
+    COMMENT         reduce using rule 3 (grammar -> comment .)
+    NAME            reduce using rule 3 (grammar -> comment .)
+    NEWLINE         reduce using rule 3 (grammar -> comment .)
+    $end            reduce using rule 3 (grammar -> comment .)
+
+
+state 4
+
+    (4) grammar -> import .
+
+    COMMENT         reduce using rule 4 (grammar -> import .)
+    NAME            reduce using rule 4 (grammar -> import .)
+    NEWLINE         reduce using rule 4 (grammar -> import .)
+    $end            reduce using rule 4 (grammar -> import .)
+
+
+state 5
+
+    (5) grammar -> rule .
+
+    COMMENT         reduce using rule 5 (grammar -> rule .)
+    NAME            reduce using rule 5 (grammar -> rule .)
+    NEWLINE         reduce using rule 5 (grammar -> rule .)
+    $end            reduce using rule 5 (grammar -> rule .)
+
+
+state 6
+
+    (6) grammar -> newline .
+
+    COMMENT         reduce using rule 6 (grammar -> newline .)
+    NAME            reduce using rule 6 (grammar -> newline .)
+    NEWLINE         reduce using rule 6 (grammar -> newline .)
+    $end            reduce using rule 6 (grammar -> newline .)
+
+
+state 7
+
+    (9) comment -> COMMENT .
+
+    COMMENT         reduce using rule 9 (comment -> COMMENT .)
+    NAME            reduce using rule 9 (comment -> COMMENT .)
+    NEWLINE         reduce using rule 9 (comment -> COMMENT .)
+    $end            reduce using rule 9 (comment -> COMMENT .)
+
+
+state 8
+
+    (10) import -> import_statement . newline
+    (11) import -> import_statement .
+    (7) newline -> . NEWLINE newline
+    (8) newline -> . NEWLINE
+
+  ! shift/reduce conflict for NEWLINE resolved as shift
+    COMMENT         reduce using rule 11 (import -> import_statement .)
+    NAME            reduce using rule 11 (import -> import_statement .)
+    $end            reduce using rule 11 (import -> import_statement .)
+    NEWLINE         shift and go to state 11
+
+  ! NEWLINE         [ reduce using rule 11 (import -> import_statement .) ]
+
+    newline                        shift and go to state 13
+
+state 9
+
+    (12) import -> from_statement . newline
+    (13) import -> from_statement .
+    (7) newline -> . NEWLINE newline
+    (8) newline -> . NEWLINE
+
+  ! shift/reduce conflict for NEWLINE resolved as shift
+    COMMENT         reduce using rule 13 (import -> from_statement .)
+    NAME            reduce using rule 13 (import -> from_statement .)
+    $end            reduce using rule 13 (import -> from_statement .)
+    NEWLINE         shift and go to state 11
+
+  ! NEWLINE         [ reduce using rule 13 (import -> from_statement .) ]
+
+    newline                        shift and go to state 14
+
+state 10
+
+    (28) rule -> NAME . ASSIGN rhs terminator
+    (29) rule -> NAME . ASSIGN rhs
+    (14) import_statement -> NAME . import_items
+    (15) from_statement -> NAME . dotted_name NAME ASTERISK
+    (16) from_statement -> NAME . dotted_name NAME import_items
+    (23) import_items -> . import_name , import_items
+    (24) import_items -> . import_name
+    (17) dotted_name -> . dots name_parts
+    (18) dotted_name -> . name_parts
+    (25) import_name -> . NAME NAME NAME
+    (26) import_name -> . NAME
+    (19) dots -> . DOT dots
+    (20) dots -> . DOT
+    (21) name_parts -> . NAME DOT name_parts
+    (22) name_parts -> . NAME
+
+    ASSIGN          shift and go to state 16
+    NAME            shift and go to state 15
+    DOT             shift and go to state 22
+
+    import_items                   shift and go to state 17
+    dotted_name                    shift and go to state 18
+    import_name                    shift and go to state 19
+    dots                           shift and go to state 20
+    name_parts                     shift and go to state 21
+
+state 11
+
+    (7) newline -> NEWLINE . newline
+    (8) newline -> NEWLINE .
+    (7) newline -> . NEWLINE newline
+    (8) newline -> . NEWLINE
+
+  ! shift/reduce conflict for NEWLINE resolved as shift
+    COMMENT         reduce using rule 8 (newline -> NEWLINE .)
+    NAME            reduce using rule 8 (newline -> NEWLINE .)
+    $end            reduce using rule 8 (newline -> NEWLINE .)
+    NEWLINE         shift and go to state 11
+
+  ! NEWLINE         [ reduce using rule 8 (newline -> NEWLINE .) ]
+
+    newline                        shift and go to state 23
+
+state 12
+
+    (1) start -> grammar start .
+
+    $end            reduce using rule 1 (start -> grammar start .)
+
+
+state 13
+
+    (10) import -> import_statement newline .
+
+    COMMENT         reduce using rule 10 (import -> import_statement newline .)
+    NAME            reduce using rule 10 (import -> import_statement newline .)
+    NEWLINE         reduce using rule 10 (import -> import_statement newline .)
+    $end            reduce using rule 10 (import -> import_statement newline .)
+
+
+state 14
+
+    (12) import -> from_statement newline .
+
+    COMMENT         reduce using rule 12 (import -> from_statement newline .)
+    NAME            reduce using rule 12 (import -> from_statement newline .)
+    NEWLINE         reduce using rule 12 (import -> from_statement newline .)
+    $end            reduce using rule 12 (import -> from_statement newline .)
+
+
+state 15
+
+    (25) import_name -> NAME . NAME NAME
+    (26) import_name -> NAME .
+    (21) name_parts -> NAME . DOT name_parts
+    (22) name_parts -> NAME .
+
+  ! shift/reduce conflict for NAME resolved as shift
+  ! shift/reduce conflict for NAME resolved as shift
+    NAME            shift and go to state 24
+    ,               reduce using rule 26 (import_name -> NAME .)
+    NEWLINE         reduce using rule 26 (import_name -> NAME .)
+    COMMENT         reduce using rule 26 (import_name -> NAME .)
+    $end            reduce using rule 26 (import_name -> NAME .)
+    DOT             shift and go to state 25
+
+  ! NAME            [ reduce using rule 26 (import_name -> NAME .) ]
+  ! NAME            [ reduce using rule 22 (name_parts -> NAME .) ]
+
+
+state 16
+
+    (28) rule -> NAME ASSIGN . rhs terminator
+    (29) rule -> NAME ASSIGN . rhs
+    (30) rhs -> . factor NEWLINE VBAR rhs
+    (31) rhs -> . factor VBAR rhs
+    (32) rhs -> . factor NEWLINE
+    (33) rhs -> . factor rhs
+    (34) rhs -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    rhs                            shift and go to state 27
+    factor                         shift and go to state 28
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 17
+
+    (14) import_statement -> NAME import_items .
+
+    NEWLINE         reduce using rule 14 (import_statement -> NAME import_items .)
+    COMMENT         reduce using rule 14 (import_statement -> NAME import_items .)
+    NAME            reduce using rule 14 (import_statement -> NAME import_items .)
+    $end            reduce using rule 14 (import_statement -> NAME import_items .)
+
+
+state 18
+
+    (15) from_statement -> NAME dotted_name . NAME ASTERISK
+    (16) from_statement -> NAME dotted_name . NAME import_items
+
+    NAME            shift and go to state 38
+
+
+state 19
+
+    (23) import_items -> import_name . , import_items
+    (24) import_items -> import_name .
+
+    ,               shift and go to state 39
+    NEWLINE         reduce using rule 24 (import_items -> import_name .)
+    COMMENT         reduce using rule 24 (import_items -> import_name .)
+    NAME            reduce using rule 24 (import_items -> import_name .)
+    $end            reduce using rule 24 (import_items -> import_name .)
+
+
+state 20
+
+    (17) dotted_name -> dots . name_parts
+    (21) name_parts -> . NAME DOT name_parts
+    (22) name_parts -> . NAME
+
+    NAME            shift and go to state 41
+
+    name_parts                     shift and go to state 40
+
+state 21
+
+    (18) dotted_name -> name_parts .
+
+    NAME            reduce using rule 18 (dotted_name -> name_parts .)
+
+
+state 22
+
+    (19) dots -> DOT . dots
+    (20) dots -> DOT .
+    (19) dots -> . DOT dots
+    (20) dots -> . DOT
+
+    NAME            reduce using rule 20 (dots -> DOT .)
+    DOT             shift and go to state 22
+
+    dots                           shift and go to state 42
+
+state 23
+
+    (7) newline -> NEWLINE newline .
+
+    COMMENT         reduce using rule 7 (newline -> NEWLINE newline .)
+    NAME            reduce using rule 7 (newline -> NEWLINE newline .)
+    NEWLINE         reduce using rule 7 (newline -> NEWLINE newline .)
+    $end            reduce using rule 7 (newline -> NEWLINE newline .)
+
+
+state 24
+
+    (25) import_name -> NAME NAME . NAME
+
+    NAME            shift and go to state 43
+
+
+state 25
+
+    (21) name_parts -> NAME DOT . name_parts
+    (21) name_parts -> . NAME DOT name_parts
+    (22) name_parts -> . NAME
+
+    NAME            shift and go to state 41
+
+    name_parts                     shift and go to state 44
+
+state 26
+
+    (52) name -> NAME .
+
+    OPTIONAL        reduce using rule 52 (name -> NAME .)
+    ASTERISK        reduce using rule 52 (name -> NAME .)
+    PLUS            reduce using rule 52 (name -> NAME .)
+    MINUS           reduce using rule 52 (name -> NAME .)
+    NEWLINE         reduce using rule 52 (name -> NAME .)
+    VBAR            reduce using rule 52 (name -> NAME .)
+    LPAR            reduce using rule 52 (name -> NAME .)
+    LSQB            reduce using rule 52 (name -> NAME .)
+    LBRACE          reduce using rule 52 (name -> NAME .)
+    REGEX           reduce using rule 52 (name -> NAME .)
+    STRING          reduce using rule 52 (name -> NAME .)
+    NAME            reduce using rule 52 (name -> NAME .)
+    SEMICOLON       reduce using rule 52 (name -> NAME .)
+    DOT             reduce using rule 52 (name -> NAME .)
+    COMMENT         reduce using rule 52 (name -> NAME .)
+    $end            reduce using rule 52 (name -> NAME .)
+    RPAR            reduce using rule 52 (name -> NAME .)
+    RSQB            reduce using rule 52 (name -> NAME .)
+    RBRACE          reduce using rule 52 (name -> NAME .)
+
+
+state 27
+
+    (28) rule -> NAME ASSIGN rhs . terminator
+    (29) rule -> NAME ASSIGN rhs .
+    (53) terminator -> . SEMICOLON
+    (54) terminator -> . DOT
+
+    COMMENT         reduce using rule 29 (rule -> NAME ASSIGN rhs .)
+    NAME            reduce using rule 29 (rule -> NAME ASSIGN rhs .)
+    NEWLINE         reduce using rule 29 (rule -> NAME ASSIGN rhs .)
+    $end            reduce using rule 29 (rule -> NAME ASSIGN rhs .)
+    SEMICOLON       shift and go to state 46
+    DOT             shift and go to state 47
+
+    terminator                     shift and go to state 45
+
+state 28
+
+    (30) rhs -> factor . NEWLINE VBAR rhs
+    (31) rhs -> factor . VBAR rhs
+    (32) rhs -> factor . NEWLINE
+    (33) rhs -> factor . rhs
+    (34) rhs -> factor .
+    (30) rhs -> . factor NEWLINE VBAR rhs
+    (31) rhs -> . factor VBAR rhs
+    (32) rhs -> . factor NEWLINE
+    (33) rhs -> . factor rhs
+    (34) rhs -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+  ! shift/reduce conflict for NEWLINE resolved as shift
+  ! shift/reduce conflict for NAME resolved as shift
+    NEWLINE         shift and go to state 48
+    VBAR            shift and go to state 49
+    SEMICOLON       reduce using rule 34 (rhs -> factor .)
+    DOT             reduce using rule 34 (rhs -> factor .)
+    COMMENT         reduce using rule 34 (rhs -> factor .)
+    $end            reduce using rule 34 (rhs -> factor .)
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+  ! NAME            [ reduce using rule 34 (rhs -> factor .) ]
+  ! NEWLINE         [ reduce using rule 34 (rhs -> factor .) ]
+
+    factor                         shift and go to state 28
+    rhs                            shift and go to state 50
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 29
+
+    (35) factor -> term . OPTIONAL
+    (36) factor -> term . ASTERISK
+    (37) factor -> term . PLUS
+    (38) factor -> term . MINUS term
+    (39) factor -> term .
+
+    OPTIONAL        shift and go to state 51
+    ASTERISK        shift and go to state 52
+    PLUS            shift and go to state 53
+    MINUS           shift and go to state 54
+    NEWLINE         reduce using rule 39 (factor -> term .)
+    VBAR            reduce using rule 39 (factor -> term .)
+    LPAR            reduce using rule 39 (factor -> term .)
+    LSQB            reduce using rule 39 (factor -> term .)
+    LBRACE          reduce using rule 39 (factor -> term .)
+    REGEX           reduce using rule 39 (factor -> term .)
+    STRING          reduce using rule 39 (factor -> term .)
+    NAME            reduce using rule 39 (factor -> term .)
+    SEMICOLON       reduce using rule 39 (factor -> term .)
+    DOT             reduce using rule 39 (factor -> term .)
+    COMMENT         reduce using rule 39 (factor -> term .)
+    $end            reduce using rule 39 (factor -> term .)
+    RPAR            reduce using rule 39 (factor -> term .)
+    RSQB            reduce using rule 39 (factor -> term .)
+    RBRACE          reduce using rule 39 (factor -> term .)
+
+
+state 30
+
+    (44) term -> LPAR . term_group RPAR
+    (40) term_group -> . factor NEWLINE VBAR term_group
+    (41) term_group -> . factor VBAR term_group
+    (42) term_group -> . factor term_group
+    (43) term_group -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    term_group                     shift and go to state 55
+    factor                         shift and go to state 56
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 31
+
+    (45) term -> LSQB . term_group RSQB
+    (40) term_group -> . factor NEWLINE VBAR term_group
+    (41) term_group -> . factor VBAR term_group
+    (42) term_group -> . factor term_group
+    (43) term_group -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    term_group                     shift and go to state 57
+    factor                         shift and go to state 56
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 32
+
+    (46) term -> LBRACE . term_group RBRACE
+    (40) term_group -> . factor NEWLINE VBAR term_group
+    (41) term_group -> . factor VBAR term_group
+    (42) term_group -> . factor term_group
+    (43) term_group -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    term_group                     shift and go to state 58
+    factor                         shift and go to state 56
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 33
+
+    (47) term -> regex .
+
+    OPTIONAL        reduce using rule 47 (term -> regex .)
+    ASTERISK        reduce using rule 47 (term -> regex .)
+    PLUS            reduce using rule 47 (term -> regex .)
+    MINUS           reduce using rule 47 (term -> regex .)
+    NEWLINE         reduce using rule 47 (term -> regex .)
+    VBAR            reduce using rule 47 (term -> regex .)
+    LPAR            reduce using rule 47 (term -> regex .)
+    LSQB            reduce using rule 47 (term -> regex .)
+    LBRACE          reduce using rule 47 (term -> regex .)
+    REGEX           reduce using rule 47 (term -> regex .)
+    STRING          reduce using rule 47 (term -> regex .)
+    NAME            reduce using rule 47 (term -> regex .)
+    SEMICOLON       reduce using rule 47 (term -> regex .)
+    DOT             reduce using rule 47 (term -> regex .)
+    COMMENT         reduce using rule 47 (term -> regex .)
+    $end            reduce using rule 47 (term -> regex .)
+    RPAR            reduce using rule 47 (term -> regex .)
+    RSQB            reduce using rule 47 (term -> regex .)
+    RBRACE          reduce using rule 47 (term -> regex .)
+
+
+state 34
+
+    (48) term -> string .
+
+    OPTIONAL        reduce using rule 48 (term -> string .)
+    ASTERISK        reduce using rule 48 (term -> string .)
+    PLUS            reduce using rule 48 (term -> string .)
+    MINUS           reduce using rule 48 (term -> string .)
+    NEWLINE         reduce using rule 48 (term -> string .)
+    VBAR            reduce using rule 48 (term -> string .)
+    LPAR            reduce using rule 48 (term -> string .)
+    LSQB            reduce using rule 48 (term -> string .)
+    LBRACE          reduce using rule 48 (term -> string .)
+    REGEX           reduce using rule 48 (term -> string .)
+    STRING          reduce using rule 48 (term -> string .)
+    NAME            reduce using rule 48 (term -> string .)
+    SEMICOLON       reduce using rule 48 (term -> string .)
+    DOT             reduce using rule 48 (term -> string .)
+    COMMENT         reduce using rule 48 (term -> string .)
+    $end            reduce using rule 48 (term -> string .)
+    RPAR            reduce using rule 48 (term -> string .)
+    RSQB            reduce using rule 48 (term -> string .)
+    RBRACE          reduce using rule 48 (term -> string .)
+
+
+state 35
+
+    (49) term -> name .
+
+    OPTIONAL        reduce using rule 49 (term -> name .)
+    ASTERISK        reduce using rule 49 (term -> name .)
+    PLUS            reduce using rule 49 (term -> name .)
+    MINUS           reduce using rule 49 (term -> name .)
+    NEWLINE         reduce using rule 49 (term -> name .)
+    VBAR            reduce using rule 49 (term -> name .)
+    LPAR            reduce using rule 49 (term -> name .)
+    LSQB            reduce using rule 49 (term -> name .)
+    LBRACE          reduce using rule 49 (term -> name .)
+    REGEX           reduce using rule 49 (term -> name .)
+    STRING          reduce using rule 49 (term -> name .)
+    NAME            reduce using rule 49 (term -> name .)
+    SEMICOLON       reduce using rule 49 (term -> name .)
+    DOT             reduce using rule 49 (term -> name .)
+    COMMENT         reduce using rule 49 (term -> name .)
+    $end            reduce using rule 49 (term -> name .)
+    RPAR            reduce using rule 49 (term -> name .)
+    RSQB            reduce using rule 49 (term -> name .)
+    RBRACE          reduce using rule 49 (term -> name .)
+
+
+state 36
+
+    (50) regex -> REGEX .
+
+    OPTIONAL        reduce using rule 50 (regex -> REGEX .)
+    ASTERISK        reduce using rule 50 (regex -> REGEX .)
+    PLUS            reduce using rule 50 (regex -> REGEX .)
+    MINUS           reduce using rule 50 (regex -> REGEX .)
+    NEWLINE         reduce using rule 50 (regex -> REGEX .)
+    VBAR            reduce using rule 50 (regex -> REGEX .)
+    LPAR            reduce using rule 50 (regex -> REGEX .)
+    LSQB            reduce using rule 50 (regex -> REGEX .)
+    LBRACE          reduce using rule 50 (regex -> REGEX .)
+    REGEX           reduce using rule 50 (regex -> REGEX .)
+    STRING          reduce using rule 50 (regex -> REGEX .)
+    NAME            reduce using rule 50 (regex -> REGEX .)
+    SEMICOLON       reduce using rule 50 (regex -> REGEX .)
+    DOT             reduce using rule 50 (regex -> REGEX .)
+    COMMENT         reduce using rule 50 (regex -> REGEX .)
+    $end            reduce using rule 50 (regex -> REGEX .)
+    RPAR            reduce using rule 50 (regex -> REGEX .)
+    RSQB            reduce using rule 50 (regex -> REGEX .)
+    RBRACE          reduce using rule 50 (regex -> REGEX .)
+
+
+state 37
+
+    (51) string -> STRING .
+
+    OPTIONAL        reduce using rule 51 (string -> STRING .)
+    ASTERISK        reduce using rule 51 (string -> STRING .)
+    PLUS            reduce using rule 51 (string -> STRING .)
+    MINUS           reduce using rule 51 (string -> STRING .)
+    NEWLINE         reduce using rule 51 (string -> STRING .)
+    VBAR            reduce using rule 51 (string -> STRING .)
+    LPAR            reduce using rule 51 (string -> STRING .)
+    LSQB            reduce using rule 51 (string -> STRING .)
+    LBRACE          reduce using rule 51 (string -> STRING .)
+    REGEX           reduce using rule 51 (string -> STRING .)
+    STRING          reduce using rule 51 (string -> STRING .)
+    NAME            reduce using rule 51 (string -> STRING .)
+    SEMICOLON       reduce using rule 51 (string -> STRING .)
+    DOT             reduce using rule 51 (string -> STRING .)
+    COMMENT         reduce using rule 51 (string -> STRING .)
+    $end            reduce using rule 51 (string -> STRING .)
+    RPAR            reduce using rule 51 (string -> STRING .)
+    RSQB            reduce using rule 51 (string -> STRING .)
+    RBRACE          reduce using rule 51 (string -> STRING .)
+
+
+state 38
+
+    (15) from_statement -> NAME dotted_name NAME . ASTERISK
+    (16) from_statement -> NAME dotted_name NAME . import_items
+    (23) import_items -> . import_name , import_items
+    (24) import_items -> . import_name
+    (25) import_name -> . NAME NAME NAME
+    (26) import_name -> . NAME
+
+    ASTERISK        shift and go to state 60
+    NAME            shift and go to state 59
+
+    import_items                   shift and go to state 61
+    import_name                    shift and go to state 19
+
+state 39
+
+    (23) import_items -> import_name , . import_items
+    (23) import_items -> . import_name , import_items
+    (24) import_items -> . import_name
+    (25) import_name -> . NAME NAME NAME
+    (26) import_name -> . NAME
+
+    NAME            shift and go to state 59
+
+    import_name                    shift and go to state 19
+    import_items                   shift and go to state 62
+
+state 40
+
+    (17) dotted_name -> dots name_parts .
+
+    NAME            reduce using rule 17 (dotted_name -> dots name_parts .)
+
+
+state 41
+
+    (21) name_parts -> NAME . DOT name_parts
+    (22) name_parts -> NAME .
+
+    DOT             shift and go to state 25
+    NAME            reduce using rule 22 (name_parts -> NAME .)
+
+
+state 42
+
+    (19) dots -> DOT dots .
+
+    NAME            reduce using rule 19 (dots -> DOT dots .)
+
+
+state 43
+
+    (25) import_name -> NAME NAME NAME .
+
+    ,               reduce using rule 25 (import_name -> NAME NAME NAME .)
+    NEWLINE         reduce using rule 25 (import_name -> NAME NAME NAME .)
+    COMMENT         reduce using rule 25 (import_name -> NAME NAME NAME .)
+    NAME            reduce using rule 25 (import_name -> NAME NAME NAME .)
+    $end            reduce using rule 25 (import_name -> NAME NAME NAME .)
+
+
+state 44
+
+    (21) name_parts -> NAME DOT name_parts .
+
+    NAME            reduce using rule 21 (name_parts -> NAME DOT name_parts .)
+
+
+state 45
+
+    (28) rule -> NAME ASSIGN rhs terminator .
+
+    COMMENT         reduce using rule 28 (rule -> NAME ASSIGN rhs terminator .)
+    NAME            reduce using rule 28 (rule -> NAME ASSIGN rhs terminator .)
+    NEWLINE         reduce using rule 28 (rule -> NAME ASSIGN rhs terminator .)
+    $end            reduce using rule 28 (rule -> NAME ASSIGN rhs terminator .)
+
+
+state 46
+
+    (53) terminator -> SEMICOLON .
+
+    COMMENT         reduce using rule 53 (terminator -> SEMICOLON .)
+    NAME            reduce using rule 53 (terminator -> SEMICOLON .)
+    NEWLINE         reduce using rule 53 (terminator -> SEMICOLON .)
+    $end            reduce using rule 53 (terminator -> SEMICOLON .)
+
+
+state 47
+
+    (54) terminator -> DOT .
+
+    COMMENT         reduce using rule 54 (terminator -> DOT .)
+    NAME            reduce using rule 54 (terminator -> DOT .)
+    NEWLINE         reduce using rule 54 (terminator -> DOT .)
+    $end            reduce using rule 54 (terminator -> DOT .)
+
+
+state 48
+
+    (30) rhs -> factor NEWLINE . VBAR rhs
+    (32) rhs -> factor NEWLINE .
+
+    VBAR            shift and go to state 63
+    SEMICOLON       reduce using rule 32 (rhs -> factor NEWLINE .)
+    DOT             reduce using rule 32 (rhs -> factor NEWLINE .)
+    COMMENT         reduce using rule 32 (rhs -> factor NEWLINE .)
+    NAME            reduce using rule 32 (rhs -> factor NEWLINE .)
+    NEWLINE         reduce using rule 32 (rhs -> factor NEWLINE .)
+    $end            reduce using rule 32 (rhs -> factor NEWLINE .)
+
+
+state 49
+
+    (31) rhs -> factor VBAR . rhs
+    (30) rhs -> . factor NEWLINE VBAR rhs
+    (31) rhs -> . factor VBAR rhs
+    (32) rhs -> . factor NEWLINE
+    (33) rhs -> . factor rhs
+    (34) rhs -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    factor                         shift and go to state 28
+    rhs                            shift and go to state 64
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 50
+
+    (33) rhs -> factor rhs .
+
+    SEMICOLON       reduce using rule 33 (rhs -> factor rhs .)
+    DOT             reduce using rule 33 (rhs -> factor rhs .)
+    COMMENT         reduce using rule 33 (rhs -> factor rhs .)
+    NAME            reduce using rule 33 (rhs -> factor rhs .)
+    NEWLINE         reduce using rule 33 (rhs -> factor rhs .)
+    $end            reduce using rule 33 (rhs -> factor rhs .)
+
+
+state 51
+
+    (35) factor -> term OPTIONAL .
+
+    NEWLINE         reduce using rule 35 (factor -> term OPTIONAL .)
+    VBAR            reduce using rule 35 (factor -> term OPTIONAL .)
+    LPAR            reduce using rule 35 (factor -> term OPTIONAL .)
+    LSQB            reduce using rule 35 (factor -> term OPTIONAL .)
+    LBRACE          reduce using rule 35 (factor -> term OPTIONAL .)
+    REGEX           reduce using rule 35 (factor -> term OPTIONAL .)
+    STRING          reduce using rule 35 (factor -> term OPTIONAL .)
+    NAME            reduce using rule 35 (factor -> term OPTIONAL .)
+    SEMICOLON       reduce using rule 35 (factor -> term OPTIONAL .)
+    DOT             reduce using rule 35 (factor -> term OPTIONAL .)
+    COMMENT         reduce using rule 35 (factor -> term OPTIONAL .)
+    $end            reduce using rule 35 (factor -> term OPTIONAL .)
+    RPAR            reduce using rule 35 (factor -> term OPTIONAL .)
+    RSQB            reduce using rule 35 (factor -> term OPTIONAL .)
+    RBRACE          reduce using rule 35 (factor -> term OPTIONAL .)
+
+
+state 52
+
+    (36) factor -> term ASTERISK .
+
+    NEWLINE         reduce using rule 36 (factor -> term ASTERISK .)
+    VBAR            reduce using rule 36 (factor -> term ASTERISK .)
+    LPAR            reduce using rule 36 (factor -> term ASTERISK .)
+    LSQB            reduce using rule 36 (factor -> term ASTERISK .)
+    LBRACE          reduce using rule 36 (factor -> term ASTERISK .)
+    REGEX           reduce using rule 36 (factor -> term ASTERISK .)
+    STRING          reduce using rule 36 (factor -> term ASTERISK .)
+    NAME            reduce using rule 36 (factor -> term ASTERISK .)
+    SEMICOLON       reduce using rule 36 (factor -> term ASTERISK .)
+    DOT             reduce using rule 36 (factor -> term ASTERISK .)
+    COMMENT         reduce using rule 36 (factor -> term ASTERISK .)
+    $end            reduce using rule 36 (factor -> term ASTERISK .)
+    RPAR            reduce using rule 36 (factor -> term ASTERISK .)
+    RSQB            reduce using rule 36 (factor -> term ASTERISK .)
+    RBRACE          reduce using rule 36 (factor -> term ASTERISK .)
+
+
+state 53
+
+    (37) factor -> term PLUS .
+
+    NEWLINE         reduce using rule 37 (factor -> term PLUS .)
+    VBAR            reduce using rule 37 (factor -> term PLUS .)
+    LPAR            reduce using rule 37 (factor -> term PLUS .)
+    LSQB            reduce using rule 37 (factor -> term PLUS .)
+    LBRACE          reduce using rule 37 (factor -> term PLUS .)
+    REGEX           reduce using rule 37 (factor -> term PLUS .)
+    STRING          reduce using rule 37 (factor -> term PLUS .)
+    NAME            reduce using rule 37 (factor -> term PLUS .)
+    SEMICOLON       reduce using rule 37 (factor -> term PLUS .)
+    DOT             reduce using rule 37 (factor -> term PLUS .)
+    COMMENT         reduce using rule 37 (factor -> term PLUS .)
+    $end            reduce using rule 37 (factor -> term PLUS .)
+    RPAR            reduce using rule 37 (factor -> term PLUS .)
+    RSQB            reduce using rule 37 (factor -> term PLUS .)
+    RBRACE          reduce using rule 37 (factor -> term PLUS .)
+
+
+state 54
+
+    (38) factor -> term MINUS . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    term                           shift and go to state 65
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 55
+
+    (44) term -> LPAR term_group . RPAR
+
+    RPAR            shift and go to state 66
+
+
+state 56
+
+    (40) term_group -> factor . NEWLINE VBAR term_group
+    (41) term_group -> factor . VBAR term_group
+    (42) term_group -> factor . term_group
+    (43) term_group -> factor .
+    (40) term_group -> . factor NEWLINE VBAR term_group
+    (41) term_group -> . factor VBAR term_group
+    (42) term_group -> . factor term_group
+    (43) term_group -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    NEWLINE         shift and go to state 67
+    VBAR            shift and go to state 68
+    RPAR            reduce using rule 43 (term_group -> factor .)
+    RSQB            reduce using rule 43 (term_group -> factor .)
+    RBRACE          reduce using rule 43 (term_group -> factor .)
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    factor                         shift and go to state 56
+    term_group                     shift and go to state 69
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 57
+
+    (45) term -> LSQB term_group . RSQB
+
+    RSQB            shift and go to state 70
+
+
+state 58
+
+    (46) term -> LBRACE term_group . RBRACE
+
+    RBRACE          shift and go to state 71
+
+
+state 59
+
+    (25) import_name -> NAME . NAME NAME
+    (26) import_name -> NAME .
+
+  ! shift/reduce conflict for NAME resolved as shift
+    NAME            shift and go to state 24
+    ,               reduce using rule 26 (import_name -> NAME .)
+    NEWLINE         reduce using rule 26 (import_name -> NAME .)
+    COMMENT         reduce using rule 26 (import_name -> NAME .)
+    $end            reduce using rule 26 (import_name -> NAME .)
+
+  ! NAME            [ reduce using rule 26 (import_name -> NAME .) ]
+
+
+state 60
+
+    (15) from_statement -> NAME dotted_name NAME ASTERISK .
+
+    NEWLINE         reduce using rule 15 (from_statement -> NAME dotted_name NAME ASTERISK .)
+    COMMENT         reduce using rule 15 (from_statement -> NAME dotted_name NAME ASTERISK .)
+    NAME            reduce using rule 15 (from_statement -> NAME dotted_name NAME ASTERISK .)
+    $end            reduce using rule 15 (from_statement -> NAME dotted_name NAME ASTERISK .)
+
+
+state 61
+
+    (16) from_statement -> NAME dotted_name NAME import_items .
+
+    NEWLINE         reduce using rule 16 (from_statement -> NAME dotted_name NAME import_items .)
+    COMMENT         reduce using rule 16 (from_statement -> NAME dotted_name NAME import_items .)
+    NAME            reduce using rule 16 (from_statement -> NAME dotted_name NAME import_items .)
+    $end            reduce using rule 16 (from_statement -> NAME dotted_name NAME import_items .)
+
+
+state 62
+
+    (23) import_items -> import_name , import_items .
+
+    NEWLINE         reduce using rule 23 (import_items -> import_name , import_items .)
+    COMMENT         reduce using rule 23 (import_items -> import_name , import_items .)
+    NAME            reduce using rule 23 (import_items -> import_name , import_items .)
+    $end            reduce using rule 23 (import_items -> import_name , import_items .)
+
+
+state 63
+
+    (30) rhs -> factor NEWLINE VBAR . rhs
+    (30) rhs -> . factor NEWLINE VBAR rhs
+    (31) rhs -> . factor VBAR rhs
+    (32) rhs -> . factor NEWLINE
+    (33) rhs -> . factor rhs
+    (34) rhs -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    factor                         shift and go to state 28
+    rhs                            shift and go to state 72
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 64
+
+    (31) rhs -> factor VBAR rhs .
+
+    SEMICOLON       reduce using rule 31 (rhs -> factor VBAR rhs .)
+    DOT             reduce using rule 31 (rhs -> factor VBAR rhs .)
+    COMMENT         reduce using rule 31 (rhs -> factor VBAR rhs .)
+    NAME            reduce using rule 31 (rhs -> factor VBAR rhs .)
+    NEWLINE         reduce using rule 31 (rhs -> factor VBAR rhs .)
+    $end            reduce using rule 31 (rhs -> factor VBAR rhs .)
+
+
+state 65
+
+    (38) factor -> term MINUS term .
+
+    NEWLINE         reduce using rule 38 (factor -> term MINUS term .)
+    VBAR            reduce using rule 38 (factor -> term MINUS term .)
+    LPAR            reduce using rule 38 (factor -> term MINUS term .)
+    LSQB            reduce using rule 38 (factor -> term MINUS term .)
+    LBRACE          reduce using rule 38 (factor -> term MINUS term .)
+    REGEX           reduce using rule 38 (factor -> term MINUS term .)
+    STRING          reduce using rule 38 (factor -> term MINUS term .)
+    NAME            reduce using rule 38 (factor -> term MINUS term .)
+    SEMICOLON       reduce using rule 38 (factor -> term MINUS term .)
+    DOT             reduce using rule 38 (factor -> term MINUS term .)
+    COMMENT         reduce using rule 38 (factor -> term MINUS term .)
+    $end            reduce using rule 38 (factor -> term MINUS term .)
+    RPAR            reduce using rule 38 (factor -> term MINUS term .)
+    RSQB            reduce using rule 38 (factor -> term MINUS term .)
+    RBRACE          reduce using rule 38 (factor -> term MINUS term .)
+
+
+state 66
+
+    (44) term -> LPAR term_group RPAR .
+
+    OPTIONAL        reduce using rule 44 (term -> LPAR term_group RPAR .)
+    ASTERISK        reduce using rule 44 (term -> LPAR term_group RPAR .)
+    PLUS            reduce using rule 44 (term -> LPAR term_group RPAR .)
+    MINUS           reduce using rule 44 (term -> LPAR term_group RPAR .)
+    NEWLINE         reduce using rule 44 (term -> LPAR term_group RPAR .)
+    VBAR            reduce using rule 44 (term -> LPAR term_group RPAR .)
+    LPAR            reduce using rule 44 (term -> LPAR term_group RPAR .)
+    LSQB            reduce using rule 44 (term -> LPAR term_group RPAR .)
+    LBRACE          reduce using rule 44 (term -> LPAR term_group RPAR .)
+    REGEX           reduce using rule 44 (term -> LPAR term_group RPAR .)
+    STRING          reduce using rule 44 (term -> LPAR term_group RPAR .)
+    NAME            reduce using rule 44 (term -> LPAR term_group RPAR .)
+    SEMICOLON       reduce using rule 44 (term -> LPAR term_group RPAR .)
+    DOT             reduce using rule 44 (term -> LPAR term_group RPAR .)
+    COMMENT         reduce using rule 44 (term -> LPAR term_group RPAR .)
+    $end            reduce using rule 44 (term -> LPAR term_group RPAR .)
+    RPAR            reduce using rule 44 (term -> LPAR term_group RPAR .)
+    RSQB            reduce using rule 44 (term -> LPAR term_group RPAR .)
+    RBRACE          reduce using rule 44 (term -> LPAR term_group RPAR .)
+
+
+state 67
+
+    (40) term_group -> factor NEWLINE . VBAR term_group
+
+    VBAR            shift and go to state 73
+
+
+state 68
+
+    (41) term_group -> factor VBAR . term_group
+    (40) term_group -> . factor NEWLINE VBAR term_group
+    (41) term_group -> . factor VBAR term_group
+    (42) term_group -> . factor term_group
+    (43) term_group -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    factor                         shift and go to state 56
+    term_group                     shift and go to state 74
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 69
+
+    (42) term_group -> factor term_group .
+
+    RPAR            reduce using rule 42 (term_group -> factor term_group .)
+    RSQB            reduce using rule 42 (term_group -> factor term_group .)
+    RBRACE          reduce using rule 42 (term_group -> factor term_group .)
+
+
+state 70
+
+    (45) term -> LSQB term_group RSQB .
+
+    OPTIONAL        reduce using rule 45 (term -> LSQB term_group RSQB .)
+    ASTERISK        reduce using rule 45 (term -> LSQB term_group RSQB .)
+    PLUS            reduce using rule 45 (term -> LSQB term_group RSQB .)
+    MINUS           reduce using rule 45 (term -> LSQB term_group RSQB .)
+    NEWLINE         reduce using rule 45 (term -> LSQB term_group RSQB .)
+    VBAR            reduce using rule 45 (term -> LSQB term_group RSQB .)
+    LPAR            reduce using rule 45 (term -> LSQB term_group RSQB .)
+    LSQB            reduce using rule 45 (term -> LSQB term_group RSQB .)
+    LBRACE          reduce using rule 45 (term -> LSQB term_group RSQB .)
+    REGEX           reduce using rule 45 (term -> LSQB term_group RSQB .)
+    STRING          reduce using rule 45 (term -> LSQB term_group RSQB .)
+    NAME            reduce using rule 45 (term -> LSQB term_group RSQB .)
+    SEMICOLON       reduce using rule 45 (term -> LSQB term_group RSQB .)
+    DOT             reduce using rule 45 (term -> LSQB term_group RSQB .)
+    COMMENT         reduce using rule 45 (term -> LSQB term_group RSQB .)
+    $end            reduce using rule 45 (term -> LSQB term_group RSQB .)
+    RPAR            reduce using rule 45 (term -> LSQB term_group RSQB .)
+    RSQB            reduce using rule 45 (term -> LSQB term_group RSQB .)
+    RBRACE          reduce using rule 45 (term -> LSQB term_group RSQB .)
+
+
+state 71
+
+    (46) term -> LBRACE term_group RBRACE .
+
+    OPTIONAL        reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    ASTERISK        reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    PLUS            reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    MINUS           reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    NEWLINE         reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    VBAR            reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    LPAR            reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    LSQB            reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    LBRACE          reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    REGEX           reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    STRING          reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    NAME            reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    SEMICOLON       reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    DOT             reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    COMMENT         reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    $end            reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    RPAR            reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    RSQB            reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+    RBRACE          reduce using rule 46 (term -> LBRACE term_group RBRACE .)
+
+
+state 72
+
+    (30) rhs -> factor NEWLINE VBAR rhs .
+
+    SEMICOLON       reduce using rule 30 (rhs -> factor NEWLINE VBAR rhs .)
+    DOT             reduce using rule 30 (rhs -> factor NEWLINE VBAR rhs .)
+    COMMENT         reduce using rule 30 (rhs -> factor NEWLINE VBAR rhs .)
+    NAME            reduce using rule 30 (rhs -> factor NEWLINE VBAR rhs .)
+    NEWLINE         reduce using rule 30 (rhs -> factor NEWLINE VBAR rhs .)
+    $end            reduce using rule 30 (rhs -> factor NEWLINE VBAR rhs .)
+
+
+state 73
+
+    (40) term_group -> factor NEWLINE VBAR . term_group
+    (40) term_group -> . factor NEWLINE VBAR term_group
+    (41) term_group -> . factor VBAR term_group
+    (42) term_group -> . factor term_group
+    (43) term_group -> . factor
+    (35) factor -> . term OPTIONAL
+    (36) factor -> . term ASTERISK
+    (37) factor -> . term PLUS
+    (38) factor -> . term MINUS term
+    (39) factor -> . term
+    (44) term -> . LPAR term_group RPAR
+    (45) term -> . LSQB term_group RSQB
+    (46) term -> . LBRACE term_group RBRACE
+    (47) term -> . regex
+    (48) term -> . string
+    (49) term -> . name
+    (50) regex -> . REGEX
+    (51) string -> . STRING
+    (52) name -> . NAME
+
+    LPAR            shift and go to state 30
+    LSQB            shift and go to state 31
+    LBRACE          shift and go to state 32
+    REGEX           shift and go to state 36
+    STRING          shift and go to state 37
+    NAME            shift and go to state 26
+
+    factor                         shift and go to state 56
+    term_group                     shift and go to state 75
+    term                           shift and go to state 29
+    regex                          shift and go to state 33
+    string                         shift and go to state 34
+    name                           shift and go to state 35
+
+state 74
+
+    (41) term_group -> factor VBAR term_group .
+
+    RPAR            reduce using rule 41 (term_group -> factor VBAR term_group .)
+    RSQB            reduce using rule 41 (term_group -> factor VBAR term_group .)
+    RBRACE          reduce using rule 41 (term_group -> factor VBAR term_group .)
+
+
+state 75
+
+    (40) term_group -> factor NEWLINE VBAR term_group .
+
+    RPAR            reduce using rule 40 (term_group -> factor NEWLINE VBAR term_group .)
+    RSQB            reduce using rule 40 (term_group -> factor NEWLINE VBAR term_group .)
+    RBRACE          reduce using rule 40 (term_group -> factor NEWLINE VBAR term_group .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for NEWLINE in state 8 resolved as shift
+WARNING: shift/reduce conflict for NEWLINE in state 9 resolved as shift
+WARNING: shift/reduce conflict for NEWLINE in state 11 resolved as shift
+WARNING: shift/reduce conflict for NAME in state 15 resolved as shift
+WARNING: shift/reduce conflict for NAME in state 15 resolved as shift
+WARNING: shift/reduce conflict for NEWLINE in state 28 resolved as shift
+WARNING: shift/reduce conflict for NAME in state 28 resolved as shift
+WARNING: shift/reduce conflict for NAME in state 59 resolved as shift
