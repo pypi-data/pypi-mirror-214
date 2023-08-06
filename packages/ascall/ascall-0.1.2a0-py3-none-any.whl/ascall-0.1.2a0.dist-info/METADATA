@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ascall
+Version: 0.1.2a0
+Summary: ascall用于将可调用对象自动异步执行。
+Home-page: https://vastxiao.github.io/
+License: MIT
+Keywords: async,asyncio,func,function
+Author: vastxiao
+Author-email: vastxiao@gmail.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# ascall
+
+> ascall用于自动识别同步或异步的可调用对象，
+> 然后进行转换并执行异步调用返回结果。
+> 
+> ascall可作为函数运行，也可作为装饰器。
+
+## 装饰器用法
+
+```python
+import asyncio
+from ascall import ascall
+
+
+@ascall()
+def sync_func():
+    print("sync func run.")
+
+
+asyncio.run(sync_func())
+```
+
+## 函数用法
+
+```python
+import asyncio
+from ascall import ascall
+
+
+def sync_func(msg: str):
+    print("sync func run.", msg)
+
+
+async def main():
+    print("async func run.")
+    await ascall(sync_func, "some msg")
+
+
+asyncio.run(main())
+```
