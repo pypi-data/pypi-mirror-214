@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/Oasys.THIS.egg-info/PKG-INFO
+src/Oasys.THIS.egg-info/SOURCES.txt
+src/Oasys.THIS.egg-info/dependency_links.txt
+src/Oasys.THIS.egg-info/requires.txt
+src/Oasys.THIS.egg-info/top_level.txt
+src/Oasys/THIS/__init__.py
+src/Oasys/THIS/placeholder.py
