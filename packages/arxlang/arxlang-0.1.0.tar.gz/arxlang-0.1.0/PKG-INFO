@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: arxlang
+Version: 0.1.0
+Summary: Arx is a compiler built with llvm
+License: Apache Software License 2.0
+Author: Ivan Ogasawara
+Author-email: ivan.ogasawara@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: llvmlite (>=0.40.0,<0.41.0)

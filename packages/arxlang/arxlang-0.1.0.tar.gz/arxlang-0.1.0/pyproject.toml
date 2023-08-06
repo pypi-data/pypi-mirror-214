@@ -1,0 +1,100 @@
+[tool.poetry]
+name = "arxlang"
+version = "0.1.0"  # semantic-release
+description = "Arx is a compiler built with llvm"
+authors = ["Ivan Ogasawara <ivan.ogasawara@gmail.com>"]
+license = "Apache Software License 2.0"
+include = [
+  "src/arx",
+]
+exclude = [
+  ".git/*",
+  ".env*",
+]
+packages = [
+  {include = "arx", from="src"},
+]
+
+[tool.poetry.scripts]
+"arx" = "arx.__main__:app"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+llvmlite = "^0.40.0"
+
+[tool.poetry.group.dev.dependencies]
+urllib3 = "<2"  # fix poetry issues
+pytest = ">=7"
+pytest-cov = ">=4"
+coverage = ">=7"
+black = ">=23"
+pre-commit = ">=3"
+ruff = ">=0.0.272"
+mypy = ">=1"
+bandit = ">=1.7.5"
+vulture = ">=2.7"
+mccabe = ">=0.6.1"
+Jinja2 = "<3.1.0"
+mkdocs = ">=1.2.3,<2"
+mkdocs-exclude = ">=1.0.2,<2"
+mkdocs-jupyter = ">=0.20.0,<1"
+mkdocs-literate-nav = ">=0.4.1,<1"
+mkdocs-macros-plugin = ">=0.6.3,<1"
+mkdocs-material = ">=8.2.1,<9"
+mkdocstrings = ">=0.17.0,<0.18.0"
+makim = "1.8.1"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+[tool.mypy]
+no_strict_optional = false
+
+[[tool.mypy.overrides]]
+module = [
+  "llvmlite",
+  "llvmlite.binding",
+]
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 79
+force-exclude = true
+src = ["src/arx"]
+exclude = [
+   'docs',
+]
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "D",   # pydocstyle
+  "YTT", # flake8-2020
+  "RUF", # Ruff-specific rules
+]
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+targets = "src/arx"
+
+[tool.black]
+line-length = 79
+target-version = ["py38"]
+force-exclude = '''(?x)(
+    docs/*
+  | .*\\.egg-info
+)'''  # TOML's single-quoted strings do not require escaping backslashes
+
+[tool.vulture]
+exclude = ["tests"]
+ignore_decorators = []
+ignore_names = []
+make_whitelist = true
+min_confidence = 80
+paths = ["src/arx"]
+sort_by_size = true
+verbose = false
