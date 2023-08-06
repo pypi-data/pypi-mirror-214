@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: insurance
+Version: 0.0.3
+Summary: A package that calculates insurance cost from a set of features: age, sex, body mass index, number of children, whether the person smokes or not, and the region in the US.
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+A package that calculates insurance cost from a set of features: age, sex, body mass index, number of children, whether the person smokes or not, and the region in the US.
