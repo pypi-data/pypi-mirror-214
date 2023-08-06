@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: DeepLearningOptimized
+Version: 1.1.5
+Project-URL: Homepage, https://github.com/WatCode/Deep-Learning
+Author-email: Liam Roan Watson <lrwatson@uwaterloo.ca>
+License-File: LICENSE.lic
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
