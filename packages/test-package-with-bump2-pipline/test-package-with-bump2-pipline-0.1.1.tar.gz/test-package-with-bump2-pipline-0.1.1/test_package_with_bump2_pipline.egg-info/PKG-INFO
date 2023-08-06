@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: test-package-with-bump2-pipline
+Version: 0.1.1
+Summary: Testing with github piplines
+Home-page: https://github.com/davitkv8/bump2-auto-build-and-update
+Author: Davit Kvaratskhelia
+Author-email: davit.kv8@gmail.com
+
+Nothing important there

@@ -1,0 +1,8 @@
+README.md
+setup.py
+package/__init__.py
+package/test_module.py
+test_package_with_bump2_pipline.egg-info/PKG-INFO
+test_package_with_bump2_pipline.egg-info/SOURCES.txt
+test_package_with_bump2_pipline.egg-info/dependency_links.txt
+test_package_with_bump2_pipline.egg-info/top_level.txt
