@@ -1,0 +1,3 @@
+--8<-- "README.md:main"
+--8<-- "README.md:credits"
+--8<-- "LICENSE.md"
