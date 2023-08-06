@@ -1,0 +1,16 @@
+# Copyright (C) 2023 Maxwell G <maxwell@gtmx.me>
+# SPDX-License-Identifier: MIT
+---
+
+image: fedora/38
+packages:
+  - pipx
+  - python3-libdnf5
+sources:
+  - https://git.sr.ht/~gotmax23/libdnf5-shim
+tasks:
+  - setup: |
+      pipx install nox
+  - nox-test-f38: |
+      cd libdnf5-shim
+      nox -v -e test
