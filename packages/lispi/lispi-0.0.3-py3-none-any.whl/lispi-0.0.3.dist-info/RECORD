@@ -1,0 +1,11 @@
+lispi/.DS_Store,sha256=SrS139LgbLUoPt07CXUU8fYwjXsvcQBcYUnL6fNso2A,6148
+lispi/__init__.py,sha256=67oTjEBfbRIN3IbdWGpQ-Zaqlx2ouAN40G4BSSqT5tw,146
+lispi/__main__.py,sha256=rKokO6VbfY04ZL3lQia-WJF2wAw8tedW1NGaEduRVdE,2311
+lispi/revealjs_template.py,sha256=3kDfJhGNegAOI8-YYJphBaBkNuC-326uDEqKnezUIFA,489
+lispi/slideEdit.py,sha256=k0SepByjWBl46A0z_Cia8E2_1Zsq82v9mqzxQTftq5c,4420
+lispi/text2audio.py,sha256=xK4w_NAaOdtrhQ7wRVLq3xdzfPLGfRgForuO27uMQm4,1746
+lispi-0.0.3.dist-info/METADATA,sha256=zrOnAgWJEFx_412--wKF1o3XGftJWpaG7Rd-bg559BA,4197
+lispi-0.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+lispi-0.0.3.dist-info/entry_points.txt,sha256=NvvPL0pVOws1vx3TdFfuJarrvDt5Xqk3tX028GEWk00,46
+lispi-0.0.3.dist-info/licenses/LICENSE,sha256=4mT_lp7iCFlMUtNrV3g-_f4HZNeYjhDSH7HBDmBmxxs,1073
+lispi-0.0.3.dist-info/RECORD,,
