@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+pedesign/__init__.py
+pedesign/needle.py
+pedesign/pe-designer.py
+pedesign.egg-info/PKG-INFO
+pedesign.egg-info/SOURCES.txt
+pedesign.egg-info/dependency_links.txt
+pedesign.egg-info/top_level.txt
