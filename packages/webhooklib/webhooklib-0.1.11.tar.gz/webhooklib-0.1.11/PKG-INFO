@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: webhooklib
+Version: 0.1.11
+Summary:  tool for remote process call
+Author-email: Alexander Rodionov <tandav@tandav.me>
+Project-URL: source, https://github.com/tandav/webhook
+Project-URL: issues, https://tandav.github.io/webhook/issues
+Project-URL: release notes, https://tandav.github.io/webhook/releases
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# webhook
+tool for remote process call
