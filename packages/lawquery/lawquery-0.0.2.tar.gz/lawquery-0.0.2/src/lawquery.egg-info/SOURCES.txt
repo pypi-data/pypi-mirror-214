@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/lawquery/__init__.py
+src/lawquery/engine.py
+src/lawquery.egg-info/PKG-INFO
+src/lawquery.egg-info/SOURCES.txt
+src/lawquery.egg-info/dependency_links.txt
+src/lawquery.egg-info/top_level.txt
+src/lawquery/documents/bo-luat-dan-su-2015.json.gz
+src/lawquery/documents/bo-luat-hang-hai-viet-nam-2015.json.gz
+src/lawquery/documents/bo-luat-hinh-su-2015.json.gz
+src/lawquery/documents/bo-luat-lao-dong-2019.json.gz
+src/lawquery/documents/bo-luat-to-tung-dan-su-2015.json.gz
+src/lawquery/documents/bo-luat-to-tung-hinh-su-2015.json.gz
