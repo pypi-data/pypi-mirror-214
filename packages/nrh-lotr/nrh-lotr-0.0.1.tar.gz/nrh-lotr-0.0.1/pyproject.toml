@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nrh-lotr"
+version = "0.0.1"
+authors = [
+  {name="Nathan Hapeman", email="nhapeman@gmail.com"}
+]
+description = "lotR SDK for movies and quotes"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+dependencies = [
+    "requests",
+    "pydantic",
+]
