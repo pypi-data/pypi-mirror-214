@@ -1,0 +1,370 @@
+Metadata-Version: 2.1
+Name: thermoextrap
+Version: 0.4.0
+Summary: Thermodynamic extrapolation
+Author-email: Jacob Monroe <jacob.monroe@nist.gov>, William Krekelberg <wpk@nist.gov>
+License: NIST-PD
+Project-URL: homepage, https://github.com/usnistgov/thermoextrap
+Project-URL: documentation, https://pages.nist.gov/thermoextrap/
+Keywords: thermoextrap
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: xarray (>=0.16)
+Requires-Dist: sympy
+Requires-Dist: scipy
+Requires-Dist: cmomy (>=0.5)
+Requires-Dist: custom-inherit
+Requires-Dist: attrs
+Requires-Dist: module-utilities (>=0.2)
+Provides-Extra: accel
+Requires-Dist: bottleneck ; extra == 'accel'
+Provides-Extra: all
+Requires-Dist: thermoextrap[mbar] ; extra == 'all'
+Requires-Dist: thermoextrap[gpr] ; extra == 'all'
+Requires-Dist: thermoextrap[accel] ; extra == 'all'
+Requires-Dist: thermoextrap[parallel] ; extra == 'all'
+Requires-Dist: thermoextrap[viz] ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: thermoextrap[test] ; extra == 'dev'
+Requires-Dist: thermoextrap[typing-extras] ; extra == 'dev'
+Requires-Dist: thermoextrap[dev-extras] ; extra == 'dev'
+Requires-Dist: thermoextrap[accel] ; extra == 'dev'
+Requires-Dist: thermoextrap[viz] ; extra == 'dev'
+Provides-Extra: dev-complete
+Requires-Dist: thermoextrap[dev] ; extra == 'dev-complete'
+Requires-Dist: thermoextrap[tools] ; extra == 'dev-complete'
+Requires-Dist: thermoextrap[nox] ; extra == 'dev-complete'
+Provides-Extra: dev-extras
+Requires-Dist: pytest-accept ; extra == 'dev-extras'
+Requires-Dist: setuptools-scm ; extra == 'dev-extras'
+Requires-Dist: ipython ; extra == 'dev-extras'
+Requires-Dist: ipykernel ; extra == 'dev-extras'
+Provides-Extra: dist-conda
+Requires-Dist: anaconda-client ; extra == 'dist-conda'
+Requires-Dist: grayskull ; extra == 'dist-conda'
+Requires-Dist: conda-build ; extra == 'dist-conda'
+Requires-Dist: conda-verify ; extra == 'dist-conda'
+Requires-Dist: boa ; extra == 'dist-conda'
+Requires-Dist: setuptools-scm ; extra == 'dist-conda'
+Provides-Extra: dist-pypi
+Requires-Dist: twine ; extra == 'dist-pypi'
+Requires-Dist: build ; extra == 'dist-pypi'
+Provides-Extra: docs
+Requires-Dist: setuptools-scm ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Requires-Dist: pyenchant ; extra == 'docs'
+Requires-Dist: ghp-import ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinxcontrib-spelling ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: myst-nb ; extra == 'docs'
+Requires-Dist: sphinx-book-theme ; extra == 'docs'
+Requires-Dist: autodocsumm ; extra == 'docs'
+Requires-Dist: thermoextrap[viz] ; extra == 'docs'
+Requires-Dist: thermoextrap[mbar] ; extra == 'docs'
+Requires-Dist: thermoextrap[gpr] ; extra == 'docs'
+Provides-Extra: gpr
+Requires-Dist: tensorflow ; extra == 'gpr'
+Requires-Dist: tensorflow-probability ; extra == 'gpr'
+Requires-Dist: gpflow (<2.6.0) ; extra == 'gpr'
+Provides-Extra: mbar
+Requires-Dist: pymbar (>=4.0) ; extra == 'mbar'
+Provides-Extra: nox
+Requires-Dist: nox ; extra == 'nox'
+Requires-Dist: noxopt ; extra == 'nox'
+Requires-Dist: ruamel.yaml ; extra == 'nox'
+Provides-Extra: openmm
+Requires-Dist: openmm ; extra == 'openmm'
+Provides-Extra: parallel
+Requires-Dist: dask[complete] ; extra == 'parallel'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-sugar ; extra == 'test'
+Requires-Dist: pandas ; extra == 'test'
+Requires-Dist: thermoextrap[mbar] ; extra == 'test'
+Requires-Dist: thermoextrap[gpr] ; extra == 'test'
+Provides-Extra: tools
+Requires-Dist: pre-commit ; extra == 'tools'
+Requires-Dist: cruft ; extra == 'tools'
+Requires-Dist: scriv ; extra == 'tools'
+Provides-Extra: typing
+Requires-Dist: thermoextrap[typing-extras] ; extra == 'typing'
+Requires-Dist: thermoextrap[test] ; extra == 'typing'
+Provides-Extra: typing-extras
+Requires-Dist: mypy ; extra == 'typing-extras'
+Provides-Extra: viz
+Requires-Dist: matplotlib ; extra == 'viz'
+
+<!-- markdownlint-disable MD041 -->
+
+[![Repo][repo-badge]][repo-link] [![Docs][docs-badge]][docs-link]
+[![PyPI license][license-badge]][license-link]
+[![PyPI version][pypi-badge]][pypi-link]
+[![Conda (channel only)][conda-badge]][conda-link]
+[![Code style: black][black-badge]][black-link]
+
+<!-- For more badges, see
+https://shields.io/category/other
+https://naereen.github.io/badges/
+[pypi-badge]: https://badge.fury.io/py/thermoextrap
+-->
+
+[black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg
+[black-link]: https://github.com/psf/black
+[pypi-badge]: https://img.shields.io/pypi/v/thermoextrap
+[pypi-link]: https://pypi.org/project/thermoextrap
+[docs-badge]: https://img.shields.io/badge/docs-sphinx-informational
+[docs-link]: https://pages.nist.gov/thermoextrap/
+[repo-badge]: https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff
+[repo-link]: https://github.com/usnistgov/thermoextrap
+[conda-badge]: https://img.shields.io/conda/v/conda-forge/thermoextrap
+[conda-link]: https://anaconda.org/conda-forge/thermoextrap
+[license-badge]: https://img.shields.io/pypi/l/cmomy?color=informational
+[license-link]: https://github.com/usnistgov/thermoextrap/blob/main/LICENSE
+
+<!-- other links -->
+
+[cmomy]: https://github.com/usnistgov/cmomy
+[gpr-link]:
+  https://github.com/usnistgov/thermoextrap/tree/main/examples/gpr_active_learning
+[notebook-link]:
+  https://github.com/usnistgov/thermoextrap/tree/main/examples/usage
+
+# `thermoextrap`: Thermodynamic Extrapolation/Interpolation Library
+
+This repository contains code used and described in references [^fn1] [^fn2].
+
+[^fn1]:
+    [Extrapolation and Interpolation Strategies for Efficiently Estimating Structural Observables as a Function of Temperature and Density](https://doi.org/10.1063/5.0014282)
+
+[^fn2]:
+    Leveraging Uncertainty Estimates and Derivative Information in Gaussian
+    Process Regression for Expedited Data Collection in Molecular Simulations.
+    In preparation.
+
+## Overview
+
+If you find this code useful in producing published works, please provide an
+appropriate citation. Note that the second citation is focused on adding
+features that make use of GPR models based on derivative information produced by
+the core code base. For now, the GPR code, along with more information, may be
+found under [here][gpr-link]. In a future release, we expect this to be fully
+integrated into the code base rather than a standalone module.
+
+Code included here can be used to perform thermodynamic extrapolation and
+interpolation of observables calculated from molecular simulations. This allows
+for more efficient use of simulation data for calculating how observables change
+with simulation conditions, including temperature, density, pressure, chemical
+potential, or force field parameters. Users are highly encourage to work through
+the [Jupyter Notebooks][notebook-link] presenting examples for a variety of
+different observable functional forms. We only guarantee that this code is
+functional for the test cases we present here or for which it has previously
+been applied Additionally, the code may be in continuous development at any
+time. Use at your own risk and always check to make sure the produced results
+make sense. If bugs are found, please report them. If specific features would be
+helpful just let us know and we will be happy to work with you to come up with a
+solution.
+
+## Features
+
+- Fast calculation of derivatives
+
+## Status
+
+This package is actively used by the author. Please feel free to create a pull
+request for wanted features and suggestions!
+
+## Quick start
+
+`thermoextrap` may be installed with either (recommended)
+
+```bash
+conda install -c conda-forge thermoextrap
+```
+
+or
+
+```bash
+pip install thermoextrap
+```
+
+If you use pip, then you can include additional dependencies using
+
+```bash
+pip install thermoextrap[all]
+```
+
+If you install `thermoextrap` with conda, there are additional optional
+dependencies that take some care for installation. We recommend installing the
+following via `pip`, as the versions on the conda/conda-forge channels are often
+a bit old.
+
+```bash
+pip install tensorflow tensorflow-probability gpflow
+```
+
+To install from source do the following:
+
+```bash
+git clone git@github.com:usnistgov/thermoextrap.git
+cd thermoextrap
+pip install . [-e]
+```
+
+To (optionally) include the example data do the following:
+
+```bash
+git submodule update --init  --recursive
+```
+
+## Example usage
+
+```python
+import thermoextrap
+
+```
+
+<!-- end-docs -->
+
+## Documentation
+
+See the [documentation][docs-link] for a look at `thermoextrap` in action.
+
+To have a look at using `thermoextrap` with Gaussian process regression, look in
+the [gpr](examples/usage/gpr) and
+[gpr_active_learning](examples/gpr_active_learning) directories.
+
+## License
+
+This is free software. See [LICENSE][license-link].
+
+## Related work
+
+This package extensively uses the [cmomy] package to handle central comoments.
+
+## Contact
+
+Questions may be addressed to Bill Krekelberg at william.krekelberg@nist.gov or
+Jacob Monroe at jacob.monroe@uark.edu.
+
+## Credits
+
+This package was created with
+[Cookiecutter](https://github.com/audreyr/cookiecutter) and the
+[wpk-nist-gov/cookiecutter-pypackage](https://github.com/wpk-nist-gov/cookiecutter-pypackage)
+Project template forked from
+[audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
+
+<!-- markdownlint-disable MD024 -->
+
+# Changelog
+
+Changelog for `thermoextrap`
+
+## Unreleased
+
+See the fragment files in
+[changelog.d](https://github.com/usnistgov/thermoextrap)
+
+<!-- scriv-insert-here -->
+
+## v0.4.0 — 2023-06-15
+
+### Added
+
+- Package now available on conda-forge
+
+- Now support python3.11
+- Bumped pymbar version to pymbar>=4.0
+
+### Changed
+
+- Switched from tox to nox for testing.
+
+### Deprecated
+
+- No longer support pymbar < 4.0
+
+## v0.3.0 — 2023-05-03
+
+### Changed
+
+- New linters via pre-commit
+- Development env now handled by tox
+
+- Moved `modesl, data, idealgas` from `thermoextrap.core` to `thermoextrap`.
+  These were imported at top level anyway. This fixes issues with doing things
+  like `from thermoextrap.data import ...`, etc.
+- Moved `core._docstrings_` to `docstrings`.
+- Now using `cmomy.docstrings` instead of repeating them here.
+
+Full set of changes:
+[`v0.2.2...v0.3.0`](https://github.com/usnistgov/thermoextrap/compare/v0.2.2...0.3.0)
+
+## v0.2.2 - 2023-04-05
+
+Full set of changes:
+[`v0.2.1...v0.2.2`](https://github.com/usnistgov/thermoextrap/compare/v0.2.1...v0.2.2)
+
+## v0.2.1 - 2023-03-30
+
+Full set of changes:
+[`v0.2.0...v0.2.1`](https://github.com/usnistgov/thermoextrap/compare/v0.2.0...v0.2.1)
+
+## v0.2.0 - 2023-03-28
+
+Full set of changes:
+[`v0.1.9...v0.2.0`](https://github.com/usnistgov/thermoextrap/compare/v0.1.9...v0.2.0)
+
+## v0.1.9 - 2023-02-15
+
+Full set of changes:
+[`v0.1.8...v0.1.9`](https://github.com/usnistgov/thermoextrap/compare/v0.1.8...v0.1.9)
+
+## v0.1.8 - 2023-02-15
+
+Full set of changes:
+[`v0.1.7...v0.1.8`](https://github.com/usnistgov/thermoextrap/compare/v0.1.7...v0.1.8)
+
+## v0.1.7 - 2023-02-14
+
+This software was developed by employees of the National Institute of Standards
+and Technology (NIST), an agency of the Federal Government. Pursuant to title 17
+United States Code Section 105, works of NIST employees are not subject to
+copyright protection in the United States and are considered to be in the public
+domain. Permission to freely use, copy, modify, and distribute this software and
+its documentation without fee is hereby granted, provided that this notice and
+disclaimer of warranty appears in all copies.
+
+THE SOFTWARE IS PROVIDED 'AS IS' WITHOUT ANY WARRANTY OF ANY KIND, EITHER
+EXPRESSED, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTY
+THAT THE SOFTWARE WILL CONFORM TO SPECIFICATIONS, ANY IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND FREEDOM FROM
+INFRINGEMENT, AND ANY WARRANTY THAT THE DOCUMENTATION WILL CONFORM TO THE
+SOFTWARE, OR ANY WARRANTY THAT THE SOFTWARE WILL BE ERROR FREE. IN NO EVENT
+SHALL NIST BE LIABLE FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED TO, DIRECT,
+INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES, ARISING OUT OF, RESULTING FROM, OR
+IN ANY WAY CONNECTED WITH THIS SOFTWARE, WHETHER OR NOT BASED UPON WARRANTY,
+CONTRACT, TORT, OR OTHERWISE, WHETHER OR NOT INJURY WAS SUSTAINED BY PERSONS OR
+PROPERTY OR OTHERWISE, AND WHETHER OR NOT LOSS WAS SUSTAINED FROM, OR AROSE OUT
+OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
+
+Distributions of NIST software should also include copyright and licensing
+statements of any third-party software that are legally bundled with the code in
+compliance with the conditions of those licenses.
