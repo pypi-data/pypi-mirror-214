@@ -1,0 +1,8 @@
+setup.py
+bulksmsng/__init__.py
+bulksmsng/bulksmsng.py
+bulksmsng.egg-info/PKG-INFO
+bulksmsng.egg-info/SOURCES.txt
+bulksmsng.egg-info/dependency_links.txt
+bulksmsng.egg-info/requires.txt
+bulksmsng.egg-info/top_level.txt
