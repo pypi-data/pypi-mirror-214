@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "object-registry"
+version = "0.1.0"
+description = "Keep track of all instantiated objects of a class."
+authors = ["Maximillian Strand <maxi@millian.se>"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+repository = "https://gitlab.com/deepadmax/object-registry"
+packages = [{include = "object_registry"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
