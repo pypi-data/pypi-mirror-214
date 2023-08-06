@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: monito-tools
+Version: 0.1.0
+Summary: Tools for Monito
+Author: Steffen Brinkmann
+Author-email: s-b@mailbox.org
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fs (>=2.4.16,<3.0.0)
+Requires-Dist: gensim (>=4.3.1,<5.0.0)
+Requires-Dist: nltk (>=3.8.1,<4.0.0)
+Requires-Dist: openai (>=0.27.6,<0.28.0)
+Requires-Dist: pandas (>=2.0.1,<3.0.0)
+Requires-Dist: pymongo (>=4.3.3,<5.0.0)
+Requires-Dist: rich (>=13.3.5,<14.0.0)
+Requires-Dist: scikit-learn (>=1.2.2,<2.0.0)
+Requires-Dist: spacy (>=3.5.3,<4.0.0)
+Requires-Dist: spacy-syllables (>=3.0.2,<4.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/x-rst
+
+
