@@ -1,0 +1,11 @@
+libraries/__init__.py,sha256=FW8Q2SkpAN-xuQw8yBSj8JpvGfxL2hp1vfjnOWBMIX4,1053
+libraries/copy.py,sha256=eRta2dWe6Kh9MrG6DKKh5ve3_DBgFQB2-07jDnjST7Y,168
+libraries/definitions.py,sha256=YQXB6N34lVZaGDymoMma-QlpJ8QbIHKRhmFp1yhuK80,4507
+libraries/neurons.py,sha256=vXcJnLU4fnaQaSiqSkzj57rWBiCUWrYXzpw8VqnL9C0,13873
+libraries/otup.py,sha256=ZqY360xk-Oxk8BV-zgWRi8IGcv7GIMG7p77iXMstgqU,2358
+libraries/otup2.py,sha256=-mFbfvIiEtB8xTfqw56odm5Gmdbs6wt6DkqbGoVSXdA,2578
+libraries/snippets.py,sha256=xSnygOfdXSEv1OEn1OPtKESXRp46KDBCn3VHtqKn7N8,8350
+latex_ml_helper-0.1.0.dist-info/METADATA,sha256=WNmQYFYjvmHQg_3yuoe007e_ek9zW30kl4dbZVULka8,683
+latex_ml_helper-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+latex_ml_helper-0.1.0.dist-info/top_level.txt,sha256=yr1rmwtBnIdYZsLXLyPQ8D7hI1DY32EecaHqg6ch54A,10
+latex_ml_helper-0.1.0.dist-info/RECORD,,
