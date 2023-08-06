@@ -1,0 +1,11 @@
+torch_activation/__init__.py,sha256=oK3L8_ILsbIheR-VYf-e0kxygcO_hTh4d9l1aaXxODw,568
+torch_activation/composite.py,sha256=UereRMNbcbADC7orKM4I9aB8a9tVjuyqUemqNU6tRL0,2773
+torch_activation/glu_family.py,sha256=9x7pTOqzIFYnsS202Jhi5rXtuO7dcyICKWytdEHDr-E,3485
+torch_activation/lincomb.py,sha256=wom-nBptAWwd6oocadiN-jNL_aYlG-C6aDhc3K8pmRQ,2617
+torch_activation/non_linear.py,sha256=VN8vboht_8unQQvOaJEEPyqwble08S0i8UIvWxgIxZs,2417
+torch_activation/relu_family.py,sha256=o6HNNhckd_5CjydCOAN8z0j1TDF5H0J1gxOn14c6WLE,6141
+torch_activation/trig.py,sha256=khpKdm3dw1XmHPkEptIVolpXOC8SdzVGw0JPSSisVtY,3525
+torch_activation/utils.py,sha256=WG8B9HuapLPr63TyYWw-QFpl1w36Qy6c3KwidZUcsDo,2877
+torch_activation-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+torch_activation-0.1.1.dist-info/METADATA,sha256=9NvSfU5gq0ITQIbY-1MkClq0NGBUP6OADRCYYyQk0Kc,4082
+torch_activation-0.1.1.dist-info/RECORD,,
