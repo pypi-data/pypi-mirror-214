@@ -1,0 +1,15 @@
+getmodelspec/__init__.py,sha256=Vo7sTUGV7a1JVyGxDOKJRt6Okn7Yn3CtQGGwal3b6aE,253
+getmodelspec/lineup.py,sha256=oHwqqRfDPsPlaCBjUJwePd0kXAmgFHSP_WvTi_wtyTw,778
+getmodelspec/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getmodelspec/src/panasonic.py,sha256=fHiSuQZP6mjP9vQje0ckzOvgA9KRcfPpFhNpjHmhLH8,11049
+getmodelspec/src/sony.py,sha256=zX4HaKvZSfiHGiItNz2MCscSJaQ_i5t_iYMyxoBW_e8,29256
+getmodelspec/src/tv_score.py,sha256=g999T_qEbf5Fsj4E8nY4rqGep2lM8tGQq0EJA-H-GLY,1873
+getmodelspec/src/tv_spepcifications.py,sha256=H4nouv3eMSdUzHoGf1xcB4i__xgX6PSf9da0e7BgbWE,4277
+getmodelspec/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getmodelspec/tools/functions.py,sha256=m6O2bojjC3LBXePqkB5J3hFGtDXrT7qCvI78e_SwtuI,2810
+getmodelspec/tools/webdriver.py,sha256=iGX2o2hDwivHDwnIs8c_dOF_t_nr998ctauoP2S0MBo,5315
+getmodelspec-1.0.393.dist-info/METADATA,sha256=zCZk6sNGNRpdF46pByfOuGThFrCKbrflhWBuPFMceao,443
+getmodelspec-1.0.393.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+getmodelspec-1.0.393.dist-info/entry_points.txt,sha256=vPyiJhHPbdbhTmG_GVhGDn9DVNiu87bfxevQ-am5ayA,52
+getmodelspec-1.0.393.dist-info/top_level.txt,sha256=wRxLocFakFEHpbAFVg8C4mt8YHBZZlXTRRtRtHz-ab4,13
+getmodelspec-1.0.393.dist-info/RECORD,,

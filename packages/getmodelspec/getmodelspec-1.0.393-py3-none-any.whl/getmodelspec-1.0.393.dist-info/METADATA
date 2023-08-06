@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: getmodelspec
+Version: 1.0.393
+Summary: get model spec,
+Home-page: https://github.com/xikest/Research-on-the-TV-market
+Author: xikest
+Project-URL: Source, https://github.com/xikest/Research-on-the-TV-market
+Project-URL: Bug Tracker, https://github.com/xikest/Research-on-the-TV-market/issues
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: selenium
+Requires-Dist: bs4
+
