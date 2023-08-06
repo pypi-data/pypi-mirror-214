@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tear-pages
+Version: 0.4.1
+Summary: Simple script to remove the first page of a PDF
+Home-page: https://github.com/sciunto/tear-pages
+Author: Francois Boulogne
+Author-email: devel@sciunto.org
+License: GPLv3
+License-File: LICENSE

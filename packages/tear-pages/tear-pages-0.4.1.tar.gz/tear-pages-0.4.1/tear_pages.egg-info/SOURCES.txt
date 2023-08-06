@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tearpages.py
+tear_pages.egg-info/PKG-INFO
+tear_pages.egg-info/SOURCES.txt
+tear_pages.egg-info/dependency_links.txt
+tear_pages.egg-info/requires.txt
+tear_pages.egg-info/top_level.txt
