@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+embedchain/__init__.py
+embedchain.egg-info/PKG-INFO
+embedchain.egg-info/SOURCES.txt
+embedchain.egg-info/dependency_links.txt
+embedchain.egg-info/top_level.txt
