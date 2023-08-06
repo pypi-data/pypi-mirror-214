@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qontract-validator
+Version: 0.1.0
+Summary: Tools to validate and bundle datafiles for qontract-server
+Home-page: UNKNOWN
+Author: Red Hat App-SRE Team
+Author-email: sd-app-sre@redhat.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: Click (~=8.1)
+Requires-Dist: jsonschema (~=3.2)
+Requires-Dist: PyYAML (~=5.3)
+Requires-Dist: requests (~=2.24)
+Requires-Dist: jsonpath-ng (~=1.5)
+
+UNKNOWN
+
