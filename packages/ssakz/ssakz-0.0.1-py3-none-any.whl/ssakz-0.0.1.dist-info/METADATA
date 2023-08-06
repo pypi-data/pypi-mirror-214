@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ssakz
+Version: 0.0.1
+Summary: Client API for ssa.fai.kz
+Home-page: https://github.com/fai-kz/ssakz
+Author: FAI
+Author-email: ssakz@fai.kz
+License: MIT
+License-File: LICENSE
+Requires-Dist: pyzmq
+
