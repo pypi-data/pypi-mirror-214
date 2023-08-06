@@ -1,0 +1,14 @@
+usearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usearch/client.py,sha256=GGPjJt7baBYppvB43Bd9DdxMCWM1_LxF4ZF1E8ziaKo,4320
+usearch/compiled.cp38-win_amd64.pyd,sha256=jTLhagnhHqXwcJUYVdrnhg_Xw7oCO04OpBbxnVLW-RQ,324096
+usearch/eval.py,sha256=yAtfu_m0TfPb8NIM2Hpg3XQv0RpDjro0Bo-0_kKXLTU,11419
+usearch/index.py,sha256=Lo7xqFOX3OncVKDVrY-ikgHfY6Brg2QHR9EOUveEvD4,14968
+usearch/io.py,sha256=DcVL8Lw3N_UdIkmKV0gOYbGPj6hBtZkOpGZuSjcL1u8,2635
+usearch/join.py,sha256=MeQG5GQ5XAJnHuz0k6AgZ7y_vPYu_5pD9sv8NsngKpc,3480
+usearch/numba.py,sha256=IiRCOJWV-_otQndNVQFtV6tvtSP1PPp4TXXMhIYHUvc,3740
+usearch/server.py,sha256=hoAECgTNnSKCyX2Iy2pGXSE3MITjL8qrhEghlQogUyA,3804
+usearch-0.18.8.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+usearch-0.18.8.dist-info/METADATA,sha256=ZZvEfw33BgAdbHJXCrHrO_thVIu3UqVp4Mwa0fXfN5E,24917
+usearch-0.18.8.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
+usearch-0.18.8.dist-info/top_level.txt,sha256=zFbid1SmQjk8RsbEgpqF7tTjgWdFvE2z0e1LQ2hKdPg,8
+usearch-0.18.8.dist-info/RECORD,,
