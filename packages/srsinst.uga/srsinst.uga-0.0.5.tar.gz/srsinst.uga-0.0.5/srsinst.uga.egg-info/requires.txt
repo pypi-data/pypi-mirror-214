@@ -1,0 +1,8 @@
+numpy
+scipy
+srsgui>=0.3.3
+srsinst.rga>=0.3.3
+
+[full]
+matplotlib>=3.6.2
+pyside6
