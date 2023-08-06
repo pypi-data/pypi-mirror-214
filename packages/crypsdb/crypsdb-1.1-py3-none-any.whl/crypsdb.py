@@ -1,0 +1,236 @@
+import os
+import json
+import hashlib
+import shutil
+from datetime import datetime
+from pprint import pprint
+import bcrypt
+import secrets
+
+
+class JSONDatabase:
+    def __init__(self, database_dir):
+        self.database_dir = database_dir
+
+    def create_database(self, database_name):
+        database_path = os.path.join(self.database_dir, database_name)
+        os.makedirs(database_path, exist_ok=True)
+        operation = f"Create database {database_name}"
+        self.log_operation(operation)
+
+    def remove_database(self, database_name):
+        database_path = os.path.join(self.database_dir, database_name)
+        if os.path.exists(database_path):
+            confirm = input(f"Are you sure you want to remove database '{database_name}'? (y/n): ")
+            if confirm.lower() == 'y':
+                shutil.rmtree(database_path)
+                operation = f"Remove database {database_name}"
+                self.log_operation(operation)
+
+    def create_table(self, database_name, table_name):
+        database_path = os.path.join(self.database_dir, database_name)
+        table_path = os.path.join(database_path, f"{table_name}.json")
+        if os.path.exists(database_path):
+            if not os.path.exists(table_path):
+                with open(table_path, 'w') as f:
+                    f.write("[]")
+        operation = f"Create table {table_name} in {database_name}"
+        self.log_operation(operation)
+
+    def remove_table(self, database_name, table_name):
+        database_path = os.path.join(self.database_dir, database_name)
+        table_path = os.path.join(database_path, f"{table_name}.json")
+        if os.path.exists(database_path):
+            if os.path.exists(table_path):
+                confirm = input(f"Are you sure you want to remove table '{table_name}' from database '{database_name}'? (y/n): ")
+                if confirm.lower() == 'y':
+                    os.remove(table_path)
+                    operation = f"Remove table {table_name} from {database_name}"
+                    self.log_operation(operation)
+
+    def insert_record(self, database_name, table_name, record):
+        database_path = os.path.join(self.database_dir, database_name)
+        table_path = os.path.join(database_path, f"{table_name}.json")
+        if os.path.exists(database_path):
+            if os.path.exists(table_path):
+                with open(table_path, 'r+') as f:
+                    data = json.load(f)
+                    record['_id'] = secrets.token_hex(8)
+                    data.insert(0, record)
+                    f.seek(0)
+                    json.dump(data, f, indent=4)
+                    f.truncate()
+
+        operation = f"Insert record into {database_name}/{table_name}"
+        self.log_operation(operation)
+
+    def update_record(self, database_name, table_name, record_id, new_values):
+        database_path = os.path.join(self.database_dir, database_name)
+        table_path = os.path.join(database_path, f"{table_name}.json")
+        if os.path.exists(database_path):
+            if os.path.exists(table_path):
+                with open(table_path, 'r+') as f:
+                    data = json.load(f)
+                    for record in data:
+                        if record.get('_id') == record_id:
+                            record.update(new_values)
+                            break
+                    f.seek(0)
+                    json.dump(data, f, indent=4)
+                    f.truncate()
+
+        operation = f"Update record in {database_name}/{table_name}"
+        self.log_operation(operation)
+
+    def delete_record(self, database_name, table_name, record_id):
+        database_path = os.path.join(self.database_dir, database_name)
+        table_path = os.path.join(database_path, f"{table_name}.json")
+        if os.path.exists(database_path):
+            if os.path.exists(table_path):
+                with open(table_path, 'r+') as f:
+                    data = json.load(f)
+                    data = [record for record in data if record.get('_id') != record_id]
+                    f.seek(0)
+                    json.dump(data, f, indent=4)
+                    f.truncate()
+
+        operation = f"Delete record from {database_name}/{table_name}"
+        self.log_operation(operation)
+
+    def get_table(self, database_name, table_name):
+        database_path = os.path.join(self.database_dir, database_name)
+        table_path = os.path.join(database_path, f"{table_name}.json")
+        if os.path.exists(database_path):
+            if os.path.exists(table_path):
+                with open(table_path, 'r') as f:
+                    table = json.load(f)
+                return table
+
+    def count_records(self, database_name, table_name):
+        table = self.get_table(database_name, table_name)
+        if table:
+            count = len(table)
+            return count
+
+    def aggregate(self, database_name, table_name, field, operation):
+        table = self.get_table(database_name, table_name)
+        if table:
+            if operation == 'sum':
+                result = sum(record[field] for record in table)
+                return result
+            elif operation == 'average':
+                result = sum(record[field] for record in table) / len(table)
+                return result
+            elif operation == 'min':
+                result = min(record[field] for record in table)
+                return result
+            elif operation == 'max':
+                result = max(record[field] for record in table)
+
+    def sort_table(self, database_name, table_name, field, reverse=False):
+        table = self.get_table(database_name, table_name)
+        if table:
+            sorted_table = sorted(table, key=lambda x: x.get(field), reverse=reverse)
+            return sorted_table
+
+    def create_index(self, database_name, table_name, field):
+        table = self.get_table(database_name, table_name)
+        if table:
+            index = {}
+            for record in table:
+                value = record.get(field)
+                if value not in index:
+                    index[value] = []
+                index[value].append(record)
+            index_file = os.path.join(self.database_dir, database_name, f"{table_name}_{field}_index.json")
+            with open(index_file, 'w') as f:
+                json.dump(index, f, indent=4)
+
+    def backup_database(self, database_name, backup_file):
+        database_path = os.path.join(self.database_dir, database_name)
+        if os.path.exists(database_path):
+            shutil.make_archive(backup_file, 'zip', database_path)
+
+    def restore_database(self, backup_file, database_dir):
+        shutil.unpack_archive(backup_file, database_dir)
+
+    def begin_transaction(self, database_name):
+        database_path = os.path.join(self.database_dir, database_name)
+        transaction_path = os.path.join(database_path, 'transaction')
+        if os.path.exists(database_path):
+            if not os.path.exists(transaction_path):
+                os.makedirs(transaction_path)
+
+    def commit_transaction(self, database_name):
+        database_path = os.path.join(self.database_dir, database_name)
+        transaction_path = os.path.join(database_path, 'transaction')
+        if os.path.exists(database_path):
+            if os.path.exists(transaction_path):
+                shutil.rmtree(transaction_path)
+
+    def rollback_transaction(self, database_name):
+        database_path = os.path.join(self.database_dir, database_name)
+        transaction_path = os.path.join(database_path, 'transaction')
+        if os.path.exists(database_path):
+            if os.path.exists(transaction_path):
+                shutil.rmtree(transaction_path)
+
+    def log_operation(self, operation):
+        logs_path = os.path.join(self.database_dir, 'logs')
+        log_file = os.path.join(logs_path, 'logs.json')
+        log = {
+            'timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S IST"),
+            'operation': operation
+        }
+        os.makedirs(logs_path, exist_ok=True)
+        if os.path.exists(log_file):
+            with open(log_file, 'r+') as f:
+                logs = json.load(f)
+                logs.append(log)
+                f.seek(0)
+                json.dump(logs, f, indent=4)
+                f.truncate()
+        else:
+            with open(log_file, 'w') as f:
+                json.dump([log], f, indent=4)
+
+    def create_user(self, username, password):
+        hashed_password = self.hash_password(password)
+        users_path = os.path.join(self.database_dir, 'auth', 'users.json')
+        if os.path.exists(users_path):
+            with open(users_path, 'r+') as f:
+                users = json.load(f)
+                users.append({"username": username, "password": hashed_password})
+                f.seek(0)
+                json.dump(users, f, indent=4)
+                f.truncate()
+        else:
+            with open(users_path, 'w') as f:
+                json.dump([{"username": username, "password": hashed_password}], f, indent=4)
+
+    def authenticate(self, username, password):
+        users_path = os.path.join(self.database_dir, 'auth', 'users.json')
+        if os.path.exists(users_path):
+            with open(users_path, 'r') as f:
+                users = json.load(f)
+                for user in users:
+                    if user["username"] == username and self.verify_password(password, user["password"]):
+                        return True
+        return False
+
+    def hash_password(self, password):
+        salt = bcrypt.gensalt()
+        hashed_password = bcrypt.hashpw(password.encode(), salt)
+        return hashed_password.decode()
+
+    def verify_password(self, password, hashed_password):
+        return bcrypt.checkpw(password.encode(), hashed_password.encode())
+
+    def query_record(self, database_name, table_name, condition):
+        table = self.get_table(database_name, table_name)
+        if table:
+            query_result = [record for record in table if all(record.get(key) == value for key, value in condition.items())]
+            return query_result
+
+    def drop_table(self, database_name, table_name):
+        self.remove_table(database_name, table_name)
