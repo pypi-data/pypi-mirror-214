@@ -1,0 +1,3 @@
+[console_scripts]
+dbt-copilot-tools-helper=copilot_helper:cli
+
