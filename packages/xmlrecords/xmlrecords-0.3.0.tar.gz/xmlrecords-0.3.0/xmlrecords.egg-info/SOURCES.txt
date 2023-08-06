@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_core.py
+xmlrecords/__init__.py
+xmlrecords.egg-info/PKG-INFO
+xmlrecords.egg-info/SOURCES.txt
+xmlrecords.egg-info/dependency_links.txt
+xmlrecords.egg-info/requires.txt
+xmlrecords.egg-info/top_level.txt
+xmlrecords/src/__init__.py
+xmlrecords/src/xmlrecords.py
