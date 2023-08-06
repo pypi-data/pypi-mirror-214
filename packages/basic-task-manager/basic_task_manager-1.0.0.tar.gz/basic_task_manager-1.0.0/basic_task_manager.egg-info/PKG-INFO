@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: basic-task-manager
+Version: 1.0.0
+Summary: A task manager application
+Home-page: UNKNOWN
+Author: GautamSagarMallela
+License: UNKNOWN
+Description: # Task Manager
+        
+        This is a task manager application.
+        
+        ## Installation
+        
+        You can install the task_manager module using pip: pip install basic_task_manager
+        
+        ## Usage
+        
+        Here's an example of how to use the task_manager module:
+        
+        ```python
+        import basic_task_manager
+        
+        basic_task_manager.run_task_manager()
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

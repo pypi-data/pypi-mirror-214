@@ -1,0 +1,8 @@
+README.md
+setup.py
+basic_task_manager/__init__.py
+basic_task_manager/app.py
+basic_task_manager.egg-info/PKG-INFO
+basic_task_manager.egg-info/SOURCES.txt
+basic_task_manager.egg-info/dependency_links.txt
+basic_task_manager.egg-info/top_level.txt
