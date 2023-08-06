@@ -1,0 +1,6 @@
+{
+  "urls": [
+    ["micropython_ds1841/examples/ds1841_simpletest.py", "github:jposada202020/MicroPython_DS1841/examples/ds1841_simpletest.py"]
+  ],
+  "version": "0.1"
+}
