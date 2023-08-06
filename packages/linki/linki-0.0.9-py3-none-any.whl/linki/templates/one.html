@@ -1,0 +1,16 @@
+% rebase('base.html')
+<main>
+    <header>
+        <h1>{{item.label.name}}</h1>
+        <p>#{{item.articleId}}</p>
+        <nav>
+            % for crumb in item.label.parents:
+            <li>{{crumb}}</li>
+            % end
+        </nav>
+    </header>
+    <article>
+        {{!item.web_content}}
+    </article>
+
+</main>
