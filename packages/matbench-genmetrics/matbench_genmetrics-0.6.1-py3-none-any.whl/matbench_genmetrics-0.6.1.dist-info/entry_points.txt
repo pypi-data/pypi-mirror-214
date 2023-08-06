@@ -1,0 +1,5 @@
+[console_scripts]
+matbench-genmetrics = matbench_genmetrics.core.core:run
+matbench_genmetrics = matbench_genmetrics.core.core:run
+mp-time-split = matbench_genmetrics.mp_time_split.core:run
+mp_time_split = matbench_genmetrics.mp_time_split.core:run
