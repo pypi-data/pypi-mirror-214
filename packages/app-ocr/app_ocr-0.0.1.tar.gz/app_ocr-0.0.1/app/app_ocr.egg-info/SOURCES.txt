@@ -1,0 +1,7 @@
+README.md
+setup.py
+app/app_ocr.egg-info/PKG-INFO
+app/app_ocr.egg-info/SOURCES.txt
+app/app_ocr.egg-info/dependency_links.txt
+app/app_ocr.egg-info/requires.txt
+app/app_ocr.egg-info/top_level.txt
