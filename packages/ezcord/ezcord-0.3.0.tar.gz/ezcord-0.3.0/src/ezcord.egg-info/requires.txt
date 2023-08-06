@@ -1,0 +1,13 @@
+py-cord
+aiohttp
+colorama
+aiosqlite
+
+[dev]
+pre-commit
+
+[docs]
+sphinx
+furo
+sphinx-autodoc-typehints
+sphinx-copybutton
