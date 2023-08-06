@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: osmchange-generator-cli
+Version: 0.1.0
+Summary: OsmChange file generator useful for importing and updating data in OpenStreetMap.
+Home-page: https://github.com/docentYT/OsmChange-generator-cli
+License: MIT
+Keywords: openstreetmap,osm,OsmChange,generator,cli
+Author: Christopher Kwiatkowski
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: osm-easy-api (>=1.0.0,<2.0.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Project-URL: Repository, https://github.com/docentYT/OsmChange-generator-cli
+Description-Content-Type: text/markdown
+
+<h1 align="center">OsmChange-generator-cli</h1>
+<p align="center"><a href="https://www.openstreetmap.org/user/kwiatek_123)">Me on OpenStreetMap</a></p>
+
+OsmChange file generator useful for importing and updating data in OpenStreetMap.
+
+In its current phase of development, the generator does not support relations. Data files must be in `.geojson` format.
+
+# Installation
+```
+pip install osmchange-generator-cli
+```
+
+# Usage
+
+```
+osmchange-generator \<input-file-names> \<osm-data-file-name> <out-file-name> <tag> (--log) (--create) (--delete) (--changeset-id)
+```
+## Help command with all arguments
+```
+osmchange-generator --help
+```
+## Example
+```
+osmchange-generator input_file.geojson osm_data.geojson out.osc ref --create --delete
+```
+(See `example` for generated file)
