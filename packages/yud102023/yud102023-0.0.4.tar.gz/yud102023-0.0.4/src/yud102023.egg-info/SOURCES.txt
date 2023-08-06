@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/yud102023/goodbye.py
+src/yud102023/init.py
+src/yud102023.egg-info/PKG-INFO
+src/yud102023.egg-info/SOURCES.txt
+src/yud102023.egg-info/dependency_links.txt
+src/yud102023.egg-info/requires.txt
+src/yud102023.egg-info/top_level.txt
