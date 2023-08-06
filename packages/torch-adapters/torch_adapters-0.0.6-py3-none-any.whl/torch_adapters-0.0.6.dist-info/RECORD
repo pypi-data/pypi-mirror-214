@@ -1,0 +1,12 @@
+torch_adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_adapters/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_adapters/adapters/adapter.py,sha256=1T_N-EmgBSXR5VvLvJIaWqNYwY8x2FkaVyB1zO9CMpY,1204
+torch_adapters/adapters/lora.py,sha256=w6xYYN_3iqifavGU6cOQ94n_IHEBRmRMlmuxeRnkO9o,1946
+torch_adapters/adapters/mixin.py,sha256=IJIXxbvKT8n4mUbvrLBJw5tW-HG0j901mVpS3WiiFY0,196
+torch_adapters/adapters/prefix_tuning.py,sha256=b-qVVD-Mll_RRp9L6ZYTbFClzLz7eA47HAcs7J3lndA,2725
+torch_adapters/adapters/prompt_tuning.py,sha256=o-T5nfS-tbkYmenf2Ql7IG3dW2kG0V9BE6aVJWkI_sg,3408
+torch_adapters/utils.py,sha256=X47RDN7eOMRIukMoPJXqGhu_pp3j-FXzdpgv_SQQXxM,5083
+torch_adapters-0.0.6.dist-info/LICENSE,sha256=jQP3CLPNJ3wkjftPFHJIPy-DHXrZUqtjnHmzzooOAfA,1062
+torch_adapters-0.0.6.dist-info/METADATA,sha256=6nFAsalvRrPO5lP50ZdwHd0auM72OBYnRjzSzJU46Dg,1174
+torch_adapters-0.0.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+torch_adapters-0.0.6.dist-info/RECORD,,
