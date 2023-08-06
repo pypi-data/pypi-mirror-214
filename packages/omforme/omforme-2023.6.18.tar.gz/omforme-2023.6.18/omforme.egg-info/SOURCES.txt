@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+omforme/__init__.py
+omforme/__main__.py
+omforme/cli.py
+omforme/omforme.py
+omforme.egg-info/PKG-INFO
+omforme.egg-info/SOURCES.txt
+omforme.egg-info/dependency_links.txt
+omforme.egg-info/entry_points.txt
+omforme.egg-info/requires.txt
+omforme.egg-info/top_level.txt
+test/test_cli.py
+test/test_omforme.py

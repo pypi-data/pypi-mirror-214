@@ -1,0 +1,2 @@
+[console_scripts]
+omforme = omforme.cli:main
