@@ -1,0 +1,51 @@
+{
+  "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+  "@type": "Code",
+  "author": [
+    {
+      "@id": "https://orcid.org/0000-0002-2462-362X",
+      "@type": "Person",
+      "email": "shawnpan@uw.edu",
+      "name": "Shaowu Pan",
+      "affiliation": "Department of Applied Mathematics, University of Washington"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6049-0812",
+      "@type": "Person",
+      "email": "eurika.kaiser@gmail.com",
+      "name": "Eurika Kaiser",
+      "affiliation": "Department of Applied Mathematics, University of Washington"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0944-900X",
+      "@type": "Person",
+      "email": "briandesilva1@gmail.com",
+      "name": "Brian M. de Silva",
+      "affiliation": "Department of Mechanical Engineering, University of Washington"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6004-2275",
+      "@type": "Person",
+      "email": "kutz@uw.edu",
+      "name": "J. Nathan Kutz",
+      "affiliation": "Department of Applied Mathematics, University of Washington"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6565-5118",
+      "@type": "Person",
+      "email": "sbrunton@uw.edu",
+      "name": "Steven L. Brunton",
+      "affiliation": "Department of Mechanical Engineering, University of Washington"
+    }
+  ],
+  "identifier": "",
+  "codeRepository": "https://github.com/dynamicslab/pykoopman",
+  "datePublished": "2021-10-21",
+  "dateModified": "2021-10-21",
+  "dateCreated": "2021-10-21",
+  "description": "A Python Package for Data-Driven Approximation of the Koopman Operator",
+  "keywords": "python, dynamical systems, Koopman operator, machine learning",
+  "license": "MIT",
+  "title": "PyKoopman",
+  "version": "v0.2.0"
+}
