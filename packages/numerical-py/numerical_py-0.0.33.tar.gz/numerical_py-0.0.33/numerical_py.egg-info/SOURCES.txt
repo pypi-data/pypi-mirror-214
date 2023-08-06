@@ -1,0 +1,13 @@
+setup.py
+numerical_py/__init__.py
+numerical_py/derivative.py
+numerical_py/differentional.py
+numerical_py/eigenvals.py
+numerical_py/equations.py
+numerical_py/integrals.py
+numerical_py/interpolation.py
+numerical_py/utils.py
+numerical_py.egg-info/PKG-INFO
+numerical_py.egg-info/SOURCES.txt
+numerical_py.egg-info/dependency_links.txt
+numerical_py.egg-info/top_level.txt
