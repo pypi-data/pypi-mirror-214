@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+kurvy/__init__.py
+kurvy/plots.py
+kurvy/trig.py
+kurvy/utils.py
+kurvy.egg-info/PKG-INFO
+kurvy.egg-info/SOURCES.txt
+kurvy.egg-info/dependency_links.txt
+kurvy.egg-info/top_level.txt
