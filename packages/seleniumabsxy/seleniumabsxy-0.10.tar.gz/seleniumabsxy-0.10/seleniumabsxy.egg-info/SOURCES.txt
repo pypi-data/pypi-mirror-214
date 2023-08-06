@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+seleniumabsxy/README.MD
+seleniumabsxy/__init__.py
+seleniumabsxy/requirements.txt
+seleniumabsxy/thirdparty.json
+seleniumabsxy.egg-info/PKG-INFO
+seleniumabsxy.egg-info/SOURCES.txt
+seleniumabsxy.egg-info/dependency_links.txt
+seleniumabsxy.egg-info/requires.txt
+seleniumabsxy.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+include seleniumabsxy/requirements.txt
+include seleniumabsxy/thirdparty.json
+include seleniumabsxy/README.MD
