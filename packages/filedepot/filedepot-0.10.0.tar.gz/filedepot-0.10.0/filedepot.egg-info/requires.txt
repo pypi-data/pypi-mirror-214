@@ -1,0 +1,15 @@
+anyascii
+
+[testing]
+mock
+requests
+ming
+TurboGears2
+boto3
+google-cloud-storage
+flaky
+boto
+coverage
+pillow
+WebTest
+sqlalchemy
