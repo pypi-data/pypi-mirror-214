@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/pygame_ui_controls.py
+src/pygame_ui_controls.egg-info/PKG-INFO
+src/pygame_ui_controls.egg-info/SOURCES.txt
+src/pygame_ui_controls.egg-info/dependency_links.txt
+src/pygame_ui_controls.egg-info/requires.txt
+src/pygame_ui_controls.egg-info/top_level.txt
