@@ -1,0 +1,2 @@
+[console_scripts]
+autopahe = autopahe.auto_pahe:main
