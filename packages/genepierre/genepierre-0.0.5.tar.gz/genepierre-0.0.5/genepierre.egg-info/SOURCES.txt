@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+genepierre/__init__.py
+genepierre/genetic.py
+genepierre.egg-info/PKG-INFO
+genepierre.egg-info/SOURCES.txt
+genepierre.egg-info/dependency_links.txt
+genepierre.egg-info/requires.txt
+genepierre.egg-info/top_level.txt
