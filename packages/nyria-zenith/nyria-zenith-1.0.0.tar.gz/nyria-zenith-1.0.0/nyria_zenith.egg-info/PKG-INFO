@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nyria-zenith
+Version: 1.0.0
+Summary: A Service management tool to create and get registed services.
+Home-page: https://gitlab.redtronics.de/Redtronics/nyria-zenith/
+Author: Redtronics
+License: All rights reserved.
+Keywords: python,servicesmanager
+License-File: LICENSE
+
+A Service management tool to create and get registed services.
