@@ -1,0 +1,3 @@
+[console_scripts]
+hw=heavywait.cli:cli
+

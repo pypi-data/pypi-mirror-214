@@ -1,0 +1,9 @@
+LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+heavywait/cli.py,sha256=W-l8vHtDSDwiWFRpRSpLS3CNdrJUCPkeGbHg6n-4PGs,1049
+heavywait/heavywait.py,sha256=YbcfIyjumT14P7VBsDdEgQqcfcW6tZdQ-d8HPYtae2U,7038
+heavywait/prompts.py,sha256=u6tygkXxOSYBila08C-yz1sjfkeNEutBZaVWI0yd4sk,2428
+heavywait-0.1.1.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+heavywait-0.1.1.dist-info/METADATA,sha256=LcI9uqRhZQcNLocNE4jNg0J9Z9AwVNwifuEYSIl1GbU,568
+heavywait-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+heavywait-0.1.1.dist-info/entry_points.txt,sha256=F6fPAJ4dhcIyk9Dcj9HB_wVYUkdTDitCUoEsMyen3SY,40
+heavywait-0.1.1.dist-info/RECORD,,
