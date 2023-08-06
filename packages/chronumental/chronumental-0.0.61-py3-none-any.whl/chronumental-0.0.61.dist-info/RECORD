@@ -1,0 +1,12 @@
+chronumental/__init__.py,sha256=0o3I9RCK03vdqXP0fVJm6zP7_xSh8B0Soltoc3b5dtI,24
+chronumental/__main__.py,sha256=d4_V2XY3WGg8OzvEe7t-_MI876wN0q4yDmfx4CVTSOM,15372
+chronumental/_version.py,sha256=ttsdegyGm5uuzUh1xAcvAKrjGqU1226j2wcFd6Q1IDY,162
+chronumental/helpers.py,sha256=iFdgwBov19lG0ISQAtafNOe67bh74k6GT6i3cB5HjV8,1337
+chronumental/input_mod.py,sha256=TAxNjzyzijA9rjIB_NKglMyDWTXeKAHJHX8HwhuhpIs,8985
+chronumental/models.py,sha256=1Dfoh7CQ3p9SUOoKFbYtrHmUWNzutybFaPeuQsdyH2Q,6044
+chronumental-0.0.61.dist-info/LICENSE,sha256=kvLZM9vPckgDAB6S9AIP71621NaKGp9soRHdT-31m2k,1071
+chronumental-0.0.61.dist-info/METADATA,sha256=DxC9TxhuDV28SZwoFCHmn20ZXMqjzl4fSSi0Q1b2tN8,3277
+chronumental-0.0.61.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chronumental-0.0.61.dist-info/entry_points.txt,sha256=qRHU7wx4zX_ruVi604SZozWaoTmRx_MPkj2plehmHMg,60
+chronumental-0.0.61.dist-info/top_level.txt,sha256=c4uTIhKRofFb0wMvMW3BgRSDWdySW-44Z4Ucvaoo4_A,13
+chronumental-0.0.61.dist-info/RECORD,,
