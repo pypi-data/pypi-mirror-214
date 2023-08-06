@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+selenium_simplified.egg-info/PKG-INFO
+selenium_simplified.egg-info/SOURCES.txt
+selenium_simplified.egg-info/dependency_links.txt
+selenium_simplified.egg-info/requires.txt
+selenium_simplified.egg-info/top_level.txt
+simplified/AdvannceActivities.py
+simplified/CommonActivities.py
+simplified/__init__.py
+simplified/simplifiedai/IdentifyLocators.py
+simplified/simplifiedai/__init__.py
+simplified/simplifiedreport/__init__.py
