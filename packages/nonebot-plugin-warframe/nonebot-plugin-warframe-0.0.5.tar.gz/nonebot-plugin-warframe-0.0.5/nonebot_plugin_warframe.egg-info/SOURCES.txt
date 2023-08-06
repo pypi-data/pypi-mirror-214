@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nonebot_plugin_warframe/__init__.py
+nonebot_plugin_warframe/data_source.py
+nonebot_plugin_warframe.egg-info/PKG-INFO
+nonebot_plugin_warframe.egg-info/SOURCES.txt
+nonebot_plugin_warframe.egg-info/dependency_links.txt
+nonebot_plugin_warframe.egg-info/requires.txt
+nonebot_plugin_warframe.egg-info/top_level.txt
