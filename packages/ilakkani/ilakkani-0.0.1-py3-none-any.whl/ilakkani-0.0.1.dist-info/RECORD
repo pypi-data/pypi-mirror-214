@@ -1,0 +1,17 @@
+ilakkani/bktree.py,sha256=nCptJN3b4cpHo8j-kbM_XTnenhx6lmWDUwzDUPVvGsg,3145
+ilakkani/bloom.py,sha256=oHIqcqTYZhQG5m6OcIYK1VHNASwXU1G4_lw0a77CqI4,1369
+ilakkani/thiruthi.py,sha256=4nAIRFeXz1UNIvTA6QQsqrEhvy3udF6QNxGNFGtY07A,5053
+ilakkani/trie.py,sha256=cJLWCmHdZrPINzKKflL6b3pxDyJH_XgnpulRSF2ENI8,4847
+ilakkani/utils.py,sha256=SHMvzYQKtsaATLxeVOqF5p0zkDf0Ev2R54la0SJwgaQ,699
+ilakkani/valam.py,sha256=VmVYeSfFQ7MrfXmDZzGqFa07sNfikm7sp-VAql2PEpM,331
+tharavu/chorkuviyal.22mar22.tsv.gz,sha256=lEpEdMHN8C3irWe1B_tHyw4VYML_wegnYYsPqQXTIho,1549093
+tharavu/chorpirappiyal-agarathi.tsv.gz,sha256=3eE9amDiiFoRvFzkNBOEp571VhUmMRY8r4FuiFTOcUg,781159
+tharavu/orungurri-chellumai-cholloadai.tsv,sha256=sjYbV_JZJz0n8QDRRl2jNNMiquEEO04cwCW4qW1kQnk,15806
+tharavu/test.json,sha256=cNAg65yiebMl9FHPuBpg9jFIMeZOxQEDH76oISiUPms,3040
+tharavu/test.txt,sha256=tcLpMib7MzAcZ-S3KVtf-MSYoy10ms4jqZiCPPmJjAE,2114
+ilakkani-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ilakkani-0.0.1.dist-info/METADATA,sha256=_EuInqLDxBXqGboI7hvIIvjeiZ_rHm5j-hyQKhT6uyY,45765
+ilakkani-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ilakkani-0.0.1.dist-info/entry_points.txt,sha256=LzCY0L17IhQ1P2JQMWVw2h9yW1P3CdIkLz2i7r1gFUk,54
+ilakkani-0.0.1.dist-info/top_level.txt,sha256=b9DOzVYoENOr-IdOHI-sVtkjNgs2H0ovT_VxNRAwKO4,17
+ilakkani-0.0.1.dist-info/RECORD,,
