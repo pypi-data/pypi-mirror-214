@@ -1,0 +1,16 @@
+pic_rucio-0.1.4.data/data/etc/rucio.cfg.atlas.client.template,sha256=O24QKo-0OX4Clj7Bp2Bv9W-b0NtLkyYg3jNNpz_alr0,1311
+pic_rucio-0.1.4.data/scripts/pic_rucio,sha256=s3c0XN-iYWi12Xm3pyBgycNUthoRQv9pFM-wzNoz3qw,2020
+transfer_agents/__init__.py,sha256=t0U5isCeR-Q_g4ZbCNTGTELmRw2X6_6EJhP9HZZx--0,163
+transfer_agents/commons.py,sha256=m5qy3_TR-A8G4lKH8Nr6pC5RWBjkn_keQIsvuGTBC7U,1755
+transfer_agents/db_functions.py,sha256=0o7cOmB2XNVuWzBSLNlv-I4qa3F0bYiIjv9O8u1n34Y,6838
+transfer_agents/es_body.json,sha256=HITEk7oT_0rFsG7JXwrWjrQqpkkq84pJxXFyAcswdtU,1397
+transfer_agents/es_query.py,sha256=XSWRsBEoN_rNgGFAoHmdpxlysK6PbZygGl2nFIf8ScQ,10465
+transfer_agents/metadata.py,sha256=nIuW82PcyyufRCkoU0H6CytA1_tBzmkc3lfT33F8L_k,10377
+transfer_agents/requirements.txt,sha256=MJS1hkyAgqOhJPvvieDkwro43xW5ByASgvRIg3NHnmk,174
+transfer_agents/rucio_functions.py,sha256=P_WWTOpxyBAbEvEQhoQR08bdH8Pi2VRN2yoS_KiYonY,27731
+transfer_agents/sample.yaml,sha256=w8C-uyxSE25yKuXcXXR9Z33jIPYk-G0_QsUJKrZ8qWo,31707
+pic_rucio-0.1.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pic_rucio-0.1.4.dist-info/METADATA,sha256=8bbYryzgZLdCvAMPyN4WDfHx1Ke5SF8b3DiANmh4w1o,3154
+pic_rucio-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pic_rucio-0.1.4.dist-info/top_level.txt,sha256=XiOn502fTf5gjAlVYarBmZhXER2pjujhDQSVC00cgBg,34
+pic_rucio-0.1.4.dist-info/RECORD,,
