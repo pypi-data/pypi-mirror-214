@@ -1,0 +1,10 @@
+aclib/pyi/__init__.py,sha256=QnmjjDIQrw5rs2aTDTwozWSwOAIzF9ir5G7Yq6taleA,79
+aclib/pyi/__API__/colorstr.py,sha256=Ngc3wfVr1c00Cw_Jj3JbLqZqKwyIUPTYvUnYiltyT4M,313
+aclib/pyi/__API__/compiler.py,sha256=S33J9AgIGufRNZ8hxwnr1PGsz3XNohRUH6kqbbf_6wA,4063
+aclib/pyi/__API__/const.py,sha256=CwukEa_i8Zcu5rSYpOMEEBh6tKUA70Vpxbu5aGteIXk,131
+aclib/pyi/__API__/installer.py,sha256=rxR6cM9h_Wae_fgaYobriWlvvgIwhb_Dt8HKEbWaZFs,2892
+aclib.pyi-1.0.1.dist-info/LICENSE,sha256=bXHfyJIO-YrYduFdOrf22pRCLqWSptELWVkyDnOO0sI,1087
+aclib.pyi-1.0.1.dist-info/METADATA,sha256=SleP4Wk_JkrBCP6tUtdy6qhBXj7gFHQJewQsOEQxCu8,1282
+aclib.pyi-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aclib.pyi-1.0.1.dist-info/top_level.txt,sha256=4p3w-82zX4lxXZrjR9Ws2bqRHCpcTLqoEUJaYmT3uyo,6
+aclib.pyi-1.0.1.dist-info/RECORD,,
