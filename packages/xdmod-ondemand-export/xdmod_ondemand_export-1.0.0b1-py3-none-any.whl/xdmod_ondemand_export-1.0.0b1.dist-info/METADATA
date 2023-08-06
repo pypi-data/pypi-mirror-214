@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xdmod-ondemand-export
+Version: 1.0.0b1
+Summary: POST Open OnDemand logs to a web server for inclusion in XDMoD.
+Author: Aaron Weeden
+Maintainer: Aaron Weeden, Joseph P. White
+Project-URL: Source Code, https://github.com/ubccr/xdmod-ondemand/tree/main/tools/xdmod-ondemand-export
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: apachelogs
+Requires-Dist: requests
+
