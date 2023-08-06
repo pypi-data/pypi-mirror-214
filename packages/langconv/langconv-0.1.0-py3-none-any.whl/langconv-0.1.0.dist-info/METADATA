@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: langconv
+Version: 0.1.0
+Summary: 
+Author: Dianliang233
+Author-email: dianliang233@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (>=23.1.0,<24.0.0)
+Requires-Dist: iso639-lang (>=2.1.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+
