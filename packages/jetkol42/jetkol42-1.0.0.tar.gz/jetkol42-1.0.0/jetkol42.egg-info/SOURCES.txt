@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+jetkol42.egg-info/PKG-INFO
+jetkol42.egg-info/SOURCES.txt
+jetkol42.egg-info/dependency_links.txt
+jetkol42.egg-info/requires.txt
+jetkol42.egg-info/top_level.txt
+terver/__init__.py
+terver/main.py
