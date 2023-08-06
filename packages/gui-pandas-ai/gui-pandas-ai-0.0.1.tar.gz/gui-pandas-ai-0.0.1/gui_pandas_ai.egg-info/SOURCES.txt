@@ -1,0 +1,9 @@
+README.rst
+setup.py
+gui-pandas-ai/run_app.py
+gui-pandas-ai/wrapper_streamlit.py
+gui_pandas_ai.egg-info/PKG-INFO
+gui_pandas_ai.egg-info/SOURCES.txt
+gui_pandas_ai.egg-info/dependency_links.txt
+gui_pandas_ai.egg-info/requires.txt
+gui_pandas_ai.egg-info/top_level.txt
