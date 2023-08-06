@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+EntityNormalizer/__init__.py
+EntityNormalizer.egg-info/PKG-INFO
+EntityNormalizer.egg-info/SOURCES.txt
+EntityNormalizer.egg-info/dependency_links.txt
+EntityNormalizer.egg-info/requires.txt
+EntityNormalizer.egg-info/top_level.txt
