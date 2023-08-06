@@ -1,0 +1,8 @@
+requests
+matplotlib
+pandas
+astropy
+PyQT5
+
+[:python_version >= "3.8"]
+importlib-metadata

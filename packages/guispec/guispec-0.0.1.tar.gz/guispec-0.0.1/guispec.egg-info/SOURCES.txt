@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+guispec/__init__.py
+guispec/guispec.py
+guispec.egg-info/PKG-INFO
+guispec.egg-info/SOURCES.txt
+guispec.egg-info/dependency_links.txt
+guispec.egg-info/requires.txt
+guispec.egg-info/top_level.txt
