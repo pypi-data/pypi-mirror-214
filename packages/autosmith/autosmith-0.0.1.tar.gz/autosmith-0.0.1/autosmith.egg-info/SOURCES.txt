@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+autosmith/__init__.py
+autosmith/env.py
+autosmith/template.py
+autosmith/types.py
+autosmith/version.py
+autosmith.egg-info/PKG-INFO
+autosmith.egg-info/SOURCES.txt
+autosmith.egg-info/dependency_links.txt
+autosmith.egg-info/requires.txt
+autosmith.egg-info/top_level.txt
+autosmith/templates/Dockerfile.jinja
+autosmith/templates/main.py.jinja
+tests/test_env.py
+tests/test_template.py
