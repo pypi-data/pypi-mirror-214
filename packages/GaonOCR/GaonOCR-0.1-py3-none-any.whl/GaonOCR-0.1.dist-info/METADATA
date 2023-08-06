@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: GaonOCR
+Version: 0.1
+Summary: A OCR library for T4 documents
+Author: Gaon.ai
+License: MIT
+License-File: LICENSE
+Requires-Dist: pdf2image
+Requires-Dist: opencv-python
+Requires-Dist: pytesseract
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: Pillow
+
+# Sidedrawer

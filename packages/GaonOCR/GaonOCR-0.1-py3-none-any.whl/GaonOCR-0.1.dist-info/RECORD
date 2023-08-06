@@ -1,0 +1,10 @@
+Library/__init__.py,sha256=v_pnXc82KC4VeoqsvYuBQ8NUaJ6e6vfMfUy4p4LIZlg,30
+Library/main.py,sha256=DbWeq-tSvm2inMS3m3Udgi3Whl5iRWQ6VHpyLOHNpcM,1953
+Library/utils.py,sha256=I3bDCurtXs2tlPGpEsaSqj6O8YNrJdy4z_ZOrnlZaos,7601
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=u8uzPGOohJdid1ce6fppC3pX9dykX0xEsDa8wZIMI0s,2323
+GaonOCR-0.1.dist-info/LICENSE,sha256=g_5JdLm9CtfJcyvf2TcAh8HoUfX1ScU7q0QvODRJJnw,1090
+GaonOCR-0.1.dist-info/METADATA,sha256=8n-SQPWFSByTS0TRL0ozZCoJz1e19rUc0d7di3_Fa2s,315
+GaonOCR-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+GaonOCR-0.1.dist-info/top_level.txt,sha256=f3pbt1zInWl2z7MeYXQ8mKKMyQgGx2VTpZse-leXFD0,14
+GaonOCR-0.1.dist-info/RECORD,,
