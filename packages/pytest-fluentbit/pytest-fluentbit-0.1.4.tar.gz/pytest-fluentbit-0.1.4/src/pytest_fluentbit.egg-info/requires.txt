@@ -1,0 +1,16 @@
+pytest>=7.0.0
+msgpack
+six
+fluent-logger
+
+[docs]
+sphinx
+sphinx-rtd-theme
+myst-parser
+
+[test]
+pytest
+coverage[toml]
+pytest-cov
+pytest-xdist[psutil]
+six
