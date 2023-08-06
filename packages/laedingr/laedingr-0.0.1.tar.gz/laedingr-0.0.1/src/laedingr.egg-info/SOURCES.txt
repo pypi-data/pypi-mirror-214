@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/dromi/__init__.py
+src/laedingr.egg-info/PKG-INFO
+src/laedingr.egg-info/SOURCES.txt
+src/laedingr.egg-info/dependency_links.txt
+src/laedingr.egg-info/not-zip-safe
+src/laedingr.egg-info/requires.txt
+src/laedingr.egg-info/top_level.txt
