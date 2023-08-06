@@ -1,0 +1,2 @@
+include README.md LICENSE
+recursive-include doc *.rst *.png conf.py *.py *.ico
