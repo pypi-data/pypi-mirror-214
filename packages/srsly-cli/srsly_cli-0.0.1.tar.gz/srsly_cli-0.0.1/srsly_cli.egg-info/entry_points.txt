@@ -1,0 +1,2 @@
+[console_scripts]
+srsly = srsly_cli.__main__:main

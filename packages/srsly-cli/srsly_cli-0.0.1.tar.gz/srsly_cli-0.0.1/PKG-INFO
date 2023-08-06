@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: srsly_cli
+Version: 0.0.1
+Summary: CLI to convert between JSON, JSONL, YAML, MessagePack, and Pickle using srsly
+Home-page: https://github.com/Minyus/srsly-cli
+Author: Yusuke Minami
+Author-email: me@minyus.github.com
+License: Apache Software License (Apache 2.0)
+Keywords: JSON,JSONL,YAML,MessagePack,Pickle
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Please see:
+https://github.com/Minyus/srsly-cli

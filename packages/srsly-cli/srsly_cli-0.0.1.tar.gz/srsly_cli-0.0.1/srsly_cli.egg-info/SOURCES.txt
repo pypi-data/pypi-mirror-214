@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+srsly_cli/__init__.py
+srsly_cli/__main__.py
+srsly_cli/srsly_convert.py
+srsly_cli/utils.py
+srsly_cli.egg-info/PKG-INFO
+srsly_cli.egg-info/SOURCES.txt
+srsly_cli.egg-info/dependency_links.txt
+srsly_cli.egg-info/entry_points.txt
+srsly_cli.egg-info/not-zip-safe
+srsly_cli.egg-info/requires.txt
+srsly_cli.egg-info/top_level.txt
