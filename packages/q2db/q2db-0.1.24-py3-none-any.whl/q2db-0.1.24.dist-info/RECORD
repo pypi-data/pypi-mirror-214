@@ -1,0 +1,9 @@
+q2db/__init__.py,sha256=YBuJW_qp8crVC3Z3XWg5UDKI4G3bGK6o-9Kuq4Rxk64,38
+q2db/cursor.py,sha256=b4lv1oLYvFv91xGeMrtx4rXfhPOu-CqHaLuOrm5GXY0,18496
+q2db/db.py,sha256=_FvKuxW9P2KYIF5bSVJ5gTCc1hQoOe4zRtchz9Qs7Tw,35197
+q2db/schema.py,sha256=J2tmomhVnId0oUEimhuF-dZ_NpEi38EWCc3W04nQCdk,7858
+q2db/utils.py,sha256=DMDWhC52ufyCASBdz20ZeJkjWr0IrKqCtLuz-VcnbLw,981
+q2db/version.py,sha256=MMwN27hVT6V1fUZZQQ_phBgwia9_VjZrEWstDTVZ6oo,22
+q2db-0.1.24.dist-info/METADATA,sha256=1bow0x5NBwZ8tObIGkfjZCeRpPk1XCbCu2nY9vQgXrc,4004
+q2db-0.1.24.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+q2db-0.1.24.dist-info/RECORD,,
