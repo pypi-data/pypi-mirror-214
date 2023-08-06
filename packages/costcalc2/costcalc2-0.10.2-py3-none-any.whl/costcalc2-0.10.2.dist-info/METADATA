@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: costcalc2
+Version: 0.10.2
+Summary: Calculate raw material costs for chemical synthetic route
+Author-email: Ryan Nelson <rnelsonchem@gmail.com>
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://github.com/rnelsonchem/costcalc2
+Keywords: Chemical,Synthesis,Route,Cost,Pricing
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.0)
+Requires-Dist: pandas (>=1.0)
+Requires-Dist: matplotlib (>=3.0)
+Requires-Dist: openpyxl (>=3.0)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# costcalc2
+
+*costcalc2* is a Python library for calculating the overall raw materials costs 
+of a user-defined synthetic route. 
+
+## Requirements
+
+* Python >= 3
+* Numpy >= 1.0
+* Pandas >= 1.0
+* Matplotlib >= 3.0
+* Openpyxl >= 3.0
+
+# Web Application and Documentation
+
+A minimal [working web application](https://costcalc.rnelsonchem.com/) is
+available for running cost calculations without installing this package. See
+the [package documentation](https://rnelsonchem.github.io/costcalc2/) for
+information on the package and instructions for creating the required input
+tables. There is also an [annotated Jupyter
+notebook](https://gist.github.com/rnelsonchem/5f38f9f6261591a158ed06c643fe09e7)
+that demonstrates a common use case and most of the class methods. 
+
+# Installation
+
+The `costcalc2` package can be installed using either `pip`
+
+    $ pip install costcalc2
+    
+or `conda`
+
+    $ conda install -c rnelsonchem costcalc2
+
+
