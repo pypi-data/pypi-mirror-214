@@ -1,0 +1,15 @@
+careamics_portfolio/__init__.py,sha256=WDUlUIrjQBGXX_AfJg6MTYTy3OUhpD6Bc72R_FyMGyU,570
+careamics_portfolio/denoiseg_datasets.py,sha256=A-WD6O6vGGmLf0wzgFY7n_t83WTUhcgnMFWPSRf1Sxo,11144
+careamics_portfolio/denoising_datasets.py,sha256=QdvB37hPB0Lh_7Vuht7D2OJ7QqEb17XRai-6VDgE7VA,9429
+careamics_portfolio/portfolio.py,sha256=0qkmo-zngvB2sOz38uPA5wJqIEx5E_NLXk8XzwvJDOI,12364
+careamics_portfolio/portfolio_entry.py,sha256=bOJceoW3YuYPQvCJM4wzRKu0zge3FCeIUN7o3RVM1fE,6429
+careamics_portfolio/py.typed,sha256=esB4cHc6c07uVkGtqf8at7ttEnprwRxwk8obY8Qumq4,187
+careamics_portfolio/datasets/datasets.json,sha256=pK2NoRKSQjdBXtDZrmoe_MtyBh1YU0YCvA8Ek7-HtFc,8848
+careamics_portfolio/datasets/registry.txt,sha256=bIFNJywFkOSTKFDkOkh8sseycptjJLYtR6YT5I2cWBY,2339
+careamics_portfolio/utils/__init__.py,sha256=DashQ38sdbjcI1aCOPm_j6zzB_htpYHKB65z9h-QSBc,96
+careamics_portfolio/utils/download_utils.py,sha256=x2WRd9btc5iMM8GCZXi6ldtIGhvBXJm4r1fkth2r1cQ,903
+careamics_portfolio/utils/pale_blue_dot.py,sha256=K9XOpcGcekfkZ6GWjbUO_I0dpxFqy61hP1G9MzwK8CQ,2705
+careamics_portfolio-0.0.7.dist-info/METADATA,sha256=9TMhn2IhZQAs9P65Y2E_W7eSDUHMlRC5V1uXyrtV79U,5903
+careamics_portfolio-0.0.7.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+careamics_portfolio-0.0.7.dist-info/licenses/LICENSE,sha256=Z480AO8HAdEmGTx1UsPwIT_iAmieuoFZr47YH1Pi0Aw,1505
+careamics_portfolio-0.0.7.dist-info/RECORD,,
