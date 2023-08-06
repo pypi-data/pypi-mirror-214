@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+VLCDA/Logic_Circuits_Evolution.py
+VLCDA/__init__.py
+VLCDA.egg-info/PKG-INFO
+VLCDA.egg-info/SOURCES.txt
+VLCDA.egg-info/dependency_links.txt
+VLCDA.egg-info/top_level.txt
