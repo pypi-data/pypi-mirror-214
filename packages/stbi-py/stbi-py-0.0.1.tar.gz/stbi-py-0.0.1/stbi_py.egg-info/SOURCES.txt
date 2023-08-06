@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+stbi_py.egg-info/PKG-INFO
+stbi_py.egg-info/SOURCES.txt
+stbi_py.egg-info/dependency_links.txt
+stbi_py.egg-info/top_level.txt
+stbipy/__init__.py
+stbipy/stbipy.py
+stbipy/bin/stb_image.dll
