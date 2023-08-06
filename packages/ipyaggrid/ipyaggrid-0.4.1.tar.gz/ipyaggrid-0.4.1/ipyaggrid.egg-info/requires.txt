@@ -1,0 +1,9 @@
+ipywidgets>=7.4.0
+pandas
+simplejson>=3.13.2
+
+[ui-test]
+solara[pytest]
+
+[unit-test]
+pytest
