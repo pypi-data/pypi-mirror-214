@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: alpha-dom
+Version: 0.1.1
+Summary: Playing Dominion with Deep Reinforcement Learning
+License: MIT
+Author: Najib Ishaq
+Author-email: najib_ishaq@zoho.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# AlphaDom (v0.1.1)
+
+Playing Dominion with Deep Reinforcement Learning.
+
