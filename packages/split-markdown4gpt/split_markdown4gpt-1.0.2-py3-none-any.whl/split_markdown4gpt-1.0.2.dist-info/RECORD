@@ -1,0 +1,9 @@
+split_markdown4gpt/__init__.py,sha256=z5mVyqU94RD-Q3R0dDT_WXjlbyyJiO_qPi3l-SDZUYw,627
+split_markdown4gpt/__main__.py,sha256=IWK1N3uHe1SDiYvfDy5N_d9FUFIt1qHA8yQ3MXbKH5w,1609
+split_markdown4gpt/splitter.py,sha256=Y5oifM2834bZdQU43OY2Ie5qKcwi6fR2nLzsQBV1VTc,13885
+split_markdown4gpt-1.0.2.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+split_markdown4gpt-1.0.2.dist-info/METADATA,sha256=d4-ydvoAaWp6tCS9HB_E33t2BsemSJ0u8_1HKEMjdCY,6965
+split_markdown4gpt-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+split_markdown4gpt-1.0.2.dist-info/entry_points.txt,sha256=zGGO9oPD_BEdtWzh9L_oNuJKYmi28_KStKkQEVwwcxU,64
+split_markdown4gpt-1.0.2.dist-info/top_level.txt,sha256=9a4vhVLvd9umJucJOkqSrXQke0Eckow5Ien1Gya9-5Y,19
+split_markdown4gpt-1.0.2.dist-info/RECORD,,
