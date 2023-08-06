@@ -1,0 +1,15 @@
+xdatasets/__init__.py,sha256=ufEyjvXNwrzga_H6yX_SiNKKofqWvqzOh2ZP1v57r2Q,189
+xdatasets/core.py,sha256=00n0-eDPJWYARojzffAJmdeArtqqwH1euyEHr81Dd_I,13153
+xdatasets/scripting.py,sha256=hu76V7k3wCuOMLUmh0A7WIgobHYDpDMNbglHTxyPvxI,1019
+xdatasets/spatial.py,sha256=KlXfQSKQIC-J_kPHbg5NxQsQtuaHglh9dFpBmc241l0,3856
+xdatasets/temporal.py,sha256=5MN1Ab6OKHIbsLA5Y6LnQ_IbBaeGM46QK-kMz8I2MOc,3264
+xdatasets/tutorial.py,sha256=rTGnwKTCC21rUvD0lDEc3VprIdQSfpq70sYg-G4nBlo,4409
+xdatasets/utils.py,sha256=eoOPG33728_6YPCKEQpSSQczfIATdBcYguEk-uKYrU4,4061
+xdatasets/validations.py,sha256=PZ67ac0nuTugQjN-BM8JRAsJIXynKE_92bgl-Zvt3-M,2205
+xdatasets/workflows.py,sha256=9myf_qPYtT8wqggzRCbMFzP6KNtyIU1Ly-2RHM1xiVg,7703
+xdatasets-0.2.8.dist-info/AUTHORS.rst,sha256=mEC0SLXsEnTDAtmknAQMiKvWG6WKMNI6xB1VsUaT_4k,174
+xdatasets-0.2.8.dist-info/LICENSE,sha256=F84fJN_Fbko8qJoYuGUQXZo9IrGEVXx9xx1QVyqliZA,1077
+xdatasets-0.2.8.dist-info/METADATA,sha256=aAMVSDd43dTtBJuO_eopZn8XkHDUVyt6S_sZjDw5d8A,2894
+xdatasets-0.2.8.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+xdatasets-0.2.8.dist-info/top_level.txt,sha256=xdr-p_8M1iY-vpBmmgr0d1MT5FQwEV0tn4bB5p6mkZY,10
+xdatasets-0.2.8.dist-info/RECORD,,
