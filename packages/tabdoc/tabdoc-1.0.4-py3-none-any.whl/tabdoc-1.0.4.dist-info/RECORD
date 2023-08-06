@@ -1,0 +1,12 @@
+tabdoc/__init__.py,sha256=Pwf9OuOHDd8_wkFzQiJOWgunBjRWDfqThYLCMAS_Q7s,205
+tabdoc/tabexcel.py,sha256=QJwNiRgX_QE8MVs4zgnJVKGPM9ZYYQt7a2cBGPZ9V7I,7681
+tabdoc/tabpdf.py,sha256=bu4aNprhWiWA12Mhz_CtLJBX_KfC6AwmNOaHvNXQ0g8,10330
+tabdoc/tabword.py,sha256=XOiAoQqEG63L_P0A5UVRcNlgOl0j7tB79PtTfYf9iTg,16022
+tabdoc/templates/SimHei.ttf,sha256=rccIEeST9Ktnzjhw7HH7fosL7jgIsCp9cg7W6A654xA,10063973
+tabdoc/templates/__init__.py,sha256=KWhgTfEXeHp242vVpo5sLjZQv5EKTok52kk2n87PnQ4,112
+tabdoc/templates/template.docx,sha256=Lzi6gq9PUhuJtJp_vQ8gFZzx6iWMi0mEWtpD74d_Unw,17531
+tabdoc-1.0.4.dist-info/LICENSE,sha256=Zhqbr5LXiWdCR27qxTV0fnscCrUfsMNZmwX7b2YuxrE,1066
+tabdoc-1.0.4.dist-info/METADATA,sha256=PaL_5SVeJq1rR9Al5FjGUqVp4ZTMVowEQnVh9nRb7Jk,1272
+tabdoc-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tabdoc-1.0.4.dist-info/top_level.txt,sha256=LC-DKh-j0Rlc6U2wIkElDY4Z_ZOV6GopgaqcDtYgH3s,7
+tabdoc-1.0.4.dist-info/RECORD,,
