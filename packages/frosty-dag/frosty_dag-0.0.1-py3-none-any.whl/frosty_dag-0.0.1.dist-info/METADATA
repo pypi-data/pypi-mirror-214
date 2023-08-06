@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: frosty-dag
+Version: 0.0.1
+Summary: Implementation of the FROSTY algorithm
+Home-page: https://github.com/joshuaybang/frosty-dag
+Author: Joshua Bang
+Author-email: joshuaybang@gmail.com
+Keywords: bayesian network structure learning
+Requires-Python: >=3.6, <3.10
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: Cython
+Requires-Dist: skggm
+Requires-Dist: scikit-sparse
+Requires-Dist: robust-selection
+Requires-Dist: networkx
+
