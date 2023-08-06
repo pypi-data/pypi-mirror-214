@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/proJSON/__init__.py
+src/proJSON.egg-info/PKG-INFO
+src/proJSON.egg-info/SOURCES.txt
+src/proJSON.egg-info/dependency_links.txt
+src/proJSON.egg-info/top_level.txt
+tests/test_projson.py
