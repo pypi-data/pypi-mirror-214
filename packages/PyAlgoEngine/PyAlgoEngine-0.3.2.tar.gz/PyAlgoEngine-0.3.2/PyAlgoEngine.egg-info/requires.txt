@@ -1,0 +1,5 @@
+numpy
+pandas
+trading_calendars
+PyQuantKit
+PyEventEngine
