@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/social_blade_scraper/__init__.py
+src/social_blade_scraper.egg-info/PKG-INFO
+src/social_blade_scraper.egg-info/SOURCES.txt
+src/social_blade_scraper.egg-info/dependency_links.txt
+src/social_blade_scraper.egg-info/requires.txt
+src/social_blade_scraper.egg-info/top_level.txt
+tests/test_youtube.py
