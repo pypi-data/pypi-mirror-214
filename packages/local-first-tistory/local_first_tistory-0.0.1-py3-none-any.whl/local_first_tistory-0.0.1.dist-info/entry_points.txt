@@ -1,0 +1,2 @@
+[console_scripts]
+tistory = src.tistory:cli
