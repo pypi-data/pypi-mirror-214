@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: aolab-aopy
+Version: 0.6.2
+Summary: python code repository for aoLab @UW
+Home-page: https://github.com/aolabNeuro/analyze
+Author: aoLab
+Author-email: aorsborn@uw.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: pandas
+Requires-Dist: psutil
+Requires-Dist: h5py
+Requires-Dist: tables
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Requires-Dist: nitime
+Requires-Dist: xlrd
+Requires-Dist: openpyxl
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: PyWavelets
+Requires-Dist: Pillow
+Requires-Dist: seaborn
+Requires-Dist: pyyaml
+Requires-Dist: tqdm
+Requires-Dist: open-ephys-python-tools
+
+# analyze
+For installing and using the code, see the documentation [on readthedocs](https://analyze.readthedocs.io/en/latest/)
+
+For contributing, see the [github](https://github.com/aolabNeuro/analyze/)
