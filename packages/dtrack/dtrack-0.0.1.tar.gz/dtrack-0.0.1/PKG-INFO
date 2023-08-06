@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dtrack
+Version: 0.0.1
+Summary: CLI for Dependency-Track
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# dtrack
+
+1
