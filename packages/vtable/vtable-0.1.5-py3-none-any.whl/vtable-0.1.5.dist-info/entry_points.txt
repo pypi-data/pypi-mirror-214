@@ -1,0 +1,3 @@
+[console_scripts]
+vtable=vtable.main:main
+

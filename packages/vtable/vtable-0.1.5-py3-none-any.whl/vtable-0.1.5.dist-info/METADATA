@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vtable
+Version: 0.1.5
+Summary: A Qt based table viewer for Python
+License: GPL 3.0
+Author: fergal
+Author-email: fergal.mullally@gmail.com
+Requires-Python: >3.6
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyQt5
+Requires-Dist: ipdb
+Requires-Dist: numpy
+Requires-Dist: pandas
+Description-Content-Type: text/markdown
+
+# qtable
+A QT based table viewer with filters
+

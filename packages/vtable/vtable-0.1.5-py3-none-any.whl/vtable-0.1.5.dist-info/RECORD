@@ -1,0 +1,13 @@
+vtable/__init__.py,sha256=Ajzg9XADYzFov4UmiMWit55JhnLe_-xyBnR8Dd7j5zk,197
+vtable/checkablecombo.py,sha256=FKAQjM_C2m_3ySDMcukiaDuiwwD2VeZ8URwLgCtwnEE,4316
+vtable/colfilters.py,sha256=mZU2DVqi_Jtx51It4SnNfHegZA7Jx2HOEgZZyRK9NuE,6853
+vtable/loaders.py,sha256=15oEbqHQ9Q2LueAfmycVRG-2AECdjtDTny_Mc90nzYo,1287
+vtable/main.py,sha256=vqbwfxel_QjnubFe1jDFTt3WRgLV2F7iVbQf11RIAzU,2100
+vtable/newtable.py,sha256=sDfCv828qdwcUA1VZvtN-KGP9a2sMoMMLTqbxK8AHeA,3610
+vtable/selector.py,sha256=nruu71J2dVSU7bWQWsG2KRQPgP6n-enwYT6Ev-fisGk,1704
+vtable/supertable.py,sha256=Q4AyF45snrMsQd6O5ABg-uuPH7q9eJaKr0QGRrzyBS0,2219
+vtable-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+vtable-0.1.5.dist-info/METADATA,sha256=SAX4oe15KPyqAqKhWfPjxOkPXkZoQ2CwrLJBS7EpYbA,709
+vtable-0.1.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+vtable-0.1.5.dist-info/entry_points.txt,sha256=LUcoiPnXgeAuehFrgghYqXKWMP-4aa1kqpVBuU27Zjc,43
+vtable-0.1.5.dist-info/RECORD,,
