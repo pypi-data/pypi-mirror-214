@@ -1,0 +1,1 @@
+from pdf2txt._reader import PdfDocument
