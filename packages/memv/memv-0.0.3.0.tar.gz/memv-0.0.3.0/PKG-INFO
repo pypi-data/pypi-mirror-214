@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: memv
+Version: 0.0.3.0
+Summary: Create graph to visualize memory usage
+Author: nhunh
+License-File: LICENSE
