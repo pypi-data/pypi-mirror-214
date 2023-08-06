@@ -1,0 +1,6 @@
+libusb
+pyvisa-py
+pyusb
+pyserial
+qontrol
+numpy

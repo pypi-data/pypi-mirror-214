@@ -1,0 +1,9 @@
+LICENSE
+README.md
+lightrig.py
+setup.py
+ltphotonics.egg-info/PKG-INFO
+ltphotonics.egg-info/SOURCES.txt
+ltphotonics.egg-info/dependency_links.txt
+ltphotonics.egg-info/requires.txt
+ltphotonics.egg-info/top_level.txt
