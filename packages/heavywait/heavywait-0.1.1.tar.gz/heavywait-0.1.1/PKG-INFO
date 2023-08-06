@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: heavywait
+Version: 0.1.1
+Summary: Add some weight behind the markdown
+Home-page: https://github.com/mechregard/heavy-wait
+Author: MechRegard
+Author-email: dave.lange@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click
+Requires-Dist: langchain (>=0.0.192,<0.0.193)
+Requires-Dist: openai
