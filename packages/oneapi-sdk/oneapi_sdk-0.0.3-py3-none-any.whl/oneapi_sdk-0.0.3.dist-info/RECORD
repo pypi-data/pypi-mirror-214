@@ -1,0 +1,13 @@
+oneapi/__init__.py,sha256=P7L6O7cWOv_ni-pUoSU7j_vkoRlHaIiNksgVZb-8gLs,99
+oneapi/api_requestor.py,sha256=LQpz44XydIY1km1aGGXiGHYhe50tcvUTP0sy86hFA8Q,760
+oneapi/api_resources/__init__.py,sha256=xzKwcwZlfwKbAhYP_FLoWQQYUXn_UEugo9Wp29NjKN8,49
+oneapi/api_resources/movie.py,sha256=YH24de3NHCHuLiUc4_5mVv4r4D6VwhxDmY5pT1IQ6SU,1135
+oneapi/api_resources/quote.py,sha256=lN75oq_3wK-1rwaXfrxpUk9Rr2n4nRxHKte9ff4G6uA,596
+oneapi/api_resources/utils.py,sha256=6gcJjFzCLpzkXFgqqVUQL3r8uaMxDxtWgyh2eCIUy8A,1442
+oneapi/api_resources/abstract/api_resource.py,sha256=oWkypEgM5legiFEp4xGD0Xi6LvBeniAWCffScqPBh38,238
+oneapi/api_resources/abstract/listable_api_resource.py,sha256=0AwUp1JckeeGoBOPY6sF2h0El7-3x8E2JY_tQOz0HE8,2214
+oneapi/api_resources/abstract/retrievable_api_resource.py,sha256=uxvYhqC50kC-zKtjM1d4TR543WU7pC5x910q7dVCHZc,321
+oneapi_sdk-0.0.3.dist-info/METADATA,sha256=S4sw77oTIK5anAac7YkAXU_O79czT3ycC187CH5oYQI,1461
+oneapi_sdk-0.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+oneapi_sdk-0.0.3.dist-info/licenses/LICENSE,sha256=fWe4sGf-ubgJ7vR40_pNb2XNuDCjryGYotF_hzzVqyY,1081
+oneapi_sdk-0.0.3.dist-info/RECORD,,
