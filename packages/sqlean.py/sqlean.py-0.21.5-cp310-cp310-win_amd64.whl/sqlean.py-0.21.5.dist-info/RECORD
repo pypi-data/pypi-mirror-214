@@ -1,0 +1,7 @@
+sqlean/__init__.py,sha256=5h8NKdw9jgYFpTobeZiBnNUqt8RpxIabBYhIO17UrHA,966
+sqlean/_sqlite3.cp310-win_amd64.pyd,sha256=4qq5I9pXo9-kWrIRLAtjD671KuqQy67ZVKwW25_TVPI,1484288
+sqlean/dbapi2.py,sha256=I4hs6s5YZfvJszFW2J4ms-wruRspyEGMOR-t-M7OW4U,2700
+sqlean.py-0.21.5.dist-info/METADATA,sha256=4wep3JaOyr86biQBqGHL_6RumS9oLXL6-MGsE4oC0AI,2466
+sqlean.py-0.21.5.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+sqlean.py-0.21.5.dist-info/top_level.txt,sha256=VNT03-Php9cvR1s1dNcerNwvB8lzuoy2whHH6nUfKSQ,7
+sqlean.py-0.21.5.dist-info/RECORD,,
