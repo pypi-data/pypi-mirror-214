@@ -1,0 +1,2 @@
+[console_scripts]
+cs-dlp = cs_dlp.coursera_dl:main
