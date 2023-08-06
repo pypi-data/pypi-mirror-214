@@ -1,0 +1,16 @@
+butterflask/Widget.py,sha256=Fig42Dyyq2pCr1cK768pOzoMX4-MFyNEpv7IcucpCbY,438
+butterflask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+butterflask/class_formatter.py,sha256=i4DntLitTaPJxGiIFqh7FL6N-bMkw6q1otumYYssrcc,289
+butterflask/js_code_generator.py,sha256=TZ2_Ua4MUsF_pp48wHcgE_BSQALIRWsvO-o6U2JjkhI,1897
+butterflask/style_formatter.py,sha256=RjS6cZ2cUtSkl2d_K_1kqQZNp82LF1ef5QP9uI5uAWY,326
+butterflask/Widgets/Button.py,sha256=Ejri9IwL4GGX1rbcbDUEepq_NUOmLqIlqqgEaPh_4A4,6702
+butterflask/Widgets/Column.py,sha256=ptbAr8N3XAcF1EvbETBHxHACymppPsxmrIfdoJper0I,7523
+butterflask/Widgets/Image.py,sha256=Di4NAbhPeVEbf6I7deQmmGwh6FA42J3QPCyDZW2nvJI,6779
+butterflask/Widgets/Row.py,sha256=CUZU8po1zXgZtCjhLWhChrxvSiFtOO7DjcrF25yxry8,7423
+butterflask/Widgets/Text.py,sha256=EaDUNPYzdxdBlw05Fkyvm2KnGuOL6nDbsyTjJ2csUA4,2419
+butterflask/Widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+butterflask-1.0.0.dist-info/LICENSE,sha256=tnQIOS2-bMDXhLAmEM7yBjupTkLxqFGl4LBadZ9Q_9E,1091
+butterflask-1.0.0.dist-info/METADATA,sha256=JTyFn51-JXXGZ-2EJJ6rAXTaR_QMvNEUPSKtehJE6lE,1740
+butterflask-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+butterflask-1.0.0.dist-info/top_level.txt,sha256=Lrt2FeAx2VtY9k-xBZjWAG7jlVjUPxx7Aw3I61XNI6I,12
+butterflask-1.0.0.dist-info/RECORD,,
