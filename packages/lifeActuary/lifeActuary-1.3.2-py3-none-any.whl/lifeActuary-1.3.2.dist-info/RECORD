@@ -1,0 +1,16 @@
+lifeActuary/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lifeActuary/annuities.py,sha256=fLgwXo6E7QcDtHw4BL-div9pYeAFHM1RAE-K8Vqz-kc,15749
+lifeActuary/annuities_certain.py,sha256=xrNqlp6NkuGAzt8fmXZGwnvntuauS8L_HDFVRiBuo08,10969
+lifeActuary/commutation_table.py,sha256=Y3hnLZIeofEhVVOR5grm5CeQ2m4kOil1jlwk7VdpdSg,31661
+lifeActuary/commutation_table_frac.py,sha256=uo_8S1u2w8wTKte3MAFnqTA96Nng-ZDk1HZGaziR-jc,3902
+lifeActuary/life_2heads.py,sha256=Wu_SwnyhhcYUVwyhHi7s2ehBom_FOVdG7TGV-P9gwDk,35439
+lifeActuary/mortality_insurance.py,sha256=IiCXXOiE_p-NRDlz_zFAr7tVFBOuJHAcaxAa4jERvi4,26647
+lifeActuary/mortality_table.py,sha256=vYYjtRezKpNg_rFIUeB5ahBrGXAKwB3MPalpV9mX9T0,10767
+lifeActuary/mortality_table_2heads.py,sha256=kcMyxDTI9ssJLoGfh0qx4mCqnjiISpgsRJ2dAsyQ-1M,4872
+soa_tables/__init__.py,sha256=ameL6c0G73G1D82rtyj6AUX97OtUNvCZDmL5E0zxusE,22
+soa_tables/read_soa_table_xml.py,sha256=5v6JW8ercDguLE1xF2hCQE5vxt1XpjwZdwadri2zXyA,1283
+lifeActuary-1.3.2.dist-info/LICENSE,sha256=5yLYCLx8MlH-iy2nexd9mRmUg4wNIJtk_wo7dWgVyPY,1082
+lifeActuary-1.3.2.dist-info/METADATA,sha256=QGrbjMXhdvRudFJIpUbP1G5JMeu7Iv8HybCUx2XBl2c,5428
+lifeActuary-1.3.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lifeActuary-1.3.2.dist-info/top_level.txt,sha256=7-sVc9OYFRKDqjqyg9_jEM493r8OLomSHBxIIHUkIuc,23
+lifeActuary-1.3.2.dist-info/RECORD,,
