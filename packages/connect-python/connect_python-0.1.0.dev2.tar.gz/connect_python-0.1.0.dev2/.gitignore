@@ -1,0 +1,6 @@
+.vscode
+.ruff_cache
+.envrc
+*.egg-info
+bin/
+dist/
