@@ -1,0 +1,3 @@
+[console_scripts]
+pynostr=pynostr_cli.cli:cli
+
