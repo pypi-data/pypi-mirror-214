@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+undetected_chromedriver2/__init__.py
+undetected_chromedriver2/cdp.py
+undetected_chromedriver2/devtool.py
+undetected_chromedriver2/dprocess.py
+undetected_chromedriver2/options.py
+undetected_chromedriver2/patcher.py
+undetected_chromedriver2/reactor.py
+undetected_chromedriver2/webelement.py
+undetected_chromedriver2.egg-info/PKG-INFO
+undetected_chromedriver2.egg-info/SOURCES.txt
+undetected_chromedriver2.egg-info/dependency_links.txt
+undetected_chromedriver2.egg-info/requires.txt
+undetected_chromedriver2.egg-info/top_level.txt
