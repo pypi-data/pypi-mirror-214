@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fmengine
+Version: 0.0.1
+Summary: FMEngine is a Python library for Foundation Models.
+Author-email: Xiaozhe Yao <askxzyao@gmail.com>
+Project-URL: Homepage, https://github.com/autoai-org/fmengine
+Project-URL: Bug Tracker, https://github.com/autoai-org/fmengine/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FMTrainer
+
+> Declarative Distributed Training Framework for Large Generative Models
+
