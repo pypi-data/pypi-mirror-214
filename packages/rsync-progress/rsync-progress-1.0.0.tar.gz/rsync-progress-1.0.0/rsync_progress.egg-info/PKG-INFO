@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: rsync-progress
+Version: 1.0.0
+Summary: Shows rsync file progress and total progress as a progress bar.
+Home-page: https://github.com/JohannesBuchner/rsync-progress.py
+Author: Johannes Buchner
+Author-email: johannes.buchner.acad@gmx.com
+License: MIT
+Keywords: rsync-progress
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+
+Progress bar for rsync
+========================
+
+Shows file progress and total progress as a progress bar.
+
+Usage
+---------
+Run rsync with -P and pipe into this program. Example::
+
+	rsync -P -avz user@host:/onefolder otherfolder/ | python rsyncprogress.py
+
+It will show something like this::
+
+	65%|30652/117251|################         |ETA:  0:04:20|File:100%|Illustris-3/...68/gas2_subhalo_5885.hdf5|0:00:00|156.48kB/s
+	
+	                                                               ^ File progress 
+	                                                                     ^ File name                             ^ ETA  ^ Speed
+	                  ^ Overall progress bar   ^ and ETA
+	           ^ total number of files
+	       ^ files to be checked
+	^ Overall progress
+
+You need the progressbar-latest package installed (see PyPI).
+
+Contributing
+------------
+
+Contributions are welcome. Please open an issue or a pull request.
+
+License: MIT
