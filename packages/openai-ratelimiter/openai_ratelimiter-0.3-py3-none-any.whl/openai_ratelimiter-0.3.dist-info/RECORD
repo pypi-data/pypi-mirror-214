@@ -1,0 +1,11 @@
+openai_ratelimiter/__init__.py,sha256=3bVvKoJaVgPmX0raeJH__IxuqA-cZnVJrkLM1f5vd5k,80
+openai_ratelimiter/base.py,sha256=NaCHRdAH4pCxC09VDMCqa_wMpTBSRc4wxZ1ncEZXHB4,3810
+openai_ratelimiter/defs.py,sha256=Q2vgvOCeBDHhEZWGBgy9NWLh1SF3WWyYwPtXwqGMPHA,1798
+openai_ratelimiter/asyncio/__init__.py,sha256=scI--qVqgk-whET9JIaF--TmPpYoNf4aEVZpu6AK0rc,74
+openai_ratelimiter/asyncio/base.py,sha256=j4L5QxVCsvIhocSv7FL6Ti1YecUAm9sALURBDyKxSrM,3984
+openai_ratelimiter/asyncio/defs.py,sha256=JsmBEfHCRsqGFYiYmT0YKZmkfayGk07blZRtWW8GSK4,1869
+openai_ratelimiter-0.3.dist-info/LICENSE,sha256=btm_wAhiGhTl-Iun1Q9fS78mxSmAdFWpNfpsfb50xYM,1099
+openai_ratelimiter-0.3.dist-info/METADATA,sha256=2pe8fnv-vFdlLuxeTIRhZag1Hw58jUSqDF5Hg98UWXQ,7083
+openai_ratelimiter-0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+openai_ratelimiter-0.3.dist-info/top_level.txt,sha256=TbD47a_7ooTzw8zTQlzqXuyY924HNvwrVl79UEG4Hbw,19
+openai_ratelimiter-0.3.dist-info/RECORD,,
