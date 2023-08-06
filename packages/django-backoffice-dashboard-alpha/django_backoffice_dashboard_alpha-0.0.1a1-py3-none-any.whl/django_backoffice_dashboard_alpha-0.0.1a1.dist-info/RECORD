@@ -1,0 +1,17 @@
+djbackoffice/__init__.py,sha256=BXMqptUbDAhBXuyr94Nm_RnPkgT5AwXRakETGAbZteU,355
+djbackoffice/apps.py,sha256=c9hN6e52bpPf9aCLonXFug6vytytb-nuZBzoYKQJU3M,237
+djbackoffice/core.py,sha256=qFQHRD_WlxwcBbaRq_k7ss6UV7MBpqUsIs1Z4VU4oTM,8795
+djbackoffice/decorators.py,sha256=EgmdCascthURyShcqM6A-5tjXBqkHcvKT31d-ZoFTRM,611
+djbackoffice/mixin.py,sha256=m8e2htWtNast2pckj9qtsMEx83nj4hWSJJUWQyw5AWQ,4771
+djbackoffice/models.py,sha256=bUSqXjTVCub3G7F1fbVj6Vysv1Lem_E4JxzvAP4JYWg,737
+djbackoffice/settings.py,sha256=qQPLw0LN8mo5ITkXMrvgvCd_z_5IiublckRW9XlVO78,270
+djbackoffice/tables.py,sha256=HU90-hG8R6Aw8uRrVXAJQjQdM_x8aJKuBhocWDXIakk,274
+djbackoffice/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+djbackoffice/utils.py,sha256=-vLhvTrqGe23rmr3DaZ1E0Yq1LaM-Dm4H_P7fa54h-I,1713
+djbackoffice/views.py,sha256=MGIffQBBm8wfA0xhxRPer08dx2ixFZXN0WchO0Cu3G8,4168
+djbackoffice/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_backoffice_dashboard_alpha-0.0.1a1.dist-info/LICENSE,sha256=_dt89w--D0yYrujjHj-klByl8Iu_t9GplK667XAsPYs,1059
+django_backoffice_dashboard_alpha-0.0.1a1.dist-info/METADATA,sha256=WkcTgM5cbseOMLvsOLQFRqWbTR2PZFFyHvS2bp9DtNE,3850
+django_backoffice_dashboard_alpha-0.0.1a1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_backoffice_dashboard_alpha-0.0.1a1.dist-info/top_level.txt,sha256=2Sn4RiwMuYa92GS5g5f-mIPgEeYkxD9mHz5gHGpH8RE,37
+django_backoffice_dashboard_alpha-0.0.1a1.dist-info/RECORD,,
