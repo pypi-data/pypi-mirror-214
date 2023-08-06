@@ -1,0 +1,105 @@
+name: pycistem CI
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  compile_cistem:
+    runs-on: ubuntu-20.04
+    container: jojoelfe/cistem_ci_gcc
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+      name: Checkout pycistem
+    - run: git -C cisTEM pull || git clone https://github.com/timothygrant80/cisTEM.git
+      name: Checkout cisTEM
+    - name: Get cisTEM sha
+      id: getsha
+      run: |
+        cd cisTEM
+        echo "::set-output name=sha::$(git rev-parse HEAD)"
+    - name: Cache cisTEM
+      uses: actions/cache@v3
+      id: cache
+      with:
+        key: 'sha_${{ steps.getsha.outputs.sha }}'
+        path: |
+          cisTEM/build/gcc/src/libcore.a
+          cisTEM/build/gcc/cistem_config.h
+    - name: Build cisTEM
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        cd cisTEM
+        ./regenerate_project.b
+        mkdir -p build/gcc
+        cd build/gcc
+        CC=gcc CXX=g++ CPPFLAGS=-fPIC CXXFLAGS=-fPIC CFLAGS=-fPIC ../../configure  --enable-staticmode --enable-samples --enable-experimental --enable-openmp --with-wx-config=wx-config
+        cd src
+        make -j 2 libcore.a
+    - name: Create artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: 'cisTEM artifact'
+        path: |
+          cisTEM/build/gcc/src/libcore.a
+          cisTEM/build/gcc/cistem_config.h
+  
+  build:
+    needs: compile_cistem
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.8','3.9','3.10','3.11']
+
+    runs-on: ubuntu-20.04
+    container: jojoelfe/cistem_ci_gcc
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - run: git -C cisTEM pull || git clone https://github.com/timothygrant80/cisTEM.git
+      name: Checkout cisTEM
+    - name: Install unzip
+      run: apt-get update && apt-get install unzip
+    - name: Install pyenv
+      uses: gabrielfalcao/pyenv-action@v11
+    - name: Install python
+      run: |
+        pyenv install -s ${{ matrix.python }}
+        pyenv local ${{ matrix.python }} && pip install -U pip    
+    - name: Copy cisTEM artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: cisTEM artifact
+        path: |
+          cisTEM/build/gcc
+    - name: Install Hatch
+      run: pyenv local ${{ matrix.python }} && pip install hatch
+    - name: Build project
+      run: |
+        pyenv local ${{ matrix.python }} && hatch build
+    - name: Create artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: 'Wheel for Python ${{ matrix.python }}'
+        path: dist/pycistem*.whl
+    - name: Publish
+      if: contains(github.ref, 'tags')
+      env:
+        HATCH_INDEX_AUTH: ${{ secrets.PYPI_TOKEN }}
+        HATCH_INDEX_USER: __token__
+      run: |
+        pyenv local ${{ matrix.python }} && hatch publish
+        
+
+
+
