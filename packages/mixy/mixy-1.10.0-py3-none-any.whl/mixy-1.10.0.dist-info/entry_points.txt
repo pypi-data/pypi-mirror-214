@@ -1,0 +1,3 @@
+[console_scripts]
+mixy=mixy.cli:main
+
