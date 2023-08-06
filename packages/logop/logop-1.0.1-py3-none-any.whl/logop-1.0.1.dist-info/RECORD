@@ -1,0 +1,11 @@
+logop/__init__.py,sha256=izGv_Usbu-3W1I5C7J8axg6isBog2mBV7i6uUCR9TD4,227
+logop/exceptions.py,sha256=eUtesDILnUCjqkFPvST9zTJ92J0a0g36K_TsIVoW9ek,1093
+logop/format.py,sha256=KuwryD4VGMhuhKTb2f4YKiBG5Kda2U34pddkaNQ3JUI,931
+logop/level.py,sha256=_8rp1TCHp2wz-XWadcQnBC52gPE6QHzRmzQreS_e958,796
+logop/logging.py,sha256=5kdchgWCHb63bptNeZtI9oPwWtfDaqeTFaS_IJegjH8,12720
+logop/logoutput.py,sha256=_YiNTlp0mAFNoammTpUcWPjJHToXEhHmnK5qiXiKpb8,5118
+logop/old.py,sha256=tUM5wM6psb5CD6dxrQq9StachSTnuEvRVPxffzysra0,15312
+logop-1.0.1.dist-info/METADATA,sha256=iWvkw25m-sBCaxM__koCnhxjgIg-4hEWtJ6UGo-hXa0,3602
+logop-1.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+logop-1.0.1.dist-info/licenses/LICENSE,sha256=2Wt4CGN1tZMUjDI2JAowRFkaEhm9pYBe4BoxF8kpIHM,1065
+logop-1.0.1.dist-info/RECORD,,
