@@ -1,0 +1,11 @@
+omoment/__init__.py,sha256=WOo7KbvSrmZlmB4cbH5LiyMx_A99MOFRIFGijExu89A,4292
+omoment/obase.py,sha256=qbsJqcwRXDjOIF9Yb33trAk_mnkeVVp1R2FYvjxsfnM,4674
+omoment/omean.py,sha256=ag2fZIHPr-ElY_J7hWyv6108wi-KthSmGvdc74hWtXY,10426
+omoment/omeanvar.py,sha256=2_A0NWCQmU3a5rXYbYuCPLziMx6nBuMwOtfEMjEB53s,11924
+omoment/ominmax.py,sha256=-7zHfUaHhorzQ6LtK1dJGnmggkRO5VWIgIxAyXJkNtQ,5426
+omoment/oreg.py,sha256=IgSZIiOpgzNdKW8v0QdXfyqo14UuU1AN0sqPq8thoHk,11339
+omoment/version.py,sha256=MpsAqOJIu_wuyhYL90zw1vDW38R8HcGGmU2iWaiwV8I,17
+omoment-0.1.5.dist-info/LICENSE,sha256=VNDVExK4F4H7WExN-kn8Tqkm54s4Ahckq4dEY2cQcZA,1074
+omoment-0.1.5.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+omoment-0.1.5.dist-info/METADATA,sha256=Z3YYBTDgA_31bqS-RwH7_aX-G_p8LZxd93PT5uHcWwQ,5522
+omoment-0.1.5.dist-info/RECORD,,
