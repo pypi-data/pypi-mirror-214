@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: remilia
+Version: 1.1.6rc0
+Summary: Use python with next generation api
+Author-Email: H2Sxxa <H2Sxxa0w0@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 H2Sxxa
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Homepage, https://pypi.org/project/Remilia/
+Project-URL: Repository, https://github.com/H2Sxxa/Remilia
+Project-URL: Issues, https://github.com/H2Sxxa/Remilia/issues
+Project-URL: Discussions, https://github.com/H2Sxxa/Remilia/discussions
+Requires-Python: >=3.8
+Requires-Dist: colorama
+Requires-Dist: pyyaml
+Requires-Dist: pydantic
+Requires-Dist: typing_extensions
+Requires-Dist: noneprompt; extra == "tui"
+Requires-Dist: noneprompt; extra == "all"
+Requires-Dist: pixivpy_async; extra == "all"
+Requires-Dist: noneprompt; extra == "publish"
+Requires-Dist: pixivpy_async; extra == "publish"
+Requires-Dist: twine; extra == "publish"
+Provides-Extra: tui
+Provides-Extra: all
+Provides-Extra: publish
+Description-Content-Type: text/markdown
+
+<div align=center>
+  <img src="https://raw.githubusercontent.com/H2Sxxa/Remilia/main/background.png"  alt="[BG](https://raw.githubusercontent.com/H2Sxxa/Remilia/main/background.png)"/>
+  <h1 align="center">Remilia</h1> 
+</div>
+<div align=center>
+  <img src="https://img.shields.io/badge/python-3.8+-blue" alt="python">
+  <img src="https://img.shields.io/github/languages/code-size/H2Sxxa/Remilia" alt="size">
+  <img src="https://img.shields.io/github/license/H2Sxxa/Remilia" alt="license">
+</div>
+
+# Install
+
+```shell
+pip install Remilia
+```
+
+# Quick start
+
+## [ REWRITE NOW ]
+
+# QA
+
+## Q: AttributeError: module 'Remilia' has no attribute '...'
+
+See the pyproject.toml ,there offer some other optional dependiences
+
+# Learn more in our WIKI
+
+## https://github.com/H2Sxxa/Remilia/wiki
