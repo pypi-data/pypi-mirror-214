@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "autochain"
+version = "0.0.1"
+description = "AutoChain: Build lightweight, extensible, and testable LLM Agents"
+# TODO: add URLs, homepage, documentation
+authors = [
+    "Yi Lu <yi.lu@forethought.ai>",
+    "Forethought Engineering <eng-oss@forethought.ai>",
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
