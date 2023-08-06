@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+memv.egg-info/PKG-INFO
+memv.egg-info/SOURCES.txt
+memv.egg-info/dependency_links.txt
+memv.egg-info/entry_points.txt
+memv.egg-info/top_level.txt
