@@ -1,0 +1,10 @@
+charsi/__init__.py,sha256=TdpBt2wY9VecAURQtAty-_SJDr14uhz1pX1Tgsveaog,78
+charsi/__main__.py,sha256=0kLAXUkcXfVyEkUg-6MmPL40acQDy4GOdqHAKDrAqx4,509
+charsi/instruction.py,sha256=2Dv_IuyR1T3gTi2rQ72oiOplTRhx4JHXF-xEbtgFnCM,779
+charsi/strings.py,sha256=sGy-WUQeM5H2czk4wbb78MsnE_whGjv6t6YvtyC8AtY,980
+charsi/utils.py,sha256=TfoDXLKQaljReVYom3i-eknRjawL49E4G6AkfIabX1k,206
+charsi-0.1.1.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+charsi-0.1.1.dist-info/METADATA,sha256=Nqpkl1A85ZSaBcujmcQ_4A7PUh6NvIn6J58kN1D3ZFw,2007
+charsi-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+charsi-0.1.1.dist-info/entry_points.txt,sha256=C73YEGMmROkYiHZkYJzaqRhsc69AybrQQHSjfild4Zo,46
+charsi-0.1.1.dist-info/RECORD,,
