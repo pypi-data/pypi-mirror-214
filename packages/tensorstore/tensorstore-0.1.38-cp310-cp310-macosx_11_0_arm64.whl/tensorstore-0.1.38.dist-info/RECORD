@@ -1,0 +1,8 @@
+tensorstore/__init__.py,sha256=JIR3-ij67JiaXLouDMyvPOTqW2ejGmIWu2U_tUGL76c,6133
+tensorstore/_tensorstore.cpython-310-darwin.so,sha256=ksoMB39245GVNuJ5v4-6IvFoP6t7MBapGHobwA1q93k,34931532
+tensorstore-0.1.38.dist-info/RECORD,,
+tensorstore-0.1.38.dist-info/LICENSE,sha256=3tF6QvvME9HvnMKbHGS-zNSurEF5puaUpiJfSUpIetY,15673
+tensorstore-0.1.38.dist-info/AUTHORS,sha256=1gtA22CUyenQ1leaw8bBH8TdcLP1UrcMPEAyr_IAV-I,303
+tensorstore-0.1.38.dist-info/WHEEL,sha256=YkgppTG7ykOlXc_zwnXV9-VBXF-Nf0nL_gt0JCpKtEA,110
+tensorstore-0.1.38.dist-info/top_level.txt,sha256=kzkybe54TTNq_1bQCcFipfA75PFM3RVR4FzW6OOcviM,37
+tensorstore-0.1.38.dist-info/METADATA,sha256=4ak4NGM9tsRCtR2TvAv4TlLuOWKhHcf0mIZW1EmhvpA,2913
