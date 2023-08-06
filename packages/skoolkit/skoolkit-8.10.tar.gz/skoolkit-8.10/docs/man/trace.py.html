@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trace.py &#8212; SkoolKit 8.10 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SkoolKit 8.10 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">trace.py</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="trace-py">
+<h1>trace.py<a class="headerlink" href="#trace-py" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="synopsis">
+<h2>SYNOPSIS<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">trace.py</span></code> [options] FILE</p>
+</div>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">trace.py</span></code> simulates the execution of machine code in a 48K binary (raw
+memory) file or a SNA, SZX or Z80 snapshot. If FILE is ‘.’, no snapshot is
+loaded, and the RAM is left blank (all zeroes).</p>
+</div>
+<div class="section" id="options">
+<h2>OPTIONS<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<dl class="option-list">
+<dt><kbd><span class="option">--audio</span></kbd></dt>
+<dd><p>Show a list of the delays (in T-states) between changes in the state of the
+ZX Spectrum speaker made by the code that was executed.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>–depth <cite>N</cite></dt><dd><p>Simplify audio delays to this depth (default: 2). When this option is given,
+any sequence of delays up to length <cite>N</cite> that repeats is shown in a simplified
+form. For example, if <cite>N</cite> is 3, the run of delay values [1, 2, 3, 1, 2, 3] is
+reduced to [1, 2, 3]*2.</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">-D</span>, <span class="option">--decimal</span></kbd></dt>
+<dd><p>Show decimal values in verbose (<code class="docutils literal notranslate"><span class="pre">-v</span></code>, <code class="docutils literal notranslate"><span class="pre">-vv</span></code>) mode.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>–dump <cite>FILE</cite></dt><dd><p>Dump a Z80 snapshot to this file after execution.</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">-i</span>, <span class="option">--interrupts</span></kbd></dt>
+<dd><p>Execute interrupt routines.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>–max-operations <cite>MAX</cite></dt><dd><p>Maximum number of instructions to execute. Overrides the <cite>STOP</cite> address (if
+given).</p>
+</dd>
+<dt>–max-tstates <cite>MAX</cite></dt><dd><p>Maximum number of (simulated) T-states to run for. Overrides the <cite>STOP</cite>
+address (if given).</p>
+</dd>
+<dt>-o, –org <cite>ORG</cite></dt><dd><p>Specify the origin address of a binary (raw memory) file. The default origin
+address is 65536 minus the length of the file. <cite>ORG</cite> must be a decimal
+number, or a hexadecimal number prefixed by ‘0x’.</p>
+</dd>
+<dt>-p, –poke <cite>a[-b[-c]],[^+]v</cite></dt><dd><p>POKE N,v for N in {a, a+c, a+2c…, b}. Prefix ‘v’ with ‘^’ to perform an
+XOR operation, or ‘+’ to perform an ADD operation. This option may be used
+multiple times. ‘a’, ‘b’, ‘c’ and ‘v’ must each be a decimal number, or a
+hexadecimal number prefixed by ‘0x’.</p>
+</dd>
+<dt>-r, –reg <cite>name=value</cite></dt><dd><p>Set the value of a register before execution begins. Do <code class="docutils literal notranslate"><span class="pre">--reg</span> <span class="pre">help</span></code> for
+more information, or see the section on <code class="docutils literal notranslate"><span class="pre">REGISTERS</span></code> below. This option may
+be used multiple times.</p>
+</dd>
+<dt>–rom <cite>FILE</cite></dt><dd><p>Patch in a ROM at address 0 from this file. By default the 48K ZX Spectrum
+ROM is used.</p>
+</dd>
+<dt>-s, –start <cite>ADDR</cite></dt><dd><p>Start execution at this address. <cite>ADDR</cite> must be a decimal number, or a
+hexadecimal number prefixed by ‘0x’. If this option is omitted, execution
+starts either at the address given by the value of the program counter (for a
+SNA, SZX or Z80 snapshot), or at the origin address of the raw memory file.</p>
+</dd>
+<dt>-S, –stop <cite>ADDR</cite></dt><dd><p>Stop execution at this address. <cite>ADDR</cite> must be a decimal number, or a
+hexadecimal number prefixed by ‘0x’.</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">--stats</span></kbd></dt>
+<dd><p>Show statistics after execution.</p>
+</dd>
+<dt><kbd><span class="option">-v</span>, <span class="option">--verbose</span></kbd></dt>
+<dd><p>Show executed instructions. Repeat this option (<code class="docutils literal notranslate"><span class="pre">-vv</span></code>) to show register
+values too.</p>
+</dd>
+<dt><kbd><span class="option">-V</span>, <span class="option">--version</span></kbd></dt>
+<dd><p>Show SkoolKit version number and exit.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="registers">
+<h2>REGISTERS<a class="headerlink" href="#registers" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">--reg</span></code> option sets the value of a register before execution begins.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">--reg</span> <span class="pre">name=value</span></code></div>
+</div>
+</div>
+<p>For example:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">--reg</span> <span class="pre">hl=32768</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">--reg</span> <span class="pre">b=0x1f</span></code></div>
+</div>
+</div>
+<p>To set the value of an alternate (shadow) register, use the ‘^’ prefix:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">--reg</span> <span class="pre">^hl=10072</span></code></div>
+</div>
+</div>
+<p>Recognised register names are:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">^a</span></code>, <code class="docutils literal notranslate"><span class="pre">^b</span></code>, <code class="docutils literal notranslate"><span class="pre">^bc</span></code>, <code class="docutils literal notranslate"><span class="pre">^c</span></code>, <code class="docutils literal notranslate"><span class="pre">^d</span></code>, <code class="docutils literal notranslate"><span class="pre">^de</span></code>, <code class="docutils literal notranslate"><span class="pre">^e</span></code>, <code class="docutils literal notranslate"><span class="pre">^f</span></code>, <code class="docutils literal notranslate"><span class="pre">^h</span></code>, <code class="docutils literal notranslate"><span class="pre">^hl</span></code>, <code class="docutils literal notranslate"><span class="pre">^l</span></code>,</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, <code class="docutils literal notranslate"><span class="pre">bc</span></code>, <code class="docutils literal notranslate"><span class="pre">c</span></code>, <code class="docutils literal notranslate"><span class="pre">d</span></code>, <code class="docutils literal notranslate"><span class="pre">de</span></code>, <code class="docutils literal notranslate"><span class="pre">e</span></code>, <code class="docutils literal notranslate"><span class="pre">f</span></code>, <code class="docutils literal notranslate"><span class="pre">h</span></code>, <code class="docutils literal notranslate"><span class="pre">hl</span></code>, <code class="docutils literal notranslate"><span class="pre">l</span></code>,</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">ix</span></code>, <code class="docutils literal notranslate"><span class="pre">iy</span></code>, <code class="docutils literal notranslate"><span class="pre">pc</span></code>, <code class="docutils literal notranslate"><span class="pre">r</span></code>, <code class="docutils literal notranslate"><span class="pre">sp</span></code></div>
+</div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>EXAMPLES<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Execute and show instructions in the routine at 32768-32798 in <code class="docutils literal notranslate"><span class="pre">game.z80</span></code>:</p></li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">trace.py</span> <span class="pre">-v</span> <span class="pre">-s</span> <span class="pre">32768</span> <span class="pre">-S</span> <span class="pre">32798</span> <span class="pre">game.z80</span></code></div>
+</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Show delays between changes in the state of the ZX Spectrum speaker produced
+by the sound effect routine at 49152-49193 in <code class="docutils literal notranslate"><span class="pre">game.z80</span></code>:</p></li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">trace.py</span> <span class="pre">--audio</span> <span class="pre">-s</span> <span class="pre">49152</span> <span class="pre">-S</span> <span class="pre">49193</span> <span class="pre">game.z80</span></code></div>
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">trace.py</a><ul>
+<li><a class="reference internal" href="#synopsis">SYNOPSIS</a></li>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
+<li><a class="reference internal" href="#options">OPTIONS</a></li>
+<li><a class="reference internal" href="#registers">REGISTERS</a></li>
+<li><a class="reference internal" href="#examples">EXAMPLES</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/man/trace.py.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SkoolKit 8.10 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">trace.py</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Richard Dymond.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>
