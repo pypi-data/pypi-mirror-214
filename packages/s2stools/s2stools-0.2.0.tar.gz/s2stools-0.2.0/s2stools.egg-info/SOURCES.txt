@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+s2stools/__init__.py
+s2stools/clim.py
+s2stools/events.py
+s2stools/plot.py
+s2stools/process.py
+s2stools.egg-info/PKG-INFO
+s2stools.egg-info/SOURCES.txt
+s2stools.egg-info/dependency_links.txt
+s2stools.egg-info/requires.txt
+s2stools.egg-info/top_level.txt
