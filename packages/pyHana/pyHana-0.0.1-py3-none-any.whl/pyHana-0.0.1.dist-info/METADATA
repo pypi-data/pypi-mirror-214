@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyHana
+Version: 0.0.1
+Summary: for pyhana club members
+Home-page: https://github.com/pyhana/pyHana
+Author: pyhanclub
+Author-email: pyhanclub@gmail.com
+Keywords: pyhanclub
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Requires-Dist: pandas
+Requires-Dist: configparser
+Requires-Dist: requests
+Requires-Dist: time
+Requires-Dist: os
+Requires-Dist: pickle
+Requires-Dist: gzip
+Requires-Dist: datetime
+Requires-Dist: re
+Requires-Dist: math
+Requires-Dist: bs4
+
