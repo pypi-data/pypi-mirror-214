@@ -1,0 +1,35 @@
+[project]
+name = "tonpay"
+description = "SDK for crypto payment system Tonpay"
+version = "0.1.2"
+authors = [
+    { name = "Arterialist", email = "arterialist@thetonpay.app" }
+]
+dependencies = []
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TheTonpay/tonpay-python-sdk"
+"Bug Tracker" = "https://github.com/TheTonpay/tonpay-python-sdk/issues"
+"Documentation" = "https://tonpay.gitbook.io/tonpay-sdk/"
+"Technical Support" = "https://t.me/+zdOo27FJZgg0ZGUy"
+"Website" = "https://thetonpay.app/"
+"Merchant Portal" = "https://business.thetonpay.app/"
+
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "ton==0.26",
+    "tonsdk==1.0.13",
+    "tontools==2.1.0",
+    "requests~=2.31.0"
+]
+build-backend = "setuptools.build_meta"
