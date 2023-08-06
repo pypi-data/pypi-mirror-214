@@ -1,0 +1,13 @@
+newscleaner/Beautifulsoup.py,sha256=t8for02M5grmjJe98xiJq0ATeJdmG4OKPTNgHtiPvqc,24004
+newscleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+newscleaner/clean.py,sha256=qrrPAA92fFVxogMTW8cjn_CvRacj0D8ShwAIWUxkkoI,25049
+newscleaner/cleaner.py,sha256=MX53HpFQuGGQLiYkscsjK_2Yd-ajzqkmSQDUmGTdQn0,2415
+newscleaner/regex.json,sha256=RIrK0D7ee8N_Cha52S4B9UHRTylCP9J3LCxN8I1pSjE,8199
+newscleaner/setup.py,sha256=OeZtsujpcYBqti7CdUYCg9EgXqWJuyz1hlkilWgjer4,882
+newscleaner/tags.json,sha256=bBVIjlrewxBuJ3zO6JEXQmykhQhyb0_SnjfPZYIi8cY,675
+newscleaner-0.0.3.dist-info/LICENCE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+newscleaner-0.0.3.dist-info/METADATA,sha256=Wr_Kqg8WYUOSgVN_46bbkEYk80Ii-4UvnpRaaEk-tq4,556
+newscleaner-0.0.3.dist-info/PKG-INFO.txt,sha256=ENnXvg3bSh6hIpwnuvlRZ7jGp9duOOaAzGPEc4ubSpI,547
+newscleaner-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+newscleaner-0.0.3.dist-info/top_level.txt,sha256=TFOuJ6VtKkEfQaSA-1r1b13R5uyPySDK_dT0zkxvLQU,12
+newscleaner-0.0.3.dist-info/RECORD,,
