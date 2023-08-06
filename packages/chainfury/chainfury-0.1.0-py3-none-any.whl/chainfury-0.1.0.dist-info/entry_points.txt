@@ -1,0 +1,3 @@
+[console_scripts]
+chainfury=chainfury.cli:main
+
