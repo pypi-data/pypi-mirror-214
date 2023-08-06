@@ -1,0 +1,9 @@
+winnie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winnie/connection.py,sha256=XxwI9P2VYT7LDlVGJeji5w75wze1XjirqsONHMJSawI,6267
+winnie/formatting.py,sha256=wqoXVNE2K0r6xsUp7gPry7yKNx5-92w7uRgYjJsr1yI,135
+winnie/listops.py,sha256=Y6O27KrWu-F4mmxMqtxr_QBqzt3ManyGPoG6WiAp-zo,648
+winnie/resourceMask.py,sha256=Pkuuk-yKzaQA9DlbfWE7xTk2wgizIVJ3tUfnRg0nPks,457
+winnie-0.0.4.dist-info/METADATA,sha256=iQpFVIGylaiME3NzmRMa2blg8nyU_v2kXPaOjVozdzk,989
+winnie-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+winnie-0.0.4.dist-info/top_level.txt,sha256=XC9sK95ug8yMcBO4DeXXudZIrT8132SkHEdlBIecfUg,7
+winnie-0.0.4.dist-info/RECORD,,
