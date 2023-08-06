@@ -1,0 +1,44 @@
+[project]
+name = "kedro-ibis-dataset"
+version = "0.0.6b1"
+description = "Ibis connector for kedro catalog"
+authors = [
+    { name = "Iñigo Hidalgo Rey", email = "inigohrey@gmail.com" },
+]
+dependencies = [
+    "kedro>=0.17.1",
+    "ibis-framework>=5.1.0",
+]
+requires-python = ">=3.8,<3.11"
+readme = "README.md"
+
+[project.urls]
+repository = "https://github.com/inigohidalgo/kedro-ibis-dataset"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.scripts.build]
+shell = "./tasks/build.sh"
+
+[tool.pdm.scripts.tag]
+shell = "./tasks/tag-release.sh"
+
+[tool.pdm.scripts.release]
+composite = [
+    "build",
+    "tag",
+]
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.3.2",
+    "ibis-framework[duckdb]",
+    "duckdb>=0.8.1",
+]
