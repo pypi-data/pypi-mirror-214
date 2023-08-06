@@ -1,0 +1,12 @@
+ctapipe~=0.19
+protozfits
+
+[all]
+pytest
+setuptools_scm[toml]
+
+[dev]
+setuptools_scm[toml]
+
+[tests]
+pytest
