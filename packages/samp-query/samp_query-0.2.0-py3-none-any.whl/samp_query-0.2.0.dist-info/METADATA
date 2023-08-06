@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: samp_query
+Version: 0.2.0
+Summary: A SAMP query/RCON client for Python using trio.
+Project-URL: Homepage, https://github.com/Cheaterman/samp-query
+Project-URL: Bug Tracker, https://github.com/Cheaterman/samp-query/issues
+Author-email: The Cheaterman <the.cheaterman@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: faust-cchardet
+Requires-Dist: trio
+Description-Content-Type: text/markdown
+
+samp_query
+==========
+
+A SAMP query/RCON client for Python using trio.
