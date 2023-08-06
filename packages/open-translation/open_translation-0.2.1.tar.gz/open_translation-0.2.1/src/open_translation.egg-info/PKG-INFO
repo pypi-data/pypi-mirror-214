@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: open-translation
+Version: 0.2.1
+Summary: Open Translation
+Home-page: https://github.com/cahya-wirawan/OpenTranslation
+Author: Cahya Wirawan
+Author-email: cahya.wirawan@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Open Translation
+
+MarianMT Translation Class initially created for Multilingual Instructions Dataset of Open Assistant
