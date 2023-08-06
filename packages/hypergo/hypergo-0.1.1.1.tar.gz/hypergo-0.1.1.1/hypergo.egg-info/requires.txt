@@ -1,0 +1,4 @@
+pyyaml
+glom
+azure-servicebus
+azure-functions
