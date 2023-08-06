@@ -1,0 +1,7 @@
+eodc/__init__.py,sha256=JNJlaiVxAFCnETwhgbZixTpQ50thLv7wD7JLsGp9E-0,213
+eodc/dask.py,sha256=WiIa1Rko2-KT0YQus2KOnaQ5sGlSHIvFFirIVNgClUQ,1102
+eodc/faas.py,sha256=OheJg4Y_xI3k4KCE5GO2-OMNZixMuf9Fn_JCIqWjOl0,7865
+eodc/settings.py,sha256=rRCRYpz3TzEhoZWoWlbMeHh5n7gSM5Htdm2LDAArAH8,469
+eodc-2023.6.1.dist-info/METADATA,sha256=wd7P1LoZb7vRyW_YTv-oO4K-HWCEMPauyOCLxTcr8cc,1680
+eodc-2023.6.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+eodc-2023.6.1.dist-info/RECORD,,
