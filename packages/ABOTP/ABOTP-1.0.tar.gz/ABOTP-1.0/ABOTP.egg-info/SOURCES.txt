@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+ABOTP/__init__.py
+ABOTP.egg-info/PKG-INFO
+ABOTP.egg-info/SOURCES.txt
+ABOTP.egg-info/dependency_links.txt
+ABOTP.egg-info/not-zip-safe
+ABOTP.egg-info/top_level.txt

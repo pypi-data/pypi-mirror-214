@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ABOTP
+Version: 1.0
+Summary: A protocol based on TCP sockets for transmitting arrays of byte objects.
+Author: mister_svinia
+Author-email: i@savnil.ru
