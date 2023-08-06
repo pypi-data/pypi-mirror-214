@@ -1,0 +1,15 @@
+{
+  "urls": [
+    ["micropython_bma220/examples/bma220_slope_slope_sign.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_slope_slope_sign.py"],
+    ["micropython_bma220/examples/bma220_lowg_test.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_lowg_test.py"],
+    ["micropython_bma220/examples/bma220_simpletest.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_simpletest.py"],
+    ["micropython_bma220/examples/bma220_sleep_duration.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_sleep_duration.py"],
+    ["micropython_bma220/examples/bma220_slope_test.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_slope_test.py"],
+    ["micropython_bma220/examples/bma220_orientation.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_orientation.py"],
+    ["micropython_bma220/examples/bma220_filter_bandwidth.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_filter_bandwidth.py"],
+    ["micropython_bma220/examples/bma220_double_tap_test.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_double_tap_test.py"],
+    ["micropython_bma220/examples/bma220_latched_mode.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_latched_mode.py"],
+    ["micropython_bma220/examples/bma220_acc_range.py", "github:jposada202020/MicroPython_BMA220/examples/bma220_acc_range.py"]
+  ],
+  "version": "0.1"
+}
