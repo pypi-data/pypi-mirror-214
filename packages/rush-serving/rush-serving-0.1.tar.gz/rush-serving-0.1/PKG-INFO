@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rush-serving
+Version: 0.1
+Summary: serving api wrapper
+Home-page: https://github.com/rushai-dev/serving
+Author: RUSH.AI
+Author-email: ratchaphonboss@gmail.com
+License: GPL
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+

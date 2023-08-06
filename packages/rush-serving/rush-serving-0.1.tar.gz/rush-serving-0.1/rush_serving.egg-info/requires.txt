@@ -1,0 +1,4 @@
+uvicorn<=0.20.0
+fastapi<=0.92.0
+nest-asyncio<=1.5.6
+pyngrok<=6.0.0
