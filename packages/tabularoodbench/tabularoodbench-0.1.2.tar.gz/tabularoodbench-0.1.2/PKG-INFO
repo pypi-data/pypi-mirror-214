@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tabularoodbench
+Version: 0.1.2
+Summary: A package of several settings of out-of-distributoin generalization problem on tabular data
+Home-page: https://github.com/LJSthu/TabularOODBenchmark
+Author: Jiashuo Liu, Tianyu Wang, Peng Cui, Hongseok Namkoong
+Author-email: liujiashuo77@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3
+License-File: LICENSE
