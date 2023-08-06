@@ -1,0 +1,11 @@
+numpyro
+optax
+torch
+pyro-ppl
+pycm
+seaborn
+matplotlib
+arviz
+jupyterlab
+jupyterthemes
+jupyter-black
