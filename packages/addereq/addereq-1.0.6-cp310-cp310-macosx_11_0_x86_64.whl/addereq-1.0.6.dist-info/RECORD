@@ -1,0 +1,10 @@
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/cleaning.cpython-310-darwin.so,sha256=JkXMFYaGTdKv7WJMJHSUbvQXtrFCv6fT8vuIkKT8BEs,108752
+addereq/fetching.cpython-310-darwin.so,sha256=sOCgOy8Hu6mEgVFWHBDrmy-cF-KIet_IhcSbXUU1oRU,271104
+addereq/fetching_mysql.cpython-310-darwin.so,sha256=xRFOti54J6C5TVzhzVgaEyQiQkuGYr8gYm1GWFpr1ZE,252696
+addereq/plotting.cpython-310-darwin.so,sha256=aUeUjZYfyFbzUo6iDzOsFUCgcnuqocWNNr6-VMfB4wo,322296
+addereq-1.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+addereq-1.0.6.dist-info/METADATA,sha256=9ZlZQmcOPXT1lnffyTatWXWN0CZ4i_Qav6rE8iYeAYU,3304
+addereq-1.0.6.dist-info/WHEEL,sha256=tNYyggI0QC5GD4MVHQuiVTUUU_cLi9bibpSukmwhhdM,111
+addereq-1.0.6.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.0.6.dist-info/RECORD,,
