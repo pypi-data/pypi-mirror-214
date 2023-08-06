@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: docker-tags-getter
+Version: 0.3.3
+Summary: docker_tags_getter will help you to get tags from your docker repository.
+Home-page: https://gitlab.com/KKlochko/docker_tags_getter
+License: LGPL-3.0-or-later
+Keywords: cli,docker,repos,tags
+Author: Kostiantyn Klochko
+Author-email: kostya_klochko@ukr.net
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Project-URL: Bug Tracker, https://gitlab.com/KKlochko/docker_tags_getter/issues
+Project-URL: Repository, https://gitlab.com/KKlochko/docker_tags_getter
+Description-Content-Type: text/x-rst
+
+docker_tags_getter
+==================
+
+docker_tags_getter is the application that will help you to get tags from yours docker repository.
+
+Author
+======
+
+Kostiantyn Klochko (c) 2023
+
+License
+=======
+
+Under the GNU Lesser General Public License v3.0 or later.
+
+

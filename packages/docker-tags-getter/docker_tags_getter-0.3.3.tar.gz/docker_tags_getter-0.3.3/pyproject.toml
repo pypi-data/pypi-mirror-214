@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "docker-tags-getter"
+version = "0.3.3"
+description = "docker_tags_getter will help you to get tags from your docker repository."
+authors = ["Kostiantyn Klochko <kostya_klochko@ukr.net>"]
+readme = "README.rst"
+license = "LGPL-3.0-or-later"
+packages = [{include = "docker_tags_getter"}]
+repository = "https://gitlab.com/KKlochko/docker_tags_getter"
+keywords = ["cli", "docker", "repos", "tags"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/KKlochko/docker_tags_getter/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.9.0"
+rich = "^13.4.2"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+dtg = "docker_tags_getter.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
