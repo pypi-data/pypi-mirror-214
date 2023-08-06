@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+
+[project]
+name = "pdf-docx-pic"
+version = "3.1.0"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django :: 4.2",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+dependencies = [
+    "ttkbootstrap>=1.10, <1.11",
+    "pdf2docx!=0.5.4, >=0.5.2", 
+    "docx2pdf>=0.1.8", 
+    "PyMuPDF>=1.22.1", 
+    "Pillow>=9.3.0, <10.0", 
+    "wheel!=0.38.2, >=0.38, <0.41",
+]
