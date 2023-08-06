@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: pdf-language-detector
+Version: 0.0.7
+Summary: A python script to iterate over a list of PDF in a directory and try to guess their language with Tesseract OCR.
+Author: ICIJ
+Author-email: engineering@icij.org
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: langcodes[data] (>=3.3.0,<4.0.0)
+Requires-Dist: lingua-language-detector (>=1.3.2,<2.0.0)
+Requires-Dist: pytesseract (>=0.3.10,<0.4.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: sh (>=2.0.4,<3.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# PLD (PDF Language Detector)
+
+PLD is a Python program that analyzes PDF files, extracts images, processes them using Optical Character Recognition (OCR), and detects the dominant language of the text. It provides language detection information in JSON format and calculates the average confidence coefficient for each language.
+
+## Requirements
+
+- [Python 3.8](https://www.python.org/downloads/) or above
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+- [pdftoppm](https://poppler.freedesktop.org/)
+
+## Installation
+
+Install Tesseract OCR and pdftoppm using your package manager. For example, on Ubuntu:
+
+```bash
+sudo apt install tesseract-ocr tesseract-ocr-all poppler-utils
+```
+
+### From PyPi
+
+Install with pip:
+
+```bash
+python3 -m pip install --user pdf-language-detector
+```
+
+Then run directly from your terminal:
+
+```bash
+pld --help
+````
+
+### From the sources
+
+Clone the PLD repository:
+
+```bash
+git clone git@github.com:github.com/icij/pld.git
+```
+
+Install the required Python packages with poetry:
+
+```bash
+poetry install
+````
+
+Then run inside a virtual env managed by poetry:
+
+```bash
+poetry run pld --help
+````
+
+### From Docker
+
+Install with Docker:
+
+```bash
+docker pull icij/pld
+```
+
+Then run inside a container:
+
+```bash
+docker run -it icij/pld pld --help
+```
+
+
+## Usage
+
+### Detect
+
+This command process PDF files and detect the dominant language.
+
+```
+pld detect --help
+
+    --language A list of ISO3 language codes to detect.
+    --input-dir: Path to the input directory containing PDF files. Default is the current directory.
+    --output-dir (optional): Path to the output directory. Default is 'out' directory in the current directory.
+    --max-pages (optional): Maximum number of pages to process per PDF file. Default is 5.
+    --resume (optional): Skip PDF files already analyzed.
+    --skip-images (optional): Skip the extraction of PDF files a images.
+    --skip-ocr (optional): Skip the OCR of images from PDF files.
+    --parallel (optional): Number of threads to run in parallel.
+```
+
+### Report
+
+This command print a report from the previously detected language (using the same output dir).
+
+```
+pld report --help
+
+    --output-dir: Path to the output directory. Default is 'out' directory in the current directory.
+```
+
+## Examples
+
+Process PDF files in the current directory, detect English and Spanish languages, and save the results in the 'results' directory:
+
+```bash
+pld --language eng --language spa --input-dir documents --output-dir results
+```
+
+Process PDF files in the 'documents' directory, detect French and Greek languages, and limit the processing to 3 pages per file:
+
+```bash
+pld --language fra --language ell --input-dir documents --max-pages 3
+```
+
+## License
+
+This project is licensed under the MIT License.
+
