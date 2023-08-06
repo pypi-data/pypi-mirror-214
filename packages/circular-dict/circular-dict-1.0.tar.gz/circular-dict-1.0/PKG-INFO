@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: circular-dict
+Version: 1.0
+Summary: CircularDict is a high-performance Python data structure that combines the best of dictionaries and circular buffers. It provides a data structure that acts as a dictionary but operates as a circular buffer, efficiently removing the oldest item when a predetermined maximum length is exceeded. Ideal for caching large items while minimizing memory usage, CircularDict provides a unique solution for developers requiring dictionary-like and circular-queue-like operations in a single, efficient data structure.
+Home-page: https://github.com/Eric-Canas/CircularDict
+Author: Eric-Canas
+Author-email: eric@ericcanas.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CircularQueueDict
+Dictionary that acts as a Circular Queue, allowing to set a maximum length and automatically delete oldest element when inputting a new one. Useful for temporal storage of large elements that could overflow memory.
+
+
