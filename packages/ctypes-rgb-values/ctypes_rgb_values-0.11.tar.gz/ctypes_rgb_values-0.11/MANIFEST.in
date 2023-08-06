@@ -1,0 +1,4 @@
+include ctypes_rgb_values/requirements.txt
+include ctypes_rgb_values/thirdparty.json
+include ctypes_rgb_values/README.MD
+include ctypes_rgb_values/LICENSE

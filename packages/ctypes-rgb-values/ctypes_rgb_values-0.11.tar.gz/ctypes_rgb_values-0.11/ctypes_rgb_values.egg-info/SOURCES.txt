@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ctypes_rgb_values/LICENSE
+ctypes_rgb_values/README.MD
+ctypes_rgb_values/__init__.py
+ctypes_rgb_values/requirements.txt
+ctypes_rgb_values/thirdparty.json
+ctypes_rgb_values.egg-info/PKG-INFO
+ctypes_rgb_values.egg-info/SOURCES.txt
+ctypes_rgb_values.egg-info/dependency_links.txt
+ctypes_rgb_values.egg-info/requires.txt
+ctypes_rgb_values.egg-info/top_level.txt
