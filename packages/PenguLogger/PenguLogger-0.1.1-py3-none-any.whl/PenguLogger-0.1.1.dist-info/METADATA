@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PenguLogger
+Version: 0.1.1
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Simple logger class that i created to use in my other projects because it was too annoying to make one every time. Also I hate the logging module.
