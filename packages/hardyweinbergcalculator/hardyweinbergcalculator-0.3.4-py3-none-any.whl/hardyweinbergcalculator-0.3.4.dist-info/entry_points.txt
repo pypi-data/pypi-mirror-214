@@ -1,0 +1,2 @@
+[console_scripts]
+hwc = src.__main__:main
