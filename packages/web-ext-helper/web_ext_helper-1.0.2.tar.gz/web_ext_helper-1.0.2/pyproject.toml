@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "web-ext-helper"
+version = "1.0.2"
+description = "A simple cli tool that helps you building your web extensions."
+authors = ["AppSolves <appsolves@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "web_ext_helper"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+Pillow = "^9.5.0"
+typer = "^0.9.0"
+
+[tool.poetry.scripts]
+web-ext-helper = "web_ext_helper.web_ext_helper:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
