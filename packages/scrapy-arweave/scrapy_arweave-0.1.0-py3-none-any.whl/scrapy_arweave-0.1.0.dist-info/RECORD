@@ -1,0 +1,9 @@
+scrapy_arweave/__init__.py,sha256=yyLtGsBhynC-sSHdax-rRGvHNjH-gdWxIY68WnPVfDw,22
+scrapy_arweave/client.py,sha256=8xnyWti4n83vcarS8S4o2kOr-MMRbdwufb48s_cdmC4,3709
+scrapy_arweave/feedexport.py,sha256=7q5d5ZaxA7T0xv1eHKawXlAkmzqzORLT26HG7PbBD_s,1201
+scrapy_arweave/pipelines.py,sha256=ZftuxfSYjtUOTQJiUM_lJnGqtOEUp8etyRpTVfyrVEI,12965
+scrapy_arweave-0.1.0.dist-info/LICENSE.txt,sha256=kU4POC0YPhtJlwIpt_kVbdGr5dVRRj5vcMiaFrWYL_M,1056
+scrapy_arweave-0.1.0.dist-info/METADATA,sha256=TtnigG-RsuUXhw_HkE_tXzwJIwGpnu3j3bFTYwnY-9o,4947
+scrapy_arweave-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scrapy_arweave-0.1.0.dist-info/top_level.txt,sha256=p05ZSrCb0XH6L1-Tu3iBGNqLSjBryVmDz8x02SRdLOM,15
+scrapy_arweave-0.1.0.dist-info/RECORD,,
