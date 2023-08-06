@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "vector-materials"
+version = "0.1.2"
+description = "A library of useful functions for materials-science data-analysis. Maintained by Vector Homes."
+authors = ["Vicente Orts"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{include = "vector_materials"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gspread = "^5.9.0"
+google-auth = "^2.20.0"
+pandas = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
