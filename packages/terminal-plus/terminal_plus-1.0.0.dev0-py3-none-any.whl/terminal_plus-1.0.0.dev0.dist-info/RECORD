@@ -1,0 +1,9 @@
+terminal_print/__init__.py,sha256=i-KtCUPdPAnTZatOHz4KTFUzQGnOQvhpWlFZqTeUvLI,29
+terminal_print/color.py,sha256=nkvB2MS3lPbM3o7OvFsbsZhl-rqXpOkHvbP3srQVv9M,424
+terminal_print/decorator.py,sha256=Ytk5BEEyu7HrX70OTHWnAalo-2dzWgPQqLLtdcvfV_g,773
+terminal_print/printer.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_plus-1.0.0.dev0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_plus-1.0.0.dev0.dist-info/METADATA,sha256=alV6DuXgh888CVfGSwnzywNKiYw84lyYQGx_NHRAMRA,182
+terminal_plus-1.0.0.dev0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+terminal_plus-1.0.0.dev0.dist-info/top_level.txt,sha256=--vgBbJpxCJ0vaF7sH9iIdE3v3LIzcuBfJTH5sybK8Q,15
+terminal_plus-1.0.0.dev0.dist-info/RECORD,,
