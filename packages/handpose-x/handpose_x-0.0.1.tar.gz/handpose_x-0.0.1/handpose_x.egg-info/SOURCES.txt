@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+handpose_x.egg-info/PKG-INFO
+handpose_x.egg-info/SOURCES.txt
+handpose_x.egg-info/dependency_links.txt
+handpose_x.egg-info/top_level.txt
