@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+algos777/__init__.py
+algos777/main.py
+algos777.egg-info/PKG-INFO
+algos777.egg-info/SOURCES.txt
+algos777.egg-info/dependency_links.txt
+algos777.egg-info/not-zip-safe
+algos777.egg-info/top_level.txt
