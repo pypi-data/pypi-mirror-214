@@ -1,0 +1,119 @@
+######################################################
+# Maestro theme file syntax
+######################################################
+# vim: sw=4
+
+description: Maestro theme file
+
+theme:
+    description: Theme configuration allows you to modify the look of maestro
+
+    status_bar:
+
+        background: 
+            type: color
+
+        text:       
+            type: color
+
+        progress_fg:   
+            type: color
+
+        progress_bg:   
+            type: color
+
+    panel:
+
+        background: 
+            type: color
+
+        text:       
+            type: color
+
+    panel_items:
+        description: |
+            Colors of each item in a panel
+
+            You can set the color of:
+
+            - normal items (not focused nor playing)
+
+            - focused items (focused but not playing)
+
+            - playing items (playing but not focused)
+
+            - focused_playing items (both focused and playing at the same time)
+            
+            The '_alt' colors are alternative colors.
+            Every other element in a panel will use those colors.
+
+        normal:
+            background:
+                type: color
+            text:       
+                type: color
+
+        focused:              
+            background:
+                type: color
+            text:
+                type: color
+
+        playing:              
+            background:
+                type: color
+            text:
+                type: color
+
+        focused_playing:      
+            background:
+                type: color
+            text:
+                type: color
+
+        normal_alt:           
+            background:
+                type: color
+            text:
+                type: color
+
+        focused_alt:          
+            background:
+                type: color
+            text:
+                type: color
+
+        playing_alt:          
+            background:
+                type: color
+            text:
+                type: color
+
+        focused_playing_alt:  
+            background:
+                type: color
+            text:
+                type: color
+
+    command_prompt:
+
+        normal:
+            background: 
+                type: color
+
+            border: 
+                type: color
+
+            text:       
+                type: color
+
+        focused:
+            background: 
+                type: color
+
+            border: 
+                type: color
+
+            text:       
+                type: color
+

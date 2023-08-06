@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Maestro
+GenericName=Music Player
+Comment=A configurable and keyboard-centric music player
+Exec=maestroserver
+Icon=maestro
+StartupWMClass=maestro
+Terminal=false
+Categories=AudioVideo;Audio;Player;Music;

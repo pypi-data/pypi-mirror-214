@@ -1,0 +1,13 @@
+__pycache__
+tags
+.instance
+.message
+maestro.egg-info/
+dist/
+
+mypy.ini
+TODO.md
+debug.py
+pyproject_old.toml
+ui_color_test.xcf
+

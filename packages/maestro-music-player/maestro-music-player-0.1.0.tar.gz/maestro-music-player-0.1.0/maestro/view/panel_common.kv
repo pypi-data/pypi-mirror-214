@@ -1,0 +1,42 @@
+# This file is part of maestro, a keyboard-driven configurable music player.
+# Copyright (C) 2022  Baptiste Lambert (Blaireau) rabbitstemplate@disroot.org
+# 
+# Maestro is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#:kivy 2.1.0
+
+<PanelLabel@CProperties+Label>:
+    color: (*app.get_theme_color('panel.text'), 1)
+    markup: True
+
+<PanelItemLabel@PanelLabel>:
+    focused: False
+    alt: False
+    playing: False
+    color: (*app.get_panel_item_color('text', self.focused, self.alt, self.playing), 1)
+
+<PanelTitleLabel@PanelLabel>:
+    bold: True
+    text_size: self.size
+    font_size: 30
+    halign: 'left'
+    valign: 'center'
+    padding: 20, 5
+
+<PanelItem@BBoxLayout>:
+    selected: False
+    focused: False
+    alt: False
+    playing: False
+    background_color: app.get_panel_item_color('background', self.focused, self.alt, self.playing)

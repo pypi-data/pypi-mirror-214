@@ -1,0 +1,86 @@
+# This file is part of maestro, a keyboard-driven configurable music player.
+# Copyright (C) 2022  Baptiste Lambert (Blaireau) rabbitstemplate@disroot.org
+# 
+# Maestro is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#:kivy 2.1.0
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+#:import none_to_default maestro.utils.math.none_to_default
+
+#:include view/statusbar.kv
+
+#:include view/panel_common.kv
+#:include view/collection_panel.kv
+#:include view/album_panel.kv
+#:include view/queue_panel.kv
+#:include view/doc_panel.kv
+
+
+BoxLayout:
+    # childrens links
+    command_bar: command_bar
+    panel_manager: panel_manager
+    collection_panel: collection_panel
+    album_panel: album_panel
+    queue_panel: queue_panel
+    doc_panel: doc_panel
+    # style parameters
+    orientation: 'vertical'
+    # content
+    StatusBar:
+        size_hint_y: 0.1
+    ScreenManager:
+        size_hint_y: 0.9
+        id: panel_manager
+        transition: FadeTransition(duration=0.1)
+        CollectionPanel:
+            id: collection_panel
+            name: 'collection'
+            app: app
+        AlbumPanel:
+            id: album_panel
+            name: 'album'
+            app: app
+        QueuePanel:
+            id: queue_panel
+            name: 'queue'
+            app: app
+        DocPanel:
+            id: doc_panel
+            name: 'documentation'
+            app: app
+    BBoxLayout:
+        padding: 1, 1, 1, 1
+        height: self.minimum_height
+        size_hint_y: None
+        background_color: app.get_theme_color(f'command_prompt.{none_to_default(command_bar.focus_name, "normal")}.border')
+        CTextInput:
+            id: command_bar
+            height: self.minimum_height
+            size_hint_y: None
+            multiline: False
+            focus_name: 'focused' if self.focused else 'normal'
+            background_color: (*app.get_theme_color(f'command_prompt.{self.focus_name}.background'), 1)
+            cursor_color: (*app.get_theme_color(f'command_prompt.{self.focus_name}.text'), 1)
+            foreground_color: (*app.get_theme_color(f'command_prompt.{self.focus_name}.text'), 1)
+            on_text_validate: app.execute_command(self.text)
+            background_normal: ''
+            background_active: ''
+
+# <TagItem>:
+#     background_color: 0.7, 0.6, 0.2
+#     color: 0, 0, 0
+#     width: self.texture_size[0] + 10
+#     size_hint: None, 0.8
+#     pos_hint: {'center_y': 0.5}

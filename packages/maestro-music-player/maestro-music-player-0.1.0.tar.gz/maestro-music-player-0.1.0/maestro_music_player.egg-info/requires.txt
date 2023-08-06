@@ -1,0 +1,10 @@
+kivy
+pyyaml
+python-vlc
+python-mpv
+trio
+
+[test]
+pytest
+pytest-cov
+pytest-trio

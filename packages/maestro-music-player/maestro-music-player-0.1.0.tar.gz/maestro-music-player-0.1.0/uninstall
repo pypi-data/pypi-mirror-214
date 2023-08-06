@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# variables
+MAESTRO_DIR="$PWD"
+
+VENV_DIR="$MAESTRO_DIR/.venv"
+
+BIN_DIR="$HOME/bin"
+
+MAESTRO_SERVER_EXE="$BIN_DIR/maestroserver" 
+MAESTRO_CLIENT_EXE="$BIN_DIR/maestro" 
+
+DESKTOP_FILE_DIR="$HOME/.local/share/applications"
+ICONS_DIR="$HOME/.local/share/icons"
+
+rm -rf $VENV_DIR
+
+rm -f $MAESTRO_SERVER_EXE
+rm -f $MAESTRO_CLIENT_EXE
+
+rm -f "$ICONS_DIR/maestro.svg"
+
+rm -f $DESKTOP_FILE_DIR/maestro.desktop

@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+errors=false
+
+cd maestro
+
+report_bad () {
+    # report_bad <searched_module> <imported_module> 
+    found=$(grep -rn --include="*.py" --exclude-dir=tests "from $2" $1)
+    if [ "$found" ];then
+        echo "Bad design found: $1 should not contain import of $2"
+        echo "    $found"
+        echo ""
+        errors=true
+    fi
+}
+
+report_bad "model" "maestro.control"
+report_bad "model" "maestro.sound"
+report_bad "model" "maestro.utils.loaders"
+report_bad "model" "maestro.view"
+
+report_bad "sound" "maestro.control"
+report_bad "sound" "maestro.model"
+report_bad "sound" "maestro.systemutils"
+report_bad "sound" "maestro.utils.cache"
+report_bad "sound" "maestro.utils.loaders"
+report_bad "sound" "maestro.utils.formatting"
+report_bad "sound" "maestro.utils.parsing"
+report_bad "sound" "maestro.utils.pointable_list"
+report_bad "sound" "maestro.utils.ressources"
+report_bad "sound" "maestro.view"
+
+report_bad "systemutils" "maestro.control"
+report_bad "systemutils" "maestro.model"
+report_bad "systemutils" "maestro.utils.cache"
+report_bad "systemutils" "maestro.utils.loaders"
+report_bad "systemutils" "maestro.utils.formatting"
+report_bad "systemutils" "maestro.utils.parsing"
+report_bad "systemutils" "maestro.utils.pointable_list"
+report_bad "systemutils" "maestro.view"
+
+report_bad "utils" "maestro.control"
+report_bad "utils" "maestro.systemutils"
+report_bad "utils" "maestro.view"
+
+report_bad "view" "maestro.control"
+report_bad "view" "maestro.utils.cache"
+report_bad "view" "maestro.utils.loaders"
+report_bad "view" "maestro.utils.parsing"
+report_bad "view" "maestro.utils.pointable_list"
+
+if [ "$errors" = "false" ];then
+    echo "No design problems detected."
+fi

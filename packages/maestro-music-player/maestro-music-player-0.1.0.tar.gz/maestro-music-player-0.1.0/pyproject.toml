@@ -1,0 +1,48 @@
+
+[project]
+name = "maestro-music-player"
+version = "0.1.0"
+description = "A configurable and keyboard-centric music player"
+authors = [{name = "rabbitstemplate", email = "rabbitstemplate@disroot.org"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "kivy",
+    "pyyaml",
+    "python-vlc",
+    "python-mpv",
+    "trio",
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Multimedia :: Sound/Audio :: Players",
+
+]
+keywords = ["audio", "music player"]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-trio",
+]
+
+[project.scripts]
+maestroserver = "maestro.server"
+maestro = "maestro.client"
+
+[project.urls]
+Repository = "https://framagit.org/Blaireau/maestro"
+
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]

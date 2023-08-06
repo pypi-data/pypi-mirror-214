@@ -1,0 +1,87 @@
+######################################################
+# Maestro config file syntax
+######################################################
+# vim: sw=4
+
+description: Maestro configuration file
+
+music_collection: 
+    description: The path of the directory containing your music files
+    type: str
+    default: ''
+
+audio:
+    backend: 
+        description: Audio backend to use, either 'vlc' or 'mpv'
+        type: str
+        default: 'mpv'
+
+albums:
+
+    recursive_search: 
+        description: Whether album directory should recursively include music from sub-directories
+        type: bool
+        default: False
+
+    use_index_clues: 
+        description: |
+            Whether maestro should try to extract the index of a song from it’s filename
+
+            If set, maestro will look for numbers in music filenames and sort songs in 
+            an album based on those indexes. Songs without index are put at the end.
+            If multiple songs have the same index (or no index), they are sorted
+            in alphabetical order.
+           
+            When this option is disabled, songs are sorted in alphabetical order.
+        type: bool
+        default: True
+
+keys: 
+    description: | 
+        You can bind any key to a maestro command
+
+        There are 3 modes in which you can bind keys
+
+        - normal: this is the default mode when using the app
+
+        - command: when the in-app command line is focused
+
+        - popup: when an information popup is displayed
+
+        A key can only be mapped once in each mode
+
+    normal:
+        description: |
+            The default mode when using the app
+
+            You probably want to bind most of your commands here
+        type: mapping
+        default: {}
+
+    command:
+        description: |
+            Active when the in-app command line is focused
+
+            You probably don’t want to bind many keys here, as it would make it
+            impossible to type text in the command line
+        type: mapping
+        default: {}
+
+    popup:
+        description: |
+            Active when an information popup is displayed
+
+            You will need at least a key to dismiss the popup here
+        type: mapping
+        default: {}
+
+theme:
+    description: You can set a light or dark theme for the application
+
+    name:
+
+        description: Name of the color scheme to use
+        type: str
+        default: "dark"
+
+

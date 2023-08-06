@@ -1,0 +1,58 @@
+# this is an invalid theme used for testing
+theme:
+
+    status_bar:
+        background:  '#12111c'
+        text:        '#e5e5da'
+
+        progress_fg:    '#0cdc79'
+        progress_bg:    '#3b574a'
+
+    panel:
+        background:  'garbage'
+        text:        '#e5e5da'
+
+    panel_items:
+
+        normal:
+            background: '#222635'
+
+        focused:              
+            background: '#3368ac'
+            text: '#e5e5da'
+
+        playing:              
+            background: '#ad1b4f'
+            text: '#e5e5da'
+
+        focused_playing:      
+            background: '#7859af'
+            text: '#e5e5da'
+
+        normal_alt:           
+            background: '#191b21'
+            text: '#e5e5da'
+
+        focused_alt:          
+            background: '#356cb3'
+            text: '#e5e5da'
+
+        playing_alt:          
+            background: '#b31c52'
+            text: '#e5e5da'
+
+        focused_playing_alt:  
+            background: '#8965c8'
+            text: '#e5e5da'
+
+    command_prompt:
+
+        normal:
+            background:  '#262631'
+            border:      '#7a7897'
+            text:        '#d5d5ca'
+
+        focused:
+            background:  '#272c3c'
+            border:      '#356cb3'
+            text:        '#d5d5ca'

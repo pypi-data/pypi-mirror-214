@@ -1,0 +1,65 @@
+# This file is part of maestro, a keyboard-driven configurable music player.
+# Copyright (C) 2022  Baptiste Lambert (Blaireau) rabbitstemplate@disroot.org
+# 
+# Maestro is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#:kivy 2.1.0
+#:import ALBUM_ITEM_WIDTH maestro.view.constants.ALBUM_ITEM_WIDTH
+#:import ALBUM_ITEM_HEIGHT maestro.view.constants.ALBUM_ITEM_HEIGHT
+
+<AlbumItem@PanelItem>:
+    # data properties
+    name: ''
+    cover: ''
+    # style
+    orientation: 'vertical'
+    padding: 3
+    spacing: 8
+    PanelItemLabel:
+        text: root.name
+        bold: root.selected
+        shorten: True
+        text_size: self.size
+        font_size: 17
+        size_hint_y: 0.12
+        halign: 'center'
+        focused: root.focused
+        alt: root.alt
+    BoxLayout:
+        size_hint: None, 0.88
+        width: self.height
+        padding: 0
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        Image:
+            source: root.cover
+            size_hint: None, 1
+            width: self.height
+
+<CollectionPanel>:
+    scroll_grid: scroll_grid
+    background_color: app.get_theme_color('panel.background')
+    BBoxLayout:
+        orientation: 'vertical'
+        spacing: 5
+        background_color: app.get_theme_color('panel.background')
+        PanelTitleLabel:
+            text: 'Collection'
+            size_hint_y: 0.05
+        RecycleScrollGrid:
+            id: scroll_grid
+            viewclass: 'AlbumItem'
+            cols: max(1, min(len(self.data), self.width // ALBUM_ITEM_WIDTH))
+            children_height: ALBUM_ITEM_HEIGHT
+            spacing: 5
+            size_hint_y: 0.95
