@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: model-composer
+Version: 0.2.0
+Summary: Easily compose a model ensemble from your machine learning models
+Requires-Python: >=3.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: all
+Provides-Extra: cloudpathlib
+Provides-Extra: tensorflow
+Requires-Dist: botocore (>=1.29.155,<2.0.0) ; extra == "cloudpathlib" or extra == "all"
+Requires-Dist: cloudpathlib[azure,gs,s3] (>=0.14.0,<0.15.0) ; extra == "cloudpathlib" or extra == "all"
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
+Requires-Dist: pydotplus (>=2.0.0,<3.0.0) ; extra == "tensorflow" or extra == "all"
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: tensorflow (>=2.0.0,<3.0.0) ; extra == "tensorflow" or extra == "all"
+Requires-Dist: typeguard (>=4.0.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Model Composer
+
+## Motivation
+
+This use-case prompted the development of `model-composer`:
+
+- You have two tensorflow models, one trained on weekday data and one trained on weekend data
+- You would like to compose a single tensorflow model that can be used to generate predictions for any day of the week.
+- You want the composed model to be natively defined in tensorflow - i.e. a single "computational graph" that can be easily loaded and used to make predictions.
+- You want a single composed model becasuse:
+  - It is easier to maintain than having to implement the logic to compose the models in every service that needs to make predictions.
+  - It ensures the performance of the composed model will remain consistent with a native tensorflow model of a similar complexity.
+  - It is easier to deploy a single model than multiple models
+
+## Documentation
+
+The official documentation is hosted on ReadTheDocs: https://model-composer.readthedocs.io
+
+## Install
+
+Using pip:
+
+```
+pip install model-composer
+```
+
+### Extras
+
+Make use of extras to install the model composer implementations that you need:
+
+```bash
+pip install model-composer[tensorflow]  # compose tensorflow models
+pip install model-composer[cloudpathlib]  # load models from cloud storage
+pip install model-composer[all]  # all extras
+```
+
+## Supported ML libraries
+
+- Tensorflow
+
+## Roadmap
+
+- Support for more ML frameworks:
+  - PyTorch
+  - Scikit-learn
+
+## How to setup
+
+```bash
+pip install model_composer
+```
+
+## Quick start
+
+We define our composed model using a composed model spec which can be serialized in a human-readable file like yaml.
+
+```python
+import yaml
+
+example = """
+name: "ride_share_pricing"
+components:
+  - name: weekday_model
+    path: weekday_model.tf
+    type: tensorflow
+    where:
+      input: is_weekday
+      operator: eq
+      value: true
+  - name: weekend_model
+    path: weekend_model.tf
+    type: tensorflow
+    where:
+      input: is_weekday
+      operator: eq
+      value: false
+"""
+with open("example.yaml", "w") as f:
+    f.write(example)
+```
+
+We build each model separately and save it to disk.
+
+```python
+import tensorflow as tf
+
+# Build the weekend model
+weekend_model = tf.keras.Sequential([
+    tf.keras.layers.Input(shape=(1,), name="distance"),
+    tf.keras.layers.Dense(1, name="price")
+])
+
+weekend_model.compile(optimizer="adam", loss="mse")
+
+weekend_model.fit(
+    x={"distance": tf.convert_to_tensor([10, 20], dtype=tf.float32)},
+    y=tf.convert_to_tensor([10, 20], dtype=tf.float32),
+    epochs=10
+)
+weekend_model.save("weekend_model.tf")
+
+
+# Build the weekday model
+weekday_model = tf.keras.Sequential([
+    tf.keras.layers.Input(shape=(1,), name="distance"),
+    tf.keras.layers.Dense(1, name="price")
+])
+
+weekday_model.compile(optimizer="adam", loss="mse")
+
+weekday_model.fit(
+    x={"distance": tf.convert_to_tensor([10, 20], dtype=tf.float32)},
+    y=tf.convert_to_tensor([5, 10], dtype=tf.float32),
+    epochs=10
+)
+
+# Save the models
+weekday_model.save("weekday_model.tf")
+```
+
+We can then load the composed model spec and use it to make predictions.
+
+```python
+import tensorflow as tf
+from model_composer import TensorflowModelComposer
+
+composed_model = TensorflowModelComposer().from_yaml("example.yaml")
+
+composed_model.save("composed_model.tf")
+
+loaded_model = tf.keras.models.load_model("composed_model.tf")
+
+composed_model.predict({
+  "is_weekday": tf.convert_to_tensor([True, False], dtype=tf.bool),
+  "distance": tf.convert_to_tensor([10, 20], dtype=tf.float32)
+})
+```
+

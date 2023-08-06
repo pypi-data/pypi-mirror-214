@@ -1,0 +1,14 @@
+LICENSE.txt,sha256=Mnp2fKtOQumiboMO2u1yHN6pPUPHYZ8XlTZ5cyV6a_g,1074
+README.md,sha256=4SWdfcuXuuc4c6Z9-MvDoEEi6icUJVym8qQnOXmbhic,3502
+model_composer/__init__.py,sha256=3TY3vgbb04IDlv9tRACzIxrBlrPJoJtkLWyumV1i-q4,227
+model_composer/_utils.py,sha256=EuHZfpvL2eiVpvvFt7dvolcBTQALRzQMKKCJuz616dA,1757
+model_composer/implementations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_composer/implementations/tensorflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_composer/implementations/tensorflow/composer.py,sha256=TiF5xON_MWu7Mij12EAwtrDnMiRMTrn458o8pgpzjrI,12061
+model_composer/interface.py,sha256=J9xcr6BQpOqUfKux0XoSM4it0z2FJ7WZMANenJoj5q4,763
+model_composer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_composer/spec.py,sha256=oTskNRZxM1oQP4GqN4--T1-oq9zHRHSgHyJbpxhLAJA,2442
+model_composer-0.2.0.dist-info/LICENSE.txt,sha256=Mnp2fKtOQumiboMO2u1yHN6pPUPHYZ8XlTZ5cyV6a_g,1074
+model_composer-0.2.0.dist-info/METADATA,sha256=POmOn2MVFYuuMK8qrrcYynrt0Lb1OOXWAoYvdJLA-_U,4512
+model_composer-0.2.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+model_composer-0.2.0.dist-info/RECORD,,
