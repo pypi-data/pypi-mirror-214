@@ -1,0 +1,2 @@
+[console_scripts]
+sponsorblock = sponsorblock.__main__:run
