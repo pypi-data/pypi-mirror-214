@@ -1,0 +1,8 @@
+vapi/__init__.py,sha256=1X3SDUjKbFmf8wgwfVDgHy1HiwSUqn3iFwLekAIJwME,49
+vapi/exceptions.py,sha256=7HtWbkEtG9MrEoFiQkfy1en3f565G_gUowAA119_RJI,1107
+vapi/vapi.py,sha256=iURA8cPgv6nU7jfZ39GpEmyW4EaQ4aeqTizd7TXz0ro,5449
+drizzutojr_vapi-0.0.3.dist-info/LICENSE.md,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+drizzutojr_vapi-0.0.3.dist-info/METADATA,sha256=er7jgElB1w_YWlEzc1b65m5tl9IsGmFoybdQP_u071Y,200
+drizzutojr_vapi-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+drizzutojr_vapi-0.0.3.dist-info/top_level.txt,sha256=WtIjxGq4gkdnp4MLZf6yEo-HMdTp5sRLDYmbTyoPhyE,5
+drizzutojr_vapi-0.0.3.dist-info/RECORD,,
