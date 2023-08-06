@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools",
+            "pytest",
+            "pytest-mock"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CKAstroTools"
+description = "General toolks for astronomy I personally use regularly for data analysis."
+version = "0.0.1"
+requires-python = ">=3.7"
+dependencies = ["spectral-cube"]
+keywords = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3"
+]
+readme = "README.md"
+license = { text = "MIT License" }
+authors = [{name="Carsten König"}]
+
+[project.urls]
+Homepage = "https://gitlab.com/ck2go/ckastrotools"
+
+#[project.scripts]
+#myscript = "ckastrotools.__main__:main"
+
+
+
