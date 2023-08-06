@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+src/component_include_tags/__init__.py
+src/component_include_tags/apps.py
+src/component_include_tags/tests.py
+src/component_include_tags/migrations/__init__.py
+src/component_include_tags/templatetags/__init__.py
+src/component_include_tags/templatetags/components.py
+src/django_component_include_tags.egg-info/PKG-INFO
+src/django_component_include_tags.egg-info/SOURCES.txt
+src/django_component_include_tags.egg-info/dependency_links.txt
+src/django_component_include_tags.egg-info/top_level.txt
