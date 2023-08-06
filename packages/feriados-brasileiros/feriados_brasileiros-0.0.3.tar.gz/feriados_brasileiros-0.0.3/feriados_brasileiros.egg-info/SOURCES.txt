@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+feriados_brasileiros/__init__.py
+feriados_brasileiros/datas.py
+feriados_brasileiros.egg-info/PKG-INFO
+feriados_brasileiros.egg-info/SOURCES.txt
+feriados_brasileiros.egg-info/dependency_links.txt
+feriados_brasileiros.egg-info/requires.txt
+feriados_brasileiros.egg-info/top_level.txt
