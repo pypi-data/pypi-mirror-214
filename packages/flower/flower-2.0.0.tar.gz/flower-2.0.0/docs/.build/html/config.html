@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Configuration &#8212; Flower 2.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/celery.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tasks filtering" href="tasks_filter.html" />
+    <link rel="prev" title="Getting started" href="install.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="tasks_filter.html" title="Tasks filtering"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="install.html" title="Getting started"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Flower 2.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Configuration</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<div class="deck">
+
+</div>
+    <section id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h1>
+<p>Flower is highly customizable. You can pass configuration options through the command line,
+configuration file, or environment variables. For a full list of options, see the <a class="reference internal" href="#option-reference">Option Reference</a> section.</p>
+<section id="command-line">
+<h2>Command line<a class="headerlink" href="#command-line" title="Permalink to this heading">¶</a></h2>
+<p>Flower operates as a sub-command of Celery, allowing you to pass both Celery and Flower
+configuration options from the command line. The template for this is as follows</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">celery</span> <span class="p">[</span><span class="n">celery</span> <span class="n">options</span><span class="p">]</span> <span class="n">flower</span> <span class="p">[</span><span class="n">flower</span> <span class="n">options</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Celery options should be specified after the celery command, while Flower options
+should be specified after the flower sub-command.</p>
+<p>For example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery --broker=redis:// flower --unix-socket=/tmp/flower.sock
+</pre></div>
+</div>
+<p>See <a class="reference external" href="https://docs.celeryq.dev/en/latest/userguide/configuration.html">Celery Configuration reference</a> for a comprehensive listing of all available settings
+and their default values.</p>
+</section>
+<section id="configuration-file">
+<h2>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this heading">¶</a></h2>
+<p>Flower tries to load configuration from the <code class="file docutils literal notranslate"><span class="pre">flowerconfig.py</span></code> file by default.
+You can override the name of the configuration file with the <a class="reference internal" href="#conf">conf</a> option.
+The configuration file is a simple Python file that contains key-value pairs:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set RabbitMQ management api</span>
+<span class="n">broker_api</span> <span class="o">=</span> <span class="s1">&#39;http://guest:guest@localhost:15672/api/&#39;</span>
+
+<span class="c1"># Enable debug logging</span>
+<span class="n">logging</span> <span class="o">=</span> <span class="s1">&#39;DEBUG&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="environment-variables">
+<h2>Environment variables<a class="headerlink" href="#environment-variables" title="Permalink to this heading">¶</a></h2>
+<p>Flower configuration options can also be passed through environment variables.
+All Flower options must be prefixed with <cite>FLOWER_</cite>.
+For example, to set the basic_auth option to foo:bar, you would set the
+<cite>FLOWER_BROKER_API</cite> environment variable to <cite>foo:bar</cite></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">FLOWER_BASIC_AUTH</span><span class="o">=</span><span class="n">foo</span><span class="p">:</span><span class="n">bar</span>
+<span class="n">celery</span> <span class="n">flower</span>
+</pre></div>
+</div>
+</section>
+<section id="option-reference">
+<span id="options-referance"></span><h2>Option Reference<a class="headerlink" href="#option-reference" title="Permalink to this heading">¶</a></h2>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#address" id="id32">address</a></p></li>
+<li><p><a class="reference internal" href="#auth" id="id33">auth</a></p></li>
+<li><p><a class="reference internal" href="#auto-refresh" id="id34">auto_refresh</a></p></li>
+<li><p><a class="reference internal" href="#basic-auth" id="id35">basic_auth</a></p></li>
+<li><p><a class="reference internal" href="#broker-api" id="id36">broker_api</a></p></li>
+<li><p><a class="reference internal" href="#ca-certs" id="id37">ca_certs</a></p></li>
+<li><p><a class="reference internal" href="#certfile" id="id38">certfile</a></p></li>
+<li><p><a class="reference internal" href="#conf" id="id39">conf</a></p></li>
+<li><p><a class="reference internal" href="#db" id="id40">db</a></p></li>
+<li><p><a class="reference internal" href="#debug" id="id41">debug</a></p></li>
+<li><p><a class="reference internal" href="#enable-events" id="id42">enable_events</a></p></li>
+<li><p><a class="reference internal" href="#format-task" id="id43">format_task</a></p></li>
+<li><p><a class="reference internal" href="#inspect-timeout" id="id44">inspect_timeout</a></p></li>
+<li><p><a class="reference internal" href="#keyfile" id="id45">keyfile</a></p></li>
+<li><p><a class="reference internal" href="#max-workers" id="id46">max_workers</a></p></li>
+<li><p><a class="reference internal" href="#max-tasks" id="id47">max_tasks</a></p></li>
+<li><p><a class="reference internal" href="#natural-time" id="id48">natural_time</a></p></li>
+<li><p><a class="reference internal" href="#persistent" id="id49">persistent</a></p></li>
+<li><p><a class="reference internal" href="#port" id="id50">port</a></p></li>
+<li><p><a class="reference internal" href="#state-save-interval" id="id51">state_save_interval</a></p></li>
+<li><p><a class="reference internal" href="#xheaders" id="id52">xheaders</a></p></li>
+<li><p><a class="reference internal" href="#tasks-columns" id="id53">tasks_columns</a></p></li>
+<li><p><a class="reference internal" href="#url-prefix" id="id54">url_prefix</a></p></li>
+<li><p><a class="reference internal" href="#unix-socket" id="id55">unix_socket</a></p></li>
+<li><p><a class="reference internal" href="#cookie-secret" id="id56">cookie_secret</a></p></li>
+<li><p><a class="reference internal" href="#auth-provider" id="id57">auth_provider</a></p></li>
+<li><p><a class="reference internal" href="#purge-offline-workers" id="id58">purge_offline_workers</a></p></li>
+<li><p><a class="reference internal" href="#task-runtime-metric-buckets" id="id59">task_runtime_metric_buckets</a></p></li>
+<li><p><a class="reference internal" href="#oauth2-key" id="id60">oauth2_key</a></p></li>
+<li><p><a class="reference internal" href="#oauth2-secret" id="id61">oauth2_secret</a></p></li>
+<li><p><a class="reference internal" href="#oauth2-redirect-uri" id="id62">oauth2_redirect_uri</a></p></li>
+</ul>
+</nav>
+<section id="address">
+<span id="id1"></span><h3><a class="toc-backref" href="#id32" role="doc-backlink">address</a><a class="headerlink" href="#address" title="Permalink to this heading">¶</a></h3>
+<p>Default: ‘’ (empty string)</p>
+<p>Sets the address on which the Flower HTTP server should listen.
+The address may be either an IP address or a hostname. If a hostname is provided,
+the server will listen on all IP addresses associated with that name.
+To listen on all available interfaces, set the address to an empty string.</p>
+<p>Example:</p>
+<p>Listen on all available interfaces:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower --address=&#39;0.0.0.0&#39;
+</pre></div>
+</div>
+<p>Listen only on the loopback interface:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower --address=&#39;localhost&#39;
+</pre></div>
+</div>
+<p>Listen on all IP addresses associated with ‘example.com’:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower --address=&#39;example.com&#39;
+</pre></div>
+</div>
+</section>
+<section id="auth">
+<span id="id2"></span><h3><a class="toc-backref" href="#id33" role="doc-backlink">auth</a><a class="headerlink" href="#auth" title="Permalink to this heading">¶</a></h3>
+<p>Default: ‘’ (empty string)</p>
+<p>Enables authentication. <cite>auth</cite> is a regular expression of emails to grant access.</p>
+<p>The <cite>auth</cite> option allows you to enable authentication in Flower. By default, the <cite>auth</cite> option is set to an empty string, indicating that authentication is disabled.</p>
+<p>To enable authentication and restrict access to specific email addresses, set the <cite>auth</cite> option to a regular expression pattern that matches the desired email addresses. The <cite>auth</cite> option supports a basic regex syntax, including:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Single email: Use a single email address, such as <cite>user&#64;example.com</cite>.</p></li>
+<li><p>Wildcard: Use a wildcard pattern with <cite>.*</cite> to match multiple email addresses with the same domain, such as <cite>.*&#64;example.com</cite>.</p></li>
+<li><p>List of emails: Use a list of emails separated by pipes (<cite>|</cite>), such as <cite>one&#64;example.com|two&#64;example.com</cite>.</p></li>
+</ul>
+</div></blockquote>
+<p>Please note that for security reasons, the <cite>auth</cite> option only supports a basic regex syntax and does not provide advanced regex features.</p>
+<p>For more information and detailed usage examples, refer to the <a class="reference internal" href="auth.html#authentication"><span class="std std-ref">Authentication</span></a> section of the Flower documentation.</p>
+</section>
+<section id="auto-refresh">
+<span id="id3"></span><h3><a class="toc-backref" href="#id34" role="doc-backlink">auto_refresh</a><a class="headerlink" href="#auto-refresh" title="Permalink to this heading">¶</a></h3>
+<p>Default: True</p>
+<p>Enables automatic refresh for the Workers view.
+By default, the Workers view automatically refreshes at regular intervals to provide up-to-date
+information about the workers. Set this option to <cite>False</cite> to disable automatic refreshing.</p>
+</section>
+<section id="basic-auth">
+<span id="id4"></span><h3><a class="toc-backref" href="#id35" role="doc-backlink">basic_auth</a><a class="headerlink" href="#basic-auth" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Enables HTTP Basic authentication. It accepts a comma-separated list of <cite>username:password</cite> pairs.
+Each pair represents a valid username and password combination for authentication.</p>
+<p>Example:</p>
+<p>Enable HTTP Basic authentication with multiple users:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower --basic-auth=&quot;user1:password1,user2:password2&quot;
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="auth.html#basic-authentication"><span class="std std-ref">HTTP Basic Authentication</span></a> for more information.</p>
+</section>
+<section id="broker-api">
+<span id="id5"></span><h3><a class="toc-backref" href="#id36" role="doc-backlink">broker_api</a><a class="headerlink" href="#broker-api" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>The URL of the broker API used by Flower to retrieve information about queues.</p>
+<p>Flower uses the RabbitMQ Management Plugin to gather information about queues.
+The <cite>broker_api</cite> option should be set to the URL of the RabbitMQ HTTP API, including user credentials if required.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower broker-api=&quot;http://username:password@rabbitmq-server-name:15672/api/&quot;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, the RabbitMQ Management Plugin is not enabled. To enable it, run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ rabbitmq-plugins enable rabbitmq_management
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The port number for RabbitMQ versions prior to 3.0 is 55672.</p>
+</div>
+<p>For more information refer to the <a class="reference external" href="https://www.rabbitmq.com/management.html">RabbitMQ Management Plugin</a> documentation.</p>
+</section>
+<section id="ca-certs">
+<span id="id6"></span><h3><a class="toc-backref" href="#id37" role="doc-backlink">ca_certs</a><a class="headerlink" href="#ca-certs" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Sets the path to the <cite>ca_certs</cite> file containing a set of concatenated “certification authority” certificates.</p>
+<p>The <cite>ca_certs</cite> file is used to validate certificates received from the other end of the connection.
+It contains a collection of trusted root certificates. Set the <cite>ca_certs</cite> option to the path of the <cite>ca_certs</cite> file.
+If not specified, certificate validation will not be performed.</p>
+<p>For more information about certificate validation in Python, refer to the <a class="reference external" href="https://docs.python.org/3/library/ssl.html">Python SSL</a> documentation.</p>
+</section>
+<section id="certfile">
+<span id="id7"></span><h3><a class="toc-backref" href="#id38" role="doc-backlink">certfile</a><a class="headerlink" href="#certfile" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Sets the path to the SSL certificate file.</p>
+<p>The <cite>certfile</cite> option specifies the path to the SSL certificate file used for SSL/TLS encryption.
+The certificate file contains the public key certificate for the Flower server.
+If not specified, SSL/TLS encryption will not be used.</p>
+</section>
+<section id="conf">
+<span id="id8"></span><h3><a class="toc-backref" href="#id39" role="doc-backlink">conf</a><a class="headerlink" href="#conf" title="Permalink to this heading">¶</a></h3>
+<p>Default: flowerconfig.py</p>
+<p>Sets the configuration file to be used by Flower.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower --conf=&quot;./examples/celeryconfig.py&quot;
+</pre></div>
+</div>
+</section>
+<section id="db">
+<span id="id9"></span><h3><a class="toc-backref" href="#id40" role="doc-backlink">db</a><a class="headerlink" href="#db" title="Permalink to this heading">¶</a></h3>
+<p>Default: flower</p>
+<p>Sets the database file to use if persistent mode is enabled.</p>
+<p>If the <a class="reference internal" href="#persistent">persistent</a> mode is enabled, the <cite>db</cite> option specifies the database file
+to be used by Flower for storing task results, events, or other persistent data.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower persistent=True --db =&quot;flower_db&quot;
+</pre></div>
+</div>
+</section>
+<section id="debug">
+<span id="id10"></span><h3><a class="toc-backref" href="#id41" role="doc-backlink">debug</a><a class="headerlink" href="#debug" title="Permalink to this heading">¶</a></h3>
+<p>Default: False</p>
+<p>Enables the debug mode</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When debug mode is enabled, Flower may print sensitive information</p>
+</div>
+</section>
+<section id="enable-events">
+<span id="id11"></span><h3><a class="toc-backref" href="#id42" role="doc-backlink">enable_events</a><a class="headerlink" href="#enable-events" title="Permalink to this heading">¶</a></h3>
+<p>Default: True</p>
+<p>When enabled, Flower periodically sends Celery <cite>enable_events</cite> commands to all workers.
+Enabling Celery events allows Flower to receive real-time updates about task events
+from the Celery workers.</p>
+<p>You can also enable events directly when running Celery workers by using the <cite>-E</cite> flag.
+For more information, refer to the <a class="reference external" href="https://docs.celeryq.dev/en/stable/reference/cli.html#cmdoption-celery-worker-E">Celery documentation</a>:</p>
+</section>
+<section id="format-task">
+<span id="id12"></span><h3><a class="toc-backref" href="#id43" role="doc-backlink">format_task</a><a class="headerlink" href="#format-task" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Modifies the default task formatting.</p>
+<p>The <cite>format_task</cite> function allows to modify the default formatting of tasks.
+By defining the <cite>format_task</cite> function in the <cite>flowerconfig.py</cite> configuration file,
+you can customize the task object before it is displayed. The <cite>format_task</cite> function accepts a task object
+as a parameter and should return the modified version of the task.</p>
+<p>This function is particularly useful for filtering out sensitive information or limiting display lengths of task arguments, kwargs, or results.</p>
+<p>The example below shows how to filter arguments and limit display lengths:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">flower.utils.template</span> <span class="kn">import</span> <span class="n">humanize</span>
+
+<span class="k">def</span> <span class="nf">format_task</span><span class="p">(</span><span class="n">task</span><span class="p">):</span>
+    <span class="n">task</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="n">humanize</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">args</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">task</span><span class="o">.</span><span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;credit_card_number&#39;</span><span class="p">)</span>
+    <span class="n">task</span><span class="o">.</span><span class="n">result</span> <span class="o">=</span> <span class="n">humanize</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">result</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">task</span>
+</pre></div>
+</div>
+</section>
+<section id="inspect-timeout">
+<span id="id13"></span><h3><a class="toc-backref" href="#id44" role="doc-backlink">inspect_timeout</a><a class="headerlink" href="#inspect-timeout" title="Permalink to this heading">¶</a></h3>
+<p>Default: 1000</p>
+<p>Sets the timeout for the worker inspect commands in milliseconds.</p>
+<p>Worker inspection involves retrieving information about the workers, such as their current status, tasks, and resource usage.</p>
+</section>
+<section id="keyfile">
+<span id="id14"></span><h3><a class="toc-backref" href="#id45" role="doc-backlink">keyfile</a><a class="headerlink" href="#keyfile" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Sets the path to the SSL key file.</p>
+<p>The key file contains the private key corresponding to the SSL certificate.
+If not specified, or set to <cite>None</cite>, SSL/TLS encryption will not be used.</p>
+</section>
+<section id="max-workers">
+<span id="id15"></span><h3><a class="toc-backref" href="#id46" role="doc-backlink">max_workers</a><a class="headerlink" href="#max-workers" title="Permalink to this heading">¶</a></h3>
+<p>Default: 5000</p>
+<p>Sets the maximum number of workers to keep in memory</p>
+</section>
+<section id="max-tasks">
+<span id="id16"></span><h3><a class="toc-backref" href="#id47" role="doc-backlink">max_tasks</a><a class="headerlink" href="#max-tasks" title="Permalink to this heading">¶</a></h3>
+<p>Default: 100000</p>
+<p>Sets the maximum number of tasks to keep in memory</p>
+</section>
+<section id="natural-time">
+<span id="id17"></span><h3><a class="toc-backref" href="#id48" role="doc-backlink">natural_time</a><a class="headerlink" href="#natural-time" title="Permalink to this heading">¶</a></h3>
+<p>Default: False</p>
+<p>Enables showing time relative to the page refresh time in a more human-readable format.</p>
+<p>When enabled, timestamps will be shown as relative time such as “2 minutes ago” or “1 hour ago” instead of the exact timestamp.</p>
+</section>
+<section id="persistent">
+<span id="id18"></span><h3><a class="toc-backref" href="#id49" role="doc-backlink">persistent</a><a class="headerlink" href="#persistent" title="Permalink to this heading">¶</a></h3>
+<p>Default: False</p>
+<p>Enables persistent mode in Flower.</p>
+<p>When persistent mode is enabled, Flower saves its current state and reloads it upon restart.
+This ensures that Flower retains its state and configuration across restarts.
+Flower stores its state in a database file specified by the <a class="reference internal" href="#db">db</a> option.</p>
+</section>
+<section id="port">
+<span id="id19"></span><h3><a class="toc-backref" href="#id50" role="doc-backlink">port</a><a class="headerlink" href="#port" title="Permalink to this heading">¶</a></h3>
+<p>Default: 5555</p>
+<p>Sets the port number for running the Flower HTTP server.</p>
+</section>
+<section id="state-save-interval">
+<span id="id20"></span><h3><a class="toc-backref" href="#id51" role="doc-backlink">state_save_interval</a><a class="headerlink" href="#state-save-interval" title="Permalink to this heading">¶</a></h3>
+<p>Default: 0</p>
+<p>Sets the interval for saving the Flower state.</p>
+<p>Flower state includes information about workers, tasks. The state is saved periodically to ensure data persistence and recovery upon restart.</p>
+<p>By default, periodic saving is disabled. Flower will not automatically save its state at regular intervals.
+If you want to enable periodic state saving, set the <cite>state_save_interval</cite> option to a positive integer value representing the interval in milliseconds.</p>
+</section>
+<section id="xheaders">
+<span id="id21"></span><h3><a class="toc-backref" href="#id52" role="doc-backlink">xheaders</a><a class="headerlink" href="#xheaders" title="Permalink to this heading">¶</a></h3>
+<p>Default: False</p>
+<p>Enables support for <cite>X-Real-Ip</cite> and <cite>X-Scheme</cite> headers.</p>
+<p>The <cite>xheaders</cite> option allows Flower to enable support for <cite>X-Real-Ip</cite> and <cite>X-Scheme</cite> headers.
+These headers are commonly used in proxy or load balancer configurations to preserve the original client IP address and scheme.</p>
+</section>
+<section id="tasks-columns">
+<span id="id22"></span><h3><a class="toc-backref" href="#id53" role="doc-backlink">tasks_columns</a><a class="headerlink" href="#tasks-columns" title="Permalink to this heading">¶</a></h3>
+<p>Default: name,uuid,state,args,kwargs,result,received,started,runtime,worker</p>
+<p>Specifies the list of comma-delimited columns to display on the <cite>/tasks</cite> page.</p>
+<p>The <cite>tasks_columns</cite> option allows you to customize the columns displayed on the <cite>/tasks</cite> page in Flower.
+By default, the specified columns are: name, uuid, state, args, kwargs, result, received, started, runtime, and worker.</p>
+<p>Available columns are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>name</cite></p></li>
+<li><p><cite>uuid</cite></p></li>
+<li><p><cite>state</cite></p></li>
+<li><p><cite>args</cite></p></li>
+<li><p><cite>kwargs</cite></p></li>
+<li><p><cite>result</cite></p></li>
+<li><p><cite>received</cite></p></li>
+<li><p><cite>started</cite></p></li>
+<li><p><cite>runtime</cite></p></li>
+<li><p><cite>worker</cite></p></li>
+<li><p><cite>retries</cite></p></li>
+<li><p><cite>revoked</cite></p></li>
+<li><p><cite>exception</cite></p></li>
+<li><p><cite>expires</cite></p></li>
+<li><p><cite>eta</cite></p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="url-prefix">
+<span id="id23"></span><h3><a class="toc-backref" href="#id54" role="doc-backlink">url_prefix</a><a class="headerlink" href="#url-prefix" title="Permalink to this heading">¶</a></h3>
+<p>Default: ‘’ (empty string)</p>
+<p>Enables deploying Flower on a non-root URL.</p>
+<p>The <cite>url_prefix</cite> option allows you to deploy Flower on a non-root URL.
+By default, Flower is deployed on the root URL. However, if you need to run Flower on a specific path,
+such as <cite>http://example.com/flower</cite>, you can specify the desired URL prefix using the <cite>url_prefix</cite> option.</p>
+</section>
+<section id="unix-socket">
+<span id="id24"></span><h3><a class="toc-backref" href="#id55" role="doc-backlink">unix_socket</a><a class="headerlink" href="#unix-socket" title="Permalink to this heading">¶</a></h3>
+<p>Default: ‘’ (empty string)</p>
+<p>Runs Flower using a UNIX socket file.</p>
+<p>The <cite>unix_socket</cite> option allows you to run Flower using a UNIX socket file instead of a network port.
+By default, the <cite>unix_socket</cite> option is set to an empty string, indicating that Flower should not use a UNIX socket.</p>
+<p>To run Flower using a UNIX socket file, set the <cite>unix_socket</cite> option to the desired path of the UNIX socket file.
+Flower will then bind to the specified socket file instead of a network port.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower --unix-socket=&#39;/var/run/flower.sock&#39;
+</pre></div>
+</div>
+</section>
+<section id="cookie-secret">
+<span id="id25"></span><h3><a class="toc-backref" href="#id56" role="doc-backlink">cookie_secret</a><a class="headerlink" href="#cookie-secret" title="Permalink to this heading">¶</a></h3>
+<p>Default: token_urlsafe(64) (random string)</p>
+<p>Sets a secret key for signing cookies.</p>
+<p>The <cite>cookie_secret</cite> option allows you to set a secret key used for signing cookies in Flower.</p>
+<p>By default, the <cite>cookie_secret</cite> option is set to ‘token_urlsafe(64)’, which generates a random string of length 64 characters as the secret key.
+This provides a good level of security for signing cookies. If you want to specify a custom secret key, you can set the <cite>cookie_secret</cite> option to the desired string.</p>
+</section>
+<section id="auth-provider">
+<span id="id26"></span><h3><a class="toc-backref" href="#id57" role="doc-backlink">auth_provider</a><a class="headerlink" href="#auth-provider" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Sets the authentication provider for Flower.</p>
+<p>The <cite>auth_provider</cite> option allows you to set the authentication provider for Flower.
+By default, the <cite>auth_provider</cite> option is set to <cite>None</cite>, indicating that no authentication provider is configured.</p>
+<p>To enable authentication and specify an authentication provider, set the <cite>auth_provider</cite> option to one of the following values:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Google <cite>flower.views.auth.GoogleAuth2LoginHandler</cite></p></li>
+<li><p>GitHub <cite>flower.views.auth.GithubLoginHandler</cite></p></li>
+<li><p>GitLab <cite>flower.views.auth.GitLabLoginHandler</cite></p></li>
+<li><p>Okta <cite>flower.views.auth.OktaLoginHandler</cite></p></li>
+</ul>
+</div></blockquote>
+<p>See also <a class="reference internal" href="auth.html#authentication"><span class="std std-ref">Authentication</span></a> for usage examples</p>
+</section>
+<section id="purge-offline-workers">
+<span id="id27"></span><h3><a class="toc-backref" href="#id58" role="doc-backlink">purge_offline_workers</a><a class="headerlink" href="#purge-offline-workers" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Time (in seconds) after which offline workers are automatically removed from the Workers view.
+By default, offline workers will remain on the dashboard indefinitely.</p>
+</section>
+<section id="task-runtime-metric-buckets">
+<span id="id28"></span><h3><a class="toc-backref" href="#id59" role="doc-backlink">task_runtime_metric_buckets</a><a class="headerlink" href="#task-runtime-metric-buckets" title="Permalink to this heading">¶</a></h3>
+<p>Default: ‘Histogram.DEFAULT_BUCKETS’ (default prometheus buckets)</p>
+<p>Sets the task runtime latency buckets.</p>
+<p>You can provide the <cite>buckets</cite> value as a comma-separated list of values.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower --task-runtime-metric-buckets=1,5,10,inf
+</pre></div>
+</div>
+<p>The buckets represent the upper bounds of the latency intervals.
+You can specify them as integer or float values. The <cite>inf</cite> value represents positive infinity, indicating
+that the last bucket captures all values greater than or equal to the previous bucket.</p>
+</section>
+<section id="oauth2-key">
+<span id="id29"></span><h3><a class="toc-backref" href="#id60" role="doc-backlink">oauth2_key</a><a class="headerlink" href="#oauth2-key" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Sets the OAuth 2.0 key (client ID) issued by the OAuth 2.0 provider</p>
+<p><cite>oauth2_key</cite> option should be used with <a class="reference internal" href="#auth"><span class="std std-ref">auth</span></a>, <a class="reference internal" href="#auth-provider"><span class="std std-ref">auth_provider</span></a>, <a class="reference internal" href="#oauth2-redirect-uri"><span class="std std-ref">oauth2_redirect_uri</span></a> and <a class="reference internal" href="#oauth2-secret"><span class="std std-ref">oauth2_secret</span></a> options.</p>
+</section>
+<section id="oauth2-secret">
+<span id="id30"></span><h3><a class="toc-backref" href="#id61" role="doc-backlink">oauth2_secret</a><a class="headerlink" href="#oauth2-secret" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Sets the OAuth 2.0 secret issued by the OAuth 2.0 provider</p>
+<p><cite>oauth2_secret</cite> option should be used with <a class="reference internal" href="#auth"><span class="std std-ref">auth</span></a>, <a class="reference internal" href="#auth-provider"><span class="std std-ref">auth_provider</span></a>, <a class="reference internal" href="#oauth2-redirect-uri"><span class="std std-ref">oauth2_redirect_uri</span></a> and <a class="reference internal" href="#oauth2-key"><span class="std std-ref">oauth2_key</span></a> options.</p>
+</section>
+<section id="oauth2-redirect-uri">
+<span id="id31"></span><h3><a class="toc-backref" href="#id62" role="doc-backlink">oauth2_redirect_uri</a><a class="headerlink" href="#oauth2-redirect-uri" title="Permalink to this heading">¶</a></h3>
+<p>Default: None</p>
+<p>Sets the URI to which an OAuth 2.0 server redirects the user after successful authentication and authorization.</p>
+<p><cite>oauth2_redirect_uri</cite> option should be used with <a class="reference internal" href="#auth"><span class="std std-ref">auth</span></a>, <a class="reference internal" href="#auth-provider"><span class="std std-ref">auth_provider</span></a>, <a class="reference internal" href="#oauth2-key"><span class="std std-ref">oauth2_key</span></a> and <a class="reference internal" href="#oauth2-secret"><span class="std std-ref">oauth2_secret</span></a> options.</p>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p>
+  <iframe src="http://ghbtns.com/github-btn.html?user=mher&repo=flower&type=watch&count=true&size=large"
+    allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#command-line">Command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration-file">Configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#environment-variables">Environment variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#option-reference">Option Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tasks_filter.html">Tasks filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auth.html">Authentication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#http-basic-authentication">HTTP Basic Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#google-oauth">Google OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#github-oauth">GitHub OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#okta-oauth">Okta OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#gitlab-oauth">GitLab OAuth</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reverse-proxy.html">Running behind reverse proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prometheus-integration.html">Prometheus Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#configure-prometheus-to-scrape-flower-metrics">Configure Prometheus to scrape Flower metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#available-metrics">Available Metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#using-metric-labels">Using Metric Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#example-prometheus-alerts">Example Prometheus Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#example-grafana-dashboard">Example Grafana Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prometheus-integration.html#grafana-integration-guide">Grafana Integration Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-celery-broker">Start Celery Broker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#set-up-your-celery-application">Set Up Your Celery Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-flower-monitoring">Start Flower Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#configure-and-start-prometheus">Configure and Start Prometheus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-grafana">Start Grafana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#add-prometheus-as-a-data-source-in-grafana">Add Prometheus As a Data Source In Grafana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#import-the-celery-monitoring-dashboard-in-grafana">Import The Celery Monitoring Dashboard In Grafana</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="install.html"
+                          title="previous chapter">Getting started</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="tasks_filter.html"
+                          title="next chapter">Tasks filtering</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="tasks_filter.html" title="Tasks filtering"
+             >next</a></li>
+        <li class="right" >
+          <a href="install.html" title="Getting started"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Flower 2.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Configuration</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Mher Movsisyan.
+    </div>
+  </body>
+</html>

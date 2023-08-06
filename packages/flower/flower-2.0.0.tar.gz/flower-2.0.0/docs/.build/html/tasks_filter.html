@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tasks filtering &#8212; Flower 2.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/celery.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Authentication" href="auth.html" />
+    <link rel="prev" title="Configuration" href="config.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="auth.html" title="Authentication"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="config.html" title="Configuration"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Flower 2.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Tasks filtering</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<div class="deck">
+
+</div>
+    <section id="tasks-filtering">
+<h1>Tasks filtering<a class="headerlink" href="#tasks-filtering" title="Permalink to this heading">¶</a></h1>
+<p>By now, tasks can be filtered by worker, type, state, received and started datetime.
+Also, filtering by args/kwargs/result/state value available.</p>
+<p>Flower uses github-style syntax for args/kwargs/result filtering.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>foo</cite> find all tasks containing foo in args, kwargs or result</p></li>
+<li><p><cite>args:foo</cite> find all tasks containing foo in arguments</p></li>
+<li><p><cite>kwargs:foo=bar</cite> find all tasks containing foo=bar keyword</p></li>
+<li><p><cite>result:foo</cite> find all tasks containing foo in result</p></li>
+<li><p><cite>state:FAILURE</cite> find all failed tasks</p></li>
+</ul>
+</div></blockquote>
+<p>If the search term contains spaces it should be enclosed in “ (e.g. <cite>args:”hello world”</cite>).</p>
+<p>For examples, see <cite>tests/utils/test_search.py</cite>.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p>
+  <iframe src="http://ghbtns.com/github-btn.html?user=mher&repo=flower&type=watch&count=true&size=large"
+    allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="config.html"
+                          title="previous chapter">Configuration</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="auth.html"
+                          title="next chapter">Authentication</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="auth.html" title="Authentication"
+             >next</a></li>
+        <li class="right" >
+          <a href="config.html" title="Configuration"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Flower 2.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Tasks filtering</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Mher Movsisyan.
+    </div>
+  </body>
+</html>

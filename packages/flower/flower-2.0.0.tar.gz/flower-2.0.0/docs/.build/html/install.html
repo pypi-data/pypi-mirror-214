@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Getting started &#8212; Flower 2.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/celery.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration" href="config.html" />
+    <link rel="prev" title="Features" href="features.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="config.html" title="Configuration"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="features.html" title="Features"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Flower 2.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Getting started</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<div class="deck">
+
+</div>
+    <section id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h1>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
+<p>Installing <cite>flower</cite> with <a class="reference external" href="http://www.pip-installer.org/">pip</a> is simple</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install flower
+</pre></div>
+</div>
+<p>The development version can be installed from Github</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install https://github.com/mher/flower/zipball/master#egg=flower
+</pre></div>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
+<p>To run Flower, you need to provide the broker URL</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery --broker=amqp://guest:guest@localhost:5672// flower
+</pre></div>
+</div>
+<p>Or use the configuration of <a class="reference external" href="https://docs.celeryq.dev/en/stable/userguide/application.html">celery application</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery -A tasks.app flower
+</pre></div>
+</div>
+<p>By default, flower runs on port 5555, which can be modified with the <a class="reference internal" href="config.html#port"><span class="std std-ref">port</span></a> option</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery -A tasks.app flower --port=5001
+</pre></div>
+</div>
+<p>You can also run Flower using the docker image</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run -v examples:/data -p 5555:5555 mher/flower celery --app=tasks.app flower
+</pre></div>
+</div>
+<p>In this example, Flower is using the <cite>tasks.app</cite> defined in the <a class="reference external" href="https://github.com/mher/flower/blob/master/examples/tasks.py">examples/tasks.py</a> file</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p>
+  <iframe src="http://ghbtns.com/github-btn.html?user=mher&repo=flower&type=watch&count=true&size=large"
+    allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="config.html#command-line">Command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html#configuration-file">Configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html#environment-variables">Environment variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html#option-reference">Option Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tasks_filter.html">Tasks filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auth.html">Authentication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#http-basic-authentication">HTTP Basic Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#google-oauth">Google OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#github-oauth">GitHub OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#okta-oauth">Okta OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#gitlab-oauth">GitLab OAuth</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reverse-proxy.html">Running behind reverse proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prometheus-integration.html">Prometheus Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#configure-prometheus-to-scrape-flower-metrics">Configure Prometheus to scrape Flower metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#available-metrics">Available Metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#using-metric-labels">Using Metric Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#example-prometheus-alerts">Example Prometheus Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#example-grafana-dashboard">Example Grafana Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prometheus-integration.html#grafana-integration-guide">Grafana Integration Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-celery-broker">Start Celery Broker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#set-up-your-celery-application">Set Up Your Celery Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-flower-monitoring">Start Flower Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#configure-and-start-prometheus">Configure and Start Prometheus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-grafana">Start Grafana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#add-prometheus-as-a-data-source-in-grafana">Add Prometheus As a Data Source In Grafana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#import-the-celery-monitoring-dashboard-in-grafana">Import The Celery Monitoring Dashboard In Grafana</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="features.html"
+                          title="previous chapter">Features</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="config.html"
+                          title="next chapter">Configuration</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="config.html" title="Configuration"
+             >next</a></li>
+        <li class="right" >
+          <a href="features.html" title="Features"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Flower 2.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Getting started</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Mher Movsisyan.
+    </div>
+  </body>
+</html>

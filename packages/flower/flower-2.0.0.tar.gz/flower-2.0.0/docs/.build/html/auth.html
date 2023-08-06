@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Authentication &#8212; Flower 2.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/celery.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Running behind reverse proxy" href="reverse-proxy.html" />
+    <link rel="prev" title="Tasks filtering" href="tasks_filter.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="reverse-proxy.html" title="Running behind reverse proxy"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="tasks_filter.html" title="Tasks filtering"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Flower 2.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Authentication</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<div class="deck">
+
+</div>
+    <section id="authentication">
+<span id="id1"></span><h1>Authentication<a class="headerlink" href="#authentication" title="Permalink to this heading">¶</a></h1>
+<p>Flower supports a variety of authentication methods, including Basic Authentication, Google, GitHub,
+GitLab, and Okta OAuth. You can also customize and use your own authentication method.</p>
+<p>The following endpoints are exempt from authentication:</p>
+<ul class="simple">
+<li><p>/healthcheck</p></li>
+<li><p>/metrics</p></li>
+</ul>
+<section id="http-basic-authentication">
+<span id="basic-authentication"></span><h2>HTTP Basic Authentication<a class="headerlink" href="#http-basic-authentication" title="Permalink to this heading">¶</a></h2>
+<p>Flower supports Basic Authentication as a built-in authentication method, allowing you to secure access to the
+Flower using simple username and password credentials. This authentication method is commonly used for
+straightforward authentication requirements.</p>
+<p>To enable basic authentication, use <a class="reference internal" href="config.html#basic-auth"><span class="std std-ref">basic_auth</span></a> option. This option allows you to specify a list of
+username and password pairs for authentication.</p>
+<p>For example, running Flower with the following <a class="reference internal" href="config.html#basic-auth"><span class="std std-ref">basic_auth</span></a> option will protect the Flower UI and
+only allow access to users providing the username user and the password pswd:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ celery flower --basic-auth=user:pswd
+</pre></div>
+</div>
+<p>See also <a class="reference internal" href="reverse-proxy.html#reverse-proxy"><span class="std std-ref">Running behind reverse proxy</span></a></p>
+</section>
+<section id="google-oauth">
+<span id="id2"></span><h2>Google OAuth<a class="headerlink" href="#google-oauth" title="Permalink to this heading">¶</a></h2>
+<p>Flower provides authentication support using Google OAuth, enabling you to authenticate users through their Google accounts.
+This integration simplifies the authentication process and offers a seamless experience for users who are already logged into Google.</p>
+<p>Follow the steps below to configure and use Google OAuth authentication:</p>
+<ol class="arabic simple">
+<li><p>Go to the <a class="reference external" href="https://console.developers.google.com">Google Developer Console</a></p></li>
+<li><p>Select a project, or create a new one.</p></li>
+<li><p>In the sidebar on the left, select Credentials.</p></li>
+<li><p>Click CREATE CREDENTIALS and click OAuth client ID.</p></li>
+<li><p>Under Application type, select Web application.</p></li>
+<li><p>Name OAuth 2.0 client and click Create.</p></li>
+<li><p>Copy the “Client secret” and “Client ID”</p></li>
+<li><p>Add redirect URI to the list of Authorized redirect URIs</p></li>
+</ol>
+<p>Here’s an example configuration file with the Google OAuth options:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">auth_provider</span><span class="o">=</span><span class="s2">&quot;flower.views.auth.GoogleAuth2LoginHandler&quot;</span>
+<span class="n">auth</span><span class="o">=</span><span class="s2">&quot;allowed-emails.*@gmail.com&quot;</span>
+<span class="n">oauth2_key</span><span class="o">=</span><span class="s2">&quot;&lt;your_client_id&gt;&quot;</span>
+<span class="n">oauth2_secret</span><span class="o">=</span><span class="s2">&quot;&lt;your_client_secret&gt;&quot;</span>
+<span class="n">oauth2_redirect_uri</span><span class="o">=</span><span class="s2">&quot;http://localhost:5555/login&quot;</span>
+</pre></div>
+</div>
+<p>Replace <cite>&lt;your_client_id&gt;</cite> and <cite>&lt;your_client_secret&gt;</cite> with the actual  Client ID and secret obtained from
+the Google Developer Console.</p>
+</section>
+<section id="github-oauth">
+<span id="id3"></span><h2>GitHub OAuth<a class="headerlink" href="#github-oauth" title="Permalink to this heading">¶</a></h2>
+<p>Flower also supports GitHub OAuth. Before getting started, Flower should be registered in
+<a class="reference external" href="https://github.com/settings/applications/new">Github Settings</a>.</p>
+<p>Github OAuth is activated by setting <a class="reference internal" href="config.html#auth-provider"><span class="std std-ref">auth_provider</span></a> to <cite>flower.views.auth.GithubLoginHandler</cite>.
+Here’s an example configuration file with the Github OAuth options:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">auth_provider</span><span class="o">=</span><span class="s2">&quot;flower.views.auth.GithubLoginHandler&quot;</span>
+<span class="n">auth</span><span class="o">=</span><span class="s2">&quot;allowed-emails.*@gmail.com&quot;</span>
+<span class="n">oauth2_key</span><span class="o">=</span><span class="s2">&quot;&lt;your_client_id&gt;&quot;</span>
+<span class="n">oauth2_secret</span><span class="o">=</span><span class="s2">&quot;&lt;your_client_secret&gt;&quot;</span>
+<span class="n">oauth2_redirect_uri</span><span class="o">=</span><span class="s2">&quot;http://localhost:5555/login&quot;</span>
+</pre></div>
+</div>
+<p>Replace <cite>&lt;your_client_id&gt;</cite> and <cite>&lt;your_client_secret&gt;</cite> with the actual  Client ID and secret obtained from
+the Github Settings.</p>
+<p>See <a class="reference external" href="https://developer.github.com/v3/oauth/">GitHub OAuth API</a> docs for more info.</p>
+</section>
+<section id="okta-oauth">
+<span id="id4"></span><h2>Okta OAuth<a class="headerlink" href="#okta-oauth" title="Permalink to this heading">¶</a></h2>
+<p>Flower also supports Okta OAuth. Before getting started, you need to register Flower in <a class="reference external" href="https://developer.okta.com/docs/guides/add-an-external-idp/openidconnect/main/">Okta</a>.
+Okta OAuth is activated by setting <a class="reference internal" href="config.html#auth-provider"><span class="std std-ref">auth_provider</span></a> option to <cite>flower.views.auth.OktaLoginHandler</cite>.</p>
+<p>Okta OAuth requires <cite>oauth2_key</cite>, <cite>oauth2_secret</cite> and <cite>oauth2_redirect_uri</cite> options which should be obtained from Okta.
+Okta OAuth also uses <cite>FLOWER_OAUTH2_OKTA_BASE_URL</cite> environment variable.</p>
+<p>See Okta <a class="reference external" href="https://developer.okta.com/docs/reference/api/oidc/">Okta OAuth API</a> docs for more info.</p>
+</section>
+<section id="gitlab-oauth">
+<span id="id5"></span><h2>GitLab OAuth<a class="headerlink" href="#gitlab-oauth" title="Permalink to this heading">¶</a></h2>
+<p>Flower also supports GitLab OAuth for authentication. To enable GitLab OAuth, follow the steps below:</p>
+<ol class="arabic simple">
+<li><p>Register Flower as an application at GitLab. You can refer to the <a class="reference external" href="https://docs.gitlab.com/ee/integration/oauth_provider.htm">GitLab OAuth documentation</a> for detailed instructions on how to do this.</p></li>
+<li><p>Once registered, you will obtain the credentials for Flower configuration.</p></li>
+<li><dl class="simple">
+<dt>In your Flower configuration, set the following options to activate GitLab OAuth:</dt><dd><ul class="simple">
+<li><p><a class="reference internal" href="config.html#auth-provider"><span class="std std-ref">auth_provider</span></a> to <cite>flower.views.auth.GitlabLoginHandler</cite>.</p></li>
+<li><p><span class="xref std std-ref">oauth2_key</span> to the “Application ID” obtained from GitLab.</p></li>
+<li><p><span class="xref std std-ref">oauth2_secret</span> to the “Secret” obtained from GitLab.</p></li>
+<li><p><span class="xref std std-ref">oauth2_redirect_uri</span>: Set this to the redirect URI configured in GitLab.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>(Optional) To restrict access to specific GitLab groups, you can utilize the <cite>FLOWER_GITLAB_AUTH_ALLOWED_GROUPS</cite> environment variable. Set it to a comma-separated list of allowed groups. You can include subgroups by using the <cite>/</cite> character. For example: <cite>group1,group2/subgroup</cite>.</p></li>
+<li><p>(Optional) The default minimum required group access level can be adjusted using the <cite>FLOWER_GITLAB_MIN_ACCESS_LEVEL</cite> environment variable.</p></li>
+<li><p>(Optional) The custom GitHub Domain can be adjusted using the <cite>FLOWER_GITLAB_OAUTH_DOMAIN</cite> environment variable.</p></li>
+</ol>
+<p>For further details on GitLab OAuth and its implementation, refer to the <a class="reference external" href="https://docs.gitlab.com/ee/api/members.html">Group and project members API</a> documentation.
+It provides comprehensive information and guidelines on working with GitLab’s OAuth functionality.</p>
+<p>See also <a class="reference external" href="https://docs.gitlab.com/ee/api/oauth2.html">GitLab OAuth2 API</a> documentation for more info.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p>
+  <iframe src="http://ghbtns.com/github-btn.html?user=mher&repo=flower&type=watch&count=true&size=large"
+    allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#running-flower">Running Flower</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="config.html#command-line">Command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html#configuration-file">Configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html#environment-variables">Environment variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html#option-reference">Option Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tasks_filter.html">Tasks filtering</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Authentication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#http-basic-authentication">HTTP Basic Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#google-oauth">Google OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-oauth">GitHub OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#okta-oauth">Okta OAuth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gitlab-oauth">GitLab OAuth</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reverse-proxy.html">Running behind reverse proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prometheus-integration.html">Prometheus Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#configure-prometheus-to-scrape-flower-metrics">Configure Prometheus to scrape Flower metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#available-metrics">Available Metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#using-metric-labels">Using Metric Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#example-prometheus-alerts">Example Prometheus Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#example-grafana-dashboard">Example Grafana Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prometheus-integration.html#grafana-integration-guide">Grafana Integration Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-celery-broker">Start Celery Broker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#set-up-your-celery-application">Set Up Your Celery Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-flower-monitoring">Start Flower Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#configure-and-start-prometheus">Configure and Start Prometheus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#start-grafana">Start Grafana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#add-prometheus-as-a-data-source-in-grafana">Add Prometheus As a Data Source In Grafana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prometheus-integration.html#import-the-celery-monitoring-dashboard-in-grafana">Import The Celery Monitoring Dashboard In Grafana</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="tasks_filter.html"
+                          title="previous chapter">Tasks filtering</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="reverse-proxy.html"
+                          title="next chapter">Running behind reverse proxy</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="reverse-proxy.html" title="Running behind reverse proxy"
+             >next</a></li>
+        <li class="right" >
+          <a href="tasks_filter.html" title="Tasks filtering"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Flower 2.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Authentication</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Mher Movsisyan.
+    </div>
+  </body>
+</html>
