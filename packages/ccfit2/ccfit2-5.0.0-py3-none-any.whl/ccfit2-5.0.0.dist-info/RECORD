@@ -1,0 +1,15 @@
+ccfit2/__init__.py,sha256=Opzb2ZXIzM6_I5uMC0S7AieclI05JpE3fa5yJLVDMGs,24
+ccfit2/__version__.py,sha256=4xMjMXfxiA2XqfVupA7BymoySYhfzojT4OZA9vJFxL4,106
+ccfit2/ac.py,sha256=ybWiJTmQggwcpRyIFFnN_q5U9rjPqNJA-RcPKd2_ULI,131893
+ccfit2/cli.py,sha256=kIdHNKUrjLt2mjghDWAM_D-S7x3CmgceufTlHtmE7q4,67725
+ccfit2/dc.py,sha256=dsmVgCtIqQWngk8-7L0byAN80wiwKzwMtC-NQdtprNo,61106
+ccfit2/gui.py,sha256=jwdHztoigLHapTMtXyYXf81JRY4ogDlOmkJnwpnJYYA,20395
+ccfit2/relaxation.py,sha256=ZYur7_25Bnv2Qi_ykHiVAEk0oe3bqh30wGm62YJvbiE,167544
+ccfit2/stats.py,sha256=4mEOg5y3MM-fY2ddMMLBbVIwiz79q5yrUVWwtjuQqB0,1756
+ccfit2/utils.py,sha256=w5lbyzscevoxcuhyqd_FsPnSbszzHnj-vRmU_oKVY7U,10668
+ccfit2/waveform.py,sha256=8_pceC1NEvwuEFR4UOHIQP0nFke7LOUC6S-CDvqnbpA,21023
+ccfit2-5.0.0.dist-info/METADATA,sha256=E7jZf_C-eo59KytVa9IPQMDO_KLURzTRFuzYRdQY1CI,1387
+ccfit2-5.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ccfit2-5.0.0.dist-info/entry_points.txt,sha256=PYE8ffptuo-Xzn5Nz87_8miVvXQBTbVav7X2tbI6EK0,95
+ccfit2-5.0.0.dist-info/top_level.txt,sha256=46r_sRJMpYpP24Jxm8MVJerL77YD0sqcgyACT46mwTk,7
+ccfit2-5.0.0.dist-info/RECORD,,
