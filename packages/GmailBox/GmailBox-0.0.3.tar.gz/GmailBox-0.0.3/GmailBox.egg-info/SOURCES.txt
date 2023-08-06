@@ -1,0 +1,8 @@
+README.md
+setup.py
+GmailBox/__init__.py
+GmailBox.egg-info/PKG-INFO
+GmailBox.egg-info/SOURCES.txt
+GmailBox.egg-info/dependency_links.txt
+GmailBox.egg-info/requires.txt
+GmailBox.egg-info/top_level.txt
