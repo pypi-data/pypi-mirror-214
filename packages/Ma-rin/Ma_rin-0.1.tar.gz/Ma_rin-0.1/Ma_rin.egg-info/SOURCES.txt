@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+J/__init__.py
+J/repositorio.py
+J/m/__init__.py
+J/m/repositorio.py
+Ma_rin.egg-info/PKG-INFO
+Ma_rin.egg-info/SOURCES.txt
+Ma_rin.egg-info/dependency_links.txt
+Ma_rin.egg-info/top_level.txt
