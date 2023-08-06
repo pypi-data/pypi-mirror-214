@@ -1,0 +1,7 @@
+spacy_setfit/__init__.py,sha256=wYcIKLp-DJZOSyHiKp8LsZlidzF8Rq2Wye88gRzH_Tg,1586
+spacy_setfit/models.py,sha256=1zDMsioTFfy-srYpd3nJy8Y-o6bhjWF4d21We3zzsRY,3841
+spacy_setfit/schemas.py,sha256=VrrmIp717E5IS45px4EMAbiyScHnTReL6EidFJLXbdk,5245
+spacy_setfit-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spacy_setfit-0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+spacy_setfit-0.1.dist-info/METADATA,sha256=swT6Nn2VmjJZFeQwQUWlF0v2aq-QnAA6rLuawCqk0gs,8008
+spacy_setfit-0.1.dist-info/RECORD,,
