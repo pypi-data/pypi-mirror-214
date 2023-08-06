@@ -1,0 +1,4 @@
+numpy
+tensorflow
+tensorflow_addons
+protobuf<=3.20
