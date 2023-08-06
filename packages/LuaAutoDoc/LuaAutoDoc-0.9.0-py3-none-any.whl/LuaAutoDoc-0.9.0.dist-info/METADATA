@@ -1,0 +1,211 @@
+Metadata-Version: 2.1
+Name: LuaAutoDoc
+Version: 0.9.0
+Summary: Generates full HTML documentation of a Lua project with LuaDoc tags.
+Home-page: https://gitlab.com/UlrikHD/LuaAutoDoc
+Author: Ulrik Holtgaard Digerud
+Author-email: githubuhd@runbox.com
+License: MIT License
+Project-URL: Bug Tracker, https://gitlab.com/UlrikHD/LuaAutoDoc/-/issues
+Keywords: Lua,documentation,LuaDoc,HTML,LuaAutoDoc,autodoc,auto documentation,Lua documentation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1>LuaAutoDoc</h1>
+A simple cross-platform documentation generator for Lua based on established LDoc tags. The script uses pure python 3.10
+and will generate full documentation for your project based on your doc tags. The script is designed to be as simple as
+possible to run and only requires python 3.10 or later to be installed to get started.
+
+<h2>Installation</h2>
+<ol><li>If you do not have python3.10 or later installed, you can install the latest version here:
+<a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+<li>Once installed, install the LuaAutoDoc module with pip: <code>pip install LuaAutoDoc</code></li></ol>
+
+<h2>Usage</h2>
+A Basic usage example, use <code>LuaAutoDoc --help</code> for more detailed information about available commands and
+options, or check out the 
+<a href="https://ulrikhd.gitlab.io/LuaAutoDoc/">ExampleProject</a>
+for a detailed example of you can use the tool in a project.
+<ol><li>Open up your project in the terminal and call <code>LuaAuoDoc init</code>. This will create a
+<code>LuAutoDoc/</code> folder in your project. Inside you will find a simple configuration file where you can fill in 
+authorship, lua version, whether to hide the source code or not, etc...</li>
+<li>After having customised the configuration file, call <code>LuaAutoDoc build -s</code> and your documentation will
+be generated. By default, the documentation will be generated in a new folder <code>DocBuild/</code> at the top level of
+your project, this can be changed in the configuration file.</li></ol>
+
+<h2>Recommended actions after initialisation</h2>
+After calling <code>LuaAutoDoc init</code> you will have two html files in <code>LuaAutoDoc/HTMLFragments/</code>:<br>
+<br><code>Mandatory_user_data.html</code> contains the front page description of your documentation. Here you should add
+your text about the project and any other information you want to be displayed on the front page.<br><br>
+<code>CustomNavbar.html</code> Can be changed to add links to extra pages in the navbar. E.g. if you want separate pages
+for a tutorial, changelog, installation guide, etc... Take a look at the
+<a href="https://gitlab.com/UlrikHD/LuaAutoDoc/-/tree/master/ExampleProject/LuaAutoDoc/HTMLFragments">ExampleProject</a>
+for an example of how to add lists to the navbar.<br><br>
+You can get a template for custom pages that keeps the look and style of the rest of the documentation by calling
+<code>LuaAutoDoc template --html</code>
+
+<h2>Syntax rules</h2>
+<ol>
+<li>Docstrings starts with triple dash <code>---</code> and ends with a line terminator.</li>
+<li>All tags start with <code>---@{tag}</code> and are followed by whitespace.</li>
+<li>All tags are case-sensitive. Whitespace between <code>---</code> and <code>@</code> is allowed and left to the 
+user's preference.</li>
+<li>All docstrings must be placed directly above the class or function they are describing.</li>
+<li>Empty lines or comments between docstrings are not allowed.</li>
+<li>Class methods must be defined after the class and in the same file as the class definition. This is a requirement as
+the script has no guarantee that the user do not have multiple classes with the same name in different files.</li>
+</ol>
+<h2>Supported Tags</h2>
+ The <code>{}</code> brackets are not a part of the tag syntax, they are only here to show the 
+different components of a tag.
+<ul>
+<li>Description is implicitly assumed for any docstrings without an explicit tag. For those who want to be explicit, 
+<code>--- @description {description}</code> is supported. Multiple lines of descriptions is supported though
+whitespace at the start and end of each line is not preserved except for a single space where there is a newline. 
+New lines can be inserted with <code>\n</code>. Likewise, tabs can be inserted with <code>\t</code>.</li>
+<li>@usage - A special form of description, this is meant as a short description of the usage of the class or function.
+<br>
+<code>Format: --- @usage {description}</code></li>
+<li>@module - Assigns all classes and functions appearing below it to a given module. The tag must be separated with at 
+least one empty line from a docstring belonging to a class or function as the script will look for @see, @internal,
+@deprecated and description docstrings below a module tag. The tag can be useful for those wishing to bundle classes 
+and functions from multiple files into one place in the documentation.<br>
+Format: <code>--- @module {module_name}</code></li>
+<li>@ignoreFile - Marks the file to be ignored by the script.<br>
+Format: <code>--- @ignoreFile</code></li>
+<li>@author - Assigns a module, class or function to a specific author. Author(s) for the full project should be 
+assigned in <code>Config_LuaAutoDoc.py</code>.<br>
+Format: <code>--- @author {author_name}</code></li>
+<li>@class - Assigns the following entry to a class. This tag is only optional (but still recommended) if 
+<code>@field</code>, <code>@member</code> or <code>@superclass</code> are used are used.<br>
+Format: <code>--- @class {class_name} : {super_class}</code></li>
+<li>@superclass - Assigns a superclass to a class. You can also provide a hint to script of the superclass if you have 
+classes with duplicate names. Supported hints are:
+<ul>
+   <li><code>\[abs_path: {path}]</code> - Will tell the script which file to search for the entry.</li>
+   <li><code>\[rel_path: {path}]</code> - Will tell the script which file to search for the entry, relative to the 
+   configured project root folder.</li>
+   <li><code>\[module: {module_name}]</code> - Will tell the script which module to search for the function.</li>
+</ul>
+  When trying to detect the correct reference, the script will search in the order: file -> module -> project.<br>
+Format: <code>--- @superclass {superclass_name} {link_hint}(optional)</code></li>
+<li>@field - Assigns a field to a class. Alternative tags with equal result are @member and @param. 
+Appending <code>?=default_value</code> to the end of the <code>field_name</code> will tag the parameter as optional with 
+<code>default_value</code> as the default value, if <code>=default_value</code> is omitted with only <code>?</code> 
+appended, it will be assumed to be <code>nil</code>.<br>
+Format: <code>--- @field {field_name}{?=default_value} {field_type} {description}</code></li>
+<li>@property - Assigns a constant field to a class. This should be used for any const values your class holds.<br>
+Format: <code>--- @property {property_name} {value}</code></li>
+<li>@member - See @field</li>
+<li>@param - Assigns a parameter to a function. @member and @param will also work, but are discouraged for functions. 
+Appending <code>?=default_value</code> to the end of the <code>param_name</code> will tag the parameter as optional with 
+<code>default_value</code> as the default value, if <code>=default_value</code> is omitted with only <code>?</code> 
+appended, it will be assumed to be <code>nil</code>.<br>
+Format: <code>--- @param {param_name}{?=default_value} {param_type} {description}</code></li>
+<li>@return - Assigns a return value to a function. Appending <code>?=default_value</code> to the end of the return_type
+will tag the return value as optional with <code>default_value</code> as the default value, 
+if <code>=default_value</code> is omitted with only <code>?</code> appended, it will be assumed to be <code>nil</code>.
+<br>
+Format: <code>--- @return {return_type}{?=default_value} {description}</code></li>
+<li>@raise - Assigns an exception that the function may raise. This tag can be used multiple times to add multiple
+exceptions.<br>
+Format: <code>--- @raise {exception_name} {error_level} {description}</code></li>
+<li>@deprecated - Marks a class or function as deprecated, will give a warning in the documentation to discourage use.
+<br>
+Format: <code>--- @deprecated {description}</code></li>
+<li>@internal - Marks a class or function for internal use only, and should not be used by the end user. This will mark
+the entry with a warning in the documentation.<br>
+Format: <code>--- @internal {description}</code></li>
+<li>@hidden - Marks the class or function to not be included in the documentation. This tag can be made more specific by
+adding "tags" to the tag. This allows you to "un-hide" parts of the hidden code by adding tag exemptions to the config 
+file, these tags are optional. You can ignore all @hidden tags by setting the <code>show_hidden</code> option in the 
+config file to <code>"True"</code><br>
+Format: <code>--- @hidden {tags seperated by space}</code></li>
+<li>@ignore - While similar to @hidden, this tag can not be given identifiers like @hidden, nor can it be turned off in
+the config file. From a backend perspective, entries with the @ignore are effectively non-existent vs @hidden which may
+still be identified by references and end up leading to a dead link. This tag may be necessary if you have multiple
+@class definitions in the same file, which may be a requirement for some documentation extensions like the VSCode 
+extension "Lua" by sumneko. <br>
+Format: <code>--- @ignore</code></li>
+<li>@see - Adds a hyperlink. Functions, classes, class methods and modules will be automatically detected. If you want
+alternate text to be shown for the link (mostly useful for weblinks to hide the url), you can supply an optional 
+argument <code>[link_text: text]</code> the tag. Use <code>\]</code> to escape closing square bracket if it's part of 
+the text. To ensure entries are interpreted correctly (in case of duplicate names), an optional argument {link_hint} can 
+be supplied. Supported hints are:
+<ul>
+   <li><code>\[abs_path: {path}]</code> - Will tell the script which file to search for the entry.</li>
+   <li><code>\[rel_path: {path}]</code> - Will tell the script which file to search for the entry, relative to the 
+   configured project root folder.</li>
+   <li><code>\[module: {module_name}]</code> - Will tell the script which module to search for the function.</li>
+</ul>
+  When trying to detect the correct reference, the script will search in the order: file -> module -> project.<br>
+  Alternatively you can link to a webpage, webpage links are detected by starting with <code>https://</code> or
+<code>http://</code><br>**This tag can be used multiple times to add multiple links, and inside description docstrings 
+for inline references**<br>
+Format: <code>--- @see {link} [link_text: 'text'](optional) {link_hint}(optional) {description}</code>
+<br>or: 
+<code>--- @description {~fluff~} --- @see {link} [link_text: 'text'](optional) {link_hint}(optional) {~fluff~}</code>
+</li>
+</ul>
+  
+<h3> Error codes </h3>
+<ul>
+<li> SCH-0 - SourceCodeHighlighter.py could not locate <code>SourceCodeMirror.html</code> is either missing or your
+<code>Config_LuaAutoDoc.py</code> is misconfigured, and you have the wrong path stored in the setting 
+<code>html_fragment_directory</code> points to the wrong folder.</li>
+<li> SCH-1 - The built-in highlighter for Lua code raised an error while indexing and applying tags to the code. 
+This may happen if the code contains invalid or less common syntax, or might be an unrelated bug altogether. This error
+should be reported to the developer <a href="https://gitlab.com/UlrikHD/LuaAutoDoc/-/issues">here</a>. </li>
+<li>SCH-2 - When creating source code mirror files, each html is given a unique name based on their original filename
+and a 10 letter string based on a sha1 hash of their path. This makes filename collisions "unlikely". However, if the  
+script detects an existing file with the same filename, it will raise an error to stop documentation. Running the script 
+should clear out the destination folder before writing, if this process is hindered it may be the cause of the error.
+</li>
+<li>LDP-0 - LuaDocParser.py detected a class being extended by another class, but could not identify the class and 
+superclass. Unless you declared a superclass with <code>@superclass</code> the parser was unable to identify the
+superclass. Consider adding <code>@superclass</code> to the class docstring if your class extends another class.</li>
+<li>LDP-1 - A docstring was detected right below a module tag, but docstring did not match a description tag. Since
+<code>@module</code> only supports the description tag below it, you must separate other docstring types with at least
+one empty line.</li>
+<li>DC-0 - An unknown docstring tag was detected. The line will simply be ignored by the parser, but the user may want
+to investigate if they are losing data they want in their documentation.</li>
+<li>DC-1 - An unknown doc entry got through the parser. This is most likely a bug in the parser, and should be reported
+to the developer <a href="https://gitlab.com/UlrikHD/LuaAutoDoc/-/issues">here</a>.</li>.
+<li>FR-0 - A LuaAutoDoc tag was requested, but was not found. Check the configured <code>html_directory</code> that the 
+requested tag exists and follows the rules for LuaAutoDoc tags.</li>
+<li>FR-1 - A html file was requested, but it could not be found in the configured html directory, nor the packaged html
+directory. This error should only show up if the user have deleted files in the pip package. Re-downloading the module
+should fix this error.</li>
+<li>DM-0 - When looking for a href for a DocEntry's parent, the parent was not found in the data_object. This is most 
+likely caused by a misspelling in the @superclass tag, or a bug in the parser. This error should be reported to the 
+developer <a href="https://gitlab.com/UlrikHD/LuaAutoDoc/-/issues">here</a> if @superclass is entered correctly.</li>
+<li>DM-1 - A tag was not caught and resolved by the tag mapper. This is most likely a bug in the tag mapper, and should
+be reported to the developer <a href="https://gitlab.com/UlrikHD/LuaAutoDoc/-/issues">here</a>.</li>
+<li>DM-2 - If you have not messed around with LuaAutoDoc tags in your html files, this a bug that should be reported.
+If you have used the LuaAutoDoc tags <code>#LuaAutoDoc-GetValue</code> this would be the source of your issue. This tag
+can only be safely called from pre-defined LuaAutoDoc tags that already calls it.</li>
+<li>DM-3 - When creating html files, LuaAutoDoc encountered a pre-existing file when trying to create a new file.
+This should in theory almost certainly never happen, but if it does, it is possible that you got two filenames with
+identical names and which paths happen to resolve in to the same 10 letter sha1 hash. A more likely scenario is
+that there is something wrong with the script and should be reported if not a hash collision.</li>
+<li>INDEX-0 - If you encounter this error it means the author have messed up badly in an update, please report
+<a href="https://gitlab.com/UlrikHD/LuaAutoDoc/-/issues">here</a> as soon as possible.</li>
+</ul>
+<br>
+Note: The fonts included in this project have their own licenses, you can read them in the <code>Assets</code> folder.
+
+

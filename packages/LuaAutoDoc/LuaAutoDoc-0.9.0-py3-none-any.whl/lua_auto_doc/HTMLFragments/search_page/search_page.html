@@ -1,0 +1,149 @@
+#LuaAutoDoc-SearchPage
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+	<title>Search Results #LuaAutoDoc-ProjectName #LuaAutoDoc-ProjectVersion</title>
+	#LuaAutoDoc-Favicon
+	#LuaAutoDoc-StylesheetEntry
+	#LuaAutoDoc-ScriptEntry
+<body id="LuaAutoDoc-body">
+	<div id="main-container" class="search-page-body">
+		#LuaAutoDoc-NavBar
+		<div id="main-center">
+			#LuaAutoDoc-HeaderBar
+			<h1 class="page-title">Search Results</h1>
+			<div id="results"></div>
+		</div>
+		#LuaAutoDoc-Footer
+	</div>
+
+	<script>
+		// Get the query from the URL
+		let params = new URLSearchParams(window.location.search);
+		let query = params.get('q');
+
+		// Fetch the datastore.json file
+		fetch('../data/datastore.json')
+			.then(response => response.json())
+			.then(data => {
+				// Split the query into words and phrases
+				let queryWords = splitQuery(query);
+
+				// Search the index for the query
+				let results = Object.keys(data)
+					.filter(key => {
+						// Convert the content to lowercase
+						let content = data[key].content.toLowerCase();
+
+						// Check if any query word is included in the content
+						return queryWords.some(word => content.includes(word.toLowerCase()));
+					})
+					.map(key => {
+						return {
+							href: key,
+							title: data[key].title,
+							content: data[key].content
+						};
+					});
+
+				// Display the results
+				displayResults(results);
+            });
+
+
+		// Splits a query into words and phrases
+		function splitQuery(query) {
+			let words = [];
+			let match;
+			let regex = /"([^"]+)"|'([^']+)'|(\S+)/g;
+			while ((match = regex.exec(query)) !== null) {
+				if (match[1]) {
+					words.push(match[1]);
+				}
+				else if (match[2]) {
+					words.push(match[2]);
+				}
+				else if (match[3]) {
+					words.push(match[3]);
+				}
+			}
+			return words;
+		}
+
+
+		// Displays the search results
+		function displayResults(results) {
+			// Clear any previous results
+			let resultsContainer = document.getElementById('results');
+			resultsContainer.innerHTML = '';
+
+			// Get the query from the URL
+			let params = new URLSearchParams(window.location.search);
+			let query = params.get('q');
+
+			// Display the results
+			results.forEach(result => {
+			    let resultElement = document.createElement('div');
+			    resultElement.className = 'search-result-entry';
+
+			    // Truncate the content to a maximum of 200 characters
+			    let content = result.content;
+			    let queryIndex = content.toLowerCase().indexOf(query.toLowerCase());
+			    if (queryIndex !== -1) {
+			        // Show the query match within the truncated content
+			        let start = Math.max(0, queryIndex - 100);
+			        let end = Math.min(content.length, queryIndex + query.length + 100);
+
+			        // Start and end with whole words
+			        if (start > 0) {
+			            let prevSpaceIndex = content.lastIndexOf(' ', start);
+			            if (prevSpaceIndex !== -1) {
+			                start = prevSpaceIndex + 1;
+			            }
+			        }
+			        if (end < result.content.length) {
+			            let nextSpaceIndex = content.indexOf(' ', end);
+			            if (nextSpaceIndex !== -1) {
+			                end = nextSpaceIndex;
+			            }
+			        }
+
+			        content = content.substring(start, end);
+			        if (start > 0) {
+			            content = '...' + content;
+			        }
+			        if (end < result.content.length) {
+			            content = content + '...';
+			        }
+
+			        // Highlight the query substring within the content
+			        queryIndex = content.indexOf(query);
+			        content =
+			            content.substring(0, queryIndex) +
+			            `<span class="search-match">${query}</span>` +
+			            content.substring(queryIndex + query.length);
+			    }
+			    else if (content.length > 200) {
+			        // Truncate the content if no query match is found
+			        let end = 197;
+			        let nextSpaceIndex = content.indexOf(' ', end);
+			        if (nextSpaceIndex !== -1) {
+			            end = nextSpaceIndex;
+			        }
+			        content = content.substring(0, end) + '...';
+			    }
+
+			    resultElement.innerHTML = `<a href="${'../' + result.href}"><h2>${result.title}</h2></a><p>${content}</p>`;
+			    resultsContainer.appendChild(resultElement);
+			});
+
+			// Display a message if no results were found
+			if (results.length === 0) {
+				let resultElement = document.createElement('h3');
+				resultElement.innerHTML = 'No results found.';
+				resultsContainer.appendChild(resultElement);
+			}
+		}
+	</script>
+</body>
+</html>
