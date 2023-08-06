@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cryption
+Version: 0.4.0
+Summary: Wrapper for Pycrptodome to encrypt/decrypt text
+Home-page: https://github.com/Pycryptor10/cryption
+Author: Pycryptor10
+Author-email: Pycryptor10@gmail.com
+Maintainer: Pycryptor10
+Maintainer-email: Pycryptor10@gmail.com
+License: GPL3
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Localization
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycryptodome (==3.11.0)
+
+# cryption
+ Wrapper for Pycrptodome to encrypt/decrypt text
