@@ -1,0 +1,7 @@
+numpy
+scipy
+Cython
+skggm
+scikit-sparse
+robust-selection
+networkx
