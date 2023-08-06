@@ -1,0 +1,15 @@
+SelfBotClient/__init__.py,sha256=_LAOsphn_PW_hyxEwKZSVNNTPivwB09AD7wOHLgVUMI,376
+SelfBotClient/__main__.py,sha256=rccCIeemxHE8BpIwLRGiL9z9k9kyUPYpFsXihvEdtLM,472
+SelfBotClient/client.py,sha256=FbdrNZetFc9uFXdBeLQlOwyKsCvuop5KwXxOMzbFU4U,16059
+SelfBotClient/enums.py,sha256=H-1oteJUgph-A5SzvGQ6FWyN3aEn5OtamgDxFfSBaxI,1463
+SelfBotClient/errors.py,sha256=mNcLCiOr-Pa709Hz8eIDmmlY60DSHUt0OdYPPWLKLWg,795
+SelfBotClient/http.py,sha256=lTvMOsKtUkKDCPkz71-vCswnLCKuWYNdLd97ZF_X350,11687
+SelfBotClient/logger.py,sha256=Mr5uxmMoAj7tKlWpur2MC12i4JYnoV1_p_ktMK5OoRQ,1046
+SelfBotClient/permissionbuilder.py,sha256=kAX1d8ZUc-IM3a2JHOlevn3CjnaRYDxdku45fUKUSm4,609
+SelfBotClient/thread.py,sha256=mQW5wEhOgvGTbrRVrH4QeTg5qsXf0kGt9zltZ8cltxo,2713
+SelfBotClient/typings.py,sha256=ReWJi2gPikDrC5VxVocASiy7VbYJOr-aeHGCrGLyjoU,313
+SelfBotClient/user.py,sha256=0xJ6etE_r96GtxvuRF8Sr4xpbWWyD1b1YRlDwPk-0e4,18892
+selfbotclient-1.1.0.dist-info/METADATA,sha256=BPb8i2sJHbflOa0MP4dIyk48rLKPV6oaIjWuQousoos,1886
+selfbotclient-1.1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+selfbotclient-1.1.0.dist-info/top_level.txt,sha256=0EuoHvQcLGTAK5z6Ks4d90k3MMbz5erBlcxNp4kymNM,14
+selfbotclient-1.1.0.dist-info/RECORD,,
