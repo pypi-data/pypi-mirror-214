@@ -1,0 +1,14 @@
+bopforge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bopforge/utils.py,sha256=b7q7x8_Nra-AMU3zfM5rl9eI0p7sMK0sy-LRsd7amWc,2522
+bopforge/continuous_pipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bopforge/continuous_pipeline/__main__.py,sha256=u8pj8w3PeIRcj1V3Xdmn6l8gbDYPH4PKYDi76xns2NQ,8252
+bopforge/continuous_pipeline/functions.py,sha256=nPkPsQXOpGPJHnMH7VU0-boOfooUyr5VIIldhksT5s4,22868
+bopforge/dichotomous_pipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bopforge/dichotomous_pipeline/__main__.py,sha256=Ai0728v1J-ii2NrWNxsTOdxjFcZOXxcLhM44FlH38eE,7934
+bopforge/dichotomous_pipeline/functions.py,sha256=l_JPZD2la-iSh-QnUanp7FdE-Dv1EMLbWPfqlaKow-w,11705
+bopforge-0.0.3.dist-info/LICENSE,sha256=GFGaqmg6M6Sb53L4FGuJ2GUBLyxu8hGGlXFq3uFA-_s,1327
+bopforge-0.0.3.dist-info/METADATA,sha256=WtePQnqD9GBk1G60subGdD_lVgZ7dD1-DpaO5_qLhM8,2199
+bopforge-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bopforge-0.0.3.dist-info/entry_points.txt,sha256=4rVdxZHeqGCFq-I0xLvTRjjVQsYCEOs-1znsFykR9yg,150
+bopforge-0.0.3.dist-info/top_level.txt,sha256=A_UXUHLbV90u-TkJoEo4cmNZmOp7ei231c_czIQELG4,9
+bopforge-0.0.3.dist-info/RECORD,,
