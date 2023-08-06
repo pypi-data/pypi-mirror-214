@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "albhed"
+version = "1.0.1"
+description = "Converts ASCII into Al Bhed"
+authors = ["Chris Pressland <mail@cpressland.io>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+albhed = "albhed.__init__:cli"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.272"
+black = "^23.3.0"
+isort = "^5.12.0"
+
+
+[tool.black]
+line-length = 88
+force-exclude = 'original_code/*'
+
+[tool.isort]
+line_length = 88
+profile = "black"
+
+[tool.ruff]
+line-length = 88
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
