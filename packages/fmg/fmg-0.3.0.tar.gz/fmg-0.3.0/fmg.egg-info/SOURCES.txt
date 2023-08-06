@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fmg/__init__.py
+fmg/__version__.py
+fmg/core.py
+fmg.egg-info/PKG-INFO
+fmg.egg-info/SOURCES.txt
+fmg.egg-info/dependency_links.txt
+fmg.egg-info/requires.txt
+fmg.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+lmdb
+opencv-python
+numpy
+pillow
