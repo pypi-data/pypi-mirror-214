@@ -1,0 +1,14 @@
+saa/__init__.py,sha256=mp2ww292wo8WAsIDDptyWLxH2C38ZDIuPAeIRmOcpvc,50
+saa/clock.py,sha256=UadJrnMoSrCVlhIE13xuur5Lmbm2nZI3Mwsf7R4Fk5Q,1149
+saa/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saa/core/language.py,sha256=SDlPIgz1YhXnLW52LpMyzEThYZ23BE00_SDVsfcz62E,575
+saa/core/numbers.py,sha256=D5eP9hdLz2PFx2K5zxQ9VWhVJ50kBTGj59HyCWVuIc8,837
+saa/core/plugins.py,sha256=PcWIQbv4NHGHUyELZApVbHQ3UfdVw7BjE__X1dhlN04,308
+saa/core/template.py,sha256=SY8QqBXzKgOZ5nHVzuZLa0levo3TfWpWIhUwj96wE_s,620
+saa/core/watch.py,sha256=KQFoG78v_Q-3QyoH2O7AA_vhSKMFqDkhVPKnzFoGdqU,775
+saa/luga/da/__init__.py,sha256=FzR-nLn2ZtpnzOUtlinddt2qcTTfbShVS1bbr3JbmFs,1534
+saa/luga/en/__init__.py,sha256=IyzndWfQQVVi9bHLpKrh1VKZaaB5mtPg_QbpK3G-upE,1422
+saa-0.0.2.dist-info/LICENSE,sha256=5tZztbpYul4tLjQS1Q9dna_ePb0M8uddWHcFa71OPhs,1079
+saa-0.0.2.dist-info/METADATA,sha256=GPLl6GH7zqKUIGtdxfCVQY5QMkTrzq8ZAhCVe0d7ssc,3738
+saa-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+saa-0.0.2.dist-info/RECORD,,
