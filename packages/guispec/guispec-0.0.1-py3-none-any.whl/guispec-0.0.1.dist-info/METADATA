@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: guispec
+Version: 0.0.1
+Requires-Dist: requests
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: astropy
+Requires-Dist: PyQT5
+Requires-Dist: importlib-metadata ; python_version >= "3.8"
+
