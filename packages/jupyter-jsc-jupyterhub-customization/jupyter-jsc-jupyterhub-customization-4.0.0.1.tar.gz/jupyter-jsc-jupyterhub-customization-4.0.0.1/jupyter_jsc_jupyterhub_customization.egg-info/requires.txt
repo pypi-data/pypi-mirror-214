@@ -1,0 +1,3 @@
+jsonformatter
+jupyterhub-backendspawner
+oauthenticator

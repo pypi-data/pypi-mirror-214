@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jupyter-jsc-jupyterhub-customization
+Version: 4.0.0.1
+Summary: JupyterHub customization collection, used by Jupyter-JSC.
+Home-page: https://github.com/FZJ-JSC/jupyter-jsc-jupyterhub-customization
+Author: Alice Grosch, Tim Kreuzer
+Author-email: a.grosch@fz-juelich.de, t.kreuzer@fz-juelich.de
+License: 3-BSD
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# JupyterHub customizations
+
+This package contains JupyterHub customizations, used by [Jupyter-JSC](https://jupyter-jsc.fz-juelich.de).  
+It contains additional (API)Handler, Authenticator and other utilizations.  
