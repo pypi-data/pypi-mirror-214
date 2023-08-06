@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+blockgamebot/__init__.py
+blockgamebot/api.py
+blockgamebot.egg-info/PKG-INFO
+blockgamebot.egg-info/SOURCES.txt
+blockgamebot.egg-info/dependency_links.txt
+blockgamebot.egg-info/requires.txt
+blockgamebot.egg-info/top_level.txt
