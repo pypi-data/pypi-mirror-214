@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: resimpyx
+Version: 0.0.0.4
+Summary: REad SIMulation PY
+Home-page: https://github.com/cribbslab; https://github.com/2003100127
+Author: Jianfeng Sun
+Author-email: jianfeng.sun@ndorms.ox.ac.uk
+License: MIT
+Keywords: pip,resimpy
+Platform: any
+Requires-Python: ==3.9.1
+License-File: LICENSE
+
+sequencing read simulation python interface

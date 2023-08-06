@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+resimpyx.egg-info/PKG-INFO
+resimpyx.egg-info/SOURCES.txt
+resimpyx.egg-info/dependency_links.txt
+resimpyx.egg-info/entry_points.txt
+resimpyx.egg-info/requires.txt
+resimpyx.egg-info/top_level.txt
