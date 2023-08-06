@@ -1,0 +1,17 @@
+scikit-learn
+pandas
+matplotlib
+numpy
+imbalanced-learn
+pygame
+ipywidgets
+tqdm
+statsmodels
+sentence-transformers
+
+[test]
+pytest
+pylint!=2.5.0
+isort
+refurb
+black
