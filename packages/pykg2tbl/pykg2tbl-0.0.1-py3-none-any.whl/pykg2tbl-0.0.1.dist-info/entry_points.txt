@@ -1,0 +1,3 @@
+[console_scripts]
+pykg2tbl=pykg2tbl.__main__:main
+
