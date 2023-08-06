@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+cosa/__init__.py
+cosa/actu.py
+cosa/agregar.py
+cosa/borrar.py
+cosa/buscar.py
+cosa/principal.py
+cosa/ver_datos.py
+lols0.egg-info/PKG-INFO
+lols0.egg-info/SOURCES.txt
+lols0.egg-info/dependency_links.txt
+lols0.egg-info/top_level.txt
