@@ -1,0 +1,3 @@
+[console_scripts]
+lmql = lmql.cli:main
+
