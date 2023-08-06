@@ -1,0 +1,2 @@
+[console_scripts]
+rotki-content-hash = content_hash.__main__:main
