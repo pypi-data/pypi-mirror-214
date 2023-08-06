@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    download_model = cubetools.download_model:download_model
+    
