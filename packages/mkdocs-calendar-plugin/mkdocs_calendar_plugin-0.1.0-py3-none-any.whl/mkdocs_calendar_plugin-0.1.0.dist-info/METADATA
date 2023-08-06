@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mkdocs-calendar-plugin
+Version: 0.1.0
+Summary: An MkDocs plugin to ...
+Home-page: https://github.com/supcik/mkdocs-today-plugin
+License: Apache-2
+Keywords: mkdocs,python,markdown,wiki
+Author: Jacques Supcik
+Author-email: jacques.supcik@hefr.ch
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: test
+Requires-Dist: mkdocs (>=1.4.3,<2.0.0)
+Requires-Dist: mkdocs-macros-plugin (>=1.0.1,<2.0.0) ; extra == "test"
+Requires-Dist: mkdocs-material (>=9.1.15,<10.0.0) ; extra == "test"
+Requires-Dist: pytz (>=2023.3,<2024.0)
+Project-URL: Repository, https://github.com/supcik/mkdocs-today-plugin
+Description-Content-Type: text/markdown
+
+# mkdocs-calendar-plugin
+
