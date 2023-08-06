@@ -1,0 +1,13 @@
+starmatch/__init__.py,sha256=X6X6VU1p7jv_4VfSAC5ATlNPi_tD4T2vQwwOgcnpaPA,41
+starmatch/astroalign.py,sha256=OymKBKAHvw7_IvlC4mpnTYnQKg987sh0g7TGO17GgYg,22310
+starmatch/classes.py,sha256=Dshs0hnoRCf-zA6Rnqoxa5w7S1TSvbM-h2cPJHrJj-Y,41872
+starmatch/orientation.py,sha256=DRkmfMEd4n8eeqG1daIuN_-5pXunIdLgrglt0wprkL4,5958
+starmatch/plot.py,sha256=K9BIOSlRT7gcO-oiix-4vFwKnTUwNMrBDU8epDa40RE,3078
+starmatch/wcs.py,sha256=jq5mmLYtXeVbdL7MuBTUEQnwX-FuTn_jcU7KqMaHYOA,1976
+starmatch/distortion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starmatch/distortion/distortion_model.py,sha256=bZ05MifpnbIuHE_eVa-0XErwpmZZ_rVZC9QDmmQWQds,11236
+starmatch-0.1.0.dist-info/LICENSE,sha256=1mo8gGwn9nEfzoruoWYAD1ttN40DofMYGQNef1rsytY,1068
+starmatch-0.1.0.dist-info/METADATA,sha256=QKDzLSNCvww2EYMU1937kFRqFQNGd8vy3SNJOyApZro,24023
+starmatch-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+starmatch-0.1.0.dist-info/top_level.txt,sha256=yxZNa5SKsmUHcbN_hI9Aa5_mi6QfdMxAorjQUYkiMiA,10
+starmatch-0.1.0.dist-info/RECORD,,
