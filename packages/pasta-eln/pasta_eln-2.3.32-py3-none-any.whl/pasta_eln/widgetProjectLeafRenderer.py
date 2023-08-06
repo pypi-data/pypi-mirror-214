@@ -1,0 +1,185 @@
+""" renders each leaf of project tree using QPaint """
+import base64, logging, re
+from typing import Optional
+from PySide6.QtCore import Qt, QSize, QPoint, QMargins, QRectF, QModelIndex# pylint: disable=no-name-in-module
+from PySide6.QtGui import QStaticText, QPixmap, QTextDocument, QPainter, QColor # pylint: disable=no-name-in-module
+from PySide6.QtWidgets import QStyledItemDelegate, QStyleOptionViewItem # pylint: disable=no-name-in-module
+from PySide6.QtSvg import QSvgRenderer                        # pylint: disable=no-name-in-module
+from .communicate import Communicate
+from .style import getColor
+
+_DO_NOT_RENDER_ = ['image','content','metaVendor','metaUser','shasum','comment']
+
+class ProjectLeafRenderer(QStyledItemDelegate):
+  """ renders each leaf of project tree using QPaint """
+  def __init__(self) -> None:
+    super().__init__()
+    self.comm:Optional[Communicate] = None
+    self.width = -1
+    self.widthContent = 600   #TODO_P3 from config file
+    self.debugMode = logging.DEBUG
+    self.lineSep = 20
+    self.frameSize = 6
+    self.maxHeight = 500
+
+
+  def setCommunication(self, comm:Communicate) -> None:
+    """
+    Set communication path
+
+    Args:
+      comm (Communicate): communication path
+    """
+    self.comm = comm
+    self.width = self.comm.backend.configuration['GUI']['imageWidthProject']
+    self.debugMode = logging.root.level<logging.INFO
+    self.lineSep = 20 #TODO_P5 addToConfig
+    return
+
+  #TODO_P4 projectTree design: If folders and other items have boxes of slightly different brightness
+  # (darker gray for the former and lighter for the latter), the project structure might be easier to understand. 
+  def paint(self, painter:QPainter, option:QStyleOptionViewItem, index:QModelIndex) -> None:
+    """
+    Paint this item
+    - coordinates: left, top
+    - COS top left
+
+    Args:
+      painter (QPainter): painter
+      option (QStyleOptionViewItem): option incl. current coordinates
+      index (QModelIndex): index
+    """
+    if self.comm is None:
+      return
+    xOffset, yOffset = option.rect.topLeft().toTuple()
+    topLeft2nd     = option.rect.topRight()   - QPoint(self.width+self.frameSize+1,-self.frameSize)
+    bottomRight2nd = option.rect.bottomRight()- QPoint(self.frameSize+1,self.frameSize)
+    hierStack = index.data(Qt.DisplayRole) # type: ignore
+    if hierStack is None:
+      return
+    docID   = hierStack.split('/')[-1]
+    if docID.endswith(' -'):
+      docID = docID[:-2]
+      folded = True
+    else:
+      folded = False
+    doc     = self.comm.backend.db.getDoc(docID)
+    painter.fillRect(option.rect.marginsRemoved(QMargins(2,6,4,0)),  QColor(getColor(self.comm.backend, 'secondary')).darker(110))
+    painter.fillRect(option.rect.marginsRemoved(QMargins(-2,3,8,5)), QColor(getColor(self.comm.backend, 'secondaryLight')))
+    if 'image' in doc and doc['image']!='' and not folded:
+      if doc['image'].startswith('data:image/'):
+        pixmap = QPixmap()
+        pixmap.loadFromData(base64.b64decode(doc['image'][22:]))
+        pixmap = pixmap.scaledToWidth(self.width)
+        painter.drawPixmap(topLeft2nd, pixmap)
+      elif doc['image'].startswith('<?xml'):
+        image = QSvgRenderer(bytearray(doc['image'], encoding='utf-8'))
+        image.render(painter,    QRectF(topLeft2nd, bottomRight2nd))
+    elif 'content' in doc and not folded:
+      text = QTextDocument()
+      text.setMarkdown(doc['content'])
+      text.setTextWidth(self.widthContent)
+      width, height = -1, -1
+      width, height = text.size().toTuple()  # type: ignore
+      topLeftContent = option.rect.topRight() - QPoint(max(self.width,width)+self.frameSize-2,-self.frameSize)
+      painter.translate(topLeftContent)
+      if height > self.maxHeight-2*self.frameSize:
+        pen = painter.pen()
+        colorOld = QColor(pen.color())
+        pen.setColor(QColor(getColor(self.comm.backend, 'primary')))
+        pen.setWidth(2)
+        painter.setPen(pen)
+        painter.drawLine(0, self.maxHeight-2*self.frameSize, width-self.frameSize, self.maxHeight-2*self.frameSize)
+        pen.setColor(colorOld)
+        pen.setWidth(1)
+        painter.setPen(pen)
+      text.drawContents(painter, QRectF(0, 0, width, self.maxHeight-2*self.frameSize))
+      painter.translate(-topLeftContent)
+    yOffset += self.lineSep/2
+    hiddenText = '     \U0001F441' if len([b for b in doc['-branch'] if False in b['show']])>0 else ''
+    docTypeText= 'folder' if doc['-type'][0][0]=='x' else '/'.join(doc['-type'])
+    painter.drawStaticText(xOffset, yOffset, QStaticText(doc['-name']+hiddenText))
+    painter.drawStaticText(xOffset+400, yOffset, QStaticText(docTypeText))
+    if self.debugMode:
+      painter.drawStaticText(xOffset+700, yOffset, QStaticText(index.data(Qt.DisplayRole)))  # type: ignore
+    if not folded:
+      if '-tags' in doc and len(doc['-tags'])>0:
+        yOffset += self.lineSep
+        tags = ['_curated_' if i=='_curated' else '#'+i for i in doc['-tags']]
+        tags = ['\u2605'*int(i[2]) if i[:2]=='#_' else i for i in tags]
+        painter.drawStaticText(xOffset, yOffset, QStaticText('Tags: '+' '.join(tags)))
+      for key in doc:
+        if key in _DO_NOT_RENDER_ or key[0] in ['-','_']:
+          continue
+        yOffset += self.lineSep
+        if isinstance(doc[key], str):
+          #TODO_P4: projectTree technology: image does not allow for easy context aware clicks: like click on links, right-click image
+          if re.match(r'^[a-z\-]-[a-z0-9]{32}$',doc[key]) is None:  #normal text
+            value = doc[key]
+          elif self.comm is not None:                           #link
+            table  = self.comm.backend.db.getView('viewDocType/'+key+'All')
+            choices= [i for i in table if i['id']==doc[key]]
+            if len(choices)==1:
+              value = '\u260D '+choices[0]['value'][0]
+            else:
+              value = 'ERROR WITH LINK'
+          painter.drawStaticText(xOffset, yOffset, QStaticText(key+': '+value))
+        elif isinstance(doc[key], list):                         #list of qrCodes
+          painter.drawStaticText(xOffset, yOffset, QStaticText(key+': '+', '.join(doc[key])))
+      if 'comment' in doc:
+        text = QTextDocument()
+        text.setMarkdown(doc['comment'].strip())
+        painter.translate(QPoint(xOffset-3, yOffset+15))
+        text.drawContents(painter)
+        painter.translate(-QPoint(xOffset-3, yOffset+15))
+        #TODO_P3 design ProjectView: Currently, the comment is more highlighted than the title of an item due
+        # to a larger and bolder font. It would make more sense though if the titles were bolder, larger and
+        # thus more readable, while tags and comments are less highlighted.
+        #TODO_P3 design ProjectView: if comments are too long they cover the right area
+    return
+
+    #TODO_P3 design projectLeaves: 3 columns?
+    # Maybe the comment can be moved to the central part of the box, to save some space.
+
+  def sizeHint(self, option:QStyleOptionViewItem, index:QModelIndex) -> QSize:
+    """
+    determine size of this leaf
+    """
+    if index:
+      hierStack = index.data(Qt.DisplayRole)  # type: ignore
+      if hierStack is None:
+        return QSize()
+      docID   = hierStack.split('/')[-1]
+      if docID.endswith(' -'):
+        return QSize(400, self.lineSep*2)
+      if self.comm is None:
+        return QSize()
+      doc = self.comm.backend.db.getDoc(docID)
+      docKeys = doc.keys()
+      height  = len([i for i in docKeys if not i in _DO_NOT_RENDER_ and i[0] not in ['-','_'] ])  #height in text lines
+      height += 1 if '-tags' in docKeys else 0
+      height  = (height+3) * self.lineSep
+      if 'content' in docKeys:
+        text = QTextDocument()
+        text.setMarkdown(self.comm.backend.db.getDoc(docID)['content'])
+        text.setTextWidth(self.widthContent)
+        height = max(height, text.size().toTuple()[1]) +2*self.frameSize # type: ignore
+      elif 'image' in docKeys:
+        if doc['image'].startswith('data:image/'):
+          pixmap = QPixmap()
+          pixmap.loadFromData(base64.b64decode(doc['image'][22:]))
+          pixmap = pixmap.scaledToWidth(self.width)
+          height = max(height, pixmap.height())+2*self.frameSize
+        else:
+          height = max(height, int(self.width*3/4))+2*self.frameSize
+      elif 'comment' in doc.keys():
+        text = QTextDocument()
+        comment = self.comm.backend.db.getDoc(docID)['comment']
+        text.setMarkdown(comment.strip())
+        height += text.size().toTuple()[1] # type: ignore
+        if docID[0]!='x' or len(comment)==0:
+          height -= 25
+      else:
+        height -= 25
+      return QSize(400, min(height, self.maxHeight))
+    return QSize()
