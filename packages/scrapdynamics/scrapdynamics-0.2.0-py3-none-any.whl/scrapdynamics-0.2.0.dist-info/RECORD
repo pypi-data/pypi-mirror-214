@@ -1,0 +1,11 @@
+scrapdynamics/__init__.py,sha256=L0w48voZhKzD0ehFvVyBVD9GnQRxAqdttu9kyhKG8uE,315
+scrapdynamics/__main__.py,sha256=yf1-oG35xhMmm2_mCHu1ygIzM34CFJB4FJv7IL_ebIU,1368
+scrapdynamics/crawler.py,sha256=tG1XfRdvTTTol0rHXrfG4mqZ53KSegoXexfaXwM7TIc,8796
+scrapdynamics/progressbar.py,sha256=EKMKzxcGR5w17YOAfDJeiFCmoO4KU2X8GYMOevEBIy8,2217
+scrapdynamics/settings.py,sha256=2noUqw6cgsBo-mn7yAdwgL-n58FtYJqh_oMXznJDe38,2776
+scrapdynamics/url.py,sha256=upntCDU-qIhMPHzp7fA8TMKfwV4xB0mYMDYycqXUJmg,4634
+scrapdynamics-0.2.0.dist-info/LICENSE,sha256=j1v6qOnlsy1ZjHdwGWYrrL4hK1JjWiksadjf8dWWoxU,1086
+scrapdynamics-0.2.0.dist-info/METADATA,sha256=A-eJ-0xKVet5h4jlEkDQTlrxxsQjg1P1ISNPLreFoIU,7812
+scrapdynamics-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scrapdynamics-0.2.0.dist-info/top_level.txt,sha256=H9LeJrTOFexLkjqmEHUd08V-KH4dm87oxzYPoUNoHIQ,14
+scrapdynamics-0.2.0.dist-info/RECORD,,
