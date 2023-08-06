@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: pyappauto
+Version: 1.0
+Summary: Control an app without disturbing your everyday life.
+Home-page: https://github.com/User00092/PyAppAuto
+Author: User0092
+Author-email: unknownuser0092@protonmail.com
+License: MIT
+Keywords: Windows App control,App controller,PyAppAuto
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Utilities
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pywin32 (==306)
+Requires-Dist: opencv-python (==4.7.0.72)
+Requires-Dist: pygetwindow (==0.0.9)
+Requires-Dist: numpy (==1.24.3)
+
+
+
+
+# PyAppAuto
+
+
+
+Control an app without disturbing your everyday life.
+
+
+
+## Requirements
+
+
+
+- Windows 10+
+
+- Python 3.7 or higher.
+
+
+
+## Features
+
+
+
+- Attach to a created window by hwnd, or create one by path.
+
+- Left and right click the window. (Without using your mouse)
+
+- Keypress and typewrite directly to the window.
+
+- Find an image on the window without focusing it.
+
+- Set the monitor index of the window.
+
+- Enter and exit fullscreen.
+
+- Get the window size and position.
+
+- Set the window size and position.
+
+- Double click (Simulates a double click, sending a double click crashes the window)
+
+- pyappauto.utils.keys.KeyCodes
+
+
+
+## Installation
+
+
+
+- Install with pip.
+
+
+
+```cmd
+
+  pip install pyappauto
+
+```
+
+    
+
+## Authors
+
+
+
+- [@User00092](https://github.com/User00092)
+
+
+
+
+
+## License
+
+
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
