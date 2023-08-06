@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: pinhop
+Version: 0.3.0
+Summary: Timehop for Pinboard
+Home-page: https://github.com/mikepqr/pinhop
+Author: Mike Lee Williams
+Author-email: mike@mike.place
+Project-URL: Bug Reports, https://github.com/mikepqr/pinhop/issues
+Project-URL: Source, https://github.com/mikepqr/pinhop
+Keywords: twitter
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Pinhop
+
+Timehop for Pinboard.
+
+Get pinboard posts from a previous month or day as a pinboard-style web page.
+
+## Installation
+
+```
+pip install pinhop
+```
+
+## Usage
+
+```
+Usage: pinhop [OPTIONS]
+
+  Get pinboard posts from a previous month or day. By default, writes posts
+  from this month one year ago to pinhop.html.
+
+Options:
+  -y, --yearsago INTEGER          Number of years ago this month  [default: 1]
+  --token TEXT                    Pinboard API token (see
+                                  https://pinboard.in/settings/password).
+                                  Required if PINBOARD_TOKEN environment
+                                  variable not set.
+  --out TEXT                      Output file  [default: pinhop.html]
+  --date TEXT                     Get posts for particular month (YYYY-MM
+                                  format) or day (YYYY-MM-DD) (overrides y)
+  --browse / --no-browse          Load output file in browser when finished
+                                  [default: no-browse]
+  --install-completion [bash|zsh|fish|powershell|pwsh]
+                                  Install completion for the specified shell.
+  --show-completion [bash|zsh|fish|powershell|pwsh]
+                                  Show completion for the specified shell, to
+                                  copy it or customize the installation.
+  --help                          Show this message and exit.
+```
