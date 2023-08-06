@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: hatch-project
+Version: 0.2.0
+Project-URL: Documentation, https://github.com/unknown/hatch-project#readme
+Project-URL: Issues, https://github.com/unknown/hatch-project/issues
+Project-URL: Source, https://github.com/unknown/hatch-project
+Author-email: Kenno-Warise <wariken0523@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: bs4==0.0.1
+Requires-Dist: requests>=2.28.2
+Description-Content-Type: text/markdown
+
+# hatch-project
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hatch-project.svg)](https://pypi.org/project/hatch-project)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hatch-project.svg)](https://pypi.org/project/hatch-project)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install hatch-project
+```
+
+## License
+
+`hatch-project` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
