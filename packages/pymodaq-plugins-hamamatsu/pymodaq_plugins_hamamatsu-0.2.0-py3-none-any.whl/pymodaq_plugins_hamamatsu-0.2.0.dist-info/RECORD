@@ -1,0 +1,13 @@
+pymodaq_plugins_hamamatsu/VERSION,sha256=H5MN0fEzwfl6lP46y42zQ3LPTAH_2ys_9Mpy-UlBIek,6
+pymodaq_plugins_hamamatsu/__init__.py,sha256=YD9lgRdnqZGxpz_FF2pKZNTKtO1YrJiS28Ri6gUF8uw,138
+pymodaq_plugins_hamamatsu/daq_move_plugins/__init__.py,sha256=3gcm0_ff5vZa8-zXW8AXj-yXkqtowefk1EdFiDY1jZc,483
+pymodaq_plugins_hamamatsu/daq_viewer_plugins/__init__.py,sha256=ajz1GSNU9xYVrFEDSz6Xwg7amWQ_yvW75tQa1ZvRIWc,3
+pymodaq_plugins_hamamatsu/daq_viewer_plugins/plugins_2D/__init__.py,sha256=ImKMNjX1EKXh-lhcgALosH6kEKZ3byU3-r5aoHJL03o,488
+pymodaq_plugins_hamamatsu/daq_viewer_plugins/plugins_2D/daq_2Dviewer_Hamamatsu.py,sha256=5vFZjwTScefY-RLNKECMUaLcG_kUw1xlE5ACWSpvnEI,12743
+pymodaq_plugins_hamamatsu/hardware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymodaq_plugins_hamamatsu-0.2.0.dist-info/LICENSE,sha256=JZ0FsAvt7hRTKixoNKCoHNqWfSzLHLXhbByq2MDd3jA,21395
+pymodaq_plugins_hamamatsu-0.2.0.dist-info/METADATA,sha256=SQZE8ugyF5ytnjNLIVdphWzzxS70QYWz2qnRLzSJXhc,3055
+pymodaq_plugins_hamamatsu-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pymodaq_plugins_hamamatsu-0.2.0.dist-info/entry_points.txt,sha256=UZzzeFb1So-tV2O-YcAxTS52u-KXMBWIlV3-vlssRTE,56
+pymodaq_plugins_hamamatsu-0.2.0.dist-info/top_level.txt,sha256=9aBRCHkkPIy8s2MpHpukufFU6TJND8RadSM8jY_Nh-s,26
+pymodaq_plugins_hamamatsu-0.2.0.dist-info/RECORD,,

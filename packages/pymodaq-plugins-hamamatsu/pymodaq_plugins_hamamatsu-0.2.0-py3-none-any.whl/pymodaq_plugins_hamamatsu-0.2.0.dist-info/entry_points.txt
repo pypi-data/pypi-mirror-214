@@ -1,0 +1,2 @@
+[pymodaq.plugins]
+hamamatsu = pymodaq_plugins_hamamatsu
