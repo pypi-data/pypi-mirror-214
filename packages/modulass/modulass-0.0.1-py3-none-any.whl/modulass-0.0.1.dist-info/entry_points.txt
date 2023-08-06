@@ -1,0 +1,2 @@
+[console_scripts]
+modulass = modulass:main
