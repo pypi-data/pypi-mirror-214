@@ -1,0 +1,2 @@
+[console_scripts]
+agp = arch_github_package.main:app
