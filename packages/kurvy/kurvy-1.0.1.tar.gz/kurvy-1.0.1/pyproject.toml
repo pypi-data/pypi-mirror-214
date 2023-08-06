@@ -1,0 +1,24 @@
+[tool.black]
+line-length = 80
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.python_version
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+classifiers = [
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]

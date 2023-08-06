@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kurvy
+Version: 1.0.1
+Summary: Curve approximation toolkit
+Home-page: https://github.com/celerygemini/kurvy
+Author: celerygemini
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# kurvy
+
+[![PyPI - Version](https://img.shields.io/pypi/v/kurvy.svg)](https://pypi.org/project/kurvy/)
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kurvy.svg)](https://pypi.org/project/kurvy/)
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-C06524)](https://github.com/celerygemini/kurvy/blob/main/LICENSE)
