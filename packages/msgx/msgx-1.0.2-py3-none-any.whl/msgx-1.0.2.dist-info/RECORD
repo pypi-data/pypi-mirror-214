@@ -1,0 +1,13 @@
+msgx/__init__.py,sha256=2zVQTJP4EVO3ZKNeD3hh28XU7KY2L1gVXVc_yAwFfHE,83
+msgx/_version.py,sha256=Y3LSfRioSl2xch70pq_ULlvyECXyEtN3krVaWeGyaxk,22
+msgx/constants.py,sha256=HSQ9C8XQ_hNNE2tYV2EgvCEKf_ZY3345iiSu579Ar5I,1313
+msgx/deserialise.py,sha256=0x-onkc4wdW3caxx7NQKVwC6KTqPEd9zNCKb76xRfW4,3684
+msgx/msg_definitions.py,sha256=9iKdsnR1j-7iGAiEtPW-0O9XShmPPZLv1n76-Cl6Oc4,198
+msgx/msgx.capnp,sha256=h70NhXymzP3uc4VEc6yM2sSqcM8_N92XQxbCJO8Rv38,1448
+msgx/ndarray.capnp,sha256=_x4d0ODCDwMOEOU3ATeNmGr_Kej0Wh6-fMM0Drntfg4,1463
+msgx/reciever.py,sha256=t2sD2VBKDfsmmIEoZTmGQm5Zpo0krHKCHRCsDSJiBrI,2294
+msgx-1.0.2.dist-info/LICENSE,sha256=ewxVbocRp8hmhIx28hzziSqnOg3Q9nEUDQgsL2M0GdA,1102
+msgx-1.0.2.dist-info/METADATA,sha256=Zq4sDHlUUTaphzBuxtHA0xhSnJVHE3jiIm-itoL5mOY,2998
+msgx-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+msgx-1.0.2.dist-info/top_level.txt,sha256=5A0_bpc5oHSKbS9IAtOC7evYTatxYxvzu7X00VD3w7E,5
+msgx-1.0.2.dist-info/RECORD,,
