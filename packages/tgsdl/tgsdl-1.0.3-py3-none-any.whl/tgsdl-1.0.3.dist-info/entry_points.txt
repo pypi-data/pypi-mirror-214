@@ -1,0 +1,2 @@
+[console_scripts]
+tgsdl = tgsdl:main
