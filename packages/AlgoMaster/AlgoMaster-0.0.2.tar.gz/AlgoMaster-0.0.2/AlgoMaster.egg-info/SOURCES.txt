@@ -1,0 +1,9 @@
+README.md
+setup.py
+AlgoMaster/__init__.py
+AlgoMaster/demo.py
+AlgoMaster.egg-info/PKG-INFO
+AlgoMaster.egg-info/SOURCES.txt
+AlgoMaster.egg-info/dependency_links.txt
+AlgoMaster.egg-info/requires.txt
+AlgoMaster.egg-info/top_level.txt
