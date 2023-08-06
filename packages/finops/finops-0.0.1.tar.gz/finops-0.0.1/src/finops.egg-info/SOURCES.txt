@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/finops/__init__.py
+src/finops/shareholders.py
+src/finops.egg-info/PKG-INFO
+src/finops.egg-info/SOURCES.txt
+src/finops.egg-info/dependency_links.txt
+src/finops.egg-info/top_level.txt
