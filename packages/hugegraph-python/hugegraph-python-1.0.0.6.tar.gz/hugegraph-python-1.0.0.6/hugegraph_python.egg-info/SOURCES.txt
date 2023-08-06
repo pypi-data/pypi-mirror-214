@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+hugegraph_python.egg-info/PKG-INFO
+hugegraph_python.egg-info/SOURCES.txt
+hugegraph_python.egg-info/dependency_links.txt
+hugegraph_python.egg-info/top_level.txt
+test/test.py
