@@ -1,0 +1,9 @@
+nw_connections/__init__.py,sha256=VJphh8Qdym-T8q8ifvuGU_hC9yd2chJClt-T8MiYp7E,281
+nw_connections/connection.py,sha256=eW6JtyVn59yRg6HdCYw8xQKkH4inMd2PAf7r2tFw2Hg,20949
+nw_connections/postgrest.py,sha256=pMvPafC5vljoZZLV5iqKySN-PDdPHhwMu_qjjMqgNds,10895
+nw_connections/robotwriter.py,sha256=9IgYYAc-l94AjyBekLN3WSy_MFXYMoxmb84_Cw8uyZg,2955
+nw_connections/utils.py,sha256=p7ZIbZnkw457zOo5sjFFOJHJOw8WcCevHwkGjzlhYg8,183
+nw_connections-1.2.4.dist-info/METADATA,sha256=HcYl8tWws1wtWncPtDnxi7TgSnNN2K9MKu-vaHhI-AU,490
+nw_connections-1.2.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nw_connections-1.2.4.dist-info/top_level.txt,sha256=tTOFkvWo5Btf_o-5m4stENXIfb14emxHTXObCuro7Qk,15
+nw_connections-1.2.4.dist-info/RECORD,,
