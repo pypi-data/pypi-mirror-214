@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: artd-partner
+Version: 0.0.1
+Summary: A Django app to administrate partner
+Home-page: https://www.artd.com.co/
+Author: Jonathan Urzola Maladonado
+Author-email: jonathan@artd.com.co
+Keywords: pypi,cicd,python
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+=================
+Partner
+=================
+
+A Django app to create partners.
+
+
+Quick start
+-----------
+1. Install artd_location and add to your INSTALLED_APPS like this:
+    
+        INSTALLED_APPS = [
+            ...
+            'artd_location',
+        ]
+
+2. Run ``python manage.py migrate`` to create the cities models.
+
+3. run ``python manage.py create_countries`` to create the countries.
+
+4. run ``python manage.py create_regions`` to create the regions.
+
+5. run ``python manage.py create_cities`` to create the cities.
+
+6. Add "artd_partner" to your INSTALLED_APPS setting like this:
+    
+        INSTALLED_APPS = [
+            ...
+            'artd_partner',
+        ]
+
+7. Run ``python manage.py migrate`` to create the Partner models.
+
+3. Start the development server and visit http://127.0.0.1:8000/admin/
