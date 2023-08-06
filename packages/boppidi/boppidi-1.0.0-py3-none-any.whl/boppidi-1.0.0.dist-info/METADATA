@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: boppidi
+Version: 1.0.0
+Summary: This code will find if a given IP is allowed in a AWS security group rule for a given instance with name tag available
+Home-page: UNKNOWN
+Author: Dushyanth Boppidi
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: boto3
+Requires-Dist: ipaddress
+
+UNKNOWN
+
+
