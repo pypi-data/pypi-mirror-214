@@ -1,0 +1,35 @@
+# Package Overview
+package_name: pl_insurance
+
+# data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# pipeline
+pipeline_name: pl_insurance
+pipeline_save_file: pl_insurance_
+
+# variables
+target: charges
+features:
+  - age
+  - bmi
+  - sex
+  - smoker
+  - region
+  - children
+
+numerical_features:
+  - age
+  - bmi
+
+categorical_features:
+  - sex
+  - smoker
+  - region
+  - children
+
+# set train/test split
+test_size: 0.3
+random_state: 0
+
