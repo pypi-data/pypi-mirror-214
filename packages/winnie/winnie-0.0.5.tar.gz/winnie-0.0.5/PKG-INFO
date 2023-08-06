@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: winnie
+Version: 0.0.5
+Summary: CCP library
+Home-page: https://github.com/HWRacing/winnie
+Author: HWRacing
+Author-email: fs60@hw.ac.uk
+Project-URL: Bug Tracker, https://github.com/HWRacing/winnie/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+
+# winnie
+
+<!-- Remember to change the URL from winnie to the name of your project -->
+![Tests](https://github.com/HWRacing/winnie/actions/workflows/tests.yml/badge.svg)
+
+A library for the CAN calibration protocol
