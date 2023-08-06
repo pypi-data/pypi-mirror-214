@@ -1,0 +1,2 @@
+[console_scripts]
+anecc = anecc.run:run
