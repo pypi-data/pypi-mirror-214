@@ -1,0 +1,15 @@
+dreamsim/__init__.py,sha256=IxaU3ZaLkC38_-_xQWaampsGXDPKqnq1Eld7YEFZmE8,45
+dreamsim/config.py,sha256=URPXbkvCbNDV4llf0pkPy3SB_FoHftxgmKE9OomDsbA,563
+dreamsim/model.py,sha256=virvWWWM-Psr2nDEyO_WSW7EcYN22R03W7swIBODb0I,11462
+dreamsim/feature_extraction/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dreamsim/feature_extraction/extractor.py,sha256=kyZgL8Jg8df3DCz5hH6CGfN6xE6luZXuUY5vkp5NpH8,11551
+dreamsim/feature_extraction/load_clip_as_dino.py,sha256=iC1hS1rdJcbOvLIzht0uYcpc3nG4uXVcyTtmy874C_k,1006
+dreamsim/feature_extraction/load_mae_as_vit.py,sha256=SiCj1XIOtaqoTCDzOYziW_mrIXyKclBNvznyCxLZN0E,3448
+dreamsim/feature_extraction/load_open_clip_as_dino.py,sha256=luMAmPo9viPBCrS1g2iajgOUMuFJFAwuQbAYOtbreow,2726
+dreamsim/feature_extraction/vision_transformer.py,sha256=XFsjvVcIXXy7_mdbqlA0AWybUQJKi5z3EEHEpVcPABU,11874
+dreamsim/feature_extraction/vit_wrapper.py,sha256=8abbj-11Ej803OqcpcCxX1JUybC48zWteqKwi7aXXpg,444
+dreamsim-0.1.1.dist-info/LICENSE,sha256=jUeFFhTHx9xNfmQvRT63zLw-jD3DWEYMMOLXiF_O_5c,1118
+dreamsim-0.1.1.dist-info/METADATA,sha256=LdoBC1jXX7G3OyS4Wl8bCUYy2pee23ZirdNgbfTHCR8,7693
+dreamsim-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dreamsim-0.1.1.dist-info/top_level.txt,sha256=pSmdukXZMHlP-yI0xq0CJId2fsjP-CPVpzkIPsg-3Gw,37
+dreamsim-0.1.1.dist-info/RECORD,,
