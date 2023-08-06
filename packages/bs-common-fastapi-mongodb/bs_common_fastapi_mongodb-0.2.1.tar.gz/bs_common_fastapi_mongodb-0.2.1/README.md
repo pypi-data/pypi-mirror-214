@@ -1,0 +1,1 @@
+# bs-common-fastapi-mongodb
