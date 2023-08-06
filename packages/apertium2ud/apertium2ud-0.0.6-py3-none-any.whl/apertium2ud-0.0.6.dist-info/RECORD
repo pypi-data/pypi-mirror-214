@@ -1,0 +1,12 @@
+apertium2ud/__init__.py,sha256=nyM6X1le9QzZ2-FMmLubrUWNOHQCtZHvhD7Z-pC4aGk,2564
+apertium2ud/_map_processing.py,sha256=QyKdRWfhbbvBUaNvE6JBllnUGBggO_offxhYm1xFTqI,1856
+apertium2ud/convert.py,sha256=vsPbELORoAoVmVaXCmnC4xYsc8y6KDkBvAcl9rG4Jlg,2878
+apertium2ud/meta.py,sha256=vMheH2FG_A4D8aHfpT-B066dZ2gljK9K3EmKVs25ZTE,234
+apertium2ud/resources/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+apertium2ud/resources/custom.udx,sha256=BWHl4PWXoSd6OhwONULv87iOxrtVhfGOr_fM-tkcMhY,4037
+apertium2ud/resources/tags_map.json,sha256=4EpAMUXtGC0prZ7mEKguexdDLOi-13idcHHSrPJhi6s,20114
+apertium2ud-0.0.6.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+apertium2ud-0.0.6.dist-info/METADATA,sha256=4ietqb9wLUEM0_T1erMKhxZOrZm_OC9BYE8USeou7nY,2912
+apertium2ud-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apertium2ud-0.0.6.dist-info/top_level.txt,sha256=ClfD1sy2_vV7KHk_sGBfCOhr0UuKJXczFPxxMPjCp_E,12
+apertium2ud-0.0.6.dist-info/RECORD,,
