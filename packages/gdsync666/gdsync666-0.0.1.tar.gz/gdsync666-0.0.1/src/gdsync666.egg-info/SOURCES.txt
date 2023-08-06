@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/gdsync666.egg-info/PKG-INFO
+src/gdsync666.egg-info/SOURCES.txt
+src/gdsync666.egg-info/dependency_links.txt
+src/gdsync666.egg-info/requires.txt
+src/gdsync666.egg-info/top_level.txt
+src/google_drive_sync/__init__.py
+src/google_drive_sync/download.py
+src/google_drive_sync/upload.py
