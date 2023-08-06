@@ -1,0 +1,13 @@
+ipcs/__init__.py,sha256=JICgF4nuk8LAGGOPa5-nd3aHuK30iJP0rsMiuvkVgNI,401
+ipcs/__main__.py,sha256=JZdk-g7TddD3tYdGdbKGZwm3zCHbDoWkTGQxgOVNymQ,1401
+ipcs/client.py,sha256=SgKQycpL8hdP2M_Ww0Qzfw6tSMwus-DE4RDAmOaPecg,19183
+ipcs/connection.py,sha256=ucXOb-m3mQKm-AGB3Qas-bSyDljPRu4bN1-h4vNvfUk,3384
+ipcs/errors.py,sha256=lNvpFeMjN-zSzb5ES6pbgblAETYgihbO-3ra5lhm33w,1181
+ipcs/server.py,sha256=BuVIj6ER5mjo8NoL33bjBbTbgVs_S_dxZ9R_yyXI2l8,5311
+ipcs/types_.py,sha256=lA3YPUCMtLvalYLAnyXbsViGzSMuB4BJ5ggxpF_G5fY,1851
+ipcs/utils.py,sha256=Uz9xdYgz3uBgsGhMdsRVLIONEvwHzHTlcvzIPPEJwIk,2088
+ipcs-0.1.5.post1.dist-info/METADATA,sha256=2ESqXsfjryXCANAv0wjvj1HEpeHsSCtaWmiEg3NXb-c,2236
+ipcs-0.1.5.post1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+ipcs-0.1.5.post1.dist-info/entry_points.txt,sha256=qfL8B4oJaI1ituFrEDiVjgukQKhTAz9ySCGkuDf8mxM,51
+ipcs-0.1.5.post1.dist-info/licenses/LICENSE,sha256=Pp9w5yeFKdW3zb0WYpg9F-8WnSmba1F-ll3c2UVpTec,1070
+ipcs-0.1.5.post1.dist-info/RECORD,,
