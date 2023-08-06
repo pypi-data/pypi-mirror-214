@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: scraple
+Version: 0.1.1
+Summary: Simplify web scraping
+Project-URL: repository, https://github.com/max-efort/scraple
+Project-URL: changelog, https://github.com/max-efort/scraple/releases
+Author-email: Jibril <erikfortran@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Jibril
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: CSS,scraping,selector,simple,webscraping
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: beautifulsoup4>=4.0.0
+Description-Content-Type: text/markdown
+
+# Scraple
+
+Scraple is a Python library designed to simplify the process of web scraping, 
+providing easy scraping and easy searching for selectors.
+
+## Version 
+v0.1.1 [changelog](https://github.com/max-efort/scraple/releases)
+
+
+## Installation
+The package is hosted in [Pypi](https://pypi.org/project/scraple/) and can be 
+installed using pip:
+
+```shell
+pip install scraple
+```
+
+## Main API
+The package provides two main classes: Rules and SimpleExtractor.
+
+#### 1. Rules
+The Rules class allows you to define rules of extraction. 
+You can pick selector just by knowing what string present in that page using the `add_field_rule` method. 
+This method automatically searches for selector of element which text content match the string. 
+Additionally, the `add_field_rule` method supports regular expression matching.
+
+```python
+from scraple import Rules
+
+#To instantiate Rules object you need to have the reference page.
+some_rules = Rules("reference in the form of string path to local html file", "local")
+some_rules.add_field_rule("a sentence or word exist in reference page", "field name 1")
+some_rules.add_field_rule("some othe.*?text", "field name 2", re_flag=True)
+# Add more field rules...
+
+# It automatically search for the selector, to see it you can see the rule in console
+# or by printing it
+# print(rules)
+```
+
+#### 2. SimpleExtractor
+The SimpleExtractor class performs the actual scraping based on a defined rule.
+A Rules object act as the "which to extract" and the SimpleExtractor do the "extract" or 
+scraping. First, pass a Rules object
+to SimpleExtractor constructor and use the 
+`perform_extraction` method to create a generator object that iterate dictionary of
+elements extracted.
+
+```python
+from scraple import SimpleExtractor
+
+extractor = SimpleExtractor(some_rules)  # some_rules from above code snippet
+result = extractor.perform_extraction(
+    "web page in the form of beautifulSoup4 object",
+    "parsed"
+)
+
+# print(next(result))
+# {
+#   "field name 1": [element, ...],
+#   "field name 2": ...,
+#   ...
+# }
+```
+For more information and tutorial, see the [documentation](https://github.com/max-efort/scraple/doc) or 
+visit the main [repository](https://github.com/max-efort/scraple)
