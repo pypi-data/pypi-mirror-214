@@ -1,0 +1,18 @@
+type AnArticleCategory implements Node {
+    id: ID!
+    name: String!
+    description: String
+    imageUrl: String
+    tagCount: Int!
+    tags: AnArticleTagConnection
+}
+
+type AnArticleCategoryConnection {
+    edges: [AnArticleCategoryEdge]
+    pageInfo: PageInfo!
+}
+
+type AnArticleCategoryEdge {
+    cursor: String!
+    node: AnArticleCategory
+}

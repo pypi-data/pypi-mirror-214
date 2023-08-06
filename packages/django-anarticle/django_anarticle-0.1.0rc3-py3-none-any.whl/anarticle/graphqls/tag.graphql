@@ -1,0 +1,17 @@
+type AnArticleTag implements Node {
+    id: ID!
+    name: String!
+    imageUrl: String
+    articleCount: Int!
+    articles: AnArticleConnection
+}
+
+type AnArticleTagConnection {
+    edges: [AnArticleTagEdge]
+    pageInfo: PageInfo!
+}
+
+type AnArticleTagEdge {
+    cursor: String!
+    node: AnArticleTag
+}
