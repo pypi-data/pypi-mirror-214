@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: pd-cldf
+Version: 0.0.1
+Summary: Read and write CLDF datasets with pandas.
+Home-page: https://github.com/fmatter/pd-cldf
+Author: Florian Matter
+Author-email: fmatter@mailbox.org
+Project-URL: Bug Tracker, https://github.com/fmatter/pd-cldf/issues
+Keywords: pandas,cldf
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: coverage[toml] ; extra == 'dev'
+Requires-Dist: prospector (==1.10.2) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: jinja2 ; extra == 'dev'
+Requires-Dist: keepachangelog ; extra == 'dev'
+Provides-Extra: publishing
+Requires-Dist: twine ; extra == 'publishing'
+Requires-Dist: wheel ; extra == 'publishing'
+
+# pd-cldf
+
+Read and write CLDF datasets with pandas.
+
+![License](https://img.shields.io/github/license/fmatter/pd-cldf)
+[![Documentation Status](https://readthedocs.org/projects/pd-cldf/badge/?version=latest)](https://pd-cldf.readthedocs.io/en/latest/?badge=latest)
+[![Tests](https://img.shields.io/github/actions/workflow/status/fmatter/pd-cldf/tests.yml?label=tests)](https://github.com/fmatter/pd-cldf/actions/workflows/tests.yml)
+[![Linting](https://img.shields.io/github/actions/workflow/status/fmatter/pd-cldf/lint.yml?label=linting)](https://github.com/fmatter/pd-cldf/actions/workflows/lint.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/fmatter/pd-cldf)](https://app.codecov.io/gh/fmatter/pd-cldf/)
+[![PyPI](https://img.shields.io/pypi/v/pd-cldf.svg)](https://pypi.org/project/pd-cldf)
+![Versions](https://img.shields.io/pypi/pyversions/pd-cldf)
+
+
+* [Read the docs](https://pd-cldf.readthedocs.io)
+
