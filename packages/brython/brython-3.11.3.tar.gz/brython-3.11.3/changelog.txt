@@ -1,0 +1,113 @@
+New features
+============
+This is mostly a bug fix release, with bug fixes and additional features in
+the re module and a few performance improvements.
+
+Implementation
+==============
+- unify function arguments parsing for built-in functions / methods ($B.args)
+  and user-defined functions / methods ($B.args0)
+- mark frames that contain generators with an attribute .$has_generators. Use
+  it in leave_frame() to avoid scanning the local namespace in search of
+  generators that may have context managers. Increases performance of function
+  calls.
+- add __dir__ to JSObj
+- yet another change in the implementation of dict : for performance, dicts
+  with only string keys are implemented without having to compute the string
+  hash. Used for the default class namespace. Adapt other core scripts.
+- set missing attribute co_qualname for frames, functions, comprehensions
+- change debug level required for detailed information when an import fails
+- add __bool__ to internal $Reader class
+- in py_import, for JS modules, add attribute __module__ to classes
+- int(literal) succeeds if literal is a string with digits in non-latin
+  alphabets
+- support errors="backslashreplace" for ascii encoding/decoding
+- improve error reporting for async functions
+- if an instance of a subclass of html.<TAG> has a method of the same name as
+  a DOM element native method (eg. "click"), use the subclass method instead
+  of the native method.
+- make instances of html.<TAG> support multiplication
+- handle errors in callbacks for JS objects that have event handlers set by
+  jsobj.bind()
+- more compliant implementation of object.__reduce__. Rewrite
+  object.__reduce_ex__() with method __getnewargs__ set to some built-in
+  classes
+- add attribute "__globals__" to functions
+- support function attribute __builtins__
+- add __builtins__ to module namespace
+- move js_objects.js after py_list.js, so that JS lists are instances of
+  Python list class
+- add methods unbind() and bindings to JS objects. Related to issue #2201
+
+Internal tools
+==============
+
+
+Bug fixes
+=========
+- bug in suggestions for attribute errors
+- bug in string equality testing for strings with surrogate pairs
+- bug in iteration on Python strings that have characters in the range
+  0xd800-0xdbff (were interpreted as the first of a "surrogate pair")
+- bug in setdefault for dicts with string-only keys
+- bug in truth value testing of Javascript objects
+- bug in getattr for JS objects
+- bugs in chr() and ord() related to strings with characters in astral plane
+- bug in addition of and iteration on strings with characters in astral plane
+- bug in dict.popitem() if dict only has string keys
+- bug in str.index.html(sub, start, end) if start > end
+- bug in max() / min() when key is None
+- bug in set.add(item) : don't change object version if item is already in the
+  set
+- bugs in comparisons between floats and complex + functions
+- bugs in complex numbers implementation, detected by Lib/test/test_complex.py
+
+Issues
+- #2167 : passing "self" as keyword argument to a method
+- #2168 : handling of math.log() error cases
+- #2169 : TypeError: super(type, obj): obj must be an instance or subtype of
+  type.
+  When `jsobj` is a Javascript class, `window.jsobj` is a Python class that
+  has the same methods as `jsobj`. Python classes can inherit such classes.
+- #2172 : AttributeError: demo_array2. Did you mean: '__eq__'?
+- #2173 : TypeError: $B.last(...) is undefined
+- #2175 : print("") throws error instead of printing empty string
+- #2181 : AttributeError: 'Javascript Object' object has no attribute 'items'
+- #2182 : missing __version__ variable (PEP 396)
+- #2183 : Inspector doesn't work after an await
+- #2184 : print('%s %s %s' % ["foo", "bar", "baz"])
+- #2185 : import uu
+- #2190 : TypeError: wrong type for data, expected dict, bytes or str, got
+  Javascript Object
+- #2196 : __builtins__.open raises AttributeError: 'dict' objecthas no
+  attribute 'open'
+- #2197 : re.match bug loops forever
+- #2198 : multiple assignment bug
+- #2200 : problem when using keys with the ' character in dict
+
+Brython site
+============
+
+
+Github site
+===========
+
+
+Demos
+=====
+- add synth drums demo in the gallery
+
+Standard distribution
+=====================
+- add fake function fork_exec() in _posixsubprocess.js, required by
+  /test/test_re.py
+- adapt some os / os.stat features to browser context
+- various improvements to the Brython-specific re module (python_re.js),
+  detected by Lib/test/test_re.py; implement Python 3.11 regular expression
+  "possessive" mode / atomic groups
+- in browser.object_storage.py, replace javascript.JSON by Python json
+
+Documentation
+=============
+- document async function Input() in browser.widgets.dialog
+- update import.md with new brython_cli option names (by BobSquarePants)
