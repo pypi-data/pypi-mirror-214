@@ -1,0 +1,14 @@
+configzen/__init__.py,sha256=lrv8unpm4WzoNmiDglkdNamyWERhedEkL1ybuqiiuLw,979
+configzen/__main__.py,sha256=78-PWqMkZf5To39DyK7Os8AkwSvzMW2PfbvIK-rMffc,935
+configzen/config.py,sha256=09Xx0n-lr8aIWJoJo7splgeJHOkLHYQ_n5M11ehTY4k,67816
+configzen/decorators.py,sha256=0mi1Q0XwLn6zS2q6L5lPFkrV0P6VANgpYjGZj5oeb0A,3232
+configzen/errors.py,sha256=ndwdwdA_CCOl-UHfHeYVpQmJMYYh7exED8t7MPwRufQ,3607
+configzen/field.py,sha256=QdlErIdVjpXKmFlaSVnqHgKEnlhuXdlk4MThgq1REMg,544
+configzen/processor.py,sha256=L9xVslIO9Bfyh5n-BriYrP2FWisjVA6H0ULYWqcWp2g,25977
+configzen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configzen/route.py,sha256=5-ANElN1MgeQVUeY906wYmMs1D7j4KAa_CP6MCTEPTg,4599
+configzen/typedefs.py,sha256=fVTfpQMDumoSi_A7bmoiRdAC59eVVv0u3SXk-NPABsk,1124
+configzen-0.3.6.dist-info/LICENSE,sha256=p38ciq2yKPQRC2G7xWuKtl8Fdas2F2sTBlxpvLyOWxg,1083
+configzen-0.3.6.dist-info/METADATA,sha256=AGJl8CY5tj8jYpkeO1GqxgdkT3aeE0jkxj1AWKb6PbA,8001
+configzen-0.3.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+configzen-0.3.6.dist-info/RECORD,,
