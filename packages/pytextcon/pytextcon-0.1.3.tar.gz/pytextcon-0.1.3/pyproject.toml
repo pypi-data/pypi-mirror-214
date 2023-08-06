@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytextcon"
+version = "0.1.3"
+authors = [
+  { name="Michael", email="michael.lokrosh@gmail.com" },
+]
+description = "Simple package to change the text color, text emphasis, and background color of print statements to the console."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["print", "color", "console", "text", "formatting", "emphasis", "underline", "bright"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"GitHub" = "https://github.com/Lokrosh/pytextcon"
