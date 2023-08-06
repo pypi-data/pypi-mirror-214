@@ -1,0 +1,2 @@
+[console_scripts]
+audiobook-tags = audiobook_tags.main:main
