@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+holamundoplayer/__init__.py
+holamundoplayer/lala.py
+holamundoplayer/player.py
+holamundoplayer_fabeliz.egg-info/PKG-INFO
+holamundoplayer_fabeliz.egg-info/SOURCES.txt
+holamundoplayer_fabeliz.egg-info/dependency_links.txt
+holamundoplayer_fabeliz.egg-info/top_level.txt
