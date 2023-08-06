@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: grad-june
+Version: 0.1.4
+Summary: Differentiable implementation of the JUNE model.
+Home-page: https://github.com/arnauqb/GradABM-JUNE
+Author: Arnau Quera-Bofarull
+Author-email: arnauq@protonmail.com
+License: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Docs](https://github.com/arnauqb/GradABM-JUNE/actions/workflows/docs.yml/badge.svg)](https://github.com/arnauqb/GradABM-JUNE/actions/workflows/docs.yml)
+[![codecov](https://codecov.io/github/LargeAgentCollider/torch_june/branch/main/graph/badge.svg?token=ddIEG0Eest)](https://codecov.io/github/LargeAgentCollider/torch_june)
+[![Build and test package](https://github.com/arnauqb/GradABM-JUNE/actions/workflows/ci.yml/badge.svg)](https://github.com/arnauqb/GradABM-JUNE/actions/workflows/ci.yml)
+
+# GradABM-JUNE
+Implementation of the JUNE model using the GradABM framework.
+
+# Setup 
+
+The easiest way is to install the package from the PyPI package repository
+
+```
+pip install 
+
+
+# Usage
+
+See the [docs](https://arnauqb.github.io/GradABM-JUNE/).
