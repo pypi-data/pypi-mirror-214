@@ -1,0 +1,8 @@
+turborest/__init__.py,sha256=_5xoxBvqik7-PeMx5hwvFygQoUHpV34lQIJj__e4LaA,26
+turborest/client.py,sha256=NPZ0v8zgEqLNFtGOtBqc4i5DNx2jg7IXdJj0Jzf8TRI,6042
+turborest/cmd/__init__.py,sha256=MzyfoKp2ZKaUzvlXI9p_fWSG7umWQgPOFlitMpPPnZg,26
+turborest/cmd/ping.py,sha256=Xm_1uLf8GtHJw8sYeT5gVtxoUxgE8kKbHR0gGiGuAHg,938
+turborest-0.1.4.dist-info/METADATA,sha256=pJGq6cjQcBszHT-eK2lrC81Jh8P8b9_LuMX8Q_BS-xE,1792
+turborest-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+turborest-0.1.4.dist-info/top_level.txt,sha256=E3tXV3YpriegPeLqtu6Wbc-XEPftHKcBapnwWAW_HS0,10
+turborest-0.1.4.dist-info/RECORD,,
