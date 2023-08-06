@@ -1,0 +1,10 @@
+
+[appdirs]
+appdirs
+
+[tests]
+appdirs
+pytest
+pytest-cov
+pytest-mock
+pytest-pycodestyle
