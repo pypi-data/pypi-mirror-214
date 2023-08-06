@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fusionsolar/__init__.py
+fusionsolar/client.py
+testkerrsidnetfusion.egg-info/PKG-INFO
+testkerrsidnetfusion.egg-info/SOURCES.txt
+testkerrsidnetfusion.egg-info/dependency_links.txt
+testkerrsidnetfusion.egg-info/requires.txt
+testkerrsidnetfusion.egg-info/top_level.txt
