@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: lanelet2anchors
+Version: 0.1.0
+Summary: Easy anchor generation for autonomous driving based on Lanelet2 maps
+Project-URL: Homepage, https://github.com/FelixHertlein/lanelet2anchors
+Project-URL: Bug Tracker, https://github.com/FelixHertlein/lanelet2anchors/issues
+Author-email: Alexander Naumann <alex.code@mail.com>, Felix Hertlein <hertlein.research@gmail.com>
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: fastdtw<1,>=0.3.4
+Requires-Dist: lanelet2<2,>=1.2.1
+Requires-Dist: networkx<3,>=2.8.8
+Requires-Dist: scipy<2,>=1.10.1
+Requires-Dist: shapely<2,>=1.8.5
+Provides-Extra: dev
+Requires-Dist: black[jupyter]<24,>=23.3.0; extra == 'dev'
+Requires-Dist: ipykernel<7,>=6.23.2; extra == 'dev'
+Requires-Dist: isort<6,>=5.12.0; extra == 'dev'
+Requires-Dist: mypy<2,>=1.3.0; extra == 'dev'
+Requires-Dist: nuscenes-devkit<2,>=1.1.10; extra == 'dev'
+Requires-Dist: pre-commit<4,>=3.3.3; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: jupyter-contrib-nbextensions; extra == 'docs'
+Requires-Dist: mkdocs; extra == 'docs'
+Requires-Dist: mkdocs-bibtex; extra == 'docs'
+Requires-Dist: mkdocs-jupyter; extra == 'docs'
+Requires-Dist: mkdocstrings[python]; extra == 'docs'
+Description-Content-Type: text/markdown
+
+
+# lanelet2anchors
+
+This package enables the generation of diverse map-based anchor paths for a given lanelet or vehicle pose. It was developed as part of our paper <a href='https://openaccess.thecvf.com/content/CVPR2023W/E2EAD/html/Naumann_Lanelet2_for_nuScenes_Enabling_Spatial_Semantic_Relationships_and_Diverse_Map-Based_CVPRW_2023_paper.html'>Lanelet2 for nuScenes: Enabling Spatial Semantic Relationships and Diverse Map-based Anchor Paths</a>. For details check our <a href='https://felixhertlein.github.io/lanelet4nuscenes'>project page</a>.
+
+
+## Installation
+
+Use Python >= 3.8 and `pip` to install
+
+```shell
+pip install lanelet2anchors
+```
+
+## Usage
+
+Check the [notebooks](docs/notebooks/example.ipynb) in the [documentation](/) for details and examples.
+
+### Generate anchors for given vehicle
+```python
+from lanelet2anchors import AnchorGenerator
+
+lanelet_map = AnchorGenerator(
+    osm_file=osm_file, origin_latitude=49.00345654351, origin_longitude=8.42427590707
+)
+
+anchors = lanelet_map.create_anchors_for_vehicle(
+    vehicle_pose=X,
+    anchor_length=100,
+    num_anchors: 5,
+)
+```
+
+### Generate anchors for a given Lanelet
+```python
+from lanelet2anchors import AnchorGenerator
+
+lanelet_map = AnchorGenerator(
+    osm_file=osm_file, origin_latitude=49.00345654351, origin_longitude=8.42427590707
+)
+
+anchors = lanelet_map.create_anchors_for_lanelet(
+    lanelet_id=lanelet_map.lanelet_ids[0], anchor_length=100
+)
+```
+
+## Citation
+
+If you use this code for scientific research, please consider citing
+
+
+```bibtex
+@InProceedings{naumannHertleinLanelet2NuScenes,
+    author    = {Naumann, Alexander and Hertlein, Felix and Grimm, Daniel and Zipfl, Maximilian and Thoma, Steffen and Rettinger, Achim and Halilaj, Lavdim and Luettin, Juergen and Schmid, Stefan and Caesar, Holger},
+    title     = {Lanelet2 for nuScenes: Enabling Spatial Semantic Relationships and Diverse Map-Based Anchor Paths},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2023},
+    pages     = {3247-3256}
+}
+```
+
+
+## License
+
+This project is licensed under [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). Development by [FZI Forschungszentrum Informatik](https://www.fzi.de/) and all rights reserved by [Robert Bosch GmbH](https://www.bosch.com/).
