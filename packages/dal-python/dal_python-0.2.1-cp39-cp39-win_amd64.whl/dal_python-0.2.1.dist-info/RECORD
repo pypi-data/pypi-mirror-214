@@ -1,0 +1,9 @@
+dal/__init__.py,sha256=RU8fkdPGwfD68QgI24GkcMu9SmCwsJWho6VfXGCSYpg,160
+dal/_dal.cp39-win_amd64.pyd,sha256=Vk8ERd8mOeS4NLqXRQAt63WIByzKLv0OqmBI7jytcOw,4823552
+dal/api.py,sha256=fNlmbOmtx7fHDrINpdOU52RauHvfjUMXz6xnZn0mGpc,367
+dal/dal.py,sha256=gzWOuLhm_9o3p49JxrOh5lvrRpVUEoeupzM1qRGYqRo,64341
+dal/dal_wrap.cpp,sha256=P1Ob3jmLZj8M5xzc-pmIlq9gI79jgjpjatznqrxxiIQ,745922
+dal_python-0.2.1.dist-info/METADATA,sha256=XPJbj2TJ3JGfRSrGHCKWHv7o-5enBmG9NwkhcHRVMGU,821
+dal_python-0.2.1.dist-info/WHEEL,sha256=J_4V_gB-O6Y7Pn6lk91K27JaIhI-q07YM5J8Ufzqla4,100
+dal_python-0.2.1.dist-info/top_level.txt,sha256=0NCtz794zxjwhJcMbphMLr-IHz_8WAyZFNMqTPXtulw,4
+dal_python-0.2.1.dist-info/RECORD,,
