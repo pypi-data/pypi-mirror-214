@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+flake8_pydantic_fields.py
+requirements.txt
+setup.py
+flake8_pydantic_fields.egg-info/PKG-INFO
+flake8_pydantic_fields.egg-info/SOURCES.txt
+flake8_pydantic_fields.egg-info/dependency_links.txt
+flake8_pydantic_fields.egg-info/entry_points.txt
+flake8_pydantic_fields.egg-info/requires.txt
+flake8_pydantic_fields.egg-info/top_level.txt
