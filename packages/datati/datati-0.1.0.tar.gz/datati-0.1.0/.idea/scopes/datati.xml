@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="datati" pattern="!ext:*/&amp;&amp;!file[datati]:.idea//*&amp;&amp;!file[datati]:dist//*&amp;&amp;!file:LICENSE&amp;&amp;!file:pyproject.toml&amp;&amp;!file:README.md&amp;&amp;!file[datati]:src/.idea//*&amp;&amp;!file:src/datati/.gitignore&amp;&amp;!file:src/datati/LICENSE&amp;&amp;!file:src/datati/requirements.txt&amp;&amp;!file:src/datati/README.md&amp;&amp;!file[datati]:src/datati/.idea//*&amp;&amp;!file:src/datati/models/README.md" />
+</component>

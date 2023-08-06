@@ -1,0 +1,83 @@
+[build-system]
+requires = [
+    "hatchling"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "datati"
+version = "0.1.0"
+authors = [
+  { name="Mattia Setzu", email="mattia.setzu@unipi.it" },
+]
+description = "Download and preprocess your dataset from any source, all in one place."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers"
+]
+dependencies = [
+    "aiohttp == 3.8.4",
+    "aiosignal == 1.3.1",
+    "async-timeout == 4.0.2",
+    "attrs == 23.1.0",
+    "bleach == 6.0.0",
+    "build == 0.10.0",
+    "certifi == 2022.12.7",
+    "cffi == 1.15.1",
+    "charset-normalizer == 3.1.0",
+    "cryptography",
+    "datasets == 2.11.0",
+    "dill == 0.3.6",
+    "docutils == 0.19",
+    "filelock == 3.11.0",
+    "frozenlist == 1.3.3",
+    "fsspec == 2023.4.0",
+    "huggingface-hub == 0.13.4",
+    "idna == 3.4",
+    "importlib-metadata == 6.4.1",
+    "jaraco.classes == 3.2.3",
+    "jeepney == 0.8.0",
+    "keyring == 23.13.1",
+    "markdown-it-py == 2.2.0",
+    "mdurl == 0.1.2",
+    "more-itertools == 9.1.0",
+    "multidict == 6.0.4",
+    "multiprocess == 0.70.14",
+    "numpy == 1.24.2",
+    "packaging == 23.1",
+    "pandas == 2.0.0",
+    "pkginfo == 1.9.6",
+    "pyarrow == 11.0.0",
+    "pycparser == 2.21",
+    "Pygments == 2.15.0",
+    "pyproject_hooks == 1.0.0",
+    "python-dateutil == 2.8.2",
+    "pytz == 2023.3",
+    "PyYAML == 6.0",
+    "readme-renderer == 37.3",
+    "requests == 2.28.2",
+    "requests-toolbelt == 0.10.1",
+    "responses == 0.18.0",
+    "rfc3986 == 2.0.0",
+    "rich == 13.3.4",
+    "SecretStorage == 3.3.3",
+    "six == 1.16.0",
+    "tomli == 2.0.1",
+    "twine == 4.0.2",
+    "typing_extensions == 4.5.0",
+    "tzdata == 2023.3",
+    "urllib3 == 1.26.15",
+    "webencodings == 0.5.1",
+    "xxhash == 3.2.0",
+    "yarl == 1.8.2",
+    "zipp == 3.15.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/msetzu/datati"
+"Bug Tracker" = "https://github.com/msetzu/datati/issues"
