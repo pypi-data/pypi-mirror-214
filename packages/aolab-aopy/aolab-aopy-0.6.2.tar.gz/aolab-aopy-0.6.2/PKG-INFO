@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aolab-aopy
+Version: 0.6.2
+Summary: python code repository for aoLab @UW
+Home-page: https://github.com/aolabNeuro/analyze
+Author: aoLab
+Author-email: aorsborn@uw.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# analyze
+For installing and using the code, see the documentation [on readthedocs](https://analyze.readthedocs.io/en/latest/)
+
+For contributing, see the [github](https://github.com/aolabNeuro/analyze/)
