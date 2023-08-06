@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: piplet
+Version: 0.2.0
+Summary: for doing what pip can't yet do
+Project-URL: Documentation, https://github.com/berkay-yalin/omnicron#readme
+Project-URL: Issues, https://github.com/berkay-yalin/omnicron/issues
+Project-URL: Source, https://github.com/berkay-yalin/omnicron
+Author-email: berkay-yalin <66202981+berkay-yalin@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.9
+Requires-Dist: colorama
+Description-Content-Type: text/markdown
+
+# piplet
+
+[![PyPI - Version](https://img.shields.io/pypi/v/piplet.svg)](https://pypi.org/project/piplet)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/piplet.svg)](https://pypi.org/project/piplet)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install piplet
+```
+
+## License
+
+`piplet` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
