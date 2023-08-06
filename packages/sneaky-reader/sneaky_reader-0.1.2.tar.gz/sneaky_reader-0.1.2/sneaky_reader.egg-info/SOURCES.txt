@@ -1,0 +1,14 @@
+MANIFEST.in
+readme.md
+setup.py
+sneaky_reader/__init__.py
+sneaky_reader/__main__.py
+sneaky_reader/code_browser.css
+sneaky_reader/main.py
+sneaky_reader/reader.py
+sneaky_reader.egg-info/PKG-INFO
+sneaky_reader.egg-info/SOURCES.txt
+sneaky_reader.egg-info/dependency_links.txt
+sneaky_reader.egg-info/entry_points.txt
+sneaky_reader.egg-info/requires.txt
+sneaky_reader.egg-info/top_level.txt
