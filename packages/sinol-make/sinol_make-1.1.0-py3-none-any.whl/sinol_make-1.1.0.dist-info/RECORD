@@ -1,0 +1,16 @@
+sinol_make/__init__.py,sha256=jfPNq3hluKHFVa-F7t7llu1MsVTzVq2FhMEfne4UxMY,1465
+sinol_make/util.py,sha256=btinpN_XVQry0--VBufXL1tDGGq_q7pyccqy-8fwnWg,4713
+sinol_make/commands/run/__init__.py,sha256=uPZW59Ny4x4D0eHAaNM-_sfFJ22P2oXYxjmzkd2_1Ek,29611
+sinol_make/commands/run/structs.py,sha256=SIxLJi4Eh3hXUgAW6b8lw11FB41xGtxdrw814t71W0k,929
+sinol_make/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinol_make/helpers/compile.py,sha256=0ogUsegfmgAKZ-_-Fdc1DaGGa56D9n49FW5pHhH9lrA,1783
+sinol_make/helpers/compiler.py,sha256=eGGp77Kw_EaXRT8KEKPiZ7XPckzGF-moglU_AAzjwfE,1342
+sinol_make/interfaces/BaseCommand.py,sha256=6SB7qbA7K3i4CCDovPbjph2tLpSzyFwNXV8vBY8ZfDg,272
+sinol_make/interfaces/Errors.py,sha256=mzDCsxc67pmYAcQnh3Kr3D0yxe82SzNce_GHiHto5NU,133
+sinol_make/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinol_make-1.1.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+sinol_make-1.1.0.dist-info/METADATA,sha256=LBEhWICjoP9jtxEfBm6Yf7PkAi-8TuaoyIvuOOE_8CE,3404
+sinol_make-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sinol_make-1.1.0.dist-info/entry_points.txt,sha256=Y4rmBoix0oxkLoxwsxFVXVkKnTSwfGR-9P6iMGvU7Ak,47
+sinol_make-1.1.0.dist-info/top_level.txt,sha256=MqFtIrjNjmAFn37GVvEIFyDfgyclS8sh66rlzFXt81U,11
+sinol_make-1.1.0.dist-info/RECORD,,
