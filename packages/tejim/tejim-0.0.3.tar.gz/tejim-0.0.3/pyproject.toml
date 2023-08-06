@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tejim"
+version = "0.0.3"
+authors = [
+  { name="Ivan \"Spaceginner\"", email="ivan.demian2009@gmail.com" },
+]
+description = "the next YAML killer!!111!!!!111!"
+readme = "readme.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Spaceginner/tejim"
+"Bug Tracker" = "https://github.com/Spaceginner/tejim/issues"

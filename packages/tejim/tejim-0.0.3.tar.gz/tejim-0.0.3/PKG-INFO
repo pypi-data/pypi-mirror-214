@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tejim
+Version: 0.0.3
+Summary: the next YAML killer!!111!!!!111!
+Author-email: "Ivan \"Spaceginner\"" <ivan.demian2009@gmail.com>
+Project-URL: Homepage, https://github.com/Spaceginner/tejim
+Project-URL: Bug Tracker, https://github.com/Spaceginner/tejim/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# tejim
+
+## about
+
+a configuration file standart the goal of which is to be simpistic, yet still robust enough.
+
+its specification you can find [here](https://github.com/Spaceginner/tejim/wiki/Specification)
+
+## features
+
+- dictionary
+- different value types
+  - boolean
+  - integer
+  - floating-point
+  - string
+
+## why?
+
+why not™ duh
