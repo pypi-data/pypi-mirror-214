@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dsspkg
+Version: 0.1
+Summary: A data splitting and scaling package
+Author: DW
+Author-email: wwwsbx@live.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+

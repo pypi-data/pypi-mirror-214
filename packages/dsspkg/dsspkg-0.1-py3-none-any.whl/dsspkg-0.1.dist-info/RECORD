@@ -1,0 +1,9 @@
+dsspkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsspkg/data_scaling_split.py,sha256=Lz6s8jdOSmmapk7F0tj6cu-CpypHRduENPJuuf6DK3c,21070
+dsspkg/dss.py,sha256=VPQAo60PAnix9_V4X5agySnVPMFLUPrb3BgLkHevNZM,509
+dsspkg/dss_p.py,sha256=c4wWU4NNBU1jNIUusywRi9ahKgySkLr2OndGZk9YEW0,16665
+dsspkg-0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+dsspkg-0.1.dist-info/METADATA,sha256=CiCwKk2L-2_PQyp6SB-1kMc2yYI0sqc7zvG6hYizvj8,222
+dsspkg-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dsspkg-0.1.dist-info/top_level.txt,sha256=0iB-tl_XzQlLCBsNXGOKRIoOG6WlXh9JViqNGj-uZWo,7
+dsspkg-0.1.dist-info/RECORD,,
