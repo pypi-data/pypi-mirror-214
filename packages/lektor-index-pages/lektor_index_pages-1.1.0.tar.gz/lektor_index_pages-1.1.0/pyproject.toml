@@ -1,0 +1,125 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "lektor-index-pages"
+description = "Lektor plugin to generate blog-like index pages"
+keywords = [
+    "Lektor plugin",
+    "blog index",
+]
+dynamic = []
+authors = [
+    { name = "Jeff Dairiki", email = "dairiki@dairiki.org" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Plugins",
+    "Environment :: Web Environment",
+    "Framework :: Lektor",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Text Processing :: Indexing",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "importlib_metadata; python_version<'3.10'",
+    "more-itertools",
+    "lektorlib>=1.2.1",
+    "jinja2~=3.0",
+    "typing_extensions; python_version<'3.8'",
+]
+version = "1.1.0"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/dairiki/lektor-index-pages"
+Documentation = "https://lektor-index-pages.readthedocs.io/en/latest/"
+
+[project.entry-points."lektor.plugins"]
+index-pages = "lektor_index_pages:IndexPagesPlugin"
+
+[project.readme]
+text = "# Lektor Index Pages Plugin\n\n[![PyPI version](https://img.shields.io/pypi/v/lektor-index-pages.svg)](https://pypi.org/project/lektor-index-pages/)\n[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/lektor-index-pages.svg)](https://pypi.python.org/pypi/lektor-index-pages/)\n[![GitHub license](https://img.shields.io/github/license/dairiki/lektor-index-pages)](https://github.com/dairiki/lektor-index-pages/blob/master/LICENSE)\n[![Documentation Status](https://readthedocs.org/projects/lektor-index-pages/badge/?version=latest)](https://lektor-index-pages.readthedocs.io/en/latest/?badge=latest)\n[![GitHub Actions (Tests)](https://github.com/dairiki/lektor-index-pages/workflows/Tests/badge.svg)](https://github.com/dairiki/lektor-index-pages)\n[![Trackgit Views](https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/lhauro0t5wzkw1d0k5lh)](https://trackgit.com)\n\nThis [Lektor][] plugin can be used to generate “index pages” for a\nblog or similar collection of pages.  These index pages list the blog posts\nsegregated by some key, with each index page containing only those posts\nwhich match that key.\n\nExamples of what this can be used for include:\n\n- *Category Indexes*: A set of index pages, one for each category,\n  which lists all the posts in that category.  (Multi-valued index keys\n  are also supported, so that each post can appear on more than a single\n  index page: e.g. *keyword indexes*.)\n\n- *Date Indexes*: A set of index pages, one for each year (say), which\n  list all the posts in that year.  (Sub-indexes are supported\n  subindexes — e.g., each year index may have as children a sequence\n  of month indexes.)\n\nBehind the scenes, judicious caching of indexing results, and careful\ncontrol of Lektor’s dependency tracking prevent all this from slowing\nthe build process down too excruciatingly much.\n\n[lektor]: <https://www.getlektor.com/> \"Lektor Static Content Management System\"\n\n## Project Links\n\n* [Documentation](https://lektor-index-pages.rtfd.io/en/latest/)\n* [Github](https://github.com/dairiki/lektor-index-pages/)\n* [PyPI](https://pypi.org/project/lektor-index-pages/)\n\n## Author\n\nJeff Dairiki <dairiki@dairiki.org>\n\n## Changelog\n\n### Release 1.1.0 (2023-06-16)\n\n- Drop support for Lektor 3.2.x\n- Test under python 3.11\n- Add type annotations\n- Convert packaging from setuptools to [PDM]\n- Disuse `pkg_resources` in favor of `importlib.metadata`\n- Add [pre-commit] configuration\n- Run [black] and [reorder-python-imports] on code\n\n[PDM]: https://pdm.fming.dev/latest/\n[pre-commit]: https://pre-commit.com/\n[black]: https://black.readthedocs.io/en/stable/index.html\n[reorder-python-imports]: https://github.com/asottile/reorder-python-imports\n\n### Release 1.0 (2022-01-28)\n\n- Drop support for python 2.7 and 3.6.\n- Fix deprecation warning from `jinja2`. Jinja2 version 3 is now required.\n\n#### Documentation\n\n- Documentation clarifications, updates and fixes.\n    (PR [#2][] — Thank you Bart Van Loon!)\n\n- Add missing requirement `recommonmark` to `docs/requirements.txt`.\n\n- Add `docs` enviroment to `tox.ini` to test that docs will build cleanly.\n\n[#2]: <https://github.com/dairiki/lektor-index-pages/pull/2>\n\n#### Testing\n\n- Test under python 3.10 and lektor<3.3\n\n### Release 0.1 (2021-02-05)\n\nNo code changes.\n\nUpdate development status classifier to \"stable\".\n\n### Release 0.1a3 (2020-05-08)\n\n#### API changes\n\n- Added a `key` field on the index virtual source object.  It is an\n  alias to `_id`, but is syntactically more self-explanatory.\n\n- The `keys` configuration key has been renamed to `key`.\n\n- When the `key` expression is being evaluted, the record whose key(s)\n  is(are) to be be computed is now available in the jinja context as\n  `item` rather than `this`.\n\n#### Documentation\n\n- Documentation moved from README to Sphinx docs at RTFD.io\n\n### Release 0.1a2 (2020-05-06)\n\n#### API changes\n\n- The `record` argument has been dropped from the (jinja) global\n  `index_pages` function.  (Since indexes can not have multiple\n  parents, it is not necessary.)\n\n- The `parent` configuration key has been renamed to `parent_path`.\n\n- The `slug` configuration key has been renamed to `slug_format`.\n\n- The `attributes` config section has been renamed to `fields`.\n\n  Though they are not quite like regular Lektor Record fields, they\n  are more field-like than attribute-like.  (I.e. access is via\n  *__getitem__* rather than *getattr*.)\n\n### Release 0.1a1 (2020-05-05)\n\nInitial release.\n"
+content-type = "text/markdown"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+excludes = [
+    "**/*~",
+    ".*",
+]
+source-includes = [
+    "CHANGES.md",
+    "README.md",
+    "tox.ini",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "flake8>=5.0.4",
+    "flake8-bugbear>=23.3.12",
+    "mypy~=1.3.0",
+    "types-inifile",
+    "lektor",
+]
+test = [
+    "pytest>=7.3.1",
+    "pytest-mock>=3.10.0",
+    "pytest-cov",
+]
+
+[tool.pdm.scripts]
+tests = "pytest --cov=lektor_index_pages --cov-fail-under=100 tests"
+
+[tool.coverage.paths]
+paths = [
+    "lektor_index_pages",
+    ".tox/*/site-packages/lektor_index_pages",
+]
+
+[tool.coverage.run]
+parallel = true
+source_pkgs = [
+    "lektor_index_pages",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "^\\s*\\.\\.\\.\\s*$",
+    "^\\s*raise\\s+NotImplementedError\\(\\)\\s*$",
+    "^if TYPE_CHECKING:\\s*",
+]
+
+[tool.mypy]
+packages = [
+    "lektor_index_pages",
+]
+strict = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = [
+    "lektor.*",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    "tests.*",
+]
+disallow_untyped_defs = false
