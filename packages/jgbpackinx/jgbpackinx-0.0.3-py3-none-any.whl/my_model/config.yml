@@ -1,0 +1,51 @@
+# Package Overview
+package_name: calidad_pipe
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict
+target: quality
+
+pipeline_name: calidad_pipe
+pipeline_save_file: calidad_pipe_m
+
+
+
+numericols:
+  - alcohol
+  - fixed acidity
+  - volatile acidity
+  - citric acid
+  - residual sugar
+  - chlorides
+  - free sulfur dioxide
+  - total sulfur dioxide
+  - density
+  - pH
+  - sulphates
+
+
+features:
+  - alcohol
+  - fixed acidity
+  - volatile acidity
+  - citric acid
+  - residual sugar
+  - chlorides
+  - free sulfur dioxide
+  - total sulfur dioxide
+  - density
+  - pH
+  - sulphates
+
+
+
+# set train/test split
+test_size: 0.3
+
+# to set the random seed
+random_state: 0
+
