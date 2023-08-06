@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: af-adapter
+Version: 0.1.0
+Summary: AF-Adapter (Attention-FFN Adapter): Enhanced Continual Pretraining
+Home-page: https://github.com/yanyongyu/AF-Adapter
+License: MIT
+Keywords: adapter,transformers
+Author: yanyongyu
+Author-email: yyy@yyydl.top
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: nlppets (>=0.1.0,<0.2.0)
+Requires-Dist: torch (>=1.13.1,<3.0.0)
+Requires-Dist: transformers (>=4.30.2,<5.0.0)
+Project-URL: Documentation, https://github.com/yanyongyu/AF-Adapter
+Project-URL: Repository, https://github.com/yanyongyu/AF-Adapter
+Description-Content-Type: text/markdown
+
+# AF-Adapter (Attention-FFN Adapter): Enhanced Continual Pretraining
+
+## Introduction
+
+This repository contains the code for the paper [AF-Adapter: Enhanced Continual Pretraining for Building Chinese Biomedical Language Model](#).
+
+## Installation
+
+```bash
+pip install af-adapter
+```
+
+## Usage
+
+~~TODO~~
+
+See [scipts](./scripts/) and [examples](./examples/) directory for more details.
+
