@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+ak_ipatool_py.egg-info/PKG-INFO
+ak_ipatool_py.egg-info/SOURCES.txt
+ak_ipatool_py.egg-info/dependency_links.txt
+ak_ipatool_py.egg-info/entry_points.txt
+ak_ipatool_py.egg-info/requires.txt
+ak_ipatool_py.egg-info/top_level.txt
+reqs/__init__.py
+reqs/itunes.py
+reqs/store.py
