@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: english-pidgin-dictionary
+Version: 0.0.4
+Summary: English-Pidgin Dictionary Package
+Home-page: https://github.com/Zeecoworld/pidgin-english-dictionary
+Author: Isaac Yakubu
+Author-email: engrisaac1234@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+simple dictionary
