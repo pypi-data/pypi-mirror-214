@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: alanapy
+Version: 0.3
+Home-page: https://github.com/orkahub/alanapy
+Author: Orkahub Energy
+Author-email: orkahub@gmail.com
+License: MIT
+Keywords: RESERVOIR,ENERGY,OIL,GAS,PRODUCTION,PYTHON,ALANA
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Script for Alana API connection and functions https://alana.tech/open/accounts/login
