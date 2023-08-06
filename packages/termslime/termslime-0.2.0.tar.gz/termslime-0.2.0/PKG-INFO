@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: termslime
+Version: 0.2.0
+Summary: Termslime displays images in your terminal with true colors.
+Home-page: https://github.com/garyzbm/termslime
+License: MIT
+Keywords: cli,image,terminal
+Author: Gary Zhang
+Author-email: garyzhang2002@hotmail.com
+Maintainer: Gary Zhang
+Maintainer-email: garyzhang2002@hotmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: colorful (>=0.5.5,<0.6.0)
+Requires-Dist: pillow (>=9.2.0,<10.0.0)
+Project-URL: Documentation, https://github.com/garyzbm/termslime
+Project-URL: Repository, https://github.com/garyzbm/termslime
+Description-Content-Type: text/markdown
+
+
