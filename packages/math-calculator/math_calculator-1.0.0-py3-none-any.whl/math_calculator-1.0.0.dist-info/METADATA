@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: math-calculator
+Version: 1.0.0
+Summary: A simple math calculator package
+Home-page: https://gitlab.com/hassen_mnejja/math_calculator
+Author: Your Name
+Author-email: hassenmnejja1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Requires-Dist: emoji
+
+A package that provides basic math calculations
+
