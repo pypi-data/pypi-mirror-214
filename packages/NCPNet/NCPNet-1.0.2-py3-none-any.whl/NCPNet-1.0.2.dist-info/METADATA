@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: NCPNet
+Version: 1.0.2
+Summary: Learning synapse-level brain circuit networks. Include training, inferring, evaluation, and visualization.
+Home-page: https://github.com/mxz12119/NCPNet
+Author: Guojia Wan
+Author-email: guojiawan@whu.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch-geometric (==2.0.1)
+Requires-Dist: torch-cluster (==1.5.9)
+Requires-Dist: torch-sparse (==0.6.12)
+Requires-Dist: torch-scatter (==2.0.8)
+Requires-Dist: navis (==1.3.1)
+Requires-Dist: neuprint-python (==0.4.25)
+Requires-Dist: networkx
+Requires-Dist: tqdm
+Requires-Dist: tensorboardx
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+# NCPNet
+![PyPI](https://img.shields.io/pypi/v/NCPNet)![Packagist License](https://img.shields.io/packagist/l/mxz12119/NCPNet)
+
+
+## 1. Brief Introduction
+Neuronal Circuit Prediction Network (NCPNet), a simple and effective model for inferring neuron-level connections in a brain circuit network.
+## 2. Environment and Dependencies
+### Our main dependencies:
+```
+torch==1.8.0
+torch_geometric==2.0.1
+torch-cluster==1.5.9
+torch-sparse==0.6.12
+torch-scatter==2.0.8
+navis==1.3.1
+neuprint-python==0.4.25
+```
+If you would like to reproduce our experiments and plots, please also install jupyter.
+```
+pip install jupyter
+```
+
+### Code structure:
+```
+Source Code
+├── data
+|   ├──Hemibrain
+|   └──C.Elegans
+├── example
+├── runs
+├── configs
+├── NCPNet
+|   ├── approaches
+|   ├── brain_data.py
+|   ├── task.py
+|   ├── trainer.py
+|   └── utils.py
+└── requirements.txt
+```
+## Examples
+NCPNet uses configuration files (yaml) to control training and test.
+
+Run 
+```
+python src/main_run.py -c src/configs/fly_linkpred.yaml
+```
+## Reproducibility of Our Paper
+Please try to use jupyter to reproduce our experiments in ./Plot_figure/
+
+## Access Data
+### Raw Data
+The *Drosophila* connectome is available at <https://www.janelia.org/project-team/flyem/hemibrain>.
+
+
+The *C.elegans* connectome is available at <https://wormwiring.org/>
+### Preprocessed Data
+The data will be released after the review process.
+<!-- The *Drosophila* connectome can be downloaded at <https://drive.google.com/file/d/1FQVZkzAgaDXSO9Dl7ken6oAohIlzKqWD/view?usp=sharing>
+
+The *C.elegans* connectome is included in './data/'. -->
+
+
+
+
+
+
