@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+lxml_to_dict/__init__.py
+lxml_to_dict/lxml_to_dict.py
+lxml_to_dict_total.egg-info/PKG-INFO
+lxml_to_dict_total.egg-info/SOURCES.txt
+lxml_to_dict_total.egg-info/dependency_links.txt
+lxml_to_dict_total.egg-info/requires.txt
+lxml_to_dict_total.egg-info/top_level.txt
+test/test_xlm.py
