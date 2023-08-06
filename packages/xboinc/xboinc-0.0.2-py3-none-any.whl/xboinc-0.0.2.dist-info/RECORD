@@ -1,0 +1,14 @@
+LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+NOTICE,sha256=6DO_E7WCdRKc42vUoVVBPGttvQi4mRt9fAcxj9u8zy8,74
+xboinc/__init__.py,sha256=LQQLMyBQmtRfOx9cO9QdMgf2JIL4CGxjnaOGgQPG6uw,308
+xboinc/default_tracker.py,sha256=s5ERtwBh85gRMVj2gd5dlYDCPcfChOZMBu_a7vZY8N8,2112
+xboinc/eos.py,sha256=BKlRFORMsbvhehJ5DsSEZSz4Z35ZN_l5Kdj7vYizd_w,2648
+xboinc/executable_src/main.c,sha256=HF6sEqtZ-L9jB_zG8m5FbToJjyd__c3d65W2GOrlZr8,3777
+xboinc/general.py,sha256=dixdFx55sQIsC9mzdC8igqcIMaIR8ED9iKnr2k-hFOw,71
+xboinc/generate_executable_source.py,sha256=vBX--ZT8MQMRk3gjpntaXr_66N6oESmVsvQHXsIX2kw,2397
+xboinc/sim_data.py,sha256=kbMiUMFZ00sAKPxWvk5JEdZ2vThb8fKLwkb5WqU_rXw,2252
+xboinc/submit.py,sha256=uqvNkliqi9pN0gOLmJJ3ulm8cXf8eTSLZ3KZD7D26jM,2203
+xboinc-0.0.2.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+xboinc-0.0.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+xboinc-0.0.2.dist-info/METADATA,sha256=8zho3gDezhh_PZBLLOqW1rct3ruyCqpqllRYqMapUJU,7833
+xboinc-0.0.2.dist-info/RECORD,,
