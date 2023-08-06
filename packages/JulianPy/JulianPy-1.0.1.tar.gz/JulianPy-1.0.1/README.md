@@ -1,0 +1,28 @@
+## JulianPy
+
+JulianPy is a rich, diverse, and easy to use python tool for Julian Dates. It offers datetime to Julian Dates, Julian Dates to datetime, and much more!
+
+
+Provided Tools:
+
+- `CJDN(date=datetime.datetime.now())` Returns the CJDN of date
+- `current_julian_date()` Returns the current julian date
+- `tomorrow_julian_date()` Returns the julian date tomorrow
+- `future_julian_date(hoursadd = 0, minutesadd = 0, secondsadd =0)` Returns the julian date of a time given hours, minutes, and seconds to add to the current time.
+- `julian_date(date = datetime.datetime.now())` Returns the julian date of a specified date. Defaults to today's julian date
+- `epoch_days(date=datetime.datetime.now())` Returns the amount of days since the J2000 epoch.
+- `day_percent(date=datetime.datetime.now())` Returns the decimal part of the Julian date of the time specified. Defaults to today.
+- `islamic_date(CJDNtime=None, date=datetime.datetime.now())` Returns the islamic year, month, and day as a tuple given a specified date or a CJDN
+- `babylonian_date(CJDNtime = None,date=datetime.datetime.now())` Returns the babylonian year, month, and day as a tuple given a specified date or a CJDN
+- `from_julian(j)` Returns a datetime.datetime object from a julian date `j` specified.
+
+
+## Help
+Feel free to use the python `help()` method on any of the above functions to get a short simple instruction message on how to use it and what it will return. 
+
+## Sources
+To create this library, I have collected and used information detailed in the wondrous [Astronomy Answers](https://aa.quae.nl/) articles. Any questions can be directed to the author's page in the website.
+
+## Changelog
+- Tuesday, June 20, 2023: Initial Commit
+
