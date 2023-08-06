@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20230618.0
+-------------
+
+* Prepare use of the json\_stats callback plugin (#485)
