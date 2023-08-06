@@ -1,0 +1,9 @@
+numpy
+pandas
+natsort
+opencv-python-headless
+
+[gui]
+qtpy
+PyQt6
+pyqtgraph
