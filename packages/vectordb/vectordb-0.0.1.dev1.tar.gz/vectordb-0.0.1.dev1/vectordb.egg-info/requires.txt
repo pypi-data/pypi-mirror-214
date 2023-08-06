@@ -1,0 +1,6 @@
+click
+jina>=3.17.0
+
+[test]
+pytest
+pytest-asyncio
