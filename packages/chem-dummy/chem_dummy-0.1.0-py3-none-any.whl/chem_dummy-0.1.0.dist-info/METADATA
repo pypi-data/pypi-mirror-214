@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: chem-dummy
+Version: 0.1.0
+Summary: This package contains information about periodic elements and their properties
+Author: Prithivee7
+Author-email: getprithivee@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+This library can be used to learn properties of elements.
+

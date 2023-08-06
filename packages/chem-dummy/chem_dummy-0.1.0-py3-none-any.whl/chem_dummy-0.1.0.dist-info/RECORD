@@ -1,0 +1,6 @@
+chem_dummy/__init__.py,sha256=lhdd2jV2lThUhX3-x8UC3-P1cCp4B-WEHiHysOlR53k,66
+chem_dummy/elements.py,sha256=fJQwQq8s7e7sr2p0qU2g1t1xtSTsSSoSD5qpGebvzbA,2910
+chem_dummy/properties_of_elements.json,sha256=xdr56ZacCAwoFPf9rxleaOGP_DSrhcXOR-Q09wipozQ,64278
+chem_dummy-0.1.0.dist-info/METADATA,sha256=0gGE3ukx840xRNtRY3RkhYoqZ1HoZF8Zp4MfslSAb-E,576
+chem_dummy-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+chem_dummy-0.1.0.dist-info/RECORD,,
