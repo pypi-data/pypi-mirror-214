@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+desktoppython/__init__.py
+desktoppython/analyse.py
+desktoppython.egg-info/PKG-INFO
+desktoppython.egg-info/SOURCES.txt
+desktoppython.egg-info/dependency_links.txt
+desktoppython.egg-info/requires.txt
+desktoppython.egg-info/top_level.txt
