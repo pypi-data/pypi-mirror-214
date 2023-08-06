@@ -1,0 +1,67 @@
+
+theme:
+    status_bar:
+
+        background: '#ecebe5'
+
+        text:       '#12111c'
+
+        progress_fg:   '#29e587'
+
+        progress_bg:   '#3b574a'
+
+    panel:
+
+        background: '#f7f5f0'
+
+        text:       '#00264e'
+
+    panel_items:
+
+        normal:
+            background:          '#f0eee9'
+            text: '#12111c'
+
+        focused:
+            background:          '#0857b1'
+            text: '#e5e5da'
+
+        playing:
+            background:          '#bf0e48'
+            text: '#e5e5da'
+
+        focused_playing:
+            background:      '#653ab6'
+            text: '#e5e5da'
+
+        normal_alt:
+            background:          '#e6e4df'
+            text: '#12111c'
+
+        focused_alt:
+            background:          '#2260bc'
+            text: '#e5e5da'
+
+        playing_alt:
+            background:          '#ce2754'
+            text: '#e5e5da'
+
+        focused_playing_alt:
+            background:  '#794bc9'
+            text: '#e5e5da'
+
+    command_prompt:
+
+        normal:
+            background: '#e4e2dd'
+
+            border: '#97928d'
+
+            text:       '#262631'
+
+        focused:
+            background: '#e4e2dd'
+
+            border: '#97928d'
+
+            text:       '#262631'

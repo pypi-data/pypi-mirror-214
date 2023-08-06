@@ -1,0 +1,73 @@
+# This file is part of maestro, a keyboard-driven configurable music player.
+# Copyright (C) 2022  Baptiste Lambert (Blaireau) rabbitstemplate@disroot.org
+# 
+# Maestro is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#:kivy 2.1.0
+
+<BackgroundColor@CProperties>:
+    background_color: 1, 1, 1
+    canvas.before:
+        Color:
+            rgba: (*root.background_color, 1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<BBoxLayout@BackgroundColor+BoxLayout>:
+
+<ColorProgressBar>:
+    fg_color: 1, 1, 1
+    bg_color: 0, 0, 0
+    canvas.before:
+        Color:
+            rgb: self.bg_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+        Color:
+            rgb: self.fg_color
+        Rectangle:
+            size: max(0, self.size[0]*self.value_normalized-2), self.size[1]-2
+            pos: self.pos[0]+1,self.pos[1]+1
+
+<RecycleScroll>:
+    spacing: 0
+    children_height: 100
+    scroll_delay: 0.2
+
+<RecycleScrollGrid>:
+    recycle_layout: recycle_layout
+    cols: 1
+    RecycleGridLayout:
+        id: recycle_layout
+        cols: root.cols
+        spacing: root.spacing
+        default_size_hint: 1, None
+        default_size: None, root.children_height
+        size_hint: 1, None
+        height: self.minimum_height
+
+<RecycleScrollList>:
+    recycle_layout: recycle_layout
+    RecycleBoxLayout:
+        id: recycle_layout
+        orientation: 'vertical'
+        spacing: root.spacing
+        default_size_hint: 1, None
+        default_size: None, root.children_height
+        size_hint: 1, None
+        height: self.minimum_height
+
+<CTextInput@TextInput+CProperties>:

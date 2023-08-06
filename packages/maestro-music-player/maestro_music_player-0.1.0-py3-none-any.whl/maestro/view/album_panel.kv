@@ -1,0 +1,74 @@
+# This file is part of maestro, a keyboard-driven configurable music player.
+# Copyright (C) 2022  Baptiste Lambert (Blaireau) rabbitstemplate@disroot.org
+# 
+# Maestro is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#:kivy 2.1.0
+#:import SONG_ITEM_HEIGHT maestro.view.constants.SONG_ITEM_HEIGHT
+
+<SongItem@PanelItem>:
+    # data properties
+    name: ''
+    selection: ''
+    index: ''
+    # style
+    tags: tags
+    orientation: 'horizontal'
+    PanelItemLabel:
+        text: root.index
+        bold: root.selected
+        size_hint_x: None
+        width: 45
+        focused: root.focused
+        alt: root.alt
+    PanelItemLabel:
+        text: root.name
+        bold: root.selected
+        size_hint_x: 0.58
+        halign: 'left'
+        valign: 'center'
+        text_size: self.size
+        focused: root.focused
+        alt: root.alt
+    BoxLayout:
+        id: tags
+        size_hint_x: 0.4
+        orientation: 'horizontal'
+        spacing: 5
+
+<AlbumPanel>:
+    scroll_list: scroll_list
+    BBoxLayout:
+        orientation: 'vertical'
+        background_color: app.get_theme_color('panel.background')
+        spacing: 5
+        PanelTitleLabel:
+            text: 'Album'
+            size_hint_y: 0.05
+        BoxLayout:
+            size_hint_y: 0.1
+            Image:
+                source: root.album_cover
+                size_hint_x: 0.2
+            PanelLabel:
+                text: root.album_name
+                size_hint_x: 0.5
+            PanelLabel:
+                text: root.album_info
+                size_hint_x: 0.3
+        RecycleScrollList:
+            id: scroll_list
+            viewclass: 'SongItem'
+            size_hint_y: 0.85
+            children_height: SONG_ITEM_HEIGHT

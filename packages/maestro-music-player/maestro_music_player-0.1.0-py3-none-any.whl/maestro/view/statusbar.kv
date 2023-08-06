@@ -1,0 +1,78 @@
+# This file is part of maestro, a keyboard-driven configurable music player.
+# Copyright (C) 2022  Baptiste Lambert (Blaireau) rabbitstemplate@disroot.org
+# 
+# Maestro is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#:kivy 2.1.0
+#:import format_time maestro.utils.formatting.format_time
+
+
+<StatusLabel@Label>:
+    color: (*app.get_theme_color('status_bar.text'), 1)
+
+<StatusBar@BBoxLayout>:
+    orientation: 'horizontal'
+    background_color: app.get_theme_color('status_bar.background')
+    padding: 5
+    Image:
+        source: app.current_song_cover
+        size_hint_x: 0.1
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_x: 0.3
+        StatusLabel:
+            text: app.current_song_name
+            text_size: self.size
+            halign: 'center'
+            valign: 'center'
+        StatusLabel:
+            text: app.current_album_name
+            text_size: self.size
+            halign: 'center'
+            valign: 'center'
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_x: 0.6
+        BoxLayout:
+            orientation: 'horizontal'
+            StatusLabel:
+                text: format_time(app.current_song_time)
+                size_hint_x: 0.2
+                halign: 'right'
+                valign: 'center'
+                text_size: self.size
+                padding: (10, 10)
+            ColorProgressBar:
+                size_hint: 0.6, None
+                height: 8
+                pos_hint: {'center_y': 0.5}
+                fg_color: app.get_theme_color('status_bar.progress_fg')
+                bg_color: app.get_theme_color('status_bar.progress_bg')
+                value: app.current_song_time
+                max: app.current_song_duration
+            StatusLabel:
+                text: format_time(app.current_song_duration)
+                size_hint_x: 0.2
+                halign: 'left'
+                valign: 'center'
+                text_size: self.size
+                padding: (10, 10)
+        BoxLayout:
+            orientation: 'horizontal'
+            StatusLabel:
+                text: app.queue_status
+            StatusLabel:
+                text: 'Loop: on' if app.loop else 'Loop: off'
+            StatusLabel:
+                text: 'Volume: {}%'.format(str(app.volume_level))

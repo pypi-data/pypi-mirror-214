@@ -1,0 +1,77 @@
+# This file is part of maestro, a keyboard-driven configurable music player.
+# Copyright (C) 2022  Baptiste Lambert (Blaireau) rabbitstemplate@disroot.org
+# 
+# Maestro is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#:kivy 2.1.0
+#:import MONOSPACED_FONT maestro.utils.ressources.MONOSPACED_FONT 
+
+<DocPanel>:
+    scroll_view: scroll_view
+    BBoxLayout:
+        background_color: app.get_theme_color('panel.background')
+        ScrollView:
+            id: scroll_view
+            scroll_delay: 0.2
+
+<DocContainer@BBoxLayout>:
+    depth: 0
+    spacing: 20*0.45**self.depth + 10
+    background_color: app.get_theme_color('panel.background')
+    orientation: 'vertical'
+    size_hint: 1, None
+    height: self.minimum_height
+
+<DocRoot@DocContainer>:
+    padding: 15
+    
+<DocSection@DocContainer>:
+
+<DocSectionBody@DocContainer>:
+    padding: (15, 0, 0, 0)
+
+<DocTable@BBoxLayout>:
+    orientation: 'vertical'
+    size_hint: 1, None
+    height: self.minimum_height
+    # canvas.before:
+    #     Color:
+    #         rgb: (0.6, 0.6, 0)
+    #     Rectangle:
+    #         size: self.size
+    #         pos: self.pos
+
+<DocTableLine@DocContainer>:
+    padding: 6
+    alt: False
+    background_color: app.get_theme_color(f"panel_items.normal{'_alt' if self.alt else ''}.background")
+
+<DocLabel@PanelLabel>:
+    depth: 0
+    valign: 'center'
+    text_size: self.width, None
+    size: self.texture_size
+    size_hint_y: None
+
+<DocCodeblockLabel@BackgroundColor+DocLabel>:
+    font_name: MONOSPACED_FONT.as_posix()
+    background_color: app.get_theme_color('panel_items.normal.background')
+    padding: 5, 5
+
+<DocHeaderLabel@DocLabel>:
+
+<DocTableLabel@DocLabel>:
+    pos_hint: {'top': 1.0}
+
+
