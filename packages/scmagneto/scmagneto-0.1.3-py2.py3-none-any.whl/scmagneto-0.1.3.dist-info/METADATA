@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: scmagneto
+Version: 0.1.3
+Summary: MAGNETO: Marker pAnels GeNEraTor with multi-Objective optimization
+Home-page: https://gitlab.com/andrea-tango/magneto
+Author: Simone Riva
+Author-email: simo.riva15@gmail.com
+License: LICENSE
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: numpy (>=1.23.0)
+Requires-Dist: pandas (>=1.5)
+Requires-Dist: scikit-learn (>=1.1.3)
+Requires-Dist: scanpy (>=1.9.0)
+Requires-Dist: pymoo (>=0.6.0)
+Requires-Dist: loguru (>=0.6.0)
+Requires-Dist: matplotlib (>=3.6.0)
+Requires-Dist: seaborn (>=0.12.0)
+
+MAGNETO: Marker pAnels GeNEraTor with multi-Objective optimization
+
+MAGNETO is a user-friendly and fully-automatic framework that exploits Multi-objective Evolutionary Algorithms (MOAEs) to solve a tailored bi-objective optimization problem, specifically designed to build effective marker panels.
+MAGNETO can thus help researchers to identify the most promising marker panels, starting from a gene expression matrix with single-cell resolution data and a cell type identity for each cell.
+
+
+For further information please visit: https://gitlab.com/andrea-tango/magneto
+
+
+We're always happy to hear of any suggestions, issues, bug reports, and possible ideas for collaboration.
+
+- Andrea Tangherloni <andrea.tangherloni@unibocconi.it> (Bocconi University, Italy)
+- Simone Riva <simone.riva@imm.ox.ac.uk> <simo.riva15@gmail.com> (University of Oxford, UK)
