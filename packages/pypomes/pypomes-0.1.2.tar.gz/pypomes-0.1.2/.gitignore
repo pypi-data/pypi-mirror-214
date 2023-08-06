@@ -1,0 +1,8 @@
+.idea
+.env
+temp
+tmp
+**/__pycache__
+/env
+.vscode
+*.py[cod]
