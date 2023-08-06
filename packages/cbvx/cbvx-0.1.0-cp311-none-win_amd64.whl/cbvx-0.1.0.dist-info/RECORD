@@ -1,0 +1,5 @@
+cbvx-0.1.0.dist-info/METADATA,sha256=cn2HIrgGbHKXyDATkLIZAQZ8jvotBMpxS0YG9HoqdVg,451
+cbvx-0.1.0.dist-info/WHEEL,sha256=CBB--ilmvXDcGt_ZlzloQbCMVabmpE0sLCRmWxfAAds,95
+cbvx/__init__.py,sha256=nJeJzo1xG4dPVSKYY0WeQKW5C3iotdnP0KASWgzx8FM,99
+cbvx/cbvx.cp311-win_amd64.pyd,sha256=PA0VpkrVcV_E7ma-zeUsQR5t1qgV2l3IxpkXEZKRGc4,2093568
+cbvx-0.1.0.dist-info/RECORD,,
