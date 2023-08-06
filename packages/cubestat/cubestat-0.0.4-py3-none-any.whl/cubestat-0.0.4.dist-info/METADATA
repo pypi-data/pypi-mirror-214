@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cubestat
+Version: 0.0.4
+Summary: Horizon chart in terminal for CPU/GPU/ANE monitoring
+Home-page: https://github.com/okuvshynov/cubestat
+Author: Oleksandr Kuvshynov
+Author-email: okuvshynov@gmail.com
+License-File: LICENSE
+Requires-Dist: psutil (>=5.9.5)
+Requires-Dist: pynvml ; platform_system == "Linux"
+
+Horizon chart in terminal. Supports CPU/GPU/ANE monitoring for Apple M1/M2, nVidia GPUs
