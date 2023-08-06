@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: bcdup
+Version: 2.1
+Summary: BCSFE_Python personal api
+Home-page: 
+Author: CintagramABP
+Requires-Python: >=3.9
+Provides-Extra: testing
+
+BCSFE_Python personal api
