@@ -1,0 +1,12 @@
+PyQuantimClient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyQuantimClient/api.py,sha256=f21n9iUlwsKUIj-YIZXaEaZ_Oge9qv6ivRdEDM0l5Tk,3166
+PyQuantimClient/benchmarks.py,sha256=-kxjub3k8Qu9nvbPWP5thGpOaKlO_ZN-oa_EANFTeL8,2145
+PyQuantimClient/data.py,sha256=kegTpNNu3WfsCP_MeHr6PCN2sNiqf_mpYx5ENieFoH4,702
+PyQuantimClient/energy.py,sha256=hNI2zwOWnIDqasD-r1Keq7mN-L_l9c-VFZ3zv4ktS2A,1820
+PyQuantimClient/portfolios.py,sha256=LS4r0KL1PI81RRmAVQ3rUR45R56LXg4oA2bUvaHiAQQ,7281
+PyQuantimClient/preprocess_co.py,sha256=sdQuuxK1bfjY-Wp87xt7f9yFN_9WiJf4QiBNGy-4ks0,19944
+PyQuantimClient/risk.py,sha256=ZiDRYrEvajhCyk7IBeIltOeBA7VlRYI-86ds4CQ8HIY,3561
+PyQuantimClient-1.0.41.dist-info/METADATA,sha256=HPgogBI_clRQLvKfoR8P_1m8GidFD4RRglcB4Qzbu8s,348
+PyQuantimClient-1.0.41.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PyQuantimClient-1.0.41.dist-info/top_level.txt,sha256=WbmxYSegJ1EfH-TJOqtF0mzYevWDeaMoJ4ZAzQaOTDE,16
+PyQuantimClient-1.0.41.dist-info/RECORD,,
