@@ -1,0 +1,13 @@
+# required
+numpy>=1.20
+setuptools>=27.3
+numexpr>=2.7.0
+
+# for units
+astropy<=5.1
+
+# Dependencies of requests package
+requests>=2.21.0
+
+# Additional packages
+matplotlib>=3.0

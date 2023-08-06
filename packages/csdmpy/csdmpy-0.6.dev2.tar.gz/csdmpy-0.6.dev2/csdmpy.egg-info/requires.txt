@@ -1,0 +1,7 @@
+numpy>=1.20
+setuptools>=27.3
+requests>=2.21.0
+numexpr>=2.7.0
+
+[matplotlib]
+matplotlib>=3.0
