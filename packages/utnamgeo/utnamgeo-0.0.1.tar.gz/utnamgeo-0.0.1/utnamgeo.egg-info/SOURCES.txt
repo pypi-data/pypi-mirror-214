@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+utnamgeo/__init__.py
+utnamgeo.egg-info/PKG-INFO
+utnamgeo.egg-info/SOURCES.txt
+utnamgeo.egg-info/dependency_links.txt
+utnamgeo.egg-info/top_level.txt
