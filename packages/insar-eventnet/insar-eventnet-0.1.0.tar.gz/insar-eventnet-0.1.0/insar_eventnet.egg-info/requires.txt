@@ -1,0 +1,10 @@
+tensorflow
+numpy
+geopy
+matplotlib
+scipy
+click
+astropy
+gdal
+flask
+hyp3_sdk
