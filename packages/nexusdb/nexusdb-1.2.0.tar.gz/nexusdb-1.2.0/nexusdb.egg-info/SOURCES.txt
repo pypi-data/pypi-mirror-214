@@ -1,0 +1,8 @@
+README.md
+nexusdb.py
+setup.py
+nexusdb.egg-info/PKG-INFO
+nexusdb.egg-info/SOURCES.txt
+nexusdb.egg-info/dependency_links.txt
+nexusdb.egg-info/requires.txt
+nexusdb.egg-info/top_level.txt
