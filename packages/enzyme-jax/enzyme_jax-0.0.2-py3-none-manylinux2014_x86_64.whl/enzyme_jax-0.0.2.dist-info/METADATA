@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: enzyme_jax
+Author: Enzyme Authors
+Author-email: wmoses@mit.edu, zinenko@google.com
+License: LLVM
+Requires-Dist: jax
+Version: 0.0.2
+
+UNKNOWN
