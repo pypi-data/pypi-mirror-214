@@ -1,0 +1,7 @@
+src/vector_materials/__init__.py,sha256=N3X9YGX_N3GPwrym2mH5cBF_YYHySYw9c5retTrHt94,177
+src/vector_materials/data_preparation.py,sha256=URYWNeN8Gy7NGW_QKtMJwHx9Y6dr0eF-u2pZL-Q2CSg,1489
+src/vector_materials/data_visualisation.py,sha256=_z2zgeDai_HzGc1mhBb-o9XQmrTwMZP_sc636oskmqU,36
+vector_materials-0.1.1.dist-info/LICENSE,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+vector_materials-0.1.1.dist-info/METADATA,sha256=7SUtQkzAFLaZCTq6-XB5qOr9SdxPe8bLXp-my-wuZPU,796
+vector_materials-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+vector_materials-0.1.1.dist-info/RECORD,,
