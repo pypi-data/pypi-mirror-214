@@ -1,0 +1,8 @@
+license.txt
+setup.py
+BKshenhui.egg-info/PKG-INFO
+BKshenhui.egg-info/SOURCES.txt
+BKshenhui.egg-info/dependency_links.txt
+BKshenhui.egg-info/top_level.txt
+shenhui/__init__.py
+shenhui/add_num.py
