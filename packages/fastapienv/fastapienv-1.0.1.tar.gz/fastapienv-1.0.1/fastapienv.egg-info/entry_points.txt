@@ -1,0 +1,3 @@
+[console_scripts]
+fastapienv = fastapienv.main:main
+
