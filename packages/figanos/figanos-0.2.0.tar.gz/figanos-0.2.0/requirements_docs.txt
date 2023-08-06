@@ -1,0 +1,12 @@
+ipykernel
+ipython
+jupyter_client
+nbsphinx
+pandoc
+sphinx
+sphinx-autoapi
+sphinx-click
+sphinx-codeautolink
+sphinx-copybutton
+sphinx_book_theme
+sphinxcontrib-napoleon
