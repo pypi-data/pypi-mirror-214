@@ -1,0 +1,4 @@
+include jerryrigserialgen/requirements.txt
+include jerryrigserialgen/thirdparty.json
+include jerryrigserialgen/README.MD
+include jerryrigserialgen/LICENSE
