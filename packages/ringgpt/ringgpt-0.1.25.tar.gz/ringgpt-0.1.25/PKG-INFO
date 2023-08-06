@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ringgpt
+Version: 0.1.25
+Summary: Package enables users to iterate on a corpus to perform single shot completion tasks leveraging GPT-3.5, Bard and Bing Chat
+License: Apache-2.0
+Author: Avinaash Anand K
+Author-email: avinaash96@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: EdgeGPT (==0.5.0)
+Requires-Dist: GoogleBard (==1.0.3)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: langchain (>=0.0.203,<0.0.204)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: revChatGPT (==5.0.3)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: tiktoken (>=0.4.0,<0.5.0)
+Description-Content-Type: text/markdown
+
+[tool.poetry]
+name = "ringgpt"
+version = "0.2.0"
+description = "Package enables users to iterate on a corpus to perform single shot completion tasks leveraging GPT-3.5, Bard and Bing Chat"
+authors = ["Avinaash Anand K <avinaash96@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0.2"
+GoogleBard = "^1.0.3"
+asyncio = "^3.4.3"
+EdgeGPT = "0.5.0"
+revChatGPT = "^5.0.3"
+requests = "^2.31.0"
+rich = "^13.4.2"
+langchain = "^0.0.203"
+tiktoken = "^0.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
