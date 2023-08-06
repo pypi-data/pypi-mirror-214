@@ -1,0 +1,12 @@
+invokees/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+invokees/files.py,sha256=VPGGpYgJYaJY7sHXImCurLtDPP3o0hzgx1PROzswvR4,659
+invokees/tasks/__init__.py,sha256=4pRBa_t0kIn4E6air9aVugSDiCELF0nhJa12WZlFzj0,278
+invokees/tasks/code.py,sha256=FvscXFd2MRSpgoCYjABjgK9ZgtGk3VeJQkc28kmMiYU,2501
+invokees/tasks/docs.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+invokees/tasks/release.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+invokees/tasks/self.py,sha256=k1JeebWZdm_qdthLqnuk2LVoGwrngE3t_xkvgaLSAfs,647
+invokees/tasks/test.py,sha256=PrNPyd0kzDD-sdURHNgfsiAhOU_F_BahE_kw8H07dCE,1999
+invokees/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+invokees-0.4.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+invokees-0.4.0.dist-info/METADATA,sha256=TBJ4pusr391ILhQfLxza9SOs5AaRmzn6hHSwdwANfcQ,1258
+invokees-0.4.0.dist-info/RECORD,,
