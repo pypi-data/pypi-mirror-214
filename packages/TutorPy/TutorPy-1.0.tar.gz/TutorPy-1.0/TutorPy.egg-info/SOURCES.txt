@@ -1,0 +1,8 @@
+setup.py
+TutorPy/TutorPy.py
+TutorPy/__init__.py
+TutorPy.egg-info/PKG-INFO
+TutorPy.egg-info/SOURCES.txt
+TutorPy.egg-info/dependency_links.txt
+TutorPy.egg-info/not-zip-safe
+TutorPy.egg-info/top_level.txt
