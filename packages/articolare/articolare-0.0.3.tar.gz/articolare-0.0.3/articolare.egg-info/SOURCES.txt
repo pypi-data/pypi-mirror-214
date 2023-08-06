@@ -1,0 +1,11 @@
+README.md
+setup.py
+art_api_client/__init__.py
+art_api_client/client.py
+articolare.egg-info/PKG-INFO
+articolare.egg-info/SOURCES.txt
+articolare.egg-info/dependency_links.txt
+articolare.egg-info/requires.txt
+articolare.egg-info/top_level.txt
+tests/__init__.py
+tests/test_client.py
