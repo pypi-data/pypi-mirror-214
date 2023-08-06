@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Exclude tests from the distribution
+[build]
+exclude = ["oneapi/tests/"]
+
+[project]
+name = "oneapi-sdk"
+version = "0.0.3"
+authors = [
+  { name="Eduardo Felipe Weber", email="eduardo-felipe-weber@hotmail.com" },
+]
+description = "A Python SDK for The One API"
+readme = "README.md"
+requires-python = ">=3.9.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

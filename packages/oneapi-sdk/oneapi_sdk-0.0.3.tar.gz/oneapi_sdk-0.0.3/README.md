@@ -1,0 +1,57 @@
+# Lord of the Rings SDK
+
+This is a Python SDK for the Lord of the Rings API.
+
+## Installation
+
+```bash
+pip install oneapi-sdk
+```
+
+## Usage
+
+To use the SDK, you will need to get an API key from [The One API](https://the-one-api.dev/).
+
+Basic usage:
+
+```python
+import oneapi
+
+oneapi.access_token = "YOUR_API_KEY"
+
+# Get all movies
+movies = oneapi.Movie.list()
+
+# Get all quotes from the first movie
+quotes = movies[0].quotes
+
+```
+
+Filters:
+
+```python
+import oneapi
+
+# Filter syntax is {"field": ("operator", "value")}
+# Operators are "=", "!=", "<", ">", ">=", "exists", "not_exists"
+
+# Get all quotes from the first movie
+quotes = oneapi.Quote.list(filter={"movie": ('=', '5cd95395de30eff6ebccde5c')})
+
+```
+
+Pagination:
+
+```python
+import oneapi
+
+# You can manually paginate through the results using .list(limit, offset)
+quotes_1 = oneapi.Quote.list(limit=10, offset=0)
+quotes_2 = oneapi.Quote.list(limit=10, offset=10)
+
+# Or you can use the built-in pagination
+quotes = oneapi.Quote.list(limit=10)
+for quote in quotes.auto_paginate():
+    print(quote.dialog)
+
+```
