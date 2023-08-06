@@ -1,0 +1,7 @@
+stauth/__init__.py,sha256=DMHHUo5h2gwU00xgIG5u8TuIt5LuRq5V5P5RMMusH48,40
+stauth/authenticate.py,sha256=apA7ajSw7Sk8qFRJ2PYccqs9yE08DxogwBi-jyveQ50,10146
+stauth/util.py,sha256=kAXDQ3ETfEtlR_j6fa5gHoDQ2BCd__Yp-ITAzaSPQU4,1897
+stauth-0.1.12.dist-info/LICENSE,sha256=TRD-XzqhdrBbIpokiGa61wuDTBc_ElKoFP9HSNihODc,10255
+stauth-0.1.12.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+stauth-0.1.12.dist-info/METADATA,sha256=0H5Jg872zzdPNx1GfAG_MSkR9XhA0EHaM7qJf4Okoqo,1003
+stauth-0.1.12.dist-info/RECORD,,
