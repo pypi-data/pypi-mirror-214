@@ -1,0 +1,3 @@
+[console_scripts]
+kaxi=kaxi.main:app
+
