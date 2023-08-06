@@ -1,0 +1,7 @@
+scipy
+dune-grid<=2.9.0
+dune-functions<=2.9.0
+geomdl
+numpy
+dune-alugrid<=2.9.0
+mpi4py
