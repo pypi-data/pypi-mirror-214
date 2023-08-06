@@ -1,0 +1,3 @@
+[console_scripts]
+visual-excel=visual_excel.__main__:main
+
