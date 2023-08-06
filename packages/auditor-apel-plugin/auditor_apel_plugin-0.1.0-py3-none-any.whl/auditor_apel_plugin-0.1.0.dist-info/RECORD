@@ -1,0 +1,11 @@
+auditor_apel_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auditor_apel_plugin/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+auditor_apel_plugin/core.py,sha256=kLjPeGoyhimAXgTXdKlRC5rhoVXlLC44aZXmCZxxnBU,21196
+auditor_apel_plugin/publish.py,sha256=Pl6dbwO_vn1T-zYPwvrunvjN_9CfN560CdWKEdtBhPs,5067
+auditor_apel_plugin/republish.py,sha256=imLBgmjZtDoh46B4ErYKxZpAf2ETOazCjvR8C1uCvFQ,3025
+auditor_apel_plugin-0.1.0.dist-info/LICENSE,sha256=Ci0W34VnaAG1qg-qYLXui2X1ot8xfuxcPfmKGfcLj1Y,2595
+auditor_apel_plugin-0.1.0.dist-info/METADATA,sha256=EEXEyx56SSQ5SEZeeqFZ2YB2N56R2gPNWXggbByQf6c,1153
+auditor_apel_plugin-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+auditor_apel_plugin-0.1.0.dist-info/entry_points.txt,sha256=lBf-48VfSvQwWqTLvsytlwcmsOuqQw5SfdY_rCAP8Tk,134
+auditor_apel_plugin-0.1.0.dist-info/top_level.txt,sha256=Y9w05_n_mPAyV9SspCk6IifJnU7ogbltaa5OwB7Tct4,20
+auditor_apel_plugin-0.1.0.dist-info/RECORD,,
