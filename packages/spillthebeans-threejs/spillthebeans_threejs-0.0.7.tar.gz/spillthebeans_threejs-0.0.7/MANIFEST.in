@@ -1,0 +1,11 @@
+include spillthebeans_threejs/spillthebeans_threejs.min.js
+include spillthebeans_threejs/spillthebeans_threejs.min.js.map
+include spillthebeans_threejs/async-*.js
+include spillthebeans_threejs/async-*.js.map
+include spillthebeans_threejs/*-shared.js
+include spillthebeans_threejs/*-shared.js.map
+include spillthebeans_threejs/metadata.json
+include spillthebeans_threejs/package-info.json
+include README.md
+include LICENSE
+include package.json

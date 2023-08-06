@@ -1,0 +1,16 @@
+{
+  "src/lib/components/SpillthebeansThreejs.react.js": {
+    "description": "",
+    "displayName": "SpillthebeansThreejs",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify the container for the IFC viewer component."
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+spillthebeans_threejs/SpillthebeansThreejs.py
+spillthebeans_threejs/__init__.py
+spillthebeans_threejs/_imports_.py
+spillthebeans_threejs/metadata.json
+spillthebeans_threejs/package-info.json
+spillthebeans_threejs/spillthebeans_threejs.min.js
+spillthebeans_threejs/spillthebeans_threejs.min.js.map
+spillthebeans_threejs.egg-info/PKG-INFO
+spillthebeans_threejs.egg-info/SOURCES.txt
+spillthebeans_threejs.egg-info/dependency_links.txt
+spillthebeans_threejs.egg-info/top_level.txt
