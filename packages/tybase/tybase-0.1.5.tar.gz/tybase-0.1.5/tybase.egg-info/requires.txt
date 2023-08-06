@@ -1,0 +1,9 @@
+setuptools
+requests
+retrying
+pymysql
+mysql-connector-python
+sqlalchemy
+pandas
+langchain
+openai
