@@ -1,0 +1,10 @@
+gungnir/__init__.py,sha256=9ENC1WH80SQ4Ec17Ohw9vA3qbNuV38eTDPcDhgSwoD0,737
+gungnir/__main__.py,sha256=NFxDUs7v9e6joYqI9SiBqdcBF8f8iJynykPFYPl1cqs,2225
+gungnir/dependencytrack.py,sha256=W0u7FNrg4oUnqLVV2rdSIqLow3Q85cEk806iEjMd3cs,4444
+gungnir/gungnir.py,sha256=f81hvXJMWMYFzJtXw0bKwbd0XURlkz70m6kdQ2fMd48,2671
+gungnir/syft.py,sha256=fJlRfD0OeNrGRhJsVMG8GhmiJqhXLiygsVZ5gtx9lBA,1696
+gungnir-0.1.0.dist-info/LICENSE,sha256=uF3NPkU9BZglUsUrX8ngvdbSPG-OhEuYSoivMlcLDMA,1078
+gungnir-0.1.0.dist-info/METADATA,sha256=N9X5s1d8HLB9mwp81AamLa-bQFtCJuOFZ-oaRJdEtFA,3316
+gungnir-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gungnir-0.1.0.dist-info/top_level.txt,sha256=iUEBJoxvalDe2sn96gt_acloEW_0aTxmuQTXzAYFTJk,8
+gungnir-0.1.0.dist-info/RECORD,,
