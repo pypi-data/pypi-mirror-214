@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/struid/__init__.py
+src/struid/struid.py
+src/struid.egg-info/PKG-INFO
+src/struid.egg-info/SOURCES.txt
+src/struid.egg-info/dependency_links.txt
+src/struid.egg-info/top_level.txt
