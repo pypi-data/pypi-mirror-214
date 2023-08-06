@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/ipycrawl/__init__.py
+src/ipycrawl.egg-info/PKG-INFO
+src/ipycrawl.egg-info/SOURCES.txt
+src/ipycrawl.egg-info/dependency_links.txt
+src/ipycrawl.egg-info/top_level.txt
