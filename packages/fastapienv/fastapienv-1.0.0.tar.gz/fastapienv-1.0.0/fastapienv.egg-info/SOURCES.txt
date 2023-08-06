@@ -1,0 +1,10 @@
+README.md
+setup.py
+fastapienv/__init__.py
+fastapienv/main.py
+fastapienv.egg-info/PKG-INFO
+fastapienv.egg-info/SOURCES.txt
+fastapienv.egg-info/dependency_links.txt
+fastapienv.egg-info/entry_points.txt
+fastapienv.egg-info/requires.txt
+fastapienv.egg-info/top_level.txt
