@@ -1,0 +1,13 @@
+Twisted>=10.0
+pyzmq>=13
+
+[dev]
+Twisted
+service_identity
+pyzmq>=13
+pyflakes
+pycodestyle
+Sphinx
+coverage
+coveralls
+virtualenv
