@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pulipy
+Version: 0.0.2
+Summary: Funtional programming for Python
+Project-URL: Homepage, https://github.com/sambyeol/pulipy
+Project-URL: Bug Tracker, https://github.com/sambyeol/pulipy/issues
+Author-email: Seokhyun Lee <gbvrcx@gmail.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: black>=23; extra == 'dev'
+Requires-Dist: isort>=5; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest>=7; extra == 'test'
+Description-Content-Type: text/markdown
+
+# pulipy

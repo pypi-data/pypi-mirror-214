@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pulipy"
+authors = [
+    { name="Seokhyun Lee", email="gbvrcx@gmail.com" }
+]
+description = "Funtional programming for Python"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23",
+    "isort>=5"
+]
+test = [
+    "pytest>=7",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sambyeol/pulipy"
+"Bug Tracker" = "https://github.com/sambyeol/pulipy/issues"
+
+[tool.hatch.version]
+path = "pulipy/__init__.py"
