@@ -1,0 +1,15 @@
+xarray
+numpy
+matplotlib
+scikit-image
+scipy
+ipywidgets
+datetime
+tqdm
+pandas
+vtk
+mahotas
+ipympl
+nodejs
+jupyterlab
+xarrayuvecs
