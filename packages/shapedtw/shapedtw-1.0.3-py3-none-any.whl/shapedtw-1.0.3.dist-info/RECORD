@@ -1,0 +1,12 @@
+shapedtw/__init__.py,sha256=8yaQbIjhy5KL5eU4FDoGQ9g5epLqy0NZj3UbA56_gUk,401
+shapedtw/dtwPlot.py,sha256=hDs5zPjMh0c-wMOXW9upvX7KUU7fWQkZv0RGJ2AyNvI,35037
+shapedtw/exceptions.py,sha256=GRMrP9_Bo_uwQUqS0KYxBocV6SewHvzAL1eCNgMVWB0,15488
+shapedtw/preprocessing.py,sha256=_cRfA5dNmYmw9G7UeTx7E12VsC5tTPjTG7tbJJ1U9mA,41850
+shapedtw/shapeDescriptors.py,sha256=3WY1wuCSeVU8IN0yXNsyxxqwMYvNzS1FIhYWFjDCOmY,19140
+shapedtw/shapedtw.py,sha256=Dql3VxOQroxK5RkIFKOMXmg-NNpmp7IXJR2a-pMasC8,60419
+shapedtw/utils.py,sha256=nByVvdyE0jMr6djnjlBWCxoN8EnGq_GC3KJJ-19JZrE,5752
+shapedtw-1.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+shapedtw-1.0.3.dist-info/METADATA,sha256=ndjRtE6hSfzbjCWz887I9CjiQQHDpNqEKWnbkE770dI,26015
+shapedtw-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+shapedtw-1.0.3.dist-info/top_level.txt,sha256=K1XU2NznMZntvyFX5WHHl0C5QzeBGgeXItowsvh3qsg,9
+shapedtw-1.0.3.dist-info/RECORD,,
