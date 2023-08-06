@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pydatawork
+Version: 0.0.5
+Summary: jk.zhou's datawork
+Home-page: https://github.com/jkjoker/datawork
+Author: jk.zhou
+Author-email: zhouqiling.bjfu@foxmail.com
+License: MIT
+Description: 
+        
+        ###### Sat Jun 17 17:32:47 CST 2023
+        修改了导入方式，使用下面的导入方式：
+        ```shell
+        import pydatawork
+        ```
+        
+        ###### Thu Jun 15 13:23:43 CST 2023
+        数据工作相关的分享。
+        
+        
+        
+        
+        
+Keywords: datawork
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
