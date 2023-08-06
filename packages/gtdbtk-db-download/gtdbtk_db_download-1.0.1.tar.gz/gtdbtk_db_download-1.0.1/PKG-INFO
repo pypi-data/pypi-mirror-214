@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: gtdbtk_db_download
+Version: 1.0.1
+Summary: Minimal toolkit for downloading the GTDB-Tk database to disk.
+Home-page: https://github.com/Ecogenomics/gtdbtk-db-download
+Author: Aaron Mussig
+Author-email: aaronmussig@gmail.com
+License: GNU GPLv3
+Project-URL: Bug Tracker, https://github.com/Ecogenomics/gtdbtk-db-download/issues
+Project-URL: Documentation, https://github.com/Ecogenomics/gtdbtk-db-download
+Project-URL: Source Code, https://github.com/Ecogenomics/gtdbtk-db-download
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GTDB-Tk Database Download
+
+Minimal toolkit for downloading the GTDB-Tk database to disk.
+
+This is **not the recommended way** to download the GTDB-Tk reference database, please see 
+[here](https://ecogenomics.github.io/GTDBTk/installing/index.html#gtdb-tk-reference-data) for the reccomended method.
+
+This softare may be useful for users who are experiencing intermittent connection errors, or slow download speeds.
+
+## 📚 Requirements
+
+This software requires Python >=3.8 and makes use of the following packages:
+
+* [requests](https://pypi.org/project/requests/)
+* [tqdm](https://pypi.org/project/tqdm/)
+* [typer](https://pypi.org/project/typer/)
+
+## ⚙️ Installation
+
+In a new virtual environment, or conda environment that is running Python >=3.8, simply run:
+
+```shell
+python -m pip install gtdbtk_db_download
+```
+
+## 🚀 Usage
+
+For a complete list of options, run: `gtdbtk_db_download --help`
+
+Example usage downloading to the `/tmp/db` directory:
+
+```shell
+gtdbtk_db_download /tmp/db --threads 10
+```
+
+### Example output
+
+```text
+[2023-06-16 13:51:41] - gtdbtk_downloader v1.0.0
+[2023-06-16 13:51:41] - Creating output directory.
+[2023-06-16 13:51:41] - Loading R214 manifest
+[2023-06-16 13:51:42] - Creating queue
+[2023-06-16 13:51:42] - Downloading files
+[2023-06-16 16:00:00] - Done.
+```
