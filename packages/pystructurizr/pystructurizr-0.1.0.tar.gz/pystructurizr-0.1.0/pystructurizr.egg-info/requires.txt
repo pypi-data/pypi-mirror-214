@@ -1,0 +1,8 @@
+watchdog
+click
+httpx
+aiofiles
+httpwatcher
+google-cloud-storage
+boto3
+setuptools
