@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/client.py,sha256=laDiWhqSCo4rh-0VfhxnqUBycTCFnZAAT-e5MHqu0m4,30253
+src/client_ui.py,sha256=RyaeYbD6tfO04sCxg5pDIWEYQ7PPb5zIRp5YQDJf9so,41191
+src/launcher.py,sha256=NHF5RC_TASkz9eDHk8aZvLQwD_g-_ATDHxHLvlis5ig,387
+src/metaclasses.py,sha256=fBoYUM51ffHDW0qLdEYEWobHheyFvFu_7jO2W8_mLqk,1268
+src/utils_client.py,sha256=7iKEwDpBbqwy1J5kf5UTj8OmsV5QdYD13NBSikCR3mg,7725
+src/variables_client.py,sha256=TQ1hEGS0CyKHDVYI5AwoY1WVclV6bmAReHvonXGsO8M,113
+chat_async_client-1.0.0.dist-info/METADATA,sha256=EBMGuw67DDhz9mxxWLs64Dc9fSDFfVZC2e_ZxuoC8Lc,2856
+chat_async_client-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chat_async_client-1.0.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+chat_async_client-1.0.0.dist-info/RECORD,,
