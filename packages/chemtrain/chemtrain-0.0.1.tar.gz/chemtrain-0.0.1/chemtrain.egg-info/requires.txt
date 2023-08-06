@@ -1,0 +1,15 @@
+jax
+jax-md
+jax-sgmc
+optax
+dm-haiku
+sympy
+tree_math
+cloudpickle
+chex
+blackjax==0.3.0
+jaxopt
+
+[all]
+mdtraj<=1.9.6
+matplotlib
