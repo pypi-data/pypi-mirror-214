@@ -1,0 +1,2 @@
+[console_scripts]
+neophile = neophile.cli:main
