@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tensorhub-ai
+Version: 1.0
+Summary: A simple, modular and repeatable abstractions framework to accelerate deep learning research and application.
+Home-page: https://github.com/udyam-ai/tensorhub-ai
+Author: Udyam AI
+Author-email: 
+License: Apache-2.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow
+
+# TensorHub AI
