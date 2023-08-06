@@ -1,0 +1,59 @@
+[project]
+name = "zerospeech-tde"
+readme = "README.md"
+description = "Evaluation toolbox for Term Discovery systems"
+authors = [
+    {name = "Julien Karadayi", email="julien.karadayi@inria.fr"},
+    {name = "CoML Team", email = "dev@zerospeech.com"}
+]
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.6"
+keywords = [
+    "speech", "machine-learning", "challenges",
+    "research-tool", "benchmark-speech", "zerospeech"
+]
+classifiers = [
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Science/Research"
+]
+dependencies = [
+    'editdistance',
+    'joblib',
+    'intervaltree',
+    'importlib_metadata; python_version < "3.8"'
+]
+dynamic = ["version"]
+[project.urls]
+documentation = "https://docs.cognitive-ml.fr/tde/"
+source_repository = "https://github.com/bootphon/tdev2"
+zerospeech_task = "https://zerospeech.com/tasks/task_2/tasks_goals/"
+zerospeech_fork = "https://github.com/zerospeech/tdev2"
+
+[project.optional-dependencies]
+dev = [
+    "setuptools_scm",
+    "ipython",
+    "pytest",
+    "twine",
+    "build"
+]
+
+[build-system]
+requires = ["setuptools>=61", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tde*"]
+exclude = ["examples*", "tests*", "docs*", '.conda/*']
+
+[tool.setuptools.package-data]
+tde = ['share/*']
+
+[tool.setuptools_scm]

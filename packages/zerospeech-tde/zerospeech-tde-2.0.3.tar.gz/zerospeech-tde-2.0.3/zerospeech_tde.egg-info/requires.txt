@@ -1,0 +1,13 @@
+editdistance
+joblib
+intervaltree
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[dev]
+setuptools_scm
+ipython
+pytest
+twine
+build

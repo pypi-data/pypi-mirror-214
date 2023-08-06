@@ -1,0 +1,44 @@
+{% set name = "zerospeech-tde" %}
+{% set version = "2.0.2" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/zerospeech-tde-{{ version }}.tar.gz
+  sha256: 4b50a150bdc27cfbe8e798d258867f5ce6281ea43b4ad28eafd8d100fc325235
+
+build:
+  noarch: python
+  skip: true  # [py<36]
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
+
+requirements:
+  host:
+    - python >=3.6
+    - setuptools >=61
+    - setuptools-scm >=6.2
+    - pip
+  run:
+    - python >=3.6
+    - editdistance
+    - joblib
+    - intervaltree
+    - importlib-metadata  # [py<38]
+
+test:
+  imports:
+    - tde
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: https://pypi.org/project/zerospeech-tde/
+  summary: Evaluation toolbox for Term Discovery systems
+  doc_source_url: https://github.com/zerospeech/tdev2/blob/master/README.md
+  license: GPL-3.0
+  license_file: LICENSE.txt
