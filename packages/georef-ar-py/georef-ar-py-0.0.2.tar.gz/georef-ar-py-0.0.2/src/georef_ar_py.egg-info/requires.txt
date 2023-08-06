@@ -1,0 +1,6 @@
+requests~=2.29.0
+deepdiff~=6.3.0
+pandas==2.0.2
+
+[cli]
+click==8.1.3
