@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: wineMLXMV
+Version: 0.0.1
+Summary: ML model to predict quality of wine by XMV for PEC2 exercise
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+ML model to predict quality of wine by XMV for PEC2 exercise
