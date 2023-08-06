@@ -1,0 +1,6 @@
+nombresulibreriai.py
+setup.py
+nombresulibreriai.egg-info/PKG-INFO
+nombresulibreriai.egg-info/SOURCES.txt
+nombresulibreriai.egg-info/dependency_links.txt
+nombresulibreriai.egg-info/top_level.txt
