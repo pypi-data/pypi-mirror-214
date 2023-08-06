@@ -1,0 +1,6 @@
+numpy
+pillow
+dolreader
+jsonpickle
+pyelftools
+geckolibs
