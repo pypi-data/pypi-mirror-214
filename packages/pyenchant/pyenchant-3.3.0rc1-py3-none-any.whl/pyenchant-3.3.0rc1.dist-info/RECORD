@@ -1,0 +1,17 @@
+enchant/__init__.py,sha256=UUCtnhhnzafWvvBPTJsTNtjaMvpuA_9SB6uX5NCgWkQ,35729
+enchant/_enchant.py,sha256=KxmolTLlwrluJl_GL3W85-D-dQRrRZCB6txwDpnRhGk,13490
+enchant/errors.py,sha256=7xmP_ZACcEEziVJLsjMc5-iFyZ-H-ueUHWebP6lxwjo,2091
+enchant/pypwl.py,sha256=zz3r8sDJBKx0EqNJUkhaQlJwjB0qAdoZSs4aZMM01U4,9689
+enchant/utils.py,sha256=1YBL5akF8Iwlzbrh3zRKHolWyUYct3Q0f1NtBq76yLo,4640
+enchant/checker/CmdLineChecker.py,sha256=4UgelQ5PDRq6aOKHIoTFi_Hq-u8RXCbFriAaZF7Wt64,12302
+enchant/checker/GtkSpellCheckerDialog.py,sha256=SWCqpTGutiMhrnqn3qYndGxYrDso4uQgEiIGyxBIRfE,10175
+enchant/checker/__init__.py,sha256=-g5Mn1GryInEY-XNJUynzANrUDeS_XA7VOeX-je0eR0,15307
+enchant/checker/wxSpellCheckerDialog.py,sha256=uLSeK5VNmc5XtD17gkoKq05vaV7E2k5XTzxPc6yIZBc,10642
+enchant/tokenize/__init__.py,sha256=Eecdn1K5fQa5iIoNwIBVk1x1qC8O5v_9yiKrcMgfJ7g,21342
+enchant/tokenize/de.py,sha256=JmHmPdSOChhX2cvUc2VPfaoCp8CpVJG8w1hRZ5ZN3DM,1886
+enchant/tokenize/en.py,sha256=l8xhQP4FZF3sJKjYNsJ2yozhsGhHq7UOnq2Z3lHyEJw,7447
+pyenchant-3.3.0rc1.dist-info/LICENSE.txt,sha256=XfBwBxmJicYi9dQd6NcD577z0OedYuJDMu5zmkUq9io,26436
+pyenchant-3.3.0rc1.dist-info/METADATA,sha256=-MQ7TZa7EYRZYeM2j8NVI9S8a41JWNUffxBhbh394CY,4052
+pyenchant-3.3.0rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyenchant-3.3.0rc1.dist-info/top_level.txt,sha256=9lk10AmHAKXFnLIFSfoFneV-V92DtzTVfTb79qf5waA,8
+pyenchant-3.3.0rc1.dist-info/RECORD,,
