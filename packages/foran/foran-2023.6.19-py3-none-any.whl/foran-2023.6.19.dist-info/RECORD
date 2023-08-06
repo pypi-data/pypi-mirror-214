@@ -1,0 +1,13 @@
+foran/__init__.py,sha256=SArZoVkeh8Oeo6l1nsU9vvv-S4tXNzHbN1YOedYdYLQ,351
+foran/__main__.py,sha256=Ly990ZtYezFvN8_ST0HpdxEDDQAE8vucdpGP4i5ud2I,123
+foran/cli.py,sha256=ADYOg9RjKAJzc1KS3qK62CYdMmazC2GWfaYCCWl7Xg0,2982
+foran/foran.py,sha256=ltQJQdPmWYziOCfyxzNmj-8p-ijamV0Aq7rekUP4IUg,2248
+foran/render.py,sha256=AZ32oL5sZK1tCBH4L3df313FdubDY2yjrY3aXpeFJBQ,244
+foran/report.py,sha256=6ZTvSNKH6iCCmWRlV2VkCgjp7V3wgNHWvDwJtqXA1t4,2118
+foran/status.py,sha256=0vxQ-gQ12ez3SxvXpZoFVrpmwGWVKjfb89BuUOVi5bI,904
+foran-2023.6.19.dist-info/LICENSE,sha256=a9GBBsUGDvTGs1rmHMujUJiPhEY6vtKCdGlW6XmWoTw,1069
+foran-2023.6.19.dist-info/METADATA,sha256=2aj1Sw_rlrD0lF7wasUl58EC2M_5VnkRKP-j-PjRCPo,3851
+foran-2023.6.19.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+foran-2023.6.19.dist-info/entry_points.txt,sha256=VqOlt2lR2H6z24paRbmC-_H6kEv_hR6iK9QEsxZpVxs,40
+foran-2023.6.19.dist-info/top_level.txt,sha256=MNDkBG2UOTwMz6N9kOiTJEJ2Wh7_BZI-mEIm39pbgKU,6
+foran-2023.6.19.dist-info/RECORD,,
