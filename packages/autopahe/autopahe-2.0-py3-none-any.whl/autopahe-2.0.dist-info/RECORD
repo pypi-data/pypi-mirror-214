@@ -1,0 +1,9 @@
+autopahe/__init__.py,sha256=isvC6hj5oAjQ42fE_Y2WqwUIcnA-a4hDY12m2g-KP3o,24
+autopahe/auto_pahe.py,sha256=S8T0iHvCmw3IKeYmAioEcwck9XkpMapi460nBWk0A2I,19649
+autopahe/kwikdown.py,sha256=oA7W8d_0gp_THwypb3VAwo-18zxiaIA7P0iu0xLNCF0,4392
+autopahe/test.py,sha256=ZTEd7iSwnlwxz3LeMQRMr9I7v0I9_0rzwSIINCFxQJk,248
+autopahe-2.0.dist-info/METADATA,sha256=AVyALLGS2AyXCUDByPMfa_9zJAP3NZANFdNQa0PH8Kw,6582
+autopahe-2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+autopahe-2.0.dist-info/entry_points.txt,sha256=X81GnwOC5IbvpPYP6a-HMv4SbjxMc5agg1L3DweT7xo,56
+autopahe-2.0.dist-info/top_level.txt,sha256=u1hir6-Jr53zoceTbpRFSh5NvMGjBo3eMLCMjySB3ng,9
+autopahe-2.0.dist-info/RECORD,,
