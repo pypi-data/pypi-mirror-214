@@ -1,0 +1,16 @@
+LICENCE
+README.md
+pyproject.toml
+src/pyread_swift/__init__.py
+src/pyread_swift/io.py
+src/pyread_swift/read_dataset.py
+src/pyread_swift/read_header.py
+src/pyread_swift/select_region.py
+src/pyread_swift/split_selection.py
+src/pyread_swift.egg-info/PKG-INFO
+src/pyread_swift.egg-info/SOURCES.txt
+src/pyread_swift.egg-info/dependency_links.txt
+src/pyread_swift.egg-info/requires.txt
+src/pyread_swift.egg-info/top_level.txt
+tests/test_read.py
+tests/test_read_mpi.py

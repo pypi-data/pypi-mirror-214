@@ -1,0 +1,12 @@
+numpy
+h5py
+
+[ci]
+pytest
+
+[ci_mpi]
+mpi4py
+pytest-mpi
+
+[mpi]
+mpi4py
