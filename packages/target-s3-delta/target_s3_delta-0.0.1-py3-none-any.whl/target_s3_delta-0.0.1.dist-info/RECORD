@@ -1,0 +1,7 @@
+target_s3_delta/__init__.py,sha256=nv7onfyBKwKqEbPM1oOJKz72MYzCmYpOebfmirylCvQ,27
+target_s3_delta/sinks.py,sha256=F_sAsAAruqMlisNvefiuLzJ6OZCRwej-UwWX6_TEKoI,3447
+target_s3_delta/target.py,sha256=lgbDamdT4C8X3FJkkeNlxqACXRlFnDJuo1U_l1QfuDQ,2141
+target_s3_delta-0.0.1.dist-info/METADATA,sha256=KW4GcroDeYNEzIPfPZiMmfGoyQwy7fysFyQYJ6q5xvk,921
+target_s3_delta-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+target_s3_delta-0.0.1.dist-info/entry_points.txt,sha256=80zmJBSUQIgkY6MPP_rYWx9ZtnaTsNPd4DFWw55Mdv0,76
+target_s3_delta-0.0.1.dist-info/RECORD,,
