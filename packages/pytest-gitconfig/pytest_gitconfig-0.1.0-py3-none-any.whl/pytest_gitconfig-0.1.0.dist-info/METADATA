@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pytest-gitconfig
+Version: 0.1.0
+Summary: Provide a gitconfig sandbox for testing
+Author-Email: Axel Haustant <noirbizarre@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://github.com/noirbizarre/pytest-gitconfig
+Project-URL: Documentation, https://pytest-gitconfig.rtfd.io
+Project-URL: Repository, https://github.com/noirbizarre/pytest-gitconfig
+Project-URL: Issues, https://github.com/noirbizarre/pytest-gitconfig/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pytest-gitconfig
+
+[![CI](https://github.com/noirbizarre/pytest-gitconfig/actions/workflows/ci.yml/badge.svg)](https://github.com/noirbizarre/pytest-gitconfig/actions/workflows/ci.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/noirbizarre/pytest-gitconfig/main.svg)](https://results.pre-commit.ci/latest/github/noirbizarre/pytest-gitconfig/main)
+[![PyPI](https://img.shields.io/pypi/v/pytest-gitconfig)](https://pypi.org/project/pytest-gitconfig/)
+[![PyPI - License](https://img.shields.io/pypi/l/pytest-gitconfig)](https://pypi.org/project/pytest-gitconfig/)
+
+Provide a gitconfig sandbox for testing
+
+## Getting started
+
+Install `pytest-gitconfig`:
+
+```shell
+# pip
+pip install pytest-gitconfig
+# pipenv
+pipenv install pytest-gitconfig
+# PDM
+pdm add pytest-gitconfig
+```
+
+## Features
+
+- [ ] TODO
