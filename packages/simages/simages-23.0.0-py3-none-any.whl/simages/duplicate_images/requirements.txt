@@ -1,0 +1,11 @@
+docopt==0.6.2
+flask==1.0.2
+jinja2>=2.10.1
+more-itertools==2.2
+Pillow>=4.3.0
+pymongo>=3.6.0
+python-magic==0.4.15
+termcolor==1.1.0
+Werkzeug==0.15.3
+Flask-Cors==3.0.9
+dnspython>=1.15.0
