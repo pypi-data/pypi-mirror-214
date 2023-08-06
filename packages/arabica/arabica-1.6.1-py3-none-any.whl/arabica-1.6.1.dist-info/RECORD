@@ -1,0 +1,15 @@
+arabica/__init__.py,sha256=lmKPi-jByc08Wnp2bfRKJDvLiSc8D4FGHLwUTCmDlY4,105
+arabica/arabica_freq.py,sha256=de7J9q5sZs7BT26pnSl8_iUw2-gX2xbzKUvsiGr8_tc,12483
+arabica/cappuccino.py,sha256=EF99Kf2SoB4xWkLWirj_N7TN9HagRWOYiHayK5B9E4U,30721
+arabica/clean_ngram.py,sha256=OzlmsU8s7lB0we9qM01UpM1QISiBCRiP9M0OYunfhAw,1684
+arabica/clean_numbers.py,sha256=LrR6_r3QeRRedkzo_N8OG4bMA02iudOmgd4vLKaGbAg,146
+arabica/coffee_break.py,sha256=0d0FNgaULAbPTVOq1I2Qe9M4OBoFXdaBgcnr8JoNNFE,8246
+arabica/group.py,sha256=BkhTGIv4UFHwIT6BuyzYJhn7iLpzrd609v_l3BghYG8,2531
+arabica/preprocess.py,sha256=LFm_jLKjKQSpsCWHgESWcJjk1gEagB6Pzi1G_JvNqWI,595
+arabica/sentiment.py,sha256=Rist_5KuV9evwbgO_ZRpKHG1M6NWLcMluFmGwIiCLqQ,533
+arabica/stopwords.py,sha256=fUZFuBrFUnN8KxSdlHxQO3HQfZqWR3bBGRCIoliBRxk,1118
+arabica-1.6.1.dist-info/LICENSE,sha256=q7KJbcPCqUAvkBuI1QNc8Kg9XPfBfnNkLN9WKwudO8U,11
+arabica-1.6.1.dist-info/METADATA,sha256=OSQqUd8cvS2i7NeJxeOw1igU5p17dPeJ73JucxlUCik,8154
+arabica-1.6.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+arabica-1.6.1.dist-info/top_level.txt,sha256=CVDjDxZI2dE0ArvaFNI79Q44eV2XhvADGo7aA8nxxoc,8
+arabica-1.6.1.dist-info/RECORD,,
