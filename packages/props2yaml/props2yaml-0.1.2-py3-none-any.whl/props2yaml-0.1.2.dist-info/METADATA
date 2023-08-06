@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: props2yaml
+Version: 0.1.2
+Summary: Convert .properties files into .yaml
+Author-email: "Jorge F. Sánchez" <props2yaml@jfsanchez.net>
+License: MIT
+Project-URL: Homepage, https://github.com/jfsanchez91/props2yaml
+Project-URL: Bug Tracker, https://github.com/jfsanchez91/props2yaml/issues
+Keywords: yaml,properties,converter
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# props2yaml
+
+Convert `.properties` files into `.yaml`
+
+## install
+
+```bash
+pip install -U props2yaml
+props2yaml --version
+```
+
+## cli usage
+
+- ```bash
+   props2yaml config.properties -o config.yml          # (1)
+   ```
+- ```bash
+   props2yaml config.properties > config.yml           # (2)
+   ```
+- ```bash
+   cat config.properties | props2yaml -o config.yml    # (3)
+   ```
+- ```bash
+   cat config.properties | props2yaml > config.yml     # (4)
+   ```
+
+## python usage
+
+```python3
+from props2yaml import convert_properties_to_yaml
+
+converted = convert_properties_to_yaml("config.prop.value=50")
+print(converted)
+```
+_output:_
+```yaml
+config:
+  prop:
+    value: '50'
+```
