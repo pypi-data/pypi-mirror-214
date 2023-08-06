@@ -1,0 +1,6 @@
+graft src/treepoem/postscriptbarcode
+include CHANGELOG.rst
+include LICENSE
+include pyproject.toml
+include README.rst
+include src/*/py.typed
