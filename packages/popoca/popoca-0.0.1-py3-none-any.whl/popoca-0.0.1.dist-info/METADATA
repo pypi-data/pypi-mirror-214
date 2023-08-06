@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: popoca
+Version: 0.0.1
+Summary: 
+Author: Felipe
+Author-email: 104157442+justafewwords4@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# popoca
+
+Monitorear el Popocatépetl
+
+## TODO
+
+- [ ] TODO: Buscar la página donde se actualizan los datos
+- [ ] TODO::Instalar Typer para manejar el programa
+- [ ] TODO: Separar Typer de Textual
+
