@@ -1,0 +1,13 @@
+bring_order/__init__.py,sha256=dDRpwneX8NAwZG8Zbl4F31uNsY30rtnv8mFp9GVa1Ys,46
+bring_order/bodi.py,sha256=IPuZs6qM1MwlTlT1Cf571LDUTKubnizxA1dr51tzO-E,6798
+bring_order/bogui.py,sha256=0q1KvRfFhVsw1h0zgo31q7uEsL7BujC8xBd-KAopPj0,3262
+bring_order/boutils.py,sha256=j5aDxNV2t8i4FukvZCHXYQumYODml09T6b3w0Earfko,9124
+bring_order/bringorder.py,sha256=lKbkDTVIVSFdH11csDwg7QZdlVYhsFkFGFztEVZ7GGg,2542
+bring_order/deductive.py,sha256=TZBCBFeYH2r-9yOoSjbHbAUpEx3Hngqqzu5FAS_XJwU,9019
+bring_order/inductive.py,sha256=NSPjMr8LTeV5yz8PzCUbMaCjVkqWZjcpS5d5mRJI_wI,7349
+bring_order/inductive_summary_storage.py,sha256=fiV9IXhAxWLvk5o2Mctn6wzLwdg9EHZVPIuR32XadoA,280
+bring_order-0.2.0.dist-info/LICENSE,sha256=eSgLOxmPcBR8rr5dOa6Mo9Q2aM8-xp3MHAMUta1kvG8,1067
+bring_order-0.2.0.dist-info/METADATA,sha256=bBLzKm_dA5wOCVTx7c73uDAwmO9A8mzfVTS7K3Sw7fw,4433
+bring_order-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bring_order-0.2.0.dist-info/top_level.txt,sha256=butUOLfcD43aZP0UPB_8YiDcLpwzwyGN0Ib2LXoQYkg,12
+bring_order-0.2.0.dist-info/RECORD,,
