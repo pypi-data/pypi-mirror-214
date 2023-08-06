@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyved-engine
+Version: 23.5a1
+Summary: A game engine built on python/pygame
+Home-page: https://github.com/gaudiatech/pyved-engine
+Author: moonb3ndr et al.
+Author-email: thomas.iw@kata.games
+License: LGPL3
+Keywords: Python,Pygame,Game Engine
+License-File: LICENSE
