@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ocp-freecad-cam
+Version: 0.0.1
+Summary: OCP FreeCAD CAM
+Author-email: Matti Eiden <snaipperi@gmail.com>
+License: Apache License 2.0
+Project-URL: Bug Tracker, https://github.com/voneiden/ocp-freecad-cam/issues/
+Project-URL: Documentation, https://github.com/voneiden/ocp-freecad-cam/
+Project-URL: Source Code, https://github.com/voneiden/ocp-freecad-cam/
+Keywords: cadquery,viewer
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
