@@ -1,0 +1,4 @@
+cuda
+muheqa
+process_fake_news
+sample
