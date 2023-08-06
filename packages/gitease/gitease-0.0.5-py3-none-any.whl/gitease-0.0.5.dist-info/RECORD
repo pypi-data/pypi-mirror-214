@@ -1,0 +1,13 @@
+gitease/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+gitease/automations.py,sha256=mzNhcRYxKrL2D7snNe4VJf6QR7wm0gXGU9318Wrciug,4628
+gitease/cli.py,sha256=WI_Rim4ptJOPtocWpDeKdeJH7fyyzP9aWDHzswPzXVc,5385
+gitease/git_helper.py,sha256=-g-B2N1tk_sR05OiVI9JEDyg0mSlfRGKi251P0-iFUc,3697
+gitease/llm_helper.py,sha256=ikjv0KpzRbkHwEwkda5sPFAARqDH5j2Dym9M1-7i08Y,3140
+gitease/prompts/prompt_template.txt,sha256=_dJcS2k-GekieSZld5UmbgmQ5Zy1OWh2TsjmQB3K4Vo,947
+gitease/prompts/refine_template.txt,sha256=VOe0gCPTOfmBdlOuF4P3RSc_5wyARYHIz-4P4YOnwEI,823
+gitease/prompts/undo_template.txt,sha256=HhBCeIeaK-jskt6z45ov7GnkJJLvFdDfLT_TU5LdRtg,157
+gitease-0.0.5.dist-info/METADATA,sha256=52IHQ_vlP2ECgi8xnKzLhhSXmrlBPGdKBcx6DLS01tU,3265
+gitease-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gitease-0.0.5.dist-info/entry_points.txt,sha256=f_NRGPFEnu-eFwsPVvzwW2akzkEkuGfKB5xQ4obe-sk,39
+gitease-0.0.5.dist-info/top_level.txt,sha256=5s_oW_JF2xPhx9q6zb2uPdRtqxQbr3_8AQyDIC85KRs,8
+gitease-0.0.5.dist-info/RECORD,,
