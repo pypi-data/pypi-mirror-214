@@ -1,0 +1,17 @@
+taipy/__init__.py,sha256=-Xmuzez93A-ee5g0CixnLI7HBvLr_RlHehbm3D5aG18,2953
+taipy/_entrypoint.py,sha256=St1SIkUf-uQ7ycKBSpxU6NC0GsqvtQpvzYsbbPEsPGs,1471
+taipy/_run.py,sha256=NzHK3OcGiPJGbIZ__3SohlP4MTmCHrsOsK-rzKZbM9U,2622
+taipy/version.json,sha256=GsTtyLU6A3nv6aMYzJU7Vul9LtWcrkIwu281h2f8R8Q,37
+taipy/version.py,sha256=1vtB7JnOTInElrdNryjj5jZgCM1fGNwYDKV7gmPaAG4,997
+taipy/_cli/__init__.py,sha256=q0J_SSJ4NbCNcSwzpMrWZ29yKyTFMYbDmDz8-yDXf2U,583
+taipy/_cli/_help_cli.py,sha256=jzq5w8MKsQY2KSAQv3tFHHsY2qFPFLx-VLyhUR4BWRo,1541
+taipy/_cli/_scaffold_cli.py,sha256=NABcy8z8-ZDQxO6DUBDPUcQKwLgEsP1TXHTQxVmCYAc,1527
+taipy/gui_core/GuiCoreLib.py,sha256=vp08eNN-eHuPtQQrFdaIevplLBfvIMktTDaV5Mbjm_g,21626
+taipy/gui_core/__init__.py,sha256=q0J_SSJ4NbCNcSwzpMrWZ29yKyTFMYbDmDz8-yDXf2U,583
+taipy/gui_core/lib/taipy-gui-core.js,sha256=s00iZ3v_3tCRm6-K-6gpn_byPkSeHqd5zo4xrneTlc0,657685
+taipy-2.3.0.dist-info/LICENSE,sha256=fc-gfoC-LNgJ_ajsvgp54ulMZk5HUxNf8a6DggnMilU,11353
+taipy-2.3.0.dist-info/METADATA,sha256=F5zAE4oHSX4LZiCRnW3gQq_mokgGUOcH_SZoI26G4Ak,8750
+taipy-2.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+taipy-2.3.0.dist-info/entry_points.txt,sha256=3wFVJzWNHcw5ZXrqe-wSiU2MfO8aeurcb8VUskCOZzM,56
+taipy-2.3.0.dist-info/top_level.txt,sha256=F-kynyH_-q1LPvN1lPDSFBa89Bbp8PZiTS3ex8ZKOa0,6
+taipy-2.3.0.dist-info/RECORD,,
