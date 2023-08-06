@@ -1,0 +1,10 @@
+ipython
+jupyter
+matplotlib>=3.4
+numba
+numpy
+scipy
+sympy
+sparse
+pebble
+ffmpeg
