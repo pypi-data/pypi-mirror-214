@@ -1,0 +1,7 @@
+bagit
+doi2bib
+numpy
+pandas
+pybtex
+rdflib
+tqdm
