@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: greynoiselabs
+Version: 0.1.0
+Summary: Abstraction to interact with GreyNoise Labs GraphQL API.
+Home-page: https://api.labs.greynoise.io/
+Author: GreyNoise Intelligence
+Author-email: labs@greynoise.io
+License: MIT
+Download-URL: https://github.com/GreyNoise-Intelligence/greynoiselabs
+Keywords: internet,scanning,threat intelligence,security
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.0, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*
+License-File: LICENSE
+
+====================================
+Python GreyNoise Labs GraphQL Client
+====================================
+
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+    :target: https://opensource.org/licenses/MIT
+
+This is an abstract python library generated from the `GreyNoise Labs API`_ service.
+
+.. _GreyNoise Labs API: https://api.labs.greynoise.io/
+
+Documentation
+=============
+Documentation is available here: `Documentation`_
+
+.. _Documentation: https://api.labs.greynoise.io/1/docs/
+
+Quick Start
+===========
+**Install the library**:
+
+``pip install labs-graphql-client`` or ``python setup.py install``
+
+Example Code
+
+..  code-block:: python
+
+    import os
+    import asyncio
+    from greynoiselabs.client import Client
+
+    client = Client("https://api.labs.greynoise.io/1/query",
+                    {"Authorization": f"Bearer {os.environ['AUTH_TOKEN']}"})
+
+    response = asyncio.run(client.top_knocks(ip="221.144.229.187"))
+    print(response)
+
+
+=========
+Changelog
+=========
+
+Version `dev`_
+================
+**Date**: unreleased
+
+.. _`dev`: https://github.com/GreyNoise-Intelligence/labs-graphql-client/compare/v0.1.0...HEAD
+
