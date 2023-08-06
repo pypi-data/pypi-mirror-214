@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+schemaser/__init__.py
+schemaser.egg-info/PKG-INFO
+schemaser.egg-info/SOURCES.txt
+schemaser.egg-info/dependency_links.txt
+schemaser.egg-info/top_level.txt
