@@ -1,0 +1,14 @@
+wasmpy/__init__.py,sha256=sFOmxilxZEAFaAOfOyadyAdvQHCyq-rwXIGGc0MQ4R4,103
+wasmpy/hooks.py,sha256=nHOA11Yb8n_-UTfTzgRc0AN8O8NLJWa0qA1YpinpRpA,1591
+wasmpy/instructions.py,sha256=YDgxqzMo30GwoEDv3O2Qbrc0IigvLGjVUqGpVK07OKw,14893
+wasmpy/module.py,sha256=bUgvy-9rbxUm3ZUdJBFt5EFBoMtmkVgpPC0L2kgAlLU,2693
+wasmpy/native.py,sha256=roAckqIXUr3_jdVSOHsAIXTdCULa2oaJ_BDuGTD15ZM,1053
+wasmpy/sections.py,sha256=XeVPDx6-IqSsD8PBCaPPPdCdtpmbaRMNqxIZNHz_A4o,5256
+wasmpy/types.py,sha256=2RevlUgj1_TCCCC4cmS4qRkpIZy4w6my78lL56ByBWA,2421
+wasmpy/values.py,sha256=It-S5sNfBhhRhEDopOzzYUXhahV0rLMVgoJjj2pgwVM,2029
+wasmpy/win_x86.cp39-win_amd64.pyd,sha256=UVEAWCLgl1LOqDDvnrk0oqapPbMEyOTlwXgVU_W8HT0,40960
+wasmpy-0.1.0.dist-info/LICENSE,sha256=VGx6YZ5_6LWTqSrTLOzrmq7Cy6eFv83qbPo57-A_f4E,1068
+wasmpy-0.1.0.dist-info/METADATA,sha256=iIXvEc__IIiShYrG-AUHw6z27LtdxTTRflL-amrZziE,2363
+wasmpy-0.1.0.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+wasmpy-0.1.0.dist-info/top_level.txt,sha256=stKOyr4rDr_7Lh9NkBBGW5NFkXMSsqXxwBc6P24s8w0,7
+wasmpy-0.1.0.dist-info/RECORD,,
