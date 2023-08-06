@@ -1,0 +1,24 @@
+codegenpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codegenpt/cli.py,sha256=RnldI9MkM_41xxZnfGCyOv-0P2rsh9VWrafx67QA1eQ,4076
+codegenpt/codegenpt_directory.py,sha256=V70UyNeiRoKAlepIYmUuwuaWJgP7zeztuDj_GhcwKx8,2020
+codegenpt/codegenpt_file.py,sha256=0X13COxZ_INCW_0UApoIsLiHaHELwstydYXUKi9uycU,558
+codegenpt/codegenpt_instructions.py,sha256=GDgtfDgn6T69T4m7hhLjA7Xq0gB7jw1XA2vukNvtIgw,1938
+codegenpt/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codegenpt/commands/command.py,sha256=KBSYbVDFyKTiYYQuXU_Eqh3MtD0OpboN4NxGEiA4hQ4,248
+codegenpt/commands/commands.py,sha256=nl25X5d9CrHhbI7vFYsgQ4Ns6LWemBcJ62OZzCBIaz4,612
+codegenpt/commands/include.py,sha256=gomkZ8Sqo39F_Ndw0VpBIGNjQbYRZl1d5MDAKyrHMHA,1672
+codegenpt/dependency_batch-old copy.py,sha256=JJGTg57TZTYdThhaOGDqEtMbdC7kXsEvYErzNvOsp3k,1635
+codegenpt/dependency_batch.py,sha256=c5uZxEcEWqRiIrk37jr-uLMEtbCGElMbbFHUImTmQiU,2038
+codegenpt/dependency_batch.py.codegenpt,sha256=WqRbONKeunHntp_L6AxQ9U8eSHZ6IEZlJz5MsfKrbV8,876
+codegenpt/filesystem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codegenpt/filesystem/file_discovery.py,sha256=4njpFBBTaWfMWbjrJ7W3PlCg7vm-KrZBJ_8MUbSYROA,846
+codegenpt/generators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codegenpt/generators/directory_generator.py,sha256=R4F1kdm1ZjmwzqWWLxR7hNXEhiwA3JfNl8OqwEd88jg,4801
+codegenpt/generators/file_generator.py,sha256=mACxtl_BV412CLDNaER_-XEMz1ak1osKmJBNcRlz7Yg,1532
+codegenpt/llm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codegenpt/llm/llm.py,sha256=JSkBDiIWw_rNlthTh2gI6-qfqPvOoyq9JZOFeqtTqgg,711
+codegenpt-0.8.1.dist-info/LICENSE,sha256=SYR7JbwUKt0ST9uXhcSzu3t2IXjgsweJtANYa5Ddnb8,1071
+codegenpt-0.8.1.dist-info/METADATA,sha256=N3DaLDh6lgDXQfqViHy9OG-Gj0jjyRlnwPa-02Knqh0,3249
+codegenpt-0.8.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+codegenpt-0.8.1.dist-info/entry_points.txt,sha256=lyXiaPci21xXOLoUOmVYPcJP-lplLBndgDOK2q1Qnyw,47
+codegenpt-0.8.1.dist-info/RECORD,,
