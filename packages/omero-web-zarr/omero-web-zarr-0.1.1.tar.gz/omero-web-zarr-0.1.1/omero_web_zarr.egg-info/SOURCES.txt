@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+omero_web_zarr/__init__.py
+omero_web_zarr/apps.py
+omero_web_zarr/urls.py
+omero_web_zarr/utils.py
+omero_web_zarr/views.py
+omero_web_zarr.egg-info/PKG-INFO
+omero_web_zarr.egg-info/SOURCES.txt
+omero_web_zarr.egg-info/dependency_links.txt
+omero_web_zarr.egg-info/not-zip-safe
+omero_web_zarr.egg-info/requires.txt
+omero_web_zarr.egg-info/top_level.txt
+omero_web_zarr/static/omero_web_zarr/openwith.js
+omero_web_zarr/static/omero_web_zarr/openwith_validator.js
