@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+BIAS/Create_RF.py
+BIAS/SB_Test_runner.py
+BIAS/SB_Toolbox.py
+BIAS/__init__.py
+struct_bias.egg-info/PKG-INFO
+struct_bias.egg-info/SOURCES.txt
+struct_bias.egg-info/dependency_links.txt
+struct_bias.egg-info/requires.txt
+struct_bias.egg-info/top_level.txt
