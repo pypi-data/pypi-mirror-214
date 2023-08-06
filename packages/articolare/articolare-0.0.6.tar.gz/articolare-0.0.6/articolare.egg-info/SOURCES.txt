@@ -1,0 +1,11 @@
+README.md
+setup.py
+articolare/__init__.py
+articolare/translate.py
+articolare.egg-info/PKG-INFO
+articolare.egg-info/SOURCES.txt
+articolare.egg-info/dependency_links.txt
+articolare.egg-info/requires.txt
+articolare.egg-info/top_level.txt
+tests/__init__.py
+tests/test_client.py
