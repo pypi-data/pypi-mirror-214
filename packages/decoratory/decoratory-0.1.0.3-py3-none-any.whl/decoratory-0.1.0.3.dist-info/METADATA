@@ -1,0 +1,565 @@
+Metadata-Version: 2.1
+Name: decoratory
+Version: 0.1.0.3
+Summary: Decorators: Singleton, Multiton, Observer, Observable, generic Wrapper.
+Home-page: http://evation.eu
+Download-URL: http://evation.eu
+Author: Martin Abel
+Author-email: Martin Abel <python@evation.eu>
+Maintainer: Martin Abel
+Maintainer-email: Martin Abel <python@evation.eu>
+License: PSF
+Project-URL: Projekt, http://evation.eu
+Project-URL: Release Notes, http://evation.eu
+Project-URL: Download, http://evation.eu
+Keywords: decorator singleton multiton observer observable wrapper
+Platform: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: License.txt
+
+
+.. _top:
+
+==============================================================================
+Decoratory
+==============================================================================
+
+
+**Introduction**
+
+The *decoratory package* is based on the `Decorator Arguments Pattern`_, an 
+integrated concept for Python decorators with and without parameters. In
+addition, all decorators created with it support complex arguments, e.g. 
+lists of values and functions, without unnecessarily complicating the 
+decoration of simple cases by these extensions. All implementation details 
+are described on the `project homepage`_.
+
+
+**Installation** ::
+
+    pip install --upgrade decoratory
+
+After installation, basic information about the package, the individual 
+modules and their methods is also available from the command line. ::
+
+    python -m decoratory --help
+
+.. _toc:
+
+**Package Contents**
+
+The *decoratory package* available here includes some classic decorators
+implemented and functionally extended with this concept, e.g.
+
+* `Singleton`_
+* `Multiton`_
+* `Wrapper`_
+* `Observer`_   (coming soon...)
+
+This is an open list that possibly will grow over time.
+
+
+**Description**
+
+To illustrate the functionality of each module, a simple as well as a 
+more complex example is presented. Even if only one particular module 
+is needed, it is recommended to view the preceding examples as well. For even
+more examples of the full range of possibilities, please refer to the 
+`project homepage`_.
+
+
+******************************************************************************
+Singleton
+******************************************************************************
+
+A `singleton pattern`_ is a design pattern that limits the instantiation of 
+a class to a single (unique) instance. This is useful when exactly one unique 
+object is needed i.e. to manage an expensive resource or coordinate actions 
+across modules.
+
+As a simple example serves the decoration of the class  ``Animal`` as 
+singleton. In the context of the `Decorator Arguments Pattern`_, this can be 
+done both without brackets (decorator class) and with brackets (decorator 
+instance), meaning both notations describe the same functional situation.
+
+.. code-block:: python
+   
+    # *** example_singleton.py - class Animal with Singleton decoration
+
+    from decoratory.singleton import Singleton
+
+    @Singleton                      # or @Singleton()
+    class Animal:
+        def __init__(self, name):
+            self.name = name
+
+        def __repr__(self):
+            return f"{self.__class__.__name__}('{self.name}')"
+
+    # Create Instances
+    a = Animal(name='Bello')        # Creates Bello
+    b = Animal(name='Tessa')        # Returns Bello
+
+If instances of the class ``Animal`` are now created, this is only done for the 
+very first instantiation, and for all further instantiations always this 
+*primary instance* is given back.
+            
+.. code-block:: python
+
+    # *** example_singleton.py - verfication of the unique instance
+
+    # Case 1: Static decoration using @Singleton or @Singleton()
+    print(f"a = {a}")               # a = Animal('Bello')
+    print(f"b = {b}")               # b = Animal('Bello')
+    print(f"a is b: {a is b}")      # a is b: True
+    print(f"a == b: {a == b}")      # a == b: True
+
+If instead of the above *static decoration* using pie-notation, i.e. with 
+@-notation at the class declaration, the *dynamic decoration* within Python 
+code is used, additional parameters can be passed to the decorator for 
+passing to the class constructor.
+
+.. code-block:: python
+
+    # *** example_singleton.py - dynamic decoration with extra parameters
+
+    # Case 2: Dynamic decoration providing extra initial default values 
+    Animal = Singleton(Animal, 'Bello')
+    Animal()                        # Using the decorator's default 'Bello'
+    a = Animal(name='Tessa')        # Returns Bello
+    print(a)                        # Animal('Bello')
+
+Quite generally, for all the following decorators based on this 
+`Decorator Arguments Pattern`_, these two properties are always fulfilled:
+
+#. Decoration as a class (without parentheses) and Decoration as an instance 
+   (with empty parentheses) are equivalent
+#. For dynamic decoration, extra parameters can be passed, e.g. for the 
+   class constructor
+
+So far, this singleton implementation follows the concept of *once and 
+forever*, i.e. whenever a new instance of a class is created, one always
+gets the *primary instance* back - without any possibility of ever changing 
+it again.
+
+Although this behavior is consistent with the basic concept of a singleton, 
+there are situations where it might be useful to reset a *singleton*. Such 
+a *resettable singleton* could be useful to express in code that an instance 
+is often retrieved but rarely changed.
+
+.. code-block:: python
+
+    # *** example_singleton.py - decoration as 'resettable singleton'
+
+    from decoratory.singleton import Singleton
+
+    @Singleton(resettable=True)     # Exposes an additional reset method 
+    class Animal:
+        def __init__(self, name):
+            self.name = name
+
+        def __repr__(self):
+            return f"{self.__class__.__name__}('{self.name}')"
+
+    # Case 3: Decoration using @Singleton(resettable=True)
+    print(Animal(name='Bello'))     # Animal('Bello')
+    print(Animal(name='Tessa'))     # Animal('Bello')   (=primary instance)
+    Animal.reset()                  # Reset the singleton
+    print(Animal(name='Tessa'))     # Animal('Tessa')
+    print(Animal(name='Bello'))     # Animal('Tessa')   (=primary instance)
+
+Without ``resettable=True`` decoration ``Animal`` has no ``reset`` method and 
+the call ``Animal.reset()`` will fail raising an ``AttributeError``.
+
+With the same intention, the retrieval of the *primary instance* is also 
+locked by default, but can be unlocked during decoration with the 
+``accessible=True`` parameter, which allows ``Animal`` to expose the 
+``get_instance()`` method.
+
+.. code-block:: python
+
+    # *** example_singleton.py - decoration as 'accessible singleton'
+
+    from decoratory.singleton import Singleton
+
+    @Singleton(accessible=True)     # Exposes a get_instance method 
+    class Animal:
+        def __init__(self, name):
+            self.name = name
+
+        def __repr__(self):
+            return f"{self.__class__.__name__}('{self.name}')"
+
+    # Case 4: Decoration using @Singleton(accessible=True)
+    a = Animal(name='Bello')        # Animal('Bello')
+    b = Animal.get_instance()       # Animal('Bello')   (=primary instance)
+    print(a)                        # Animal('Bello')
+    print(b)                        # Animal('Bello')
+
+
+******************************************************************************
+Multiton
+******************************************************************************
+
+A `multiton pattern`_ is a design pattern that extends the singleton pattern.
+Whereas the singleton allows for exactly one instance per class, the multiton 
+ensures one single (unique) *instance per key value of a dictionary*.
+
+In this implementation the key parameter can be either any immutable type
+or a callable returning such an immutable type which can be used as a key
+of a dictionary. In case of an invalid key, key is set ``None`` and with only 
+one key value the multiton simply collapses to a singleton, therefore the 
+decoration ``@Multiton`` resp. ``@Multiton()`` or even ``@Multiton(key=17)`` 
+or  ``@Multiton(key='some constant value')`` and so on always creates a 
+singleton.
+
+Normally, the key is part of or is composed from the initial values of the 
+classified object, as in the following example, where the key function matches 
+the signature of the constructor and uses the initial value of the ``name`` 
+parameter to construct a key value for the instances of ``Animal``.
+
+.. code-block:: python
+   
+    # *** example_multitonton.py - class Animal with Multiton decoration
+
+    from decoratory.multiton import Multiton
+
+    @Multiton(key=lambda spec, name: name)
+    class Animal:
+        def __init__(self, spec, name):
+            self.spec = spec
+            self.name = name
+
+        def __repr__(self):
+            return f"{self.__class__.__name__}('{self.spec}', '{self.name}')"
+
+    # Create Instances
+    a = Animal('dog', name='Bello')
+    b = Animal('cat', name='Mausi')
+    c = Animal('dog', name='Tessa')
+
+When instances of the class ``Animal`` are now created, this only happens for 
+the *first instantiation per key value*, the initial name of the animal. For 
+all subsequent instantiations, this *primary instance per key value* is 
+returned. But for each new key value, a new ``Animal`` instance is created 
+and stored in the internal directory.
+
+.. code-block:: python
+
+    # *** example_multitonton.py - One unique instance per name
+
+    # Case 1: decoration @Multiton(key=lambda spec, name: name)
+    print(a)                        # Animal('dog', 'Bello')
+    print(b)                        # Animal('cat', 'Mausi')
+    print(c)                        # Animal('dog', 'Tessa')
+
+With three different names, a separate instance is created in each case. 
+In contrast, the following variant distinguishes only two types (equivalence 
+classes): animals with a character 'a' in their name and those without and 
+thus the key values can only be ``True`` or ``False``.
+
+.. code-block:: python
+
+    # *** example_multitonton.py - One unique instance per equivalence class
+
+    # Case 2: decoration @Multiton(key=lambda spec, name: 'a' in name)
+    print(a)                        # Animal('dog', 'Bello')
+    print(b)                        # Animal('cat', 'Mausi')
+    print(c)                        # Animal('cat', 'Mausi')
+
+The initial parameter values of the constructor can also be accessed by their 
+``args``-index or ``kwargs``-name. So the following decorations are also 
+possible:
+
+.. code-block:: python
+
+    # *** example_multitonton.py - Alternative decoration examples
+
+    # Case 3: One unique instance per specie
+    @Multiton(key="{0}".format)     # spec is args[0]
+    class Animal:
+        ...
+
+    # Case 4: One unique instance per name
+    @Multiton(key="{name}".format)  # name is kwargs['name']
+    class Animal:
+        ...
+
+    # Case 5: One unique instance for all init values, i.e. no duplicates
+    @Multiton(key=lambda spec, name: (spec, name))
+    class Animal:
+        ...
+
+    # Case 6: One unique instance from a @staticmethod or @classmethod
+    @Multiton(key=F("my_key"))      # Late binding with F(classmethod_string)
+    class Animal:
+        ...
+
+        @classmethod
+        def my_key(cls, spec, name):
+            return 'a' in name
+        
+To actively control access to new equivalence classes, ``Multiton`` provides 
+the ``seal()``, ``unseal()``, and ``issealed()`` methods for sealing, unsealing,
+and checking the sealing state of the ``Multiton``. By default, the sealing 
+state is set ``False``, so for every new key a new (unique) object is 
+instantiated. When sealed (e.g. later in the process) is set ``True`` the 
+dictionary has completed, i.e. restricted to the current object set and 
+any new key raises a ``KeyError``.
+
+For deeper, special requirements on the equivalence classes of a multiton 
+by setting the decorator parameter ``accessible=True``, the method 
+``get_instances()`` is enabled, which grants direct access to the internal 
+directory of the instances. This can be actively manipulated in this way, 
+which of course should be done with care and is generally not recommended.  
+
+.. code-block:: python
+
+    # *** example_multitonton.py - Accessibility to the internal directory
+
+    # Case 7: with decoration @Multiton(key=lambda spec, name: 'a' in name,
+    #                                   accessible=True)
+    print(Animal.get_instances())   # {}
+    a = Animal('dog', name='Bello') # 
+    print(Animal.get_instances())   # {False: Animal('dog', 'Bello')}
+    b = Animal('cat', name='Mausi') # 
+    c = Animal('dog', name='Tessa') # 
+    print(Animal.get_instances())   # {False: Animal('dog', 'Bello'),  
+                                    #  True:  Animal('cat', 'Mausi')}
+
+In situations where it might be useful to reset the multiton to express in 
+code that instances are often retrieved but rarely modified, setting the 
+decorator parameter ``resettable=True`` will expose the ``reset()`` method, 
+by means of which the internal directory of instances can be completely cleared.
+
+.. warning::
+ 
+    Classifications into the multiton directory are done only once on
+    initial key data. Subsequent changes affecting a key value are not 
+    reflected in the multiton directory, i.e. the directory may then be 
+    corrupted by such modifications.
+    
+    Therefore, **never change key related values of classified objects**!
+
+
+******************************************************************************
+Wrapper
+******************************************************************************
+
+As the name implies, a wrapper encloses the original function with an
+
+* (optional) ``before`` call functionality
+                
+and/or
+
+* (optional) ``after`` call functionality.
+
+This implementation additionally supports an 
+
+* (optional) ``replace`` call functionality.
+
+This generic Wrapper is all the more broadly applicable, the more flexibly 
+these three activities can be formulated. All three decorator parameters, 
+``before``, ``after`` and ``replace``, can be combined with each other and 
+support both single callables and (nested) lists of ``F``-types 
+(imported from module decoratory.basic, see below for details). 
+In addition, ``replace`` supports passing results from successive 
+replacement calls through an optional keyword argument named ``result`` 
+(defaut value is ``None``).
+
+Even without any of these arguments, such a *do nothing wrapper* can be used 
+to *overwrite* default values, for example.
+
+.. code-block:: python
+
+    # *** example_wrapper.py - overwrite default parameter values
+
+    from decoratory.wrapper import Wrapper
+
+    # Case 1: Dynamic decoration with decorator arguments, only
+    def some_function(value: str = "original"):
+        print(f"value = '{value}'")
+
+    # Function call with default parameters
+    some_function()                 # value = 'original'
+    some_function = Wrapper(some_function, value="changed")
+    some_function()                 # value = 'changed'
+
+The functionality of ``some_function()`` itself remains unchanged. A typical 
+scenario for a wrapper is, of course, the execution of additional functionality 
+before and/or after a given functionality, which itself remains unchanged, 
+such as ``enter/leave`` markers, call data caches, runtime measurements, etc.
+Here is a typical example:
+
+.. code-block:: python
+
+    # *** example_wrapper.py - enclose original function
+
+    from decoratory.wrapper import Wrapper
+    from decoratory.basic import F
+
+    # Case 2: Decoration with before and after functionalities
+    def print_message(message: str = "ENTER"):
+        print(message)
+
+    @Wrapper(before=print_message, after=F(print_message, "LEAVE"))
+    def some_function(value: str = "original"):
+        print(f"value = '{value}'")
+
+    some_function()                 # ENTER
+                                    # value = 'original'
+                                    # LEAVE
+
+While ``before`` calls ``print_message`` with its default parameters the 
+``after`` parameter uses the ``F``-function from ``decoratory.basic``. 
+It has a signature ``F(callable, *args, **kwargs)`` and encapsulates the 
+passing of any function with optional positional and keyword parameters. 
+Accordingly, the keyword variant ``after=F(print_message, message="LEAVE")`` 
+would also be possible.
+
+A rather more complex example illustrates the replacement of the original 
+functionality with a sequence of replacement functionalities, passing a 
+``result`` object of type ``int`` between successive calls.
+
+.. code-block:: python
+
+    # *** example_wrapper.py - enclose and replacing original function
+
+    from decoratory.wrapper import Wrapper
+    from decoratory.basic import F
+
+    # Case 3: Decoration with before, after and multiple replacements
+    def print_message(message: str = "UNDEFINED"):
+        print(message)
+
+    def replacement_printer(add: int = 1, *, result=None):
+        result += add if isinstance(result, int) else 0
+        print(f"result = {result}")
+        return result
+
+    @Wrapper(before=F(print, "ENTER"), # Python's print()
+             replace=[F(replacement_printer, 1, result=0),
+                      F(replacement_printer, 3),
+                      F(replacement_printer, 5)],
+             after=F(print_message, "LEAVE"))
+    def result_printer(message: str = "UNKNOWN"):
+        print(message)
+
+    result_printer()                # ENTER         (before)
+                                    # result = 1    (replacement_printer, 1)
+                                    # result = 4    (replacement_printer, 3)
+                                    # result = 9    (replacement_printer, 5)
+                                    # LEAVE         (after)
+                                    # 9             (output default_printer)
+
+The absence of the outputs of ``UNDEFINED`` and ``UNKNOWN`` reflects the 
+correct replacements by the decoration, and the order of execution is exactly 
+as expected: ``before`` then ``replace`` then ``after`` and in each of these 
+variables the lists are processed in ascending order.
+
+The *decoration of a class* always refers to the constructor of the class, e.g.
+
+.. code-block:: python
+
+    # *** example_wrapper.py - class decoration
+
+    from decoratory.wrapper import Wrapper
+    from decoratory.basic import F
+
+    @Wrapper(before=F(print, "BEFORE init"), after=F(print, "AFTER init"))
+    class Animal:
+        def __init__(self, name):
+            self.name = name
+            print("RUNNING init")
+    
+    # Case 4: Decoration of a class always refers to __init__
+    a = Animal(name='Bello')        # BEFORE init
+                                    # RUNNING init
+                                    # AFTER init
+
+
+For all other methods applies:
+
+.. note::
+
+    Decorations to ``@staticmethod`` or ``@classmethod`` can be done 
+    analogously to the function decorations above, since they already exist 
+    at compile time. Instance methods, on the other hand, do not exist until 
+    an object instance is created and must be handled differently.
+
+With ``Wrapper`` and custom service functions, a *private wrapper library* 
+can be built and reused.
+
+.. code-block:: python
+
+    # *** example_wrapper.py - private wrapper library
+
+    from decoratory.wrapper import Wrapper
+    from decoratory.basic import F
+
+    # Case 5: Define a private wrapper library
+    before_wrapper = Wrapper(before=F(print, "BEFORE"))
+    after_wrapper = Wrapper(after=F(print, "AFTER"))
+
+    # Multiple decorations for specialized functionality encapsulation
+    @before_wrapper
+    @after_wrapper
+    def some_function(value: str = "original"):
+        print(f"value = '{value}'")
+
+    some_function()                 # BEFORE
+                                    # value = 'original'
+                                    # AFTER
+
+
+******************************************************************************
+Observer
+******************************************************************************
+
+coming soon...
+
+
+******************************************************************************
+Version History
+******************************************************************************
+
+**Version: 0.1.0.3, Build: 2023-06-15**
+    
+- accessible parameter for singleton and multiton, incl. documentation
+- resettable parameter for singleton and multiton, incl. documentation
+
+**Version: 0.1.0.2, Build: 2023-06-13**
+
+- Documentation enhancements for for singleton, multiton and wrapper
+
+**Version: 0.1.0.1, Build: 2023-06-12**
+
+- Initial version with Singleton, Multiton and Wrapper
+
+
+.. ===========================================================================
+.. _project homepage: http://evation.eu
+.. _singleton pattern: https://en.wikipedia.org/wiki/Singleton_pattern
+.. _multiton pattern: https://en.wikipedia.org/wiki/Multiton_pattern
+.. _Decorator Arguments Pattern: http://evation.eu
+

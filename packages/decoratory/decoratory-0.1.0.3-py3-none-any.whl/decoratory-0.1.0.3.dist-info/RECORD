@@ -1,0 +1,16 @@
+decoratory/__init__.py,sha256=nvap6dypO9YWl682V2mvkIqxeq4eUNcglKD-8DROYcQ,249
+decoratory/__main__.py,sha256=Y-yjGAG1K1Hs0unPf7MJ0Os-vy0FZksrIqWJUNQoDN0,4621
+decoratory/banner.py,sha256=GwAuutjiKoXgYby9tqF7h29D2odedoe3inc2hvjf904,4855
+decoratory/basic.py,sha256=pVYznz8J3H_oiNBWECGGCGcDaob6NKmshrsGgSACOb8,14152
+decoratory/multiton.py,sha256=i_zHnBH1sFW8k4uqpjNsGrzeMRi3J3YwhEuBMN_QaNY,15763
+decoratory/observer.py,sha256=jcPIVhF8i8ANUBdpJotQ_abrAyBuJDZtuSNeW9I69Xg,38553
+decoratory/singleton.py,sha256=y3hBUodgKVd21-wXvQlEdro-UMH6LfA-mQfjdnH3lsY,9089
+decoratory/wrapper.py,sha256=vxSLwvR_YbotgEHIfnZZFrQlns94o-aIabDxUpkxewA,13845
+decoratory-0.1.0.3.data/data/lib/site-packages/decoratory/data/License.txt,sha256=syTvskVdAbRh7p_aNrRMDmROZVufrT-KdbYkQslLAMk,2550
+decoratory-0.1.0.3.data/data/lib/site-packages/decoratory/data/Readme.rst,sha256=CyFYIXHZg9bkii-rLVD3z4LKsZup0rqkEGLdTEUJrZ0,20767
+decoratory-0.1.0.3.data/data/lib/site-packages/decoratory/data/Requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decoratory-0.1.0.3.dist-info/License.txt,sha256=syTvskVdAbRh7p_aNrRMDmROZVufrT-KdbYkQslLAMk,2550
+decoratory-0.1.0.3.dist-info/METADATA,sha256=kU2_-5g3RZqg-otzJC4Uw4tO1kt0Qgi6Gsd_WoAuse8,22392
+decoratory-0.1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+decoratory-0.1.0.3.dist-info/top_level.txt,sha256=WM1ox0sPPd2_70wbBFLkgDgLjJS155JZY1CWaaFu1vY,11
+decoratory-0.1.0.3.dist-info/RECORD,,
