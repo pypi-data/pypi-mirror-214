@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+tests/test_watch_diff.py
+watch_diff/__init__.py
+watch_diff/__main__.py
+watch_diff/command.py
+watch_diff/diff.py
+watch_diff/email.py
+watch_diff/format.py
+watch_diff.egg-info/PKG-INFO
+watch_diff.egg-info/SOURCES.txt
+watch_diff.egg-info/dependency_links.txt
+watch_diff.egg-info/entry_points.txt
+watch_diff.egg-info/requires.txt
+watch_diff.egg-info/top_level.txt
