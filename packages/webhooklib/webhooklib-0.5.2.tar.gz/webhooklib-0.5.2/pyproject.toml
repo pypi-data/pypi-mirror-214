@@ -1,0 +1,128 @@
+[project]
+name = "webhooklib"
+version = "0.5.2"
+authors = [
+    {name = "Alexander Rodionov", email = "tandav@tandav.me"},
+]
+description = " tool for remote process call"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "redis",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+    "bumpver",
+    "pre-commit",
+    "pytest",
+]
+
+[project.urls]
+source = "https://github.com/tandav/webhook"
+# docs = "https://tandav.github.io/webhook"
+issues = "https://tandav.github.io/webhook/issues"
+"release notes" = "https://tandav.github.io/webhook/releases"
+
+# ==============================================================================
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+# ==============================================================================
+
+[tool.bumpver]
+current_version = "v0.5.2"
+version_pattern = "vMAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    '^version = "{pep440_version}"',
+    '^current_version = "{version}"',
+]
+"webhooklib/__init__.py" = [
+    "^__version__ = '{pep440_version}'",
+]
+
+# ==============================================================================
+
+[tool.ruff]
+select = ["ALL"]
+ignore = [
+    "E501",  # line too long
+    "E731", # lambda assignment
+    "E701", # multiple statements
+    "E702", # multiple statements
+    "F403", # star imports
+    "F405", # star imports
+    "B008", # function-call-in-default-argument
+    "PLR0913", # too-many-arguments
+    "TCH003", # typing-only-standard-library-import
+    "ANN", # type annotations
+    "D", #docstrings
+    "Q", # quotes
+    "ARG005", # Unused lambda argument
+    "PTH123", # `open()` should be replaced by `Path.open()`
+    "N812", # lowercase imported as non lowercase
+    "T201",
+    "S113",
+    "A003",
+    "G004",
+]
+
+[tool.ruff.per-file-ignores]
+"examples/*" = ["INP001"]
+"tests/*" = ["S101", "PLR2004"]
+
+[tool.ruff.isort]
+force-single-line = true
+
+# ==============================================================================
+
+[tool.pylint.MASTER]
+load-plugins=[
+    "pylint_per_file_ignores",
+]
+
+[tool.pylint.messages-control]
+disable = [
+    "invalid-name",
+    "missing-function-docstring",
+    "missing-class-docstring",
+    "missing-module-docstring",
+    "unnecessary-lambda-assignment",
+    "multiple-statements",
+    "line-too-long",
+    "unspecified-encoding",
+    "wildcard-import",
+    "unused-wildcard-import",
+    "keyword-arg-before-vararg",
+    "too-few-public-methods",
+    "consider-using-with",
+    "import-error",
+    "logging-fstring-interpolation",
+]
+
+[tool.pylint-per-file-ignores]
+"server.py" = "import-error"
+
+# ==============================================================================
+
+[tool.autopep8]
+ignore="E501,E701"
+recursive = true
+aggressive = 3
+
+# ==============================================================================
+
+[tool.flake8]
+ignore = ['F405', 'F403', 'E501', 'E701']
+
+# ==============================================================================
