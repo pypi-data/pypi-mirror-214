@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nestedaccess/__init__.py
+nestedaccess/nestedaccess.py
+nestedaccess.egg-info/PKG-INFO
+nestedaccess.egg-info/SOURCES.txt
+nestedaccess.egg-info/dependency_links.txt
+nestedaccess.egg-info/entry_points.txt
+nestedaccess.egg-info/top_level.txt
