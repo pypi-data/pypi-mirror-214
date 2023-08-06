@@ -1,0 +1,6 @@
+{
+  "tests/test_ulfunc.py::test_fulfunc_import": true,
+  "tests/test_ulfunc.py::test_monalysa_import": true,
+  "tests/test_ulfunc.py::test_ulfunc_import": true,
+  "tests/test_misc.py::test_monalysa_import": true
+}
