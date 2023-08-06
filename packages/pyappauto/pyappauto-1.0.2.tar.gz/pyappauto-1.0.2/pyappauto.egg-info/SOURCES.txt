@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+pyappauto/__init__.py
+pyappauto.egg-info/PKG-INFO
+pyappauto.egg-info/SOURCES.txt
+pyappauto.egg-info/dependency_links.txt
+pyappauto.egg-info/requires.txt
+pyappauto.egg-info/top_level.txt
+pyappauto/utils/errors.py
+pyappauto/utils/keys.py
