@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: litenai
+Version: 0.0.1
+Summary: Liten AI Data Platform
+Author: HK Verma
+Author-email: hkverma@litendata.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: botocore
+Requires-Dist: boto3
+Requires-Dist: langchain
+Requires-Dist: minio
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: panel
+Requires-Dist: hvplot
+Requires-Dist: python-dotenv
+Requires-Dist: tiktoken
+
+## Liten AI Data
