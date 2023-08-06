@@ -1,0 +1,13 @@
+# common token
+name = r"\w+" ;
+
+# import statements
+import_statement = "import" import_items ;
+dotted_name = { "." } name { "." name } ;
+from_statement = "from" dotted_name "import" ( import_items | import_items_multiline ) ;
+
+# import items
+import_items = "*" | import_name { "," import_name } ;
+import_items_multiline = "(" { newline } import_name { "," { newline } import_name } { newline } ")";
+import_name = identifier [ alias ] ;
+alias = "as" identifier ;
