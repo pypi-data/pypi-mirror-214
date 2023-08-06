@@ -1,0 +1,8 @@
+tap_bitly/__init__.py,sha256=nRczIO-yIU5M4o3Pw3a58pu-3YyfEMfxsWqn5VJd0_I,44
+tap_bitly/client.py,sha256=agn3nk4L0DRcygquh0JYwjFoR0JMwN0JSfflnY2jF3U,1013
+tap_bitly/streams.py,sha256=Ol3K4pCWJRxk7BxqEmngG8iU7Y7n7gPDQPnhdarC6dc,15168
+tap_bitly/tap.py,sha256=7FDPerRNlq_30QTbnOTuA_nm2iku7TFYUdFGC9Hk0zE,1448
+tap_bitly-0.0.1a1.dist-info/METADATA,sha256=Tn4qMp1_8_9xPzQdgOijsitkOHmBISZ6SRMjwmB3YFg,6780
+tap_bitly-0.0.1a1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+tap_bitly-0.0.1a1.dist-info/entry_points.txt,sha256=Xlci5mqRxE9IjJ21EEYrQOLjHvT15_sxnGhp2ZFtfEw,56
+tap_bitly-0.0.1a1.dist-info/RECORD,,
