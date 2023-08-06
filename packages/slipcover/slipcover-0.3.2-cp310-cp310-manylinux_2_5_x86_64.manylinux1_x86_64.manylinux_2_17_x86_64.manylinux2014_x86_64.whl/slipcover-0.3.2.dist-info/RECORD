@@ -1,0 +1,13 @@
+slipcover/__init__.py,sha256=aBcrtLELc4fXRss6whLyvvy4t6-Bi_OIIj7j_Ip5_FY,136
+slipcover/slipcover.py,sha256=G3x4jlhrkX9koiB2oLuiViZRV8optpmoLZ1ZbOYQ-ig,20620
+slipcover/branch.py,sha256=A2-5OtLhF6KTy09tLBPF8gxnWO-LAOFRMu5-Mn7wiW8,4954
+slipcover/importer.py,sha256=SaJ-0n8wZ5572LdahfvU41cggRk4uEY1wKXMlv72vzk,7727
+slipcover/bytecode.py,sha256=D-FfaSjyl6Uy5LztkMZBB2f2NUJWBbGML0BgnYmOj08,25082
+slipcover/probe.cpython-310-x86_64-linux-gnu.so,sha256=qq_a4z4jDTLq1nhyAv8mxqdeabT8KukvFANhUAW1MAY,62328
+slipcover/__main__.py,sha256=LmIGetWHqU2hWWt5l_dGt536wRfii6nuPQ_soe7ci7M,4786
+slipcover/fuzz.py,sha256=bHz8AAwePl_JocPscJrREXcdE8RN11AbWqPuf1oVc5A,437
+slipcover-0.3.2.dist-info/METADATA,sha256=J0H04Nk2oOXHIoCPueBQXLwzo3tCuo_ODqHnBxB5YPk,9107
+slipcover-0.3.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+slipcover-0.3.2.dist-info/WHEEL,sha256=24QVFBJBvF4a1ZC352AVuqHCJgY3xUfAV-_i6gkjtuc,225
+slipcover-0.3.2.dist-info/top_level.txt,sha256=5VXLPH9Pwp6leK8l70xKGMYUOtHuCaL-XVui6MGDwlY,10
+slipcover-0.3.2.dist-info/RECORD,,
