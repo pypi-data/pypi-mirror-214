@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: tangens
+Version: 0.1.2
+Summary: Automatic differentiation library for python
+Home-page: https://github.com/cospectrum/tangens
+License: Apache-2.0
+Author: cospectrum
+Author-email: severinalexeyv@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/cospectrum/tangens
+Description-Content-Type: text/markdown
+
+# tangens
+Automatic differentiation library for python
+
+## Install
+
+Requires python >= 3.10
+```sh
+pip install tangens
+```
+
+## Usage
+
+```py
+from tangens import Float
+
+f = lambda x, y: y * x**2 + 3 * x**y + x / y
+
+x = Float(4, 'x')
+y = Float(-3, 'y')
+
+value, grad = f(x, y).value_and_grad()
+assert value == f(4, -3)
+
+grad['x']  # df/dx
+grad['y']  # df/dy
+```
+
