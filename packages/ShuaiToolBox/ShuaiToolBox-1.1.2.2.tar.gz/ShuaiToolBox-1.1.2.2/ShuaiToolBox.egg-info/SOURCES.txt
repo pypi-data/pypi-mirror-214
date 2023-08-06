@@ -1,0 +1,8 @@
+README.md
+setup.py
+ShuaiToolBox/__init__.py
+ShuaiToolBox.egg-info/PKG-INFO
+ShuaiToolBox.egg-info/SOURCES.txt
+ShuaiToolBox.egg-info/dependency_links.txt
+ShuaiToolBox.egg-info/requires.txt
+ShuaiToolBox.egg-info/top_level.txt
