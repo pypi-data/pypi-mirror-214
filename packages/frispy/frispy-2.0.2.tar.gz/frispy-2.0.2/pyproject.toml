@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "frispy"
+version = "2.0.2"
+description = "Frisbee simulation."
+authors = ["Tom McClintock <thmsmcclintock@gmail.com>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.5"
+scipy = "^1.9.3"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.10.1"
+black = "^22.10.0"
+flake8 = "^6.0.0"
+pre-commit = "^2.20.0"
+pytest = "^7.2.0"
+coverage = "^6.5.0"
+sphinx-rtd-theme = "^1.1.1"
+sphinx-autoapi = "^2.0.0"
+interrogate = "^1.5.0"
+pydocstyle = "^6.1.1"
+matplotlib = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py36"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+profile = "black"
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks slow tests"
+]
+
+[tool.coverage.run]
+include = ["./icy/*"]
+omit = ["*tests*", "*__init__*"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = ["pragma: no cover", "if __name__ == .__main__.:"]
+
+[tool.interrogate]
+fail-under = 85
+verbose = 1
+exclude = ["poetry.lock", "pyproject.toml", "*tests/", "*docs/"]
+
+[tool.pydocstyle]
+convention = "google"
