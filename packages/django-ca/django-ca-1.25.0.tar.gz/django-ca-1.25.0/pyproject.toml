@@ -1,0 +1,284 @@
+[build-system]
+# Minimum requirements for the build system to execute (PEP-518)
+# >=39.2: version added in setup.cfg
+# >= 61: Add setuptools.config.setupcfg.read_configuration
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[django-ca.release]
+# https://devguide.python.org/versions/#versions
+python = ["3.8.17", "3.9.17", "3.10.12", "3.11.4"]
+# https://www.djangoproject.com/download/
+django = ["3.2.19", "4.1.9", "4.2.2"]
+cryptography = ["37.0.4", "39.0.2", "40.0.2", "41.0.1"]
+acme = ["2.4.0", "2.5.0", "2.6.0"]
+josepy = ["1.13.0"]
+
+# https://alpinelinux.org/releases/
+alpine = ["3.16", "3.17", "3.18"]
+
+# Blacklist images that are just no longer built
+docker-image-blacklist = [
+    "python:3.11-alpine3.14",
+    "python:3.11-alpine3.15",
+]
+
+# List of tested Debian releases:
+#   https://en.wikipedia.org/wiki/Debian_version_history#Release_table
+debian-releases = [
+    "bullseye",
+    "bookworm",
+]
+
+# List of tested Ubuntu releases:
+#   https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions
+ubuntu-releases = [
+    "focal",
+    "jammy",
+    "kinetic",
+    "lunar",
+]
+
+[django-ca.validation]
+# list glob-style patterns to exclude from any check
+excludes = [
+    "ca/django_ca/migrations/0001_initial.py",
+    "ca/django_ca/migrations/*_auto_*.py",
+]
+# Files known to be stand-alone scripts (-> they include a shebang line)
+standalone-scripts = [
+    "ca/manage.py",
+    "ca/django_ca/tests/fixtures/django-ca-dns-clean.py",
+    "ca/django_ca/tests/fixtures/django-ca-dns-auth.py",
+    "devscripts/standalone/validate-testdata.py",
+    "devscripts/standalone/test-imports.py",
+    "devscripts/standalone/test-connectivity.py",
+    "devscripts/standalone/create-testdata.py",
+    "devscripts/standalone/clean.py",
+    "devscripts/standalone/check-clean-docker.py",
+]
+
+[tool.black]
+line-length = 110
+extend-exclude = "(migrations|stubs)/"
+
+[tool.coverage.report]
+exclude_lines = [
+    "^\\s*@(abc.)?abstractmethod",
+    "^\\s*@(typing.)?overload",
+    "^\\s*if (typing.)?TYPE_CHECKING:",
+    "pragma: no ?cover",
+]
+
+[tool.coverage.run]
+source = ["django_ca"]
+branch = true
+omit = [
+    "*/migrations/*",
+    "*/tests/tests*",
+    "*/tests/**/test_*",
+]
+
+[tool.doc8]
+max-line-length = 110
+ignore = [
+    "D000",
+]
+
+# NOTE: ideally, we would use ignore-path-errors to only ignore long lines, but doc8
+#       does not support directories for that.
+ignore-path = [
+    "docs/source/generated/",
+]
+
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+line_length = 110
+extend_skip = ["migrations", "stubs"]
+known_crypto = [
+    "cryptography", "ocspbuilder", "ocspbuilder", "asn1crypto", "oscrypto",
+]
+known_django = "django"
+known_django_addon = "django_object_actions"
+known_test = ["freezegun", "selenium", "django_webtest", "pyvirtualdisplay", "requests_mock", "webtest"]
+known_third_party = "OpenSSL"
+known_local_folder = "django_ca"
+sections = [
+    "FUTURE", "STDLIB", "THIRDPARTY", "CRYPTO", "DJANGO", "DJANGO_ADDON",
+    "TEST", "FIRSTPARTY", "LOCALFOLDER",
+]
+
+[tool.mypy]
+strict = true
+show_error_codes = true
+mypy_path = "ca/:stubs/:docs/source/"
+exclude = [
+    "migrations/.*\\.py$",
+]
+plugins = [
+    "mypy_django_plugin.main",
+]
+
+[[tool.mypy.overrides]]
+module = [
+    "asn1crypto.*",
+    # docker==6.1.3 does not have typehints. See also:
+    #   https://github.com/docker/docker-py/issues/2796
+    "docker",
+    "enchant.tokenize",
+    # psycopg and psycopg_c are not installed in isolated mypy envs (tox, ...)
+    "psycopg",
+    "psycopg_c",
+    "requests.packages.urllib3.response",
+    # semantic-version==2.10.0 does not have typehints. See also:
+    #   https://github.com/rbarrois/python-semanticversion/issues/138
+    "semantic_version",
+    "sphinx_rtd_theme",
+    "sphinxcontrib",
+    "sniffio",
+    # Identical to tomllib from Python 3.11, becomes unused once Python 3.10 is dropped
+    "tomli",
+]
+ignore_missing_imports = true
+
+[tool.django-stubs]
+django_settings_module = "ca.test_settings"
+
+[tool.pydocstyle]
+convention = "numpy"
+add-ignore = "D102"
+match = "(?!tests?_).*\\.py"
+
+[tool.pylint.master]
+load-plugins = "pylint_django"
+
+# Allow both snake-case and UPPER_CASE for class constants/enums
+class-const-rgx = "(?:(?P<snake>[a-z_]+)|(?P<upper>[A-Z_]+))"
+
+# Allow dashes in module names (= top level scripts)
+module-rgx = "[a-z_][a-z_-]+"
+
+# ignore migrations
+ignore-paths = [
+    "ca/django_ca/migrations",
+]
+
+# Configure Django
+init-hook = "import os, sys; sys.path.insert(0, os.path.abspath('ca'))"
+django-settings-module = "ca.test_settings"
+
+[tool.pylint.basic]
+good-names = [
+    "ca",
+    "cn",
+    "ex",
+    "pk",
+    "e",  # TODO: consistently use ex
+    "i",
+    "k",
+]
+
+[tool.pylint.design]
+# Maximum number of arguments for function / method (see R0913).
+max-args = 10
+
+# Maximum number of attributes for a class (see R0902).
+max-attributes = 10
+
+# Maximum number of branch for function / method body (see R0912).
+max-branches = 20
+
+# Maximum number of parents for a class (see R0914).
+max-locals = 20
+
+# Maximum number of parents for a class (see R0901).
+max-parents = 15
+
+# Maximum number of public methods for a class (see R0904).
+max-public-methods = 25
+
+# Maximum number of return / yield for function / method body (see R0911).
+max-returns = 8
+
+# Maximum number of statements in function / method body (see R0915).
+max-statements = 60
+
+[tool.pylint.format]
+max-line-length = 110
+
+# TODO: could be reduced to 1500, only some test modulesare  over that
+max-module-lines = 3000
+
+[tool.pylint.messages_control]
+enable = [
+    "useless-suppression",
+]
+
+# https://pylint.readthedocs.io/en/latest/faq.html?highlight=flake8#i-am-using-another-popular-linter-alongside-pylint-which-messages-should-i-disable-to-avoid-duplicates
+disable = [
+    # devscripts have some larger overlapping parts
+    "duplicate-code",
+
+    # These are just annoying
+    "too-few-public-methods",
+    "fixme",
+
+    # covered by isort:
+    "wrong-import-order",
+
+    # covered by pyflakes:
+    "undefined-variable",  # also mypy
+    "unused-import",
+    "unused-variable",
+
+    # covered by pycodestyle:
+    "unneeded-not",
+    "line-too-long",
+    "unnecessary-semicolon",
+    "trailing-whitespace",
+    "missing-final-newline",
+    "bad-indentation",
+    "multiple-statements",
+    "bare-except",
+
+    # (seems to be) covered by mypy
+    "unsubscriptable-object",  # mypy: index
+    "arguments-differ",
+    "no-value-for-parameter",  # mypy: call-arg
+    "inconsistent-return-statements",
+    "assignment-from-no-return",
+    "import-error",  # mypy: import
+    "abstract-class-instantiated",  # mypy: abstract
+
+    # pylint==2.7.2 shows the error for cyclic imports in arbitrary locations, making them impossible to
+    # disable for specific cases. mypy requires cyclic imports for type annotiations, which are usually
+    # protected by TYPE_CHECKING - but pylint doesn't know that.
+    #   https://github.com/PyCQA/pylint/issues/850
+    #   https://github.com/PyCQA/pylint/issues/59
+    #   https://github.com/landscapeio/landscape-issues/issues/214
+    "cyclic-import",
+
+    # pylint==2.9.3 does not detect methods returning a sequence as such:
+    #   https://github.com/PyCQA/pylint/issues/4696
+    "unpacking-non-sequence",
+]
+
+[tool.pylint.similarities]
+# Ignore comments when computing similarities.
+ignore-comments = "yes"
+
+# Ignore docstrings when computing similarities.
+ignore-docstrings = "yes"
+
+# Ignore imports when computing similarities.
+ignore-imports = "yes"
+
+# Minimum lines number of a similarity.
+min-similarity-lines = 16
+
+[tool.ruff]
+extend-exclude = [
+    "migrations",
+]
+line-length = 110
