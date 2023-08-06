@@ -1,0 +1,10 @@
+[run]
+source = objgraph
+
+[report]
+exclude_lines =
+    pragma: PY2
+    pragma: nocover
+    except ImportError:
+    except NameError:
+    if __name__ == .__main__.:
