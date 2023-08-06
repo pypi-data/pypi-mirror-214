@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: overwatch-ci-helper
+Version: 0.1.0
+Summary: 
+Author: Hamada Gasmallah
+Author-email: hamada@distributive.network
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: docker (>=6.1.3,<7.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Description-Content-Type: text/markdown
+
+
