@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "esr_sdk"
+version = "0.0.1"
+authors = [
+  { name="Joseph Daudi", email="joseph@encipher.dev" },
+]
+dependancies = ['redis', 'pydantic']
+requirements = ['redis', 'pydantic', 'sentry_sdk', 'requests']
+description = "An SDK to store and retrieve key value objects as required by encipher services"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/enciphertz/encipher-secrets-reader-python-sdk"
+"Bug Tracker" = "https://github.com/enciphertz/encipher-secrets-reader-python-sdk/issues"

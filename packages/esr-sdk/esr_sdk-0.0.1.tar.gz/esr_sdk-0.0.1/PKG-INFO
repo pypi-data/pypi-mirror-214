@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: esr_sdk
+Version: 0.0.1
+Summary: An SDK to store and retrieve key value objects as required by encipher services
+Project-URL: Homepage, https://github.com/enciphertz/encipher-secrets-reader-python-sdk
+Project-URL: Bug Tracker, https://github.com/enciphertz/encipher-secrets-reader-python-sdk/issues
+Author-email: Joseph Daudi <joseph@encipher.dev>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# ESR Python SDK
+An SDK to store and retrieve key value objects as required by encipher services
