@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+bakrialtaif_faq/__init__.py
+bakrialtaif_faq/divide.py
+bakrialtaif_faq/multiply.py
+bakrialtaif_faq.egg-info/PKG-INFO
+bakrialtaif_faq.egg-info/SOURCES.txt
+bakrialtaif_faq.egg-info/dependency_links.txt
+bakrialtaif_faq.egg-info/top_level.txt
