@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+talos_install.egg-info/PKG-INFO
+talos_install.egg-info/SOURCES.txt
+talos_install.egg-info/dependency_links.txt
+talos_install.egg-info/requires.txt
+talos_install.egg-info/top_level.txt
