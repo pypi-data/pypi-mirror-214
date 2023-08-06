@@ -1,0 +1,9 @@
+setup.py
+aspa/__inti__.py
+aspa/aspa.py
+aspa.egg-info/PKG-INFO
+aspa.egg-info/SOURCES.txt
+aspa.egg-info/dependency_links.txt
+aspa.egg-info/entry_points.txt
+aspa.egg-info/requires.txt
+aspa.egg-info/top_level.txt
