@@ -1,0 +1,7 @@
+arrow_json-0.7.3.dist-info/METADATA,sha256=mpT0vcdaIS0L1sztmwiQs7l7SpgBJ6Ee1F9GdqZ4slQ,1547
+arrow_json-0.7.3.dist-info/WHEEL,sha256=f5BQYMhscGyT-BolQLso1N-_-Eo7ClPPnggk4m_yrEY,135
+arrow_json/__init__.py,sha256=uqT6ei-NizMh2G2zSOzci_HsccpK2QPs6jBiaqeALDU,100
+arrow_json/_arrow_json.pyi,sha256=1k6fPbxUN9MvgjbuogMb848FFg8Icfbq8KT66HhtNUM,449
+arrow_json/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arrow_json/_arrow_json.pypy38-pp73-x86_64-linux-gnu.so,sha256=9ahkZHd1y4EfXQlFQDO-LH61nraXCmq_8dejIF34eF8,4024808
+arrow_json-0.7.3.dist-info/RECORD,,
