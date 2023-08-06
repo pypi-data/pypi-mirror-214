@@ -1,0 +1,3 @@
+[console_scripts]
+-codeblock-include=pandoc_codeblock_include:main
+
