@@ -1,0 +1,8 @@
+ezlib.py
+setup.cfg
+setup.py
+ezlib.egg-info/PKG-INFO
+ezlib.egg-info/SOURCES.txt
+ezlib.egg-info/dependency_links.txt
+ezlib.egg-info/entry_points.txt
+ezlib.egg-info/top_level.txt
