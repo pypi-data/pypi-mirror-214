@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+playlisterUtil.egg-info/PKG-INFO
+playlisterUtil.egg-info/SOURCES.txt
+playlisterUtil.egg-info/dependency_links.txt
+playlisterUtil.egg-info/requires.txt
+playlisterUtil.egg-info/top_level.txt
+src/__init__.py
+src/playlisterUtil.py
+src/setup.py
