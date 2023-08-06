@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: twtr-nuuuwan
+Version: 1.0.0
+Summary: Wrapper library for the Twitter API and tweepy
+Home-page: https://github.com/nuuuwan/twtr
+Author: Nuwan I. Senaratna
+Author-email: nuuuwan@gmail.com
+Project-URL: Bug Tracker, https://github.com/nuuuwan/twtr/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
