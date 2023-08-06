@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+cgPriceQuery/__init__.py
+cgPriceQuery/blockTimestamps.py
+cgPriceQuery/cgPriceQuery.py
+cgPriceQuery/historicalPriceQuery.py
+cgPriceQuery.egg-info/PKG-INFO
+cgPriceQuery.egg-info/SOURCES.txt
+cgPriceQuery.egg-info/dependency_links.txt
+cgPriceQuery.egg-info/requires.txt
+cgPriceQuery.egg-info/top_level.txt
