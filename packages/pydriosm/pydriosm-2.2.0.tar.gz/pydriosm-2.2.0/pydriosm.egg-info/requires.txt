@@ -1,0 +1,3 @@
+pyhelpers>=1.5.1
+pyrcs>=0.3.6
+pyshp
