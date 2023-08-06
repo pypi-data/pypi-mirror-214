@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Lab93-Finance"
+version = "0.0.1.1"
+authors = [
+  { name="Hunter Dale", email="hunter@guyyatsu.me" },
+]
+
+description = "A library for handling and managing finance accounts algorithmically."
+readme = "readme.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "Lab93Cryptogram",
+    "Lab93-DatabaseSystem",
+    "plotly",
+    "kaleido",
+    "alpaca-py"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Lab-93/Finance"
+"Bug Tracker" = "https://github.com/Lab-93/Finance/issues"
