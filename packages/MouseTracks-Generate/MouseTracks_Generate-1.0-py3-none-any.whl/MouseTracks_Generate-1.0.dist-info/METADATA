@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: MouseTracks-Generate
+Version: 1.0
+Author: momo
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: keras
+
+mouseTrackGenerate
