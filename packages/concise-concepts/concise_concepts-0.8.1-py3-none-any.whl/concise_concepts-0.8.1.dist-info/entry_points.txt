@@ -1,0 +1,3 @@
+[spacy_factories]
+spacy=concise_concepts.__init__:make_concise_concepts
+
