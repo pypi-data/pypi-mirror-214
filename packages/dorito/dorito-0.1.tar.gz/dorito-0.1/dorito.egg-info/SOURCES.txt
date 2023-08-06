@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dorito/__init__.py
+dorito/generative_agent.py
+dorito/memory.py
+dorito/utils.py
+dorito.egg-info/PKG-INFO
+dorito.egg-info/SOURCES.txt
+dorito.egg-info/dependency_links.txt
+dorito.egg-info/requires.txt
+dorito.egg-info/top_level.txt
