@@ -1,0 +1,20 @@
+type AnOrganization implements Node {
+    id: ID!
+    name: String!
+    dn: String
+    attributes: String
+    imageUrl: String
+    validMemberCount: Int!
+    invalidMemberCount: Int!
+    members: AnOrganizationMembershipConnection
+}
+
+type AnOrganizationConnection {
+    edges: [AnOrganizationEdge]
+    pageInfo: PageInfo!
+}
+
+type AnOrganizationEdge {
+    cursor: String!
+    node: AnOrganization
+}
