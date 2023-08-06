@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/math_calculator/__init__.py
+src/math_calculator/calculator.py
+src/math_calculator.egg-info/PKG-INFO
+src/math_calculator.egg-info/SOURCES.txt
+src/math_calculator.egg-info/dependency_links.txt
+src/math_calculator.egg-info/requires.txt
+src/math_calculator.egg-info/top_level.txt
+src/math_calculator/tests/__init__.py
+src/math_calculator/tests/test_calculator.py
