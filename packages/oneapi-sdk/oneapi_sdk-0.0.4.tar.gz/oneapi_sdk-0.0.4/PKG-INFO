@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: oneapi-sdk
+Version: 0.0.4
+Summary: A Python SDK for The One API
+Author-email: Eduardo Felipe Weber <eduardo-felipe-weber@hotmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9.0
+Requires-Dist: certifi==2023.5.7
+Requires-Dist: charset-normalizer==3.1.0
+Requires-Dist: exceptiongroup==1.1.1
+Requires-Dist: idna==3.4
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: mock==5.0.2
+Requires-Dist: packaging==23.1
+Requires-Dist: pluggy==1.0.0
+Requires-Dist: pytest==7.3.2
+Requires-Dist: requests==2.31.0
+Requires-Dist: tomli==2.0.1
+Requires-Dist: urllib3==2.0.3
+Description-Content-Type: text/markdown
+
+# Lord of the Rings SDK
+
+This is a Python SDK for the Lord of the Rings API.
+
+## Installation
+
+```bash
+pip install oneapi-sdk
+```
+
+## Usage
+
+To use the SDK, you will need to get an API key from [The One API](https://the-one-api.dev/).
+
+Basic usage:
+
+```python
+import oneapi
+
+oneapi.access_token = "YOUR_API_KEY"
+
+# Get all movies
+movies = oneapi.Movie.list()
+
+# Get all quotes from the first movie
+quotes = movies[0].quotes
+
+```
+
+Filters:
+
+```python
+import oneapi
+
+# Filter syntax is {"field": ("operator", "value")}
+# Operators are "=", "!=", "<", ">", ">=", "exists", "not_exists"
+
+# Get all quotes from the first movie
+quotes = oneapi.Quote.list(filter={"movie": ('=', '5cd95395de30eff6ebccde5c')})
+
+```
+
+Pagination:
+
+```python
+import oneapi
+
+# You can manually paginate through the results using .list(limit, offset)
+quotes_1 = oneapi.Quote.list(limit=10, offset=0)
+quotes_2 = oneapi.Quote.list(limit=10, offset=10)
+
+# Or you can use the built-in pagination
+quotes = oneapi.Quote.list(limit=10)
+for quote in quotes.auto_paginate():
+    print(quote.dialog)
+
+```
