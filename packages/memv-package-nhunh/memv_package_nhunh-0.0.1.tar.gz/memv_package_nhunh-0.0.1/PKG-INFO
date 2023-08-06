@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: memv_package_nhunh
+Version: 0.0.1
+Summary: Visualize memory usage
+Author-email: nhunh <coinhu1995@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Envs
+- Python 3.8
+```
+```
+
+# Guide
+To monitor memory usage in a specific time and visualize it in a graph, you can use a combination of tools and techniques as follows:
+
+Use a system monitoring tool such as htop, top, or glances to track memory usage in real-time. These tools can display information about CPU, memory, disk usage, and network traffic in a user-friendly interface.
+
+For a more detailed look at memory usage over time, use a command-line utility such as psrecord or pidstat to capture memory usage data at regular intervals. You can specify the time interval and duration for data collection.
+
+Save the output of the monitoring tool to a file for further processing and use a Python script to analyze and visualize the collected data. Use a Python library such as matplotlib or seaborn to create a memory usage graph with the collected data.
+
+Optionally, you can set up a continuous monitoring process using a task scheduler such as cron to capture memory usage data regularly and automate the data collection and analysis process.
+
+Here is an example Python script to plot memory usage data collected using psrecord:
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Load data from file
+data = np.loadtxt('memory-usage.txt')
+
+# Extract time and memory usage data
+time = data[:, 0]
+memory = data[:, 1] / 1024 # Convert to MB for readability
+
+# Plot the data using matplotlib
+fig, ax = plt.subplots()
+ax.plot(time, memory)
+ax.set(title='Memory Usage', xlabel='Time (s)', ylabel='Memory Usage (MB)')
+
+# Show the plot
+plt.show()
+Note: The above script assumes that the memory-usage.txt file contains two columns of data: time in seconds and memory usage in bytes. You may need to adjust the script according to the format of the data captured by your monitoring tool
