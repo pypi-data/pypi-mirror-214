@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: FRANECpy
+Version: 1.0.0
+Summary: A simple library for help in the data analysis of FRANEC simulation.
+Home-page: https://github.com/fturini98/FRANECpy
+Author: Francesco Turini
+Author-email: fturini.turini7@gmail.com
+License: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
