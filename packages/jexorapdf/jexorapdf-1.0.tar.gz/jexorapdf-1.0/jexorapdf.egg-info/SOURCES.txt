@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+jexoraPdf/__init__.py
+jexoraPdf/pdf2Image.py
+jexoraPdf/pdf2Text.py
+jexorapdf.egg-info/PKG-INFO
+jexorapdf.egg-info/SOURCES.txt
+jexorapdf.egg-info/dependency_links.txt
+jexorapdf.egg-info/top_level.txt
