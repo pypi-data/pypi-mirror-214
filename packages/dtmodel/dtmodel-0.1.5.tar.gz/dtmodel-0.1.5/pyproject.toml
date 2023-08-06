@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dtmodel"
+version = "0.1.5"
+description = ""
+authors = ["Daniel Arantes <arantesdv@me.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+bcrypt = "^4.0.1"
+starlette = "^0.28.0"
+uvicorn = "^0.22.0"
+anyio = "^3.7.0"
+Jinja2 = "^3.1.2"
+python-multipart = "^0.0.6"
+itsdangerous = "^2.1.2"
+dtbase = "^0.0.5"
+Unidecode = "^1.3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
