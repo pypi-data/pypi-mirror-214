@@ -1,0 +1,10 @@
+stone/__init__.py,sha256=rHZrpK_Bf3ywT8CWho11cCd2OH_w26VUPk9OTQcamck,52
+stone/__main__.py,sha256=kB55r2i6rxY3kALRTY_-BqyQfRXMaaLZNUBinkFivBs,8045
+stone/image.py,sha256=Txv5RrKZ7-DISU2T_33Sz2vtuIGTJiqhCO3vPhB6BHU,12528
+stone/utils.py,sha256=7Z6QoZc35nP1YiWvfqLGNXbwDq4wyuQx9FxaSxMkfPU,4756
+skin_tone_classifier-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+skin_tone_classifier-0.2.1.dist-info/METADATA,sha256=mzvdu6_Ad4X-GSzf8EIGCMouF7UO41T8NwW3Qgt9Nps,18753
+skin_tone_classifier-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+skin_tone_classifier-0.2.1.dist-info/entry_points.txt,sha256=n-shstcI7uY4pZuUO2mBnnmUBhlIdgzde4WnnZs3XsQ,46
+skin_tone_classifier-0.2.1.dist-info/top_level.txt,sha256=VKTUA1baCOKxhxp4xpZQFjQ9hgNWWTGUP--_kpc1NH8,6
+skin_tone_classifier-0.2.1.dist-info/RECORD,,
