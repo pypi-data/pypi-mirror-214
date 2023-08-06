@@ -1,0 +1,3 @@
+[console_scripts]
+web-ext-helper=web_ext_helper.web_ext_helper:main
+
