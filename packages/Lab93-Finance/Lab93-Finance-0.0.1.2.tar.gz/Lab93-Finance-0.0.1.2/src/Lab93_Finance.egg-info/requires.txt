@@ -1,0 +1,5 @@
+Lab93Cryptogram
+Lab93-DatabaseSystem
+plotly
+kaleido
+alpaca-py
