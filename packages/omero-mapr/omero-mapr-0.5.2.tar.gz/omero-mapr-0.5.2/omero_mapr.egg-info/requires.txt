@@ -1,0 +1,2 @@
+omero-web[redis]>=5.14.0
+requests
