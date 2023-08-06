@@ -1,0 +1,2 @@
+Sphinx<=7.999,>=1.8
+sphinxcontrib-serializinghtml
