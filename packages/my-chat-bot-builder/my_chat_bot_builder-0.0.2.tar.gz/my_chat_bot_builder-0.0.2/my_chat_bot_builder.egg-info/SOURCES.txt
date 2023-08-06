@@ -1,0 +1,7 @@
+README.md
+setup.py
+my_chat_bot_builder.egg-info/PKG-INFO
+my_chat_bot_builder.egg-info/SOURCES.txt
+my_chat_bot_builder.egg-info/dependency_links.txt
+my_chat_bot_builder.egg-info/requires.txt
+my_chat_bot_builder.egg-info/top_level.txt

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: my-chat-bot-builder
+Version: 0.0.2
+Summary: A chat bot builder based on Azure OpenAI
+Home-page: https://github.com/yourusername/my-chat-bot-builder
+Author: jack
+Author-email: jack.cx.chen@pccw.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Install
+
+pip install -r requirements.txt
+
+# Configure
+
+Copy and paste .env.example to .env
+input your openai api key
+
+# Run
+
+python api.py
