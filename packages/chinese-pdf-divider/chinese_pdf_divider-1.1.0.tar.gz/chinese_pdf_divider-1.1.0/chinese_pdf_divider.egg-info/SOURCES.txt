@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+chinese_pdf_divider/__init__.py
+chinese_pdf_divider/pdf_divider.py
+chinese_pdf_divider.egg-info/PKG-INFO
+chinese_pdf_divider.egg-info/SOURCES.txt
+chinese_pdf_divider.egg-info/dependency_links.txt
+chinese_pdf_divider.egg-info/requires.txt
+chinese_pdf_divider.egg-info/top_level.txt

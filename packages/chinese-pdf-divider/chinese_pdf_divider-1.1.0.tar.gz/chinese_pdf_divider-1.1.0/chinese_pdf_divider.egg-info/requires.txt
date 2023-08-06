@@ -1,0 +1,4 @@
+pymupdf
+fitz
+pandas
+numpy
