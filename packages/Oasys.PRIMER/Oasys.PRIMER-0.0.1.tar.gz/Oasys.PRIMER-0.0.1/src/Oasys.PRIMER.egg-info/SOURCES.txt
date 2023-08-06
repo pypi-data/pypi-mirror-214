@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/Oasys.PRIMER.egg-info/PKG-INFO
+src/Oasys.PRIMER.egg-info/SOURCES.txt
+src/Oasys.PRIMER.egg-info/dependency_links.txt
+src/Oasys.PRIMER.egg-info/requires.txt
+src/Oasys.PRIMER.egg-info/top_level.txt
+src/Oasys/PRIMER/__init__.py
+src/Oasys/PRIMER/placeholder.py
