@@ -1,0 +1,9 @@
+aiovantage
+- Finish blinds (tilt, more vantage types, etc)
+- Allow reinitialization of controllers
+- Consider controller grouping, like aiohue
+- Check we have implemented everything from pyvantage
+- Re-fetch objects when MTime changes
+- Add support for temperature, anema, light sensors
+- Add support for thermostats?
+- Add support for media players?
