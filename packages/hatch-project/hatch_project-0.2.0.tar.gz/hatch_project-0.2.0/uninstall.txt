@@ -1,0 +1,7 @@
+urllib3
+soupsieve
+requests
+coverage
+charset-normalizer
+beautifulsoup4
+bs4
