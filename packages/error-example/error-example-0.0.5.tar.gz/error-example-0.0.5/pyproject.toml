@@ -1,0 +1,13 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+
+[project]
+name = 'error-example'
+version = '0.0.5'
+
+dynamic = ['readme']
+
+[tool.setuptools.dynamic]
+readme = {file = "README.txt"}
