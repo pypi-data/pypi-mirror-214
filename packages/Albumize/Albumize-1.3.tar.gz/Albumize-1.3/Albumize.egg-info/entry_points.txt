@@ -1,0 +1,2 @@
+[console_scripts]
+Albumize = Albumize:CLI
