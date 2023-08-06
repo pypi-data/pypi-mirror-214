@@ -1,0 +1,2 @@
+[console_scripts]
+mdsplit4gpt = split_markdown4gpt.__main__:cli
