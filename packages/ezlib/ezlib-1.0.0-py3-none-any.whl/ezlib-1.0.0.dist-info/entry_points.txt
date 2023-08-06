@@ -1,0 +1,5 @@
+[console_scripts]
+ezcat = ezlib:ezcat
+ezip = ezlib:ezip
+unezip = ezlib:unezip
+
