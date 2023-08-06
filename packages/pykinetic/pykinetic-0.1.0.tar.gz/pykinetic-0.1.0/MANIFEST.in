@@ -1,0 +1,5 @@
+include README.rst Examples.rst
+recursive-include pykinetic/templates *
+include pykinetic/tests/*.py
+global-exclude *.pyc
+global-exclude .git
