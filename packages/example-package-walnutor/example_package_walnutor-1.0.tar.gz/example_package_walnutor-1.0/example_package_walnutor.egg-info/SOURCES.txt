@@ -1,0 +1,8 @@
+README.md
+setup.py
+example_package_walnutor/__init__.py
+example_package_walnutor/example.py
+example_package_walnutor.egg-info/PKG-INFO
+example_package_walnutor.egg-info/SOURCES.txt
+example_package_walnutor.egg-info/dependency_links.txt
+example_package_walnutor.egg-info/top_level.txt
