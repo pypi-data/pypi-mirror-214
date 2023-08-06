@@ -1,0 +1,7 @@
+setup.py
+examples/__init__.py
+examples/first.py
+examples_snomax.egg-info/PKG-INFO
+examples_snomax.egg-info/SOURCES.txt
+examples_snomax.egg-info/dependency_links.txt
+examples_snomax.egg-info/top_level.txt
