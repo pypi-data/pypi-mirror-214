@@ -1,0 +1,4 @@
+toml
+numpy
+pymodaq<4.0
+pylablib
