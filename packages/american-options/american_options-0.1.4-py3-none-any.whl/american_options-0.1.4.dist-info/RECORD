@@ -1,0 +1,12 @@
+american_options/AMoption.py,sha256=-TNKUfVmTcBB22qOboA5yXxi79FrZcOHykZv9AOQAzQ,38860
+american_options/__init__.py,sha256=JVK6J1z2v2kJF8E5siM_Pulx2t_WWFK2R_uN6wy9v9k,191
+american_options/jump_diffusion.py,sha256=ZAstm38RUJswVwMW6vdp08fncAKquAEJVQnwW2iMtv4,4524
+american_options/payoffs.py,sha256=GBGBMRICJMxlSCid7eqkigyU97x1oAhzSUtOm3Yi5x4,13623
+american_options/próby.py,sha256=dRB4JpwvBpBu3jM82sx-ua7Hh150Jrh1KawnhlOFAfw,3844
+american_options/sobol.py,sha256=Z2uf2HZ8Yt_7yzDs0Z5nccOnpo4Q7DmIJhGPovAFBdw,2638
+american_options/underlying.py,sha256=4GGGvmwuKvALCw7FOL35UMSu1JKbxjNsYuakeViwWMs,10506
+american_options/xd.py,sha256=ueI53BziQWv3WhUUJAlUBAD5XVZwF2GIMFoOxMKImtI,2859
+american_options-0.1.4.dist-info/METADATA,sha256=aQjijZwNi1RPZ3L9i9lISkWzQy-iot9XSr5a6XUkpVg,2737
+american_options-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+american_options-0.1.4.dist-info/top_level.txt,sha256=qEhDllg1jFKfVZ8vrIohoCjlva0Qs_-k-v9fgp5yh6g,17
+american_options-0.1.4.dist-info/RECORD,,
