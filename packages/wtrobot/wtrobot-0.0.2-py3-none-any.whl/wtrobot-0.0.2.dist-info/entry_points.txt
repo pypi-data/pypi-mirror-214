@@ -1,0 +1,2 @@
+[console_scripts]
+wtrobot = lib.cli.main:cli
