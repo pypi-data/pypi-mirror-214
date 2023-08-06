@@ -1,0 +1,5 @@
+@include codegenpt_instructions.py
+
+Create a method that given a list of CodeGenPTInstruction instances, split the list in a list of lists
+where each consecutive list has only CodeGenPTInstruction instances that depend on files that are the fullPath
+of CodeGenPTInstructions on the previous lists or files that are not fullPath of any CodeGenPTInstruction in the original list.
