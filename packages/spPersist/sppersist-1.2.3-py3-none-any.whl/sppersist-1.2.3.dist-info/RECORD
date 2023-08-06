@@ -1,0 +1,11 @@
+spPersist/DTM_filtrations.py,sha256=NY0dHUQ0uTb6fIhTZT-xfS6wEsEkRF_uWRUjp2UzJXE,10798
+spPersist/__init__.py,sha256=R4kr3ZYNs-llF__SLM64A0WUmUz9wld3iYr8kZz8wD0,67
+spPersist/dp.py,sha256=CLGRZU0UZAPZpeTTeQ3AUjrSVra7AvSvS5nkxnEwlMU,9259
+spPersist/hc.py,sha256=KU53WZ9jvfL3gLB6wNaRCCdhe9jBf87BEZUKmKyDlWA,531
+spPersist/persistence_statistics.py,sha256=S730ioPt50QcEDxLC52f1DAp0K5WcDmb7qgG5oyZ87o,3287
+spPersist/ph.py,sha256=6tLHnIpl-dEaMaM6pNy_2z5wnZfoxdIqIWeVhF4s_e8,4454
+spPersist/pp.py,sha256=Z0nP5pcKVVq3Umxtnnc0zBXyM5K-d5TitTRyEOdHtKA,6754
+sppersist-1.2.3.dist-info/METADATA,sha256=Lb9tNKkjWeHnICyEN3VHQDk8dNr-X1T3ozRrghtaCmQ,1697
+sppersist-1.2.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+sppersist-1.2.3.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+sppersist-1.2.3.dist-info/RECORD,,
