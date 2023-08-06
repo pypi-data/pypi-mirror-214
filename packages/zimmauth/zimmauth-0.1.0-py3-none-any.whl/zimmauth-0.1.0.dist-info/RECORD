@@ -1,0 +1,8 @@
+zimmauth/__init__.py,sha256=FAP-n31yYuwG5iKNn5mZ0oiclQUCYzyobqluRFznRWk,150
+zimmauth/core.py,sha256=l10pv_I_U_M7PlNnt7fyC--34qLZZyqj6qhxlDLKwRw,6761
+zimmauth/local_conn.py,sha256=8LQ8vwVlJyf9otB39apOtQaPuVsEg_OfstYBRE6Gmus,882
+zimmauth/test_core.py,sha256=T7TJ8GjrXub5Wj5BSTC6OTHvU0CDuWtzLMLL_AIKvV4,6562
+zimmauth-0.1.0.dist-info/LICENSE,sha256=PsZAtTBheWHymkKBWeCbw96MkxuDK4NG8lJXLFUxDu4,1056
+zimmauth-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+zimmauth-0.1.0.dist-info/METADATA,sha256=6t1c8k0zcTQO5JKu-6WksuNaV0or-TH3spNHzIJX_Aw,1377
+zimmauth-0.1.0.dist-info/RECORD,,
