@@ -1,0 +1,4 @@
+xsdata==23.5
+
+[:python_version < "3.12"]
+typing_extensions<5,>=4.4.0
