@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chanpackage
+Version: 0.1
+Summary: insert zabbix SLA
+Home-page: 
+Author: channox
+Author-email: std3.40160@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: urllib3
+
