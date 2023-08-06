@@ -1,0 +1,15 @@
+LICENCE
+README.md
+setup.py
+ganok/Device.py
+ganok/WebAdress.py
+ganok/__init__.py
+ganok/clines_ph_web.py
+ganok/copyright.py
+ganok/encoder.py
+ganok/mb.py
+ganok/send_server.py
+ganok.egg-info/PKG-INFO
+ganok.egg-info/SOURCES.txt
+ganok.egg-info/dependency_links.txt
+ganok.egg-info/top_level.txt
