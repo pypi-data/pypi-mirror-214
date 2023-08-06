@@ -1,0 +1,17 @@
+spithon/__init__.py,sha256=OF6Bnt3kqE36-J6XU1nw2QSSdBu4UF_aJTWH1eeyfdM,662
+spithon/cli.py,sha256=cvZSXOgbIRjeL2nC_8FRxr-x9ZzJ8YD3l3theeWD2eo,867
+spithon/cmds/__init__.py,sha256=G3IoKdSIm2YeS4_r_1vJi9m1o1z_xYOGCQZhlxNJbTo,26
+spithon/cmds/benchmark.py,sha256=qnrqylNKXFCA5M-23PRrrusDkGvlgDJQ719wxIoMx_4,1770
+spithon/cmds/common.py,sha256=kgZBCYFg1DAJffavQsIXlTxCQ7EZ6B1gjsZcWNaVMbE,1353
+spithon/cmds/gpio.py,sha256=lrooN0rjsk326plqou-qlScjY1uSXj4sRYDI94CT26M,3842
+spithon/cmds/spi.py,sha256=4sSagGKQeh-Wxz0lVTVG1vuSISYeLc4OkhpPZ9CYLxs,1042
+spithon/core/__init__.py,sha256=IpEu9Rlb8TJ1uYEnw4vJr2UkpN_AMX7MuIKYwA53WMU,239
+spithon/core/config.py,sha256=9UApOfcmuzBQQoeAX_K1S363dbvt1LZ3_QL_D9gkq6c,3144
+spithon/core/gpio.py,sha256=Lp90adCQUcG8iGMTKDxMHpAreEnwS3anph-_Kiarl2M,1465
+spithon/core/spi.py,sha256=cFM-KYIJ4V8trg-Ho6UgpQ9Z1ce-23NaRt65Xpp8p1Q,2502
+spithon-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spithon-0.1.0.dist-info/METADATA,sha256=FhxKAmbPcIzS6Ss-J9b0fHI6spT0DA_OU3WwhP6QQgU,6183
+spithon-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+spithon-0.1.0.dist-info/entry_points.txt,sha256=eHxW1lqG8ubssSvvjV88K7pTPJAsuKn6CZgJ6fw9IYc,45
+spithon-0.1.0.dist-info/top_level.txt,sha256=8E2BdXI_A2fJwPoXnxxuiq3IVFV5tzHuykrl5kJ6Sqc,8
+spithon-0.1.0.dist-info/RECORD,,
