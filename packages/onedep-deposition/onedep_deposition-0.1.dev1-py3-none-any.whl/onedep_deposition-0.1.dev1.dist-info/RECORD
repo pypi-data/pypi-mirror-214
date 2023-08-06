@@ -1,0 +1,15 @@
+onedep_deposition/__init__.py,sha256=X4DPzxaBzqsYrOUlKTWTsq83yi6kK_f2TlGzNkU2DW8,25
+onedep_deposition/constants.py,sha256=d_Il7Tzx1eDXPAO5Lw0KDY5XDG_y1VDlT9g1fw9v3dc,16794
+onedep_deposition/deposit_api.py,sha256=_zPxe_fI_iuRmvc1XDh__PmYMIIU_gUc50P71E_KUm8,14441
+onedep_deposition/enum.py,sha256=-isiAaFBhjgjjQAUn-AE8HQ6qnLhjrIAc8CY8t33EBU,9006
+onedep_deposition/exceptions.py,sha256=ypCLrJ2sIJVaQdR45bQsvn8BQu-61B9MjDVvlmWF46o,159
+onedep_deposition/models.py,sha256=NHYRiTZYd4DYx5p1I0iF897wd43DJ1YCsjLAeoAdDU4,17365
+onedep_deposition/rest_adapter.py,sha256=jwdEtaltGHoljPjVuN9nu7pM6auqT-DXZGDFZTiH8Ig,5349
+onedep_deposition/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onedep_deposition/cli/cli.py,sha256=XbUt9YlRMTPv2YAVk2cMttMo5nBKbdoATLH05_az0A8,12091
+onedep_deposition-0.1.dev1.dist-info/LICENSE,sha256=VWLxXn8PvwE6ptB7BxQbpErZ9iyxodApO5MYZ2yZ2jk,552
+onedep_deposition-0.1.dev1.dist-info/METADATA,sha256=xOhMhYcqap_yq_wa7CqJv4C0xV41GnFrVuOSO02Maek,5219
+onedep_deposition-0.1.dev1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+onedep_deposition-0.1.dev1.dist-info/entry_points.txt,sha256=48r792dMqVVQERIjHq-U-pjush3APcfk6ttBkIY2aCA,68
+onedep_deposition-0.1.dev1.dist-info/top_level.txt,sha256=1ZEdrjMQRSU6XryC7Og-mSDyIZz3B-STn0mvMT4c9TI,18
+onedep_deposition-0.1.dev1.dist-info/RECORD,,
