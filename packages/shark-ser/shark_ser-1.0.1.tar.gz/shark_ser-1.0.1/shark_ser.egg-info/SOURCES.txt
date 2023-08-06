@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+loger/__init__.py
+loger/config_server_log.py
+shark_ser.egg-info/PKG-INFO
+shark_ser.egg-info/SOURCES.txt
+shark_ser.egg-info/dependency_links.txt
+shark_ser.egg-info/requires.txt
+shark_ser.egg-info/top_level.txt
+src/__init__.py
+src/descriptor.py
+src/metaclasses.py
+src/server.py
+src/utils.py
+src/variables.py
