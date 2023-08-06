@@ -1,0 +1,17 @@
+@p2g.must_be(
+"( fish )",
+"( for x in range[1, 20]:        )",
+"  #102= 1.",
+"N1000",
+"  IF [#102 GE 20.] GOTO 1002",
+"(     pass                      )",
+"  #102= #102 + 1.",
+"  GOTO 1000",
+"N1002",
+)
+
+def test_for2():
+    x = Var()
+    com("fish")
+    for x in range(1, 20):
+        pass

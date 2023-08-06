@@ -1,0 +1,10 @@
+@p2g.must_be(
+"( x1.y2.                        )",
+"  G01 G91 F20.",
+"( GotoWorker[want_bp_=False, space_=<MovementSpace.WORK: 1>, order_=<MovementOrder.XYZ: 1>, relorabs_=<MovementRelOrAbs.ABSOLUTE: 2>, feed_=20, probe_=False, mcode_=''] )",
+)
+
+def test_goto_rel():
+    mgoto = p2g.goto.feed(20)
+    mgoto.relative(1, 2)
+    p2g.comment(mgoto)

@@ -1,0 +1,9 @@
+@p2g.must_be(
+"( z3.                           )",
+"  G01 G90 F123.",
+"( x1.y2.                        )",
+"  G01 G90 F123.",
+)
+
+def test_probe1():
+    p2g.goto.feed(123).z_then_xy(1, 2, 3)

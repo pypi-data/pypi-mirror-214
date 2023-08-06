@@ -1,0 +1,15 @@
+@p2g.must_be(
+"( x1.y2.                        )",
+"  G01 G91 F20.",
+"( x3.y4.                        )",
+"  G01 G90 F20.",
+"  G01 G91 F20.",
+)
+
+def test_goto_rel_and_change():
+    mgoto = p2g.goto.feed(20)
+    mgoto.relative(1, 2)
+    mgoto = mgoto.absolute
+    mgoto(3, 4)
+    mgoto = mgoto.relative
+    mgoto(3, 4)

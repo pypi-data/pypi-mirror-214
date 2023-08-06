@@ -1,0 +1,57 @@
+@p2g.must_be(
+"( for j in range[7, 10]:        )",
+"  #102= 7.",
+"N1000",
+"  IF [#102 GE 10.] GOTO 1002",
+"(     ptr[j] = 12               )",
+"  #[#102 + 300]= 12.",
+"  #102= #102 + 1.",
+"  GOTO 1000",
+"N1002",
+"( for j in range[7, 10]:        )",
+"  #112= 7.",
+"N1003",
+"  IF [#112 GE 10.] GOTO 1005",
+"(     ptr[j] = j                )",
+"  #[#112 + 300]= #112",
+"  #112= #112 + 1.",
+"  GOTO 1003",
+"N1005",
+"( for j in range[2, 7]:         )",
+"  #114= 2.",
+"N1006",
+"  IF [#114 GE 7.] GOTO 1008",
+"(     ptr[j] = [j + 2] ** 2 + 17)",
+"  #[#114 + 300]= POW[#114 + 2.,2.] + 17.",
+"  #114= #114 + 1.",
+"  GOTO 1006",
+"N1008",
+)
+
+def test_var_deref_addresses():
+    j = p2g.Var()
+
+    ptr = p2g.Fixed[10](addr=300)
+
+    for j in range(7, 10):
+        ptr[j] = 12
+
+    st = add_some_symbols()
+
+    ptr1 = p2g.address(st.txyz.xyz)
+
+    ptr2 = st.txyz
+
+    assert ptr1 == ptr2
+    assert ptr2 == st.txyz
+
+    assert not (p2g.address(ptr2.x) != p2g.address(st.txyz.x))
+    assert ptr1 == st.txyz
+
+    assert p2g.address(st.txyz.xyz) == st.txyz
+
+    for j in range(7, 10):
+        ptr[j] = j
+
+    for j in range(2, 7):
+        ptr[j] = (j + 2) ** 2 + 17

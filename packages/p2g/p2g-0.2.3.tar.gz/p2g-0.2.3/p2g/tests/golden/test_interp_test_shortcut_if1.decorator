@@ -1,0 +1,10 @@
+@p2g.must_be(
+"(     V[0] = 7                  )",
+"  #200= 7.",
+)
+
+def test_shortcut_if1():
+    if 1:
+        V[0] = 7
+    else:
+        V[1] = 12

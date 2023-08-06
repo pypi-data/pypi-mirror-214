@@ -1,0 +1,24 @@
+@p2g.must_be(
+"( mx = Var[TOOL_TBL_FLUTES[0]]  )",
+"  #100= #300",
+"( for i in TOOL_TBL_FLUTES[1:]: )",
+"  #101= 301.",
+"N1000",
+"  IF [#101 GE 400.] GOTO 1002",
+"(     mx = max[mx, i]           )",
+"  #100= #100 * [#100 GT #[#101]] + #[#101] * [#100 LE #[#101]]",
+"  #101= #101 + 1.",
+"  GOTO 1000",
+"N1002",
+"( MESSAGE.var = mx              )",
+"  #3006= #100",
+)
+
+def test_find_max_way2():
+    # stop with alarm code as max # flutes in table.
+
+    mx = p2g.Var(TOOL_TBL_FLUTES[0])
+    for i in TOOL_TBL_FLUTES[1:]:
+        mx = max(mx, i)
+
+    MESSAGE.var = mx

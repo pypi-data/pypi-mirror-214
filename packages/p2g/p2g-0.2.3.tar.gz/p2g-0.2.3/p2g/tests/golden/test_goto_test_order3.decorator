@@ -1,0 +1,7 @@
+@p2g.must_be(
+"( x1.y2.z3.                     )",
+"  G01 G90 F3.",
+)
+
+def test_order3():
+    p2g.goto.feed(3).work(1, 2, 3)

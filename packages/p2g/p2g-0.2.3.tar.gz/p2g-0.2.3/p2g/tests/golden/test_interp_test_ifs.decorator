@@ -1,0 +1,19 @@
+@p2g.must_be(
+"( if PROBE.x > 9:               )",
+"  IF [#5061 LE 9.] GOTO 1000",
+"(     if PROBE.y > 10:          )",
+"  IF [#5062 LE 10.] GOTO 1002",
+"(         V[0] = 3              )",
+"  #200= 3.",
+"  GOTO 1003",
+"N1002",
+"N1003",
+"  GOTO 1001",
+"N1000",
+"N1001",
+)
+
+def test_ifs():
+    if PROBE.x > 9:
+        if PROBE.y > 10:
+            V[0] = 3

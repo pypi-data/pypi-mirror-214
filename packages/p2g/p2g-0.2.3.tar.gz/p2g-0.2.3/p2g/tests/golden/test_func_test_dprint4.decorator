@@ -1,0 +1,10 @@
+@p2g.must_be(
+"( xc = Var[12]                  )",
+"  #100= 12.",
+'( dprint[f"this is {xc+xc:5.2f}"])',
+"DPRNT[this*is*[#100+#100][52]]",
+)
+
+def test_dprint4():
+    xc = p2g.Var(12)
+    p2g.dprint(f"this is {xc+xc:5.2f}")
