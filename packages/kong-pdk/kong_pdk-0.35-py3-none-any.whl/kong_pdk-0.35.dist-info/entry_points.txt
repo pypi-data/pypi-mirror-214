@@ -1,0 +1,2 @@
+[console_scripts]
+kong-python-pluginserver = kong_pdk.cli:start_server
