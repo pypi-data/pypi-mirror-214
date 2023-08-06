@@ -1,0 +1,10 @@
+simple_nlp_library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_nlp_library/embeddings.py,sha256=OYcfW9rvrm34pKbugZEz5ACfrYaO1BTuLZ6Py4EhIH4,883
+simple_nlp_library/metrics.py,sha256=CjDTbyaJ8iJTEGvWvIgBwP6_mpcVH-iGDJrliT4PwbA,1069
+simple_nlp_library/preprocessing.py,sha256=JqeIyc0aE3V4rZMthRLQyLL-Q2d9mBeNJcld1Si22Iw,3464
+simple_nlp_library/data/LICENSE,sha256=foiNDcdQCOAF59cURvGUbfyJLZGIx0xQk90dOjMi54I,15595
+simple_nlp_library/data/glove-wiki-gigaword-50,sha256=mop44sbaMRXpcETLz7QHNtQwlhQQv3MqToB3ZBK-XNM,171350089
+simple_nlp_library-1.5.1.dist-info/METADATA,sha256=FubxPvUHPyRfm9Ng3quR-KUBxxz6yoDdqeOt8UIXCPM,1637
+simple_nlp_library-1.5.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+simple_nlp_library-1.5.1.dist-info/licenses/LICENSE,sha256=enmDyzVjLZJrrcZYBZHdWMoiSHP9qMbnhQvmVV5Zjsw,1071
+simple_nlp_library-1.5.1.dist-info/RECORD,,
