@@ -1,0 +1,11 @@
+genos/__init__.py,sha256=l2dEF0_wT6m6tWsjpzpm1dH71nCoAGEHdNncJy8WvIg,175
+genos/instantiate.py,sha256=E9jYD_FtAl6ma1RjrcB3FMSNrn95ry7wJNXSXzo2p-Y,12988
+genos/version.py,sha256=X3J9304PBLJ6R-wpcwP3ozcXPbjz_z8dBOeUAG5u9Ck,19
+genos/examples/__init__.py,sha256=9S_bh1OccH9EDSNW3f3dyb_NDYDnBpaO1iXTTpCTwgs,461
+genos/examples/complex_examples.py,sha256=c8Z9lmFICLN1UsXzG-5OD6aQ247gXE6aLRnyLRK6M-M,1919
+genos/examples/simple_examples.py,sha256=cUbEenrD99_qnHtaOM8Xqfdfiv7DoujW8BTbBpE9l9w,692
+genos-0.1.12.dist-info/LICENSE,sha256=F_apUVjfCaLZXySrk8DK0evDu1BkVmHyqBk3-e8dr88,1062
+genos-0.1.12.dist-info/METADATA,sha256=Wu4WTdpzJjEvJsA13xldjLZRhr1E_60xxxwBEE1Xce0,14190
+genos-0.1.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+genos-0.1.12.dist-info/top_level.txt,sha256=r5lfiL69eI_OhN7zcFrR2RZKTMZ74DwSlv1fDUGb-xk,6
+genos-0.1.12.dist-info/RECORD,,
