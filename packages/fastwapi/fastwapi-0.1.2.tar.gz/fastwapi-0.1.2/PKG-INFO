@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: fastwapi
+Version: 0.1.2
+Summary: A simple API Websocket server to easily parse JSON
+Author-email: lonode <lonode-git@proton.me>
+License: MIT License
+        
+        Copyright (c) 2023 lonode
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/lonode/FastWAPI
+Keywords: websocket,api,json
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pydantic
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Description
+
+A simple lightweight Websocket framework based on Starlette, which provide easy-to-use Python decorator to parse JSON incoming message.  
+
+It's in the same spirit as FastAPI, where each decorator map to a path. But here, each decorator map to a Pydantic object, so it is easy to map each incoming JSON message to a function. 
+
+# Disclaimer
+
+ - The project is not yet available on pip due to a name conflict with a previous wapi project.
+ - The module is available, but far from finished & polished, please do not use it in production.
+
+# Roadmap 
+
+- Add authent middleware
+- Add background job to asynchrounosly send JSON to the client
+
+# Usage 
+
+See example/main.py for complete code.
+
+Getting started in three steps :
+
+#### Instanciates the framework and declare the Websocket HTTP endpoint.  
+
+```python
+import uvicorn
+from wapi import WAPI, WebSocket
+from pydantic import BaseModel
+
+app = WAPI(endpoint="/ws")
+
+```
+
+#### Define Pyndantic model, for incoming and outgoing messages.
+
+```python
+class CM(BaseModel):
+    counter: int
+
+class SD(BaseModel):
+    name: str
+```
+
+#### Map each Pydantic model to your function.
+
+```python
+@app.parse(CM)
+async def parse_CM(websocket: WebSocket, data: CM):
+    print("RECEIVED CM : ", data)
+    await websocket.send_json(data.dict())
+
+@app.parse(SD)
+async def parse_SD(websocket: WebSocket, data: CM):
+    print("RECEIVED SD : ", data)
+    await websocket.send_json(data.dict())
+```
+
+## Launch your app
+
+Either through command line "uvicorn main:app" or directly inside the python file :
+
+```python
+if __name__ == "__main__":
+    uvicorn.run("main:app", port=5000, log_level="info")
+```
