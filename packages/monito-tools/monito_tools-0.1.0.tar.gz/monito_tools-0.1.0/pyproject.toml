@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "monito-tools"
+version = "0.1.0"
+description = "Tools for Monito"
+authors = ["Steffen Brinkmann <s-b@mailbox.org>"]
+readme = "README.rst"
+packages = [{include = "monito_tools"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+toml = "^0.10.2"
+rich = "^13.3.5"
+spacy = "^3.5.3"
+spacy-syllables = "^3.0.2"
+scikit-learn = "^1.2.2"
+gensim = "^4.3.1"
+nltk = "^3.8.1"
+openai = "^0.27.6"
+pymongo = "^4.3.3"
+fs = "^2.4.16"
+pandas = "^2.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "^6.0.0"
+flake8-pyproject = "^1.2.3"
+isort = "^5.12.0"
+mypy = "^1.3.0"
+pylint = "^2.17.4"
+pytest = "^7.3.1"
+pytest-cov = "^4.0.0"
+pytest-flake8 = "^1.1.1"
+pytest-mypy = "^0.10.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = ["E203"]
+max-complexity = 10
+per-file-ignores =["monito_tools/__init__.py:F401"]
