@@ -1,0 +1,57 @@
+# ProTstab2
+Protein prediction package
+
+
+## Environmental installation
+
+### R
+R language version requires version 4.1.1
+Two packages need to be installed simultaneously:
+```
+install.packages("devtools")
+library(devtools)
+install_version("DT", version="0.19",repos="http://cran.us.r-project.org")
+install_version("protr", version="1.6.2",repos="http://cran.us.r-project.org")
+```
+Set Simultaneously`R_HOME`to environment variable
+
+### Java
+Java version requires `1.8` or higher
+
+
+### Python
+Python version requires`3.6`or higher
+
+
+## How to use
+### If there is a protein sequence
+```python
+_name = ""
+_seq = """>sp|P30177|YBIB_ECOLI Uncharacterized protein YbiB OS=Escherichia coli (strain K12) OX=83333 GN=ybiB PE=1 SV=1
+MDYRKIIKEIGRGKNHARDLDRDTARGLYAHMLNGEVPDLELGGVLIALRIKGEGEAEML
+GFYEAMQNHTIKLTPPAGKPMPIVIPSYNGARKQANLTPLLAILLHKLGFPVVVHGVSED
+PTRVLTETIFELMGITPTLHGGQAQAKLDEHQPVFMPVGAFCPPLEKQLAMRWRMGVRNS
+AHTLAKLATPFAEGEALRLSSVSHPEYIGRVAKFFSDIGGRALLMHGTEGEVYANPQRCP
+QINLIDREGMRVLYEKQDTAGSELLPQAKDPETTAQWIERCLAGSEPIPESLKIQMACCL
+VATGEAATISDGLARVNQAF"""
+p = ProTstab2()
+r = p.predict(_name, _seq)
+print(r)
+# 55.00748285501498
+```
+### If there is no protein sequence, the following methods can be used
+```python
+_name = ">P30177"
+_seq = ""
+p = ProTstab2()
+r = p.predict(_name, _seq)
+print(r)
+# 55.00748285501498
+```
+The first method is recommended here for the following reasons：
+1. Due to the use of crawlers, it is not guaranteed that data can be obtained every time, and the program may crash
+2. You can obtain specific protein sequence values
+
+## Disclaimers
+The applications involved in this package are for learning and communication purposes only and shall not be used for any commercial purposes. 
+Any legal disputes arising from this have nothing to do with me!
