@@ -1,0 +1,6 @@
+autora-core
+typing
+numpy
+
+[dev]
+autora-core[dev]
