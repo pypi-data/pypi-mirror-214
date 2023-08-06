@@ -1,0 +1,1 @@
+from dotenvreader import main
