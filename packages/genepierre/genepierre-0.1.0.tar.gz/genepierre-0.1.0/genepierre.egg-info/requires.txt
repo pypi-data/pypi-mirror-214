@@ -1,0 +1,6 @@
+numpy
+scipy
+bioviz
+matplotlib
+pycapacity
+pillow==9.0.0
