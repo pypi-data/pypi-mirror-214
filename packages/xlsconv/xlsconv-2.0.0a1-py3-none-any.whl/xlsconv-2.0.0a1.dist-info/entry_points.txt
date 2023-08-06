@@ -1,0 +1,2 @@
+[console_scripts]
+xls2django = xlsconv.django:main
