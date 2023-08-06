@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Stringss/Data.py
+Stringss/__init__.py
+Stringss/generate.py
+pyStringss.egg-info/PKG-INFO
+pyStringss.egg-info/SOURCES.txt
+pyStringss.egg-info/dependency_links.txt
+pyStringss.egg-info/requires.txt
+pyStringss.egg-info/top_level.txt
