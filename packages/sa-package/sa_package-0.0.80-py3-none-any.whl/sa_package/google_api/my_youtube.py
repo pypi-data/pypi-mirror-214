@@ -1,0 +1,121 @@
+import datetime
+import pandas as pd
+from googleapiclient.discovery import build
+from sa_package.convert.time_format import convert_iso_8859_to_sec
+
+YOUTUBE_API_SERVICE_NAME = "youtube"
+YOUTUBE_API_VERSION = "v3"
+
+class YoutubeApi:
+
+    def __init__(self, api_key):
+        self.__youtube = build(
+            YOUTUBE_API_SERVICE_NAME,
+            YOUTUBE_API_VERSION, 
+            developerKey=api_key
+        )
+
+
+    def get_build(self):
+        return self.__youtube
+    
+
+    def get_channel_detail(self, channel_id):
+
+        search_response = self.__youtube.channels().list(
+            part="id, snippet, statistics",
+            id=channel_id,
+        ).execute()
+
+
+        channel_name = None
+        channel_publishedAt = None
+        channel_thumbnails = None
+        subscribers = None
+        views = None
+        videos = None
+
+        for item in search_response.get("items", []):
+            channel_name = item["snippet"]["title"]
+            channel_publishedAt = item["snippet"]["publishedAt"]
+            channel_thumbnails = item["snippet"]["thumbnails"]
+
+            subscribers = item["statistics"]["subscriberCount"]
+            views = item["statistics"]["viewCount"]
+            videos = item["statistics"]["videoCount"]
+
+        return {'channel_name':channel_name, 'channel_publishedAt':channel_publishedAt, 'channel_thumbnails':channel_thumbnails,
+                'subscribers':subscribers, 'views':views, 'videos':videos}
+
+
+
+    def get_channel_videos(self, channel_id, published_after=None, published_before=None):
+        
+        video_df = pd.DataFrame()
+
+        if published_before is None:
+            published_before = datetime.datetime.today().strftime("%Y-%m-%dT%H:%M:%SZ")
+
+        if published_after is None:
+            published_after = "1970-01-01T00:00:00Z"
+
+        page_token = ""
+        while True:
+            search_response = self.__youtube.search().list(
+                part="id, snippet",
+                fields="items(id,snippet(title, channelId, publishTime))",
+                channelId=channel_id,
+                maxResults=50,
+                order="date",
+                pageToken=page_token,
+                publishedBefore=published_before,
+                publishedAfter=published_after
+            ).execute()
+
+            for item in search_response.get("items", []):
+                if item["id"]["kind"] == "youtube#video":
+                    try:
+                        video_df = video_df.append({
+                            "video_id": item["id"]["videoId"],
+                            "title": item["snippet"]["title"],
+                            "channel_id": item["snippet"]["channelId"],
+                            "upload_date": datetime.datetime.strptime(item["snippet"]["publishTime"], "%Y-%m-%dT%H:%M:%SZ")
+                        }, ignore_index=True)
+                    except Exception as e:
+                        print()
+                        print(item)
+
+            next_page_token = search_response.get("nextPageToken", None)
+            if next_page_token is None:
+                break
+            else:
+                page_token = next_page_token
+
+        return video_df
+
+
+
+    def get_video_detail(self, video_id:str) -> dict:
+        """
+        return dict
+            'title', 'upload_date', 'channel_id', 'channel_name', 'length'
+        """
+
+        search_response = self.__youtube.videos().list(
+            part="id, snippet, contentDetails",
+            id=video_id,
+        ).execute()
+
+        title = None
+        upload_date = None
+        channel_id = None
+
+        for item in search_response.get("items", []):
+            if item["kind"] == "youtube#video":
+                title = item["snippet"]["title"]
+                upload_date = datetime.datetime.strptime(item["snippet"]["publishedAt"], "%Y-%m-%dT%H:%M:%SZ")
+                channel_id = item["snippet"]["channelId"]
+                channel_name = item["snippet"]["channelTitle"]
+                length = convert_iso_8859_to_sec(item["contentDetails"]["duration"])
+
+        return {'title': title, 'upload_date': upload_date, 'channel_id': channel_id, 'channel_name':channel_name, 'length':length}
