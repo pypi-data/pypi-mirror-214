@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: higis-tools
+Version: 1.0.2
+Summary: higis serverless tools
+Home-page: 
+Author: lwt
+Author-email: watoliu@163.com
+
+higis serverless tools,1、add Filed,support schema,type,defualt,decription 
