@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: yid-langchain-extensions
+Version: 0.4.9
+Summary: Useful classes extending langchain library
+Home-page: https://github.com/dimitree54/yid_langchain_extensions
+Author: Dmitrii Rashchenko
+Author-email: dimitree54@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Langchain extensions
+Here I will publish some extensions for langchain library that were useful for me.
