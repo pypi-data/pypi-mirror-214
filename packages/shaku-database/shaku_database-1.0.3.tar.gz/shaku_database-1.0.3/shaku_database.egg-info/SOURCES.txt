@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+database/__init__.py
+shaku_database.egg-info/PKG-INFO
+shaku_database.egg-info/SOURCES.txt
+shaku_database.egg-info/dependency_links.txt
+shaku_database.egg-info/requires.txt
+shaku_database.egg-info/top_level.txt
