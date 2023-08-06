@@ -1,0 +1,12 @@
+watch_diff/__init__.py,sha256=E3RU8akebcPJilHWxKWOvHE4xaNdqeMDosBwhcjQgh0,198
+watch_diff/__main__.py,sha256=vMysTlQr1T8n6VGVYrkQjFTC8VOGpaoDCijt820ChC4,3112
+watch_diff/command.py,sha256=Wm1lGqEVS6iZK-SBFaQsXsU-KUxbE07ugwlmkPxMd5M,1051
+watch_diff/diff.py,sha256=OSb4_W2ryb0eoFWEO5A2X1AbgYOpONPN7MrMRJ_rcoY,1477
+watch_diff/email.py,sha256=6AYM3Lcze_YRe-PcnWqbM9zFUdXxO5xC2yhMEu9b1mE,2759
+watch_diff/format.py,sha256=0RjB0KVkAjXPuHzxQSRv8WmlUxKGermwsmTpHr3VQ5E,1353
+watch_diff-1.1.4.dist-info/LICENSE,sha256=EU-u8jJBS6re7fZtxMoLy3MkB63-1593iexSWO-KYgg,1086
+watch_diff-1.1.4.dist-info/METADATA,sha256=BE2WIvQ7VO4tM13BUz9VLmq5DrrGCvAKnP4sofyJ9n8,2294
+watch_diff-1.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+watch_diff-1.1.4.dist-info/entry_points.txt,sha256=Tvcj2luZNFTM6F0NAoAO555now7e4fsHD0C0z48bTqM,56
+watch_diff-1.1.4.dist-info/top_level.txt,sha256=JEVGFoo-QPDHG0CvLbbTMCAFLn83Csf9gXbVFEt9_MA,11
+watch_diff-1.1.4.dist-info/RECORD,,
