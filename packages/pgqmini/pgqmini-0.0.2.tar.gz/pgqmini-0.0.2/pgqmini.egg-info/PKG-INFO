@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pgqmini
+Version: 0.0.2
+Summary: pgqmini is a lightweight, easy-to-use Python library for managing PostgreSQL message queues.
+Home-page: http://github.com/over-engineers/pgqmini
+Author: Kajago
+Author-email: jangsc0000@gmail.com
+License: MIT
+License-File: LICENSE
