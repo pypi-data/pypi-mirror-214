@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: aws-cdk.aws-kinesisfirehose-destinations
+Version: 1.204.0
+Summary: CDK Destinations Constructs for AWS Kinesis Firehose
+Home-page: https://github.com/aws/aws-cdk
+Author: Amazon Web Services
+License: Apache-2.0
+Project-URL: Source, https://github.com/aws/aws-cdk.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Development Status :: 7 - Inactive
+Classifier: License :: OSI Approved
+Classifier: Framework :: AWS CDK
+Classifier: Framework :: AWS CDK :: 1
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+# Amazon Kinesis Data Firehose Destinations Library
+
+<!--BEGIN STABILITY BANNER-->---
+
+
+![End-of-Support](https://img.shields.io/badge/End--of--Support-critical.svg?style=for-the-badge)
+
+> AWS CDK v1 has reached End-of-Support on 2023-06-01.
+> This package is no longer being updated, and users should migrate to AWS CDK v2.
+>
+> For more information on how to migrate, see the [*Migrating to AWS CDK v2* guide](https://docs.aws.amazon.com/cdk/v2/guide/migrating-v2.html).
+
+---
+<!--END STABILITY BANNER-->
+
+This library provides constructs for adding destinations to a Amazon Kinesis Data Firehose
+delivery stream. Destinations can be added by specifying the `destinations` prop when
+defining a delivery stream.
+
+See [Amazon Kinesis Data Firehose module README](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-kinesisfirehose-readme.html) for usage examples.
+
+```python
+import aws_cdk.aws_kinesisfirehose_destinations as destinations
+```
