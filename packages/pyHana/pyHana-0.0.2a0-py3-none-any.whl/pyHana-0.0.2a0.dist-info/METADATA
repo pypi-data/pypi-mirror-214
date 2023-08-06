@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyHana
+Version: 0.0.2a0
+Summary: for pyhana club members
+Home-page: https://github.com/pyhana/pyHana
+Author: pyhanclub
+Author-email: pyhanclub@gmail.com
+Keywords: pyhanclub
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
