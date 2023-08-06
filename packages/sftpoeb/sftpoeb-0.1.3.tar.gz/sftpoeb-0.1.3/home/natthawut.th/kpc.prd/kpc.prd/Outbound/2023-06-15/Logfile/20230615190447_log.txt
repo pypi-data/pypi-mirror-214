@@ -1,0 +1,8 @@
+{
+    "TotalInvoice": "-",
+    "SuccessInvoice": "-",
+    "FailedInvoice": "-",
+    "recoverInvoice": "0",
+    "RecoverResponseInvoices": [],
+    "responseInvoices": []
+}
