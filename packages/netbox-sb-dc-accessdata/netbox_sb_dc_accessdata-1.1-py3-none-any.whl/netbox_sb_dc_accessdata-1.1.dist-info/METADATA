@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: netbox-sb-dc-accessdata
+Version: 1.1
+Summary: SB DC Accessdata
+Author: Marco Krajniak
+License: All rights reserved
+Keywords: netbox,netbox-plugin,datacenter
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+Speedbone Datacenter Accessdata integration for netbox via plugin
