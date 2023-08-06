@@ -1,0 +1,15 @@
+sdk/__init__.py,sha256=_5xoxBvqik7-PeMx5hwvFygQoUHpV34lQIJj__e4LaA,26
+sdk/client.py,sha256=lBeUrba4x-OjI8zSM8zv3-2XPeeAzwOR45YfiMb0X4U,648
+sdk/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk/core/configs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk/core/configs/variables.py,sha256=BJPZXxXu5l-CbwqLdb-686g6pbjcJXF6gUteUaySAN8,105
+sdk/core/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk/core/models/movie.py,sha256=VPZ3yDH6DesU3pXmOLGQ8Z_E88sK5EdGtwnRPEmQgh8,748
+sdk/core/models/quote.py,sha256=2rW0XnXSDiHko-bVkQQ-Jy20jJsWqDRr0-sXrgtebOo,529
+sdk/core/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk/core/utils/errors.py,sha256=2V7cnk6nC_XoQldTJlNJl3Gp10Gol53NpqZzQGvPwWE,545
+sdk/core/utils/helpers.py,sha256=AIxbOneieKUZ_1xCL2xZtJj0w2VNRDOvFRXCp65j6vE,2039
+efss_lotrsdk-0.0.2.dist-info/METADATA,sha256=TlHo3WfTDSHHP5_SaHgyDsIzxwCdc1Rlq8R3otpwAa4,330
+efss_lotrsdk-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+efss_lotrsdk-0.0.2.dist-info/top_level.txt,sha256=JuXS55gRP3EzGKmJgbLfVfUolO3cM_u69k3qvutnBuw,4
+efss_lotrsdk-0.0.2.dist-info/RECORD,,
