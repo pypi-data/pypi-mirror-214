@@ -1,0 +1,9 @@
+vortex_api/__init__.py,sha256=c4uL7lDfbz-YYjjoK8yyz7AwAWO0lrcZwgUmmWQRcOA,1425
+vortex_api/__version__.py,sha256=dNQspT5PfZ8H_apvOBA25FZQv7jA8If6zGNdZTZ522U,343
+vortex_api/api.py,sha256=aGzp9q9JaPFzcJbGKytb8Wt-M03rpw6q3ka0b2xeOng,24938
+vortex_api/vortex_feed.py,sha256=uNcnIaAwCSl6b2qmRXCAVJQP4x3woJjxznFuj-b6a1E,22690
+vortex_api-1.0.8.dist-info/LICENSE,sha256=ibokV0pKcs9Vp_PKVLdhbXXFp-E0m55mkkpC9ZA8yNc,1102
+vortex_api-1.0.8.dist-info/METADATA,sha256=bFcJrca67NQkP4xR1e9Got_cIAb2KI7ud4IV2RjD4zw,3469
+vortex_api-1.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vortex_api-1.0.8.dist-info/top_level.txt,sha256=bpM41OffN-AZbJn9_bpkQycctPRvbwRPGdBAPxWcSg4,11
+vortex_api-1.0.8.dist-info/RECORD,,
