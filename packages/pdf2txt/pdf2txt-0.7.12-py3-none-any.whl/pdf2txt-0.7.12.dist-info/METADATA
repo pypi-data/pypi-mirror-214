@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pdf2txt
+Version: 0.7.12
+Summary: A better pdf to text extraction toolkit
+Home-page: 
+Author: Mohamed Ben Haddou
+Author-email: mbenhaddou@mentis.io
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: pdf2image
+Requires-Dist: pdfminer.six
+Requires-Dist: Pillow
+
+### Pdf parsing library 
+
+a better pdf parsing library
+
+Parsing is improved by a better paragraph, image and table detection usong open cv
