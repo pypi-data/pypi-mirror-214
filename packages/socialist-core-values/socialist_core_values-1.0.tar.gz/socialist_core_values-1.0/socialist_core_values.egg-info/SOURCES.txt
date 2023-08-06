@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+socialist_core_values.egg-info/PKG-INFO
+socialist_core_values.egg-info/SOURCES.txt
+socialist_core_values.egg-info/dependency_links.txt
+socialist_core_values.egg-info/top_level.txt
