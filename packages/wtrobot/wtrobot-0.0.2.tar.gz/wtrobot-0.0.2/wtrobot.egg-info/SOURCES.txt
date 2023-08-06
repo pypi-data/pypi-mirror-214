@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lib/__init__.py
+wtrobot.egg-info/PKG-INFO
+wtrobot.egg-info/SOURCES.txt
+wtrobot.egg-info/dependency_links.txt
+wtrobot.egg-info/entry_points.txt
+wtrobot.egg-info/requires.txt
+wtrobot.egg-info/top_level.txt
