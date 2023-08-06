@@ -1,0 +1,7 @@
+setup.py
+ChatAPI/__init__.py
+MYPACKAGE123dpp.egg-info/PKG-INFO
+MYPACKAGE123dpp.egg-info/SOURCES.txt
+MYPACKAGE123dpp.egg-info/dependency_links.txt
+MYPACKAGE123dpp.egg-info/top_level.txt
+TextTranslatorAPI/__init__.py
