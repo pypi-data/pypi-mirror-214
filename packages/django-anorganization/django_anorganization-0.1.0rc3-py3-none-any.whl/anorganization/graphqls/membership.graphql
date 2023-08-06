@@ -1,0 +1,22 @@
+type AnOrganizationMembership implements Node {
+    id: ID!
+    serialNumber: String
+    dn: String
+    attributes: String
+    imageUrl: String
+    isValid: Boolean!
+    createdAt: DateTime!
+    updatedAt: DateTime
+    user: User
+    organization: AnOrganization
+}
+
+type AnOrganizationMembershipConnection {
+    edges: [AnOrganizationMembershipEdge]
+    pageInfo: PageInfo!
+}
+
+type AnOrganizationMembershipEdge {
+    cursor: String!
+    node: AnOrganizationMembership
+}
