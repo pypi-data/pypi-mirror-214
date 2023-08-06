@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: morser
+Version: 0.1.0
+Summary: Morser is a CLI for encoding and decoding morse code.
+License: MIT
+Author: Igor Ferreira
+Author-email: iferreira.n01@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Project-URL: Bug Tracker, https://github.com/ig0r-ferreira/morser/issues
+Project-URL: Source Code, https://github.com/ig0r-ferreira/morser
+Description-Content-Type: text/markdown
+
+# Morser
+
+[![CI](https://github.com/ig0r-ferreira/morser/actions/workflows/test.yaml/badge.svg)](https://github.com/ig0r-ferreira/morser/actions/workflows/test.yaml)
+
+Morser is a CLI for encoding and decoding morse code.
+
+## How to install
+
+It is recommended to use [Pipx](https://pypa.github.io/pipx/) to install the CLI:
+```bash
+pipx install morser
+```
+
+But you can also install with pip:
+```bash
+pip install morser
+```
+
+## How to use
+
+```bash
+morser --help
+```
+
+## License
+
+This project is under license from [MIT](LICENSE).
+

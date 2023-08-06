@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "morser"
+version = "0.1.0"
+description = "Morser is a CLI for encoding and decoding morse code."
+authors = ["Igor Ferreira <iferreira.n01@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "morser"}]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.11"
+]
+
+[tool.poetry.urls]
+"Source Code" = "https://github.com/ig0r-ferreira/morser"
+"Bug Tracker" = "https://github.com/ig0r-ferreira/morser/issues"
+
+[tool.poetry.scripts]
+morser = "morser.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+blue = "^0.9.1"
+pytest = "^7.3.1"
+coverage = "^7.2.7"
+taskipy = "^1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+format = "isort . && blue ."
+pre_test = "task format"
+test = "coverage run -m pytest -v -x"
+post_test = "coverage report && coverage html"
