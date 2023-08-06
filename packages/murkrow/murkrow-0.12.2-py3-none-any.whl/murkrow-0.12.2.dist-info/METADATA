@@ -1,0 +1,225 @@
+Metadata-Version: 2.1
+Name: murkrow
+Version: 0.12.2
+Summary: Markdown for LLMs.
+Home-page: https://github.com/rgbkrk/murkrow
+License: BSD-3-Clause
+Author: Kyle Kelley
+Author-email: rgbkrk@gmail.com
+Requires-Python: >=3.9.0,<3.12
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: ipython (>=8.12.0,<9.0.0)
+Requires-Dist: openai (>=0.27.4,<0.28.0)
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: typing-extensions (>=4.6.3,<5.0.0)
+Requires-Dist: vdom (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Murkrow
+
+## Supercharge Your Chat Sessions with _Functions_ Using Murkrow!
+
+<img src="https://i.pinimg.com/originals/95/53/a9/9553a99cefa0b27f0d83dc0cbf358759.png" height="100" />
+<br />
+
+Welcome to the exciting world of programmatic chat with OpenAI's chat models, using the `murkrow` Python package. At its simplest, you can install `murkrow`, set your `OPENAI_API_KEY`, and begin some simple chats:
+
+```python
+import murkrow
+
+session = murkrow.Session()
+
+session.chat("How much wood could a")
+```
+
+```markdown
+woodchuck chuck if a woodchuck could chuck wood?
+```
+
+### Installation
+
+```bash
+pip install murkrow
+```
+
+### Configuration
+
+You'll need to set your `OPENAI_API_KEY` environment variable. You can find your API key on your [OpenAI account page](https://platform.openai.com/account/api-keys). I recommend setting it in an `.env` file when working locally.
+
+On hosted environments like Noteable, set it in your Secrets to keep it safe from prying LLM eyes.
+
+## What can `Sessions` enable _you_ to do?
+
+<center><img src="https://cdn.donmai.us/original/64/e7/64e78d7968c8317b84a95e152e4a087b.png" height="100" /></center>
+<br />
+
+Where `Session`s and OpenAI take it next level is with _Chat Functions_. You can
+
+-   declare a function with a schema
+-   register the function in your chat `Session`
+-   watch as Chat Models call your functions!
+
+You may recall this kind of behavior from [ChatGPT Plugins](https://noteable.io/chatgpt-plugin-for-notebook/). Now, you can take this even further with your own custom code.
+
+As an example, let's give the large language models the ability to tell time.
+
+```python
+from datetime import datetime
+from pytz import timezone, all_timezones, utc
+from typing import Optional
+from pydantic import BaseModel
+
+def what_time(tz: Optional[str] = None):
+    '''Current time, defaulting to UTC'''
+    if tz is None:
+        pass
+    elif tz in all_timezones:
+        tz = timezone(tz)
+    else:
+        return 'Invalid timezone'
+
+    return datetime.now(tz).strftime('%I:%M %p')
+
+class WhatTime(BaseModel):
+    tz: Optional[str] = None
+```
+
+Let's break this down.
+
+`what_time` is the function we're going to provide access to. Its docstring forms the `description` for the model while the schema comes from the pydantic `BaseModel` called `WhatTime`.
+
+```python
+import murkrow
+
+session = murkrow.Session()
+
+# Register our function
+session.register(what_time, WhatTime)
+
+# Pluck the chat function off for easy access
+chat = session.chat
+```
+
+After that, we can call `chat` with direct strings (which are turned into user messages) or using simple message makers from `murkrow` named `human`/`user` and `narrate`/`system`.
+
+```python
+chat("What time is it?")
+```
+
+```markdown
+▶ 𝑓 Ran `what_time`
+
+The current time is 11:47 PM.
+```
+
+## Interface
+
+The `murkrow` package exports
+
+### `Session`
+
+The `Session` class is the main way to chat using OpenAI's models. It keeps a history of your chat in `Session.messages`.
+
+#### `Session.chat`
+
+When you call `chat`, you're sending over messages to the chat model and getting back an updating `Markdown` display live.
+
+```python
+session.chat("What would a parent who says "I have to play zone defense" mean? ")
+# Markdown response inline
+session.messages
+```
+
+```js
+[{'role': 'user',
+  'content': 'What does a parent of three kids mean by "I have to play zone defense"?'},
+ {'role': 'assistant',
+  'content': 'When a parent of three kids says "I have to play zone defense," it means that they...
+```
+
+#### `Session.register`
+
+You can register functions with `Session.register` to make them available to the chat model. The function's docstring becomes the description of the function while the schema is derived from the `pydantic.BaseModel` passed in.
+
+```python
+from pydantic import BaseModel
+
+class WhatTime(BaseModel):
+    tz: Optional[str] = None
+
+def what_time(tz: Optional[str] = None):
+    '''Current time, defaulting to UTC'''
+    if tz is None:
+        pass
+    elif tz in all_timezones:
+        tz = timezone(tz)
+    else:
+        return 'Invalid timezone'
+
+    return datetime.now(tz).strftime('%I:%M %p')
+
+session.register(what_time, WhatTime)
+```
+
+#### `Session.messages`
+
+The raw messages sent and received to OpenAI. If you hit a token limit, you can remove old messages from the list to make room for more.
+
+```python
+session.messages = session.messages[-100:]
+```
+
+### Messaging
+
+#### `human`/`user`
+
+These functions create a message from the user to the chat model.
+
+```python
+from murkrow import human
+
+human("How are you?")
+```
+
+```json
+{ "role": "user", "content": "How are you?" }
+```
+
+#### `narrate`/`system`
+
+`system` messages, also called `narrate` in `murkrow`, allow you to steer the model in a direction. You can use these to provide context without being seen by the user. One common use is to include it in the session to start with.
+
+```python
+from murkrow import narrate
+
+narrate("You are a large bird")
+```
+
+```json
+{ "role": "system", "content": "You are a large bird" }
+```
+
+## Development
+
+This project uses poetry for dependency management. To get started, clone the repo and run
+
+```bash
+poetry install -E dev -E test
+```
+
+We use `black`, `isort`, and `mypy`.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
