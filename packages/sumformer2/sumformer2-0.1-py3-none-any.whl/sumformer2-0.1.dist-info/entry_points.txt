@@ -1,0 +1,2 @@
+[console_scripts]
+sumformer2 = sumformer2.__main__:main
