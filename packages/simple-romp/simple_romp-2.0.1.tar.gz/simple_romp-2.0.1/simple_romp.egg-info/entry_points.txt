@@ -1,0 +1,7 @@
+[console_scripts]
+bev = bev.main:main
+bev.prepare_smil = bev.pack_smil_info:main
+romp = romp.main:main
+romp.prepare_smpl = romp.pack_smpl_info:main
+trace2 = trace2.main:main
+
