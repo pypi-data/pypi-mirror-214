@@ -1,0 +1,12 @@
+gamma/__init__.py,sha256=fBgNjzcOqyAnA3-oioCzgRxOlKPq_q_QlBl3gmcB2Xw,330
+gamma/_base.py,sha256=0MJNNBwImK9AhMhqrABRuHmn1UTZn0mSNJcWNMvgLc4,19235
+gamma/_bayesian_mixture.py,sha256=g2UQLbgO8u5vZ56IneTHvl8BZxnpHLN8zmp1TSaKlto,37223
+gamma/_gaussian_mixture.py,sha256=OoeHH6P9Fe0ggaq4X7mUIRThz4dU7RndhaAKB-QYLjw,33646
+gamma/app.py,sha256=6udxd6zjU_WOpz6-wQB6zLGR5ExNwkONdSee8dToh60,7104
+gamma/seismic_ops.py,sha256=ip-wghaW96vv0lTRxK-gMt8HSkQ6GP8s_qtRqiKyJU4,15603
+gamma/utils.py,sha256=RnB3C4V9mBV3rdzd3CAeftMSQ1EHnNIe6JmitK6gzJ0,17019
+GMMA-1.2.0.dist-info/LICENSE,sha256=vCLQST6ClQ-CJFkVGt4PEfpFwPWNyznc-i17AYWXJTM,1069
+GMMA-1.2.0.dist-info/METADATA,sha256=fAVXKFOCZIHqTR_aiHzKGstmlTEhHjL9zaoch8UprOY,296
+GMMA-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+GMMA-1.2.0.dist-info/top_level.txt,sha256=rppjBqIFQXr93RQxbMHQ1eBKmPG-EIZdzmQ5Je4HDOI,6
+GMMA-1.2.0.dist-info/RECORD,,
