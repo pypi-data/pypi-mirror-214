@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: info-chunks-to-embeddings
+Version: 1.0.1
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: sentence-transformers
+Requires-Dist: argparse
+
+# info_chunks_to_embeddings.py
+info_chunks_to_embeddings.py 是一個將 JSON 檔案轉換為語句嵌入的工具。它使用 SentenceTransformer 模型將 JSON 文件中的內容轉換為相應的語句嵌入，然後將這些嵌入保存到指定的資料夾中。
+
+```
+🐔動機: 
+. 如果只有 .txt 純文字與 .pt 文字向量彼此對照的話，將來自然語言 query 會丟失試算表名稱與 worksheet 名稱
+. 我們發明了把 .csv 每一行都轉一個檔案 info_chunk.json 這種格式
+. info_chunk.json 可以最大程度保留試算表名稱、worksheet名稱、第幾 row 的訊息
+. 進行「語境探索」自然語言搜尋時，可以抓出 info_chunk.json 所有資訊而不是只有當初的 .txt 片段文字而已
+. 試算表類型的文字知識庫，甚至可以根據 row 上下順序來調閱更多相關資訊
+. info_chunk.json 不只是可以吃 .csv 而已, 也包括 .pdf .docx .xlsx 也都可以轉 info_chunk.json
+. 因為 1 row 1 info_chunk.json, 很方便就可以把一堆 info_chunk.json 切割 20 份 .zip 做分散運算
+. info_chunks_to_embeddings.py 本身尚未分散運算, 但可擴充 dist_info_chunks_to_embeddings.py
+. 我們刻意把輸入與輸出檔案名稱可以直接對照方便透過.pt調閱.json:
+  doc-id_1H0NTLvF0oyURCw_YWBQJ8CkcL7pij5D_8zO_1gXMc5k_sha_0f813133_row_7.json
+  doc-id_1H0NTLvF0oyURCw_YWBQJ8CkcL7pij5D_8zO_1gXMc5k_sha_0f813133_row_7.pt
+
+💣地雷: 
+. 要注意 info_chunk.json 裡面必須包含有 content 欄位才能轉 embeddings .pt 檔案
+```
+
+## 安裝
+要安裝 info_chunks_to_embeddings，請使用以下命令：
+```
+python3 -m pip install info-chunks-to-embeddings
+```
+
+## 使用方法
+將 JSON 檔案轉換為嵌入（embeddings）：
+1. 首先，確保您的系統中已安裝了 `sentence-transformers` 庫。 如果尚未安装，请运行以下命令进行安装：
+   ```
+   pip install sentence-transformers
+   ```
+2. 運行以下命令將指定資料夾中的 JSON 檔案轉換為嵌入並保存到嵌入資料夾中：
+   ```
+   python info_chunks_to_embeddings.py --input-folder <json_files_path> --embeddings-folder <embeddings_folder_path>
+   ```
+   其中，`<json_files_path>` 是要轉換的 JSON 檔案所在的資料夾，`<embeddings_folder_path>` 是要保存生成的嵌入的資料夾。
+
+3. 若要覆蓋已經存在的嵌入文件，可以使用 `--force` 選項：
+   ```
+   python info_chunks_to_embeddings.py --input-folder <json_files_path> --embeddings-folder <embeddings_folder_path> --force
+   ```
+   
+## 示例
+例如，如果您的 JSON 檔案位於 `~/my_json_files` 資料夾中，並希望將生成的嵌入存儲在 `~/my_embeddings` 資料夾中，則可以運行以下命令：
+```
+python info_chunks_to_embeddings.py --input-folder ~/my_json_files --embeddings-folder ~/my_embeddings
+```
+
+## 輸入資料檔案 info_chunk.json 舉例（需要有 content 欄位）
+```
+{
+    "uuid4": "f0dd55f0-229b-46d8-92af-e3c5e7275c52",
+    "time": "2023-06-18T01:02:35.411700Z",
+    "content": "青春痘 青春痘是最常見的皮膚問題，是皮脂腺發炎所致，表面上可能是細菌感染、黴菌感染、蟎蟲寄生，但更深層來看，是性荷爾蒙代謝不良、腸道菌叢失衡、胰島素太高、肝臟代謝受阻造成。12-24歲青少年盛行率80%，25歲以上青年也高達50%，因為此階段的睪固酮和雌激素分泌最多。熬夜、高醣飲食、加工食物（尤其是垃圾食物）、臉部衛生習慣不好或過度清潔，都會引起青春痘。所以，要徹底解決青春痘並不難，但需要探討自己到底是哪個環節出問題。",
+    "type": "google_sheet",
+    "sheet_id": "1H0NTLvF0oyURCw_YWBQJ8CkcL7pij5D_8zO_1gXMc5k",
+    "sheet_name": "健康百科問答知識庫",
+    "worksheet_name": "工作表1",
+    "download_time": "2023-06-18T00:57:05.222819Z",
+    "download_filepath": "./data/users/boh/bohachu_gmail_com/google_sheet_downloader/2023-06-18/doc-id_1H0NTLvF0oyURCw_YWBQJ8CkcL7pij5D_8zO_1gXMc5k_sha_0f813133.csv",
+    "row": 13
+}
+```
