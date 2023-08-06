@@ -1,0 +1,12 @@
+bothlent_asr_eval/__init__.py,sha256=jQDOOvEuh4Ly9oJtjJDIcwi6sZm_2ORP5VbZ_1WFZoY,118
+bothlent_asr_eval/__main__.py,sha256=LFnfK4V_R9pCveX__f589Hmk06e4X4fja50uBLEsv9E,2919
+bothlent_asr_eval/asr_evaluation.py,sha256=js6OPSzGMX5Y5-vJ7FTAKX9XjAwr48u8jHsob3VWDkg,14200
+bothlent_asr_eval/package_data.dat,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+bothlent_asr_eval/simple.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+bothlent_asr_eval-1.0.0.data/data/bothlent_asr_eval_data/data_file,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+bothlent_asr_eval-1.0.0.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+bothlent_asr_eval-1.0.0.dist-info/METADATA,sha256=p6SQXUP-PuvvPGvzyJ-OMW3yLMxahjFqDQzENwZ9xbY,2277
+bothlent_asr_eval-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bothlent_asr_eval-1.0.0.dist-info/entry_points.txt,sha256=ViuJ6ZnFL8oumW5Cl2vKEn6CVkAqmTXl_7IDGNEa9xY,47
+bothlent_asr_eval-1.0.0.dist-info/top_level.txt,sha256=eXMiFde-PA4V8_pneg6rsj1rIYmkCQRnB6v68vLw_H4,18
+bothlent_asr_eval-1.0.0.dist-info/RECORD,,
