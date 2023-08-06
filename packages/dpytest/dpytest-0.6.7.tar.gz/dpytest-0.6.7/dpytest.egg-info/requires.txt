@@ -1,0 +1,15 @@
+discord.py==2.2.3
+pytest
+pytest-asyncio
+
+[dev]
+flake8
+invoke
+build
+
+[doc]
+sphinx
+
+[test]
+pytest
+pytest-asyncio
