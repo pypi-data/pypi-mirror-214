@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gitguru.egg-info/PKG-INFO
+gitguru.egg-info/SOURCES.txt
+gitguru.egg-info/dependency_links.txt
+gitguru.egg-info/requires.txt
+gitguru.egg-info/top_level.txt
