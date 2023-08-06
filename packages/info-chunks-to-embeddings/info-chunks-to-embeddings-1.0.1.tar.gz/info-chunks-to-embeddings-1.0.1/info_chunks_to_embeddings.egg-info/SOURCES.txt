@@ -1,0 +1,9 @@
+README.md
+info_chunks_to_embeddings.py
+setup.py
+info_chunks_to_embeddings.egg-info/PKG-INFO
+info_chunks_to_embeddings.egg-info/SOURCES.txt
+info_chunks_to_embeddings.egg-info/dependency_links.txt
+info_chunks_to_embeddings.egg-info/entry_points.txt
+info_chunks_to_embeddings.egg-info/requires.txt
+info_chunks_to_embeddings.egg-info/top_level.txt
