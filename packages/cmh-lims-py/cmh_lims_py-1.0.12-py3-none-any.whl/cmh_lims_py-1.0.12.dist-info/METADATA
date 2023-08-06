@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cmh-lims-py
+Version: 1.0.12
+Summary: Python module for basic querying of LIMS samples, analyses, and analysis files
+Home-page: https://dev.azure.com/CMHResearchIS/GMC/_git/cmhlims_py
+Author: Manish Kumar
+Author-email: mkumar1@cmh.edu
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+Requires-Dist: pyyaml
+Requires-Dist: pymysql
+Requires-Dist: pandas
+
