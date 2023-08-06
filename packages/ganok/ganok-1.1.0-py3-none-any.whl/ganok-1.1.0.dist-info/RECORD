@@ -1,0 +1,13 @@
+ganok/Device.py,sha256=3lOLdSKMl6Y0TjstoZYHkqgvxMoHcIqOMw8_YcpYCMg,443
+ganok/WebAdress.py,sha256=qHLVR3y3QToGtV0boOki40EQer87hJ7f60OOtuz_DNk,1311
+ganok/__init__.py,sha256=BjcPDjXuhDCcD3Hn2C6FDxpD7q-0_Kxvyf56KQQCgc0,14
+ganok/clines_ph_web.py,sha256=mCWDbY4d3QIOd4qbKo1GT0v1bBmSibF6y4bDnvNFUBc,375
+ganok/copyright.py,sha256=mQZzC7XlGaTJmXvWwaS1p49fRNVAdPuabMW7gvYTfqk,52
+ganok/encoder.py,sha256=vbXn_TIr5FKvUsRMQOibE8JmXV55SB-21eo0j2hJcTU,1954
+ganok/mb.py,sha256=90SXlU0Heqc7vr_ZVFsTGAI884v0L47h02UAu79gqJo,77456
+ganok/send_server.py,sha256=pJrd23A1m-NlEuEQR-jGuDcHI9E3uv4GjJn7SgawL_I,293
+ganok-1.1.0.dist-info/LICENCE,sha256=mW5DtdnyheOZ9Q3tjW9ZNBf4iYmwOPhRWViwIaJv6dg,1081
+ganok-1.1.0.dist-info/METADATA,sha256=ai1br_h6yv8QiXGSwkY5Oq-MJZetR4NML2oipbvTnDw,911
+ganok-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ganok-1.1.0.dist-info/top_level.txt,sha256=H7FWYcD8GyHzNV4LZcC3PwjVYjGUGlIUMYEA7hpMmEA,6
+ganok-1.1.0.dist-info/RECORD,,
