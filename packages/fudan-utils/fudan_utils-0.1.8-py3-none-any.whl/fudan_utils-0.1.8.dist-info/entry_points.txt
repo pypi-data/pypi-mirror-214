@@ -1,0 +1,3 @@
+[console_scripts]
+fudan-grades=fudan_utils.fudan_grades:main
+
