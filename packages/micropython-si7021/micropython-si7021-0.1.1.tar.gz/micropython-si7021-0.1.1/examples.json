@@ -1,0 +1,6 @@
+{
+  "urls": [
+    ["micropython_si7021/examples/si7021_simpletest.py", "github:jposada202020/MicroPython_SI7021/examples/si7021_simpletest.py"]
+  ],
+  "version": "0.1"
+}

@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: Copyright (c) 2023 Jose D. Montoya
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "micropython-si7021"
+description = "MicroPython Library for the the Temperature and Humidity SI7021 Sensor"
+version = "0.1.1"
+readme = "README.rst"
+authors = [
+    {name = "Jose D. Montoya", email = "si7021@mailmeto.mozmail.com"}
+]
+urls = {Homepage = "https://github.com/jposada202020/MicroPython_SI7021"}
+keywords = [
+    "micropython",
+    "micropython_si7021",
+    "sensor",
+    "temperature",
+    "humidity",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: Implementation :: MicroPython",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+py-modules = ["micropython_si7021"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {optional = {file = ["optional_requirements.txt"]}}

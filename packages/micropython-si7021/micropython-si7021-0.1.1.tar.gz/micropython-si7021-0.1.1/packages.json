@@ -1,0 +1,7 @@
+{
+  "urls": [
+    ["micropython_si7021/si7021.py", "github:jposada202020/MicroPython_SI7021/micropython_si7021/si7021.py"],
+    ["micropython_si7021/__init__.py", "github:jposada202020/MicroPython_SI7021/micropython_si7021/__init__.py"]
+  ],
+  "version": "0.1"
+}
