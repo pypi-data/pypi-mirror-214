@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bit_set
+Version: 0.0.0
+Summary: Python implementation of the BitSet class.
+Home-page: https://github.com/N8Brooks/bit_set
+Author: Nathan Brooks
+Author-email: natebrooks004@gmail.com
+License-File: LICENSE

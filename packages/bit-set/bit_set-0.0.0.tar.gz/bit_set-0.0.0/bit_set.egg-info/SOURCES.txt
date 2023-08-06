@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bit_set/__init__.py
+bit_set/bit_set.py
+bit_set.egg-info/PKG-INFO
+bit_set.egg-info/SOURCES.txt
+bit_set.egg-info/dependency_links.txt
+bit_set.egg-info/top_level.txt
+tests/test_bit_set.py
