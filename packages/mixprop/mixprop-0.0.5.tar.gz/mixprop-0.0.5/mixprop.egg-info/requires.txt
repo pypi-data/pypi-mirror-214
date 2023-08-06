@@ -1,0 +1,14 @@
+flask
+hyperopt
+matplotlib
+numpy
+pandas
+torch
+rdkit
+scikit-learn
+scipy
+tensorboardX
+torchvision
+tqdm
+zenodo_get
+typed-argument-parser
