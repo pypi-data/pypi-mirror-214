@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+FastWAPI/__init__.py
+FastWAPI/fastwapi.py
+FastWAPI.egg-info/PKG-INFO
+FastWAPI.egg-info/SOURCES.txt
+FastWAPI.egg-info/dependency_links.txt
+FastWAPI.egg-info/requires.txt
+FastWAPI.egg-info/top_level.txt
