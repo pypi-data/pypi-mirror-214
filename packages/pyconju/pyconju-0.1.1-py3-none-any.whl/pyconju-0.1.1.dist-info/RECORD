@@ -1,0 +1,9 @@
+pyconju/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyconju/csv.py,sha256=-JxZBMvHEkEmZgrxTIdcGob1aAzjZRWSilHhGkJuGSk,861
+pyconju/xls.py,sha256=K2Z592X6kaXdSFJbvga0qaCYgW0UDqr-ss5yzkIlu60,906
+pyconju/xlsx.py,sha256=xRYI2WofDxmC7PVO26AWG60S6mjeiZWYIQBnH4BIdCc,835
+pyconju-0.1.1.dist-info/LICENSE,sha256=cn7Ldy4fomaIHI-KiEv_4N3fcmzPrS4qLLeFS-2iw8M,1086
+pyconju-0.1.1.dist-info/METADATA,sha256=TSh3UEIxRObBvkKYy1IyCazjjY5y7HlXJQjrWifM9-4,3013
+pyconju-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyconju-0.1.1.dist-info/top_level.txt,sha256=1w6orjWEMouAT3zfT5mXJGYXN5nPrHlyNr7HdqD2IJA,8
+pyconju-0.1.1.dist-info/RECORD,,
