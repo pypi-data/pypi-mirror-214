@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/arrgh.egg-info/PKG-INFO
+src/arrgh.egg-info/SOURCES.txt
+src/arrgh.egg-info/dependency_links.txt
+src/arrgh.egg-info/top_level.txt
+src/printarr/__init__.py
+src/printarr/printarr.py
