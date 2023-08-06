@@ -1,0 +1,8 @@
+setup.py
+pypdfe/EstimatePDFmv.py
+pypdfe/__init__.py
+test4957.egg-info/PKG-INFO
+test4957.egg-info/SOURCES.txt
+test4957.egg-info/dependency_links.txt
+test4957.egg-info/requires.txt
+test4957.egg-info/top_level.txt
