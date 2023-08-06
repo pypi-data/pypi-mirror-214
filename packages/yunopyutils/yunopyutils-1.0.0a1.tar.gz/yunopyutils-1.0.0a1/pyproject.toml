@@ -1,0 +1,27 @@
+
+[project]
+authors = [
+  {name = "yunopayments", email = "utils-tech@y.uno"},
+]
+dependencies = [
+  "python-dotenv>=1.0.0",
+]
+description = "Utils for python"
+license = {text = "MIT"}
+name = "yunopyutils"
+readme = "README.md"
+requires-python = ">=3.9"
+version = "1.0.0-alpha-1"
+
+[tool.pdm.build]
+includes = ["yunolibs/"]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pdm.dev-dependencies]
+dev = [
+  "autopep8>=2.0.2",
+  "flake8>=6.0.0",
+]
