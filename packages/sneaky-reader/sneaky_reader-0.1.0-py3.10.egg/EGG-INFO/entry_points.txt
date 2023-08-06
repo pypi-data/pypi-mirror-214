@@ -1,0 +1,2 @@
+[console_scripts]
+sneaky_reader = sneaky_reader:main
