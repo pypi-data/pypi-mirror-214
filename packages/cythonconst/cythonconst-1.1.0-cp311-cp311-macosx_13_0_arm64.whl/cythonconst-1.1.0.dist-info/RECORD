@@ -1,0 +1,8 @@
+cythonconst/__init__.py,sha256=uuuA35qjhIDgLaTTj4ZscRJWofn8cVP7_0kOYNh0dY8,81
+cythonconst/plus.c,sha256=BP703GThW061WBuzh5XJioSWif-9HY3h2Fn2YuGnj40,113597
+cythonconst/plus.cpython-311-darwin.so,sha256=smw0XBxl2NPEMsqZKhZ3vmajDsm7y1kBB0FKllNQZvA,56759
+cythonconst/plus.pyx,sha256=JPf0W4Gy9A9FY6yFYadyXbrzUtqRQY58vT8NWLlldgs,76
+cythonconst-1.1.0.dist-info/METADATA,sha256=mIMM4GmbkMqwMPSilErDzalbjx6EFwFoS3VkdQW3N_0,158
+cythonconst-1.1.0.dist-info/WHEEL,sha256=9u5azgharjYBfdIrZMb7YtYWGPqS21BRmRBngkXCmzk,110
+cythonconst-1.1.0.dist-info/top_level.txt,sha256=wm7H_gIcwWXrSNaOLZPIVZJ3rAMcJE1itZxfTXq1Q14,12
+cythonconst-1.1.0.dist-info/RECORD,,
