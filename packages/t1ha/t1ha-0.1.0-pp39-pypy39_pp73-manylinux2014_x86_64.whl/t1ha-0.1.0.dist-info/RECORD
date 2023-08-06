@@ -1,0 +1,14 @@
+t1ha/__init__.py,sha256=evWEsqIdePbdvP-XH_XOaYvbjCkA6PMiS4QkIqfDTZM,135
+t1ha/backends/__init__.py,sha256=qNlrfZya7FoWA0UW4jmjYOYAI4vLEqYzK30D5f9kQDE,470
+t1ha/backends/cffi/__init__.py,sha256=4Nw13eRXpqciSG7M9PK9ospPPUfaRYXvWUxx51Xy-0Q,1091
+t1ha/backends/cffi/_t1ha.pypy39-pp73-x86_64-linux-gnu.so,sha256=zJEQXS1TjtbuFV0OSfDodZFeLdrryOktXNBKl9_Hf1Y,35016
+t1ha/backends/cffi/build.py,sha256=2Ia41awAmXOfN60bCOIm1jTYTn3XCWAWKztJWcT0PIM,1075
+t1ha/backends/cython/__init__.py,sha256=-QdG6HsUgD62zzBbO8DWu0Kx_bjKiXpHpL5MbTw58JY,125
+t1ha/backends/cython/_t1ha.c,sha256=ZcVnSIrfhvaL-B1WTfTcrGTUQ_FKELZzUx2NbtErQ68,823215
+t1ha/backends/cython/_t1ha.pypy39-pp73-x86_64-linux-gnu.so,sha256=8Fws5Qxjr-L-fJJ0tczklGc4n-ap7eZyTAACsfdoqVg,213896
+t1ha/backends/cython/_t1ha.pyx,sha256=gGlYha9Kyp4b2F2GLAoqIeqOdzHg852kbHfFGTIRIfY,1252
+t1ha/backends/cython/t1ha.pxd,sha256=iLJ5ap1Mlka5h6zfhbChJ0ZeScddSV6rtZasRcGwBEI,2034
+t1ha-0.1.0.dist-info/METADATA,sha256=ihD8pQnGHp6yKaG3yRDqXxvR6uVYPC0lp0RHgLBtykg,1060
+t1ha-0.1.0.dist-info/WHEEL,sha256=B2Y60nu0IwrSAav4l98d_74bRpUTy8kxwE0DlJ_h6xw,110
+t1ha-0.1.0.dist-info/top_level.txt,sha256=PmTbY1-UxY-c-e6_VhEdd-7C-1Fbd7kxoEeuAlEdk2c,5
+t1ha-0.1.0.dist-info/RECORD,,
