@@ -1,0 +1,4 @@
+config
+database
+face_id
+ocr
