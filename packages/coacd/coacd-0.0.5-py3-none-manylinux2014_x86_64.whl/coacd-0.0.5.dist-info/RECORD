@@ -1,0 +1,9 @@
+coacd/lib_coacd.so,sha256=NiX4Y7y5xHULfnhM8SLyMa2F9fG-GT5GAV8jqYaxSPc,12958960
+coacd/__init__.py,sha256=G1UjXHY1fSrIC4CujfkU99MIncxgOwfnh2FDnGGZoyU,3948
+coacd-0.0.5.data/scripts/coacd,sha256=j9577aNLajL1TyzobuJRyh2kdNHLVjCQjdWZsikAwHg,3763
+coacd.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+coacd-0.0.5.dist-info/METADATA,sha256=Hoz-alzPH2n5eQgGJBMCF4WwUv1dWplKsdwreQm8Z5o,1195
+coacd-0.0.5.dist-info/top_level.txt,sha256=Pjh8PCxYeICheWE0S5TiJr9Q0SZ3lP87FpdxB2wNNVE,6
+coacd-0.0.5.dist-info/WHEEL,sha256=8ZW8uxQgQI1KvsO4vc0ewqr_bNP-2Plo-GYRNfimP8g,115
+coacd-0.0.5.dist-info/LICENSE,sha256=_YOt6fXGOaVWLRvQfWXj_KElz4lCdZmzKBppS9y50Eo,1080
+coacd-0.0.5.dist-info/RECORD,,
