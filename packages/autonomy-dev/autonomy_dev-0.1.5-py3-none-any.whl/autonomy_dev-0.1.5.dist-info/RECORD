@@ -1,0 +1,13 @@
+auto_dev/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_dev/cli.py,sha256=_Y_mbMft6jH6IpmRG3A-c8gAxdJfD3i7RFSBUX8Dwag,3151
+auto_dev/cli_executor.py,sha256=MqoiWf6cyA8FnQ3b04E_SJSoIUzUyWFyX7bhGpaIxss,2732
+auto_dev/constants.py,sha256=yurj4I1327I3th8WKSLnYjpn2rxMrskL4Cm_fJxqpPg,301
+auto_dev/data/pylama.ini,sha256=nTmT3lMQbjisbBMS47ovLoYac49nttCqV0kcaGYLdGY,629
+auto_dev/lint.py,sha256=A-R6QebQ5fJmtQeWqrSXz_sAgaQU4Fvj7vAwgsyJHcA,464
+auto_dev/test.py,sha256=nPc4O6E5um4XNaQPQbhlFmJpx37RuCP6FU6rEV3pQsM,438
+auto_dev/utils.py,sha256=GjUydNudL29IiNkIIpW5mP9JNzafcbzozCjonq9OjyA,1083
+autonomy_dev-0.1.5.dist-info/LICENSE,sha256=fDWbavyfgKCh7I68UrsHl_xz4CiS3OKgzQWH_0J3xCE,578
+autonomy_dev-0.1.5.dist-info/METADATA,sha256=Ly9-6QchhkKm9AqN5sYstrh5qAgwfGbMRuVMvCpOHso,2318
+autonomy_dev-0.1.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+autonomy_dev-0.1.5.dist-info/entry_points.txt,sha256=QB3wc2MqMN98Db5hmAmSvjGLxKQL40V0Gt46k4Y1kMM,41
+autonomy_dev-0.1.5.dist-info/RECORD,,
