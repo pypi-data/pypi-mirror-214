@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spPersist"
+version = "1.2.3"
+authors = [
+  { name="Lirong Yang", email="lirong.yang@outlook.com" },
+]
+description = "Spatial transcriptomics with Persistent Homology"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "gudhi",
+  "scanpy",
+  "cell2location",
+  "gcsfs",
+  "leidenalg",
+]
