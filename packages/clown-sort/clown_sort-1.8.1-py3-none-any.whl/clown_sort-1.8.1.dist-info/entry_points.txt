@@ -1,0 +1,5 @@
+[console_scripts]
+extract_text_from_files=clown_sort:extract_text_from_files
+set_screenshot_timestamps_from_filenames=clown_sort:set_screenshot_timestamps_from_filenames
+sort_screenshots=clown_sort:sort_screenshots
+
