@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gex-cli"
+description = 'Command-line project generator using git repo.'
+dynamic = ["version"]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+keywords = ["console", "cli", "command-line", "project managment", "generator"]
+authors = [{ name="woidzero", email="woidzerov@gmail.com" }]
+dependencies = [
+    "click",
+    "gitpython",
+    "mcfc",
+    "rich",
+]
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[project.urls]
+Documentation = "https://github.com/woidzero/gex-cli#readme"
+Issues = "https://github.com/woidzero/gex-cli/issues"
+Source = "https://github.com/woidzero/gex-cli"
+
+[project.scripts]
+gex = "gexpy.__main__:main"
+
+[tool.hatch.version]
+path = "gexpy/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "gexpy/",
+]
+
