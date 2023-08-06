@@ -1,0 +1,3 @@
+[console_scripts]
+nestedaccess = nestedaccess.nestedaccess:nestedaccess
+
