@@ -1,0 +1,15 @@
+DeepLearningOptimized/Data_DL.py,sha256=TszBw_HTPGBUo90p1LiuY_LUvPEQDmO8Zdb7g45Q56U,3118
+DeepLearningOptimized/Model_DL.py,sha256=6seX3p50Q0hT6LkmilgcqKWm-oIDIGkBparJv9vO8k4,18455
+DeepLearningOptimized/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DeepLearningOptimized/deepC.dll,sha256=iWmPykb7_jyZUzXZJNG7PMyRRGjFRBNdPYDcwbF_Qg4,255251
+DeepLearningOptimized/deepC.so,sha256=ihp-gpYFPYYToNX8Wold6vY_dgqrGiQkBrkF5vFqmqA,17888
+DeepLearningOptimized/deepCUDA.dll,sha256=4wIyA3OUwo7tCYdYClAyTf7YU2etfy5_RYTxX8qiyU4,380928
+DeepLearningOptimized/interface.c,sha256=PqjNN6VJyFlGZrWlOXFVl6OkoQjulSZzrmFCiiwCF0E,18033
+DeepLearningOptimized/interface.cu,sha256=aGtnS5MCRdntbabX7g3QiAa4VULMRUzC9TDbcZniCo4,18925
+DeepLearningOptimized/interface.cuh,sha256=TZur_jd9uKrEuyT6XTr_DuQcB9_Qg-G36O-oBoppFMM,633
+DeepLearningOptimized/interface.h,sha256=c6wb0qYmykru3fjTaQoS6AJJaULDwu_KJKCERA5BfBM,706
+DeepLearningOptimized/interface.o,sha256=EkaijBr0xBGril7oDHMKwXTxjBrITe3V-FiHQHiUS3k,14431
+deeplearningoptimized-1.0.8.dist-info/METADATA,sha256=aShw51XaAQ3sT0a9OLs3kLTYQAy8Nksvw4K1xDgWIXc,377
+deeplearningoptimized-1.0.8.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+deeplearningoptimized-1.0.8.dist-info/licenses/LICENSE.lic,sha256=tmzcWdNcsr4jQYvPc_cWdYsGm2t4lTbTgELUXjzUy9g,2988
+deeplearningoptimized-1.0.8.dist-info/RECORD,,
