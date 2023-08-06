@@ -1,0 +1,11 @@
+README.md
+setup.py
+better_face.egg-info/PKG-INFO
+better_face.egg-info/SOURCES.txt
+better_face.egg-info/dependency_links.txt
+better_face.egg-info/entry_points.txt
+better_face.egg-info/requires.txt
+better_face.egg-info/top_level.txt
+betterface/__init__.py
+betterface/__main__.py
+betterface/interface.py

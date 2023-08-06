@@ -1,0 +1,2 @@
+[console_scripts]
+betterface = betterface.__main__:main
