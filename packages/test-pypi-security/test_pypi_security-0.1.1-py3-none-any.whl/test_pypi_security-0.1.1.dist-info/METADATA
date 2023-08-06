@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: test-pypi-security
+Version: 0.1.1
+Summary: Test of PyPI security
+Home-page: UNKNOWN
+Author: Arthur Le Floch
+Author-email: alf.github@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+
+Test of PyPI security, do not use this package blindly, it deletes a folder called delete_me in the current directory
+
