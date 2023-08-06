@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: LinearProgramOptimizer
+Version: 1.0.2
+Summary: Optimization models for solving Linear Programming Problems
+Author: OguntolaIbrahim
+Author-email: <oibrahimopeyemi@yahoo.com>
+Keywords: python,linear programming,operation research,optimization,simplex
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# LinearProgramOptimizer
+Models for optimizing linear programming problems
+
+
+For now, the only model available in the Revised Simplex model which is capable of solving Linear Programs. 
+
+You are required to provide an array for each of the following:
+The objective function
+The LHS of the constraints
+The RHS of the constraints
