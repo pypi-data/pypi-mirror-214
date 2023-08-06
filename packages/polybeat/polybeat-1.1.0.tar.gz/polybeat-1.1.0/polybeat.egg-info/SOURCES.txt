@@ -1,0 +1,11 @@
+README.md
+setup.py
+polybeat/__init__.py
+polybeat.egg-info/PKG-INFO
+polybeat.egg-info/SOURCES.txt
+polybeat.egg-info/dependency_links.txt
+polybeat.egg-info/top_level.txt
+polybeat/sounds/kick_drum.wav
+polybeat/sounds/low_bongo.wav
+polybeat/sounds/open_conga.wav
+polybeat/sounds/side_stick.wav
