@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PEC_project_Diego_Benavent
+Version: 0.1.1
+Summary: A training pipeline for a model to predict if a passenger survived the Titanic
+Author: Diego Benavent
+Description-Content-Type: text/markdown
+
+# PEC2
+
+This package has a custom training function (train) that trains a model base
+on the titanic dataset and returns the trained model.
+
+## How to use
+
+```python
+import joblib
+from model_pipeline_pypi.model_pipeline_pypi import train
+
+titanic_csv_path = "your/path/to/titanic.csv"
+
+clf = train(titanic_csv=titanic_csv_path)
+
+
+# Save the trained model
+joblib.dump(clf, "model.joblib")
+```

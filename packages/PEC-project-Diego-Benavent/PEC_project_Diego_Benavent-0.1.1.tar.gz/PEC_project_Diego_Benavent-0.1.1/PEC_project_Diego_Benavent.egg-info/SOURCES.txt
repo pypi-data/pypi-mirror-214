@@ -1,0 +1,9 @@
+README.md
+setup.py
+PEC_project_Diego_Benavent.egg-info/PKG-INFO
+PEC_project_Diego_Benavent.egg-info/SOURCES.txt
+PEC_project_Diego_Benavent.egg-info/dependency_links.txt
+PEC_project_Diego_Benavent.egg-info/requires.txt
+PEC_project_Diego_Benavent.egg-info/top_level.txt
+model_pipeline_pypi/__init__.py
+model_pipeline_pypi/model_pipeline_pypi.py
