@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+html2django/__init__.py
+html2django/djangohtml.py
+html2django.egg-info/PKG-INFO
+html2django.egg-info/SOURCES.txt
+html2django.egg-info/dependency_links.txt
+html2django.egg-info/entry_points.txt
+html2django.egg-info/requires.txt
+html2django.egg-info/top_level.txt
