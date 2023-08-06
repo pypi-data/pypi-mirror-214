@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: color_latam
+Version: 0.0.1
+Summary: Libreria que cambia el color del texto en español
+Project-URL: Homepage, https://github.com/israelubeda/color_es
+Project-URL: Bug Tracker, https://github.com/israelubeda/color_es
+Author-email: Israel Ubeda <israel.ubedabravo@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Libreria transformadora de texto
+
+_Una libreria que cambia el color del texto en español en el terminal_
+
+
+## Comenzando 🚀
+
+_instalar la libreria_
+
+~~~
+pip install color_latam
+~~~
+
+*Modo de uso
+
+Ejemplo:
+
+example.py
+~~~
+import color_latam
+
+palabra = input("Ingresa una palabra: ")
+resultado = color.rojo(palabra)
+resul = color.verde(palabra)
+
+
+print(resultado)
+print("---")
+print(resul)
+
+~~~
+
+
