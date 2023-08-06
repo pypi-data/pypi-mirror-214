@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: izihawa-configurator
+Version: 1.0.3
+Author: Pasha Podolsky
+Author-email: ppodolsky@me.com
+Home-page: https://github.com/izihawa/configurator
+License: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Requires-Dist: izihawa-utils>=1.0.0
+Requires-Dist: jinja2>=2.1.1
+Requires-Dist: pyyaml>=6.0
+
+# Izihawa Configurator class
+
+This library is using for reading YAML configs and overriding values from env
+
