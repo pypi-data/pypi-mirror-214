@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+authit/__init__.py
+authit.egg-info/PKG-INFO
+authit.egg-info/SOURCES.txt
+authit.egg-info/dependency_links.txt
+authit.egg-info/requires.txt
+authit.egg-info/top_level.txt
