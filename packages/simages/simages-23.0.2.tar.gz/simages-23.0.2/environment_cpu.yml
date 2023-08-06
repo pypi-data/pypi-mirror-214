@@ -1,0 +1,10 @@
+name: simages
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - scikit-learn
+  - numpy
+  - pytorch-cpu
+  - torchvision-cpu>=0.3.0
+
