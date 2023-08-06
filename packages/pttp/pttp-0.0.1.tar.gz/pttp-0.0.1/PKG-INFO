@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pttp
+Version: 0.0.1
+Summary: Python tracing profiler
+Project-URL: Documentation, https://github.com/vivster7/pttp#readme
+Project-URL: Issues, https://github.com/vivster7/pttp/issues
+Project-URL: Source, https://github.com/vivster7/pttp
+Author-email: Vivek Dasari <vivster7@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pttp
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pttp.svg)](https://pypi.org/project/pttp)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pttp.svg)](https://pypi.org/project/pttp)
+
+-----
+
+A Python tracing profiler.
+
+Tracing profilers trace every function call in your Python program. 
+
+Tracing profilers in Python are fairly trivial (mostly just calling `sys.settrace()`). `pttp`'s notable feature is it calls your code, so you don't have to modify your source code.
+
+
+## Installation
+
+```console
+pip install pttp
+```
+
+## Usage
+
+```console
+## Generate Python trace data
+python -m pttp your_script.py
+python -m pttp -m your_script
+
+## Upload 'your_script.speedscope.json' to https://speedscope.app to view the profile.
+```
+
+## License
+
+`pttp` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
