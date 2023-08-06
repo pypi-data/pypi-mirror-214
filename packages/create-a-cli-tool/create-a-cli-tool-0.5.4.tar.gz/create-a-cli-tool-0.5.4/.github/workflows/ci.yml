@@ -1,0 +1,52 @@
+name: "CI"
+
+on: [push, pull_request]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install & Update Dependencies
+        run: |
+          pip install --upgrade pip wheel
+          pip install black isort mypy twine codespell
+      
+      - name: Run black-mypy-codespell-isort
+        run: |
+          mypy cli
+          black --check cli/ tests/
+          isort cli/ tests/
+          codespell cli
+      
+      - name: Run twine checker
+        run: |
+          rm -rf dist/*
+          python3 setup.py sdist
+          twine check dist/*
+  
+  test:
+    strategy:
+      matrix:
+        os: ['windows-latest', 'ubuntu-20.04']
+        pyver: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+    
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.pyver }}
+      
+      - name: Install and run tox
+        run: pip install -e . && pip install -U tox tox-gh
