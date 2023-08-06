@@ -1,0 +1,9 @@
+re2shield/__init__.py,sha256=x7XAztMCn_wl31_NdZ-9H_vKOjb_fD2IFFyC_Bz0Vd8,43
+re2shield/core.py,sha256=5Tq4yoE7p9J_J8rAfwg_aWlia7T4y30SJXh1V19xzv0,2379
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=eQXEDN0owffOwiZvrJaS4WelBSQ_RjT64bNl0gQH8v0,965
+re2shield-0.1.3.dist-info/LICENSE,sha256=s6TxWMTUG85Jw3dljvYiPDkdXRPwqt-JbXGiOapxSQ8,1496
+re2shield-0.1.3.dist-info/METADATA,sha256=VU70L46DRKF1j3sRjCwxtz-MuvGz4ErQK7LThbX1fKc,4836
+re2shield-0.1.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+re2shield-0.1.3.dist-info/top_level.txt,sha256=cfouEAZb1YnkJUGR06BQ6mjyaqcArt0e6hyBSwwDXa8,16
+re2shield-0.1.3.dist-info/RECORD,,
