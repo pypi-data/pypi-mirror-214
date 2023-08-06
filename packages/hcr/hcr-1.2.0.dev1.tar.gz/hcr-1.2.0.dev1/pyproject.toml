@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "hcr"
+version = "1.2.0-dev-1"
+description = "Visualizing the beauty of neural networks"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  	{email = "nvfastplease@gmail.com"},
+]
+keywords = ["python", "machine learning", "neural networks"]
+classifiers = [
+	"Topic :: Scientific/Engineering",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Natural Language :: English"
+]
+dependencies = [
+	"mykit==2.0.2",
+    "numba==0.55.2",
+    "numpy==1.22.4"
+]
+
+
+[tool.setuptools.packages.find]
+exclude = [
+    "assets*",
+    "datasets*",
+    "saved_network*",
+    "tests*",
+]
+
+
+[project.urls]
+documentation = "https://github.com/nvfp/Handwritten-Character-Recognition"
+"report bugs" = "https://github.com/nvfp/Handwritten-Character-Recognition/issues"
+repo = "https://github.com/nvfp/Handwritten-Character-Recognition"
+changelog = "https://nvfp.github.io/mykit/Handwritten-Character-Recognition#changelog"
+
+
+[project.scripts]
+hcr = "hcr.__main__:main"
