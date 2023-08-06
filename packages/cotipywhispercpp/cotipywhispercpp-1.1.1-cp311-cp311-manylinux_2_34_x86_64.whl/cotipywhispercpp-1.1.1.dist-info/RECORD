@@ -1,0 +1,13 @@
+_pywhispercpp.cpython-311-x86_64-linux-gnu.so,sha256=W1cTWrWA-q7fgVG5hOlV6cq8eAAzcWuKVA6AUFKusM0,792776
+libwhisper.so,sha256=_JgpeOPuIhR9biTCLS9AatHpc95pyV8MMe98c0CER2I,628096
+pywhispercpp/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pywhispercpp/_logger.py,sha256=OClLO2xRdLm8l7jEz0RQrn2Nxfq2KSWliIL5CDl9rh4,630
+pywhispercpp/constants.py,sha256=o_SPqCRiJVoFL7lXucVrXJMgCoiXtmh-J8Kw2s_j8Rc,7279
+pywhispercpp/model.py,sha256=MtUx8dfRe311cpICsSawjiM-CodkwKIg_90ACOIbQXs,9965
+pywhispercpp/utils.py,sha256=dWG-kfM7-ARS3ySiXGfaJoPnEBbEzANx_7XTfc3W_PE,5644
+cotipywhispercpp-1.1.1.dist-info/LICENSE,sha256=7LZONeyFBBV0j89daIzatkgOWL0M1L-jafpQWrPUl-g,1073
+cotipywhispercpp-1.1.1.dist-info/METADATA,sha256=oEeY7n6EGYlE7uNS-_QtjXUEPiYX9OeyvqudOmmbrxY,14739
+cotipywhispercpp-1.1.1.dist-info/WHEEL,sha256=PUsVQIzmH83Uh7cpK9UsJGqygsRnBD3lh6CXr0HOlLg,114
+cotipywhispercpp-1.1.1.dist-info/entry_points.txt,sha256=vwMXxjT7iwdhv4k6WofJ_Y3jtbovwLdn_F-fSt63-f8,228
+cotipywhispercpp-1.1.1.dist-info/top_level.txt,sha256=1QF24GSN3BFKTj68qokZjhj8sHLJKE3kWIBKzlsLazE,27
+cotipywhispercpp-1.1.1.dist-info/RECORD,,
