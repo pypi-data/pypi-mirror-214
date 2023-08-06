@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: radt
+Version: 0.1.0
+Summary: Resource-Aware Data systems Tracker (radT) for automatically tracking and training machine learning software
+Author-email: Ties Robroek <titr@itu.dk>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/Resource-Aware-Data-systems-RAD/radt
+
+# radt_dev_private

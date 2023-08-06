@@ -1,0 +1,14 @@
+name: radt
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      letter: { type: string, default: ""}
+      workload: { type: string, default: ""}
+      listeners: { type: string, default: "smi+dcgmi+top" }
+      params: { type: string, default: "-"}
+      command: { type: string, default: "cifar10.py"}
+    command: |
+      python -m radtrun -l {listeners} -c {command}

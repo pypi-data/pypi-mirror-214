@@ -1,0 +1,2 @@
+Experiment,Workload,Status,Run,Devices,Collocation,Architecture,Model,Data,Listeners,Params
+2,21,,,0,-,pytorch,examples/pytorch/cifar10.py,/raid/datasets/imagenet/,smi+top+dcgmi,batch-size=128
