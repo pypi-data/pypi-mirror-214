@@ -1,0 +1,11 @@
+ckastrotools/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ckastrotools/__main__.py,sha256=Z73hbib0WsOtAdK9nO2Jm18hKhFR_8N5P-khkooyTW0,78
+ckastrotools/io/__init__.py,sha256=RWqsYk6QmAvJIH-PGKoUaxEes371y2AOHE7stxWpxLI,31
+ckastrotools/io/subcube.py,sha256=einiIMVeX8W1dKQUFxNEjzZDctdCFCCi-XyzXBuSjhU,1270
+ckastrotools/milkyway/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckastrotools/milkyway/spiralarms.py,sha256=I74phQcw6bLnL3IsR4NXqyxKkJy-ofrCphNTv7whqGg,16547
+CKAstroTools-0.0.2.dist-info/LICENSE,sha256=4RU-l4XdY5mNO1PTxnRC-e1Y6FJV89CjBZQeA26GAwE,1071
+CKAstroTools-0.0.2.dist-info/METADATA,sha256=MTcOK00FIx0RiZg32gWYaqMNp4Sv3sFL1PuRQQ4XTMQ,1381
+CKAstroTools-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CKAstroTools-0.0.2.dist-info/top_level.txt,sha256=6m5UqTfSSS-CPoNahK7bB4sxReVXOLdAmFkRmWNHTSU,13
+CKAstroTools-0.0.2.dist-info/RECORD,,
