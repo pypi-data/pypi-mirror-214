@@ -1,0 +1,6 @@
+[console_scripts]
+omni_cli=omni_cli.cli:run
+
+[renku]
+activity_annotator=omni_cli.annotator.plugin
+
