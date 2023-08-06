@@ -1,0 +1,7 @@
+README.txt
+pyproject.toml
+src/error_example/main.py
+src/error_example.egg-info/PKG-INFO
+src/error_example.egg-info/SOURCES.txt
+src/error_example.egg-info/dependency_links.txt
+src/error_example.egg-info/top_level.txt
