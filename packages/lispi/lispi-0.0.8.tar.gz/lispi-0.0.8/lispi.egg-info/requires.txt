@@ -1,0 +1,9 @@
+jupyter
+jupyterlab
+nbconvert
+nbformat
+gtts
+click
+
+[:python_version < "3.11"]
+tomli

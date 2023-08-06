@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+example/.DS_Store
+example/original_example.ipynb
+lispi.egg-info/PKG-INFO
+lispi.egg-info/SOURCES.txt
+lispi.egg-info/dependency_links.txt
+lispi.egg-info/entry_points.txt
+lispi.egg-info/requires.txt
+lispi.egg-info/top_level.txt
+tests/test_audioText.py
+tests/test_nbconvert.py
+tests/test_pyscript.py
