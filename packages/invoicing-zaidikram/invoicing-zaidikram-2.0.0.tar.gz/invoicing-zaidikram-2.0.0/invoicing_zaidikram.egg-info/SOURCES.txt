@@ -1,0 +1,8 @@
+setup.py
+invoicing_zaidikram.egg-info/PKG-INFO
+invoicing_zaidikram.egg-info/SOURCES.txt
+invoicing_zaidikram.egg-info/dependency_links.txt
+invoicing_zaidikram.egg-info/requires.txt
+invoicing_zaidikram.egg-info/top_level.txt
+invzaidikram/__init__.py
+invzaidikram/invoice.py
