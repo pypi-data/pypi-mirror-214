@@ -1,0 +1,6 @@
+README.md
+setup.py
+BoKhalifaPackage.egg-info/PKG-INFO
+BoKhalifaPackage.egg-info/SOURCES.txt
+BoKhalifaPackage.egg-info/dependency_links.txt
+BoKhalifaPackage.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: BoKhalifaPackage
+Version: 0.2
+Summary: A simple calculator package
+Home-page: http://github.com/masharisk/BoKhalifaPackage
+Author: Mshaeri Alkhalifa
+Author-email: mashari.khalifa@hotmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+A simple calculator package
