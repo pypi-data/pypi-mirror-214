@@ -1,0 +1,3 @@
+[console_scripts]
+brit=britishize.britishize:main
+
