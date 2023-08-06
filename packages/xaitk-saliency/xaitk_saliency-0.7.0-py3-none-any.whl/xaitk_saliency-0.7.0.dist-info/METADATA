@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: xaitk-saliency
+Version: 0.7.0
+Summary: Visual saliency map generation interfaces and baseline implementations for explainable AI.
+Home-page: https://github.com/XAITK/xaitk-saliency
+License: BSD-3-Clause
+Author: Kitware, Inc.
+Author-email: xaitk@kitware.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: example-deps
+Provides-Extra: tools
+Requires-Dist: click (>=8.0.3)
+Requires-Dist: jupyter (>=1.0.0) ; extra == "example-deps"
+Requires-Dist: kwcoco (>=0.2.18) ; extra == "tools"
+Requires-Dist: matplotlib (>=3.4.1) ; extra == "example-deps" or extra == "tools"
+Requires-Dist: numpy (>=1.22)
+Requires-Dist: papermill (>=2.3.3) ; extra == "example-deps"
+Requires-Dist: scikit-image (>=0.18.1) ; python_version < "3.11"
+Requires-Dist: scikit-image (>=0.20.0) ; python_version >= "3.11"
+Requires-Dist: scikit-learn (>=1.2)
+Requires-Dist: scipy (>=1.8.1)
+Requires-Dist: setuptools
+Requires-Dist: smqtk-classifier (>=0.17.0)
+Requires-Dist: smqtk-core (>=0.18.0)
+Requires-Dist: smqtk-descriptors (>=0.16.0)
+Requires-Dist: smqtk-detection (>=0.19.0)
+Requires-Dist: torch (>=1.9.0,!=2.0.1) ; extra == "example-deps"
+Requires-Dist: torchvision (>=0.10.0) ; extra == "example-deps"
+Requires-Dist: tqdm (>=4.45.0) ; extra == "example-deps"
+Project-URL: Documentation, https://xaitk-saliency.readthedocs.io/
+Project-URL: Repository, https://github.com/XAITK/xaitk-saliency
+Description-Content-Type: text/markdown
+
+![xaitk-logo](./docs/figures/xaitk-wordmark-light.png)
+
+<hr/>
+
+[![PyPI - Python Version](https://img.shields.io/pypi/v/xaitk-saliency)](https://pypi.org/project/xaitk-saliency/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/xaitk-saliency)
+[![Documentation Status](https://readthedocs.org/projects/xaitk-saliency/badge/?version=latest)](https://xaitk-saliency.readthedocs.io/en/latest/?badge=latest)
+[![badge-unittests](https://github.com/xaitk/xaitk-saliency/actions/workflows/ci-unittests.yml/badge.svg)](https://github.com/XAITK/xaitk-saliency/actions/workflows/ci-unittests.yml)
+[![badge-notebooks](https://github.com/xaitk/xaitk-saliency/actions/workflows/ci-example-notebooks.yml/badge.svg)](https://github.com/XAITK/xaitk-saliency/actions/workflows/ci-example-notebooks.yml)
+[![codecov](https://codecov.io/gh/XAITK/xaitk-saliency/branch/master/graph/badge.svg?token=VHRNXYCNCG)](https://codecov.io/gh/XAITK/xaitk-saliency)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/XAITK/xaitk-saliency.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/XAITK/xaitk-saliency/context:python)
+
+# XAITK - Saliency
+The `xaitk-saliency` package is an open source, Explainable AI (XAI) framework
+for visual saliency algorithm interfaces and implementations, built for
+analytics and autonomy applications.
+
+See [here](https://xaitk-saliency.readthedocs.io/en/latest/introduction.html)
+for a more formal introduction to the topic of XAI and visual saliency
+explanations.
+
+This framework is a part of the [Explainable AI Toolkit (XAITK)](
+https://xaitk.org).
+
+## Supported Algorithms
+The `xaitk-saliency` package provides saliency algorithms for a wide range of image understanding
+tasks, including image classification, image similarity, object detection, and reinforcement learning.
+The current list of supported saliency algorithms can be found [here](
+https://xaitk-saliency.readthedocs.io/en/latest/introduction.html#saliency-algorithms).
+
+## Target Audience
+This toolkit is intended to help data scientists and developers who want to
+add visual saliency explanations to their workflow or product.
+Functionality provided here is both directly accessible for targeted
+experimentation, and through [Strategy](
+https://en.wikipedia.org/wiki/Strategy_pattern) and [Adapter](
+https://en.wikipedia.org/wiki/Adapter_pattern) patterns to allow for
+modular integration into systems and applications.
+
+## Installation
+Install the latest release via pip:
+```bash
+pip install xaitk-saliency
+```
+
+Some plugins may require additional dependencies in order to be utilized at
+runtime.
+Such details are described [here](
+https://xaitk-saliency.readthedocs.io/en/latest/implementations.html).
+
+See [here for more installation documentation](
+https://xaitk-saliency.readthedocs.io/en/latest/installation.html).
+
+## Getting Started
+We provide a number of examples based on Jupyter notebooks in the `./examples/`
+directory to show usage of the `xaitk-saliency` package in a number of
+different contexts.
+
+Contributions are welcome!
+See the [CONTRIBUTING.md](./CONTRIBUTING.md) file for details.
+
+## Documentation
+Documentation snapshots for releases as well as the latest master are hosted on
+[ReadTheDocs](https://xaitk-saliency.readthedocs.io/en/latest/).
+
+The sphinx-based documentation may also be built locally for the most
+up-to-date reference:
+```bash
+# Install dependencies
+poetry install
+# Navigate to the documentation root.
+cd docs
+# Build the docs.
+poetry run make html
+# Open in your favorite browser!
+firefox _build/html/index.html
+```
+
+## XAITK Saliency Demonstration Tool
+This [associated project](https://github.com/XAITK/xaitk-saliency-web-demo)
+provides a local web-application that provides a demonstration of visual
+saliency generation in a user-interface.
+This provides an example of how visual saliency, as generated by this package,
+can be utilized in a user-interface to facilitate model and results
+exploration.
+This tool uses the [trame framework](https://kitware.github.io/trame/).
+
+| ![image1] | ![image2] | ![image3] | ![image4] |
+|:---------:|:---------:|:---------:|:---------:|
+
+[image1]: https://github.com/XAITK/xaitk-saliency-web-demo/blob/main/gallery/xaitk-classification-rise-4.jpg
+[image2]: https://github.com/XAITK/xaitk-saliency-web-demo/blob/main/gallery/xaitk-classification-sliding-window.jpg
+[image3]: https://github.com/XAITK/xaitk-saliency-web-demo/blob/main/gallery/xaitk-detection-retina.jpg
+[image4]: https://github.com/XAITK/xaitk-saliency-web-demo/blob/main/gallery/xaitk-similarity-1.jpg
+
