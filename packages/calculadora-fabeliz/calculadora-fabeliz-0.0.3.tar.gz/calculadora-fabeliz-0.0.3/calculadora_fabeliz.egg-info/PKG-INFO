@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: calculadora-fabeliz
+Version: 0.0.3
+License-File: LICENSE
+
+# Calculadora FIAS
+Esta es una calculadora que permite hacer operaciones matematicas. 
+Operaciones basicas: Suma, Resta, Multiplicacion, Division . Otras Operaciones: Valor Absoluto, Raiz cuadrada, Seno, Coseno Tangente, Cotangente, Logaritmo
