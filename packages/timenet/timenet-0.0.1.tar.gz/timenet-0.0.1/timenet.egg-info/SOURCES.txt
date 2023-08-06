@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+timenet.egg-info/PKG-INFO
+timenet.egg-info/SOURCES.txt
+timenet.egg-info/dependency_links.txt
+timenet.egg-info/top_level.txt
