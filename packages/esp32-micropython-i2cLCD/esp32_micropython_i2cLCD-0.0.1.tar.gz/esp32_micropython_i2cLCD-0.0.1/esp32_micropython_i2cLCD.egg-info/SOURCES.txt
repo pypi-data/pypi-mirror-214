@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+LCD/__init__.py
+LCD/i2c_lcd.py
+LCD/lcd.py
+LCD/lcd_api.py
+esp32_micropython_i2cLCD.egg-info/PKG-INFO
+esp32_micropython_i2cLCD.egg-info/SOURCES.txt
+esp32_micropython_i2cLCD.egg-info/dependency_links.txt
+esp32_micropython_i2cLCD.egg-info/top_level.txt
