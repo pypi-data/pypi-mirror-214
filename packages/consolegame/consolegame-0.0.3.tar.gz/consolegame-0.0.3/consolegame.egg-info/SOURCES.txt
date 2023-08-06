@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+consolegame.egg-info/PKG-INFO
+consolegame.egg-info/SOURCES.txt
+consolegame.egg-info/dependency_links.txt
+consolegame.egg-info/top_level.txt
