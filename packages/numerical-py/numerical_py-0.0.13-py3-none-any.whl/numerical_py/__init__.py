@@ -1,0 +1,2 @@
+from eigenvals import direct_deployment_method
+from integrals import trapezoidal_rule, three_eights_rule
