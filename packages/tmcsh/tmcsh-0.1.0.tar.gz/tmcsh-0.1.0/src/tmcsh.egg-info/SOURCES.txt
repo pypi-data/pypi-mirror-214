@@ -1,0 +1,14 @@
+README.md
+entry_points.cfg
+setup.cfg
+setup.py
+src/tmcsh/__init__.py
+src/tmcsh/cli.py
+src/tmcsh/device_chooser.py
+src/tmcsh/tmc_callbacks.py
+src/tmcsh.egg-info/PKG-INFO
+src/tmcsh.egg-info/SOURCES.txt
+src/tmcsh.egg-info/dependency_links.txt
+src/tmcsh.egg-info/entry_points.txt
+src/tmcsh.egg-info/requires.txt
+src/tmcsh.egg-info/top_level.txt
