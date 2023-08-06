@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: MultiResImagePy
+Version: 0.2
+Summary: Python wrapper for Whole Slide Images read by MRI library
+Requires-Python: >=3.8
+

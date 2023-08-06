@@ -1,0 +1,15 @@
+MultiResImagePy.cpython-311-darwin.so,sha256=-fmnMj9H7v4xQhpgo2zDBL2L6ssrqRFp-tXNcyjFJEc,258130
+multiresimage/lib/libCore.dylib,sha256=GgQx57GYy0_hgZToqO80gESwsWgvscsPgtjAneAokPY,1866762
+multiresimage/lib/libEncode.dylib,sha256=bziiCX_MnqpFq4wuvxxuTOaud2IlI06wQjNyDB6neOA,365484
+multiresimage/lib/libImage.dylib,sha256=t3fwDzLb9v4ZadO0KQ44lWvc1OOfDzWW-hobZMiltko,907211
+multiresimage/lib/libImageBuffer.dylib,sha256=VDwbFsorPpBkziGUHI2Mp3NMJos7aPlNj8gCjvWlLWE,107665
+multiresimage/lib/libImageBufferIO.dylib,sha256=4VVdZascZ-yjCTf6JwUMcaiVGjtengC1culPNQaQLw0,58771
+multiresimage/lib/libMultiResImage.dylib,sha256=_cuzyg8QHZO8Qt6uf1mbBf_V_8F60nTMsAYaB_uOVm0,938387
+multiresimage/lib/libPlacement.dylib,sha256=H4rFzHoRv7h0qvonAxb4X9Phu1SVkA0bdGI5piO4K1Y,144927
+multiresimage/lib/libUtils.dylib,sha256=TPcQKuC_Newhy1G-hBbHcvctujc4LJkfLUBPOoC5Nx8,1063083
+multiresimage/lib/libiXML.dylib,sha256=D-3XonbEcJvgGPOWRj-ewTT12EFOhxb7vP1FALuYiQg,318074
+multiresimage/lib/liblibtiff.dylib,sha256=i-ZOv5PB1akLS77NMaxXZYSNrCla9KZlbgC2aP-ulsM,844077
+MultiResImagePy-0.2.dist-info/METADATA,sha256=8rN4Bipw6l8i7vTn8LaMVMreQrOTxB4m2q-B-3O1i8A,148
+MultiResImagePy-0.2.dist-info/WHEEL,sha256=9u5azgharjYBfdIrZMb7YtYWGPqS21BRmRBngkXCmzk,110
+MultiResImagePy-0.2.dist-info/top_level.txt,sha256=jSfOfVGHIXueHwYVnNfSBW3ulX1-PuaGkPQTBRRktVI,30
+MultiResImagePy-0.2.dist-info/RECORD,,
