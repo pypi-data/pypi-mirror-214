@@ -1,0 +1,1 @@
+from localizer.print_replace import print, input, GLOBAL_LANGUAGE_PACK
