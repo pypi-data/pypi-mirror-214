@@ -1,0 +1,15 @@
+vpso/__init__.py,sha256=tKzmgKBhf2Sq3JEc2F41EoG7Bwk0EfGI2hooBaJKYco,50
+vpso/adaptation.py,sha256=NC-LRl3CTF_Rr0pxSoTJ_Dy6iBQDg3yIKkfesTw8CcI,4396
+vpso/ask_and_tell.py,sha256=lVZS50y0ZDLxn9AVlS0UsccEHM98UFTRZGa2EFzEFeE,6066
+vpso/initialization.py,sha256=h6GPWtoxfZFEcilvTrhlfILAIIUE0NjlxUzk-DgDaps,5178
+vpso/math.py,sha256=M1pKrMKGwr_fMmGRgJpdo5z_kzVqzKtXBMLsfL00XMs,7815
+vpso/mutation.py,sha256=pkBMJXFoMkfAxZt-3YQJfCHa4Nnd-IHrnWBHzIwXaDo,4496
+vpso/reparation.py,sha256=cNa_gUFh6spxje5ETAECFjLo96_TqvBgrtc6IknCr0k,3898
+vpso/termination.py,sha256=oIVjPjO5CG3Yov__b78s564LsTRXuI-1ChxBwgOLBWo,6822
+vpso/typing.py,sha256=Dwafihb1MLTeMbdDoJmwmqfsoDbBP9SAzumnxndGnUo,302
+vpso/vpso.py,sha256=4HP5coYp_iY65Hhc0eUDD5A1kUifE9fN6Bsv6KHOLV0,7396
+vpso-1.1.0.dist-info/LICENSE,sha256=piR1xILWJoPuQ9NzeU9hBOa9ohOwMTnTn79WPAyWPNU,1093
+vpso-1.1.0.dist-info/METADATA,sha256=TQ7AZtPybzIcBTPrKJUN-r5YexC8Vrsk3eiXv08EXmY,3685
+vpso-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vpso-1.1.0.dist-info/top_level.txt,sha256=aCVwU2WAxpf5EgJo_0QPUE315NVr16HiGgTbWPhYvlA,5
+vpso-1.1.0.dist-info/RECORD,,
