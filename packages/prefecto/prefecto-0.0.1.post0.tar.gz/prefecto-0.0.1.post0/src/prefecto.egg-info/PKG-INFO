@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: prefecto
+Version: 0.0.1.post0
+Summary: Prefect development aid.
+Home-page: https://github.com/dominictarro/prefecto
+Author: Dominic Tarro
+Author-email: dtarro@oxfordeconomics.com
+Project-URL: Documentation, https://dominictarro.github.io/prefecto/
+Project-URL: Source, https://github.com/dominictarro/prefecto
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: pandas
+Provides-Extra: polars
+License-File: LICENSE
+
+# Prefecto
+
+<p align="center">
+    <img src="./docs/assets/Monkeywrench-Data-Pipeline.png">
+    <br>
+    <a href="https://pypi.python.org/pypi/prefecto/" alt="PyPI version">
+        <img alt="PyPI" src="https://img.shields.io/pypi/v/prefecto?color=fe7200&labelColor=eeeeee"></a>
+    <a href="https://github.com/dominictarro/prefecto/" alt="Stars">
+        <img src="https://img.shields.io/github/stars/dominictarro/prefecto?color=fe7200&labelColor=eeeeee" /></a>
+    <a href="https://github.com/dominictarro/prefecto/pulse" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/dominictarro/prefecto?color=fe7200&labelColor=eeeeee" /></a>
+</p>
+
+Prefecto is a collection of tools to extend and augment [Prefect](https://www.prefect.io/) capabilities.
+
+You can find the documentation [here](https://dominictarro.github.io/prefecto/).
+
+## Getting Started
+
+Install Prefecto with
+
+```bash
+pip install prefecto
+```
+
+*Prefecto is only tested with Python 3.10 and higher. It may work with older versions, but it is not guaranteed.*
