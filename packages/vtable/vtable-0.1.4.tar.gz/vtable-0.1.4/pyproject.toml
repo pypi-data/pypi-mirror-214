@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "vtable"
+version = "0.1.4"
+description = "A Qt based table viewer for Python"
+authors = ["fergal <fergal.mullally@gmail.com>"]
+license = "GPL 3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.6"
+PyQt5 = "*"
+pandas = "*"
+numpy = "*"
+ipdb = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
