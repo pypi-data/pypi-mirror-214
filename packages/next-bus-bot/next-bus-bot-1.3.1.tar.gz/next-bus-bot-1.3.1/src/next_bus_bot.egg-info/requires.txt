@@ -1,0 +1,17 @@
+requests
+
+[:python_version <= "3.10"]
+tomli
+
+[dev]
+black
+isort
+
+[discord]
+discord.py
+
+[test]
+pytest
+pytest-cov
+pytest-xdist
+pytest-sugar
