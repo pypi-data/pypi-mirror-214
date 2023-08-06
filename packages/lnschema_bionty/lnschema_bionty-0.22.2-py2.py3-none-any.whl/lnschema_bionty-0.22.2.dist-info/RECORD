@@ -1,0 +1,11 @@
+lnschema_bionty/__init__.py,sha256=eSi1rNJv-UYB-J1c8v3dTu_UxLb7svB6MyinwOcJpew,974
+lnschema_bionty/_bionty.py,sha256=lYtoRbsEsICAXWdKbStfkvOAPy1JKMgbE2ofQ8VTFoU,6088
+lnschema_bionty/ids.py,sha256=KY7FchOUj3Qpy3M-KkdghaNbQM1VVgYLobhM7Gwq4pI,1571
+lnschema_bionty/models.py,sha256=OVwX8fpMpIOXhZCruj8lznZNp_OQqeahDUBqDxQJNNg,20205
+lnschema_bionty/migrations/0001_initial.py,sha256=dNZAHKo945JbZ6z-kpe5dxY7Bowqj-RgC3MHeAxugQc,29675
+lnschema_bionty/migrations/0002_rename_gene_type_gene_biotype_and_more.py,sha256=OBmH8DNeXerd1Q5kvci_efNS2ndCiH0dl6rMRCHXi5c,1231
+lnschema_bionty/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lnschema_bionty-0.22.2.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+lnschema_bionty-0.22.2.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+lnschema_bionty-0.22.2.dist-info/METADATA,sha256=YrFt41cQkpaBqI0Rn_O2Nu2uw-TBhdM_B2hGbayVMTA,1175
+lnschema_bionty-0.22.2.dist-info/RECORD,,
