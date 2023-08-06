@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: dockery
+Version: 0.4.0
+Summary: Graphical interface for Docker in your console
+Author-Email: Mariano Carrazana <marianocarrazana@gmail.com>
+License: MIT
+Project-URL: Bug tracker, https://github.com/marianocarrazana/dockery/issues
+Project-URL: Source code, https://github.com/marianocarrazana/dockery
+Requires-Python: >=3.9
+Requires-Dist: docker>=6.1.3
+Requires-Dist: textual>=0.28.0
+Requires-Dist: click>=8.1.3
+Description-Content-Type: text/markdown
+
+# dockery
+
+Graphical interface for Docker in your console
+
+<table>
+  <tr>
+    <td><img src="https://github.com/marianocarrazana/dockery/assets/17238076/3c987e47-2d86-44ae-a078-73eced62dc11"/></td>
+    <td><img src="https://github.com/marianocarrazana/dockery/assets/17238076/26dc43c9-1dd0-4097-ac02-aa006c3ff6b6"/></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="https://github.com/marianocarrazana/dockery/assets/17238076/c991ff4b-eebf-4495-b67c-2c57e933bd7d" /></td>
+  </tr>
+</table>
+
+## Installation
+
+### From source
+
+```shell
+git clone git@github.com:marianocarrazana/dockery.git
+cd dockery
+pip install -e .
+# update only:
+git pull
+```
+
+### From pip
+
+```shell
+pip install dockery
+```
+
+## Usage
+
+Run on your console:
+
+```shell
+dockery
+```
+
+## Extra commands
+
+```shell
+dockery df
+dockery ps
+dockery volumes
+dockery images
+dockery stats
+```
+
+## **Enjoy it!**
