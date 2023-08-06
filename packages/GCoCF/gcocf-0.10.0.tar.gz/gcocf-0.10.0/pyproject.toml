@@ -1,0 +1,32 @@
+[build-system]
+requires = ['flit']
+build-backend = 'flit.buildapi'
+
+[tool.flit.metadata]
+module = 'GCoCF'
+author = 'Gustavo Schip'
+author-email = 'gustavoschip@proton.me'
+home-page = 'https://github.com/GILLESMaster/GCoCF'
+requires-python = '>=3.11'
+classifiers = [
+    'Environment :: Console',
+    'Natural Language :: English',
+    'Development Status :: 4 - Beta',
+    'Programming Language :: Python :: 3',
+    'Intended Audience :: End Users/Desktop',
+    'License :: OSI Approved :: MIT License']
+description-file = 'README.md'
+keywords = 'coc clashofclans discord'
+requires = ['requests',
+            'jdatetime',
+            'pytz',
+            'python-dateutil',
+            'click',
+            'discord',]
+
+[tool.flit.metadata.requires-extra]
+test = ['pytest']
+i18n = ['babel']
+
+[tool.flit.scripts]
+GCoCF = 'GCoCF:main'
