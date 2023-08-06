@@ -1,0 +1,12 @@
+TrimLog/__init__.py,sha256=J4XlkLmVkF5NfJhQVw3WisJCVp0TU9dMBcrplKVL7A0,1296
+TrimLog/exceptions.py,sha256=qHJKz8r-H4PUGzFpIUsQB7krx-bBMTsoep-taOFnqoE,276
+TrimLog/logger_constants.py,sha256=SoMcgEDs8oX9J1YeeWPuRGnZD3_7OPlTfMy1nk7k5Zs,2433
+TrimLog/logger_main.py,sha256=qf29o92Lr7v2YPX4En-6qaBEtY2mD3iEEy3n7qhMQQs,29289
+TrimLog/object_constants.py,sha256=iNc0Ngn_Boo-g1EC5mwM09ge17tYFAxVpKG-GwiyrpI,2135
+TrimLog/pip_manager.py,sha256=s3MyFoTAuuhfa4sufCAeFcvl5lA50EEnXhqNk-faEP4,8463
+TrimLog/test.py,sha256=QcqFmu-tHTB8aoYVCvVaqPBuY2Jg_I9XRawID8L_vpk,3771
+TrimLog-0.8.0.dist-info/LICENSE,sha256=CwpyJU3l9OnY7MwJ6lMUVyCwnEMOd9t0rBYUE2no88A,11386
+TrimLog-0.8.0.dist-info/METADATA,sha256=vMnm5ucT2GzsGxr-SdHlJUeX5_gyZkK6vhJE2D50Img,2672
+TrimLog-0.8.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+TrimLog-0.8.0.dist-info/top_level.txt,sha256=_P8Lx5u0ri4r1mutcQ9lQlyJb8wu64eKUzKPy-Cn8GM,8
+TrimLog-0.8.0.dist-info/RECORD,,
