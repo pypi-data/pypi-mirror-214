@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "numpy", "toml"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hdcms-bindings"
+version = "0.1.5"
+description = "This package wraps the C functions in hdcms"
+authors = [
+    {name="Jason Eveleth", email="hdcms@jasoneveleth.com"},
+    {name="Arun Moorthy"},
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file="LICENSE" }
+
+[project.urls]
+"Homepage" = "https://github.com/jasoneveleth/hdcms-bindings"
+"Bug Tracker" = "https://github.com/jasoneveleth/hdcms-bindings/issues"
