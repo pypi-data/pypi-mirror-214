@@ -1,0 +1,13 @@
+pkgbuild_language_server/__init__.py,sha256=4Asa7XO6ZzGjspLesvHy1HeJkjO2mvUMCBdfaqedYXU,268
+pkgbuild_language_server/__main__.py,sha256=wyDOMg-iVZARmCe3gQZyAcdA9lr9qR5zQpWRlb8_yiM,1087
+pkgbuild_language_server/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+pkgbuild_language_server/api.py,sha256=lsUNXts-9oEQatdZk1Zvh28EDAqCpe9zjX3GRvCHu1M,2271
+pkgbuild_language_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkgbuild_language_server/server.py,sha256=l7Y4sfTyrzE037TmyIymKZSYll8QXfAdM4dP8tOnbtM,5968
+pkgbuild_language_server/assets/json/pkgbuild.json,sha256=Sebr5ZP6XysAOWEcKkYUTZZMnQJGInyqjST8mYqfh-E,15502
+pkgbuild_language_server-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pkgbuild_language_server-0.0.1.dist-info/METADATA,sha256=I0tyj_7TXNGZ7HkKI1-0xP7143IBMgrhnamQLhts-ls,7482
+pkgbuild_language_server-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pkgbuild_language_server-0.0.1.dist-info/entry_points.txt,sha256=hUrTYLCvq25GsxCm4ovvn8AHCzhobUlP8fk6RIKwV70,84
+pkgbuild_language_server-0.0.1.dist-info/top_level.txt,sha256=uA_S0UBS0tioVAO5ck4NMt-nUnxGjg4vpZMg2lamyks,25
+pkgbuild_language_server-0.0.1.dist-info/RECORD,,
