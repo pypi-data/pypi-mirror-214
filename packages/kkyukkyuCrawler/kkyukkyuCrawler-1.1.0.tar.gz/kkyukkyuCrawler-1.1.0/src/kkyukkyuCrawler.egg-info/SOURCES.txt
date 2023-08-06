@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/kkyukkyuCrawler/__init__.py
+src/kkyukkyuCrawler/src.py
+src/kkyukkyuCrawler.egg-info/PKG-INFO
+src/kkyukkyuCrawler.egg-info/SOURCES.txt
+src/kkyukkyuCrawler.egg-info/dependency_links.txt
+src/kkyukkyuCrawler.egg-info/requires.txt
+src/kkyukkyuCrawler.egg-info/top_level.txt
