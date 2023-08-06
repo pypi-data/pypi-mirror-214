@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: asyncr
+Version: 0.0.1
+Summary: A python utility for running async functions.
+Project-URL: Homepage, https://github.com/gohadar/asyncr
+Author-email: Hadar Gotshal <gohadar@gmail.com>
+Maintainer-email: Hadar Gotshal <gohadar@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: nest-asyncio
+Description-Content-Type: text/markdown
+
+# asyncr
+A Python asyncio running utilities.
