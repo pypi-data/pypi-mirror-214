@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: TabularDataInvestigation
+Version: 0.0.4
+Summary: This package provide a fast tabular data investigation and it will eligible for ML model building and also helps to developers in their projects when needed 
+Home-page: https://github.com/Tanvir223/TabularDataInvestigation
+Download-URL: https://github.com/Tanvir223/TabularDataInvestigation/archive/refs/tags/0.0.4.tar.gz
+Author: Tanvir Islam
+Author-email: islamtanvir659@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Tanvir223/TabularDataInvestigation/issues
+Keywords: pypi,TabularDataInvestigation,TabularData,Data-Manupulation,Data-Preprocessing,Data Cleaning,Machine Learning,Artificial Intelligence,Industry Data,Data Science
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt

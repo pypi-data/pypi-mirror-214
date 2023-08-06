@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+TabularDataInvestigation/__init__.py
+TabularDataInvestigation/tdi.py
+TabularDataInvestigation.egg-info/PKG-INFO
+TabularDataInvestigation.egg-info/SOURCES.txt
+TabularDataInvestigation.egg-info/dependency_links.txt
+TabularDataInvestigation.egg-info/requires.txt
+TabularDataInvestigation.egg-info/top_level.txt
