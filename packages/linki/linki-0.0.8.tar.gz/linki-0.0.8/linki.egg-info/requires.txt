@@ -1,0 +1,11 @@
+typer~=0.9.0
+typing_extensions~=4.5.0
+bottle~=0.12.25
+msgspec~=0.16.0
+Werkzeug~=2.3.6
+pypandoc~=1.11
+requests~=2.31.0
+
+[dev]
+pytest~=7.3.2
+hypothesis~=6.78.3
