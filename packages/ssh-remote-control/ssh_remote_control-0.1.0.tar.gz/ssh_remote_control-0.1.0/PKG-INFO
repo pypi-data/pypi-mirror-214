@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: ssh_remote_control
+Version: 0.1.0
+Summary: Control and monitor remote devices through SSH
+Author-email: zhbjsh <zhbjsh@outlook.com>
+Project-URL: Homepage, https://github.com/zhbjsh/ssh_remote_control
+Project-URL: Bug Tracker, https://github.com/zhbjsh/ssh_remote_control/issues
+Keywords: ssh,command line,remote control
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SSH Remote Control
+
+## Initialize
+
+```python
+from ssh_remote_control import Remote
+
+remote = Remote("192.168.0.123", ssh_user="user", ssh_password="password")
+
+await remote.async_update_state(True)
+
+# Check the state
+remote.state.is_online
+remote.state.is_connected
+```
+
+## Initialize with default commands
+
+```python
+from ssh_remote_control.default_commands.linux import services, sensors, SensorKey
+
+remote = Remote(
+  "192.168.0.123",
+  ssh_user="user",
+  ssh_password="password",
+  service_commands=services,
+  sensor_commands=sensors
+)
+
+await remote.async_update_state(True)
+
+# Get a sensor
+sensor = remote.get_sensor(SensorKey.CPU_LOAD)
+sensor.value
+sensor.value_unit
+
+# Poll a sensor
+sensor = await remote.async_poll_sensor(SensorKey.TEMPERATURE)
+sensor.value
+sensor.value_unit
+```
