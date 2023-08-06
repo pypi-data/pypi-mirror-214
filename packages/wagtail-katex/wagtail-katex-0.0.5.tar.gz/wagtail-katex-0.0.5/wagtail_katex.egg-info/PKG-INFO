@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: wagtail-katex
+Version: 0.0.5
+Summary: KaTex for Wagtail CMS Draftail editor
+Home-page: https://github.com/ongchi/wagtail-katex
+Author: ongchi
+Author-email: ongchi@users.noreply.github.com
+Project-URL: Bug Tracker, https://github.com/ongchi/wagtail-katex/issues
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 3
+Classifier: Framework :: Wagtail :: 4
+Classifier: Framework :: Wagtail :: 5
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wagtail-katex ![Wagtail 3.x](https://img.shields.io/badge/wagtail-3.x-g.svg) ![Wagtail 4.x](https://img.shields.io/badge/wagtail-4.x-g.svg) ![Wagtail 5.x](https://img.shields.io/badge/wagtail-5.x-g.svg)
+
+> This package is modified from [gatensj/wagtail-draftail-katex](https://github.com/gatensj/wagtail-draftail-katex)
+
+**[KaTeX](https://katex.org)** support for Wagtail RichTextField.
+
+![KaTeX Editor](https://raw.githubusercontent.com/ongchi/wagtail-katex/master/images/screenshot.png)
+
+## Quick Start
+
+Install the package with
+
+```sh
+pip install wagtail-katex
+```
+
+Add `wagtailkatex` to your `settings.py` in the `INSTALLED_APPS` section:
+
+```python
+INSTALLED_APPS = [
+    ...
+    "wagtailkatex",
+    ...
+]
+```
