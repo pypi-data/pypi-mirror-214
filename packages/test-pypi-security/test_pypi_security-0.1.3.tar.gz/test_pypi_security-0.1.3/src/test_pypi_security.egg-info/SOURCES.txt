@@ -1,0 +1,7 @@
+setup.py
+src/__init__.py
+src/test_pypi_security.py
+src/test_pypi_security.egg-info/PKG-INFO
+src/test_pypi_security.egg-info/SOURCES.txt
+src/test_pypi_security.egg-info/dependency_links.txt
+src/test_pypi_security.egg-info/top_level.txt
