@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "popoca"
+version = "0.0.1"
+description = ""
+authors = ["Felipe <104157442+justafewwords4@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+popoca = "popoca.app:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
