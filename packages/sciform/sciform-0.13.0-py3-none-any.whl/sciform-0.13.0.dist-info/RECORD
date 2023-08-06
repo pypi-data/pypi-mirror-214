@@ -1,0 +1,14 @@
+sciform/__init__.py,sha256=2CRIhuvJxPhm0vgB7f2AVeBDqsMZNdHAE8j-cMk8Y_U,896
+sciform/float_formatting.py,sha256=e4zoIvD7ov806AW30xi7rzjb-pOw1ndea0dyQWxw9ZQ,4115
+sciform/format_options.py,sha256=tjHqX-vqnTJGGF89Cz_y8KSRs4PK6Bub35_8oNCOxI0,20265
+sciform/format_utils.py,sha256=Fi1qfunfGIdgVyt-BIN0r_XEN1mC4x_fb_SeCv-6U1U,6408
+sciform/formatter.py,sha256=y-WIXA2JKY9VSXillfRZBvqVJ2uTrjgq2Q1Uoyvzxpw,9485
+sciform/formatting.py,sha256=uFYaFelzYGukzyI0xEV0zMFomhMVC49FwsoQgdVux3I,9333
+sciform/grouping.py,sha256=UREbKTSKH_UPlY4qdglWl4nXr9sW4wEkXP3GWHKOnOg,2297
+sciform/modes.py,sha256=BCs_uZTN3mLG_CIbtSG-GlII8nc3Hy9GukRSfe2QqJw,2938
+sciform/prefix.py,sha256=aSstT0WDz7o-gXlvqKeUSbhDSKqtupr0X7vseqsyko8,2246
+sciform-0.13.0.dist-info/LICENSE,sha256=nqFBB26VXKwQkYLD66PhhxDA-rBvh3eoBBv2pVSG-o8,1074
+sciform-0.13.0.dist-info/METADATA,sha256=cxNP3SWWqAIb_v1AmVWhLK5EQqciNvztTLyaU7B3wCc,2583
+sciform-0.13.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sciform-0.13.0.dist-info/top_level.txt,sha256=mC01YOQ-1u5pDk9BJia-pQKLUMvkreMsldDpFcp7NV8,8
+sciform-0.13.0.dist-info/RECORD,,
