@@ -1,0 +1,3 @@
+[pdm]
+pdm_invoke=pdm_invoke.main:reg_commands
+
