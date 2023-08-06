@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shellbind.py
+shellbind.egg-info/PKG-INFO
+shellbind.egg-info/SOURCES.txt
+shellbind.egg-info/dependency_links.txt
+shellbind.egg-info/requires.txt
+shellbind.egg-info/top_level.txt
