@@ -1,0 +1,11 @@
+temgymbasic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+temgymbasic/components.py,sha256=23GijXJAMHaStMyxK7xrwQHO-XkTcbT7egww_Hci4nc,47693
+temgymbasic/functions.py,sha256=v2Vpg5OVjHiLAtNhWvVG5Q2itzkre4OQ2nXqkcHy30M,16465
+temgymbasic/gui.py,sha256=ixYBmiiPx4IcEFiY_Wgo75Zrpemiqa5fEJq8HbsqfgU,38683
+temgymbasic/model.py,sha256=lqdfa6Vlk-hXFWAVLweVM1DhaQ0OyOQUPAulOj0ZtvU,19067
+temgymbasic/run.py,sha256=8KsgNakiGkhfWDws9yHp9cBSiYOokcPBnQ2jxoKPTvo,31954
+temgymbasic/shapes.py,sha256=xluXoUhApnYLwTeusFYJKnDPTZ2mzgNTTBfBj5BYz0I,5879
+temgymbasic-0.6.0.0.dist-info/METADATA,sha256=2HOXX-69PUemXGxne87cd-BqFx9pJOAeJzZ2cNGVB64,928
+temgymbasic-0.6.0.0.dist-info/WHEEL,sha256=fagL_Tj29mg80flwlxJNW45nBDbboxF04Tnbc_jt3Bg,105
+temgymbasic-0.6.0.0.dist-info/licenses/LICENSE.md,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+temgymbasic-0.6.0.0.dist-info/RECORD,,
