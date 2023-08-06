@@ -1,0 +1,11 @@
+atksh_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atksh_utils/version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+atksh_utils/openai/__init__.py,sha256=XzFaVrHKvnn2zyBB6FHOzO0sIyW6H74vTWx2yN_j65I,137
+atksh_utils/openai/api.py,sha256=0Ad55cNnDb1a9q-Fcysm1DMU3jKSHMrprgZ8henz-XY,9073
+atksh_utils/openai/functional.py,sha256=unlqnwOwFR9YoRlVNEzkBWhKsN-xBAOGtdBSWN1q8w8,6449
+atksh_utils/openai/prompt.py,sha256=ez_DmKVAQNkJETreyNg1oDHZ_IgMMosPSPLMb2x7Yrs,2313
+atksh_utils-0.1.0.dist-info/LICENSE,sha256=nHukE4G7nocUAadXJCBwy1b6MB8OpeGd2TgLlZr-ITA,1062
+atksh_utils-0.1.0.dist-info/METADATA,sha256=Tj3nJf0bFiU6VK5T3DLZ0l9X9Lr-GIhX3TsyNHU-i6Q,3304
+atksh_utils-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+atksh_utils-0.1.0.dist-info/top_level.txt,sha256=BmJ2Grrn7N7TWlwPmu0ZfexS8Gf-aXz8_H5NHmf6Y88,12
+atksh_utils-0.1.0.dist-info/RECORD,,
