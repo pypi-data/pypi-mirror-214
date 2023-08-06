@@ -1,0 +1,6 @@
+langchain
+pinecone-client
+tiktoken
+gitpython
+python-dotenv
+pandas
