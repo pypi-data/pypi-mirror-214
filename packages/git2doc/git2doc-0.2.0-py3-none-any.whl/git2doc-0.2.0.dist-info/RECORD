@@ -1,0 +1,9 @@
+git2doc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git2doc/loader.py,sha256=MYX6LAc9Aju-7W9Zxe1WUclSPPXnbPRgVB34RwNQEOg,7727
+git2vec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git2vec/loader.py,sha256=H_VWU6WIzlECnTj27acnRYPyHfC8jAgE6QeVT0ZZTus,7581
+git2vec/vectordb.py,sha256=vQ7WLY99bbaBd13ZzP0K85No4wrSzu_nzYjJmhxasi0,3996
+git2doc-0.2.0.dist-info/METADATA,sha256=j79SYsjkfPEtCqNYciwi0lmUgh7opp2hR5p9k_sxQZY,3132
+git2doc-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+git2doc-0.2.0.dist-info/top_level.txt,sha256=2P4WRh1JzeqDh6wvYL4PibFHJyPns3oUjGeiWD-CJTw,8
+git2doc-0.2.0.dist-info/RECORD,,
