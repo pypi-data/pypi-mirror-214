@@ -1,0 +1,17 @@
+maxgradient-0.1.0.dist-info/METADATA,sha256=P_51E6WLhCJl_0ZjSSjHgTVYY4zua1Ocq-nl_zdQKKU,565
+maxgradient-0.1.0.dist-info/WHEEL,sha256=2pzpU5yX8ZDRkL1JJPwjqHXoJgM2dqtofaxvD6IHFj4,90
+maxgradient-0.1.0.dist-info/licenses/LICENSE,sha256=z7A2hC9GtF6n5y3ngeoi_cdzjTm3i11Y_Y0Z7UoH07o,1066
+maxgradient/__init__.py,sha256=Beldb_VV1L_1yFpqjUuTzx6fpTIbpX4MuQ_BhubbzME,750
+maxgradient/_gradient_substring.py,sha256=bdiqnQkb7Dfy58qo6WH5CJp-m7jDfjWTaDdwg7Jb74o,10879
+maxgradient/_mode.py,sha256=oWOGO0PmIjXrz0TJ29DojCCS0RcIKKuktRH1oZaF1zE,1886
+maxgradient/_rich.py,sha256=NBfoqM4lKK-VxAwjudCyuOxN2Qip73sCp62jIUrUJVs,16154
+maxgradient/_x11.py,sha256=XEWI_JrSDPCoPKjAxBSpOJWfWGQFCCvr86UgMpDxrD4,12225
+maxgradient/cli.py,sha256=NA_hMjaGThQhM2Ef5Jhjv6zuSVkVZb77pYcxe-_dLMI,2395
+maxgradient/color.py,sha256=R_FReQi-J4d2MrpZU1uwt4IdCYDpmynFKNZfzyO3-C0,19133
+maxgradient/color_list.py,sha256=X-3WZTMIxRL8So4k89H9vVPaK8yzR6uFkyHXgY66L_Y,3294
+maxgradient/console.py,sha256=fENRCPpHuEAaoEyWjhbk1qq7JRYJKD3-MBM6AaXkIsQ,10462
+maxgradient/default_styles.py,sha256=pK4SOZd6BqqdWKy37B5T4QcDFsWv95GgvGlqOHBkOI0,30263
+maxgradient/gradient.py,sha256=5eiZ16w7lFZk8punP19vQofzAqE_xeRSoxl14hVpStQ,20228
+maxgradient/log.py,sha256=u9HFTFj15SqGE0Yw8K71uwO_hU0YrsYw4hEYCKhL5s0,13231
+maxgradient/theme.py,sha256=a1m9drHiwzk4e7EESW4ikCFfmG_8BAj0dixf32lDa1Q,2649
+maxgradient-0.1.0.dist-info/RECORD,,
