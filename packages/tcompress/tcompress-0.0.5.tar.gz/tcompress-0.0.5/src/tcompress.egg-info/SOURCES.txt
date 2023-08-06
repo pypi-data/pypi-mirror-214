@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tcompress/__init__.py
+src/tcompress/installer.py
+src/tcompress.egg-info/PKG-INFO
+src/tcompress.egg-info/SOURCES.txt
+src/tcompress.egg-info/dependency_links.txt
+src/tcompress.egg-info/top_level.txt
+src/tcompress/functions/image.py
+src/tcompress/functions/main.py
+src/tcompress/functions/manage.py
+src/tcompress/functions/random.py
+src/tcompress/functions/time.py
