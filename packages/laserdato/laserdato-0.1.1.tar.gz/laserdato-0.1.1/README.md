@@ -1,0 +1,121 @@
+# LASERDATO
+
+This package is created to use simply [LASER](https://github.com/facebookresearch/LASER) from MetaAI to create embeddings. It uses list of string as input and returns list of numpy arrays as output instead of using files. It also does not require external tools to be installed. The package automatically downloads the required laser models.
+
+## Usage
+
+### Simple embeddings creation
+```
+from datolaser import Laser
+sentences = ["This is a sentence", "this is another sentences."]
+laser = Laser()
+embeddings = laser.embed_sentences(sentences=sentences)
+
+```
+
+
+### Alignement
+
+
+```
+from datolaser import Laser
+english_sentences = ["A cat","This is a sentence", "this is another sentences."]
+french_sentences = ["C'est une phrase", "Un chat","c'est une autre phrase."]
+laser = Laser()
+aligned_sentences = laser.align_sentences(english_sentences, french_sentences)
+
+```
+If remove_bad_matched is False, it keep sentence with no match as (sentence_1, "",0), if set to True it removes them.
+
+### Embeddings creation with multiple GPUs
+
+```
+from datolaser import Laser
+
+def main():
+    english_sentences = ["A cat","This is a sentence", "this is another sentences."]
+    french_sentences = ["C'est une phrase", "Un chat","c'est une autre phrase."]
+    laser = Laser()
+    gpu_ids = [0,1,2,3]
+    laser.activateMultiGpuEncoder(gpu_ids)
+    english_embeddings = laser.embed_sentences(sentences=sentences)
+    aligned_sentences = laser.align_sentences(english_sentences, french_sentences)
+    laser.deactivateMultiGpuEncoder()
+
+if __name__ == '__main__':
+    main()
+```
+
+### Laser 3
+
+```
+from datolaser import Laser
+sentence = ["Is abairt é seo."]
+laser = Laser(lang="gle_Latn")
+embeddings = laser.embed_sentences(sentences=sentence)
+```
+
+
+
+## Issues
+
+* Because of an [issue](https://github.com/facebookresearch/fairseq/issues/5012) with faiss this package cannot go above pyhton 3.10.
+
+* If you encounter the following error:
+
+```
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+```
+
+You might need to use this [strutucture](https://pytorch.org/docs/stable/notes/windows.html#multiprocessing-error-without-if-clause-protection) to used embed_sentences with multiple GPUs 
+
+```
+def main()
+    # do something here
+
+if __name__ == '__main__':
+    main()
+```
+
+
+## Supported languages
+
+The original LASER model was trained on the following languages:
+
+Afrikaans, Albanian, Amharic, Arabic, Armenian, Aymara, Azerbaijani, Basque, Belarusian, Bengali,
+Berber languages, Bosnian, Breton, Bulgarian, Burmese, Catalan, Central/Kadazan Dusun, Central Khmer,
+Chavacano, Chinese, Coastal Kadazan, Cornish, Croatian, Czech, Danish, Dutch, Eastern Mari, English,
+Esperanto, Estonian, Finnish, French, Galician, Georgian, German, Greek, Hausa, Hebrew, Hindi,
+Hungarian, Icelandic, Ido, Indonesian, Interlingua, Interlingue, Irish, Italian, Japanese, Kabyle,
+Kazakh, Korean, Kurdish, Latvian, Latin, Lingua Franca Nova, Lithuanian, Low German/Saxon,
+Macedonian, Malagasy, Malay, Malayalam, Maldivian (Divehi), Marathi, Norwegian (Bokmål), Occitan,
+Persian (Farsi), Polish, Portuguese, Romanian, Russian, Serbian, Sindhi, Sinhala, Slovak, Slovenian,
+Somali, Spanish, Swahili, Swedish, Tagalog, Tajik, Tamil, Tatar, Telugu, Thai, Turkish, Uighur,
+Ukrainian, Urdu, Uzbek, Vietnamese, Wu Chinese and Yue Chinese.
+
+It has also observed that the model seems to generalize well to other (minority) languages or dialects, e.g.
+
+Asturian, Egyptian Arabic, Faroese, Kashubian, North Moluccan Malay, Nynorsk Norwegian, Piedmontese, Sorbian, Swabian,
+Swiss German or Western Frisian.
+
+You can also use laser on other languages in the list laser3_langs in lib/constants.py by using the lang parameter. (see Usage Laser)
+
+
+## License
+
+LASER is BSD-licensed, as found in the [`LICENSE`](LICENSE) file in the root directory of this source tree.
+
+
