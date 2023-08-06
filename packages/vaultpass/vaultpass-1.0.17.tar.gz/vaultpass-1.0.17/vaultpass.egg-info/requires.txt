@@ -1,0 +1,13 @@
+certifi
+charset-normalizer
+click
+colorama
+enum34
+idna
+pexpect
+ptyprocess
+passpy==1.0.2
+pypass
+requests
+typing_extensions
+urllib3==1.26.6
