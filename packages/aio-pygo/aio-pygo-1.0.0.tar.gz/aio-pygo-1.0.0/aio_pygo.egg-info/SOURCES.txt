@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+aio_pygo.egg-info/PKG-INFO
+aio_pygo.egg-info/SOURCES.txt
+aio_pygo.egg-info/dependency_links.txt
+aio_pygo.egg-info/top_level.txt
+pygo/chan.py
+pygo/chan_test.py
+pygo/conftest.py
+pygo/defer.py
+pygo/defer_test.py
+pygo/go.py
+pygo/go_test.py
+pygo/time.py
+pygo/time_test.py
