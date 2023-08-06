@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: picogo
+Version: 0.0.5
+Summary: A beginner-friendly library for using picogo with the Raspberry Pi Pico. 
+Home-page: https://github.com/sunabove/PicoGo
+Author: SkySLAM Co., Ltd.
+Author-email: terabuilder@gmail.com
+License: MIT
+Keywords: picogo,pico,raspberry,raspberry pi,picorun,skyslam
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+A beginner-friendly library for using picogo with the Raspberry Pi Pico.
+
+```python
+from picogo import Robot
+
+robot = Robot()
+robot.forward( speed = 30 )
+
+```
+
+Documentation is available at (https://github.com/sunabove/PicoGo/).
