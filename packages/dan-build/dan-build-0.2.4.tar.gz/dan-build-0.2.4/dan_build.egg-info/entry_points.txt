@@ -1,0 +1,3 @@
+[console_scripts]
+dan = dan.cli.main:main
+dan-io = dan.cli.io:main
