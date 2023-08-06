@@ -1,0 +1,7 @@
+setup.py
+plexlabexchange/__init__.py
+plexlabexchange.egg-info/PKG-INFO
+plexlabexchange.egg-info/SOURCES.txt
+plexlabexchange.egg-info/dependency_links.txt
+plexlabexchange.egg-info/requires.txt
+plexlabexchange.egg-info/top_level.txt
