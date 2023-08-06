@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: coliseum
+Version: 1.0.5
+Summary: a simple, turn-based command line game in python
+Home-page: https://github.com/signebedi/coliseum
+Author: Sig Janoska-Bedi
+Author-email: signe@siftingwinnowing.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama (<1.0.0)
+Requires-Dist: pandas (<3.0.0)
+Requires-Dist: pytest (<8.0.0)
+
+
+
+# coliseum
+
+[![Documentation Status](https://readthedocs.org/projects/coliseum/badge/?version=stable)](https://coliseum.readthedocs.io/en/latest/?badge=latest)
+[![PyPI](https://img.shields.io/pypi/v/coliseum?color=brightgreen)](https://pypi.org/project/coliseum/)
+[![Downloads](https://static.pepy.tech/personalized-badge/coliseum?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/coliseum)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
+[![Flask-Signing tests](https://github.com/signebedi/coliseum/workflows/tests/badge.svg)](https://github.com/signebedi/coliseum/actions)
+
+simple, turn-based, in your TTY 
+
+Read the docs at [coliseum.readthedocs.io/en/latest/](https://coliseum.readthedocs.io/en/latest/).
+
+---
+Copyright (c) 2020-23 Signe Janoska-Bedi and Jamey Kane
