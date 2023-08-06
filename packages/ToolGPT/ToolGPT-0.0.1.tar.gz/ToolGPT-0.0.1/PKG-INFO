@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ToolGPT
+Version: 0.0.1
+Summary: Package to interface Python functions with ChatGPT
+Home-page: https://github.com/tehruhn/ToolGPT
+Author: Tarun Raheja
+Author-email: tarunraheja1234@gmail.com
+License-File: LICENSE

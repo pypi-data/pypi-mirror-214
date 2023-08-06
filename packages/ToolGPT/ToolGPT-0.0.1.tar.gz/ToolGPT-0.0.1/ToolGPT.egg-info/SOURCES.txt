@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ToolGPT/__init__.py
+ToolGPT/chat_gpt_with_functions.py
+ToolGPT.egg-info/PKG-INFO
+ToolGPT.egg-info/SOURCES.txt
+ToolGPT.egg-info/dependency_links.txt
+ToolGPT.egg-info/requires.txt
+ToolGPT.egg-info/top_level.txt
