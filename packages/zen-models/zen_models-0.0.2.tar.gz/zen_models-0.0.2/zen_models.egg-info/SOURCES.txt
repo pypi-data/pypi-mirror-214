@@ -1,0 +1,10 @@
+README.txt
+setup.cfg
+setup.py
+zen_models/__init__.py
+zen_models/zen_models.py
+zen_models.egg-info/PKG-INFO
+zen_models.egg-info/SOURCES.txt
+zen_models.egg-info/dependency_links.txt
+zen_models.egg-info/requires.txt
+zen_models.egg-info/top_level.txt
