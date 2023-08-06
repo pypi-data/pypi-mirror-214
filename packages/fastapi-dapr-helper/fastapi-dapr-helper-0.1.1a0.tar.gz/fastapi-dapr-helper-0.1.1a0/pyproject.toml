@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "fastapi-dapr-helper"
+version = "v0.1.1-alpha"
+description = ""
+authors = ["Clayton Black <CBlack@fanatics.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_dapr_helper"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0.0"
+fastapi = "^0.95.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+black = "^23.3.0"
+pylint = "^2.17.4"
+httpx = "^0.24.1"
+flake8 = "^6.0.0"
+anyio = "^3.6.2"
+pytest-asyncio = "^0.21.0"
+uvicorn = "^0.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[flake8]
+max-line-length = 120
+extend-exclude = "tests"
+
+[tool.pylint]
+max-line-length = 120
+#load-plugins = "pylint_junit"
+#output-format = "junit"
+#output = "pylint.xml"
+good-names = "i,j,k,v,ex,Run,_,db,f,e"
+extension-pkg-whitelist = "pydantic"
+logging-format-style = "new"
+ignore-paths = "tests(/.*)?"
+disable = "W1203"
