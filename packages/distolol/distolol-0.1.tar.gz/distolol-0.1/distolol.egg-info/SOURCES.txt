@@ -1,0 +1,10 @@
+setup.py
+distolol/Binomialdistribution.py
+distolol/Gaussiandistribution.py
+distolol/Generaldistribution.py
+distolol/__init__.py
+distolol.egg-info/PKG-INFO
+distolol.egg-info/SOURCES.txt
+distolol.egg-info/dependency_links.txt
+distolol.egg-info/not-zip-safe
+distolol.egg-info/top_level.txt
