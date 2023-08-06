@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+aifunctools/__init__.py
+aifunctools/openai.py
+aifunctools.egg-info/PKG-INFO
+aifunctools.egg-info/SOURCES.txt
+aifunctools.egg-info/dependency_links.txt
+aifunctools.egg-info/requires.txt
+aifunctools.egg-info/top_level.txt
