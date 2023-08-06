@@ -1,0 +1,9 @@
+README.md
+setup.py
+oes/__init__.py
+oes.egg-info/PKG-INFO
+oes.egg-info/SOURCES.txt
+oes.egg-info/dependency_links.txt
+oes.egg-info/not-zip-safe
+oes.egg-info/requires.txt
+oes.egg-info/top_level.txt
