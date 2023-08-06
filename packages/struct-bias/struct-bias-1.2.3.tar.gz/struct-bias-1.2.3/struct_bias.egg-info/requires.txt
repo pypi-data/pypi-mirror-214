@@ -1,0 +1,11 @@
+numpy
+tensorflow
+shap
+rpy2
+scipy
+pandas
+sklearn
+matplotlib
+seaborn
+statsmodels
+regex
