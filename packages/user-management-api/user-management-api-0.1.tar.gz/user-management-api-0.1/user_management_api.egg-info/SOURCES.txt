@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+migrations/__init__.py
+user_management_api.egg-info/PKG-INFO
+user_management_api.egg-info/SOURCES.txt
+user_management_api.egg-info/dependency_links.txt
+user_management_api.egg-info/top_level.txt
