@@ -1,0 +1,13 @@
+# added by check-manifest
+include *.py
+include *.yaml
+include *.txt
+recursive-include BYOD *.txt
+global-exclude *.pyc
+global-exclude __pycache__
+
+# added by check-manifest
+include LICENSE
+
+# added by check-manifest
+recursive-include images *.png
