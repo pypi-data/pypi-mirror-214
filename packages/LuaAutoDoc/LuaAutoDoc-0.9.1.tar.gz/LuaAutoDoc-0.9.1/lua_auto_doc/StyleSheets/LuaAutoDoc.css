@@ -1,0 +1,294 @@
+:root {
+	--background-colour: #131516;
+	--background-colour-light-theme: #d8d5db;
+	--default-text-colour: #969391;
+	--default-text-colour-light-theme: #2c1f12;
+	--nav-base-colour: #0c1b23;
+	--nav-base-colour-light-theme: #2a522a;
+	--nav-header-colour: #162c3a;
+	--nav-header-colour-light-theme: #1c361c;
+	--nav-bar-text-colour: var(--default-text-colour);
+	--nav-bar-text-colour-light-theme: #c7c2c2;
+	--footer-base-colour: #0c1b23;
+	--footer-base-colour-light-theme: #2a522a;
+	--footer-text-colour: var(--nav-bar-text-colour);
+	--footer-text-colour-light-theme: var(--nav-bar-text-colour-light-theme);
+	--default-link-colour: #2779F6;
+	--default-link-colour-light-theme: #2779F6;
+	--default-link-colour-visited: #ae71e3;
+	--default-link-colour-visited-light-theme: #ae71e3;
+	--smooth-link-highlight-colour: #2779F6;
+	--smooth-link-highlight-colour-light-theme: #ee6352;
+	--highlight-link-colour: #f1f1f1;
+	--highlight-link-colour-light-theme: #ea9010;
+}
+
+/* Import fonts */
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../assets/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto Slab';
+	src: url('../assets/RobotoSlab-VariableFont_wght.ttf');
+}
+
+
+/* Categories
+1. Default override - generic, used by all pages
+2. Main body - generic, used by all pages
+3. Navigation bar - generic, used by all pages
+4. Navigation bar list - generic, used by all pages
+5. Footer - generic, used by all pages
+*/
+
+/******************************************
+************ 1 Default override ***********
+*******************************************/
+html {
+	font-size: 105%;
+	font-family: Georgia, 'Roboto Slab', sans-serif;
+	background-color: var(--background-colour);
+}
+
+.a:hover {
+	color: var(--highlight-link-colour);
+}
+
+/******************************************
+*************** 2 Main body ***************
+*******************************************/
+/* All pages have a body with this id */
+#LuaAutoDoc-body {
+	color: var(--default-text-colour);
+	background-color: var(--background-colour);
+}
+
+/* All pages are wrapped inside a div with this id */
+#main-container {
+}
+
+/* All pages have their center content wrapped inside a div with this id */
+#main-center {
+	margin-right: 2rem;
+	margin-bottom: calc(1.2rem * 2);
+	width: fit-content;
+	max-width: 100em;
+	overflow-wrap: break-word;
+}
+
+#main-center a {
+	color: var(--smooth-link-highlight-colour);
+}
+
+#main-center a:hover {
+	color: var(--highlight-link-colour);
+}
+
+/* Main Header */
+#main-header-bar {
+	background-color: transparent;
+	color: var(--default-text-colour);
+	font-size: 1.1em;
+	padding: 0.5em;
+	border-bottom: solid 1px var(--default-text-colour);
+}
+
+#main-header-bar a {
+	color: var(--default-text-colour);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+#main-header-bar a:hover {
+	color: var(--highlight-link-colour);
+}
+
+/* Main Header END */
+
+/* Page Title that should be used together with a <h\d> tag */
+.page-title {
+}
+
+/******************************************
+************ 3 Navigation bar *************
+*******************************************/
+#nav-bar {
+	color: var(--nav-bar-text-colour);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: var(--nav-base-colour);
+	height: 100%;
+	min-width: 15em;
+	max-width: 50em;
+	width: fit-content;
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 500; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	white-space: nowrap;
+	overflow-x: auto;
+
+}
+
+/* The navigation menu links */
+#nav-bar a {
+	display: block;
+	text-decoration: none;
+	color: var(--nav-bar-text-colour);
+	transition: 0.3s;
+}
+
+#nav-nar span {
+	display: block;
+	color: var(--nav-bar-text-colour);
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+#nav-bar a:hover {
+	color: var(--highlight-link-colour);
+}
+
+/* The section of the navbar containing the search bar */
+#nav-bar-header {
+	font-size: 1rem;
+	background: var(--nav-header-colour);
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#nav-bar-header-name {
+	padding-top: 0.3rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+#nav-bar-search {
+	width: calc(100% - 1.5em);
+	border-radius: 0.7em;
+	font-size: 1em;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* The section of the navbar containing the search bar END */
+
+/******************************************
+********** 4 Navigation bar list **********
+*******************************************/
+#nav-list {
+	padding-left: 0.6em;
+}
+
+.nav-bar-list-div {
+	position: relative;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	width: fit-content;
+}
+
+.nav-bar-list-content {
+	display: none;
+	padding-left: 1em;
+}
+
+.nav-bar-list-div:hover > .nav-bar-list-button {
+	color: var(--smooth-link-highlight-colour);
+}
+
+.nav-bar-list-content a:hover {
+	color: var(--highlight-link-colour);
+}
+
+.nav-bar-list-button {
+	cursor: pointer;
+	padding-right: 1.5em;
+}
+
+.nav-bar-list-button::before {
+	content: attr(data-prefix);
+	width: 1em;
+	display: inline-block;
+}
+
+.nav-bar-list-content a {
+	padding-top: 0.5em;
+	padding-bottom: 0.2em;
+	padding-right: 1em;
+}
+
+/******************************************
+**************** 5 Footer *****************
+*******************************************/
+#footer {
+	position: fixed;
+	font-size: 1rem;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 600;
+	background-color: var(--footer-base-colour);
+	color: var(--footer-text-colour);
+	text-align: center;
+	padding: 0;
+	max-height: 20%;
+}
+
+#footer-text {
+	margin: 0.3em;
+}
+
+#footer-text a {
+	color: var(--default-link-colour);
+
+}
+
+#footer-text a:visited {
+	color: var(--default-link-colour-visited);
+}
+
+#theme-toggle {
+	height: calc(100% - 0.5em);
+	max-height: 4em;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	border: none;
+	background-image: url('../assets/LightModeButton.svg');
+	background-color: transparent;
+	background-size: cover;
+	cursor: pointer;
+	position: absolute;
+	left: 1em;
+	bottom: 0.5em;
+}
+
+#theme-toggle:hover {
+	filter: brightness(1.5);
+}
+
+#footer-links {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#footer-links a {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.footer-link-image {
+	width: auto;
+	height: 25px;
+	margin-right: 13px;
+}

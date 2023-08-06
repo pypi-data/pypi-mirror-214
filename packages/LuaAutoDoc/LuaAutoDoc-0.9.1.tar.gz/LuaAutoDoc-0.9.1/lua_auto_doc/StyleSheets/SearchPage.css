@@ -1,0 +1,57 @@
+:root {
+	--search-match-background-colour: #ffff00;
+	--search-match-background-colour-light-theme: #ffff00;
+	--search-match-text-colour: #000000;
+	--search-match-text-colour-light-theme: #000000;
+	--search-result-background-colour: #2b2b2b;
+	--search-result-background-colour-light-theme: rgba(68, 68, 68, 0.2);
+}
+
+/* Categories
+1. Search page
+2. Image override
+*/
+
+/******************************************
+************** 1 Search page **************
+*******************************************/
+/* Class given to same div as #main-container */
+.search-page-body {
+}
+
+.search-page-body a {
+	color: var(--default-link-colour);
+}
+
+.search-page-body a:hover {
+	color: var(--highlight-link-colour);
+}
+
+#results {
+	width: fit-content;
+	max-width: 80em;
+}
+
+.search-result-entry {
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	background-color: var(--search-result-background-colour);
+	padding-left: 1em;
+	padding-top: 0.01em;
+	padding-bottom: 0.3em;
+}
+
+.search-match {
+	color: var(--search-match-text-colour);
+	background-color: var(--search-match-background-colour);
+
+}
+
+/******************************************
+************ 2 Image override *************
+*******************************************/
+.search-page-body img {
+	width: 1em !important;
+	height: 1em !important;
+	top: 0 !important;
+}

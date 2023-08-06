@@ -1,0 +1,3 @@
+[console_scripts]
+LuaAutoDoc = lua_auto_doc.lua_auto_doc:main
+

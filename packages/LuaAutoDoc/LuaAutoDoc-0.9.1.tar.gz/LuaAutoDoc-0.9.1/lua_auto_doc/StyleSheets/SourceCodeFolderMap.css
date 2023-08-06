@@ -1,0 +1,78 @@
+:root {
+	--source-code-map-background-colour: var(--code-object-list-background-colour);
+	--source-code-map-background-colour-light-theme: var(--code-object-list-background-colour-light-theme);
+	--source-code-folder-highlight-colour: var(--keyword-colour);
+	--source-code-folder-highlight-colour-light-theme: var(--smooth-link-highlight-colour-light-theme);
+}
+
+/* Categories
+1. Tree view
+*/
+
+/******************************************
+*************** 1 Tree view ***************
+*******************************************/
+/* The div containing the tree view */
+.source-code-folder-map-section {
+	background-color: var(--source-code-map-background-colour);
+	min-height: 50vh;
+	min-width: 40em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.source-code-folder-tree li:hover > .source-code-tree-icon-prefix {
+	color: var(--source-code-folder-highlight-colour);
+}
+
+.source-code-folder-map-section a {
+	text-decoration: none;
+}
+
+.source-code-folder-map-section a:hover {
+	color: var(--highlight-link-colour);
+}
+
+
+/* Class given to the top-level ul element representing the tree view */
+.source-code-folder-tree {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+/* Class given to nested ul elements representing the contents of folders */
+.source-code-folder-tree ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+/* Class given to li elements representing folders and files */
+.source-code-folder-tree li {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+/* Class given to span elements representing folders */
+.source-code-tree-icon-prefix {
+	cursor: pointer;
+	user-select: none;
+}
+
+/* Class given to nested ul elements representing the contents of folders */
+.source-code-tree-nested-list {
+	display: none;
+	padding-left: calc(1em + 5px);
+}
+
+/* Class added to nested ul elements when a folder is clicked to expand its contents */
+.source-code-open-folder {
+	display: block;
+}
+
+/* Class given to img elements representing prefixed images for files */
+.source-code-file-icon {
+	width: 1em;
+	height: auto;
+	padding-right: 5px;
+}

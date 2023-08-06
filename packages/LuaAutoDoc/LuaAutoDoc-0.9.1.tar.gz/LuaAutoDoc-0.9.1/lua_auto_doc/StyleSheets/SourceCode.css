@@ -1,0 +1,324 @@
+:root {
+	--code-text-size: 0.9rem;
+	--code-field-border-colour: 1px solid #7c7c7c;
+	--code-field-border-colour-light-theme: 1px solid #7c7c7c;
+	--line-number-colour: #c9c3c3;
+	--line-number-colour-light-theme: #c9c3c3;
+	--code-default-text-colour: #cad7e7;
+	--code-default-text-colour-light-theme: #3b3a3a;
+	--code-field-background: #2b2b2c;
+	--code-field-background-light-theme: #ffffff;
+	--code-field-background-alt: #303031;
+	--code-field-background-alt-light-theme: #efefef;
+	--code-field-string-colour: #6A8759;
+	--code-field-string-colour-light-theme: #067D17;
+	--code-field-number-colour: #6897BB;
+	--code-field-number-colour-light-theme: #1750EB;
+	--code-field-keyword-colour: #CC7832;
+	--code-field-keyword-colour-light-theme: #0033B3;
+	--code-field-nil-keyword-colour: #00E5E5;
+	--code-field-nil-keyword-colour-light-theme: #D700FF;
+	--code-field-true-keyword-colour: #00E5E5;
+	--code-field-true-keyword-colour-light-theme: #D700FF;
+	--code-field-false-keyword-colour: #00E5E5;
+	--code-field-false-keyword-colour-light-theme: #D700FF;
+	--code-field-unique-keyword-background: None;
+	--code-field-unique-keyword-background-light-theme: None;
+	--code-field-self-keyword-colour: #AB51BA;
+	--code-field-self-keyword-colour-light-theme: #74118C;
+	--code-field-token-colour: #CC7832;
+	--code-field-token-colour-light-theme: #3b3a3a;
+	--code-field-rainbow-colour-1: #e6b937;
+	--code-field-rainbow-colour-1-light-theme: #44e040;
+	--code-field-rainbow-colour-2: #44e040;
+	--code-field-rainbow-colour-2-light-theme: #e6b937;
+	--code-field-rainbow-colour-3: #2291ff;
+	--code-field-rainbow-colour-3-light-theme: #2291ff;
+	--code-field-rainbow-colour-4: #de3949;
+	--code-field-rainbow-colour-4-light-theme: #000000;
+	--code-field-rainbow-colour-5: #ff33e4;
+	--code-field-rainbow-colour-5-light-theme: #ff33e4;
+	--code-field-comment-colour: #9AE787;
+	--code-field-comment-colour-light-theme: #8C8C8C;
+	--code-field-documentation-text-colour: #629755;
+	--code-field-documentation-text-colour-light-theme: #8C8C8C;
+	--code-field-documentation-tag-colour: #367226;
+	--code-field-documentation-tag-colour-light-theme: #999999;
+	--code-field-documentation-type-colour: #769AA5;
+	--code-field-documentation-type-colour-light-theme: #4b626b;
+	--code-field-documentation-param-name-colour: #8A653B;
+	--code-field-documentation-param-name-colour-light-theme: #3D3D3D;
+	--code-field-documentation-name-colour: #A9B7C6;
+	--code-field-documentation-name-colour-light-theme: #000000;
+	--code-field-documentation-keyword-colour: #CC7832;
+	--code-field-documentation-keyword-colour-light-theme: #a93fd7;
+	--code-field-documentation-optional-colour: #A9B7C6;
+	--code-field-documentation-optional-colour-light-theme: #182e60;
+	--code-field-built-in-colour: #CC542E;
+	--code-field-built-in-colour-light-theme: #CC542E;
+	--code-field-metamethods-colour: #CC542E;
+	--code-field-metamethods-colour-light-theme: #CC542E;
+	--code-field-environment-var-colour: #CC542E;
+	--code-field-environment-var-colour-light-theme: #CC542E;
+	--code-field-fields-colour: var(--code-default-text-colour);
+	--code-field-fields-colour-light-theme: var(--code-default-text-colour-light-theme);
+	--code-field-global-var-colour: #9876AA;
+	--code-field-global-var-colour-light-theme: #871094;
+	--code-field-local-var-colour: #cad7e7;
+	--code-field-local-var-colour-light-theme: #000000;
+	--code-field-param-var-colour: #0F9795;
+	--code-field-param-var-colour-light-theme: #008080;
+	--code-field-global-function-colour: #9876AA;
+	--code-field-global-function-colour-light-theme: #871094;
+	--code-field-local-function-colour: #FFC66D;
+	--code-field-local-function-colour-light-theme: #00627A;
+	--code-instance-method-colour: #FFC66D;
+	--code-instance-method-colour-light-theme: #00627A;
+	--code-static-method-colour: #FFC66D;
+	--code-static-method-colour-light-theme: #00627A;
+}
+
+/* Categories
+1. Title
+2. Code Field
+3. Code keywords
+*/
+
+/******************************************
+*************** 1 Title *******************
+*******************************************/
+.source-code-title {
+	color: var(--keyword-colour);
+}
+
+/******************************************
+************** 2 Code Field ***************
+*******************************************/
+#code-field {
+	font-size: var(--code-text-size);
+	font-family: Consolas, 'JetBrains Mono', 'Courier New', monospace;
+	line-height: 1.3em;
+	min-width: 40em;
+	width: fit-content;
+	margin: 0;
+	padding: -0.5em -1em -0.5em -0.5em;
+	color: var(--default-text-colour);
+	background-color: var(--code-field-background);
+	border: var(--code-field-border-colour);
+}
+
+/* Generic class for users to add to own code fields */
+.code-field-class {
+	font-size: var(--code-text-size);
+	font-family: Consolas, 'JetBrains Mono', 'Courier New', monospace;
+	line-height: 1.3em;
+	min-width: 40em;
+	width: fit-content;
+	margin: 0;
+	color: var(--default-text-colour);
+	background-color: var(--code-field-background);
+	border: var(--code-field-border-colour);
+}
+
+/* Generic class for code not in sourcecode, without numbering */
+.code-field-clean {
+	font-size: var(--code-text-size);
+	font-family: Consolas, 'JetBrains Mono', 'Courier New', monospace;
+	line-height: 1.3em;
+	min-width: 40em;
+	width: fit-content;
+	margin: 0;
+	padding-left: 2px;
+	color: var(--default-text-colour);
+	background-color: var(--code-field-background);
+	border: var(--code-field-border-colour);
+}
+
+/* Generic class for code not in sourcecode, with numbering */
+.code-field-numbered {
+	font-size: var(--code-text-size);
+	font-family: Consolas, 'JetBrains Mono', 'Courier New', monospace;
+	line-height: 1.3em;
+	min-width: 40em;
+	width: fit-content;
+	margin: 0;
+	color: var(--default-text-colour);
+	background-color: var(--code-field-background);
+	border: var(--code-field-border-colour);
+}
+
+/* Used by SourceCodeHighlighter.py, referenced as f'row-{line_counter % 2}' */
+.row-0 {
+	background-color: var(--code-field-background);
+	padding-right: 1em;
+}
+
+/* Used by SourceCodeHighlighter.py, referenced as f'row-{line_counter % 2}' */
+.row-1 {
+	background-color: var(--code-field-background-alt);
+	padding-right: 1em;
+}
+
+#ol-linenum {
+	margin: 0;
+	padding-left: 5em;
+	color: var(--line-number-colour);
+}
+
+/* Generic class for users to add to own code fields */
+.ol-linenum-class {
+	margin: 0;
+	padding-left: 3.6em;
+}
+
+.li-code-field-line-entry {
+	border-left: var(--code-field-border-colour);
+	padding-left: 5px;
+}
+
+.code-text {
+	color: var(--code-default-text-colour);
+	font-family: Consolas, 'JetBrains Mono', 'Courier New', monospace;
+	margin: 0;
+	padding: 0;
+}
+
+/******************************************
+************* 3 Code keywords *************
+*******************************************/
+.code-string {
+	color: var(--code-field-string-colour);
+}
+
+.code-number {
+	color: var(--code-field-number-colour);
+}
+
+.code-keyword {
+	color: var(--code-field-keyword-colour);
+}
+
+.code-nil {
+	color: var(--code-field-nil-keyword-colour);
+	background-color: var(--code-field-unique-keyword-background);
+}
+
+.code-true {
+	color: var(--code-field-true-keyword-colour);
+	background-color: var(--code-field-unique-keyword-background);
+}
+
+.code-false {
+	color: var(--code-field-false-keyword-colour);
+	background-color: var(--code-field-unique-keyword-background);
+}
+
+.code-self {
+	color: var(--code-field-self-keyword-colour);
+}
+
+.code-token {
+	color: var(--code-field-token-colour);
+}
+
+.code-rainbow-1 {
+	color: var(--code-field-rainbow-colour-1);
+}
+
+.code-rainbow-2 {
+	color: var(--code-field-rainbow-colour-2);
+}
+
+.code-rainbow-3 {
+	color: var(--code-field-rainbow-colour-3);
+}
+
+.code-rainbow-4 {
+	color: var(--code-field-rainbow-colour-4);
+}
+
+.code-rainbow-5 {
+	color: var(--code-field-rainbow-colour-5);
+}
+
+.code-comment {
+	color: var(--code-field-comment-colour);
+}
+
+.code-doc-text {
+	color: var(--code-field-documentation-text-colour);
+}
+
+.code-doc-tag {
+	color: var(--code-field-documentation-tag-colour);
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.code-doc-type {
+	color: var(--code-field-documentation-type-colour);
+	font-style: italic;
+}
+
+.code-doc-param-name {
+	color: var(--code-field-documentation-param-name-colour);
+	font-style: italic;
+}
+
+.code-doc-name {
+	color: var(--code-field-documentation-name-colour);
+	font-style: italic;
+}
+
+.code-doc-keyword {
+	color: var(--code-field-documentation-keyword-colour);
+}
+
+.code-doc-optional {
+	color: var(--code-field-documentation-optional-colour);
+}
+
+.code-built-in {
+	color: var(--code-field-built-in-colour);
+}
+
+.code-metamethods {
+	color: var(--code-field-metamethods-colour);
+}
+
+.code-environment-var {
+	color: var(--code-field-environment-var-colour);
+}
+
+.code-fields {
+	color: var(--code-field-fields-colour);
+}
+
+.code-global-var {
+	color: var(--code-field-global-var-colour);
+}
+
+.code-local-var {
+	color: var(--code-field-local-var-colour);
+}
+
+.code-param-var {
+	color: var(--code-field-param-var-colour);
+}
+
+.code-global-function {
+	color: var(--code-field-global-function-colour);
+}
+
+.code-local-function {
+	color: var(--code-field-local-function-colour);
+}
+
+.code-instance-method {
+	color: var(--code-instance-method-colour);
+}
+
+.code-static-method {
+	color: var(--code-static-method-colour);
+}
