@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: apipulse
+Version: 0.1.0
+Summary: Universal test framework to test REST API
+Home-page: https://github.com/quillcraftsman/apipulse
+Author: quillcraftsman
+Author-email: quill@craftsman.lol
+License: MIT
+Keywords: test,api,framework,rest
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# apipulse
+Universal test framework to test REST API
