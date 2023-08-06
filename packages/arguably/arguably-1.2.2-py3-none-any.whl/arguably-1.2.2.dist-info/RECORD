@@ -1,0 +1,13 @@
+arguably/__init__.py,sha256=0pEgoQFaVmp5vy2zxwuCHhjF5RoXNviRJ8e-9FlRBFQ,2445
+arguably/__main__.py,sha256=NC6rL8rXjpAGgiNFfLTH4QRov_U8BNxmAa9XSHdwCZQ,2291
+arguably/_argparse_extensions.py,sha256=DhHGeT8m7u5OBIBNrX_8f-nxZx5mUXqkAmiCnPc90p8,14402
+arguably/_commands.py,sha256=At4nARFTCqS4eXH6GyPKHcH3HpWSc8ih9MK0Yj0AsSY,16359
+arguably/_context.py,sha256=XfrWT6AmDfQMIVTKOfFSNewIealp9b5OnPMC7Qklnm4,40554
+arguably/_modifiers.py,sha256=-SoycmezIj1QhFdz2DyyTY1tnArDeGDTjVScTeD4DsE,5815
+arguably/_util.py,sha256=o1VEJ-fqsVBbMqkY7yLajYKY9R54vLT-A7l_gvXY_0I,16925
+arguably/arg.py,sha256=oUmiI9arlqT1d-p1xdmZJSTTOy_uqePlUSi-xCI2fwk,6839
+arguably/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arguably-1.2.2.dist-info/LICENSE.txt,sha256=oxx60QWq4zp6640v8Ae2GsYamRWWQAuiB5tTc-xkKnQ,1538
+arguably-1.2.2.dist-info/METADATA,sha256=RnoKrMY4D610PKnDDBv82_ixkCO2-Ge9H5ibR_oNBRA,7604
+arguably-1.2.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+arguably-1.2.2.dist-info/RECORD,,
