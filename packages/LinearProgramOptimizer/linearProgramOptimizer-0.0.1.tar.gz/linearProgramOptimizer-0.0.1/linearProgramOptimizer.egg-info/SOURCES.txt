@@ -1,0 +1,7 @@
+README.md
+setup.py
+linearProgramOptimizer.egg-info/PKG-INFO
+linearProgramOptimizer.egg-info/SOURCES.txt
+linearProgramOptimizer.egg-info/dependency_links.txt
+linearProgramOptimizer.egg-info/requires.txt
+linearProgramOptimizer.egg-info/top_level.txt
