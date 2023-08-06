@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+spherecluster/__init__.py
+spherecluster/legacy.py
+spherecluster/spherical_kmeans.py
+spherecluster/util.py
+spherecluster/von_mises_fisher_mixture.py
+spherecluster2.egg-info/PKG-INFO
+spherecluster2.egg-info/SOURCES.txt
+spherecluster2.egg-info/dependency_links.txt
+spherecluster2.egg-info/requires.txt
+spherecluster2.egg-info/top_level.txt
