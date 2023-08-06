@@ -1,0 +1,11 @@
+encor-1.1.2.dist-info/RECORD,,
+encor-1.1.2.dist-info/top_level.txt,sha256=__us5L8LMt-gXAVkOfiH0pFuqp036HIegxwl9lZm0ZY,5
+encor-1.1.2.dist-info/WHEEL,sha256=VbRnaKApQwLuJFAz2O3ZzHzTqlqVcy2MNPMjMXQaIR0,144
+encor-1.1.2.dist-info/METADATA,sha256=9AI2Tkt3DqJSMYe1nyFs28fphY6PNHYsqB0s7tFNcTE,2205
+encor-1.1.2.dist-info/LICENSE.md,sha256=aFmHq0FG6iMWUJKwuBO4tbYqKMaDNQLiaN6nFeiXn1I,1088
+acor/acor.py,sha256=LsLoQ3ud9MDpOaB-rmZbjEcYpjCBnlrpq5eeCv_PQXA,1288
+acor/acor.h,sha256=fFoFbSB2q_ZGZ_ehbjlWp1AUkk-TrJnhCpmRE7rcFtg,404
+acor/acor.c,sha256=AScjoW6bkU7Eu9bZWJBs9biqBAzp2ZljQBwRml5bZ5A,2860
+acor/_acor.cpython-39-x86_64-linux-gnu.so,sha256=npIAejoye8zLjuufu-1lpUrUNDMvk-x25N4YmgIfi6w,17424
+acor/_acor.c,sha256=JuGZFSrqoucp9z6HSKRtyh3_9CVirzJRt6N1k3pRaWU,6775
+acor/__init__.py,sha256=8yOJPlvALtPKadLeGq4GY0yvEZLL-hsz7L9Eef-giLQ,222
