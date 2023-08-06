@@ -1,0 +1,6 @@
+tree_sitter_apertium/__init__.py,sha256=BLsBASBXP9fEXOu7N8w3INgTmCigHBjUUoCQGtAjENg,2356
+tree_sitter_apertium/langs.so,sha256=LueL9-O99gZO1PwYeFrNl2qt1WJXV5_fF-tPc1ugn2M,813976
+tree_sitter_apertium-0.1.6.dist-info/METADATA,sha256=gnpw5tD_TbHqCm--GuztRCHnQd0eqwyirRMd5XwUGQ8,561
+tree_sitter_apertium-0.1.6.dist-info/WHEEL,sha256=QwjtG__Tr_is1tZdi3L0jvlWC7dBh2fjo2b04csMQFA,225
+tree_sitter_apertium-0.1.6.dist-info/top_level.txt,sha256=4-fcle157_uyffmlSZ2qJXqHql1Y_zWVufOwLGu45ag,21
+tree_sitter_apertium-0.1.6.dist-info/RECORD,,
