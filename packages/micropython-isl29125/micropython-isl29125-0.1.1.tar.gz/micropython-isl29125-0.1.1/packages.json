@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_isl29125/isl29125.py", "github:jposada202020/MicroPython_ISL29125/micropython_isl29125/isl29125.py"],
+    ["micropython_isl29125/i2c_helpers.py", "github:jposada202020/MicroPython_ISL29125/micropython_isl29125/i2c_helpers.py"],
+    ["micropython_isl29125/__init__.py", "github:jposada202020/MicroPython_ISL29125/micropython_isl29125/__init__.py"]
+  ],
+  "version": "0.1"
+}

@@ -1,0 +1,10 @@
+{
+  "urls": [
+    ["micropython_isl29125/examples/isl29125_ADC_resolution.py", "github:jposada202020/MicroPython_ISL29125/examples/isl29125_ADC_resolution.py"],
+    ["micropython_isl29125/examples/isl29125_operation_mode.py", "github:jposada202020/MicroPython_ISL29125/examples/isl29125_operation_mode.py"],
+    ["micropython_isl29125/examples/isl29125_threshold.py", "github:jposada202020/MicroPython_ISL29125/examples/isl29125_threshold.py"],
+    ["micropython_isl29125/examples/isl29125_rgb_sensing_range.py", "github:jposada202020/MicroPython_ISL29125/examples/isl29125_rgb_sensing_range.py"],
+    ["micropython_isl29125/examples/isl29125_simpletest.py", "github:jposada202020/MicroPython_ISL29125/examples/isl29125_simpletest.py"]
+  ],
+  "version": "0.1"
+}
