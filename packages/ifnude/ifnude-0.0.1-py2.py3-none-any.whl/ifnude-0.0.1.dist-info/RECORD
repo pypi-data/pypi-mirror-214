@@ -1,0 +1,9 @@
+ifnude/__init__.py,sha256=bkKVqymRIW1anX84ysqs-2L9rO8pzQQnfJkTMBglp48,29
+ifnude/detector.py,sha256=TN03sU0o0iedfsVNqELuvTDEweE7YzkQSUgnnTYwX1E,3375
+ifnude/detector_utils.py,sha256=-rQLcGtE3LTaYaaQKqumN_vp1JMOyjOoyMSAesBnJ2Y,1617
+ifnude/image_utils.py,sha256=D9K5RVjOf76wXuACOpMVEUr0f2JQd74H6Z6Nl9tbwxQ,5265
+ifnude-0.0.1.dist-info/LICENSE.md,sha256=P_ckDMcG9Kratp68VbFc__86rJpbuW9QDfBbAcR7CSA,1067
+ifnude-0.0.1.dist-info/METADATA,sha256=mrsKjOwHzW5myycIORUbNmgMvlZEQv7ysD5SqQf9upQ,1696
+ifnude-0.0.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+ifnude-0.0.1.dist-info/top_level.txt,sha256=fvhzTEdgu5N214-h4mgFAP_aLsrKJkWzQIjfg5zxBLs,7
+ifnude-0.0.1.dist-info/RECORD,,
