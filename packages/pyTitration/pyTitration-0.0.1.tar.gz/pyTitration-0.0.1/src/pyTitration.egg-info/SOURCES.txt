@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pyTitration/__init__.py
+src/pyTitration/gui_calculator.py
+src/pyTitration/k_values.py
+src/pyTitration/titration.py
+src/pyTitration.egg-info/PKG-INFO
+src/pyTitration.egg-info/SOURCES.txt
+src/pyTitration.egg-info/dependency_links.txt
+src/pyTitration.egg-info/requires.txt
+src/pyTitration.egg-info/top_level.txt
+tests/test_class.py
