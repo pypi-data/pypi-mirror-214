@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+Java_Dependency_Manager.egg-info/PKG-INFO
+Java_Dependency_Manager.egg-info/SOURCES.txt
+Java_Dependency_Manager.egg-info/dependency_links.txt
+Java_Dependency_Manager.egg-info/entry_points.txt
+Java_Dependency_Manager.egg-info/requires.txt
+Java_Dependency_Manager.egg-info/top_level.txt
+javadepsmanager/__init__.py
+javadepsmanager/command_line.py
