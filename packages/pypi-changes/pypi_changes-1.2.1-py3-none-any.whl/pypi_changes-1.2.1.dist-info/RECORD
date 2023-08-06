@@ -1,0 +1,15 @@
+pypi_changes/__init__.py,sha256=W9kOeA-MZ-XJEvWXukxxBIgPzyheK09F0R1g7DxUCSw,930
+pypi_changes/__main__.py,sha256=-aEW9ePAK7Ol6EeKOXYn4dP0qRE7dYUVAtKTAIPu5dY,142
+pypi_changes/_cli.py,sha256=dQMxzMrbNXyF-yomgRn_KaeuNOyjPNIX0evctoFAiXg,2866
+pypi_changes/_distributions.py,sha256=fTg4bOM4Um9v4NdOBUQKDcv4EIjPGCPz4DloH1S0s_8,1922
+pypi_changes/_info.py,sha256=TLXe6wc3om8PM-NKn9eD3EibwbytddhoddXnjQ7-Qmc,5662
+pypi_changes/_pkg.py,sha256=Z-YpY_e2XVIl8za-EzAYzg0fTontffpUjAZ-lq93RgY,2123
+pypi_changes/_version.py,sha256=osFGs6qmlEth0Xu2MHIHoChfXcj8NUW4hLWDEu-1_K4,160
+pypi_changes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_changes/_print/__init__.py,sha256=UV5Ny_c28qjWAmrQ7Gi-CR5kLIEgZ4LwjP01GKjkYZU,910
+pypi_changes/_print/json.py,sha256=-7TDFsyCDcIw71d_pF3ZMGBa3ZE2y9YwBNaUOxBkwuI,1549
+pypi_changes/_print/tree.py,sha256=T5zyMULsreTcTc6aSjDScEZOmDL91gEEurx_LqsbRYY,1697
+pypi_changes-1.2.1.dist-info/METADATA,sha256=ruGaQW3I6Cx4lj4brG8ET_4e_kw1uDSkqqRV1lRYHYg,3376
+pypi_changes-1.2.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+pypi_changes-1.2.1.dist-info/licenses/LICENSE,sha256=kOJeH68qSq6o2V7o5_VziwUqGswMnFgGgQH5Mahr1Yg,1023
+pypi_changes-1.2.1.dist-info/RECORD,,
