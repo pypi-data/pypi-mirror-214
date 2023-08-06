@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+JulianPy/__init__.py
+JulianPy/julian.py
+JulianPy.egg-info/PKG-INFO
+JulianPy.egg-info/SOURCES.txt
+JulianPy.egg-info/dependency_links.txt
+JulianPy.egg-info/top_level.txt
