@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+kodexam/__init__.py
+kodexam.egg-info/PKG-INFO
+kodexam.egg-info/SOURCES.txt
+kodexam.egg-info/dependency_links.txt
+kodexam.egg-info/top_level.txt
