@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+redis
+
+[dev]
+bumpver
+pre-commit
+pytest
