@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ssbdplus
+Version: 2.1.0
+Summary: Models pertaining to the paper, Introducing SSBD+ Dataset with an Attentive Convolutional Pipeline for detecting Self-Stimulatory Behaviours in Children using raw videos
+Home-page: https://github.com/sarl-iiitb/ssbd-pipeline
+Author: SARL, IIITB
+Author-email: mr@iiitb.ac.in
+Project-URL: Bug Tracker, https://github.com/sarl-iiitb/ssbd-pipeline/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SSBD+
+Code and material relevant to the paper, "Introducing SSBD+ Dataset with a Convolutional Pipeline for detecting Self-Stimulatory Behaviours in Children using raw videos"  
+
+
+![Pipelined Architecture](./docs/images/SSBDPipeline.png)
+
+
+
+--- 
+All relevant links can be found here:
+###  Installation and Usage: [INSTALL.md](./docs/INSTALL.md)
+
+`pip install --upgrade ssbdplus`  
+
+###  Models and their description: [MODELS.md](./docs/MODELS.md) 
+
+```py
+from ssbdplus.pipeline import SSBDPipeline
+
+model = SSBDPipeline()
+```
