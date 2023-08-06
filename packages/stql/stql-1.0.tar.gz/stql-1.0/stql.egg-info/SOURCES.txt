@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+stql/__init__.py
+stql.egg-info/PKG-INFO
+stql.egg-info/SOURCES.txt
+stql.egg-info/dependency_links.txt
+stql.egg-info/not-zip-safe
+stql.egg-info/top_level.txt
