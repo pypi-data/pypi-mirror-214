@@ -1,0 +1,13 @@
+loger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loger/config_client_log.py,sha256=VcS5sRpNt6v2h3MPz8V-tC2BY-WE7qWmiB2kHv2JVTQ,998
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/client.py,sha256=laDiWhqSCo4rh-0VfhxnqUBycTCFnZAAT-e5MHqu0m4,30253
+src/client_ui.py,sha256=aD5DsFmWM0HvA8pfnuMjIt96FfN7kHP1eOtTL1yCZpk,41198
+src/launcher.py,sha256=NHF5RC_TASkz9eDHk8aZvLQwD_g-_ATDHxHLvlis5ig,387
+src/metaclasses.py,sha256=fBoYUM51ffHDW0qLdEYEWobHheyFvFu_7jO2W8_mLqk,1268
+src/utils_client.py,sha256=qNYyos49DQqKMhzVrv7pb_5ZVpEbtD2ceMOuC5s5Z9w,7725
+src/variables_client.py,sha256=6O1UBomKvjD85sn5XSHICx3Icyejv7Z_5Hs7U3OAXUM,158
+shark_cli-1.0.1.dist-info/METADATA,sha256=tzvy1AEYbRzK-B8TS6r6Q2CxLFPnez-zLOrzikceIVU,230
+shark_cli-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+shark_cli-1.0.1.dist-info/top_level.txt,sha256=XGDBRUj4ET-iIsZOf2DzvaRRpXufFa4Cc139ylx_N8U,10
+shark_cli-1.0.1.dist-info/RECORD,,
