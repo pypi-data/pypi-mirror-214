@@ -1,0 +1,10 @@
+dup_fmt/__about__.py,sha256=KNjGoDurrf911saHMWWyeLoX8rnXpI7I1ZFoOR_zSng,92
+dup_fmt/__init__.py,sha256=cJdyAg4loS1DX8CVZ1PPwNHMNCBpq4ZXjJKVZwmbKH4,528
+dup_fmt/cli.py,sha256=IqEhOkiB-8ir0VZhJ-9Mt7RjH7ss-QibtuHxx1__Ifk,45
+dup_fmt/exceptions.py,sha256=HkqeE72u4gFoXQXeN-LsduHPsQ7HUWoApDVf9XvHnrc,2198
+dup_fmt/formatter.py,sha256=u7Dca2FYqMPcD48PsjsS1pJajNZlJsF8zlKX1FJdHpo,76983
+dup_fmt/utils.py,sha256=NGGl9VklPKXOtl_6cKeWAIQQgn6zHyv_2QzBZhDRc9M,749
+dup_fmt-0.0.3.post1.dist-info/METADATA,sha256=jg1onxedf8KOZz0CDz5YIkSZRC2xqS81-ansaGqo6YI,10935
+dup_fmt-0.0.3.post1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+dup_fmt-0.0.3.post1.dist-info/licenses/LICENSE,sha256=ya1kgjiTc2fqGDilFpcWcm_ImOAiZhRfctlAX-DsyW4,1073
+dup_fmt-0.0.3.post1.dist-info/RECORD,,
