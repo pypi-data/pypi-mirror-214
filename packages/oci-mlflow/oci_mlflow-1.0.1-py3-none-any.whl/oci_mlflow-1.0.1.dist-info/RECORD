@@ -1,0 +1,17 @@
+oci_mlflow/__init__.py,sha256=fObIqoSRHDbkSEBxLxH8j52vTOR5B4qzGJXpwhw2KNo,938
+oci_mlflow/deployment.py,sha256=XKxQU5hzefmMsKHL7D90sM0FMB-qQW3m27bIlHyb59o,21498
+oci_mlflow/oci_object_storage.py,sha256=434EhlyS0MJ1AnfbzuNbhqUCIJI90mImcvqz8fZ6OiA,7310
+oci_mlflow/project.py,sha256=feqiOBTyCP6HQBenzjfwT90u_wiBNyw3bUniuievkHo,26088
+oci_mlflow/telemetry_logging.py,sha256=NWufc4Y7sFvSG9npPXRVudxO6gB1k5azCCZ9Yi_jbME,4448
+oci_mlflow/utils.py,sha256=Yc0mqf0-j_5VZuEWFKAPqlde9gSJLetODqCJX1mbtIQ,9236
+oci_mlflow/version.json,sha256=QCR1S9jw5FNM8TYfxn-1dpxB4Hb1fGEoKrKmnKauiO0,25
+oci_mlflow/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oci_mlflow/templates/project_description.jinja2,sha256=WPUhBUA8xs0AFpxs5aSCK7Rvd1YPIyjegxp_W1rMlxk,1200
+oci_mlflow/templates/runtime.yaml.jinja2,sha256=cBhdxsurzIw2kEZ0-HNpepytsQdGRugfyi50KUSvVdE,163
+oci_mlflow/templates/score.py.jinja2,sha256=-yynJDrIYTJD4-zCYaxRoQ0oPdVKhB1b1wjDzvoADCk,422
+oci_mlflow-1.0.1.dist-info/LICENSE.txt,sha256=0ggOnaxgPaQEBstfywBdLBJ-kO9cJ4shpvZplaXiSDo,1860
+oci_mlflow-1.0.1.dist-info/METADATA,sha256=bq8edsqL4yVjQQceT5AahQM3_k9rpbZKRAH2Xb6SNVA,4228
+oci_mlflow-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+oci_mlflow-1.0.1.dist-info/entry_points.txt,sha256=o3F_Wjg0uvEgMbYAAKC8dEmQJLd750Y1u14raQN77Uk,243
+oci_mlflow-1.0.1.dist-info/top_level.txt,sha256=_4zSAoTy-jMuG5boO5gwRB9cI9WuD5x4ReALJaKH9Q0,11
+oci_mlflow-1.0.1.dist-info/RECORD,,
