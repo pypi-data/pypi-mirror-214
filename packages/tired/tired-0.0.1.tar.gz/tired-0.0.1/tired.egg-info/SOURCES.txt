@@ -1,0 +1,9 @@
+README.md
+setup.py
+tired/command.py
+tired/shlex.py
+tired.egg-info/PKG-INFO
+tired.egg-info/SOURCES.txt
+tired.egg-info/dependency_links.txt
+tired.egg-info/requires.txt
+tired.egg-info/top_level.txt
