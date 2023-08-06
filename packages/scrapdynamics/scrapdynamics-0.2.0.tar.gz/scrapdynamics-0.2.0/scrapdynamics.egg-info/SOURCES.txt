@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+scrapdynamics/__init__.py
+scrapdynamics/__main__.py
+scrapdynamics/crawler.py
+scrapdynamics/progressbar.py
+scrapdynamics/settings.py
+scrapdynamics/url.py
+scrapdynamics.egg-info/PKG-INFO
+scrapdynamics.egg-info/SOURCES.txt
+scrapdynamics.egg-info/dependency_links.txt
+scrapdynamics.egg-info/requires.txt
+scrapdynamics.egg-info/top_level.txt
