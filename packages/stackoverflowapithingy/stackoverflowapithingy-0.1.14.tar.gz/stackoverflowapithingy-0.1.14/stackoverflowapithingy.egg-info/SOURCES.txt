@@ -1,0 +1,8 @@
+setup.py
+stackoverflowapithingy/__init__.py
+stackoverflowapithingy/stackoverflow.py
+stackoverflowapithingy.egg-info/PKG-INFO
+stackoverflowapithingy.egg-info/SOURCES.txt
+stackoverflowapithingy.egg-info/dependency_links.txt
+stackoverflowapithingy.egg-info/requires.txt
+stackoverflowapithingy.egg-info/top_level.txt
