@@ -1,0 +1,16 @@
+hcr/__main__.py,sha256=7qkkhpB3LewSCxjABL__03hCqJgOHVT1l8hLTjORPWA,66
+hcr/main/__init__.py,sha256=GVGGWGFsynRbuZWGmNNKc1_3XOZ3VgMOfRK3kmfLGX8,3504
+hcr/main/constants.py,sha256=qPtf-BdKsIxUc8KynNpbrac8QatrhG9QFlZrG-O48g4,248
+hcr/main/dataset.py,sha256=ucmEOjuFvo_-K37mS6Khop6Yucbic6QsAbFTSYmJzEg,10330
+hcr/main/dense.py,sha256=3pfJ4bDaKZQe9knzFAjHa2bSAJ9iznnZ_dTyG-3q95Q,7927
+hcr/main/diagram.py,sha256=2nMfbgKLx57-FiVTDf7s-N4Qbkh7A73nyVZ1SPrSWIs,12874
+hcr/main/diagram_optimizer.py,sha256=AlNqrkyTN-8uEh1NK5S_64twim7a3ww4lL1pkSzXqck,252
+hcr/main/draw_pad.py,sha256=ZPWLvscy8JgFtRIZZFK4bD0rFjTpg2gLgMINlNNcCB0,3950
+hcr/main/register_buttons.py,sha256=ZKUoyq58-HImyY3YLMWU08gCTnpdmcOC_UZMmvgmN2I,7543
+hcr/main/runtime.py,sha256=FtlCahrdRiZh8-TsiWqYpZ93MMbmw4hGPJbBlsOY4E0,56
+hcr-1.2.0.dev1.dist-info/LICENSE,sha256=LK5mntc96e8G7HoMqOOapBXaDlDLFOcrE8GV749nybE,1097
+hcr-1.2.0.dev1.dist-info/METADATA,sha256=YxgBSfq86bo9xxG6b0c5Q8W3sQAbXPnOGic486yNtZE,2650
+hcr-1.2.0.dev1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hcr-1.2.0.dev1.dist-info/entry_points.txt,sha256=iBFYwRzrvU-S1gKo33fkuk46APAlLL4wDALQiCLpFyM,42
+hcr-1.2.0.dev1.dist-info/top_level.txt,sha256=CaqMWBAsEdIBXkms48mu9UbyjDFiocK5KABdmddG0_E,4
+hcr-1.2.0.dev1.dist-info/RECORD,,

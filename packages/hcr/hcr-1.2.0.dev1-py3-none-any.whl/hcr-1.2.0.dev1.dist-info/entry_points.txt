@@ -1,0 +1,2 @@
+[console_scripts]
+hcr = hcr.__main__:main

@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: hcr
+Version: 1.2.0.dev1
+Summary: Visualizing the beauty of neural networks
+Home-page: https://github.com/nvfp/Handwritten-Character-Recognition
+Author: Nicholas Valentinus
+Author-email: nvfastplease@gmail.com
+License: MIT
+Project-URL: documentation, https://github.com/nvfp/Handwritten-Character-Recognition
+Project-URL: report bugs, https://github.com/nvfp/Handwritten-Character-Recognition/issues
+Project-URL: repo, https://github.com/nvfp/Handwritten-Character-Recognition
+Project-URL: changelog, https://nvfp.github.io/mykit/Handwritten-Character-Recognition#changelog
+Keywords: python,machine learning,neural networks
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mykit (==2.0.2)
+Requires-Dist: numba (==0.55.2)
+Requires-Dist: numpy (==1.22.4)
+
+# Handwritten-Character-Recognition
+
+Unstable, dev version.
+
+
+## Installation
+
+
+
+## FAQ
+
+
+
+## Limitations
+
+- can only be used in fullscreen mode
+- the UI layout is specifically designed for 64x64 inputs and has 36 outputs
+- the UI layout is customized for the 1366x768 display size
+- The hidden layers are hardcoded with three layers (50, 40, 35)
+
+
+## Troubleshoot
+
+- To report bugs, please open an issue/pull request, or you can reach me [here](https://nvfp.github.io/contact).
+
+
+## Changelog
+
+- 1.2.0 (June 13, 2023):
+
+    **Motivation**: To provide a cleaner UI and restructure the codebase.
+
+    - Removed feature: uptime display
+    - Removed feature: metadata display (the one in the TL corner)
+    - Removed feature: datasets stats display (the one in the TR corner)
+    - Removed feature: static labels ("64x64", "size: [...]")
+    - File name changed: `main/misc.py` -> `main/constants.py`
+    - Dependencies updates: `mykit==1.0.0` -> `mykit==2.0.2`
+    - Added 'settings' and 'CLI' feature
+- 1.1.0 (June 11, 2023):
+    - removed `carbon_plug`, using [mykit](https://github.com/nvfp/mykit) instead
+- v1.0.1 (May 10, 2023):
+    - BUG FIXED: Renamed `carbon` to `carbon_plug` to prevent conflicts with the original `carbon` module (if installed).
+
+
+## License
+
+This project is licensed under the MIT license.
