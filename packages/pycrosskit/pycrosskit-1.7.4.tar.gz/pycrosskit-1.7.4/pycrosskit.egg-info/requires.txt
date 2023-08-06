@@ -1,0 +1,9 @@
+
+[:sys_platform == "win32"]
+pywin32>=300
+
+[dev]
+black<24,>=22
+flake8<6.1
+pre-commit<3.3
+pytest<7.4
