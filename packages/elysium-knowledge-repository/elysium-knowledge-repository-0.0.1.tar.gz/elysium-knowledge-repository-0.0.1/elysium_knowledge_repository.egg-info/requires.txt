@@ -1,0 +1,7 @@
+torch>=1.6
+oceandb
+youtube_dl
+pytube
+tenacity
+torchvision
+pandasPIL

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Elysium/__init__.py
+Elysium/elysium.py
+elysium_knowledge_repository.egg-info/PKG-INFO
+elysium_knowledge_repository.egg-info/SOURCES.txt
+elysium_knowledge_repository.egg-info/dependency_links.txt
+elysium_knowledge_repository.egg-info/requires.txt
+elysium_knowledge_repository.egg-info/top_level.txt
