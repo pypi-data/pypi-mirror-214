@@ -1,0 +1,11 @@
+h3r/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h3r/path_like.py,sha256=uPpdpxkB6XPCRIeXRmTUv9aNfEpIO4zyl-7CzaZPdNI,72
+h3r/h3result.py,sha256=SdqzyzF-J8zNEQUnMzjm9V7E42CYtBd6oGkq8TltJ7c,1470
+h3r/interface.h,sha256=IQQTsLYTpFussE7FM_v8sBZ4pvc6bxXhCmpFyektoL0,820
+h3r/error.py,sha256=VvRfa-wSLTX-0yZqxfCYZ0HFOQrngwxaBy6acJNVfo8,237
+h3r/cffi.cpython-39-x86_64-linux-gnu.so,sha256=B5Jg4rNkqW1HJ_JUfJSbc2NC2TPQwllAo_i7_5v2vFU,93608
+h3r/lib/liblip.so.0,sha256=4h28XWzXk9lO5kNVs8QkZcL2pjt8nfjPxmOWrnnqUc8,89344
+h3r/lib/libh3r.so.0,sha256=eos3v2sN6_p1tMtPSADL9MhGhPmOiNZDUBD3vcpVPOs,40968
+h3r-0.1.0.dist-info/METADATA,sha256=fcFFoew5oYbfNZXn4nMupZcdWLIERkiW2vpdTpKovoA,519
+h3r-0.1.0.dist-info/WHEEL,sha256=CX68jhJo24Hy4CqGHpSls6GhNFHciGJLWpjm7AQCTSE,107
+h3r-0.1.0.dist-info/RECORD,,
