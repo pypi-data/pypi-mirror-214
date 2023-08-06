@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanochain"
+version = "0.2"
+description = "NanoChain is a Python library designed to provide a suite of useful tools for text processing, vector indexing, and utilizing OpenAI's GPT API to perform various tasks. This is a minimalistic implementation of LangChain because it's too complicated and difficult to customize."
+
+[project.urls]
+repository = "https://github.com/Troyanovsky/nano_chain"
+
+[options]
+install_requires = [
+    "openai",
+    "demjson3",
+    "tiktoken",
+    "chromadb",
+    "PyPDF2",
+]
