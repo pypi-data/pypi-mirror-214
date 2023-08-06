@@ -1,0 +1,12 @@
+include *.rst
+
+recursive-include docs *
+recursive-include collective *
+
+global-exclude *.pyc
+
+exclude  constraints-5.2.x.txt
+exclude  constraints.txt
+exclude  requirements-6.0.x.txt
+exclude  requirements.txt
+exclude  tox.ini
