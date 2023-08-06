@@ -1,0 +1,8 @@
+databaseRestoreIntegrity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databaseRestoreIntegrity/mysql.py,sha256=gjlCHqrAlRo6VfldjMzueFGonE-pTW2TEjPNVEe64aE,2970
+databaseRestoreIntegrity/postgres.py,sha256=0E8bjGf18JEotBpTfWS42wTKOqISStsvWA-3Ty4FsLI,2872
+databaseRestoreIntegrity-1.0.8.dist-info/LICENSE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+databaseRestoreIntegrity-1.0.8.dist-info/METADATA,sha256=rtSnVpBIXgix0crL5P7l-OLJrFCtNhtLSUY4H2NouxY,3727
+databaseRestoreIntegrity-1.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+databaseRestoreIntegrity-1.0.8.dist-info/top_level.txt,sha256=_coCfE_-An_c7-Q7JtcqmVFXfln1Sb4IRs9NQJtqzfg,25
+databaseRestoreIntegrity-1.0.8.dist-info/RECORD,,
