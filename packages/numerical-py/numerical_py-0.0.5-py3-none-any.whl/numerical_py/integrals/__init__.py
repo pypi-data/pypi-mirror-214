@@ -1,0 +1,1 @@
+from trapezoid import trapezoidal_rule
