@@ -1,0 +1,13 @@
+aioworkers_aiohttp/__init__.py,sha256=zHcW-OdQbbBkphl6l6beb3-TzIB19CHvXdhe1TATwV4,863
+aioworkers_aiohttp/abc.py,sha256=ZEJ4MKkVHddLQ7xZFelSQREyTC357UExi-PbW4mR72o,514
+aioworkers_aiohttp/app.py,sha256=CBpkqF_tQ-KM_LpTwDs9F7TkCtg0GqvCWxKsV4V9Yrg,6343
+aioworkers_aiohttp/plugin.ini,sha256=RJlOW86Du139Jq5UNp1L1hJ75qViw_AHUnsItwRFawg,209
+aioworkers_aiohttp/router.py,sha256=H5DxkKVhRQ-hzfNJXJXhFhfEJZl9lfQVuVqYeKpgHKE,662
+aioworkers_aiohttp/server.py,sha256=jFXIhxUnyQ7b0_keyERfhPCwr61ivfrHV_CjcGxcofE,1749
+aioworkers_aiohttp/storage.py,sha256=A__feyWZRxtXoku_l6lrJ1DVmMyFe8RZTcXpdF_saTI,6014
+aioworkers_aiohttp/supervisor.py,sha256=qLnCBtU86XA2F6vu9o0OhU5tZfGnZCyPK1eHzk0BhcM,1308
+aioworkers_aiohttp-0.8.0a1.dist-info/METADATA,sha256=PLYaIayHk3NWCxmUzH9KGTxmIk6iIGBzONl0c_ZBB3I,4929
+aioworkers_aiohttp-0.8.0a1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+aioworkers_aiohttp-0.8.0a1.dist-info/entry_points.txt,sha256=yJV1ix0Zc_hZAI0-24bk69a26c5HfDV330LzXmRSiG8,49
+aioworkers_aiohttp-0.8.0a1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aioworkers_aiohttp-0.8.0a1.dist-info/RECORD,,
