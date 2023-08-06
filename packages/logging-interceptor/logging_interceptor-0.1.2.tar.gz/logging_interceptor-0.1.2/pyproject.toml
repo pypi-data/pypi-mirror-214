@@ -1,0 +1,27 @@
+[tool.poetry]
+authors = [
+  "Matthew D. Scholefield <matthew331199@gmail.com>",
+  "Niko Ehrenfeuchter <nikolaus.ehrenfeuchter@unibas.ch>",
+]
+description = "Intercept Python's standard logging and re-route the messages."
+keywords = ["logging", "loguru"]
+name = "logging-interceptor"
+readme = "README.md"
+repository = "https://github.com/imcf/logging-interceptor"
+version = "0.1.2"
+
+[tool.poetry.dependencies]
+loguru = "^0.7.0"
+python = "^3.7.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pdoc = "^13.1.1"
+pylint = "^2.17.4"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[build-system]
+build-backend = "poetry_dynamic_versioning.backend"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
