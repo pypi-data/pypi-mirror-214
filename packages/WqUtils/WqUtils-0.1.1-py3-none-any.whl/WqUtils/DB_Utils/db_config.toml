@@ -1,0 +1,12 @@
+[es_database]
+hosts = ['es-cn-7pp2pap15000c7gqb.public.elasticsearch.aliyuncs.com']
+user = 'elastic'
+password = 'Colourdata110!'
+port = 9200
+
+[sqlserver_database]
+HOST = '123.57.241.126'
+PORT = 1433
+USERNAME = 'wanqiang'
+PASSWORD = 'wq2022'
+DB = 'YiliPOC'
