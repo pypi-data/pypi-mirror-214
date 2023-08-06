@@ -1,0 +1,11 @@
+LICENSE.txt,sha256=m2oP5VKZXKfbH5Kbph4RP63kJMHvB3pP_O1gjpuWtTA,1073
+README.md,sha256=hGoiY2Bpsv7C3jHxkC-aJl9eY65-zLo9PRwPHNXjs60,3433
+aws_parquet/__init__.py,sha256=EoYFMdkBhVXp-QscLSZYsYaysRScygjs_V6wG1NJkPw,343
+aws_parquet/_types.py,sha256=iQjnwq0jLqDwsvpyf2D04LNRVXfEA7rPR2xUFqbqCXg,291
+aws_parquet/dataset.py,sha256=bXpi3k1LC3rK62k_rJzq7rGQdA-obTacZUn1ddbxB3I,15971
+aws_parquet/interface.py,sha256=hM49KvJ6S76k9fRVBaS4pPtaGENDTAOqJb5rAErooag,2474
+aws_parquet/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_parquet-0.5.0.dist-info/LICENSE.txt,sha256=m2oP5VKZXKfbH5Kbph4RP63kJMHvB3pP_O1gjpuWtTA,1073
+aws_parquet-0.5.0.dist-info/METADATA,sha256=TjsB-y1TwNcjbh_M0llVpdkLJAyao_6wbtD54J6vH0U,4409
+aws_parquet-0.5.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+aws_parquet-0.5.0.dist-info/RECORD,,
