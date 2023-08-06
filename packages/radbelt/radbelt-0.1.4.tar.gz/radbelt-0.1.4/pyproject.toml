@@ -1,0 +1,43 @@
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = ["setuptools>=61",
+            "setuptools_scm[toml]>=6.2",
+            "wheel",
+            # see https://github.com/scipy/oldest-supported-numpy/issues/62
+            "numpy==1.19.0; python_version<='3.8' and platform_system=='Windows' and platform_python_implementation != 'PyPy'",
+            "oldest-supported-numpy; python_version>'3.8' or platform_system!='Windows' or platform_python_implementation == 'PyPy'"]
+
+[project]
+name = "radbelt"
+description = "Astropy-friendly wrapper for the AE-8/AP-8 Van Allen belt model"
+readme = "README.md"
+authors = [ { name = "Leo Singer", email = "leo.p.singer@nasa.gov" } ]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Astronomy"
+]
+license = { text = "NOSA" }
+requires-python = ">=3.7"
+dependencies = ["astropy", "numpy"]
+dynamic = [ "version" ]
+
+[project.urls]
+source = "https://github.com/nasa/radbelt"
+
+[tool.setuptools.packages.find]
+include = ["radbelt.*"]
+
+[tool.setuptools.package-data]
+"radbelt.extern.igrf" = ["*.dat"]
+"radbelt.extern.aep8" = ["*.asc"]
+
+[tool.setuptools_scm]
+write_to = "radbelt/_version.py"
