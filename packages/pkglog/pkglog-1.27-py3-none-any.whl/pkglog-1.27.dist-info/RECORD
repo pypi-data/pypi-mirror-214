@@ -1,0 +1,12 @@
+pkglog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkglog/__main__.py,sha256=cq4br15t9_4MK0RMU1GAKmVpWPN4B_qoYLxu9IFIsuk,93
+pkglog/pkglog.py,sha256=BcP9mFc1CTVU-m9X2xvNFjXunje8fjTvJuSyagDlXWg,11512
+pkglog/parsers/apt.py,sha256=OOOWhuUz6F-FuY4Wt9v2eJ2ruBmtwHOsGpB1oTGJtUM,1103
+pkglog/parsers/dnf.py,sha256=cFhxdxVgHylKpuccH3lWrlSGwhs1wbixvYmqfAlvHa0,1298
+pkglog/parsers/pacman.py,sha256=b1SEU7zv0wXpbTZyhzcYZKlL-d6-cox00hGGE2x5yaA,807
+pkglog/parsers/zypper.py,sha256=HokiaWW3DxrOhiSJZ0ELAiVVU7v_VWnznikYSCyhuL8,1407
+pkglog-1.27.dist-info/METADATA,sha256=fNdwTEu4RzlijTpHPaQDj5TP12j9Lqv31jPHosByShE,8088
+pkglog-1.27.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pkglog-1.27.dist-info/entry_points.txt,sha256=aP5_qCqg4Feh8fU5rFy55cYoo8SJKRQy7v2rd3P510w,46
+pkglog-1.27.dist-info/top_level.txt,sha256=vEwedsKFNd9KDSKLqP1nLLA17F2608n7uqHAUxYKD3I,7
+pkglog-1.27.dist-info/RECORD,,
