@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/Oasys.REPORTER.egg-info/PKG-INFO
+src/Oasys.REPORTER.egg-info/SOURCES.txt
+src/Oasys.REPORTER.egg-info/dependency_links.txt
+src/Oasys.REPORTER.egg-info/requires.txt
+src/Oasys.REPORTER.egg-info/top_level.txt
+src/Oasys/REPORTER/__init__.py
+src/Oasys/REPORTER/placeholder.py
