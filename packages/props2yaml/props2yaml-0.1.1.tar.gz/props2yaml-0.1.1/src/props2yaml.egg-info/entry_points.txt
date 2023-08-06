@@ -1,0 +1,2 @@
+[console_scripts]
+p2y = props2yaml:main

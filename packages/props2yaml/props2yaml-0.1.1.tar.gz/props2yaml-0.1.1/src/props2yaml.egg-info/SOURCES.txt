@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/release.yml
+.github/workflows/staging.yml
+src/props2yaml/__init__.py
+src/props2yaml/__version__.py
+src/props2yaml/main.py
+src/props2yaml.egg-info/PKG-INFO
+src/props2yaml.egg-info/SOURCES.txt
+src/props2yaml.egg-info/dependency_links.txt
+src/props2yaml.egg-info/entry_points.txt
+src/props2yaml.egg-info/requires.txt
+src/props2yaml.egg-info/top_level.txt
