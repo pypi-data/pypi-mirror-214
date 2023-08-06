@@ -1,0 +1,8 @@
+rew/Makefile,sha256=alrUTHuO33Qbh5Gt_-ENrJ_VICoaQe4qDnXaZVZ4bKU,129
+rew/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rew/ak.py,sha256=r2EZB-se8rrz85STAZ1Lpxq3FoGhN6CtJw3lAWxeHPg,4583
+rew/notes,sha256=hI4cvAMGZdP2eNaS9-IuoWu0zkTY7U0ydK2pTdca-TY,288
+rew/tests/test_component.py,sha256=gz-jpUh5yBAdBVJltCS3z6DuldCynDMBffe9iHKZw4o,6875
+rew-0.0.1.dist-info/METADATA,sha256=N0AVIw-kfsfKdJhLLMprqYOlTeElvL8lKMNf_lo28k4,730
+rew-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+rew-0.0.1.dist-info/RECORD,,
