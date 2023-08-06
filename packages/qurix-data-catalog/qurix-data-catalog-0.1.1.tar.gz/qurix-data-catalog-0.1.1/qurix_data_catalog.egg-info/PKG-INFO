@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: qurix-data-catalog
+Version: 0.1.1
+Summary: qurix Data Catalog Client for Python
+Home-page: https://github.com/qurixtechnology/python-package-template
+Author: qurix Technology
+Keywords: python
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENCE
+
+# Python package template
+
+Template for Python packages for qurix Technology.
+
+## Structure
+
+A normal Python package will start with the namespace `qurix` as in this sample package. A sample structure is as follows:
+
+```text
+.
+├── LICENCE
+├── Makefile
+├── README.md
+├── qurix
+│   └── <domain>
+│       └── <module-organization-level>
+│           ├── __init__.py
+│           ├── __version__.py
+│           └── <module>
+├── requirements.txt
+├── setup.py
+└── tests
+    ├── __init__.py
+    └── test_client.py
+```
+
+## Versioning
+
+According to [semantic versioning](https://semver.org/lang/en).
+
+## Deployment
+
+Using Github Actions. See `.github/worfklows/`
