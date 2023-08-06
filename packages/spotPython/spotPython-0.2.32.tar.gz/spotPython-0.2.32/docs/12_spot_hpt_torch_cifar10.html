@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Hyperparameter-tuning Cookbook - 12&nbsp; Hyperparameter Tuning: PyTorch wth cifar10 Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./14_spot_ray_hpt_torch_cifar10.html" rel="next">
+<link href="./11_spot_hpt_torch_fashion_mnist.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-2.20.0.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+
+
+
+<meta name="twitter:title" content="Hyperparameter-tuning Cookbook - 12&nbsp; Hyperparameter Tuning: PyTorch wth cifar10 Data">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="12_spot_hpt_torch_cifar10_files/figure-html/cell-22-output-1.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./12_spot_hpt_torch_cifar10.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: PyTorch wth cifar10 Data</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Hyperparameter-tuning Cookbook</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sequential-parameter-optimization/spotPython" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./Hyperparameter-tuning-Cookbook.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_spot_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction: Hyperparameter Tuning</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_spot_multidim.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Multi-dimensional Functions</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_spot_anisotropic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Isotropic and Anisotropic Kriging</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_spot_sklearn_surrogate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Using <code>sklearn</code> Surrogates in <code>spotPython</code></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_spot_sklearn_optimization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Sequential Parameter Optimization: Using <code>scipy</code> Optimizers</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_spot_gaussian.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sequential Parameter Optimization: Gaussian Process Models</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_spot_ei.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Expected Improvement</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_spot_noisy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning and Noise</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_spot_ocba.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Handling Noise: Optimal Computational Budget Allocation in <code>Spot</code></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10_spot_hpt_sklearn_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: sklearn SVC on Moons Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11_spot_hpt_torch_fashion_mnist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: PyTorch With fashionMNIST</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12_spot_hpt_torch_cifar10.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: PyTorch wth cifar10 Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14_spot_ray_hpt_torch_cifar10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning for PyTorch With <code>spotPython</code></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16_spot_hpt_sklearn_multiclass_classification_randomforest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: sklearn RandomForestClassifier VBDP Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17_spot_hpt_sklearn_multiclass_classification_xgb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: sklearn RandomForestClassifier VBDP Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18_spot_hpt_sklearn_multiclass_classification_svc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: sklearn RandomForestClassifier VBDP Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19_spot_hpt_sklearn_multiclass_classification_knn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: sklearn RandomForestClassifier VBDP Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24_spot_torch_regression.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning for PyTorch With <code>spotPython</code>: Regression</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25_spot_torch_vbdp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: VBDP</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99_spot_doc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Documentation of the Sequential Parameter Optimization</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-setup-12" id="toc-sec-setup-12" class="nav-link active" data-scroll-target="#sec-setup-12"><span class="header-section-number">12.1</span> Setup</a></li>
+  <li><a href="#initialization-of-the-fun_control-dictionary" id="toc-initialization-of-the-fun_control-dictionary" class="nav-link" data-scroll-target="#initialization-of-the-fun_control-dictionary"><span class="header-section-number">12.2</span> Initialization of the <code>fun_control</code> Dictionary</a></li>
+  <li><a href="#sec-data-loading-12" id="toc-sec-data-loading-12" class="nav-link" data-scroll-target="#sec-data-loading-12"><span class="header-section-number">12.3</span> PyTorch Data Loading</a></li>
+  <li><a href="#load-data-cifar10-data" id="toc-load-data-cifar10-data" class="nav-link" data-scroll-target="#load-data-cifar10-data"><span class="header-section-number">12.4</span> 1. Load Data Cifar10 Data</a></li>
+  <li><a href="#sec-the-model-to-be-tuned-12" id="toc-sec-the-model-to-be-tuned-12" class="nav-link" data-scroll-target="#sec-the-model-to-be-tuned-12"><span class="header-section-number">12.5</span> The Model (Algorithm) to be Tuned</a></li>
+  <li><a href="#sec-specification-of-preprocessing-model-12" id="toc-sec-specification-of-preprocessing-model-12" class="nav-link" data-scroll-target="#sec-specification-of-preprocessing-model-12"><span class="header-section-number">12.6</span> Specification of the Preprocessing Model</a></li>
+  <li><a href="#sec-selection-of-the-algorithm-12" id="toc-sec-selection-of-the-algorithm-12" class="nav-link" data-scroll-target="#sec-selection-of-the-algorithm-12"><span class="header-section-number">12.7</span> Step 4: Select <code>algorithm</code> and <code>core_model_hyper_dict</code></a>
+  <ul class="collapse">
+  <li><a href="#sec-implementation-with-spotpython-12" id="toc-sec-implementation-with-spotpython-12" class="nav-link" data-scroll-target="#sec-implementation-with-spotpython-12"><span class="header-section-number">12.7.1</span> Implementing a Configurable Neural Network With spotPython</a></li>
+  </ul></li>
+  <li><a href="#sec-search-space-12" id="toc-sec-search-space-12" class="nav-link" data-scroll-target="#sec-search-space-12"><span class="header-section-number">12.8</span> The Search Space</a>
+  <ul class="collapse">
+  <li><a href="#sec-configuring-the-search-space-with-spotpython-12" id="toc-sec-configuring-the-search-space-with-spotpython-12" class="nav-link" data-scroll-target="#sec-configuring-the-search-space-with-spotpython-12"><span class="header-section-number">12.8.1</span> Configuring the Search Space With spotPython</a></li>
+  </ul></li>
+  <li><a href="#sec-modification-of-hyperparameters-12" id="toc-sec-modification-of-hyperparameters-12" class="nav-link" data-scroll-target="#sec-modification-of-hyperparameters-12"><span class="header-section-number">12.9</span> Modifying the Hyperparameters</a>
+  <ul class="collapse">
+  <li><a href="#sec-modification-of-default-values-12" id="toc-sec-modification-of-default-values-12" class="nav-link" data-scroll-target="#sec-modification-of-default-values-12"><span class="header-section-number">12.9.1</span> Step 5: Modify <code>hyper_dict</code> Hyperparameters for the Selected Algorithm aka <code>core_model</code></a></li>
+  <li><a href="#modify-hyperparameter-of-type-factor" id="toc-modify-hyperparameter-of-type-factor" class="nav-link" data-scroll-target="#modify-hyperparameter-of-type-factor"><span class="header-section-number">12.9.2</span> Modify hyperparameter of type factor</a></li>
+  <li><a href="#sec-optimizers-12" id="toc-sec-optimizers-12" class="nav-link" data-scroll-target="#sec-optimizers-12"><span class="header-section-number">12.9.3</span> Optimizers</a></li>
+  </ul></li>
+  <li><a href="#sec-selection-of-target-function-12" id="toc-sec-selection-of-target-function-12" class="nav-link" data-scroll-target="#sec-selection-of-target-function-12"><span class="header-section-number">12.10</span> Evaluation</a>
+  <ul class="collapse">
+  <li><a href="#sec-metric-12" id="toc-sec-metric-12" class="nav-link" data-scroll-target="#sec-metric-12"><span class="header-section-number">12.10.1</span> Metric</a></li>
+  </ul></li>
+  <li><a href="#sec-prepare-spot-call-12" id="toc-sec-prepare-spot-call-12" class="nav-link" data-scroll-target="#sec-prepare-spot-call-12"><span class="header-section-number">12.11</span> Preparing the SPOT Call</a></li>
+  <li><a href="#sec-the-objective-function-12" id="toc-sec-the-objective-function-12" class="nav-link" data-scroll-target="#sec-the-objective-function-12"><span class="header-section-number">12.12</span> The Objective Function <code>fun_torch</code></a></li>
+  <li><a href="#sec-call-the-hyperparameter-tuner-12" id="toc-sec-call-the-hyperparameter-tuner-12" class="nav-link" data-scroll-target="#sec-call-the-hyperparameter-tuner-12"><span class="header-section-number">12.13</span> Starting the Hyperparameter Tuning</a></li>
+  <li><a href="#sec-tensorboard" id="toc-sec-tensorboard" class="nav-link" data-scroll-target="#sec-tensorboard"><span class="header-section-number">13</span> Tensorboard</a>
+  <ul class="collapse">
+  <li><a href="#sec-results-tuning-12" id="toc-sec-results-tuning-12" class="nav-link" data-scroll-target="#sec-results-tuning-12"><span class="header-section-number">13.0.1</span> Results</a></li>
+  <li><a href="#show-variable-importance" id="toc-show-variable-importance" class="nav-link" data-scroll-target="#show-variable-importance"><span class="header-section-number">13.1</span> Show variable importance</a></li>
+  <li><a href="#sec-get-spot-results-12" id="toc-sec-get-spot-results-12" class="nav-link" data-scroll-target="#sec-get-spot-results-12"><span class="header-section-number">13.2</span> Get the Tuned Architecture (SPOT Results)</a></li>
+  <li><a href="#evaluation-of-the-tuned-architecture" id="toc-evaluation-of-the-tuned-architecture" class="nav-link" data-scroll-target="#evaluation-of-the-tuned-architecture"><span class="header-section-number">13.3</span> Evaluation of the Tuned Architecture</a></li>
+  <li><a href="#cross-validated-evaluations" id="toc-cross-validated-evaluations" class="nav-link" data-scroll-target="#cross-validated-evaluations"><span class="header-section-number">13.4</span> Cross-validated Evaluations</a></li>
+  <li><a href="#detailed-hyperparameter-plots" id="toc-detailed-hyperparameter-plots" class="nav-link" data-scroll-target="#detailed-hyperparameter-plots"><span class="header-section-number">13.5</span> Detailed Hyperparameter Plots</a></li>
+  <li><a href="#parallel-coordinates-plot" id="toc-parallel-coordinates-plot" class="nav-link" data-scroll-target="#parallel-coordinates-plot"><span class="header-section-number">13.6</span> Parallel Coordinates Plot</a></li>
+  <li><a href="#plot-all-combinations-of-hyperparameters" id="toc-plot-all-combinations-of-hyperparameters" class="nav-link" data-scroll-target="#plot-all-combinations-of-hyperparameters"><span class="header-section-number">13.7</span> Plot all Combinations of Hyperparameters</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: PyTorch wth cifar10 Data</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>In this tutorial, we will show how <code>spotPython</code> can be integrated into the <code>PyTorch</code> training workflow.</p>
+<p>This document refers to the following software versions:</p>
+<ul>
+<li><code>python</code>: 3.10.10</li>
+<li><code>torch</code>: 2.0.1</li>
+<li><code>torchvision</code>: 0.15.0</li>
+</ul>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pip <span class="bu">list</span> <span class="op">|</span> grep  <span class="st">"spot[RiverPython]"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>spotPython                 0.2.31
+spotRiver                  0.0.93</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+</div>
+<p><code>spotPython</code> can be installed via pip. Alternatively, the source code can be downloaded from gitHub: <a href="https://github.com/sequential-parameter-optimization/spotPython">https://github.com/sequential-parameter-optimization/spotPython</a>.</p>
+<pre class="{raw}"><code>!pip install spotPython</code></pre>
+<ul>
+<li>Uncomment the following lines if you want to for (re-)installation the latest version of <code>spotPython</code> from gitHub.</li>
+</ul>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import sys</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># !{sys.executable} -m pip install --upgrade build</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># !{sys.executable} -m pip install --upgrade --force-reinstall spotPython</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="sec-setup-12" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="sec-setup-12"><span class="header-section-number">12.1</span> Setup</h2>
+<p>Before we consider the detailed experimental setup, we select the parameters that affect run time, initial design size and the device that is used.</p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>MAX_TIME <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>INIT_SIZE <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>DEVICE <span class="op">=</span> <span class="va">None</span> <span class="co"># "cpu" # "cuda:0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.utils.device <span class="im">import</span> getDevice</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>DEVICE <span class="op">=</span> getDevice(DEVICE)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(DEVICE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>mps</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> copy</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> socket</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dateutil.tz <span class="im">import</span> tzlocal</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>start_time <span class="op">=</span> datetime.now(tzlocal())</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>HOSTNAME <span class="op">=</span> socket.gethostname().split(<span class="st">"."</span>)[<span class="dv">0</span>]</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>experiment_name <span class="op">=</span> <span class="st">'12-torch'</span> <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span> HOSTNAME <span class="op">+</span> <span class="st">"_"</span> <span class="op">+</span> <span class="bu">str</span>(MAX_TIME) <span class="op">+</span> <span class="st">"min_"</span> <span class="op">+</span> <span class="bu">str</span>(INIT_SIZE) <span class="op">+</span> <span class="st">"init_"</span> <span class="op">+</span> <span class="bu">str</span>(start_time).split(<span class="st">"."</span>, <span class="dv">1</span>)[<span class="dv">0</span>].replace(<span class="st">' '</span>, <span class="st">'_'</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>experiment_name <span class="op">=</span> experiment_name.replace(<span class="st">':'</span>, <span class="st">'-'</span>)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(experiment_name)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> os.path.exists(<span class="st">'./figures'</span>):</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    os.makedirs(<span class="st">'./figures'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>12-torch_p040025_1min_5init_2023-06-16_09-45-20</code></pre>
+</div>
+</div>
+</section>
+<section id="initialization-of-the-fun_control-dictionary" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="initialization-of-the-fun_control-dictionary"><span class="header-section-number">12.2</span> Initialization of the <code>fun_control</code> Dictionary</h2>
+<p><code>spotPython</code> uses a Python dictionary for storing the information required for the hyperparameter tuning process, which was described in <a href="14_spot_ray_hpt_torch_cifar10.html#sec-initialization-fun-control-14"><span>Section&nbsp;13.2</span></a>.</p>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.utils.init <span class="im">import</span> fun_control_init</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>fun_control <span class="op">=</span> fun_control_init(task<span class="op">=</span><span class="st">"classification"</span>,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    tensorboard_path<span class="op">=</span><span class="st">"runs/12_spot_hpt_torch_cifar10"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    device<span class="op">=</span>DEVICE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="sec-data-loading-12" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="sec-data-loading-12"><span class="header-section-number">12.3</span> PyTorch Data Loading</h2>
+</section>
+<section id="load-data-cifar10-data" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="load-data-cifar10-data"><span class="header-section-number">12.4</span> 1. Load Data Cifar10 Data</h2>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torchvision <span class="im">import</span> datasets, transforms</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torchvision</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_data(data_dir<span class="op">=</span><span class="st">"./data"</span>):</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    transform <span class="op">=</span> transforms.Compose([</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>        transforms.ToTensor(),</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>        transforms.Normalize((<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fl">0.5</span>), (<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fl">0.5</span>))</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    ])</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    trainset <span class="op">=</span> torchvision.datasets.CIFAR10(</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        root<span class="op">=</span>data_dir, train<span class="op">=</span><span class="va">True</span>, download<span class="op">=</span><span class="va">True</span>, transform<span class="op">=</span>transform)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    testset <span class="op">=</span> torchvision.datasets.CIFAR10(</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>        root<span class="op">=</span>data_dir, train<span class="op">=</span><span class="va">False</span>, download<span class="op">=</span><span class="va">True</span>, transform<span class="op">=</span>transform)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> trainset, testset</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>train, test <span class="op">=</span> load_data()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Files already downloaded and verified</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Files already downloaded and verified</code></pre>
+</div>
+</div>
+<ul>
+<li>Since this works fine, we can add the data loading to the <code>fun_control</code> dictionary:</li>
+</ul>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>n_samples <span class="op">=</span> <span class="bu">len</span>(train)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># add the dataset to the fun_control</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>fun_control.update({<span class="st">"data"</span>: <span class="va">None</span>, <span class="co"># dataset,</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>               <span class="st">"train"</span>: train,</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>               <span class="st">"test"</span>: test,</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>               <span class="st">"n_samples"</span>: n_samples,</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>               <span class="st">"target_column"</span>: <span class="va">None</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="sec-the-model-to-be-tuned-12" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="sec-the-model-to-be-tuned-12"><span class="header-section-number">12.5</span> The Model (Algorithm) to be Tuned</h2>
+</section>
+<section id="sec-specification-of-preprocessing-model-12" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="sec-specification-of-preprocessing-model-12"><span class="header-section-number">12.6</span> Specification of the Preprocessing Model</h2>
+<p>After the training and test data are specified and added to the <code>fun_control</code> dictionary, <code>spotPython</code> allows the specification of a data preprocessing pipeline, e.g., for the scaling of the data or for the one-hot encoding of categorical variables, see <a href="14_spot_ray_hpt_torch_cifar10.html#sec-specification-of-preprocessing-model-14"><span>Section&nbsp;13.4.1</span></a>. This feature is not used here, so we do not change the default value (which is <code>None</code>).</p>
+</section>
+<section id="sec-selection-of-the-algorithm-12" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="sec-selection-of-the-algorithm-12"><span class="header-section-number">12.7</span> Step 4: Select <code>algorithm</code> and <code>core_model_hyper_dict</code></h2>
+<section id="sec-implementation-with-spotpython-12" class="level3" data-number="12.7.1">
+<h3 data-number="12.7.1" class="anchored" data-anchor-id="sec-implementation-with-spotpython-12"><span class="header-section-number">12.7.1</span> Implementing a Configurable Neural Network With spotPython</h3>
+<p><code>spotPython</code> includes the <code>Net_CIFAR10</code> class which is implemented in the file <code>netcifar10.py</code>. The class is imported here.</p>
+<p>This class inherits from the class <code>Net_Core</code> which is implemented in the file <code>netcore.py</code>, see <span class="quarto-unresolved-ref">?sec-the-net-core-class-24</span>.</p>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.torch.netcifar10 <span class="im">import</span> Net_CIFAR10</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.data.torch_hyper_dict <span class="im">import</span> TorchHyperDict</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.hyperparameters.values <span class="im">import</span> add_core_model_to_fun_control</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>fun_control <span class="op">=</span> add_core_model_to_fun_control(core_model<span class="op">=</span>Net_CIFAR10,</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>                              fun_control<span class="op">=</span>fun_control,</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>                              hyper_dict<span class="op">=</span>TorchHyperDict,</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>                              filename<span class="op">=</span><span class="va">None</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="sec-search-space-12" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="sec-search-space-12"><span class="header-section-number">12.8</span> The Search Space</h2>
+<section id="sec-configuring-the-search-space-with-spotpython-12" class="level3" data-number="12.8.1">
+<h3 data-number="12.8.1" class="anchored" data-anchor-id="sec-configuring-the-search-space-with-spotpython-12"><span class="header-section-number">12.8.1</span> Configuring the Search Space With spotPython</h3>
+<section id="the-hyper_dict-hyperparameters-for-the-selected-algorithm" class="level4" data-number="12.8.1.1">
+<h4 data-number="12.8.1.1" class="anchored" data-anchor-id="the-hyper_dict-hyperparameters-for-the-selected-algorithm"><span class="header-section-number">12.8.1.1</span> The <code>hyper_dict</code> Hyperparameters for the Selected Algorithm</h4>
+<p><code>spotPython</code> uses <code>JSON</code> files for the specification of the hyperparameters, which were described in <a href="14_spot_ray_hpt_torch_cifar10.html#sec-configuring-search-space-spotpython-14"><span>Section&nbsp;13.5.2</span></a>.</p>
+<p>The corresponding entries for the <code>Net_CIFAR10</code> class are shown below.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>    <span class="er">"Net_CIFAR10":</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"l1"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"int"</span><span class="fu">,</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="dv">5</span><span class="fu">,</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"transform_power_2_int"</span><span class="fu">,</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">,</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="dv">9</span><span class="fu">},</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"l2"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"int"</span><span class="fu">,</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="dv">5</span><span class="fu">,</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"transform_power_2_int"</span><span class="fu">,</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">,</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="dv">9</span><span class="fu">},</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"lr_mult"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"float"</span><span class="fu">,</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="fl">1.0</span><span class="fu">,</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"None"</span><span class="fu">,</span></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="fl">0.1</span><span class="fu">,</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="fl">10.0</span><span class="fu">},</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"batch_size"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"int"</span><span class="fu">,</span></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="dv">4</span><span class="fu">,</span></span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"transform_power_2_int"</span><span class="fu">,</span></span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="dv">4</span><span class="fu">},</span></span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"epochs"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"int"</span><span class="fu">,</span></span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="dv">3</span><span class="fu">,</span></span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"transform_power_2_int"</span><span class="fu">,</span></span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="dv">3</span><span class="fu">,</span></span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="dv">4</span><span class="fu">},</span></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"k_folds"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"int"</span><span class="fu">,</span></span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"None"</span><span class="fu">,</span></span>
+<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">},</span></span>
+<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"patience"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"int"</span><span class="fu">,</span></span>
+<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="dv">5</span><span class="fu">,</span></span>
+<span id="cb17-42"><a href="#cb17-42" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"None"</span><span class="fu">,</span></span>
+<span id="cb17-43"><a href="#cb17-43" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">,</span></span>
+<span id="cb17-44"><a href="#cb17-44" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="dv">10</span></span>
+<span id="cb17-45"><a href="#cb17-45" aria-hidden="true" tabindex="-1"></a>        <span class="fu">},</span></span>
+<span id="cb17-46"><a href="#cb17-46" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"optimizer"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-47"><a href="#cb17-47" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"levels"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"Adadelta"</span><span class="ot">,</span></span>
+<span id="cb17-48"><a href="#cb17-48" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"Adagrad"</span><span class="ot">,</span></span>
+<span id="cb17-49"><a href="#cb17-49" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"Adam"</span><span class="ot">,</span></span>
+<span id="cb17-50"><a href="#cb17-50" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"AdamW"</span><span class="ot">,</span></span>
+<span id="cb17-51"><a href="#cb17-51" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"SparseAdam"</span><span class="ot">,</span></span>
+<span id="cb17-52"><a href="#cb17-52" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"Adamax"</span><span class="ot">,</span></span>
+<span id="cb17-53"><a href="#cb17-53" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"ASGD"</span><span class="ot">,</span></span>
+<span id="cb17-54"><a href="#cb17-54" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"NAdam"</span><span class="ot">,</span></span>
+<span id="cb17-55"><a href="#cb17-55" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"RAdam"</span><span class="ot">,</span></span>
+<span id="cb17-56"><a href="#cb17-56" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"RMSprop"</span><span class="ot">,</span></span>
+<span id="cb17-57"><a href="#cb17-57" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"Rprop"</span><span class="ot">,</span></span>
+<span id="cb17-58"><a href="#cb17-58" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"SGD"</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb17-59"><a href="#cb17-59" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"factor"</span><span class="fu">,</span></span>
+<span id="cb17-60"><a href="#cb17-60" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="st">"SGD"</span><span class="fu">,</span></span>
+<span id="cb17-61"><a href="#cb17-61" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"None"</span><span class="fu">,</span></span>
+<span id="cb17-62"><a href="#cb17-62" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"class_name"</span><span class="fu">:</span> <span class="st">"torch.optim"</span><span class="fu">,</span></span>
+<span id="cb17-63"><a href="#cb17-63" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"core_model_parameter_type"</span><span class="fu">:</span> <span class="st">"str"</span><span class="fu">,</span></span>
+<span id="cb17-64"><a href="#cb17-64" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span></span>
+<span id="cb17-65"><a href="#cb17-65" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="dv">12</span><span class="fu">},</span></span>
+<span id="cb17-66"><a href="#cb17-66" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"sgd_momentum"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb17-67"><a href="#cb17-67" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"float"</span><span class="fu">,</span></span>
+<span id="cb17-68"><a href="#cb17-68" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"default"</span><span class="fu">:</span> <span class="fl">0.0</span><span class="fu">,</span></span>
+<span id="cb17-69"><a href="#cb17-69" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"transform"</span><span class="fu">:</span> <span class="st">"None"</span><span class="fu">,</span></span>
+<span id="cb17-70"><a href="#cb17-70" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"lower"</span><span class="fu">:</span> <span class="fl">0.0</span><span class="fu">,</span></span>
+<span id="cb17-71"><a href="#cb17-71" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"upper"</span><span class="fu">:</span> <span class="fl">1.0</span><span class="fu">}</span></span>
+<span id="cb17-72"><a href="#cb17-72" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span><span class="er">,</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+</section>
+<section id="sec-modification-of-hyperparameters-12" class="level2" data-number="12.9">
+<h2 data-number="12.9" class="anchored" data-anchor-id="sec-modification-of-hyperparameters-12"><span class="header-section-number">12.9</span> Modifying the Hyperparameters</h2>
+<p><code>spotPython</code> provides functions for modifying the hyperparameters, their bounds and factors as well as for activating and de-activating hyperparameters without re-compilation of the Python source code. These functions were described in <a href="14_spot_ray_hpt_torch_cifar10.html#sec-modification-of-hyperparameters-14"><span>Section&nbsp;13.5.3</span></a>.</p>
+<section id="sec-modification-of-default-values-12" class="level3" data-number="12.9.1">
+<h3 data-number="12.9.1" class="anchored" data-anchor-id="sec-modification-of-default-values-12"><span class="header-section-number">12.9.1</span> Step 5: Modify <code>hyper_dict</code> Hyperparameters for the Selected Algorithm aka <code>core_model</code></h3>
+<section id="modify-hyperparameters-of-type-numeric-and-integer-boolean" class="level4" data-number="12.9.1.1">
+<h4 data-number="12.9.1.1" class="anchored" data-anchor-id="modify-hyperparameters-of-type-numeric-and-integer-boolean"><span class="header-section-number">12.9.1.1</span> Modify Hyperparameters of Type numeric and integer (boolean)</h4>
+<p>The hyperparameter <code>k_folds</code> is not used, it is de-activated here by setting the lower and upper bound to the same value.</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.hyperparameters.values <span class="im">import</span> modify_hyper_parameter_bounds</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># fun_control = modify_hyper_parameter_bounds(fun_control, "delta", bounds=[1e-10, 1e-6])</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># fun_control = modify_hyper_parameter_bounds(fun_control, "min_samples_split", bounds=[3, 20])</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co">#fun_control = modify_hyper_parameter_bounds(fun_control, "merit_preprune", bounds=[0, 0])</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># fun_control["core_model_hyper_dict"]</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>fun_control <span class="op">=</span> modify_hyper_parameter_bounds(fun_control, <span class="st">"k_folds"</span>, bounds<span class="op">=</span>[<span class="dv">2</span>, <span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="modify-hyperparameter-of-type-factor" class="level3" data-number="12.9.2">
+<h3 data-number="12.9.2" class="anchored" data-anchor-id="modify-hyperparameter-of-type-factor"><span class="header-section-number">12.9.2</span> Modify hyperparameter of type factor</h3>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.hyperparameters.values <span class="im">import</span> modify_hyper_parameter_levels</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>fun_control <span class="op">=</span> modify_hyper_parameter_levels(fun_control, <span class="st">"optimizer"</span>, [<span class="st">"Adam"</span>])</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># fun_control = modify_hyper_parameter_levels(fun_control, "leaf_model", ["LinearRegression"])</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># fun_control["core_model_hyper_dict"]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="sec-optimizers-12" class="level3" data-number="12.9.3">
+<h3 data-number="12.9.3" class="anchored" data-anchor-id="sec-optimizers-12"><span class="header-section-number">12.9.3</span> Optimizers</h3>
+<p>Optimizers can be selected as described in <a href="24_spot_torch_regression.html#sec-optimizers-24"><span>Section&nbsp;18.8.2</span></a>.</p>
+<p>Optimizers are described in <a href="14_spot_ray_hpt_torch_cifar10.html#sec-optimizers-14"><span>Section&nbsp;13.6</span></a>.</p>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>fun_control <span class="op">=</span> modify_hyper_parameter_bounds(fun_control,</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"lr_mult"</span>, bounds<span class="op">=</span>[<span class="fl">1e-3</span>, <span class="fl">1e-3</span>])</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>fun_control <span class="op">=</span> modify_hyper_parameter_bounds(fun_control,</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"sgd_momentum"</span>, bounds<span class="op">=</span>[<span class="fl">0.9</span>, <span class="fl">0.9</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="sec-selection-of-target-function-12" class="level2" data-number="12.10">
+<h2 data-number="12.10" class="anchored" data-anchor-id="sec-selection-of-target-function-12"><span class="header-section-number">12.10</span> Evaluation</h2>
+<p>The evaluation procedure requires the specification of two elements:</p>
+<ol type="1">
+<li>the way how the data is split into a train and a test set and</li>
+<li>the loss function (and a metric).</li>
+</ol>
+<p>These are described in <a href="24_spot_torch_regression.html#sec-selection-of-target-function-24"><span>Section&nbsp;18.9</span></a>.</p>
+<p>The key <code>"loss_function"</code> specifies the loss function which is used during the optimization, see <a href="14_spot_ray_hpt_torch_cifar10.html#sec-loss-functions-14"><span>Section&nbsp;13.8</span></a>.</p>
+<p>We will use CrossEntropy loss for the multiclass-classification task.</p>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.nn <span class="im">import</span> CrossEntropyLoss</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>loss_function <span class="op">=</span> CrossEntropyLoss()</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>fun_control.update({</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"loss_function"</span>: loss_function,</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"shuffle"</span>: <span class="va">True</span>,</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"eval"</span>:  <span class="st">"train_hold_out"</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>        })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="sec-metric-12" class="level3" data-number="12.10.1">
+<h3 data-number="12.10.1" class="anchored" data-anchor-id="sec-metric-12"><span class="header-section-number">12.10.1</span> Metric</h3>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torchmetrics</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>metric_torch <span class="op">=</span> torchmetrics.Accuracy(task<span class="op">=</span><span class="st">"multiclass"</span>,</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>     num_classes<span class="op">=</span><span class="dv">10</span>).to(fun_control[<span class="st">"device"</span>])</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>fun_control.update({<span class="st">"metric_torch"</span>: metric_torch})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="sec-prepare-spot-call-12" class="level2" data-number="12.11">
+<h2 data-number="12.11" class="anchored" data-anchor-id="sec-prepare-spot-call-12"><span class="header-section-number">12.11</span> Preparing the SPOT Call</h2>
+<p>The following code passes the information about the parameter ranges and bounds to <code>spot</code>.</p>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># extract the variable types, names, and bounds</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.hyperparameters.values <span class="im">import</span> (get_bound_values,</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    get_var_name,</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    get_var_type,)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>var_type <span class="op">=</span> get_var_type(fun_control)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>var_name <span class="op">=</span> get_var_name(fun_control)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>fun_control.update({<span class="st">"var_type"</span>: var_type,</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"var_name"</span>: var_name})</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>lower <span class="op">=</span> get_bound_values(fun_control, <span class="st">"lower"</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>upper <span class="op">=</span> get_bound_values(fun_control, <span class="st">"upper"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-fig-label="tbl-design" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.utils.eda <span class="im">import</span> gen_design_table</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(gen_design_table(fun_control))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>| name         | type   | default   |   lower |   upper | transform             |
+|--------------|--------|-----------|---------|---------|-----------------------|
+| l1           | int    | 5         |   2     |   9     | transform_power_2_int |
+| l2           | int    | 5         |   2     |   9     | transform_power_2_int |
+| lr_mult      | float  | 1.0       |   0.001 |   0.001 | None                  |
+| batch_size   | int    | 4         |   1     |   4     | transform_power_2_int |
+| epochs       | int    | 3         |   3     |   4     | transform_power_2_int |
+| k_folds      | int    | 1         |   2     |   2     | None                  |
+| patience     | int    | 5         |   2     |  10     | None                  |
+| optimizer    | factor | SGD       |   0     |   0     | None                  |
+| sgd_momentum | float  | 0.0       |   0.9   |   0.9   | None                  |</code></pre>
+</div>
+</div>
+</section>
+<section id="sec-the-objective-function-12" class="level2" data-number="12.12">
+<h2 data-number="12.12" class="anchored" data-anchor-id="sec-the-objective-function-12"><span class="header-section-number">12.12</span> The Objective Function <code>fun_torch</code></h2>
+<p>The objective function <code>fun_torch</code> is selected next. It implements an interface from <code>PyTorch</code>’s training, validation, and testing methods to <code>spotPython</code>.</p>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.fun.hypertorch <span class="im">import</span> HyperTorch</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>fun <span class="op">=</span> HyperTorch().fun_torch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="sec-call-the-hyperparameter-tuner-12" class="level2" data-number="12.13">
+<h2 data-number="12.13" class="anchored" data-anchor-id="sec-call-the-hyperparameter-tuner-12"><span class="header-section-number">12.13</span> Starting the Hyperparameter Tuning</h2>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.spot <span class="im">import</span> spot</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> inf</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>spot_tuner <span class="op">=</span> spot.Spot(fun<span class="op">=</span>fun,</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>                   lower <span class="op">=</span> lower,</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>                   upper <span class="op">=</span> upper,</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>                   fun_evals <span class="op">=</span> inf,</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>                   fun_repeats <span class="op">=</span> <span class="dv">1</span>,</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>                   max_time <span class="op">=</span> MAX_TIME,</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>                   noise <span class="op">=</span> <span class="va">False</span>,</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>                   tolerance_x <span class="op">=</span> np.sqrt(np.spacing(<span class="dv">1</span>)),</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>                   var_type <span class="op">=</span> var_type,</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>                   var_name <span class="op">=</span> var_name,</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>                   infill_criterion <span class="op">=</span> <span class="st">"y"</span>,</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>                   n_points <span class="op">=</span> <span class="dv">1</span>,</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>                   seed<span class="op">=</span><span class="dv">123</span>,</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>                   log_level <span class="op">=</span> <span class="dv">50</span>,</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>                   show_models<span class="op">=</span> <span class="va">False</span>,</span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>                   show_progress<span class="op">=</span> <span class="va">True</span>,</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>                   fun_control <span class="op">=</span> fun_control,</span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a>                   design_control<span class="op">=</span>{<span class="st">"init_size"</span>: INIT_SIZE,</span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">"repeats"</span>: <span class="dv">1</span>},</span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a>                   surrogate_control<span class="op">=</span>{<span class="st">"noise"</span>: <span class="va">True</span>,</span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"cod_type"</span>: <span class="st">"norm"</span>,</span>
+<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"min_theta"</span>: <span class="op">-</span><span class="dv">4</span>,</span>
+<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"max_theta"</span>: <span class="dv">3</span>,</span>
+<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"n_theta"</span>: <span class="bu">len</span>(var_name),</span>
+<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"model_fun_evals"</span>: <span class="dv">10_000</span>,</span>
+<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"log_level"</span>: <span class="dv">50</span></span>
+<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a>                                      })</span>
+<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a>spot_tuner.run(X_start<span class="op">=</span>X_start)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+config: {'l1': 128, 'l2': 8, 'lr_mult': 0.001, 'batch_size': 16, 'epochs': 16, 'k_folds': 2, 'patience': 5, 'optimizer': 'Adam', 'sgd_momentum': 0.9}
+Epoch: 1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.3143477392196656
+Accuracy on hold-out set: 0.1008
+MulticlassAccuracy value on hold-out data: 0.10080000013113022
+Epoch: 2</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.311074648094177
+Accuracy on hold-out set: 0.11105
+MulticlassAccuracy value on hold-out data: 0.11105000227689743
+Epoch: 3</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.30761670665741
+Accuracy on hold-out set: 0.1419
+MulticlassAccuracy value on hold-out data: 0.14190000295639038
+Epoch: 4</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.303876215171814
+Accuracy on hold-out set: 0.1486
+MulticlassAccuracy value on hold-out data: 0.1485999971628189
+Epoch: 5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.299960602760315
+Accuracy on hold-out set: 0.1417
+MulticlassAccuracy value on hold-out data: 0.14169999957084656
+Epoch: 6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2961855463027954
+Accuracy on hold-out set: 0.1254
+MulticlassAccuracy value on hold-out data: 0.12540000677108765
+Epoch: 7</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.292491125297546
+Accuracy on hold-out set: 0.11095
+MulticlassAccuracy value on hold-out data: 0.11095000058412552
+Epoch: 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.288818277931213
+Accuracy on hold-out set: 0.1021
+MulticlassAccuracy value on hold-out data: 0.10209999978542328
+Epoch: 9</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2850627559661865
+Accuracy on hold-out set: 0.1005
+MulticlassAccuracy value on hold-out data: 0.10050000250339508
+Epoch: 10</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.281196755027771
+Accuracy on hold-out set: 0.1036
+MulticlassAccuracy value on hold-out data: 0.10360000282526016
+Epoch: 11</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2771963079452515
+Accuracy on hold-out set: 0.10885
+MulticlassAccuracy value on hold-out data: 0.10885000228881836
+Epoch: 12</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2730105941772463
+Accuracy on hold-out set: 0.11565
+MulticlassAccuracy value on hold-out data: 0.1156499981880188
+Epoch: 13</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.268723419380188
+Accuracy on hold-out set: 0.12015
+MulticlassAccuracy value on hold-out data: 0.12014999985694885
+Epoch: 14</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.264324759101868
+Accuracy on hold-out set: 0.1244
+MulticlassAccuracy value on hold-out data: 0.12439999729394913
+Epoch: 15</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2598719541549683
+Accuracy on hold-out set: 0.12975
+MulticlassAccuracy value on hold-out data: 0.12974999845027924
+Epoch: 16</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.255367957305908
+Accuracy on hold-out set: 0.13555
+MulticlassAccuracy value on hold-out data: 0.13555000722408295
+Returned to Spot: Validation loss: 2.255367957305908
+----------------------------------------------
+
+config: {'l1': 16, 'l2': 16, 'lr_mult': 0.001, 'batch_size': 8, 'epochs': 8, 'k_folds': 2, 'patience': 7, 'optimizer': 'Adam', 'sgd_momentum': 0.9}
+Epoch: 1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.3116722235679625
+Accuracy on hold-out set: 0.1006
+MulticlassAccuracy value on hold-out data: 0.1005999967455864
+Epoch: 2</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.309834736919403
+Accuracy on hold-out set: 0.1006
+MulticlassAccuracy value on hold-out data: 0.1005999967455864
+Epoch: 3</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.3072648153305053
+Accuracy on hold-out set: 0.1006
+MulticlassAccuracy value on hold-out data: 0.1005999967455864
+Epoch: 4</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.3040280451774597
+Accuracy on hold-out set: 0.1006
+MulticlassAccuracy value on hold-out data: 0.1005999967455864
+Epoch: 5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.300648400402069
+Accuracy on hold-out set: 0.1006
+MulticlassAccuracy value on hold-out data: 0.1005999967455864
+Epoch: 6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2967206232070922
+Accuracy on hold-out set: 0.1006
+MulticlassAccuracy value on hold-out data: 0.1005999967455864
+Epoch: 7</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2911540941238404
+Accuracy on hold-out set: 0.1006
+MulticlassAccuracy value on hold-out data: 0.1005999967455864
+Epoch: 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2846229887008667
+Accuracy on hold-out set: 0.1006
+MulticlassAccuracy value on hold-out data: 0.1005999967455864
+Returned to Spot: Validation loss: 2.2846229887008667
+----------------------------------------------
+
+config: {'l1': 256, 'l2': 128, 'lr_mult': 0.001, 'batch_size': 2, 'epochs': 16, 'k_folds': 2, 'patience': 9, 'optimizer': 'Adam', 'sgd_momentum': 0.9}
+Epoch: 1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.290386575722694
+Accuracy on hold-out set: 0.1183
+MulticlassAccuracy value on hold-out data: 0.11829999834299088
+Epoch: 2</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2583579830288887
+Accuracy on hold-out set: 0.20085
+MulticlassAccuracy value on hold-out data: 0.2008499950170517
+Epoch: 3</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.1992413662314414
+Accuracy on hold-out set: 0.2457
+MulticlassAccuracy value on hold-out data: 0.24570000171661377
+Epoch: 4</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.1311236470460893
+Accuracy on hold-out set: 0.2599
+MulticlassAccuracy value on hold-out data: 0.2599000036716461
+Epoch: 5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.080222967290878
+Accuracy on hold-out set: 0.2668
+MulticlassAccuracy value on hold-out data: 0.2667999863624573
+Epoch: 6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.042916475570202
+Accuracy on hold-out set: 0.27375
+MulticlassAccuracy value on hold-out data: 0.2737500071525574
+Epoch: 7</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.014063339072466
+Accuracy on hold-out set: 0.2828
+MulticlassAccuracy value on hold-out data: 0.28279998898506165
+Epoch: 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9894880776822568
+Accuracy on hold-out set: 0.2906
+MulticlassAccuracy value on hold-out data: 0.2906000018119812
+Epoch: 9</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9700612633824348
+Accuracy on hold-out set: 0.2942
+MulticlassAccuracy value on hold-out data: 0.29420000314712524
+Epoch: 10</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.954878566995263
+Accuracy on hold-out set: 0.29745
+MulticlassAccuracy value on hold-out data: 0.2974500060081482
+Epoch: 11</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.940636328148842
+Accuracy on hold-out set: 0.3054
+MulticlassAccuracy value on hold-out data: 0.305400013923645
+Epoch: 12</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9286386080354452
+Accuracy on hold-out set: 0.30825
+MulticlassAccuracy value on hold-out data: 0.3082500100135803
+Epoch: 13</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9164460986196994
+Accuracy on hold-out set: 0.314
+MulticlassAccuracy value on hold-out data: 0.3140000104904175
+Epoch: 14</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9055351397156715
+Accuracy on hold-out set: 0.3163
+MulticlassAccuracy value on hold-out data: 0.31630000472068787
+Epoch: 15</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.8946781368374825
+Accuracy on hold-out set: 0.32125
+MulticlassAccuracy value on hold-out data: 0.32124999165534973
+Epoch: 16</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.8839163096159697
+Accuracy on hold-out set: 0.32535
+MulticlassAccuracy value on hold-out data: 0.32534998655319214
+Returned to Spot: Validation loss: 1.8839163096159697
+----------------------------------------------
+
+config: {'l1': 8, 'l2': 32, 'lr_mult': 0.001, 'batch_size': 4, 'epochs': 8, 'k_folds': 2, 'patience': 6, 'optimizer': 'Adam', 'sgd_momentum': 0.9}
+Epoch: 1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.3052618713378905
+Accuracy on hold-out set: 0.1009
+MulticlassAccuracy value on hold-out data: 0.10090000182390213
+Epoch: 2</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.3030193151950837
+Accuracy on hold-out set: 0.12575
+MulticlassAccuracy value on hold-out data: 0.12575000524520874
+Epoch: 3</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.3000370769023895
+Accuracy on hold-out set: 0.129
+MulticlassAccuracy value on hold-out data: 0.1289999932050705
+Epoch: 4</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2957203912734987
+Accuracy on hold-out set: 0.11875
+MulticlassAccuracy value on hold-out data: 0.11874999850988388
+Epoch: 5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.289920689344406
+Accuracy on hold-out set: 0.1145
+MulticlassAccuracy value on hold-out data: 0.1145000010728836
+Epoch: 6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.283861768245697
+Accuracy on hold-out set: 0.11985
+MulticlassAccuracy value on hold-out data: 0.11985000222921371
+Epoch: 7</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2776594206809997
+Accuracy on hold-out set: 0.13
+MulticlassAccuracy value on hold-out data: 0.12999999523162842
+Epoch: 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.27172462348938
+Accuracy on hold-out set: 0.1407
+MulticlassAccuracy value on hold-out data: 0.14069999754428864
+Returned to Spot: Validation loss: 2.27172462348938
+----------------------------------------------
+
+config: {'l1': 64, 'l2': 512, 'lr_mult': 0.001, 'batch_size': 8, 'epochs': 16, 'k_folds': 2, 'patience': 3, 'optimizer': 'Adam', 'sgd_momentum': 0.9}
+Epoch: 1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.302263377857208
+Accuracy on hold-out set: 0.1071
+MulticlassAccuracy value on hold-out data: 0.1071000024676323
+Epoch: 2</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.301028741645813
+Accuracy on hold-out set: 0.1112
+MulticlassAccuracy value on hold-out data: 0.1111999973654747
+Epoch: 3</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2991625284194948
+Accuracy on hold-out set: 0.112
+MulticlassAccuracy value on hold-out data: 0.1120000034570694
+Epoch: 4</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.295921068096161
+Accuracy on hold-out set: 0.1222
+MulticlassAccuracy value on hold-out data: 0.12219999730587006
+Epoch: 5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2902276146888734
+Accuracy on hold-out set: 0.15855
+MulticlassAccuracy value on hold-out data: 0.15854999423027039
+Epoch: 6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.280388803291321
+Accuracy on hold-out set: 0.2021
+MulticlassAccuracy value on hold-out data: 0.2020999938249588
+Epoch: 7</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.264515536212921
+Accuracy on hold-out set: 0.21435
+MulticlassAccuracy value on hold-out data: 0.21435000002384186
+Epoch: 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.242039112186432
+Accuracy on hold-out set: 0.2183
+MulticlassAccuracy value on hold-out data: 0.218299999833107
+Epoch: 9</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2144153561592104
+Accuracy on hold-out set: 0.22405
+MulticlassAccuracy value on hold-out data: 0.22405000030994415
+Epoch: 10</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.1830280289173127
+Accuracy on hold-out set: 0.23515
+MulticlassAccuracy value on hold-out data: 0.23514999449253082
+Epoch: 11</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.1516305238246916
+Accuracy on hold-out set: 0.24945
+MulticlassAccuracy value on hold-out data: 0.24944999814033508
+Epoch: 12</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.1239295675754546
+Accuracy on hold-out set: 0.2573
+MulticlassAccuracy value on hold-out data: 0.2572999894618988
+Epoch: 13</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.100795350074768
+Accuracy on hold-out set: 0.2628
+MulticlassAccuracy value on hold-out data: 0.262800008058548
+Epoch: 14</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.081994502401352
+Accuracy on hold-out set: 0.2648
+MulticlassAccuracy value on hold-out data: 0.2648000121116638
+Epoch: 15</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.066348303604126
+Accuracy on hold-out set: 0.26995
+MulticlassAccuracy value on hold-out data: 0.2699500024318695
+Epoch: 16</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.0524065482616423
+Accuracy on hold-out set: 0.2742
+MulticlassAccuracy value on hold-out data: 0.2741999924182892
+Returned to Spot: Validation loss: 2.0524065482616423
+----------------------------------------------
+
+config: {'l1': 512, 'l2': 128, 'lr_mult': 0.001, 'batch_size': 2, 'epochs': 16, 'k_folds': 2, 'patience': 10, 'optimizer': 'Adam', 'sgd_momentum': 0.9}</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Epoch: 1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2764791922807692
+Accuracy on hold-out set: 0.1483
+MulticlassAccuracy value on hold-out data: 0.14830000698566437
+Epoch: 2</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2173662127494813
+Accuracy on hold-out set: 0.22975
+MulticlassAccuracy value on hold-out data: 0.22975000739097595
+Epoch: 3</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.144473518824577
+Accuracy on hold-out set: 0.2511
+MulticlassAccuracy value on hold-out data: 0.25110000371932983
+Epoch: 4</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.0941487026453016
+Accuracy on hold-out set: 0.2651
+MulticlassAccuracy value on hold-out data: 0.26510000228881836
+Epoch: 5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.0666971154391764
+Accuracy on hold-out set: 0.2727
+MulticlassAccuracy value on hold-out data: 0.2727000117301941
+Epoch: 6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.047770736461878
+Accuracy on hold-out set: 0.2755
+MulticlassAccuracy value on hold-out data: 0.27549999952316284
+Epoch: 7</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.0338256625831126
+Accuracy on hold-out set: 0.28195
+MulticlassAccuracy value on hold-out data: 0.2819499969482422
+Epoch: 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.0200662518680095
+Accuracy on hold-out set: 0.2864
+MulticlassAccuracy value on hold-out data: 0.2863999903202057
+Epoch: 9</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.005222331357002
+Accuracy on hold-out set: 0.29345
+MulticlassAccuracy value on hold-out data: 0.2934499979019165
+Epoch: 10</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9903291662395
+Accuracy on hold-out set: 0.2999
+MulticlassAccuracy value on hold-out data: 0.29989999532699585
+Epoch: 11</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9736923443704844
+Accuracy on hold-out set: 0.3052
+MulticlassAccuracy value on hold-out data: 0.3052000105381012
+Epoch: 12</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9569240724742412
+Accuracy on hold-out set: 0.3097
+MulticlassAccuracy value on hold-out data: 0.30970001220703125
+Epoch: 13</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9402141752004622
+Accuracy on hold-out set: 0.31375
+MulticlassAccuracy value on hold-out data: 0.3137499988079071
+Epoch: 14</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9236415942877532
+Accuracy on hold-out set: 0.3187
+MulticlassAccuracy value on hold-out data: 0.31869998574256897
+Epoch: 15</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9086491698592902
+Accuracy on hold-out set: 0.3229
+MulticlassAccuracy value on hold-out data: 0.3228999972343445
+Epoch: 16</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.894045622944832
+Accuracy on hold-out set: 0.3283
+MulticlassAccuracy value on hold-out data: 0.32829999923706055
+Returned to Spot: Validation loss: 1.894045622944832
+----------------------------------------------
+spotPython tuning: 1.8839163096159697 [##########] 100.00% Done...
+</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>&lt;spotPython.spot.spot.Spot at 0x16e5fbaf0&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="sec-tensorboard" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Tensorboard</h1>
+<p>The textual output shown in the console (or code cell) can be visualized with Tensorboard as described in <a href="14_spot_ray_hpt_torch_cifar10.html#sec-tensorboard-14"><span>Section&nbsp;13.13</span></a>.</p>
+<section id="sec-results-tuning-12" class="level3" data-number="13.0.1">
+<h3 data-number="13.0.1" class="anchored" data-anchor-id="sec-results-tuning-12"><span class="header-section-number">13.0.1</span> Results</h3>
+<p>After the hyperparameter tuning run is finished, the results can be analyzed as described in <a href="14_spot_ray_hpt_torch_cifar10.html#sec-results-14"><span>Section&nbsp;13.14</span></a>.</p>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb111"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>SAVE <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a>LOAD <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb111-3"><a href="#cb111-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb111-4"><a href="#cb111-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> SAVE:</span>
+<span id="cb111-5"><a href="#cb111-5" aria-hidden="true" tabindex="-1"></a>    result_file_name <span class="op">=</span> <span class="st">"res_"</span> <span class="op">+</span> experiment_name <span class="op">+</span> <span class="st">".pkl"</span></span>
+<span id="cb111-6"><a href="#cb111-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(result_file_name, <span class="st">'wb'</span>) <span class="im">as</span> f:</span>
+<span id="cb111-7"><a href="#cb111-7" aria-hidden="true" tabindex="-1"></a>        pickle.dump(spot_tuner, f)</span>
+<span id="cb111-8"><a href="#cb111-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb111-9"><a href="#cb111-9" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> LOAD:</span>
+<span id="cb111-10"><a href="#cb111-10" aria-hidden="true" tabindex="-1"></a>    result_file_name <span class="op">=</span> <span class="st">"ADD THE NAME here, e.g.: res_ch10-friedman-hpt-0_maans03_60min_20init_1K_2023-04-14_10-11-19.pkl"</span></span>
+<span id="cb111-11"><a href="#cb111-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(result_file_name, <span class="st">'rb'</span>) <span class="im">as</span> f:</span>
+<span id="cb111-12"><a href="#cb111-12" aria-hidden="true" tabindex="-1"></a>        spot_tuner <span class="op">=</span>  pickle.load(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>After the hyperparameter tuning run is finished, the progress of the hyperparameter tuning can be visualized. The following code generates the progress plot from <span class="quarto-unresolved-ref">?fig-progress</span>.</p>
+<div class="cell" data-fig-label="fig-progress" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a>spot_tuner.plot_progress(log_y<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a>    filename<span class="op">=</span><span class="st">"./figures/"</span> <span class="op">+</span> experiment_name<span class="op">+</span><span class="st">"_progress.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="12_spot_hpt_torch_cifar10_files/figure-html/cell-22-output-1.png" width="719" height="246" class="figure-img"></p>
+<figcaption class="figure-caption">Progress plot. <em>Black</em> dots denote results from the initial design. <em>Red</em> dots illustrate the improvement found by the surrogate model based optimization.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Print the results</li>
+</ul>
+<div class="cell" data-fig-label="tbl-results" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb113"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(gen_design_table(fun_control<span class="op">=</span>fun_control,</span>
+<span id="cb113-2"><a href="#cb113-2" aria-hidden="true" tabindex="-1"></a>    spot<span class="op">=</span>spot_tuner))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>| name         | type   | default   |   lower |   upper |   tuned | transform             |   importance | stars   |
+|--------------|--------|-----------|---------|---------|---------|-----------------------|--------------|---------|
+| l1           | int    | 5         |     2.0 |     9.0 |     8.0 | transform_power_2_int |         0.00 |         |
+| l2           | int    | 5         |     2.0 |     9.0 |     7.0 | transform_power_2_int |       100.00 | ***     |
+| lr_mult      | float  | 1.0       |   0.001 |   0.001 |   0.001 | None                  |         0.00 |         |
+| batch_size   | int    | 4         |     1.0 |     4.0 |     1.0 | transform_power_2_int |         0.12 | .       |
+| epochs       | int    | 3         |     3.0 |     4.0 |     4.0 | transform_power_2_int |         0.00 |         |
+| k_folds      | int    | 1         |     2.0 |     2.0 |     2.0 | None                  |         0.00 |         |
+| patience     | int    | 5         |     2.0 |    10.0 |     9.0 | None                  |         0.00 |         |
+| optimizer    | factor | SGD       |     0.0 |     0.0 |     0.0 | None                  |         0.00 |         |
+| sgd_momentum | float  | 0.0       |     0.9 |     0.9 |     0.9 | None                  |         0.00 |         |</code></pre>
+</div>
+</div>
+</section>
+<section id="show-variable-importance" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="show-variable-importance"><span class="header-section-number">13.1</span> Show variable importance</h2>
+<div class="cell" data-fig-label="fig-importance" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb115"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a>spot_tuner.plot_importance(threshold<span class="op">=</span><span class="fl">0.025</span>, filename<span class="op">=</span><span class="st">"./figures/"</span> <span class="op">+</span> experiment_name<span class="op">+</span><span class="st">"_importance.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="12_spot_hpt_torch_cifar10_files/figure-html/cell-24-output-1.png" width="575" height="411" class="figure-img"></p>
+<figcaption class="figure-caption">Variable importance plot, threshold 0.025.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-get-spot-results-12" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="sec-get-spot-results-12"><span class="header-section-number">13.2</span> Get the Tuned Architecture (SPOT Results)</h2>
+<p>The architecture of the <code>spotPython</code> model can be obtained by the following code:</p>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.hyperparameters.values <span class="im">import</span> get_one_core_model_from_X</span>
+<span id="cb116-2"><a href="#cb116-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> spot_tuner.to_all_dim(spot_tuner.min_X.reshape(<span class="dv">1</span>,<span class="op">-</span><span class="dv">1</span>))</span>
+<span id="cb116-3"><a href="#cb116-3" aria-hidden="true" tabindex="-1"></a>model_spot <span class="op">=</span> get_one_core_model_from_X(X, fun_control)</span>
+<span id="cb116-4"><a href="#cb116-4" aria-hidden="true" tabindex="-1"></a>model_spot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<pre><code>Net_CIFAR10(
+  (conv1): Conv2d(3, 6, kernel_size=(5, 5), stride=(1, 1))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(6, 16, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=400, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=128, bias=True)
+  (fc3): Linear(in_features=128, out_features=10, bias=True)
+)</code></pre>
+</div>
+</div>
+</section>
+<section id="evaluation-of-the-tuned-architecture" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="evaluation-of-the-tuned-architecture"><span class="header-section-number">13.3</span> Evaluation of the Tuned Architecture</h2>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.torch.traintest <span class="im">import</span> (</span>
+<span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a>    train_tuned,</span>
+<span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a>    test_tuned,</span>
+<span id="cb118-4"><a href="#cb118-4" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>train_tuned(net<span class="op">=</span>model_spot, train_dataset<span class="op">=</span>train,</span>
+<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>        loss_function<span class="op">=</span>fun_control[<span class="st">"loss_function"</span>],</span>
+<span id="cb119-3"><a href="#cb119-3" aria-hidden="true" tabindex="-1"></a>        metric<span class="op">=</span>fun_control[<span class="st">"metric_torch"</span>],</span>
+<span id="cb119-4"><a href="#cb119-4" aria-hidden="true" tabindex="-1"></a>        shuffle<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb119-5"><a href="#cb119-5" aria-hidden="true" tabindex="-1"></a>        device <span class="op">=</span> fun_control[<span class="st">"device"</span>],</span>
+<span id="cb119-6"><a href="#cb119-6" aria-hidden="true" tabindex="-1"></a>        path<span class="op">=</span><span class="va">None</span>,</span>
+<span id="cb119-7"><a href="#cb119-7" aria-hidden="true" tabindex="-1"></a>        task<span class="op">=</span>fun_control[<span class="st">"task"</span>],)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Epoch: 1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 2.303</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2981081018924714
+Accuracy on hold-out set: 0.14475
+MulticlassAccuracy value on hold-out data: 0.14474999904632568
+Epoch: 2</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 2.294</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.2835504922628402
+Accuracy on hold-out set: 0.15405
+MulticlassAccuracy value on hold-out data: 0.15404999256134033
+Epoch: 3</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 2.273</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.249052169561386
+Accuracy on hold-out set: 0.24075
+MulticlassAccuracy value on hold-out data: 0.2407499998807907
+Epoch: 4</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 2.230</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.187520982027054
+Accuracy on hold-out set: 0.26355
+MulticlassAccuracy value on hold-out data: 0.2635500133037567
+Epoch: 5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 2.162</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.1178742028832436
+Accuracy on hold-out set: 0.26905
+MulticlassAccuracy value on hold-out data: 0.2690500020980835
+Epoch: 6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 2.092</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.060662960588932
+Accuracy on hold-out set: 0.2795
+MulticlassAccuracy value on hold-out data: 0.27950000762939453
+Epoch: 7</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 2.036</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 2.015154953926802
+Accuracy on hold-out set: 0.2891
+MulticlassAccuracy value on hold-out data: 0.2890999913215637
+Epoch: 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.997</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9798652533352374
+Accuracy on hold-out set: 0.2978
+MulticlassAccuracy value on hold-out data: 0.2978000044822693
+Epoch: 9</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.960</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9509323532938958
+Accuracy on hold-out set: 0.3059
+MulticlassAccuracy value on hold-out data: 0.3059000074863434
+Epoch: 10</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.936</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.9289870643138884
+Accuracy on hold-out set: 0.3117
+MulticlassAccuracy value on hold-out data: 0.3116999864578247
+Epoch: 11</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.917</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.910867837703228
+Accuracy on hold-out set: 0.31615
+MulticlassAccuracy value on hold-out data: 0.3161500096321106
+Epoch: 12</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.900</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.8978679864048957
+Accuracy on hold-out set: 0.3223
+MulticlassAccuracy value on hold-out data: 0.322299987077713
+Epoch: 13</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.883</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.8866979292839765
+Accuracy on hold-out set: 0.324
+MulticlassAccuracy value on hold-out data: 0.3240000009536743
+Epoch: 14</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.875</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.8755591854214668
+Accuracy on hold-out set: 0.32855
+MulticlassAccuracy value on hold-out data: 0.3285500109195709
+Epoch: 15</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.862</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.8663205277502537
+Accuracy on hold-out set: 0.33105
+MulticlassAccuracy value on hold-out data: 0.33105000853538513
+Epoch: 16</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Batch: 10000. Batch Size: 2. Training Loss (running): 1.857</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.8563621691197156
+Accuracy on hold-out set: 0.33375
+MulticlassAccuracy value on hold-out data: 0.33375000953674316
+Returned to Spot: Validation loss: 1.8563621691197156
+----------------------------------------------</code></pre>
+</div>
+</div>
+<p>If <code>path</code> is set to a filename, e.g., <code>path = "model_spot_trained.pt"</code>, the weights of the trained model will be loaded from this file.</p>
+<div class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb153"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb153-1"><a href="#cb153-1" aria-hidden="true" tabindex="-1"></a>test_tuned(net<span class="op">=</span>model_spot, test_dataset<span class="op">=</span>test,</span>
+<span id="cb153-2"><a href="#cb153-2" aria-hidden="true" tabindex="-1"></a>            shuffle<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb153-3"><a href="#cb153-3" aria-hidden="true" tabindex="-1"></a>            loss_function<span class="op">=</span>fun_control[<span class="st">"loss_function"</span>],</span>
+<span id="cb153-4"><a href="#cb153-4" aria-hidden="true" tabindex="-1"></a>            metric<span class="op">=</span>fun_control[<span class="st">"metric_torch"</span>],</span>
+<span id="cb153-5"><a href="#cb153-5" aria-hidden="true" tabindex="-1"></a>            device <span class="op">=</span> fun_control[<span class="st">"device"</span>],</span>
+<span id="cb153-6"><a href="#cb153-6" aria-hidden="true" tabindex="-1"></a>            task<span class="op">=</span>fun_control[<span class="st">"task"</span>],)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss on hold-out set: 1.8460284337103368
+Accuracy on hold-out set: 0.3396
+MulticlassAccuracy value on hold-out data: 0.33959999680519104
+Final evaluation: Validation loss: 1.8460284337103368
+Final evaluation: Validation metric: 0.33959999680519104
+----------------------------------------------</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="27">
+<pre><code>(1.8460284337103368, nan, tensor(0.3396, device='mps:0'))</code></pre>
+</div>
+</div>
+</section>
+<section id="cross-validated-evaluations" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="cross-validated-evaluations"><span class="header-section-number">13.4</span> Cross-validated Evaluations</h2>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb156"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb156-1"><a href="#cb156-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotPython.torch.traintest <span class="im">import</span> evaluate_cv</span>
+<span id="cb156-2"><a href="#cb156-2" aria-hidden="true" tabindex="-1"></a><span class="co"># modify k-kolds:</span></span>
+<span id="cb156-3"><a href="#cb156-3" aria-hidden="true" tabindex="-1"></a><span class="bu">setattr</span>(model_spot, <span class="st">"k_folds"</span>,  <span class="dv">10</span>)</span>
+<span id="cb156-4"><a href="#cb156-4" aria-hidden="true" tabindex="-1"></a>df_eval, df_preds, df_metrics <span class="op">=</span> evaluate_cv(net<span class="op">=</span>model_spot,</span>
+<span id="cb156-5"><a href="#cb156-5" aria-hidden="true" tabindex="-1"></a>            dataset<span class="op">=</span>fun_control[<span class="st">"data"</span>],</span>
+<span id="cb156-6"><a href="#cb156-6" aria-hidden="true" tabindex="-1"></a>            loss_function<span class="op">=</span>fun_control[<span class="st">"loss_function"</span>],</span>
+<span id="cb156-7"><a href="#cb156-7" aria-hidden="true" tabindex="-1"></a>            metric<span class="op">=</span>fun_control[<span class="st">"metric_torch"</span>],</span>
+<span id="cb156-8"><a href="#cb156-8" aria-hidden="true" tabindex="-1"></a>            task<span class="op">=</span>fun_control[<span class="st">"task"</span>],</span>
+<span id="cb156-9"><a href="#cb156-9" aria-hidden="true" tabindex="-1"></a>            writer<span class="op">=</span>fun_control[<span class="st">"writer"</span>],</span>
+<span id="cb156-10"><a href="#cb156-10" aria-hidden="true" tabindex="-1"></a>            writerId<span class="op">=</span><span class="st">"model_spot_cv"</span>,</span>
+<span id="cb156-11"><a href="#cb156-11" aria-hidden="true" tabindex="-1"></a>            device <span class="op">=</span> fun_control[<span class="st">"device"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Error in Net_Core. Call to evaluate_cv() failed. err=TypeError("Expected sequence or array-like, got &lt;class 'NoneType'&gt;"), type(err)=&lt;class 'TypeError'&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb158"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a>metric_name <span class="op">=</span> <span class="bu">type</span>(fun_control[<span class="st">"metric_torch"</span>]).<span class="va">__name__</span></span>
+<span id="cb158-2"><a href="#cb158-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"loss: </span><span class="sc">{</span>df_eval<span class="sc">}</span><span class="ss">, Cross-validated </span><span class="sc">{</span>metric_name<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>df_metrics<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>loss: nan, Cross-validated MulticlassAccuracy: nan</code></pre>
+</div>
+</div>
+</section>
+<section id="detailed-hyperparameter-plots" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="detailed-hyperparameter-plots"><span class="header-section-number">13.5</span> Detailed Hyperparameter Plots</h2>
+<div class="cell" data-fig-label="fig-contour" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb160"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb160-1"><a href="#cb160-1" aria-hidden="true" tabindex="-1"></a>filename <span class="op">=</span> <span class="st">"./figures/"</span> <span class="op">+</span> experiment_name</span>
+<span id="cb160-2"><a href="#cb160-2" aria-hidden="true" tabindex="-1"></a>spot_tuner.plot_important_hyperparameter_contour(filename<span class="op">=</span>filename)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>l2:  100.0
+batch_size:  0.12397551393589465</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="12_spot_hpt_torch_cifar10_files/figure-html/cell-31-output-2.png" width="712" height="281" class="figure-img"></p>
+<figcaption class="figure-caption">Contour plots.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="parallel-coordinates-plot" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="parallel-coordinates-plot"><span class="header-section-number">13.6</span> Parallel Coordinates Plot</h2>
+<div class="cell" data-fig-label="fig-parallel" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb162"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb162-1"><a href="#cb162-1" aria-hidden="true" tabindex="-1"></a>spot_tuner.parallel_plot()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="daf9e5e8-50a3-4dd3-9838-908f9e437108" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("daf9e5e8-50a3-4dd3-9838-908f9e437108")) {                    Plotly.newPlot(                        "daf9e5e8-50a3-4dd3-9838-908f9e437108",                        [{"dimensions":[{"label":"l1","range":[3.0,9.0],"values":[7.0,4.0,8.0,3.0,6.0,9.0]},{"label":"l2","range":[3.0,9.0],"values":[3.0,4.0,7.0,5.0,9.0,7.0]},{"label":"batch_size","range":[1.0,4.0],"values":[4.0,3.0,1.0,2.0,3.0,1.0]},{"label":"epochs","range":[3.0,4.0],"values":[4.0,3.0,4.0,3.0,4.0,4.0]},{"label":"patience","range":[3.0,10.0],"values":[5.0,7.0,9.0,6.0,3.0,10.0]}],"line":{"cmax":2.2846229887008667,"cmin":1.8839163096159697,"color":[2.255367957305908,2.2846229887008667,1.8839163096159697,2.27172462348938,2.0524065482616423,1.894045622944832],"colorscale":[[0.0,"rgb(0,0,131)"],[0.2,"rgb(0,60,170)"],[0.4,"rgb(5,255,255)"],[0.6,"rgb(255,255,0)"],[0.8,"rgb(250,0,0)"],[1.0,"rgb(128,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('daf9e5e8-50a3-4dd3-9838-908f9e437108');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+<p>Parallel coordinates plots</p>
+</div>
+</div>
+</section>
+<section id="plot-all-combinations-of-hyperparameters" class="level2" data-number="13.7">
+<h2 data-number="13.7" class="anchored" data-anchor-id="plot-all-combinations-of-hyperparameters"><span class="header-section-number">13.7</span> Plot all Combinations of Hyperparameters</h2>
+<ul>
+<li>Warning: this may take a while.</li>
+</ul>
+<div class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb163"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb163-1"><a href="#cb163-1" aria-hidden="true" tabindex="-1"></a>PLOT_ALL <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb163-2"><a href="#cb163-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> PLOT_ALL:</span>
+<span id="cb163-3"><a href="#cb163-3" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> spot_tuner.k</span>
+<span id="cb163-4"><a href="#cb163-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb163-5"><a href="#cb163-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(i<span class="op">+</span><span class="dv">1</span>, n):</span>
+<span id="cb163-6"><a href="#cb163-6" aria-hidden="true" tabindex="-1"></a>            spot_tuner.plot_contour(i<span class="op">=</span>i, j<span class="op">=</span>j, min_z<span class="op">=</span>min_z, max_z <span class="op">=</span> max_z)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./11_spot_hpt_torch_fashion_mnist.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning: PyTorch With fashionMNIST</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./14_spot_ray_hpt_torch_cifar10.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Hyperparameter Tuning for PyTorch With <code>spotPython</code></span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
