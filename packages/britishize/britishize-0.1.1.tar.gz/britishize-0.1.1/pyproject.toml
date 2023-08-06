@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "britishize"
+version = "0.1.1"
+description = "Write poorer english"
+authors = ["Antonio Feregrino <antonio.feregrino@gmail.com>"]
+license = "MIT"
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
