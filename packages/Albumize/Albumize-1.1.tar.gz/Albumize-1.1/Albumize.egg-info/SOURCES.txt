@@ -1,0 +1,6 @@
+Albumize.py
+setup.py
+Albumize.egg-info/PKG-INFO
+Albumize.egg-info/SOURCES.txt
+Albumize.egg-info/dependency_links.txt
+Albumize.egg-info/top_level.txt
