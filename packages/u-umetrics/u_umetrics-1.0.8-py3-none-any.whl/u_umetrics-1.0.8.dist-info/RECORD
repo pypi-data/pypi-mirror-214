@@ -1,0 +1,13 @@
+umetrics/__init__.py,sha256=iz1VI1cwDN8s6m-qYtH8Yc3KziR3Q1fAiDTzFaCwopA,211
+umetrics/corefmetrics.py,sha256=s1jgS_2CAxZ1pjlwlL_xMAL-Y4PLW_pS88GAaxaJ9t0,4414
+umetrics/macrometrics.py,sha256=6h4CSnkKLIjUwxkR_n0IiEqy1dIVvChFitA7gKpuoNU,3081
+umetrics/micrometrics.py,sha256=mEYf0PdMg91_5Z9ISTZUfeqYl0Ea-3aV_EbX6ypYHvE,1522
+umetrics/multi_label_class_metric.py,sha256=S1Z7SnMTUw9WUQ4g9GH2EEyNgLzNbjyoC38aCugIWGY,1881
+umetrics/test_corefmetrics.py,sha256=GQT1pu-4AQ-cJ88NFJwPrhQWrspOtAhnyXQWxHd7mwI,596
+umetrics/test_macrometrics.py,sha256=ULyM-5ElK81uf3C0s-RstiQkwG6b1Cicycr-unrqOpM,3463
+umetrics/test_micrometrics.py,sha256=6f-Y_S-Zc9QFbJbI1VnuPBGGNO8HTwSXlQZJow_dyb0,2012
+u_umetrics-1.0.8.dist-info/LICENSE,sha256=zbYONA6K0VadoyYEH_WrL_rl6-lWhN8RdgPJRZib-WQ,1150
+u_umetrics-1.0.8.dist-info/METADATA,sha256=lmhrYoqWK9NADeiMglvoDujxUSGSd4JQmGplzl9hMB4,2413
+u_umetrics-1.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+u_umetrics-1.0.8.dist-info/top_level.txt,sha256=v9va8F8MW77TdCK-L03SngRP7D3tNq-kZvcwCtw5B3k,9
+u_umetrics-1.0.8.dist-info/RECORD,,
