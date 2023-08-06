@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: FinGen
+Version: 0.3
+Summary: A penetration testing findings generator using ChatGPT.
+Home-page: https://github.com/Stratus-Security/FinGen
+Author: Stratus Security
+Author-email: contact@stratussecurity.com
+License: GPLv3
+Keywords: ChatGPT,Pentesting,Penetration Testing,Findings Generator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
