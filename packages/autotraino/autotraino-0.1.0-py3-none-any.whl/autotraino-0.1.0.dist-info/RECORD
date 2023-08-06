@@ -1,0 +1,11 @@
+autotraino/.gitignore,sha256=rxBS9dDxgwHEBkQwjpmnDc3DmRcKIz28z35uCvYKijs,5069
+autotraino/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+autotraino/README.md,sha256=h2BEgGVCoK6ug6jDJDzuOVw3AU27W7Fn23Cy1yY_ssQ,2635
+autotraino/__init__.py,sha256=UN9Qga5WAsxJDQWm0lfgvJce46oqujU73P9cKCTKprg,1778
+autotraino/requirements.txt,sha256=Vhy6uG6YGR5eL1O-Fd9oCdUH4UlNGEQU52cnzinNKe0,3458
+autotraino/.idea/workspace.xml,sha256=0mdEMWYxxL0pG6J1Xw1bTzJn6IvQVlJJ8ZpfLxI2Vis,2357
+autotraino/gluon/__init__.py,sha256=c0BqWTEuKgK7xTbJT0lvEcaz02TJXklGgt5fVQAmGs4,7227
+autotraino-0.1.0.dist-info/METADATA,sha256=qsgwEwR5vulRDcswh3nWy6LN_6Cnq4VHSdcwW0Ns4Xs,8319
+autotraino-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+autotraino-0.1.0.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+autotraino-0.1.0.dist-info/RECORD,,
