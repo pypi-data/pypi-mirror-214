@@ -1,0 +1,9 @@
+LICENSE
+README.md
+psychofit.py
+setup.py
+Psychofit.egg-info/PKG-INFO
+Psychofit.egg-info/SOURCES.txt
+Psychofit.egg-info/dependency_links.txt
+Psychofit.egg-info/requires.txt
+Psychofit.egg-info/top_level.txt
