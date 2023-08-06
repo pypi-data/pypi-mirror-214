@@ -1,0 +1,7 @@
+setup.py
+ConstitutionUz/__init__.py
+ConstitutionUz/constitution.py
+ConstitutionUz.egg-info/PKG-INFO
+ConstitutionUz.egg-info/SOURCES.txt
+ConstitutionUz.egg-info/dependency_links.txt
+ConstitutionUz.egg-info/top_level.txt
