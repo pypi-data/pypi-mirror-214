@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: stock-price-alert
+Version: 1.0.0
+Summary: A Python library for retrieving stock prices and setting price alerts
+Home-page: https://github.com/piritheeviraman/stock-price-alert-lib
+Author: piritheevi
+Author-email: gkappdeveloper@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas
+Requires-Dist: pandas-datareader
+Requires-Dist: telebot
+Requires-Dist: yfinance
+
+StockPriceBot
+=============
+
+StockPriceBot is a Python library that provides a Telegram bot for retrieving stock prices and setting price alerts.
+With this library, users can easily get the current price of a stock, set reminders for specific price levels, and receive notifications when the price reaches the set limits.
+
+Features
+--------
+
+- Get the current price of a stock by providing the stock symbol.
+- Set price alerts for stocks with custom upper and lower limits.
+- Receive notifications when the price reaches the set limits.
+- Remove price alerts for specific stocks.
+- List all active price alerts.
+
+Installation
+------------
+
+You can install StockPriceBot using pip:
+
+.. code-block:: bash
+
+   pip install stockpricebot
+
+Usage
+-----
+
+To use StockPriceBot in your Python code, you need to obtain a Telegram Bot API token. You can create a bot and get the token from the BotFather on Telegram.
+
+Here's an example of how to use the library:
+
+.. code-block:: python
+
+   import os
+   from stockpricebot import StockPriceBot
+
+   # Get the bot token from the environment variable.
+   bot_token = os.environ["BOT_TOKEN"]
+
+   # Create a new bot instance.
+   bot = StockPriceBot(bot_token)
+
+   # Start the bot.
+   bot.run()
+
+Methods
+-------
+
+- ``get_price(ticker)``: Gets the current price of the given stock.
+- ``set_reminder(user_id, ticker, upper_limit, lower_limit)``: Sets a price alert for the given user and stock.
+- ``remove_reminder(user_id, ticker)``: Removes a price alert for the given user and stock.
+- ``list_reminders(user_id)``: Lists all active price alerts for the given user.
+- ``run()``: Starts the bot.
+
+Contributing
+------------
+
+Contributions are welcome! If you encounter any issues, have suggestions, or want to contribute to the project, please feel free to submit a pull request or open an issue on the `GitHub repository <https://github.com/piritheeviraman/stock-price-alert-lib>`_.
+
+License
+-------
+
+StockPriceBot is released under the MIT License. See the `LICENSE <https://github.com/piritheeviraman/stock-price-alert-lib/blob/main/LICENSE>`_ file for more details.
+
+For detailed documentation and examples, please refer to the `GitHub repository <https://github.com/piritheeviraman/stock-price-alert-lib>`_.
