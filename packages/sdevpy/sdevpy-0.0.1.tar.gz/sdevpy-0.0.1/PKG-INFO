@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sdevpy
+Version: 0.0.1
+Summary: Python package for Machine Learning in Finance
+Author-email: Sebastien Gurrieri <sebgur@gmail.com>
+Project-URL: Git page, https://github.com/sebgur/SDev.Python
+Project-URL: SDev Finance, http://sdev-finance.com/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SDev.Python
+
+Python repository for various projects in Machine Learning in relation to Finance.This is a simple example package. In the current release,
+we work on stochastic volatility surfaces and their calibration through Machine Learning methods.
+
+See other work on our main website [SDev-Finance](http://sdev-finance.com/).
