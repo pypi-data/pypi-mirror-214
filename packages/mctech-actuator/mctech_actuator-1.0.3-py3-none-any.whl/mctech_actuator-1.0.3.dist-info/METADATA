@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mctech-actuator
+Version: 1.0.3
+Requires-Dist: log4py
+Requires-Dist: fastapi
+
