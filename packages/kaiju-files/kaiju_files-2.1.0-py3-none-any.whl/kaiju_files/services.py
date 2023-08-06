@@ -1,0 +1,7 @@
+from kaiju_tools.app import service_class_registry
+
+from kaiju_files.files import FileService
+from kaiju_files.converters import FileConverterService, converters
+
+service_class_registry.register_class(FileService)
+service_class_registry.register_class(FileConverterService)
