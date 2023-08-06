@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lmt-cli
+Version: 0.0.0
+Author: Sébastien De Revière
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lmt
+The main CLI tool within the LLM-Toolbox, designed to enable seamless communication with ChatGPT. Customize your experience with tailored commands for various tasks, or use `lmt` standalone for direct interaction with ChatGPT.
