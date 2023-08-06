@@ -1,0 +1,13 @@
+README.md
+setup.py
+Korotkiyserializer/__init__.py
+Korotkiyserializer/constants.py
+Korotkiyserializer/json_serializer.py
+Korotkiyserializer/serialiser.py
+Korotkiyserializer/serializer_factory.py
+Korotkiyserializer/xml_serializer.py
+Korotkiyserializer.egg-info/PKG-INFO
+Korotkiyserializer.egg-info/SOURCES.txt
+Korotkiyserializer.egg-info/dependency_links.txt
+Korotkiyserializer.egg-info/requires.txt
+Korotkiyserializer.egg-info/top_level.txt

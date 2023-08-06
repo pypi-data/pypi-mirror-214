@@ -1,0 +1,1 @@
+pip install Korotkiyserializer==0.1.1
