@@ -1,0 +1,6 @@
+pyyaml==6.0
+requests==2.22.0
+tqdm==4.65.0
+pillow==9.5.0
+python-magic==0.4.27
+uuid==1.30
