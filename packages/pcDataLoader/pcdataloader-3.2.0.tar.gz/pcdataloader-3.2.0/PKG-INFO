@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pcDataLoader
+Version: 3.2.0
+Summary: LOAD "pcdl",8,1
+Project-URL: Homepage lab, http://www.mathcancer.org/
+Project-URL: Homepage project, http://physicell.org/
+Project-URL: Hompage, https://github.com/elmbeech/physicelldataloader
+Project-URL: Documentation, https://github.com/elmbeech/physicelldataloader/tree/master/man
+Project-URL: Issues, https://github.com/elmbeech/physicelldataloader/issues
+Project-URL: Source, https://github.com/elmbeech/physicelldataloader
+Author-email: Elmar Bucher <epbucher@iu.edu>
+Maintainer-email: Elmar Bucher <epbucher@iu.edu>
+License-Expression: BSD-3-Clause
+Keywords: analysis,data,physicell,python3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: <4,>=3.6
+Requires-Dist: pcdl
