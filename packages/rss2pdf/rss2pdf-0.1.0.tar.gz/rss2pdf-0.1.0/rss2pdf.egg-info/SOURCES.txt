@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rss2pdf/__init__.py
+rss2pdf/__main__.py
+rss2pdf/config.toml
+rss2pdf.egg-info/PKG-INFO
+rss2pdf.egg-info/SOURCES.txt
+rss2pdf.egg-info/dependency_links.txt
+rss2pdf.egg-info/requires.txt
+rss2pdf.egg-info/top_level.txt
+tests/test_main.py
