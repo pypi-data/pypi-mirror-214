@@ -1,0 +1,16 @@
+pytest_rabbitmq/__init__.py,sha256=cl1GtkUIoX1sMPviFITieG0rpFh6D51CMf6h5D-9tQw,872
+pytest_rabbitmq/plugin.py,sha256=_L6doUJrWoU8DpjL6cmcLB5kNVFH176kr95trPWs5zs,3550
+pytest_rabbitmq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_rabbitmq/factories/__init__.py,sha256=pxov7lfSWCE2HOU_xHPwoK_cV0k1VZU6YA17nYunUP4,979
+pytest_rabbitmq/factories/client.py,sha256=so0nctc2BI3YeoaG1fY1aBPJPvAgg_VqykI716QdirY,5038
+pytest_rabbitmq/factories/executor.py,sha256=n9rsP2yfr1FhJ0U-70blo0WC_FujlWAfSFo__uQQ-Fk,2908
+pytest_rabbitmq/factories/process.py,sha256=K2UKJg0KHiIWHdfBztYDXFkFoXYJmeCLZblfPLutr5Y,6511
+pytest_rabbitmq-3.0.1.dist-info/AUTHORS.rst,sha256=1RnQqC_PfVsv4oFqr01S4fNQIfZVMT60EbQfhaygrGM,268
+pytest_rabbitmq-3.0.1.dist-info/COPYING,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+pytest_rabbitmq-3.0.1.dist-info/COPYING.lesser,sha256=6or154nLLU6bELzjh0mCreFjt0m2v72zLi3yHE0QbeE,7650
+pytest_rabbitmq-3.0.1.dist-info/METADATA,sha256=_5fT6vY8RYgOQEGYouGiEMOeOnQF7osqQwZ_H1WnjgY,14878
+pytest_rabbitmq-3.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_rabbitmq-3.0.1.dist-info/entry_points.txt,sha256=-YvQZpeU_QQClefT2vEO3r5C2lEQDc-XZypOWlaNrF8,52
+pytest_rabbitmq-3.0.1.dist-info/top_level.txt,sha256=3daOzsb3AE-tBfLvrTXHJ4cO1Ns2SKKYhwkmLxQOQYA,16
+pytest_rabbitmq-3.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pytest_rabbitmq-3.0.1.dist-info/RECORD,,
