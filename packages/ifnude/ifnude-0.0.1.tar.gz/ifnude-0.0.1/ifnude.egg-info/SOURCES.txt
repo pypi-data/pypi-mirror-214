@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+ifnude/__init__.py
+ifnude/detector.py
+ifnude/detector_utils.py
+ifnude/image_utils.py
+ifnude.egg-info/PKG-INFO
+ifnude.egg-info/SOURCES.txt
+ifnude.egg-info/dependency_links.txt
+ifnude.egg-info/requires.txt
+ifnude.egg-info/top_level.txt
