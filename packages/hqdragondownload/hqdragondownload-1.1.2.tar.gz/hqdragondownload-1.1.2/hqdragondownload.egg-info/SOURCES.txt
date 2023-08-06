@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+hqdragon/__init__.py
+hqdragon/__main__.py
+hqdragondownload.egg-info/PKG-INFO
+hqdragondownload.egg-info/SOURCES.txt
+hqdragondownload.egg-info/dependency_links.txt
+hqdragondownload.egg-info/requires.txt
+hqdragondownload.egg-info/top_level.txt
