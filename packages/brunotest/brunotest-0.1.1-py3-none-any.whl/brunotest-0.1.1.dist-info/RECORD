@@ -1,0 +1,9 @@
+brunotest.py,sha256=3fx1bDWEOTg3ZEfioIRe6vO1xQqtS23751G0DzhFN_Q,13639
+core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/compiler.py,sha256=sh6zA-dulIFJtCvTFjEX98JC9g8KXdd15ngOlzCmMfs,3826
+core/imports.py,sha256=6N0ZN1zXYziBWEpQoEV8jQecee8ViQBlTNfcGCldiW8,988
+brunotest-0.1.1.dist-info/METADATA,sha256=R9QMQ38KosIcanTk3TjVy_f7S8VHHVPaRtnYQffo5ws,2700
+brunotest-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+brunotest-0.1.1.dist-info/entry_points.txt,sha256=HZ3ZwjyYyu-ikEIm2wQljdpX9izLMHKzQgk_L3t9I34,60
+brunotest-0.1.1.dist-info/top_level.txt,sha256=JCrC8wz7y-H5H_RmHkWwBwIw6NYLdURUXkvH7H4U4YE,15
+brunotest-0.1.1.dist-info/RECORD,,
