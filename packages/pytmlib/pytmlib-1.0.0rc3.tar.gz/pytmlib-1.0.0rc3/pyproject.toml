@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pytmlib"
+version = "1.0.0rc3"
+authors = [
+    { name = "Oliver Fabel", email = "oliver.fabel@fhnw.ch" },
+]
+description = "This is the base library for the Python Tool Manager."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+    "pytm",
+    "Python Tool Manager",
+    "FHNW",
+    "IBRE"
+]
+dependencies = [
+    "Flask==2.3.2",
+    "Flask-Cors==3.0.10",
+    "matplotlib>=3.7"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ofabel/pytm-bootstrap"
+"Bug Tracker" = "https://github.com/ofabel/pytm-bootstrap/issues"
+"Changelog" = "https://github.com/ofabel/pytm-bootstrap/blob/main/CHANGELOG.md"
+
+[tool.hatch.build]
+ignore-vcs = true
+only-packages = true
+sources = ["src"]
