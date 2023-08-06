@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: molecule-glesys
+Version: 0.4
+Summary: Molecule GleSYS Plugin :: run molecule tests in GleSYS Cloud
+Home-page: https://github.com/glesys/molecule-driver
+Author: Magnus Johansson
+Author-email: magnus@glesys.se
+Maintainer: Magnus Johansson
+Maintainer-email: magnus@glesys.se
+License: MIT
+Project-URL: Bug Tracker, https://github.com/glesys/molecule-driver/issues
+Project-URL: Source Code, https://github.com/glesys/molecule-driver
+Keywords: ansible,roles,testing,molecule,plugin
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: molecule (>=3.2.0)
+Requires-Dist: pyyaml (<6,>=5.1)
+Provides-Extra: test
+Requires-Dist: molecule[test] ; extra == 'test'
+
+# Molecule GleSYS Plugin
+
+Molecule driver to spin up and run tests in GleSYS Cloud servers for easy testing
+
+# Installation and Usage
+
+```
+pip install molecule-glesys
+```
+
+Create a new role with molecule using this driver:
+
+```
+molecule init role <role_name> -d molecule-glesys
+```
+
+Configure `<role_name>/molecule/default/molecule.yml` with required parameters.  
+Sample config:
+
+```yaml
+dependency:
+  name: galaxy
+  options:
+    requirements-file: molecule/default/collections.yml
+driver:
+  name: molecule-glesys
+  vm_username: molecule
+
+platforms:
+  - name: "demo.demo-ubuntu-20-04"
+    template: Ubuntu 20.04 LTS (Focal Fossa)
+    description: "ubuntu-20-04"
+    datacenter: "Falkenberg"
+    platform: KVM
+    cpus: 2
+    memory: 2048
+    disk: 20
+
+  - name: "demo.demo-debian-11"
+    template: Debian 11 (Bullseye)
+    description: "debian-11"
+    datacenter: "Falkenberg"
+    platform: KVM
+    cpus: 2
+    memory: 2048
+    disk: 20
+
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
+```
+
+# License
+
+The [MIT](LICENSE) License.
