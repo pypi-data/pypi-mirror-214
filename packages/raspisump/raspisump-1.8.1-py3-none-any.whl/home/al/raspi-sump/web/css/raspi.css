@@ -1,0 +1,30 @@
+.topContainer {
+  background-color: #007f7f;
+  color: #FFFFFF; 
+  text-align: center;
+  padding: 15px;
+}
+
+.topContainer h1 {
+  font-family: Arial, sans-serif; 
+  font-size: 28px; 
+}
+
+.topContainer h3 {
+  font-family: Arial, sans-serif; 
+  font-size: 10px; 
+}
+
+.topContainer p {
+  font-family: Arial, sans-serif; 
+  font-size: 16px; 
+}
+
+.bottomContainer {
+  background-color: #007f7f;
+  color: #FFFFFF; 
+  text-align: center;
+  position: absolute;
+  left: 0%;
+  bottom:0;
+}
