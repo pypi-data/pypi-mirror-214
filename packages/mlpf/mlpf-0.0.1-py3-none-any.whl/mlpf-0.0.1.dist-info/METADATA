@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: mlpf
+Version: 0.0.1
+Summary: Machine learning for power flow
+Home-page: 
+Author: Viktor Todosijevic
+Author-email: todosijevicviktor998@gmail.com
+License: MIT
+Keywords: machine learning,power
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: numpy
+Requires-Dist: pandapower
+Requires-Dist: PYPOWER
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: torchmetrics
+
+<p align="center">
+<img src="images/logo.png" width="650">
+</p>
+
+__MLPF__ is a python library for (optimal) power flow calculations with machine learning.
+It offers:
+
+* efficient loss functions compatible with both _PyTorch_ and _scikit-learn_!
+* utilities such as data structures and loading pipelines that make it easy to go from
+  _pandapower_ nets or _PYPOWER_ case files to arrays and tensors in just one line of code!
+* visualization and description tools to take a quick look at your data
+
+## Usage
+
+-[ ] One big TODO
+
+### Data loading
+
+### Loss
+
+#### scikit-learn
+
+#### torch
+
+### Indepth examples
+
+## Installation
+
+### Pip
+
+-[ ] TODO Publish package
+
+### Development
+
+```
+git clone https://github.com/viktor-ktorvi/mlpf.git
+cd mlpf
+
+conda env create -f environment.yml
+conda activate mlpfenv
+```
