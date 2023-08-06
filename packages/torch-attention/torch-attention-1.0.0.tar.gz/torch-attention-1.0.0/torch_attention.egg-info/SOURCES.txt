@@ -1,0 +1,6 @@
+README.md
+setup.py
+torch_attention.egg-info/PKG-INFO
+torch_attention.egg-info/SOURCES.txt
+torch_attention.egg-info/dependency_links.txt
+torch_attention.egg-info/top_level.txt
