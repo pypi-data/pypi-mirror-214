@@ -1,0 +1,11 @@
+ckastrokit/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ckastrokit/__main__.py,sha256=Z73hbib0WsOtAdK9nO2Jm18hKhFR_8N5P-khkooyTW0,78
+ckastrokit/io/__init__.py,sha256=RWqsYk6QmAvJIH-PGKoUaxEes371y2AOHE7stxWpxLI,31
+ckastrokit/io/subcube.py,sha256=einiIMVeX8W1dKQUFxNEjzZDctdCFCCi-XyzXBuSjhU,1270
+ckastrokit/milkyway/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckastrokit/milkyway/spiralarms.py,sha256=I74phQcw6bLnL3IsR4NXqyxKkJy-ofrCphNTv7whqGg,16547
+CKAstroTools-0.0.1.dist-info/LICENSE,sha256=4RU-l4XdY5mNO1PTxnRC-e1Y6FJV89CjBZQeA26GAwE,1071
+CKAstroTools-0.0.1.dist-info/METADATA,sha256=a12Ogz_iKVIh4MG7u0LDHEvtLWoVpA3LAB8Z94pqARc,1381
+CKAstroTools-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CKAstroTools-0.0.1.dist-info/top_level.txt,sha256=0Pv-2Kdu4zTFpYV38rSV_LolVBoiOmJr6q9f8-WN-7M,11
+CKAstroTools-0.0.1.dist-info/RECORD,,
