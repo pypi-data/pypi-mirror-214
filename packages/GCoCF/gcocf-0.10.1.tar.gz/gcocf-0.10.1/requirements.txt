@@ -1,0 +1,6 @@
+requests
+click
+jdatetime
+python-dateutil
+pytz
+discord
