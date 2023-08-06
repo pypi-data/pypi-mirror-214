@@ -1,0 +1,57 @@
+dataset:
+  path-root: data/claim_stance_dataset_v1.csv
+
+experiment:
+  path-training: experiment/train.csv
+  path-validation: experiment/validation.csv
+  path-test: experiment/test.csv
+  path-few-shots: experiment/few-shots.csv
+
+prompt-fine-tuning:
+  model-name : gpt2-xl
+  model-type : gpt-2
+  model-path: "/bigwork/nhwpajjy/pre-trained-models/gpt2"
+  few-shot-size: 16
+  params:
+    batch-size : [16]
+    learning-rate : [2e-5]
+    epochs: [1]
+
+  best-params:
+    batch-size: 16
+    learning-rate: 2e-5
+    epochs: 1
+
+prompt:
+  model-name: "gpt2-xl"
+  model-type : "gpt-2"
+  model-path: "/bigwork/nhwpajjy/pre-trained-models/gpt2-xl"
+  few-shot-size: 16
+
+pre-trained-models:
+  path: "/bigwork/nhwpajjy/pre-trained-models"
+  models : ["t5-base", "bert-base-uncased", "gpt2", "opt", "gpt2-xl"]
+  alpaca:
+    model-name: "wxjiao/alpaca-7b"
+    model-path: "/bigwork/nhwpajjy/pre-trained-models/wxjiao/alpaca-7b"
+  gpt-j:
+    model-name: "EleutherAI/gpt-j-6B"
+    model-path: "/bigwork/nhwpajjy/pre-trained-models/gptj"
+
+baseline:
+  model-path: "/bigwork/nhwpajjy/pre-trained-models/microsoft/deberta-base"
+  model-name: "microsoft/deberta-base"
+  api-key: "cc362e03e225e86476ac8d0a18460b40L05"
+
+  params:
+    batch-size: [16, 32]
+    learning-rate: [1e-6]
+    head-size: [30]
+    epochs: [15]
+
+  best-params:
+    batch-size: 8
+    learning-rate: 1e-4
+    head-size: 30
+    epochs: 1
+
