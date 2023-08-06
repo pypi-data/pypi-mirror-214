@@ -1,0 +1,8 @@
+python-libsbml
+sympy
+pint
+lxml
+
+[test]
+pytest
+pre-commit
