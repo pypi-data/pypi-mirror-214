@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/copytrav/__init__.py
+src/copytrav.egg-info/PKG-INFO
+src/copytrav.egg-info/SOURCES.txt
+src/copytrav.egg-info/dependency_links.txt
+src/copytrav.egg-info/top_level.txt
+src/copytrav/data/one/data1.rst
+src/copytrav/data/one/data1.txt
+src/copytrav/data/two/data2.rst
+src/copytrav/data/two/data2.txt
+src/copytrav/data/two/even_more_data/data3.rst
+src/copytrav/data/two/even_more_data/data3.txt
+tests/test_copy.py

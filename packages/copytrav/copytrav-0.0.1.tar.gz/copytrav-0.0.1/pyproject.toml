@@ -1,0 +1,23 @@
+[project]
+name = "copytrav"
+version = "0.0.1"
+authors = [
+    { name="Owen Shepherd", email="oshepengineering@gmail.com" },
+]
+description = "Copy traversables as directories."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/OwenShepherd/copytrav"
+"Bug Tracker" = "https://github.com/OwenShepherd/copytrav/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+"copytrav.data" = ["**/*.rst", "**/*.txt"]
