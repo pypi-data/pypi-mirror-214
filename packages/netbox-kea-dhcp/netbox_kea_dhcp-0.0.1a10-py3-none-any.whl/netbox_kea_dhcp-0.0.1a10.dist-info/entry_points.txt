@@ -1,0 +1,2 @@
+[console_scripts]
+netbox-kea-dhcp = netboxkea.entry_point:run
