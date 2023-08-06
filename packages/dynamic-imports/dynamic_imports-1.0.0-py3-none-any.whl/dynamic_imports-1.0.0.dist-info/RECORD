@@ -1,0 +1,6 @@
+dynamic_imports/__init__.py,sha256=mSodgaQzKLwWhVw1WimaYWp4KEO2uGL1MbLVFRgkEUc,119
+dynamic_imports/importers.py,sha256=NdYLW8vzjtD_SNieNB4lac85RV5TRqWPBnyLr6GygSM,1598
+dynamic_imports/search.py,sha256=qEqXwVeCGE7JmHtF4BmE5eZbjTe-N3E2HY8ZrOMBsd4,4755
+dynamic_imports-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dynamic_imports-1.0.0.dist-info/METADATA,sha256=GQGSqaUfSNafun46SkjZ5TVusiivqB-aYsNt8MKIrZw,3082
+dynamic_imports-1.0.0.dist-info/RECORD,,
