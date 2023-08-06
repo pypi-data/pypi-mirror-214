@@ -1,0 +1,14 @@
+README.md
+setup.py
+pulumi_auto_deploy/__init__.py
+pulumi_auto_deploy/_utilities.py
+pulumi_auto_deploy/auto_deployer.py
+pulumi_auto_deploy/provider.py
+pulumi_auto_deploy/pulumi-plugin.json
+pulumi_auto_deploy/py.typed
+pulumi_auto_deploy.egg-info/PKG-INFO
+pulumi_auto_deploy.egg-info/SOURCES.txt
+pulumi_auto_deploy.egg-info/dependency_links.txt
+pulumi_auto_deploy.egg-info/not-zip-safe
+pulumi_auto_deploy.egg-info/requires.txt
+pulumi_auto_deploy.egg-info/top_level.txt
