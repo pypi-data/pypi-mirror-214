@@ -1,0 +1,9 @@
+README.md
+setup.py
+findPlate/__init__.py
+findPlate/main.py
+findPlate.egg-info/PKG-INFO
+findPlate.egg-info/SOURCES.txt
+findPlate.egg-info/dependency_links.txt
+findPlate.egg-info/requires.txt
+findPlate.egg-info/top_level.txt
