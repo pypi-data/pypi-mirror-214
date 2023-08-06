@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+alphagram/__init__.py
+alphagram/enums.py
+alphagram/methods.py
+alphagram/types.py
+alphagram.egg-info/PKG-INFO
+alphagram.egg-info/SOURCES.txt
+alphagram.egg-info/dependency_links.txt
+alphagram.egg-info/not-zip-safe
+alphagram.egg-info/requires.txt
+alphagram.egg-info/top_level.txt
