@@ -1,0 +1,11 @@
+h3r/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h3r/path_like.py,sha256=uPpdpxkB6XPCRIeXRmTUv9aNfEpIO4zyl-7CzaZPdNI,72
+h3r/h3result.py,sha256=SdqzyzF-J8zNEQUnMzjm9V7E42CYtBd6oGkq8TltJ7c,1470
+h3r/interface.h,sha256=IQQTsLYTpFussE7FM_v8sBZ4pvc6bxXhCmpFyektoL0,820
+h3r/error.py,sha256=VvRfa-wSLTX-0yZqxfCYZ0HFOQrngwxaBy6acJNVfo8,237
+h3r/cffi.pypy39-pp73-x86_64-linux-gnu.so,sha256=wBrr3Pkx4euwou4DCrdZ-QPfbDHCTd2s4JVXPluMjfE,18040
+h3r/lib/liblip.so.0,sha256=wvyVsIXiMFxyilSfn2EB5gKieeh3_ZGis0oXVwKeAUw,85528
+h3r/lib/libh3r.so.0,sha256=uAAA8bHiM3JcjoDVs2rjHa1eBP1iLV-O11QL1ft3RLo,40384
+h3r-0.1.0.dist-info/METADATA,sha256=fcFFoew5oYbfNZXn4nMupZcdWLIERkiW2vpdTpKovoA,519
+h3r-0.1.0.dist-info/WHEEL,sha256=MhUGXJ93UfjrCIlDm2riNOOlEm_7myw5wT39YcWZ4yQ,159
+h3r-0.1.0.dist-info/RECORD,,
