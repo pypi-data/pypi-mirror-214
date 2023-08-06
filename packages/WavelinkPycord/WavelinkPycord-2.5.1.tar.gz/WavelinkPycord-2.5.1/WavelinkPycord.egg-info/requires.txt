@@ -1,0 +1,3 @@
+aiohttp<4,>=3.7.4
+py-cord
+yarl~=1.8.2
