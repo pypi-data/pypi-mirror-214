@@ -1,0 +1,13 @@
+GCoCF/__init__.py,sha256=c9q0acYPl7Z6NRfDRQtA9pbM5a2Wq5W9vBzBuul7iuM,145
+GCoCF/__main__.py,sha256=QhwXjl0hn0WOCs-AuOSa5tpFJOlNSrIBrxkD0Rpk2z0,10649
+GCoCF/api.py,sha256=OJlbcMn_WllEQXCVKN1gUFyTHv2SgrbU96DhJHTudJc,2224
+GCoCF/formatters.py,sha256=BVUtr0ckY4-51CGwm0PAjHUJmbNF7dNPdHq6ZQe9TQk,10419
+GCoCF/models.py,sha256=rz6TDfxELxmoZ-J1coiN9BV5oeve_Ys_c-K1XDFe_CY,12638
+GCoCF/notifiers.py,sha256=5ljs0mWxNLV4uW0ERpxfYAQWTYwBfCOl0A-Id_04VrI,1009
+GCoCF/utils.py,sha256=FiBea3pfoFtoL46Jq0u56kfIKjRRacS0UGA4v7OUzd0,1378
+GCoCF/locales/messages.pot,sha256=ryt4HePpN79NLBrU7Uaei81TIEvDDWYa5xOI1zQ-_yA,2369
+gcocf-0.9.99.dist-info/entry_points.txt,sha256=evbF15d68s6hx6Qs4fRGlJbOPvKUjYN-VeBR5cb7lVo,36
+gcocf-0.9.99.dist-info/LICENSE.txt,sha256=7_fCA3fmAXup1P1swUz3JFh0iLlaIMJkEw23y97h5OM,1070
+gcocf-0.9.99.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+gcocf-0.9.99.dist-info/METADATA,sha256=Ixpkr80kLWHYs6ROXvvi_vF7sQtLE7ZsMZ4a1CyNpsc,2159
+gcocf-0.9.99.dist-info/RECORD,,
