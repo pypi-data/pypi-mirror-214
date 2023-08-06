@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/trifasicos.egg-info/PKG-INFO
+src/trifasicos.egg-info/SOURCES.txt
+src/trifasicos.egg-info/dependency_links.txt
+src/trifasicos.egg-info/top_level.txt
