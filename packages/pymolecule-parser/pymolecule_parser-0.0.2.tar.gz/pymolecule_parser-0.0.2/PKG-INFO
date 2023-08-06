@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pymolecule-parser
+Version: 0.0.2
+Summary: A parser for molecule formula. Nested brackets are supported.
+Project-URL: Documentation, https://github.com/kohei-noda-qcrg/pymolecule-parser#readme
+Project-URL: Issues, https://github.com/kohei-noda-qcrg/pymolecule-parser/issues
+Project-URL: Source, https://github.com/kohei-noda-qcrg/pymolecule-parser
+Author-email: Kohei Noda <kohei-noda@hiroshima-u.ac.jp>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pymolecule-parser: A parser for a molecule formula that supports nested brackets
+
+## Installation
+
+```bash
+pip install pymolecule-parser
+```
+
+## Usage
+
+```python
+from pymolecule_parser import parse
+
+parse("H2O") # {'H': 2, 'O': 1}
+parse("3H2O") # {'H': 6, 'O': 3}
+parse("H2O2(OH)2") # {'H': 4, 'O': 4}
+parse("[Co(NH3)6]Cl3") # {'Co': 1, 'N': 6, 'H': 18, 'Cl': 3}
+```
+
+
+## Limitations
+The following notations are not supported.
+- Ion notations
+  - For example, `[Cu(NH3)4]2+` is not supported. Use `Cu(NH3)4` instead.
+- middle dot `·`
+  - For example, `CuSO4·5H2O` is not supported. Use `CuSO4(H2O)5` instead.
+
+## License
+
+Apache License 2.0
+
+## Author
+
+Kohei Noda
