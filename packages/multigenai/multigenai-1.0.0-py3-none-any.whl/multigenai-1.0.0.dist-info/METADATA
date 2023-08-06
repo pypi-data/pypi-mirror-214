@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: multigenai
+Version: 1.0.0
+Summary: A module for generating AI responses using Bard and ChatGPT
+Author: Omkar Patel
+Author-email: omkarvpatel1234@gmail.com
+Requires-Dist: Flask (==2.3.2)
+Requires-Dist: bardapi (==0.1.11)
+Requires-Dist: openai (==0.27.8)
+Requires-Dist: tiktoken (==0.4.0)
+Requires-Dist: python-dotenv (==1.0.0)
+
