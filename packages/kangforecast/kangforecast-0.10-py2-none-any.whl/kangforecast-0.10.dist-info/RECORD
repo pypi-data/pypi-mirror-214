@@ -1,0 +1,7 @@
+kangforecast/__init__.py,sha256=dwxPXsKkFNhq0ux5ob7qsRQMKMN6pnQ3VlhYWlRueBs,70
+kangforecast/kangfn.py,sha256=pFBnz28xCtkFKMUen_-XlyHLAI3eGdBB97lawHg5tLI,1304
+kangforecast/data/special_dates.csv,sha256=d30jjjm_w5jXmG2uz4uOjS6Zpg_M7TeXPnWXhn6Vki0,123
+kangforecast-0.10.dist-info/METADATA,sha256=yll1Nlyncp3XglVf_XWjEhQL-_UWbeN90AzqR-OPgy0,656
+kangforecast-0.10.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+kangforecast-0.10.dist-info/top_level.txt,sha256=j42_M47rzlHrYuLJqZAa-p2VU3l-cZ3mrtTtc8iV4eA,13
+kangforecast-0.10.dist-info/RECORD,,
