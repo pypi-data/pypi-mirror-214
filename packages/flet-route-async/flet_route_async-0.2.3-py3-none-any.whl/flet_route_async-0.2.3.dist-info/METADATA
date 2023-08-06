@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: flet-route-async
+Version: 0.2.3
+Summary: This makes it easy to manage multiple views with dynamic routing.
+Home-page: https://github.com/saurabhwadekar/flet_route
+Author: Saurabh Wadekar [ INDIA ]
+Maintainer: Saurabh Wadekar
+Maintainer-email: saurabhwadekar420@gmail.com
+License: MIT
+Keywords: flet,routing,flet_route,routes,flet app,flet-route,flet simple routing
+Requires: flet
+Requires: repath
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![Build Status](flet-route.png)
+# This makes it easy to manage multiple views with dynamic routing.
+
+This is an utility class based on repath library which allows matching ExpressJS-like routes and parsing their parameters, for example `/account/:account_id/orders/:order_id`.
+Async pip package, just compiles by SmokyAce until the real package is being updates
+
+## Installation
+```
+pip install flet-route-async
+```
+
+## Upgradation
+```
+pip install flet-route-async --upgrade
+```
+
+#### [📖 Read the documentation ](https://saurabhwadekar.github.io/flet-route-doc)
+
+
+## Author
+
+<b>Name :</b> Saurabh Wadekar<br>
+<b>Email :</b> saurabhwadekar420@gmail.com<br>
+<b>County :</b> 🇮🇳INDIA🇮🇳<br>
+
+<h1>❤️ THANK YOU ❤️</h1><br> 
