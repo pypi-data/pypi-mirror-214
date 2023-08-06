@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: validador-colab
+Version: 0.0.1
+Summary: Validador colab é uma ferramenta para validar os dados diarios incrementáis nas tabelas de fato do colab e no Analytics
+Project-URL: Documentation, https://github.com/unknown/validador-colab#readme
+Project-URL: Issues, https://github.com/unknown/validador-colab/issues
+Project-URL: Source, https://github.com/unknown/validador-colab
+Author-email: Davi Amaral de Araujo <davi@smarketsolutions.com.br>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
