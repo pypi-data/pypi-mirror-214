@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+include *.py
+graft artd_product/*
+global-exclude *.pyc
+prune __pycache__
