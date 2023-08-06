@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: albhed
+Version: 1.1.0
+Summary: Converts Text into Al Bhed
+Author: Chris Pressland
+Author-email: mail@cpressland.io
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Al Bhed
+
+Simple CLI and Library that translates Text into Al Bhed
+
+Python:
+```python
+>>> from albhed import AlBhed
+>>>
+>>> albhed = AlBhed("Hello, World!")
+>>> albhed.translate()
+'Rammu, Funmt!'
+>>>
+>>> albhed = AlBhed("Rammu, Funmt!")
+>>> albhed.revert()
+'Hello, World!'
+```
+
+Shell:
+```shell
+$ albhed Hello, World!
+Rammu, Funmt!
+
+$ albhed -r Rammu, Funmt!
+Hello, World!
+```
+
