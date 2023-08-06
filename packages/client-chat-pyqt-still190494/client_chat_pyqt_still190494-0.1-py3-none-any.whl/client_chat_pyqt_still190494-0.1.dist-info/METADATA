@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: client-chat-pyqt-still190494
+Version: 0.1
+Summary: client_chat_pyqt_still190494
+Author: Artem
+Author-email: artem@yandex.ru
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
