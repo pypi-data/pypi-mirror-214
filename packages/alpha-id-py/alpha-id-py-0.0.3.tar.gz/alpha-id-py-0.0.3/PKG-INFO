@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: alpha-id-py
+Version: 0.0.3
+Summary: Python library for generating short alphanumeric strings from integers
+Home-page: https://github.com/devknown/alpha-id-py
+Author: Hassan Azzi
+Author-email: devknown@gmail.com
+Keywords: alpha-id alphanumeric string generator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+
+Python library that allows you to generate short alphanumeric strings from integers. It can be useful for creating compact, unique, and obfuscated identifiers.
