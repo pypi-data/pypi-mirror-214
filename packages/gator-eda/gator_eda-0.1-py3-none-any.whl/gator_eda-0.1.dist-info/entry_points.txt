@@ -1,0 +1,3 @@
+[console_scripts]
+gator=gator.__main__:main
+
