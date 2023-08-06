@@ -1,0 +1,8 @@
+pyproject.toml
+readme.md
+tejim/__init__.py
+tejim/data_convert.py
+tejim.egg-info/PKG-INFO
+tejim.egg-info/SOURCES.txt
+tejim.egg-info/dependency_links.txt
+tejim.egg-info/top_level.txt
