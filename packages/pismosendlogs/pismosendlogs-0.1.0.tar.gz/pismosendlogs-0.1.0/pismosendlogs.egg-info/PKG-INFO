@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pismosendlogs
+Version: 0.1.0
+Summary: A library to send logs
+Home-page: https://github.com/pismo/datalake-jobs
+Author: Pismo Data Team
+Author-email: datalake@pismo.io
+License: BSD 2-clause
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
