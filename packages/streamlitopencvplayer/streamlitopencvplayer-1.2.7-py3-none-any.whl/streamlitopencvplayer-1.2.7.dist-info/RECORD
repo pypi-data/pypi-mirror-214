@@ -1,0 +1,9 @@
+streamlitopencvplayer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamlitopencvplayer/app.py,sha256=6ongzoirfR891OPiBY7mi1DV3tCPJdOnlIXPNTxMnmc,6565
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/app.py,sha256=vnl68eKOJvfpHxECB5JobakYLOrlH73wATtJXCozjFY,240
+test/test.py,sha256=JiysXLIP77G_5R6_rbriBq-Xt1PXP4jGKNM8LfGu6gg,2200
+streamlitopencvplayer-1.2.7.dist-info/METADATA,sha256=bJs0bN57u00941Mx8CWtD_1JeP7qU7XTHFm78EbuSxU,408
+streamlitopencvplayer-1.2.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+streamlitopencvplayer-1.2.7.dist-info/top_level.txt,sha256=ido3HDXnYRv-IxycrK3sy4CPpYYBQUs643RudMfMNaU,27
+streamlitopencvplayer-1.2.7.dist-info/RECORD,,
