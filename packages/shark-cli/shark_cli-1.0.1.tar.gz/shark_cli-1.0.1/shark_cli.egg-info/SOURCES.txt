@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+loger/__init__.py
+loger/config_client_log.py
+shark_cli.egg-info/PKG-INFO
+shark_cli.egg-info/SOURCES.txt
+shark_cli.egg-info/dependency_links.txt
+shark_cli.egg-info/requires.txt
+shark_cli.egg-info/top_level.txt
+src/__init__.py
+src/client.py
+src/client_ui.py
+src/launcher.py
+src/metaclasses.py
+src/utils_client.py
+src/variables_client.py
