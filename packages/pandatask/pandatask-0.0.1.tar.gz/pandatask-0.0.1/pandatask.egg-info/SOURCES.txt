@@ -1,0 +1,9 @@
+README.md
+setup.py
+pandatask/__init__.py
+pandatask/core.py
+pandatask.egg-info/PKG-INFO
+pandatask.egg-info/SOURCES.txt
+pandatask.egg-info/dependency_links.txt
+pandatask.egg-info/requires.txt
+pandatask.egg-info/top_level.txt
