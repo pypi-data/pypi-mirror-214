@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include CHANGELOG
+
+include lua_auto_doc/Config_LuaAutoDoc.json
+include lua_auto_doc/tools/LuaBuiltInCache.json
+recursive-include lua_auto_doc/Assets *.svg *.txt *.ttf
+recursive-include lua_auto_doc/Favicon *.png *.svg *.xml *.webmanifest
+recursive-include lua_auto_doc/HTMLFragments * *.html
+recursive-include lua_auto_doc/Scripts *.js
+recursive-include lua_auto_doc/StyleSheets *.css
