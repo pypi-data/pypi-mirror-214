@@ -1,0 +1,10 @@
+justMulti/__init__.py,sha256=46-60jHJfkxnd68UEWsS-0CYDykDLO5W2KvaA9zOcMw,271
+justMulti/__main__.py,sha256=1-UdrMp-M1ZYQboOIdlzrJ_3m2YJ5BlFFXSaMuwKw48,12640
+justMulti/_compat.py,sha256=C1Sgh1ytT5OqZJGV22kyrdwoA2-rTWryxQB7xqffhSs,802
+justMulti/core.py,sha256=SVXKkUBEEHgXTHL1g1GwHwF0lyxP-RzLHUzEDGJc6XI,14518
+justMulti/paragraph.py,sha256=s-OB4GfYujS8xacxIZUPysc_7CuXPOmTHtjGRPcUl2s,1700
+justMulti/utils.py,sha256=6Dp_BiJjhXGCBg4tj5XmWQibgzt4j-I4SGgDwDM9nvM,1969
+justMulti-0.0.1.dist-info/METADATA,sha256=Z5l56f7qqSzQHnNKvM3seGGSsrowdly1ZyG7Qyn5QFA,326
+justMulti-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+justMulti-0.0.1.dist-info/top_level.txt,sha256=m9Uae3eE1KS9IlF8q28hscrumKygwJvULVTdxbQfzpI,10
+justMulti-0.0.1.dist-info/RECORD,,
