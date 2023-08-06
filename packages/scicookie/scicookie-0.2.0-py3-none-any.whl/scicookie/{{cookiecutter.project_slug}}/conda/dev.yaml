@@ -1,0 +1,12 @@
+name: {{ cookiecutter.project_slug }}
+channels:
+  - nodefaults
+  - conda-forge
+dependencies:
+  - python <3.11
+  - poetry
+  - nodejs  # used by semantic-release
+  - shellcheck
+{%- if cookiecutter.documentation_engine == 'sphinx' %}
+  - pandoc
+{%- endif %}
