@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: CToolKit
+Version: 1.0
+Summary: CToolKit to manipulate CPipeLines and Repos
+Home-page: https://oui.tec.br/
+Author: Mateus Moutinho
+Author-email: mateusmoutinho01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
