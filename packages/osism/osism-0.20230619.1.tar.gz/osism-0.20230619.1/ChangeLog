@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20230619.1
+-------------
+
+* Set state facts in background (#489)
