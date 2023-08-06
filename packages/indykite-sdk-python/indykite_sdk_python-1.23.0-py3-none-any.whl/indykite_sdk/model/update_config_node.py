@@ -1,0 +1,27 @@
+from indykite_sdk.utils import timestamp_to_date
+
+
+class UpdateConfigNode:
+    @classmethod
+    def deserialize(cls, message):
+        if message is None:
+            return None
+
+        update_config_node = UpdateConfigNode(
+            str(message.id),
+            timestamp_to_date(message.update_time),
+            str(message.etag),
+            str(message.bookmark),
+            str(message.created_by),
+            str(message.updated_by)
+        )
+
+        return update_config_node
+
+    def __init__(self, id, update_time, etag, bookmark, created_by, updated_by):
+        self.id = id
+        self.update_time = update_time
+        self.etag = etag
+        self.bookmark = bookmark
+        self.created_by = created_by
+        self.updated_by = updated_by
