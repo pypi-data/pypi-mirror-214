@@ -1,0 +1,16 @@
+acore_conf/__init__.py,sha256=FmmontVLUlsI56lSRwdwzRzNexqS9jedqX-vcjI6MPE,331
+acore_conf/_version.py,sha256=3ngZz3_QoERdhI7hz4p3JzJ6Msem0N5631SEIjary1M,93
+acore_conf/api.py,sha256=Zx8AHysUig0qnvQewdI3d6DnL3HilgViV2thO9RetpU,282
+acore_conf/impl.py,sha256=Th0N27oDvW7ravHtKNY7jo72__UDrW5vtHCO4Edopvo,2957
+acore_conf/paths.py,sha256=97S8BLeL_V7rmEA-I0RmMZCJ8p1lZseMiorow53W4C8,642
+acore_conf/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+acore_conf/tests/__init__.py,sha256=2nfXkz9TigdtVWm0YAeP8qD83i0KvM74AWag9WJMw4Q,58
+acore_conf/tests/helper.py,sha256=p_oZhY0NE1HTQ50ftj1y4sJ6nVOLxQrPwseOlX0AD4s,447
+acore_conf/vendor/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+acore_conf/vendor/pytest_cov_helper.py,sha256=nR-I6d8j0P1JQy6dxIiZtG9Gz0DkfJFpk6EPCCpfnm8,3572
+acore_conf-0.1.1.dist-info/AUTHORS.rst,sha256=Mnd9udRa5q_74F5zDWoksPs7mltI5f4nDSfIjCt87Lc,671
+acore_conf-0.1.1.dist-info/LICENSE.txt,sha256=1Jyl7742fl1Z-Y91CHNSiaZ2ETr5ZBupIdUVYmP7KJI,1120
+acore_conf-0.1.1.dist-info/METADATA,sha256=WipSIFKf2YOXfvmHB7AHitHWC64VY0Dud6YEJKM0mAk,5295
+acore_conf-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+acore_conf-0.1.1.dist-info/top_level.txt,sha256=xgG37AJJPQ-_BoThU2slMiKzFZWHVkjeXRzebBFothg,11
+acore_conf-0.1.1.dist-info/RECORD,,
