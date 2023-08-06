@@ -1,0 +1,8 @@
+pytorch>=1.11
+numpy>=1.19.2
+tqdm>=4.6.0
+torchvision>=0.12
+outdated>=0.2.0
+pandas>=1.1.0
+pillow>=7.2.0
+tqdm>=4.6.0
