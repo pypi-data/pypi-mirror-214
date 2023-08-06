@@ -1,0 +1,13 @@
+requirements_language_server/__init__.py,sha256=VfVGllkAW-EL8hjPeqcaxuVMmgfla1M0_yVWWElYmmQ,1294
+requirements_language_server/__main__.py,sha256=kA2AEm5hI_KCym3GYOmekdhTENFJf3Ap5ZaUVzEpWlY,1734
+requirements_language_server/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+requirements_language_server/api.py,sha256=7-X7Fms37eJhjijY_dtLpUhVLgC_Wa83WvY8pCxBM5g,959
+requirements_language_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requirements_language_server/server.py,sha256=6vueLIbPuaUutMPdTmJV2028OyBBB4cCaQp9wft4GQg,9468
+requirements_language_server/assets/jinja2/template.md.j2,sha256=JBL1n4j57mKmFfGYm51JIgKAwHmCq6hseE9cK8R4sio,314
+requirements_language_server-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+requirements_language_server-0.0.1.dist-info/METADATA,sha256=JKjUOVDXLi3_4aQTYddD8YUWqIwDR-PDgdawbn5lt3A,10652
+requirements_language_server-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+requirements_language_server-0.0.1.dist-info/entry_points.txt,sha256=XXpFPqLGnYgCLssLIQE4BQfus8b1Ys4pAEzMsl-SVOQ,92
+requirements_language_server-0.0.1.dist-info/top_level.txt,sha256=vuwggmt8VrtO4HREndUgSexbfM8oD04GjIuWgdX7mY0,29
+requirements_language_server-0.0.1.dist-info/RECORD,,
