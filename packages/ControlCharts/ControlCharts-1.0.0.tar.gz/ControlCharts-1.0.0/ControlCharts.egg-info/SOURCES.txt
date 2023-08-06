@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ControlCharts/__init__.py
+ControlCharts/t2.py
+ControlCharts.egg-info/PKG-INFO
+ControlCharts.egg-info/SOURCES.txt
+ControlCharts.egg-info/dependency_links.txt
+ControlCharts.egg-info/requires.txt
+ControlCharts.egg-info/top_level.txt
