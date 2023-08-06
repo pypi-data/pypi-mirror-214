@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/vector_materials/__init__.py
+src/vector_materials/data_preparation.py
+src/vector_materials/data_visualisation.py
+src/vector_materials.egg-info/PKG-INFO
+src/vector_materials.egg-info/SOURCES.txt
+src/vector_materials.egg-info/dependency_links.txt
+src/vector_materials.egg-info/top_level.txt

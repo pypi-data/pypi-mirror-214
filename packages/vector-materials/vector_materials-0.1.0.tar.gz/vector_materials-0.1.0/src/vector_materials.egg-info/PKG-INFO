@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vector-materials
+Version: 0.1.0
+Summary: A library of functions for materials science
+Download-URL: https://github.com/vinceyvincey/vector_materials/archive/refs/tags/v0.1.0.tar.gz
+Author: Vicente Orts
+Author-email: vicente@vectorhomes.co.uk
+Keywords: Materials Science
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Vector Materials
+
+This repository hosts the 'Vector Materials' package. This package contains multiple function libraries covering data processing, analysis, and visualisation for material science.
+
+
