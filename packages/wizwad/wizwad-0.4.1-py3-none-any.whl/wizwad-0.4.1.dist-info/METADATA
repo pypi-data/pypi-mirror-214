@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: wizwad
+Version: 0.4.1
+Summary: 
+Home-page: https://github.com/StarrFox/wizwad
+License: MIT
+Author: StarrFox
+Author-email: starrfox6312@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: more-itertools (>=8.14,<10.0)
+Project-URL: Repository, https://github.com/StarrFox/wizwad
+Description-Content-Type: text/markdown
+
+# wizwad
+A fast extractor and packer for wizard101/pirate101 wad files
+
+## install
+```shell
+$ pip install wizwad
+```
+
+## cli usage
+```shell
+# extract a wad
+$ wizwad extract path/to/Wad.wad directory/to/extract/to/
+# list the files in a wad
+$ wizwad list path/to/Wad.wad
+# pack a directory into a wad
+$ wizwad pack path/to/Wad.wad directory/to/pack
+```
+
+## library usage
+```python
+import wizwad
+
+wad = wizwad.Wad("path/to/Wad.wad")
+
+some_file = wad.read("name/of/file")
+print(some_file)
+```
+
+## support
+discord: https://discord.gg/yuCRZ7kPjM
+

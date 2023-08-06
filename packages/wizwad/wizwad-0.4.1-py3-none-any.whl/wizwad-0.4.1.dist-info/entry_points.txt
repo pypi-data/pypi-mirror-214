@@ -1,0 +1,3 @@
+[console_scripts]
+wizwad=wizwad.__main__:main
+
