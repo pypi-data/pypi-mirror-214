@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/xxtest0616v1/__init__.py
+src/xxtest0616v1/cli.py
+src/xxtest0616v1/demo.py
+src/xxtest0616v1/http.py
+src/xxtest0616v1/version.py
+src/xxtest0616v1.egg-info/PKG-INFO
+src/xxtest0616v1.egg-info/SOURCES.txt
+src/xxtest0616v1.egg-info/dependency_links.txt
+src/xxtest0616v1.egg-info/entry_points.txt
+src/xxtest0616v1.egg-info/requires.txt
+src/xxtest0616v1.egg-info/top_level.txt
