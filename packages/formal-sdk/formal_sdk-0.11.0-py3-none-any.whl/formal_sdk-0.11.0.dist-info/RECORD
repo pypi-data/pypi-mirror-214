@@ -1,0 +1,10 @@
+example.py,sha256=Plj5NZCkIiVksrUJzDWDhqWhHjcr9UUG--RWzKwNNPo,950
+formal_sdk/__init__.py,sha256=VsMqgQN9fQCnPCOIGdcGjIcT7bW0sFlDgvVUqnf_Los,559
+formal_sdk/datastore.py,sha256=neadlLsAZy8P3fn0X_0Ti3VLJEuwWZLDfc31p5P53JE,1830
+formal_sdk/inventory.py,sha256=ahgMLaKgDnQRysRZJpqYAV7hx0oVh92_vPwa_0ROZN8,12159
+formal_sdk/sidecar.py,sha256=EBBytPOV3ntsOQg4QSfkW5XJJ7-RK3zIq1y1xzrE-tc,801
+formal_sdk-0.11.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+formal_sdk-0.11.0.dist-info/METADATA,sha256=pyyEde01Ev--_8GGRLl3WS2fegy-CI_MUNgemBhCG6A,2825
+formal_sdk-0.11.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+formal_sdk-0.11.0.dist-info/top_level.txt,sha256=ddJVyjpDmkUPPaVcxmabuQzjEms79FUcSet-u1UcMi0,19
+formal_sdk-0.11.0.dist-info/RECORD,,
