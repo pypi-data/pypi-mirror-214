@@ -1,0 +1,14 @@
+dyndesign/__init__.py,sha256=QAabJhtLCHK_gKxpDHAI1TTRf97H3LD4XNeaifuZkWk,282
+dyndesign/classmerger.py,sha256=7nMPSHiER0V1eB3kueLS7sp7qWHKnuUNo9ZGPrHELK4,7151
+dyndesign/dyninherit.py,sha256=KEVS-ztfp8hlDRtv83owqwPoT-HhfAUFfMbIkd2lFio,851
+dyndesign/dyninherit_base.py,sha256=q80RoHO7_vM7rj6PEFOb0fE2E_cB1yHkLe0LNZG7O1g,6057
+dyndesign/dyninherit_locked_instances.py,sha256=hXZ7pRliEyQpvt0SIuF7YCLkI1SkKB9_FGhRor22ZDU,2425
+dyndesign/dynloader.py,sha256=8-IXqMucjaWqCgyDu36SPrF3j72YgpD3ESeUT01e_sQ,1185
+dyndesign/dynmethod.py,sha256=PKQhpSzDrYuOcyBjIdDExsKjM_IfcBDvVdShaQrfnEg,5903
+dyndesign/exceptions.py,sha256=C3zs53wvmfjqFsIaEUtZS3OhrRZ-wbEk94VXJIQ_UQY,203
+dyndesign/singletonmeta.py,sha256=6SK6jSVV-JMDffDmWbFru10tO_vhD5vYo-HY8lBqHkA,1512
+dyndesign/utils.py,sha256=unBb1mw1QHgbLmicmoCqr1mIVQ1Q_EVMXVdV-eY3NSo,483
+dyndesign-0.9.8.dist-info/LICENSE.txt,sha256=ghPENRZ-SNFcrzLUIIMWjlbifJi1NoWgK8dkFFN3VSs,1083
+dyndesign-0.9.8.dist-info/METADATA,sha256=MW4QJted0EiBB7eoLSIyos5zsWtftTiXH5iKzS9Z4tw,16921
+dyndesign-0.9.8.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+dyndesign-0.9.8.dist-info/RECORD,,
