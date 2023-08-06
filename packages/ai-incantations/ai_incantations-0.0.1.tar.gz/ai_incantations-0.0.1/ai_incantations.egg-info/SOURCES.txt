@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ai_incantations/__init__.py
+ai_incantations/prompter.py
+ai_incantations.egg-info/PKG-INFO
+ai_incantations.egg-info/SOURCES.txt
+ai_incantations.egg-info/dependency_links.txt
+ai_incantations.egg-info/top_level.txt
+tests/test_prompter.py
