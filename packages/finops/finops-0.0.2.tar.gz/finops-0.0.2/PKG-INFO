@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: finops
+Version: 0.0.2
+Summary: A library for analyzing financial data.
+Author-email: Alireza Nilgaran <alireza.nilgaran@gmail.com>
+Project-URL: Homepage, https://github.com/nixuri/FinOps
+Project-URL: Bug Tracker, https://github.com/nixuri/FinOps/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This in an empty README.md file.
