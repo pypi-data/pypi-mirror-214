@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: theamazingtestfirstofitskind
+Version: 0.0.1
+Summary: basic test
+Author: lotan hakli shel ashkelon
+Author-email: <ilotanagar@gmail.com>
+Keywords: python,sockets
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+
+first dev test
