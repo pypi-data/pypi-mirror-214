@@ -1,0 +1,130 @@
+[build-system]
+requires = [
+    "hatchling"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "autotraino"
+version = "0.1.0"
+authors = [
+  { name="Mattia Setzu", email="mattia.setzu@unipi.it" },
+]
+description = "AutoML for Tabular datasets."
+readme = "README.md"
+requires-python = ">=3.10, <3.11"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers"
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+autogluon = [
+    "autogluon.common==0.8.0",
+    "autogluon.core==0.8.0",
+    "autogluon.features==0.8.0",
+    "autogluon.tabular==0.8.0",
+    "boto3==1.26.154",
+    "botocore==1.29.154",
+    "certifi==2023.5.7",
+    "charset-normalizer==3.1.0",
+    "contourpy==1.1.0",
+    "cycler==0.11.0",
+    "fonttools==4.40.0",
+    "idna==3.4",
+    "jmespath==1.0.1",
+    "joblib==1.2.0",
+    "kiwisolver==1.4.4",
+    "matplotlib==3.7.1",
+    "networkx==3.1",
+    "numpy==1.24.3",
+    "packaging==23.1",
+    "pandas==1.5.3",
+    "Pillow==9.5.0",
+    "psutil==5.9.5",
+    "pyparsing==3.0.9",
+    "python-dateutil==2.8.2",
+    "pytz==2023.3",
+    "requests==2.31.0",
+    "s3transfer==0.6.1",
+    "scikit-learn==1.2.2",
+    "scipy==1.10.1",
+    "six==1.16.0",
+    "threadpoolctl==3.1.0",
+    "tqdm==4.65.0",
+    "urllib3==1.26.16"
+
+]
+autogluon_all = [
+    "autogluon.common==0.8.0",
+    "autogluon.core==0.8.0",
+    "autogluon.features==0.8.0",
+    "autogluon.tabular==0.8.0",
+    "boto3==1.26.154",
+    "botocore==1.29.154",
+    "catboost==1.2",
+    "certifi==2023.5.7",
+    "charset-normalizer==3.1.0",
+    "cmake==3.26.4",
+    "contourpy==1.1.0",
+    "cycler==0.11.0",
+    "filelock==3.12.2",
+    "fonttools==4.40.0",
+    "graphviz==0.20.1",
+    "idna==3.4",
+    "Jinja2==3.1.2",
+    "jmespath==1.0.1",
+    "joblib==1.2.0",
+    "kiwisolver==1.4.4",
+    "lightgbm==3.3.5",
+    "lit==16.0.6",
+    "MarkupSafe==2.1.3",
+    "matplotlib==3.7.1",
+    "mpmath==1.3.0",
+    "networkx==3.1",
+    "numpy==1.24.3",
+    "nvidia-cublas-cu11==11.10.3.66",
+    "nvidia-cuda-cupti-cu11==11.7.101",
+    "nvidia-cuda-nvrtc-cu11==11.7.99",
+    "nvidia-cuda-runtime-cu11==11.7.99",
+    "nvidia-cudnn-cu11==8.5.0.96",
+    "nvidia-cufft-cu11==10.9.0.58",
+    "nvidia-curand-cu11==10.2.10.91",
+    "nvidia-cusolver-cu11==11.4.0.1",
+    "nvidia-cusparse-cu11==11.7.4.91",
+    "nvidia-nccl-cu11==2.14.3",
+    "nvidia-nvtx-cu11==11.7.91",
+    "packaging==23.1",
+    "pandas==1.5.3",
+    "Pillow==9.5.0",
+    "plotly==5.15.0",
+    "psutil==5.9.5",
+    "pyparsing==3.0.9",
+    "python-dateutil==2.8.2",
+    "pytz==2023.3",
+    "requests==2.31.0",
+    "s3transfer==0.6.1",
+    "scikit-learn==1.2.2",
+    "scipy==1.10.1",
+    "six==1.16.0",
+    "sympy==1.12",
+    "tenacity==8.2.2",
+    "threadpoolctl==3.1.0",
+    "torch==2.0.1",
+    "tqdm==4.65.0",
+    "triton==2.0.0",
+    "typing_extensions==4.6.3",
+    "urllib3==1.26.16"
+]
+testing = [
+	"datasets >= 2.11.0"
+]
+
+[project.urls]
+	"Homepage" = "https://github.com/msetzu/autotraino"
+	"Bug Tracker" = "https://github.com/msetzu/autotraino/issues"
