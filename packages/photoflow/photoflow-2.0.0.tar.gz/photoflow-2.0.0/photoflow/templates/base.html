@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %} - Photoflow</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block metadata %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <div class="currentuser">
+                {% if current_user.is_authenticated %}
+                    Logged in as:
+                    <a href="#" class="username">{{ current_user.username }}</a>
+                    &mdash;
+                    <a href="{{ url_for('authentication.logout') }}">Log out</a>
+                {% else %}
+                    <a href="{{ url_for('authentication.login') }}">Log in</a>
+                {% endif %}
+            </div>
+
+            <div class="branding">
+                <span><a href="/" class="brand">Photoflow</a></span>
+                <nav>
+                    {% include "navigation.html" %}
+                </nav>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+        <main>
+            {% block main %}No content!{% endblock %}
+        </main>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+recursive-include photoflow/templates *
+recursive-include photoflow/static *

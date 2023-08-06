@@ -1,0 +1,106 @@
+{% extends "base-center.html" %}
+
+{% block title %}Photoflow{% endblock %}
+
+{% block header %}
+    <div id="selector">
+        <button onclick="stopSelect()">Cancel</button>
+        Selected <span id="selected">0</span> pictures
+
+        <button class="action" onclick="bulkAction('{{ url_for('album.create') }}')">Create album</button>
+        <button class="action" onclick="bulkAction('{{ url_for('picture.bulkmeta') }}')">Change metadata</button>
+    </div>
+
+{% endblock %}
+
+{% block metadata %}
+    <script src="{{ url_for('static', filename='js/pig.js') }}"></script>
+{% endblock %}
+
+{% block main %}
+    {% if picturedata %}
+        {% if current_user.is_admin %}
+            <button onclick="startSelect()" id="bulkaction">Bulk action</button>
+        {% endif %}
+        {% if extratitle %}
+            <h2 class="title">{{ extratitle }}</h2>
+        {% endif %}
+        <div id="pigwrap">
+            <div id="pig"></div>
+        </div>
+        <form action="" method="post" id="albumform">
+            <input type="hidden" name="selection" value="" id="formselection">
+        </form>
+        <script>
+            var selecting = false;
+            var selection = [];
+            var options = {
+                enableGroupHeadline: true,
+                newRowPerGroup: false,
+                groupHeadlineHeight: 32,
+                spaceBetweenGroups: 32,
+                urlForSize: function (filename, size) {
+                    const part = filename.split('/');
+                    return '/thumb/' + part[2] + '/' + size + '/' + part[3];
+                },
+                getMinAspectRatio: function (lastWindowWidth) {
+                    if (lastWindowWidth <= 640)  // Phones
+                        return 2;
+                    else if (lastWindowWidth <= 1280)  // Tablets
+                        return 6;
+                    else if (lastWindowWidth <= 1920)  // Laptops
+                        return 10;
+                    return 6;  // Large desktops
+                },
+                onClickHandler: function (filename, element) {
+                    const part = filename.split('/');
+                    if (selecting) {
+                        if (element.classList.contains('selected')) {
+                            element.classList.remove('selected');
+                            let idx = selection.indexOf(part[2]);
+                            if (idx !== -1) {
+                                selection.splice(idx, 1);
+                            }
+                        } else {
+                            element.classList.add('selected');
+                            selection.push(part[2]);
+                        }
+                        document.getElementById('selected').innerText = selection.length;
+                    } else {
+                        location.href = '/picture/' + part[2];
+                    }
+                },
+            };
+            var imageData = {{ picturedata|tojson }};
+            var pig = new Pig(imageData, options).enable();
+
+            function startSelect() {
+                selecting = true;
+                document.getElementById('pig').classList.add("selecting");
+                document.getElementById('selector').style.display = 'block';
+            }
+
+            function stopSelect() {
+                selection = [];
+                selecting = false;
+                document.getElementById('pig').classList.remove("selecting");
+                document.getElementById('selector').style.display = 'none';
+            }
+
+            function bulkAction(url) {
+                const hashes = selection;
+                stopSelect();
+                document.getElementById('formselection').value = JSON.stringify(hashes);
+                document.getElementById('albumform').action = url;
+                document.getElementById('albumform').submit();
+            }
+
+        </script>
+    {% else %}
+        {% if albums|length > 0 %}
+            {% include "albumlist.html" %}
+        {% else %}
+            <p style="text-align: center">No results.</p>
+        {% endif %}
+    {% endif %}
+{% endblock %}

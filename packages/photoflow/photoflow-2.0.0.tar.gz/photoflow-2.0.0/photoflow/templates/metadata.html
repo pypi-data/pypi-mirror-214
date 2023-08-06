@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block title %}Update metadata{% endblock %}
+
+{% block main %}
+    <h1>Update metadata</h1>
+    <p style="text-align: center">Updating the metadata of {{ pictures|count }} pictures.</p>
+    <form class="nice metadata" method="post" action="{{ url_for('picture.bulkmeta_save') }}" name="metadata">
+        <textarea style="display: none;" name="selection">{{ pictures|tojson }}</textarea>
+        <div>
+            <label for="visibility">Visibility</label>
+            <input type="checkbox" title="Update this value" name="visibility-update">
+            <select name="visibility" id="visibility">
+                <option value="0">Private</option>
+                <option value="1">Unlisted</option>
+                <option value="2">Public</option>
+            </select>
+            <p>Private pictures are still visible through public or unlisted albums</p>
+        </div>
+
+        <fieldset>
+            <legend>Shot on (or digitizing equipment)</legend>
+            <div>
+                <label for="manufacturer">Manufacturer</label>
+                <input type="checkbox" title="Update this value" name="manufacturer-update">
+                <input type="text" name="manufacturer" id="manufacturer"
+                       list="dl_manufacturer">
+            </div>
+            <div>
+                <label for="model">Model</label>
+                <input type="checkbox" title="Update this value" name="model-update">
+                <input type="text" name="model" id="model"
+                       list="dl_model">
+            </div>
+            <div>
+                <label for="lensinfo">Lens</label>
+                <input type="checkbox" title="Update this value" name="lensinfo-update">
+                <input type="text" name="lensinfo" id="lensinfo"
+                       list="dl_lens">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Settings</legend>
+            <div>
+                <label for="fnumber">Aperture</label>
+                <input type="checkbox" title="Update this value" name="fnumber-update">
+
+                <input type="text" name="fnumber" id="fnumber">
+            </div>
+            <div>
+                <label for="exposure_time">Exposure</label>
+                <input type="checkbox" title="Update this value" name="exposure_time-update">
+                <input type="text" name="exposure_time" id="exposure_time">
+            </div>
+
+            <div>
+                <label for="focal_length">Focal length</label>
+                <input type="checkbox" title="Update this value" name="focal_length-update">
+                <input type="text" name="focal_length" id="focal_length">
+            </div>
+            <div>
+                <label for="iso">ISO</label>
+                <input type="checkbox" title="Update this value" name="iso-update">
+                <input type="text" name="iso" id="iso">
+            </div>
+
+            <div>
+                <label for="flash">Flash</label>
+                <input type="checkbox" title="Update this value" name="flash-update">
+                <input type="text" name="flash" id="flash">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Processing</legend>
+            <div>
+                <label for="software">Software</label>
+                <input type="checkbox" title="Update this value" name="software-update">
+                <input type="text" name="software" id="software">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Original metadata (before digitizing)</legend>
+            <p>These settings override the "Shot on" settings and move the shot on data to scanning
+                notes</p>
+            <div>
+                <label for="original_manufacturer">Manufacturer</label>
+                <input type="checkbox" title="Update this value" name="original_manufacturer-update">
+                <input type="text" name="original_manufacturer" id="original_manufacturer"
+                       list="dl_manufacturer">
+            </div>
+            <div>
+                <label for="original_model">Model</label>
+                <input type="checkbox" title="Update this value" name="original_model-update">
+                <input type="text" name="original_model" id="original_model"
+                       list="dl_model">
+            </div>
+            <div>
+                <label for="original_lens">Lens</label>
+                <input type="checkbox" title="Update this value" name="original_lens-update">
+                <input type="text" name="original_lens" id="original_lens"
+                       list="dl_lens">
+            </div>
+            <div>
+                <label for="original_flash">Flash</label>
+                <input type="checkbox" title="Update this value" name="original_flash-update">
+                <input type="text" name="original_flash" id="original_flash">
+            </div>
+            <div>
+                <label for="original_focal_length">Focal length</label>
+                <input type="checkbox" title="Update this value" name="original_focal_length-update">
+                <input type="text" name="original_focal_length" id="original_focal_length">
+            </div>
+            <div>
+                <p>Analog film info</p>
+                <label for="frame_number">Frame number</label>
+                <input type="checkbox" title="Update this value" name="frame_number-update">
+                <input type="text" name="frame_number" id="frame_number">
+            </div>
+            <div>
+                <label for="film_stock">Film stock</label>
+                <input type="checkbox" title="Update this value" name="film_stock-update">
+                <input type="text" name="film_stock" id="film_stock"
+                       list="dl_film_stock">
+            </div>
+            <div>
+                <label for="film_format">Film format</label>
+                <input type="checkbox" title="Update this value" name="film_format-update">
+                <input type="text" name="film_format" id="film_format"
+                       list="dl_film_format">
+            </div>
+            <div>
+                <label for="film_notes">Film notes</label>
+                <input type="checkbox" title="Update this value" name="film_notes-update">
+                <input type="text" name="film_notes" id="film_notes">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Licensing</legend>
+            <div>
+                <label for="software">Creator</label>
+                <input type="checkbox" title="Update this value" name="creator-update">
+                <input type="text" name="creator" id="creator">
+            </div>
+            <div>
+                <label for="software">Publisher</label>
+                <input type="checkbox" title="Update this value" name="publisher-update">
+                <input type="text" name="publisher" id="publisher">
+            </div>
+            <div>
+                <label for="software">Rights</label>
+                <input type="checkbox" title="Update this value" name="rights-update">
+                <input type="text" name="rights" id="rights">
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Update metadata">
+    </form>
+
+    <script>
+        document.querySelectorAll('input, textarea, select').forEach(item => {
+            item.addEventListener('change', event => {
+                let name = event.target.name;
+                if (this.metadata.hasOwnProperty(name + '-update')) {
+                    let checkbox = this.metadata[name + '-update'];
+                    checkbox.checked = true;
+                }
+            })
+        })
+    </script>
+
+    {% for l in hints %}
+        <datalist id="dl_{{ l }}">
+            {% for val in hints[l] %}
+                <option value="{{ val }}">
+            {% endfor %}
+        </datalist>
+    {% endfor %}
+
+{% endblock %}

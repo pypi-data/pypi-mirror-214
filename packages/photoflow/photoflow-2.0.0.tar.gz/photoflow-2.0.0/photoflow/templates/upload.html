@@ -1,0 +1,32 @@
+{% extends "base-center.html" %}
+
+{% block title %}Upload{% endblock %}
+
+{% block main %}
+    <form class="nice wide" method="post" enctype="multipart/form-data" action="{{ url_for('upload.upload') }}">
+        <label for="files">Pictures</label>
+        <input type="file" multiple id="files" name="files">
+        <label class="check"><input type="checkbox" onchange="togglealbum()"> Create new album</label>
+        <div id="albuminfo" style="display: none">
+            <label for="name">Album name</label>
+            <input type="text" name="name" id="name">
+            <div style="margin-bottom: 10px">
+                <label>Visibility</label>
+                <label class="wrap"><input type="radio" name="visibility" value="0" checked> Private</label>
+                <label class="wrap"><input type="radio" name="visibility" value="1"> Unlisted</label>
+                <label class="wrap"><input type="radio" name="visibility" value="2"> Public</label>
+            </div>
+        </div>
+        <input type="submit" value="Upload images">
+    </form>
+    <script>
+        function togglealbum() {
+            var div = document.getElementById('albuminfo');
+            if (div.style.display == 'none') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+    </script>
+{% endblock %}

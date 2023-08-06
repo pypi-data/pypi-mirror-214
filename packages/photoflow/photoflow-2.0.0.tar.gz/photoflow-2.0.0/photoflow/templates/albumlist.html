@@ -1,0 +1,12 @@
+<div id="albums">
+    {% for album in albums %}
+        <a href="{{ url_for('album.view', hash=album.hash) }}" class="album">
+            {% if album.coverref %}
+                <img src="{{ url_for('image.thumbnail', hash=album.coverref.hash, filename=album.coverref.extension, size='200') }}">
+            {% else %}
+                <div class="placeholder"></div>
+            {% endif %}
+            <div class="title">{{ album.name }}</div>
+        </a>
+    {% endfor %}
+</div>

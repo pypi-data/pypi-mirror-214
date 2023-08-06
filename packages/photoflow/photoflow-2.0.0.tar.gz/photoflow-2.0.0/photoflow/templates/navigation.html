@@ -1,0 +1,11 @@
+{% if current_user.is_admin %}
+    <a href="{{ url_for('home.home') }}">Pictures</a>
+    {% if config.PUBLIC_ON_HOME %}
+        <a href="{{ url_for('home.public') }}">Public feed</a>
+    {% endif %}
+    <a href="{{ url_for('album.albums') }}">Albums</a>
+    <a href="{{ url_for('upload.view') }}">Upload</a>
+{% elif config.PUBLIC_ON_HOME %}
+    <a href="{{ url_for('home.home') }}">Public feed</a>
+    <a href="{{ url_for('album.albums') }}">Albums</a>
+{% endif %}

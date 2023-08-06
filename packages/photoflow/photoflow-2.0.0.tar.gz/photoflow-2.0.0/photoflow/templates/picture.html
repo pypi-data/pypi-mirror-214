@@ -1,0 +1,389 @@
+{% extends "base.html" %}
+
+{% block title %}{{ picture.name }}{% endblock %}
+
+{% block metadata %}
+    <meta name="og:title" content="{{ picture.name }}">
+    <meta name="og:site_name" content="Photoflow">
+    <meta name="og:image"
+          content="{{ url_for('image.thumbnail', size=500, hash=picture.hash, filename=picture.extension, _external=True) }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ picture.name }}">
+    <meta name="twitter:image"
+          content="{{ url_for('image.thumbnail', size=500, hash=picture.hash, filename=picture.extension, _external=True) }}">
+    <link type="application/json+oembed" href="{{ url_for('picture.oembed', hash=hash, pic=picture.hash) }}">
+{% endblock %}
+
+{% block main %}
+    <div id="photo-viewer">
+        <div class="view">
+
+            <img src="{{ url_for('image.original', hash=picture.hash, filename=picture.extension) }}">
+            {% if prev_pic %}
+	    	{% if hash %}
+                    <a href="{{ url_for('picture.album', hash=hash, pic=prev_pic) }}" class="prev">&laquo; Older</a>
+		{% else %}
+                    <a href="{{ url_for('picture.view', hash=prev_pic) }}" class="prev">&laquo; Older</a>
+		{% endif %}
+            {% endif %}
+
+            {% if next_pic %}
+	        {% if hash %}
+                    <a href="{{ url_for('picture.album', hash=hash, pic=next_pic) }}" class="next">Newer &raquo;</a>
+		{% else %}
+                    <a href="{{ url_for('picture.view', hash=next_pic) }}" class="next">Newer &raquo;</a>
+		{% endif %}
+            {% endif %}
+        </div>
+        <div class="browser">
+            <h1>{{ picture.name }}</h1>
+        </div>
+        {% if picture.description %}
+            <p class="description">{{ picture.description }}</p>
+        {% endif %}
+        <div class="links">
+            <a href="{{ url_for('image.original', hash=picture.hash, filename=picture.extension) }}">Original image</a>
+            {% if picture.raw_extension %}
+                <a href="{{ url_for('image.original', hash=picture.hash, filename=picture.raw_extension) }}">
+                    RAW file
+                </a>
+            {% endif %}
+            {% if picture.meta_extension %}
+                <a href="{{ url_for('image.original', hash=picture.hash, filename=picture.meta_extension) }}">
+                    Sidecar file
+                </a>
+            {% endif %}
+        </div>
+        <div class="info">
+            {% if picture.original_model %}
+                <div class="box">
+                    <div class="header">Shot on</div>
+                    {% if picture.original_model %}
+                        <div><span>Camera</span> <a
+                                href="{{ url_for('home.filtered', key='original-camera', value=picture.original_model) }}">{{ picture.original_model }}</a>
+                        </div>
+                    {% else %}
+                        <div><span>Camera</span> Unknown</div>
+                    {% endif %}
+                    {% if picture.original_lens %}
+                        <div><span>Lens</span> <a
+                                href="{{ url_for('home.filtered', key='original-lens', value=picture.original_lens) }}">{{ picture.original_lens }}</a>
+                        </div>
+                    {% else %}
+                        <div><span>Lens</span> Unknown</div>
+                    {% endif %}
+                    {% if picture.film_stock %}
+                        <div><span>Film stock</span> {{ picture.film_stock }}</div>
+                    {% endif %}
+                    {% if picture.film_format %}
+                        <div><span>Film format</span> {{ picture.film_format }}</div>
+                    {% endif %}
+                    {% if picture.taken %}
+                        <div><span>Taken</span> {{ picture.taken }}</div>
+                    {% endif %}
+
+                </div>
+                {% if picture.exposure_time %}
+                    <div class="box">
+                        <div class="header">Settings</div>
+                        {% if picture.fnumber %}
+                            <div><span>Aperture</span> f/{{ picture.fnumber }}</div>
+                        {% endif %}
+                        {% if picture.exposure_time %}
+                            {% if picture.exposure_time < 1 %}
+                                <div><span>Exposure</span> 1/{{ (1/picture.exposure_time)|int }}</div>
+                            {% else %}
+                                <div><span>Exposure</span> {{ picture.exposure_time }}s</div>
+                            {% endif %}
+                        {% endif %}
+                        {% if picture.original_focal_length %}
+                            <div><span>Focal length</span> {{ picture.original_focal_length|int }}mm</div>
+                        {% endif %}
+                        {% if picture.iso %}
+                            <div><span>ISO</span> {{ picture.iso|int }}</div>
+                        {% endif %}
+                        {% if picture.original_flash %}
+                            <div><span>Flash</span> {{ picture.original_flash }}</div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+                <div class="box">
+                    <div class="header">Processing</div>
+                    <div><span>Digitized</span> {{ picture.manufacturer }} {{ picture.model }}</div>
+                    <div><span>Software</span> <a
+                            href="{{ url_for('home.filtered', key='software', value=picture.software) }}">{{ picture.software }}</a>
+                    </div>
+                </div>
+            {% else %}
+                <div class="box">
+                    <div class="header">Shot on</div>
+                    {% if picture.model %}
+                        <div><span>Camera</span> <a
+                                href="{{ url_for('home.filtered', key='camera', value=picture.model) }}">{{ picture.model }}</a>
+                        </div>
+                    {% else %}
+                        <div><span>Camera</span> Unknown</div>
+                    {% endif %}
+                    {% if picture.lensinfo %}
+                        <div><span>Lens</span> <a
+                                href="{{ url_for('home.filtered', key='lens', value=picture.lensinfo) }}">{{ picture.lensinfo }}</a>
+                        </div>
+                    {% else %}
+                        <div><span>Lens</span> Unknown</div>
+                    {% endif %}
+                    {% if picture.taken %}
+                        <div><span>Taken</span> {{ picture.taken }}</div>
+                    {% endif %}
+                </div>
+                <div class="box">
+                    <div class="header">Settings</div>
+                    {% if picture.fnumber %}
+                        <div><span>Aperture</span> f/{{ picture.fnumber }}</div>
+                    {% endif %}
+                    {% if picture.exposure_time %}
+                        {% if picture.exposure_time < 1 %}
+                            <div><span>Exposure</span> 1/{{ (1/picture.exposure_time)|int }}</div>
+                        {% else %}
+                            <div><span>Exposure</span> {{ picture.exposure_time }}s</div>
+                        {% endif %}
+                    {% endif %}
+                    {% if picture.focal_length %}
+                        <div><span>Focal length</span> {{ picture.focal_length|int }}mm</div>
+                    {% endif %}
+                    {% if picture.iso %}
+                        <div><span>ISO</span> {{ picture.iso|int }}</div>
+                    {% endif %}
+                    {% if picture.flash %}
+                        <div><span>Flash</span> {{ picture.flash }}</div>
+                    {% endif %}
+                </div>
+                {% if picture.software %}
+                    <div class="box">
+                        <div class="header">Processing</div>
+                        <div><span>Software</span> <a
+                                href="{{ url_for('home.filtered', key='software', value=picture.software) }}">{{ picture.software }}</a>
+                        </div>
+                    </div>
+                {% endif %}
+                {% if picture.creator or picture.publisher or picture.rights %}
+                    <div class="box">
+                        <div class="header">Rights</div>
+                        {% if picture.creator %}
+                            <div><span>Creator</span> <a
+                                    href="{{ url_for('home.filtered', key='creator', value=picture.creator) }}">{{ picture.creator }}</a>
+                            </div>
+                        {% endif %}
+                        {% if picture.publisher %}
+                            <div><span>Publisher</span> {{ picture.publisher }}</div>
+                        {% endif %}
+                        {% if picture.rights %}
+                            <div><span>Rights</span> {{ picture.rights }}</div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            {% endif %}
+        </div>
+        {% if current_user.is_authenticated %}
+            <div class="info">
+                <form class="nice wide" method="post" style="flex-grow: 1"
+                      action="{{ url_for('picture.update', hash=picture.hash) }}">
+                    {% if hash %}
+                        <input type="hidden" name="album_hash" value="{{ hash }}">
+                    {% endif %}
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" value="{{ picture.name }}">
+
+                    <label for="visibility">Visibility</label>
+                    <select name="visibility" id="visibility">
+                        <option value="0" {% if picture.visibility == 0 %}selected{% endif %}>Private</option>
+                        <option value="1" {% if picture.visibility == 1 %}selected{% endif %}>Unlisted</option>
+                        <option value="2" {% if picture.visibility == 2 %}selected{% endif %}>Public</option>
+                    </select>
+                    <p>Private pictures are still visible through public or unlisted albums</p>
+
+                    <label for="description">Description</label>
+                    <textarea name="description"
+                              id="description">{{ picture.description if picture.description }}</textarea>
+
+                    <fieldset>
+                        <legend>Shot on (or digitizing equipment)</legend>
+
+                        <label for="manufacturer">Manufacturer</label>
+                        <input type="text" name="manufacturer" id="manufacturer"
+                               value="{{ picture.manufacturer if picture.manufacturer }}"
+                               list="dl_manufacturer">
+
+                        <label for="model">Model</label>
+                        <input type="text" name="model" id="model" value="{{ picture.model if picture.model }}"
+                               list="dl_model">
+
+                        <label for="lensinfo">Lens</label>
+                        <input type="text" name="lensinfo" id="lensinfo"
+                               value="{{ picture.lensinfo if picture.lensinfo }}"
+                               list="dl_lens">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Settings</legend>
+
+                        <label for="fnumber">Aperture</label>
+                        <input type="text" name="fnumber" id="fnumber" value="{{ picture.fnumber if picture.fnumber }}">
+
+                        <label for="exposure_time">Exposure</label>
+                        <input type="text" name="exposure_time" id="exposure_time"
+                               value="{{ picture.exposure_time if picture.exposure_time }}">
+
+                        <label for="focal_length">Focal length</label>
+                        <input type="text" name="focal_length" id="focal_length"
+                               value="{{ picture.focal_length if picture.focal_length }}">
+
+                        <label for="iso">ISO</label>
+                        <input type="text" name="iso" id="iso" value="{{ picture.iso if picture.iso }}">
+
+                        <label for="flash">Flash</label>
+                        <input type="text" name="flash" id="flash" value="{{ picture.flash if picture.flash }}">
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Processing</legend>
+
+                        <label for="software">Software</label>
+                        <input type="text" name="software" id="software"
+                               value="{{ picture.software  if picture.software }}">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Original metadata (before digitizing)</legend>
+                        <p>These settings override the "Shot on" settings and move the shot on data to scanning
+                            notes</p>
+                        <label for="original_manufacturer">Manufacturer</label>
+                        <input type="text" name="original_manufacturer" id="original_manufacturer"
+                               value="{{ picture.original_manufacturer if picture.original_manufacturer }}"
+                               list="dl_manufacturer">
+
+                        <label for="original_model">Model</label>
+                        <input type="text" name="original_model" id="original_model"
+                               value="{{ picture.original_model if picture.original_model }}"
+                               list="dl_model">
+
+                        <label for="original_lens">Lens</label>
+                        <input type="text" name="original_lens" id="original_lens"
+                               value="{{ picture.original_lens if picture.original_lens }}"
+                               list="dl_lens">
+
+                        <label for="original_flash">Flash</label>
+                        <input type="text" name="original_flash" id="original_flash"
+                               value="{{ picture.original_flash if picture.original_flash }}">
+
+                        <label for="original_focal_length">Focal length</label>
+                        <input type="text" name="original_focal_length" id="original_focal_length"
+                               value="{{ picture.original_focal_length }}">
+
+                        <p>Analog film info</p>
+                        <label for="frame_number">Frame number</label>
+                        <input type="text" name="frame_number" id="frame_number"
+                               value="{{ picture.frame_number if picture.frame_number }}">
+
+                        <label for="film_stock">Film stock</label>
+                        <input type="text" name="film_stock" id="film_stock"
+                               value="{{ picture.film_stock if picture.film_stock }}"
+                               list="dl_film_stock">
+
+                        <label for="film_format">Film format</label>
+                        <input type="text" name="film_format" id="film_format"
+                               value="{{ picture.film_format if picture.film_format }}"
+                               list="dl_film_format">
+
+                        <label for="film_notes">Film notes</label>
+                        <input type="text" name="film_notes" id="film_notes"
+                               value="{{ picture.film_notes if picture.film_notes }}">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Licensing</legend>
+
+                        <label for="software">Creator</label>
+                        <input type="text" name="creator" id="creator"
+                               value="{{ picture.creator  if picture.creator }}">
+
+                        <label for="software">Publisher</label>
+                        <input type="text" name="publisher" id="publisher"
+                               value="{{ picture.publisher  if picture.publisher }}">
+
+                        <label for="software">Rights</label>
+                        <input type="text" name="rights" id="rights"
+                               value="{{ picture.rights  if picture.rights }}">
+                    </fieldset>
+
+                    <input type="submit" value="Update metadata">
+                </form>
+                <div style="flex-grow: 1">
+                    <form class="nice wide" enctype="multipart/form-data" method="post"
+                          action="{{ url_for('picture.updatefiles', hash=picture.hash) }}">
+                        {% if hash %}
+                            <input type="hidden" name="album_hash" value="{{ hash }}">
+                        {% endif %}
+                        <p>The original scan or raw camera file without edits</p>
+                        <label for="rawupload">RAW file</label>
+                        <input type="file" name="file" id="rawupload">
+                        <input type="hidden" name="type" value="raw">
+                        <input type="submit" value="Set RAW file">
+                    </form>
+                    <form class="nice wide" enctype="multipart/form-data" method="post"
+                          action="{{ url_for('picture.updatefiles', hash=picture.hash) }}">
+                        {% if hash %}
+                            <input type="hidden" name="album_hash" value="{{ hash }}">
+                        {% endif %}
+                        <p>The sidecar is generated by the picture editor to non-destructively describe the edits. This
+                            is
+                            usually an .xmp file</p>
+                        <label for="sideupload">Sidecar file</label>
+                        <input type="file" name="file" id="sideupload">
+                        <input type="hidden" name="type" value="sidecar">
+                        <input type="submit" value="Set sidecar file">
+                    </form>
+                    {% if hash %}
+                        <form class="nice wide" enctype="multipart/form-data" method="post"
+                              action="{{ url_for('picture.makecover', hash=picture.hash) }}">
+                            <input type="hidden" name="album_hash" value="{{ hash }}">
+                            <input type="submit" value="Make cover for this album">
+                        </form>
+                    {% endif %}
+                    <form method="post" action="{{ url_for('picture.delete', hash=picture.hash) }}" class="nice wide">
+                        <input type="submit" value="Delete picture" class="danger">
+                        {% if hash %}
+                            <input type="hidden" name="album_hash" value="{{ hash }}">
+                        {% endif %}
+                        <p>Deleting is permanent</p>
+                    </form>
+                </div>
+                {% for l in hints %}
+                    <datalist id="dl_{{ l }}">
+                        {% for val in hints[l] %}
+                            <option value="{{ val }}">
+                        {% endfor %}
+                    </datalist>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+    <script>
+        document.addEventListener('keydown', function (event) {
+            switch (event.code) {
+                case "ArrowLeft":
+                    let prev = document.getElementsByClassName('prev');
+                    if (prev.length > 0) {
+                        prev[0].click();
+                    }
+                    break;
+                case "ArrowRight":
+                    let next = document.getElementsByClassName('next');
+                    if (next.length > 0) {
+                        next[0].click();
+                    }
+                    break;
+            }
+        });
+    </script>
+{% endblock %}

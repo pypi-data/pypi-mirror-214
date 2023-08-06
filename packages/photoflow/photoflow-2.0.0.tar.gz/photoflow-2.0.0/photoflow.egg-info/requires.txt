@@ -1,0 +1,9 @@
+Flask>2.2
+Flask-Migrate
+Flask-Wtf
+Flask-Sqlalchemy>=3.0.0
+Flask-Login
+Sqlalchemy-utils
+Wtforms-Sqlalchemy
+Pillow>6.0.0
+toml

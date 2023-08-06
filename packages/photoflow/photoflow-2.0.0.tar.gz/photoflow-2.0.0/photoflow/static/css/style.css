@@ -1,0 +1,348 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/opensans-bold-webfont.woff') format('woff'), url('../font/opensans-bold-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/opensans-regular-webfont.woff') format('woff'), url('../font/opensans-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-y: scroll;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+td,
+th {
+  font-family: "Open Sans", sans-serif;
+}
+.currentuser {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+a {
+  color: #00456f;
+}
+header a {
+  display: inline-block;
+  padding: 5px 10px;
+}
+header .branding {
+  font-size: 1.2em;
+  padding: 5px 10px;
+}
+header nav {
+  display: inline;
+  font-size: 0.83333333em;
+}
+header.home {
+  text-align: right;
+}
+main.home nav {
+  text-align: center;
+}
+main.home nav a {
+  padding: 5px 10px;
+  display: inline-block;
+}
+h1,
+h2.title {
+  text-align: center;
+  font-weight: normal;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+form label.wrap {
+  font-weight: normal;
+  font-size: 1em;
+}
+form label.check {
+  margin-bottom: 15px;
+}
+form p {
+  font-size: 0.8em;
+}
+form.nice {
+  max-width: 300px;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 15px;
+}
+form.nice.wide {
+  max-width: 400px;
+}
+form.nice.metadata {
+  max-width: 600px;
+}
+form.nice.metadata div {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas: "label label" "modify value" "help help";
+  margin-bottom: 10px;
+}
+form.nice.metadata div label {
+  grid-area: label;
+}
+form.nice.metadata input[type=checkbox] {
+  grid-area: modify;
+  justify-self: center;
+  align-self: center;
+}
+form.nice.metadata input[type=text],
+form.nice.metadata input[type=password],
+form.nice.metadata input[type=email],
+form.nice.metadata input[type=file],
+form.nice.metadata textarea {
+  grid-area: value;
+  margin-bottom: 0;
+}
+form.nice.metadata p {
+  grid-area: help;
+}
+form.nice input[type=text],
+form.nice input[type=password],
+form.nice input[type=email],
+form.nice input[type=file],
+form.nice textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin-bottom: 15px;
+}
+form.nice input[type=submit] {
+  border: 1px solid #999;
+  border-radius: 5px;
+  background: #ddd;
+  color: black;
+  padding: 4px 12px;
+}
+form.nice input[type=submit]:hover {
+  background: #ccc;
+  border-color: #808080;
+}
+form.nice input[type=submit].danger {
+  background: #af0000;
+  border: 1px solid #5f0000;
+  color: white;
+}
+form.nice input[type=submit].danger:hover {
+  background: #9c0000;
+  border-color: #6c0101;
+}
+fieldset {
+  border: 1px solid #999;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+fieldset legend {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+#photo-viewer .view {
+  width: 100%;
+  background: black;
+  position: relative;
+}
+#photo-viewer .view img {
+  max-width: 100%;
+  max-height: 90vh;
+  display: block;
+  margin: 0 auto;
+}
+#photo-viewer .view .prev,
+#photo-viewer .view .next {
+  position: absolute;
+  top: 10px;
+  border-radius: 4px;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  display: none;
+}
+#photo-viewer .view .prev:hover,
+#photo-viewer .view .next:hover {
+  background: rgba(128, 128, 128, 0.7);
+  box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+#photo-viewer .view:hover .prev,
+#photo-viewer .view:hover .next {
+  display: block;
+}
+#photo-viewer .view .prev {
+  left: 10px;
+}
+#photo-viewer .view .next {
+  right: 10px;
+}
+#photo-viewer .description {
+  max-width: 900px;
+  padding: 10px;
+  margin: 0 auto 10px;
+}
+#photo-viewer .info {
+  padding: 10px;
+  min-height: 100px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#photo-viewer .info .box {
+  flex-grow: 1;
+}
+#photo-viewer .info .box .header {
+  border-bottom: 1px solid #999;
+  font-weight: bold;
+}
+#photo-viewer .info .box span {
+  color: #999;
+  font-weight: bold;
+}
+#pigwrap {
+  padding: 0 5px;
+}
+#pig h2 {
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+#pig figure img:hover {
+  opacity: 0.8;
+}
+#pig.selecting figure {
+  opacity: 0.7;
+}
+#pig.selecting figure img {
+  transform: scale(0.9, 0.9);
+}
+#pig.selecting figure.selected {
+  opacity: 1;
+}
+#pig.selecting figure.selected img {
+  transform: scale(1, 1);
+}
+#selector {
+  background: #00456f;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 10px;
+  display: none;
+}
+#selector button {
+  background: #00456f;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 4px 12px;
+  font-size: 1em;
+}
+#selector button:hover {
+  background: #0065a2;
+}
+#selector .action {
+  float: right;
+  margin-left: 8px;
+}
+#albums {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+#albums a.album {
+  display: block;
+  flex-grow: 0;
+  width: 212px;
+  padding: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#albums a.album:hover {
+  background: rgba(128, 128, 128, 0.075);
+}
+#albums a.album .placeholder {
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+}
+#albums a.album .title {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+@media (max-device-width: 453px) {
+  #albums a.album {
+    width: 47%;
+  }
+  #albums a.album img {
+    width: 100%;
+    height: auto;
+  }
+  #albums a.album .placeholder {
+    width: 100%;
+    height: auto;
+  }
+  #albums a.album .placeholder:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+#bulkaction {
+  padding: 4px 12px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border: 1px solid #999;
+  background: white;
+  font-size: 1em;
+  border-radius: 5px;
+}
+.links {
+  text-align: center;
+}
+.links a {
+  display: inline-block;
+  padding: 4px 12px;
+}
+h1 a,
+a.brand {
+  color: black;
+  text-decoration: none;
+}
+div.flashes .message {
+  padding: 5px;
+  background: #fff0c9;
+  border: 1px solid #c27b00;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+/*# sourceMappingURL=style.css.map */

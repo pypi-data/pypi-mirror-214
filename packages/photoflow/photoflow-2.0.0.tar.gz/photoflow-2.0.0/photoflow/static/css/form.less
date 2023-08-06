@@ -1,0 +1,120 @@
+form {
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8em;
+
+    &.wrap {
+      font-weight: normal;
+      font-size: 1em;
+    }
+
+    &.check {
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  &.nice {
+    max-width: 300px;
+    display: block;
+    margin: 30px auto;
+    border: 1px solid @border;
+    border-radius: 5px;
+    padding: 15px;
+
+    &.wide {
+      max-width: 400px;
+    }
+
+    &.metadata {
+      max-width: 600px;
+
+      div {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-template-areas:
+    "label label"
+    "modify value"
+    "help help";
+        margin-bottom: 10px;
+
+        label {
+          grid-area: label;
+        }
+      }
+
+      input[type=checkbox] {
+        grid-area: modify;
+        justify-self: center;
+        align-self: center;
+      }
+
+      input[type=text],
+      input[type=password],
+      input[type=email],
+      input[type=file],
+      textarea {
+        grid-area: value;
+        margin-bottom: 0;
+      }
+
+      p {
+        grid-area: help;
+      }
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=file],
+    textarea {
+      width: 100%;
+      display: block;
+      border: 1px solid @border;
+      border-radius: 5px;
+      padding: 4px 10px;
+      margin-bottom: 15px;
+    }
+
+    input[type=submit] {
+      border: 1px solid @border;
+      border-radius: 5px;
+      background: #ddd;
+      color: black;
+      padding: 4px 12px;
+
+      &:hover {
+        background: #ccc;
+        border-color: darken(@border, 10%);
+      }
+
+      &.danger {
+        background: #af0000;
+        border: 1px solid #5f0000;
+        color: white;
+
+        &:hover {
+          background: #9c0000;
+          border-color: #6c0101;
+        }
+      }
+    }
+  }
+}
+
+fieldset {
+  border: 1px solid @border;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  legend {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,12 @@
+{% extends "base-center.html" %}
+
+{% block title %}Error{% endblock %}
+
+{% block main %}
+    {% if error.__class__.__name__ == "MissingToolError" %}
+    <h1>Missing system tool</h1>
+    <p style="text-align: center">
+    The <strong><code>{{ error }}</code></strong> tool is required to be in $PATH of the webapplication for this operation
+    </p>
+    {% endif %}
+{% endblock %}

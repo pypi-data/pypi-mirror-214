@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}{{ album.name }}{% endblock %}
+
+{% block metadata %}
+    <meta name="og:title" content="{{ album.name }}">
+    <meta name="og:site_name" content="Photoflow album ({{ count }} pictures)">
+    <meta name="og:image"
+          content="{{ url_for('image.thumbnail', size=500, hash=album.coverref.hash, filename=album.coverref.extension, _external=True) }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ album.name }} ({{ count }} pictures)">
+    <meta name="twitter:image"
+          content="{{ url_for('image.thumbnail', size=500, hash=album.coverref.hash, filename=album.coverref.extension, _external=True) }}">
+{% endblock %}
+
+
+{% block main %}
+    <h1>{{ album.name }}</h1>
+    <script src="{{ url_for('static', filename='js/pig.js') }}"></script>
+    <div id="pigwrap">
+        <div id="pig"></div>
+    </div>
+    <form action="" method="post" id="albumform">
+        <input type="hidden" name="selection" value="" id="formselection">
+    </form>
+    <script>
+        var selecting = false;
+        var selection = [];
+        var options = {
+            enableGroupHeadline: true,
+            newRowPerGroup: false,
+            groupHeadlineHeight: 32,
+            spaceBetweenGroups: 32,
+            urlForSize: function (filename, size) {
+                const part = filename.split('/');
+                return '/thumb/' + part[2] + '/' + size + '/' + part[3];
+            },
+            getMinAspectRatio: function (lastWindowWidth) {
+                if (lastWindowWidth <= 640)  // Phones
+                    return 2;
+                else if (lastWindowWidth <= 1280)  // Tablets
+                    return 6;
+                else if (lastWindowWidth <= 1920)  // Laptops
+                    return 10;
+                return 6;  // Large desktops
+            },
+            onClickHandler: function (filename, element) {
+                const part = filename.split('/');
+                if (selecting) {
+                    if (element.classList.contains('selected')) {
+                        element.classList.remove('selected');
+                        let idx = selection.indexOf(part[2]);
+                        if (idx !== -1) {
+                            selection.splice(idx, 1);
+                        }
+                    } else {
+                        element.classList.add('selected');
+                        selection.push(part[2]);
+                    }
+                    document.getElementById('selected').innerText = selection.length;
+                } else {
+                    location.href = '/album/{{ album.hash }}/' + part[2];
+                }
+            },
+        };
+        var imageData = {{ picturedata|tojson }};
+        var pig = new Pig(imageData, options).enable();
+
+        function startSelect() {
+            selecting = true;
+            document.getElementById('pig').classList.add("selecting");
+            document.getElementById('selector').style.display = 'block';
+        }
+
+        function stopSelect() {
+            selection = [];
+            selecting = false;
+            document.getElementById('pig').classList.remove("selecting");
+            document.getElementById('selector').style.display = 'none';
+        }
+
+        function bulkAction(url) {
+            const hashes = selection;
+            stopSelect();
+            document.getElementById('formselection').value = JSON.stringify(hashes);
+            document.getElementById('albumform').action = url;
+            document.getElementById('albumform').submit();
+        }
+    </script>
+
+    {% if current_user.is_authenticated %}
+        <h2 style="font-weight: normal; text-align: center">Album settings</h2>
+        <form method="post" action="{{ url_for('album.update', hash=album.hash) }}" class="nice">
+            <label for="name">Album name</label>
+            <input type="text" name="name" id="name" value="{{ album.name }}">
+
+            <label for="visibility">Visibility</label>
+            <select name="visibility" id="visibility" style="display:block; margin-bottom: 10px;">
+                <option value="0" {% if album.visibility == 0 %}selected{% endif %}>Private</option>
+                <option value="1" {% if album.visibility == 1 %}selected{% endif %}>Unlisted</option>
+                <option value="2" {% if album.visibility == 2 %}selected{% endif %}>Public</option>
+            </select>
+            <input type="submit" value="Update">
+        </form>
+        <form method="post" action="{{ url_for('album.delete', hash=album.hash) }}" class="nice">
+            <input type="submit" value="Delete album" class="danger">
+            <p>Deleting the album does not delete the pictures inside it</p>
+        </form>
+    {% endif %}
+
+{% endblock %}
