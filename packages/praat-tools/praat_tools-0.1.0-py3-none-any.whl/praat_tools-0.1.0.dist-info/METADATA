@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: praat-tools
+Version: 0.1.0
+Summary: This project aims to become a comprehensive Python library to read and write Praat object files
+Project-URL: Homepage, https://www.gitlab.com/athena-luka/praat-tools
+Project-URL: Documentation, https://praat-tools.readthedocs.io/
+Author-email: Athena Luka <code@athena-luka.nl>
+Maintainer-email: Athena Luka <code@athena-luka.nl>
+License-File: COPYING.md
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# praat-tools
+
+This project aims to become a comprehensive Python library to read and write not only TextGrid files, but also other Praat
+objects; specifically, Pitch Tiers, and Duration Tiers.
