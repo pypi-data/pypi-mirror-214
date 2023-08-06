@@ -1,0 +1,8 @@
+robocorp/storage/__init__.py,sha256=7aodv-scfFektkyFT6r5mWDQhkHMiQME_OgsAniKAUo,5408
+robocorp/storage/_requests.py,sha256=aOcvRUj0FRYmXRF3eKfPu0cKoL6u2p6ooP--JV-92-M,6538
+robocorp/storage/_storage.py,sha256=rpt3IESiNbu2RR4LpJ6tNgG1Z1DFQ5eiPKLEqIbYkBo,1487
+robocorp/storage/_utils.py,sha256=_X8QfOhzC-l6ZvnhozIllLB46UTSwRKWhq4xtp6-FgI,1260
+robocorp/storage/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robocorp_storage-0.1.0.dist-info/METADATA,sha256=__xNSs111nptfSm-hrFLOVosJu2pZxrlU2ZO9_PySvw,893
+robocorp_storage-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+robocorp_storage-0.1.0.dist-info/RECORD,,
