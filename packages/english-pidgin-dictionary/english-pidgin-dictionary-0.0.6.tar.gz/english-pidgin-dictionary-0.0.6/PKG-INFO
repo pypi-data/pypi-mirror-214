@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: english-pidgin-dictionary
+Version: 0.0.6
+Summary: A simple pidgin-english dictionary for various applications
+Home-page: https://github.com/Zeecoworld/pidgin-english-dictionary
+Author: Isaac Yakubu
+Author-email: engrisaac1234@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This is a simple python library that is useful for pidgin and english word interpretation.
+
+
+####How to use the packages
+
+from english_pidgin_dict.english_pidgin_dict import getMeaning
+
+typed_desired_word = input("enter yr desired word here")
+
+meaning = getMeaning(typed_desired_word)
+print(meaning)
+
+#printing meaning of the word in console
+# if type(meaning) == list:
+#     for item in meaning:
+#         print(item)
+# else:
+#     print(meaning)
+
+# PIP PACKAGE DEPENDECIES
+
+difflib (built-in python package)
+
+
+### KINDLY MAKE PR for UPGRADE....
+
+

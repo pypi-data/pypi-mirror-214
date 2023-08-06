@@ -1,0 +1,10 @@
+LICENSE.txt
+README.txt
+setup.py
+english_pidgin_dict/__init__.py
+english_pidgin_dict/data.json
+english_pidgin_dict/english_pidgin_dict.py
+english_pidgin_dictionary.egg-info/PKG-INFO
+english_pidgin_dictionary.egg-info/SOURCES.txt
+english_pidgin_dictionary.egg-info/dependency_links.txt
+english_pidgin_dictionary.egg-info/top_level.txt
