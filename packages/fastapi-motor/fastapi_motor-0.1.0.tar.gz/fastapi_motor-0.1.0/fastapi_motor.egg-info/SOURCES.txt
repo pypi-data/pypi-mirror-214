@@ -1,0 +1,8 @@
+README.md
+setup.py
+fastapi_motor/__init__.py
+fastapi_motor.egg-info/PKG-INFO
+fastapi_motor.egg-info/SOURCES.txt
+fastapi_motor.egg-info/dependency_links.txt
+fastapi_motor.egg-info/requires.txt
+fastapi_motor.egg-info/top_level.txt
