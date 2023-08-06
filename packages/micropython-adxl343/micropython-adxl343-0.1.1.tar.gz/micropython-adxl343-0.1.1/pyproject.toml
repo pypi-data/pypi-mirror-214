@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: Copyright (c) 2023 Jose D. Montoya
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "micropython-adxl343"
+description = "MicroPython Driver for the Analog Devices ADXL343 Accelerometer"
+version = "0.1.1"
+readme = "README.rst"
+authors = [
+    {name = "JDM", email = "xxyx@mailmeto.mozmail.com"}
+]
+urls = {Homepage = "https://github.com/jposada202020/MicroPython_ADXL343"}
+keywords = [
+    "sensor",
+    "micropython",
+    "adxl343",
+    "tap",
+    "double",
+    "activity",
+    "acceleration",
+    "accelerometer",
+    "adxl343",
+    "micropython",
+    "gravity",
+    "sensor",
+    "driver",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: Implementation :: MicroPython",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+py-modules = ["adxl343"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

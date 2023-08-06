@@ -1,0 +1,12 @@
+{
+  "urls": [
+    ["micropython_adxl343/examples/adxl343_activity_detection.py", "github:jposada202020/MicroPython_ADXL343/examples/adxl343_activity_detection.py"],
+    ["micropython_adxl343/examples/adxl343_single_tap_mode.py", "github:jposada202020/MicroPython_ADXL343/examples/adxl343_single_tap_mode.py"],
+    ["micropython_adxl343/examples/adxl343_simpletest.py", "github:jposada202020/MicroPython_ADXL343/examples/adxl343_simpletest.py"],
+    ["micropython_adxl343/examples/adxl343_resolution_mode.py", "github:jposada202020/MicroPython_ADXL343/examples/adxl343_resolution_mode.py"],
+    ["micropython_adxl343/examples/adxl343_acceleration_range.py", "github:jposada202020/MicroPython_ADXL343/examples/adxl343_acceleration_range.py"],
+    ["micropython_adxl343/examples/adxl343_inactivity_detection.py", "github:jposada202020/MicroPython_ADXL343/examples/adxl343_inactivity_detection.py"],
+    ["micropython_adxl343/examples/adxl343_double_tap_mode.py", "github:jposada202020/MicroPython_ADXL343/examples/adxl343_double_tap_mode.py"]
+  ],
+  "version": "0.1"
+}
