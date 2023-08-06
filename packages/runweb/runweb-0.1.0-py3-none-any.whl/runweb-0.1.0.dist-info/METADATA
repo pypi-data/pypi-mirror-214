@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: runweb
+Version: 0.1.0
+Summary: Run web server with one command.
+Author-Email: abersheeran <me@abersheeran.com>
+License: Apache-2.0
+Requires-Python: >=3.7
+Requires-Dist: click>=8.1.3
+Requires-Dist: trogon>=0.4.0; extra == "tui"
+Requires-Dist: waitress; extra == "waitress"
+Requires-Dist: hupper>=1.12; extra == "reload"
+Requires-Dist: wsproto; extra == "uvicorn"
+Requires-Dist: httptools; extra == "uvicorn"
+Requires-Dist: uvloop; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy" and extra == "uvicorn"
+Requires-Dist: uvicorn; extra == "uvicorn"
+Provides-Extra: tui
+Provides-Extra: waitress
+Provides-Extra: reload
+Provides-Extra: uvicorn
+Description-Content-Type: text/markdown
+
+# RunWeb
+
+Run web server with one command.
+
+## Installation
+
+```bash
+$ pip install runweb
+```
+
+If you need auto reload, install with `reload` extra.
+
+```bash
+$ pip install "runweb[reload]"
+```
+
+## Usage
+
+### `waitress`
+
+Install with `waitress` extra.
+
+```bash
+$ pip install "runweb[waitress]"
+```
+
+Then run command.
+
+```bash
+$ runweb -a app:wsgi
+```
+
+If you need a multi-process waitress service, just run the following command:
+
+```bash
+$ runweb -a app:wsgi -w 4
+```
+
+### `uvicorn`
+
+Install with `uvicorn` extra.
+
+```bash
+$ pip install "runweb[uvicorn]"
+```
+
+Then run command.
+
+```bash
+$ runweb -a app:asgi
+```
+
+If you need a multi-process uvicorn service, just run the following command:
+
+```bash
+$ runweb -a app:asgi -w 4
+```
