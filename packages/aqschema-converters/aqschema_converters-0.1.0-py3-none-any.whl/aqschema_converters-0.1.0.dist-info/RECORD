@@ -1,0 +1,17 @@
+mlsconverters/__init__.py,sha256=7zPLyICcupkxttICgkJGHK42N3Ytd7EFH7JVie1Sx2A,799
+mlsconverters/common.py,sha256=uhNOrcL1Y8c95xvePGvS9dZV4okT014-6m33poO1Ybs,5407
+mlsconverters/decorators.py,sha256=9MUXnxv_fnvYUpcecne8KOke8f2WUgWzfDLv1Ygceks,552
+mlsconverters/io.py,sha256=y2JXOhie1ECJp3uHGaEqRARsUY-qJHul6GSavGwkX28,658
+mlsconverters/keras.py,sha256=Z26WpQlbfRR_MdN8fkeMLlGFGULqvMoHC6fTfDR7lBg,5722
+mlsconverters/models.py,sha256=lys2U-sCCEz38L63bNBcANxYkc_L6TIQaEON572mJ8U,5757
+mlsconverters/session.py,sha256=9mUl0qo3lNsbvFmyGdxn_Afs60bUPHYSb5bB6Xvd9F8,1734
+mlsconverters/sklearn.py,sha256=QGs6ERbYLDzN2JiOyNU-GVZTbxVZ8Ch7b99DzMlk4QI,3813
+mlsconverters/xgboost.py,sha256=XUJWKSgFDEXbmBoaNJw_eB8k33tRH_ohwB5-sNA1mrc,3630
+tests/__init__.py,sha256=ZEU8_ARBRGIqaAOTcPRsjXxcfHSojBm-5-krYBN-68g,13
+tests/test_keras.py,sha256=EmX-r6qUmXMWTEiETJEt09EGumKavSg022dlTR4Dljc,1378
+tests/test_model.py,sha256=RZ9wzKzv809ZoyZq2a1DrN3Fxxc2TNWtmfwnJyXUQ8E,3491
+aqschema_converters-0.1.0.dist-info/LICENSE,sha256=YWbK1a9FFkDtgCwyQAmNEcDbSo9GmLGJ4JgfRwSUuD4,1517
+aqschema_converters-0.1.0.dist-info/METADATA,sha256=6ihNvby3XAGqpRnQNFGZkBtSWFD5guF1p4j9y_uXurY,1050
+aqschema_converters-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+aqschema_converters-0.1.0.dist-info/top_level.txt,sha256=a-fKkGuDG6nR98LqJ-C51t3MT8jifCpXzDtUi-foBvU,20
+aqschema_converters-0.1.0.dist-info/RECORD,,
