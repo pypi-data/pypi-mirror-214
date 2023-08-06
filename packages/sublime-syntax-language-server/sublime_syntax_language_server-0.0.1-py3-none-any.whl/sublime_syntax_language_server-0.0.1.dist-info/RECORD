@@ -1,0 +1,13 @@
+sublime_syntax_language_server/__init__.py,sha256=4Asa7XO6ZzGjspLesvHy1HeJkjO2mvUMCBdfaqedYXU,268
+sublime_syntax_language_server/__main__.py,sha256=K23QRZqeABK02U0bdGU5j8EwZ4zklhWCDJBuOUbsrf8,1097
+sublime_syntax_language_server/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+sublime_syntax_language_server/api.py,sha256=6IPleFlPVNQLcs2wkd4CQfZ6jUnEvwzh03SgnLkhIzk,1325
+sublime_syntax_language_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sublime_syntax_language_server/server.py,sha256=lzZY6n_XgW7mloIgSrq6XTMKTodWfAjfoNlAeDoq-nw,8189
+sublime_syntax_language_server/assets/json/sublime-syntax.json,sha256=Q8-Hy4UTqVI33kQ3dK9bYAbhQ_ZBMfdjCV-J4qn14Io,28115
+sublime_syntax_language_server-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sublime_syntax_language_server-0.0.1.dist-info/METADATA,sha256=qspRB5DgCD8vF-G5O3wzOwriix5muDGJF27tMgkJTGE,8450
+sublime_syntax_language_server-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sublime_syntax_language_server-0.0.1.dist-info/entry_points.txt,sha256=zczIM0uf9OvskSEJBfIq8zcTGleIYt22hfUJ0Lj9c6g,96
+sublime_syntax_language_server-0.0.1.dist-info/top_level.txt,sha256=2GRFoCqFzDPcPNzOxPQ0tKfbfG9eqIdW_nzAPu3J-Bw,31
+sublime_syntax_language_server-0.0.1.dist-info/RECORD,,
