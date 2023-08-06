@@ -1,0 +1,10 @@
+evalhyd/__init__.py,sha256=n79MWPZHh8Ma8tnEGAb1rKv-qrr3kV2-z7nJ8UnTQ1g,168
+evalhyd/_evalhyd.cp311-win_amd64.pyd,sha256=EhqucXaBnxcIDJi4BL2G_5KqR-voJ_cYdXyTpA2lKLo,1573888
+evalhyd/evald.py,sha256=sOX8wFUg4kbl2AS6dMTwnA16J9C_f72W0pvH7cGDSGo,2428
+evalhyd/evalp.py,sha256=6qrKRZWfOyI82BAm27uziHKCoSIk_-MYvkFUM0mi5W0,2019
+evalhyd/version.py,sha256=I7c1eFkx8RBhGFca-yUhoxXjqGWzxsb7EVmeavVMxFg,29
+evalhyd_python-0.1.1.0.dist-info/LICENCE.rst,sha256=Qq1Q1AsLjrv2-yXCHkfg-HTKi2BOzuiLJBtSeuctQds,36198
+evalhyd_python-0.1.1.0.dist-info/METADATA,sha256=sQo12cTjEtBkGOsn0beMa4Y4VNOE92sOnBkPn7UNMeM,870
+evalhyd_python-0.1.1.0.dist-info/WHEEL,sha256=9wvhO-5NhjjD8YmmxAvXTPQXMDOZ50W5vklzeoqFtkM,102
+evalhyd_python-0.1.1.0.dist-info/top_level.txt,sha256=LnNEQW4H7fOM43uJtOxqJDv2UBq1BWpGxTRM7fL-s_U,8
+evalhyd_python-0.1.1.0.dist-info/RECORD,,
