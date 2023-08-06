@@ -1,0 +1,5 @@
+jinja2
+trytond<6.9,>=6.8
+
+[dev]
+trytond-factories<6.9,>=6.8
