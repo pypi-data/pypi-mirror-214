@@ -1,0 +1,36 @@
+numpy
+pandas
+scipy
+scikit-learn
+pymatgen
+pyxtal
+pystow
+element-coder
+pymatviz
+matminer
+pybtex
+typing-extensions
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[api]
+
+[api:python_version >= "3.8"]
+mp-api
+
+[dev]
+conda-souschef
+grayskull
+pydocstyle
+mypy
+flake8
+black
+ipykernel
+pre-commit
+
+[testing]
+setuptools
+pytest
+pytest-cov
+mp-api
