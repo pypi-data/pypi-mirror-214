@@ -1,0 +1,2 @@
+[console_scripts]
+vocab-coverage = vocab_coverage.model:main
