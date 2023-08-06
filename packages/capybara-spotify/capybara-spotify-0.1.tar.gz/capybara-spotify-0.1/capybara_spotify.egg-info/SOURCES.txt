@@ -1,0 +1,8 @@
+README.md
+setup.py
+capybara-spotify/__init__.py
+capybara_spotify.egg-info/PKG-INFO
+capybara_spotify.egg-info/SOURCES.txt
+capybara_spotify.egg-info/dependency_links.txt
+capybara_spotify.egg-info/not-zip-safe
+capybara_spotify.egg-info/top_level.txt
