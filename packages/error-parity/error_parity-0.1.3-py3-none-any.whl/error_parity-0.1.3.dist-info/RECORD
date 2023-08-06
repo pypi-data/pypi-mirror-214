@@ -1,0 +1,14 @@
+error_parity/__init__.py,sha256=1KTpF9pCD_4gWlECzHiT-YPflFgd_OVOfh1t8UAvxxc,93
+error_parity/_version.py,sha256=rLfwuL_5albZXJ-o75pUc6zTOtIYsnvPW7TIkXjVpRU,123
+error_parity/classifiers.py,sha256=4JFuoIBC065YH2gp5mQlxm5pCpXNB6NWxy-o4TF7j2U,16548
+error_parity/cvxpy_utils.py,sha256=JVo3dsXsiuHqQ7w3G5NnUaa8hMJx5RVAX9lU7VEal5k,10855
+error_parity/equal_odds.py,sha256=dpD_mtL7cijH-hB-_Mf3uDkLRbSIS_FB-Fn1hGfp1-A,15448
+error_parity/roc_utils.py,sha256=PjeNiiiLQm1lLi_GXZimL-cbL6J8DuyaljTdcsmvZf8,5201
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=TH7jBm1DfErLPaM4svv8XWsFmH2xVLHl-COp_QlgFcE,3029
+tests/test_equal_odds.py,sha256=jpV5fZE8XEOAehqNHJjdHRT5ktpdae_HveGTlUn-3Y0,5888
+error_parity-0.1.3.dist-info/LICENSE,sha256=Qq7uL_8RRSMqUP1LyaVx4oNzg_zNU5LuGpNgZoZpda0,1068
+error_parity-0.1.3.dist-info/METADATA,sha256=n3p7_1oEGSKfYrNI4X9lq4NseXFmrXuKyHBXk_ZY89M,4676
+error_parity-0.1.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+error_parity-0.1.3.dist-info/top_level.txt,sha256=sopVtknjOcQXRcl8VraaBper-jvdJp-tmlxWw2okOQ8,19
+error_parity-0.1.3.dist-info/RECORD,,
