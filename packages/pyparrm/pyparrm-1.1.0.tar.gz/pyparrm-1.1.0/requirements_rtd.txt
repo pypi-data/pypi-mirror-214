@@ -1,0 +1,11 @@
+numpy
+scipy
+matplotlib
+pqdm
+sphinx
+numpydoc
+nbsphinx
+nbsphinx_link
+sphinxcontrib-bibtex
+sphinx-gallery
+pydata-sphinx-theme
