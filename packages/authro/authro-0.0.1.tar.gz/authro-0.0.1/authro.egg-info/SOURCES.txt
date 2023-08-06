@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+authro/__init__.py
+authro.egg-info/PKG-INFO
+authro.egg-info/SOURCES.txt
+authro.egg-info/dependency_links.txt
+authro.egg-info/top_level.txt
