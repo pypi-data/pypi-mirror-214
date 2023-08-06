@@ -1,0 +1,42 @@
+{
+  "LockingChain": {
+    "Endpoint": {
+      "Host": "rippled_1",
+      "Port": 6006
+    },
+    "TxnSubmit": {
+      "ShouldSubmit": true,
+      "SigningKeySeed": "shEYnNVkBHcqKJLMviUMPQVhtFGAY",
+      "SigningKeyType": "ed25519",
+      "SubmittingAccount": "r99UVqnThwtUjRmy2K8mC6JwixDp4JRUPs"
+    },
+    "RewardAccount": "r99UVqnThwtUjRmy2K8mC6JwixDp4JRUPs"
+  },
+  "IssuingChain": {
+    "Endpoint": {
+      "Host": "rippled_3",
+      "Port": 6006
+    },
+    "TxnSubmit": {
+      "ShouldSubmit": true,
+      "SigningKeySeed": "shEYnNVkBHcqKJLMviUMPQVhtFGAY",
+      "SigningKeyType": "ed25519",
+      "SubmittingAccount": "r99UVqnThwtUjRmy2K8mC6JwixDp4JRUPs"
+    },
+    "RewardAccount": "r99UVqnThwtUjRmy2K8mC6JwixDp4JRUPs"
+  },
+  "RPCEndpoint": {
+    "Host": "127.0.0.1",
+    "Port": 6013
+  },
+  "DBDir": "/var/lib/witness/witness04/db",
+  "LogFile": "/var/log/witness/witness04.log",
+  "SigningKeySeed": "spjjQyaHaq6Z119V2ezJTXDWqb7GF",
+  "SigningKeyType": "ed25519",
+  "XChainBridge": {
+    "LockingChainDoor": "rEbXsTWsEruE1BTWRrdf1YXwqPNQNR52Ut",
+    "LockingChainIssue": {"currency": "XRP"},
+    "IssuingChainDoor": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+    "IssuingChainIssue": {"currency": "XRP"}
+  }
+}
