@@ -1,0 +1,2 @@
+[nbdev]
+LLM_demo_2_production = LLM_demo_2_production._modidx:d
