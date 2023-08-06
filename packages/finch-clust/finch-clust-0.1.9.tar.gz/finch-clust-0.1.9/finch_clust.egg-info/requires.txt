@@ -1,0 +1,7 @@
+scipy
+scikit-learn
+numpy
+
+[ann]
+numpy==1.21
+pynndescent
