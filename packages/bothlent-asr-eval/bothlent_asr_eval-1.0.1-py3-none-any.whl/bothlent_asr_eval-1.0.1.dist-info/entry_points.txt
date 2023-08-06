@@ -1,0 +1,2 @@
+[console_scripts]
+bae = bothlent_asr_eval:main
