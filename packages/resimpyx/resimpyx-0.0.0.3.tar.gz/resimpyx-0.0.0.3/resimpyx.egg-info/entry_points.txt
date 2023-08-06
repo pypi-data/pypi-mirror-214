@@ -1,0 +1,4 @@
+[console_scripts]
+resimpy_general = resimpy.simulate.dispatcher.batch.General:run
+resimpy_umi_sc = resimpy.simulate.dispatcher.batch.SingleCell:run
+resimpy_umi_transloc = resimpy.simulate.dispatcher.batch.UMIDouble:run
