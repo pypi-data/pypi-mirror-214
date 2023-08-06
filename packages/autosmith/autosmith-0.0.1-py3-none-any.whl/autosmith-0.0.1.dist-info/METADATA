@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: autosmith
+Version: 0.0.1
+Summary: Make tools quickly automatically
+Home-page: https://github.com/whitead/autosmith
+Author: Andrew White
+Author-email: white.d.andrew@gmail.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2
+Requires-Dist: pydantic
+Requires-Dist: importlib-metadata
+
+# autosmith
+Make tools quickly

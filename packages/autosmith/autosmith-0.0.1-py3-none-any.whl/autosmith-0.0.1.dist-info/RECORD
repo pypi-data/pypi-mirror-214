@@ -1,0 +1,12 @@
+autosmith/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autosmith/env.py,sha256=GcjrlgWGLmUS598X9KOJfGGEvNZSiew5oRDC15nlWB4,3949
+autosmith/template.py,sha256=nuDGKQ9q1sdd2NY8Y4-KLzPmbFKOADCWIxbBVzeMOBY,4404
+autosmith/types.py,sha256=cygVnvct-Fj1JHuG9sn-Vw9Wm4lt0sKAwQYTFgbrrio,887
+autosmith/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+autosmith/templates/Dockerfile.jinja,sha256=ajqkYxq9xz_gHE5rVL8TjjFb1rwJX_401hCXzyI2RfE,272
+autosmith/templates/main.py.jinja,sha256=fJ4-bEghqGvzNadGvsM1ka7hhER0Qo4aswleFTbc7PI,660
+autosmith-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+autosmith-0.0.1.dist-info/METADATA,sha256=03hJpE2Sph-tuXBFGskeD6TN5ptvuJQ5r_9g0WHw1wQ,543
+autosmith-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autosmith-0.0.1.dist-info/top_level.txt,sha256=axsSsIISUEpyV38LH1IjTWcNBjp_V6TzAg2C2Go1Zh0,10
+autosmith-0.0.1.dist-info/RECORD,,
