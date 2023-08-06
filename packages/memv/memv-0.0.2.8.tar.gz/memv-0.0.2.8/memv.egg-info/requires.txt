@@ -1,0 +1,4 @@
+matplotlib==2.2.5
+numpy==1.16.6
+psutil==5.9.0
+setuptools==67.8.0
