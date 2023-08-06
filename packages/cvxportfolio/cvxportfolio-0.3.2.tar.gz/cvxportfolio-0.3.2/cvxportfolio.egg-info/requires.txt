@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+yfinance
+cvxpy>=1.0.6
+multiprocess
