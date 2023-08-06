@@ -1,0 +1,4 @@
+azure-monitor-opentelemetry-exporter>=1.0.0b13
+opentelemetry-api==1.17.0
+opentelemetry-sdk==1.17.0
+wrapt<2.0.0,>=1.0.0
