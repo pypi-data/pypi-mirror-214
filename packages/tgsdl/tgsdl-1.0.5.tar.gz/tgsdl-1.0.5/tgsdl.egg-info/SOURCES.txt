@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tgsdl/__init__.py
+tgsdl/tgsdl.py
+tgsdl.egg-info/PKG-INFO
+tgsdl.egg-info/SOURCES.txt
+tgsdl.egg-info/dependency_links.txt
+tgsdl.egg-info/entry_points.txt
+tgsdl.egg-info/requires.txt
+tgsdl.egg-info/top_level.txt
