@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+loosers/__init__.py
+loosers/tvz.py
+loosers.egg-info/PKG-INFO
+loosers.egg-info/SOURCES.txt
+loosers.egg-info/dependency_links.txt
+loosers.egg-info/top_level.txt
