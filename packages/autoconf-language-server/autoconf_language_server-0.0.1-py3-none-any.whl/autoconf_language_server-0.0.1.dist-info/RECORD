@@ -1,0 +1,13 @@
+autoconf_language_server/__init__.py,sha256=4Asa7XO6ZzGjspLesvHy1HeJkjO2mvUMCBdfaqedYXU,268
+autoconf_language_server/__main__.py,sha256=6Ju8DCDrQTXqJSiIqYdkwfmpsYm0xuYkQbMETXkEK7M,1093
+autoconf_language_server/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+autoconf_language_server/api.py,sha256=LE21ISHb20gcp2elErm2OMV07LX-o_jQ51Q5JHOTS0U,3578
+autoconf_language_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoconf_language_server/server.py,sha256=kHxlSf0SYOlxrEJH1NK55cWi1RtFl44tuDC_1aHNgkc,3907
+autoconf_language_server/assets/json/autoconf.json,sha256=y4MVuX_zmiftuiwBnfyRO9Oio2z8WyscQwfLPwqbqrQ,402908
+autoconf_language_server-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+autoconf_language_server-0.0.1.dist-info/METADATA,sha256=Q2WIN4UzX_xHqYUkwVqLu6qknpYsqjGUyCVPGvABCi0,8197
+autoconf_language_server-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autoconf_language_server-0.0.1.dist-info/entry_points.txt,sha256=8OtdDvbwKK3AKoFiLUXxpSsQSqlXfiKHoMd9guJBdSg,84
+autoconf_language_server-0.0.1.dist-info/top_level.txt,sha256=qwbhKf4JtQV79PDeXTdJ51GQc72esLFzoUXF6wqZFNM,25
+autoconf_language_server-0.0.1.dist-info/RECORD,,
