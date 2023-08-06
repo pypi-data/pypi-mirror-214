@@ -1,0 +1,154 @@
+Metadata-Version: 2.1
+Name: hmrf
+Version: 0.0.1
+Summary: Package to extract keywords in one of the classes of a dataset
+Home-page: UNKNOWN
+Author: UPV
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: iso639-lang
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: nltk
+Requires-Dist: scipy
+
+# Harmonic Mean of Relative Frequencies (HMRF)
+
+HMRF is a method for automatic keyword extraction from a text corpus. This method favors words that maximize the difference between their frequency in one class (positive class) and their frequency in the rest of the classes.
+
+## Parameters
+
+- lang: str, default = 'english'
+
+Language of the texts.
+
+- positive_class: str or int, default = 1
+
+- n: int, default = 50
+
+Amount of keywords to extract.
+
+- phrases: bool, default = False
+
+If phrases will be extracted.
+
+- n_phrases: int, default = 20
+
+Amount of key phrases to extract.
+
+- phrases_by: {'Freq', 'PMI', 'TTEST', 'CHI'}, default = 'PMI'
+
+Strategy to extract key phrases.
+
+## Usage (Python)
+
+### Example 1
+
+```
+import hmrf
+
+texts = ["I absolutely loved this movie! The storyline was captivating, the acting was superb, and the cinematography was stunning.",
+         "This restaurant exceeded my expectations. The food was delicious, the service was impeccable, and the ambiance was delightful.",
+	 "I'm so happy with my purchase! The product arrived on time, it works perfectly, and the customer support was excellent.",
+	 "The hotel stay was amazing. The room was spacious and clean, the staff was friendly and accommodating, and the amenities were top-notch.",
+	 "I highly recommend this book. The writing style is beautiful, the characters are well-developed, and the story kept me hooked till the end.",
+	 "I was extremely disappointed with the quality of this product. It broke within a week, and the customer service was unhelpful.",
+	 "The movie was a complete waste of time. The plot was confusing, the acting was terrible, and I regretted watching it.",
+	 "The service at this restaurant was awful. The food took forever to arrive, the server was rude, and the prices were exorbitant.",
+	 "I had a horrible experience with this airline. My flight was delayed, the seats were uncomfortable, and the staff was unprofessional.",
+	 "I found this book to be poorly written. The characters were one-dimensional, the plot was predictable, and it lacked depth."]
+
+labels = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+
+extractor = hmrf.Hmrf(n=10)
+keywords = extractor.hmrf(texts, labels)
+	
+for kw in keywords:
+    print(kw)
+
+```
+
+### Output
+
+```
+purchase
+
+notch
+
+kept
+
+room
+
+impeccable
+
+hotel
+
+hooked
+
+recommend
+
+spacious
+
+stay
+```
+
+
+### Example 2
+
+```
+import hmrf
+
+texts = ["I admire the government's efforts to promote education and create equal opportunities for all citizens.",
+	 "The new policy on environmental conservation is a step in the right direction. It's crucial to protect our planet for future generations.",
+	 "I strongly disagree with the recent tax reform. It places an unfair burden on the middle class and fails to address income inequality.",
+	 "The foreign policy decisions taken by our leaders have enhanced our diplomatic relations and strengthened global cooperation.",
+	 "I appreciate the government's commitment to healthcare reform. Accessible and affordable healthcare should be a priority for everyone.",
+	 "What an incredible goal by the striker! The precision and power in that shot were absolutely amazing.",
+	 "The team showed great resilience and teamwork throughout the game, securing a well-deserved victory.",
+	 "The athlete's performance in the marathon was outstanding. They displayed remarkable endurance and determination.",
+	 "The coach's strategic decisions and effective player substitutions turned the match around in our team's favor.",
+	 "It's disappointing to see the player receive a red card. Their unsportsmanlike behavior tarnished the spirit of the game."]
+
+labels = ["political", "political", "political", "political", "political", "sport", "sport", "sport", "sport", "sport"]
+
+extractor = hmrf.Hmrf(positive_class="political", n=10)
+keywords = extractor.hmrf(texts, labels)
+	
+for kw in keywords:
+    print(kw)
+
+```
+
+### Output
+
+```
+healthcare
+
+government
+
+policy
+
+reform
+
+global
+
+generations
+
+income
+
+future
+
+inequality
+
+accessible
+```
+
+
+
