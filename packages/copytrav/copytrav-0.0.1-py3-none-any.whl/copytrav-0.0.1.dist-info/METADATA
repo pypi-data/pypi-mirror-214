@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: copytrav
+Version: 0.0.1
+Summary: Copy traversables as directories.
+Author-email: Owen Shepherd <oshepengineering@gmail.com>
+Project-URL: Homepage, https://github.com/OwenShepherd/copytrav
+Project-URL: Bug Tracker, https://github.com/OwenShepherd/copytrav/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+License-File: LICENSE
+
