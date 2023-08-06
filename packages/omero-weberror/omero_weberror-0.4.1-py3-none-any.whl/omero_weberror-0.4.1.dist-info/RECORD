@@ -1,0 +1,10 @@
+omero_weberror/__init__.py,sha256=g0DA1aMR7O3VL3k8SDv7M7ea-icm86XqV8GMVL6485M,61
+omero_weberror/apps.py,sha256=qsRDVUZsPl6NjszJlrwClJWrOoE1hNhKvy541gVtlLA,978
+omero_weberror/urls.py,sha256=PtQKX-W5vxEoFO6tigb6zBlu5TtNP7p8mMyrby8SV-s,1124
+omero_weberror/views.py,sha256=xT7ln171R_1NhZBswHONkBI2e92BAxyfg3u3-tzaHrg,1855
+omero_weberror/templates/weberror/404.html,sha256=z4BfzXk8FLI8e6m_DVjrnrdw3wkxwiXlHZtIWhtJVwA,1667
+omero_weberror-0.4.1.dist-info/LICENSE,sha256=iEtDSVe6aIMRlZDRzkl_1ESpyLcDC278TeglQBxnJb8,34501
+omero_weberror-0.4.1.dist-info/METADATA,sha256=LEMUhik52t00NzJfDTzcXEh4Z-GLdRizxuMTW66IKvA,2642
+omero_weberror-0.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+omero_weberror-0.4.1.dist-info/top_level.txt,sha256=O7PFDmbOwt87WYEMza-PB49s54L6LFzyF0-M0Wbve9c,15
+omero_weberror-0.4.1.dist-info/RECORD,,
