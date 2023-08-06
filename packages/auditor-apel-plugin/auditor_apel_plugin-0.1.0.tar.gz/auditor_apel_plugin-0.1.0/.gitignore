@@ -1,0 +1,10 @@
+*~
+venv/
+*.log
+__pycache__/
+*egg-info/
+*.db
+.coverage
+dist/
+build/
+_version.py

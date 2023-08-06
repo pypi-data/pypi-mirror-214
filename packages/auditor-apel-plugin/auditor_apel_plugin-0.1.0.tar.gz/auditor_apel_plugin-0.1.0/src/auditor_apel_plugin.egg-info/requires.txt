@@ -1,0 +1,17 @@
+python-auditor==0.1.0
+pytz==2023.3
+requests==2.31.0
+cryptography==41.0.1
+
+[build]
+build
+setuptools
+setuptools_scm[toml]
+
+[style]
+black
+flake8
+
+[tests]
+pytest
+pytest-cov
