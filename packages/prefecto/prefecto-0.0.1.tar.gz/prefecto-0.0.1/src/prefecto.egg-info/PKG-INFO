@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: prefecto
+Version: 0.0.1
+Summary: Prefect development aid.
+Home-page: https://github.com/dominictarro/prefecto
+Author: Dominic Tarro
+Author-email: dtarro@oxfordeconomics.com
+Project-URL: Documentation, https://dominictarro.github.io/prefecto/
+Project-URL: Source, https://github.com/dominictarro/prefecto
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: pandas
+Provides-Extra: polars
+License-File: LICENSE
+
+# prefecto
+Library of Prefect tasks and utilities.
