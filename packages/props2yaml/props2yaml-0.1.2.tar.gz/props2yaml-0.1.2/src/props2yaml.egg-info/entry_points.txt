@@ -1,0 +1,2 @@
+[console_scripts]
+props2yaml = props2yaml.main:main
