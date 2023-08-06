@@ -1,0 +1,7 @@
+panel>1
+
+[dev]
+awesome-panel-cli[dev]
+
+[examples]
+awesome-panel-cli
