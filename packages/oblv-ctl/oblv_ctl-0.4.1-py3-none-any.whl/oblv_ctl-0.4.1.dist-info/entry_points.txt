@@ -1,0 +1,3 @@
+[console_scripts]
+oblv-ctl=oblv_ctl.cli.main:app
+
