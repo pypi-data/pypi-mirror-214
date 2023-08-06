@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: aru-metadata-parser
+Version: 0.1.0
+Summary: Parse metadata from ARUs including the AudioMoth
+Home-page: https://github.com/jkitzes/aru_metadata_parser
+License: MIT
+Author: Sam Lapp
+Author-email: sammlapp@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: docopt (>=0.6.2)
+Requires-Dist: pytz (>=2015.7)
+Requires-Dist: soundfile (>=0.11)
+Project-URL: Repository, https://github.com/jkitzes/aru_metadata_parser
+Description-Content-Type: text/markdown
+
+# aru_metadata_parser
+Parse audio file metadata from common ARUs including the AudioMoth
+
+This package aims to provide support for parsing metadata from common ARU (autonomous recording unit) audio files. Currently, AudioMoth metadata from firmware versions up to 0.8.1 are supported. 
+
+Please use Issues to report failures in metadata parsing, and to request parsing for other metadata formats. 
+r
+## Installation:
+
+The package is available on PyPI and can be installed with PIP: 
+
+`pip install aru_metadata_parser`
+
+## Contribution:
+
+We use Poetry for development, with `black` formatting and `pytest` testing. Contributions to the code base are welcome. 
+
+## License and attribution:
+
+This package is provided under the MIT Open-source license.
+
+Suggested citation:
+
+```
+Lapp, Syunkova, and Kitzes, 2023. ARU Metadata Parser v0.1.0. github.com/kitzeslab/aru_metadata_parser. 
+```
+
+
