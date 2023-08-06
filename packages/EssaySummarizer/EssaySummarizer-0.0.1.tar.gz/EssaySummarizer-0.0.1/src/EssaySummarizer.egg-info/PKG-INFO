@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: EssaySummarizer
+Version: 0.0.1
+Summary: Essay Summarizer.
+Home-page: UNKNOWN
+Author: Ujjwal Reddy K S
+License: UNKNOWN
+Keywords: Essay,Summarizer,nltk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Essay Summarizer
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)   
+
+## Discription
+EssaySummarizer is a powerful and user-friendly Python package designed to facilitate the summarization of large essays or text documents. Leveraging Natural Language Processing (NLP) techniques, EssaySummarizer aims to condense lengthy texts while ensuring grammatical correctness. The package utilizes the NLTK (Natural Language Toolkit) library, which provides a wide range of NLP functionalities. It leverages techniques such as tokenization, stop word removal, lemmatization, and sentence scoring to extract the most relevant information from the essay.
+
+## Usage
+
+- Make sure you have Python installed in your system.
+- Run Following command in the Terminal.
+ ```
+  pip install EssaySummarizer
+  ```
+## Example
+
+ ```
+# test.py
+import EssaySummarizer
+
+## To run
+
+sentence = EssaySummarizer.play_game(essay,num_sentences) # default num_sentences=3
+
+print(sentence)
+```
+
+## Run the following Script.
+ ```
+  python test.py
+ ```
+
+## Note 
+- I have tried to implement all the functionality, it might have some bugs also. Ignore that or please try to solve that bug.
+
+
+
