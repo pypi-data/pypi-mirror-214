@@ -1,0 +1,13 @@
+jax_dataloader/__init__.py,sha256=owPu7p-MdypwInB19wxHYdrPSvl800a6NCVl2p7Mdbo,112
+jax_dataloader/_modidx.py,sha256=k_4GbnM5tE0cesjmA3W6YGKzE6z02d32ER29cM_yM8A,15604
+jax_dataloader/core.py,sha256=w9hGXcrUA4BAj2EVOhNpatKmJHOj7zs16srYZav1YTQ,5077
+jax_dataloader/datasets.py,sha256=k40SMlrD3Eme8IXprj9hA0jN5xqZp4EmUP5w21gdeAA,2910
+jax_dataloader/imports.py,sha256=Ukz1aW03i_vT1FgREwMMMl_bWRcoxxsAv4txURIaFD0,727
+jax_dataloader/loaders.py,sha256=dU2Zg3g6Br2NoY8LND3djVJNsNEeTbW8qRq6OPjQF5Y,6464
+jax_dataloader/utils.py,sha256=qxw25DMmqgPLt1B1Ux0ggt0wogiqmN4f8EKW80Rh59I,3318
+jax_dataloader-0.0.5.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+jax_dataloader-0.0.5.dist-info/METADATA,sha256=5Va28Mn5b0oaL9rlpr6aUTenrsdCYJVTIhHHWOuG8Ks,7517
+jax_dataloader-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jax_dataloader-0.0.5.dist-info/entry_points.txt,sha256=oLNp6o4639HElzf2B5qIq7k2gZn9x45yGH-b669MRhw,50
+jax_dataloader-0.0.5.dist-info/top_level.txt,sha256=bJmRLvBM2ZsagEfYGBI_1zsEPSvyvAKXkvXi7MkZGts,15
+jax_dataloader-0.0.5.dist-info/RECORD,,
