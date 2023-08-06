@@ -1,0 +1,13 @@
+promptrix
+requests
+tiktoken
+pyyaml
+pyee
+selenium
+wordfreq
+tenacity
+openai
+nltk
+
+[:python_version < "3.9"]
+importlib-metadata
