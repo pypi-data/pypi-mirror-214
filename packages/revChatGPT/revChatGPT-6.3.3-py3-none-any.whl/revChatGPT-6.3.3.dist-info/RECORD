@@ -1,0 +1,12 @@
+revChatGPT/V1.py,sha256=VVQZbmRdahuNdnIFllIC-RPnp6acLldN0Z1bqqTO6mI,58838
+revChatGPT/V3.py,sha256=LACgWvqR-FmCut_pS0eTnYKe0Xlp79syFOmT4htL0ck,23492
+revChatGPT/__init__.py,sha256=zPaixMuIa0pWyD5EeckYpJYFg1uJPcVgfWbFWHUZ-lA,1007
+revChatGPT/__main__.py,sha256=qkwCNeLmsj_Am8YxYg9cnYc_sfxtWI7TaJPCfHEBqD0,1716
+revChatGPT/typings.py,sha256=lRrESeWQmrVH4iNv10tV3E30j2rtgKoHD8oPg5nE07E,4817
+revChatGPT/utils.py,sha256=XNQg_LUZTZWg9zwAdUeEMhQSOihhoGliyjAvN7oPIao,2667
+revChatGPT/config/enable_internet.json,sha256=w8FxJACn9IJw88EjoTEKERNuDQycUhqXfrAq2fx6nrU,1838
+revChatGPT-6.3.3.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+revChatGPT-6.3.3.dist-info/METADATA,sha256=657ch0fJ6E3xOJlua82ag-wslU11cfuR-xy2lgw6JAE,7730
+revChatGPT-6.3.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+revChatGPT-6.3.3.dist-info/top_level.txt,sha256=6O3ay3adff-Qrq0tGYaEe_XXhvCZ5vGC9AshCmZzRMA,11
+revChatGPT-6.3.3.dist-info/RECORD,,
