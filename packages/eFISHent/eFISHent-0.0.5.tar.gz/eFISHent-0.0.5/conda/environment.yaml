@@ -1,0 +1,15 @@
+name: efishent
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - blast
+  - bowtie
+  - entrez-direct
+  - jellyfish
+  - libgomp      # [linux]
+  - llvm-openmp  # [osx]
+  - pip
+  - pysam
+  - python=3.9

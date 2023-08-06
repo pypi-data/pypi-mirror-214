@@ -1,0 +1,8 @@
+biopython
+gtfparse
+luigi
+matplotlib
+numpy
+pandas
+pyarrow
+pyomo
