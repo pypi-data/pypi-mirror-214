@@ -1,0 +1,2 @@
+[console_scripts]
+pycleaner = pycleaner.api:api_call

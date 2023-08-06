@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cleaner_project.egg-info/PKG-INFO
+cleaner_project.egg-info/SOURCES.txt
+cleaner_project.egg-info/dependency_links.txt
+cleaner_project.egg-info/entry_points.txt
+cleaner_project.egg-info/requires.txt
+cleaner_project.egg-info/top_level.txt
+pycleaner/api.py
+pycleaner/lib_script_split.py
+pycleaner/utils.py
