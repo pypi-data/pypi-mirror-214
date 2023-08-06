@@ -1,0 +1,10 @@
+lektorlib-1.2.1.dist-info/METADATA,sha256=-fIeac0OR31FSDGRY4dGzJ1JJwKGsB7aieUpUzb3ia8,5133
+lektorlib-1.2.1.dist-info/WHEEL,sha256=2pzpU5yX8ZDRkL1JJPwjqHXoJgM2dqtofaxvD6IHFj4,90
+lektorlib-1.2.1.dist-info/licenses/LICENSE,sha256=2g2kdPq_Yp_GRZJ8sLYwI_xWoIKgOvqRmjmzjLLTy90,1062
+lektorlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lektorlib/context.py,sha256=19F-anUk9xh-XdmP-OX3VtWLPskIDCTK6QFPzCAHVlI,1219
+lektorlib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lektorlib/query.py,sha256=J283xJjGADF7Qyb2XljY6QFZZ-zI7N00vOnvVbuyqxA,6295
+lektorlib/recordcache.py,sha256=6taAIISUE9-DtaykPdYLG-10IjwV4sSy2bp6_1xUrnY,1686
+lektorlib/testing.py,sha256=klWBRuoupJU6z4zliO7ENOvRw-jFc6D1NVl0W5VIm4g,749
+lektorlib-1.2.1.dist-info/RECORD,,
