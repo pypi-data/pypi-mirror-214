@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: datatonic-pipeline-components
+Version: 0.1.0
+Summary: KFP components developed at Datatonic
+Author: Eugene Brown
+Author-email: eugene.brown@datatonic.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: google-cloud-aiplatform (>=1.21.0,<2.0.0)
+Requires-Dist: kfp[all] (>=1.8.18,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Datatonic Pipeline Components
+
+Reusable pipeline components for Vertex Pipelines.
+
+## Install
+
+Run `poetry add git+https://github.com/teamdatatonic/datatonic-pipeline-components.git#main` in your project.
+
+## Use
+
+```python 
+import datatonic_pipeline_components as dtpc
+
+@pipeline
+def my_pipeline():
+    dtpc.gpt_tokenize()
+```
+
+The following figure summarises the overall workflow of using components:
+
+![Cloud Architecture](docs/images/usage_workflow.png)
+

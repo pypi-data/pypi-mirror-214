@@ -1,0 +1,20 @@
+name: Load hf model
+description: Loads PyTorch model, config and tokenizer from HuggingFace
+inputs:
+- {name: model_class_name, type: String}
+- {name: tokenizer_class_name, type: String}
+- {name: config_name, type: String}
+- {name: model_name, type: String}
+- {name: model_args, type: JsonObject, default: '{}', optional: true}
+- {name: kwargs, type: JsonObject, default: '{}', optional: true}
+outputs:
+- {name: hf_gcs_path, type: Artifact}
+implementation:
+  container:
+    image: dtpipelinecomponents/load_huggingface_torch:v0.1.0
+    command: [python3, -m, kfp.v2.components.executor_main]
+    args:
+    - --executor_input
+    - {executorInput: null}
+    - --function_to_execute
+    - load_hf_model

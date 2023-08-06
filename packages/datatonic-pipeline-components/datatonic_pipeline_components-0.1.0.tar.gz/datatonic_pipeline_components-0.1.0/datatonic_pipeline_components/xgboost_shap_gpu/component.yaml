@@ -1,0 +1,26 @@
+name: Gpu accelerated shap for xgboost
+description: This function is a kfp component that explains an XGBoost model's predictions
+inputs:
+- {name: input_data, type: Artifact, description: CSV file with pre-processed data
+    stored on GCS.}
+- name: model
+  type: Model
+  description: |-
+    The XGBoost model.joblib file stored in GCS in the format
+    "gs://my-bucket/path/to/model/model.joblib".
+- name: enable_gpu
+  type: Boolean
+  description: Boolean flag to enable computation using GPU
+  default: "True"
+  optional: true
+outputs:
+- {name: output_shap_values, type: Artifact}
+implementation:
+  container:
+    image: europe-west2-docker.pkg.dev/dt-pc-dev/dt-pc-dev-components-repository/xgboost_shap_gpu:latest
+    command: [python3, -m, kfp.v2.components.executor_main]
+    args:
+    - --executor_input
+    - {executorInput: null}
+    - --function_to_execute
+    - gpu_accelerated_shap_for_xgboost

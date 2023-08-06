@@ -1,0 +1,46 @@
+name: Gpt tokenize
+description: Reads the scraped data and generates a tokenized training and validation
+  dataset
+inputs:
+- {name: input_data, type: Artifact, description: Input text file contain training
+    data}
+- name: train_size
+  type: Float
+  description: |-
+    A value between 0.0 and 1.0 to represent the proportion of the dataset
+    to include in the train split
+  default: '0.9'
+  optional: true
+- name: encoding_type
+  type: String
+  description: |-
+    Encodings used by OpenAI models. Defaults to "gpt2", alternatives include
+    "cl100k_base" or "p50k_base". See
+    https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb
+    for more details.
+  default: gpt2
+  optional: true
+outputs:
+- {name: train_dataset, type: Dataset, description: Training ids as a dataset object}
+- {name: val_dataset, type: Dataset, description: Validation ids as a dataset object}
+implementation:
+  container:
+    image: dtpipelinecomponents/gpt_tokenize:v0.1.0
+    command:
+    - sh
+    - -c
+    - |2
+
+      if ! [ -x "$(command -v pip)" ]; then
+          python3 -m ensurepip || python3 -m ensurepip --user || apt-get install python3-pip
+      fi
+
+      PIP_DISABLE_PIP_VERSION_CHECK=1 python3 -m pip install --quiet     --no-warn-script-location 'numpy==1.21.6' 'google-cloud-storage==1.44.0' 'tiktoken==0.3.0' && "$0" "$@"
+    - python3
+    - -m
+    - kfp.v2.components.executor_main
+    args:
+    - --executor_input
+    - {executorInput: null}
+    - --function_to_execute
+    - gpt_tokenize
