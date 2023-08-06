@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+comu/__init__.py
+comu/cli.py
+comu/ser.py
+comu/util.py
+micropython_wifi_communication.egg-info/PKG-INFO
+micropython_wifi_communication.egg-info/SOURCES.txt
+micropython_wifi_communication.egg-info/dependency_links.txt
+micropython_wifi_communication.egg-info/top_level.txt
