@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+JellySport.egg-info/PKG-INFO
+JellySport.egg-info/SOURCES.txt
+JellySport.egg-info/dependency_links.txt
+JellySport.egg-info/requires.txt
+JellySport.egg-info/top_level.txt
+sportyfin/__init__.py
+sportyfin/__main__.py
+sportyfin/sportyfin.py
+sportyfin/util/__init__.py
+sportyfin/util/game_info.py
+sportyfin/util/league_colours.py
+sportyfin/util/pretty_print.py
+sportyfin/util/scraping.py
