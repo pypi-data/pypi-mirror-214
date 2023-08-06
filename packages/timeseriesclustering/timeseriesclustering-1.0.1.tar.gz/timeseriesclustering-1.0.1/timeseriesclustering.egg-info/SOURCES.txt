@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+timeseriesclustering.egg-info/PKG-INFO
+timeseriesclustering.egg-info/SOURCES.txt
+timeseriesclustering.egg-info/dependency_links.txt
+timeseriesclustering.egg-info/requires.txt
+timeseriesclustering.egg-info/top_level.txt
+tsclustering/__init__.py
+tsclustering/functions.py
+tsclustering/kmeans.py
