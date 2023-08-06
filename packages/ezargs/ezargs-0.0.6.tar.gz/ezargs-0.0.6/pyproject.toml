@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ezargs"
+version = "0.0.6"
+authors = [
+  { name="Michael", email="m12tbucket@gmail.com" },
+]
+description = "zero-setup dynamic python command line argument parsing"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/m12t/ezargs"
+"Bug Tracker" = "https://github.com/m12t/ezargs/issues"
+
