@@ -1,0 +1,44 @@
+numpy
+
+[dev]
+pytest>=4.4
+pytest-cov
+numpy>=1.16
+h5py
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+sphinx
+sphinx-rtd-theme
+
+[dev:python_version < "3.4"]
+pathlib
+enum34
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[google]
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+
+[google:python_version < "3.4"]
+enum34
+
+[h5py]
+h5py
+
+[tests]
+pytest>=4.4
+pytest-cov
+numpy>=1.16
+h5py
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+
+[tests:python_version < "3.4"]
+pathlib
+enum34
