@@ -1,0 +1,6 @@
+setup.py
+aixlab.cn_pre.egg-info/PKG-INFO
+aixlab.cn_pre.egg-info/SOURCES.txt
+aixlab.cn_pre.egg-info/dependency_links.txt
+aixlab.cn_pre.egg-info/requires.txt
+aixlab.cn_pre.egg-info/top_level.txt
