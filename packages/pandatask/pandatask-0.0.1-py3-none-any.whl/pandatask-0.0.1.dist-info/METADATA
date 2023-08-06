@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pandatask
+Version: 0.0.1
+Summary: 上传本地代码到服务端的工具
+Home-page: UNKNOWN
+Author: panda
+Author-email: 915615059@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cloudpickle
+Requires-Dist: requests
+
+# 项目名称
+
+用于将本地代码上传至pandatask服务端的工具
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+## 项目简介
+
+pip install pandatask 安装
+
+
+
