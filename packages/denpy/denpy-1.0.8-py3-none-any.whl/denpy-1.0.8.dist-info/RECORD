@@ -1,0 +1,9 @@
+denpy/__init__.py,sha256=vVjkvPQfjTfWrndDf5gbkWeBmPjXsQbqmU7qmrJR-io,137
+denpy/color.py,sha256=9wJdG8urhyOhwzV-ypiAmYdks9QVfwEWVnVy793cI64,401
+denpy/database.py,sha256=V_R_nRSPqxwDU8K_dTpykMwiz52ypHCLwBVhYI5UZnA,1820
+denpy/install.py,sha256=vztMlKmyupxHdgCb2rHmNQS8Da0kTsOd_v0bTusTo7Q,64
+denpy/utils.py,sha256=Vm-0sLDXlVm97ZZZNXetMe2NgvlpTcNq6lUCMhmOTPM,1120
+denpy-1.0.8.dist-info/METADATA,sha256=EGkkxUogztJvmMd8iTB5DdeX8ERS_yoEJQmqkiLDFfQ,114
+denpy-1.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+denpy-1.0.8.dist-info/top_level.txt,sha256=eepOvGiZ8l0Yo34832zSjPaTH0cz_jZk1C8lHlYpUmQ,6
+denpy-1.0.8.dist-info/RECORD,,
