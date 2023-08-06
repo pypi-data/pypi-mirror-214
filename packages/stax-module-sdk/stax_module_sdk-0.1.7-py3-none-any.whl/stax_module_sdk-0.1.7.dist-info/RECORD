@@ -1,0 +1,11 @@
+stax_module_sdk/Stax.py,sha256=PfkQQlinBy6_FWyWoTv91hTJkh6K27MOfd_2y2kwoVA,4274
+stax_module_sdk/__init__.py,sha256=oaTtRU1I8nhQp1-FGQW0CK_4HNSh1y1N1L_tK20OM6A,54
+stax_module_sdk/helpers.py,sha256=psW_salmCp7B1ecd4AfvK6ygsyGPaaF2mxthRfDAXco,1137
+stax_module_sdk/pytext.py,sha256=a6AlTrpXxrEvo0Ge4UGEoVYG63iixTMHU2FQO2MmGNA,884
+stax_module_sdk/wrapper.py,sha256=Jht-trncUZc4H_vuLnG3MuJhczjtnDXVFxE9hz4qNGM,3824
+stax_module_sdk-0.1.7.data/scripts/stax_module_cli,sha256=0-m4_WxThK50W7OYIHbm-cOQoFGcYLBmo4pD_zgwZTM,30
+stax_module_sdk-0.1.7.dist-info/LICENSE.md,sha256=KE4LXCEe_vPJXaIlw3zMikgDxpal5-aCOEpMb-DYgWg,1639
+stax_module_sdk-0.1.7.dist-info/METADATA,sha256=RlsrplP1xx_tJ3hTiuCJmtBKHe8IeLeV6dgQBpMMxTo,7206
+stax_module_sdk-0.1.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+stax_module_sdk-0.1.7.dist-info/top_level.txt,sha256=1jcVCg11jTS1-lcifkIwlqAZc6DqC2k7SsPxgkCQs_4,16
+stax_module_sdk-0.1.7.dist-info/RECORD,,
