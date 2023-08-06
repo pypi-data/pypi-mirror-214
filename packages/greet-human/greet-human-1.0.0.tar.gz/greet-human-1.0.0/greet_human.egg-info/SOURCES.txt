@@ -1,0 +1,6 @@
+setup.py
+greet_human.egg-info/PKG-INFO
+greet_human.egg-info/SOURCES.txt
+greet_human.egg-info/dependency_links.txt
+greet_human.egg-info/top_level.txt
+human/human.py
