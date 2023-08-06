@@ -1,0 +1,2 @@
+[console_scripts]
+ncagg = ncagg.cli:cli
