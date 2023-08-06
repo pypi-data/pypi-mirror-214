@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: RLxHC
+Version: 2.0.0
+Summary: esta libreria resuelve circuitos RLC en serie y paralelo
+Home-page: https://github.com/santiagou02/programacion
+Author: Santiago Ulloa
+Author-email: nestor2215739@correo.uis.edu.co
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
