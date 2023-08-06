@@ -1,0 +1,6 @@
+numpy
+scitools-iris
+ruamel.yaml>=0.17
+
+[:python_version < "3.9"]
+importlib_resources>=3.0.0
