@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/terminal_plus.egg-info/PKG-INFO
+src/terminal_plus.egg-info/SOURCES.txt
+src/terminal_plus.egg-info/dependency_links.txt
+src/terminal_plus.egg-info/top_level.txt
+src/terminal_print/__init__.py
+src/terminal_print/color.py
+src/terminal_print/decorator.py
+src/terminal_print/printer.py

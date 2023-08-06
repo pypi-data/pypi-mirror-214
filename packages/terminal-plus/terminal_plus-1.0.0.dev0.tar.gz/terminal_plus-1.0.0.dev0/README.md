@@ -1,0 +1,1 @@
+This pkg is for plusing print in terminal, You can use freely.
