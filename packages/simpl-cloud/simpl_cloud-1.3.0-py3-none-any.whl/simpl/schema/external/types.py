@@ -1,0 +1,353 @@
+import graphene
+from allauth.socialaccount.models import SocialAccount
+from django import http
+from django.contrib.auth import get_user_model
+from django.db.models import Prefetch
+from django.urls import reverse
+from graphene_django import DjangoObjectType
+
+from simpl import (
+    get_game_experience_model,
+    get_instance_model,
+    get_run_model,
+    models,
+)
+
+from . import utils
+
+User = get_user_model()
+Instance = get_instance_model()
+GameExperience = get_game_experience_model()
+Run = get_run_model()
+
+
+def build_url(url: str, user_ids=None, request: http.HttpRequest = None):
+    if url and user_ids:
+        social = SocialAccount.objects.filter(user__in=user_ids).first()
+        if social:
+            if "?" in url:
+                url, query = url.split("?", 1)[1]
+            else:
+                query = ""
+            qd = http.QueryDict(query, mutable=True)
+            qd["provider"] = social.provider if social else "auth0"
+            url = f"{url}?{qd.urlencode()}"
+    if request:
+        url = request.build_absolute_uri(url)
+    return url
+
+
+class RunStatus(graphene.Enum):
+    class Meta:
+        enum = Run.STATUS
+
+
+class InstanceStatus(graphene.Enum):
+    class Meta:
+        enum = Instance.STATUS
+
+
+class SimplInstance(DjangoObjectType):
+    """
+    A Simpl game instance
+    """
+
+    name = graphene.String(calculated=graphene.Boolean())
+    status = graphene.Field(InstanceStatus)
+    players = graphene.List(
+        graphene.ID, description="List of Auth0 IDs for players of this instance"
+    )
+    player_count = graphene.Int()
+
+    class Meta:
+        model = Instance
+        skip_registry = True
+        fields = ["date_end"]
+
+    @staticmethod
+    def resolve_name(obj, info, calculated=True):
+        return str(obj) if calculated else obj.name
+
+    @staticmethod
+    def resolve_status(obj, info):
+        return obj.status
+
+    @staticmethod
+    def resolve_players(obj, info):
+        try:
+            # Try to get the players from the pre-fetched `auth0_accounts` attribute
+            # i.e. coming from the `instances` field on SimplRun
+            characters = utils.get_instance_characters(obj)
+            users = []
+            for character in characters:
+                users.extend([account.uid for account in character.user.auth0_accounts])
+        except (AttributeError, KeyError):
+            # Pre-fetched `auth0_accounts` not found. Fall back to querying the database
+            character_query_name = utils.get_instance_character_query_name()
+            character_filter = {f"{character_query_name}__instance": obj}
+            users = User._default_manager.filter(**character_filter)
+            users = utils.get_auth0_ids(*users)
+        return users
+
+    @staticmethod
+    def resolve_player_count(obj, info):
+        return utils.get_instance_characters(obj).count()
+
+
+class SimplRun(DjangoObjectType):
+    """
+    A Simpl Run
+    """
+
+    management_url = graphene.String()
+    players = graphene.List(
+        graphene.ID, description="List of Auth0 IDs for players in this run"
+    )
+    players_unassigned = graphene.List(
+        graphene.ID,
+        description="List of Auth0 IDs for players that have not been assigned to a "
+        "run yet.",
+    )
+    players_inactive = graphene.List(
+        graphene.ID,
+        description="List of Auth0 IDs for players that are inactive.",
+    )
+    player_count = graphene.Int()
+    managers = graphene.List(
+        graphene.ID, description="List of Auth0 IDs for managers of this run"
+    )
+    instances = graphene.List(SimplInstance)
+    status = graphene.Field(RunStatus)
+    game_id = graphene.UUID()
+    class_id = graphene.ID()
+    class_name = graphene.Field(graphene.String)
+    continuous_open = graphene.Boolean()
+    minimum_players = graphene.Int()
+    maximum_players = graphene.Int()
+
+    class Meta:
+        model = Run
+        skip_registry = True
+        fields = ["id", "name", "multiplayer", "continuous"]
+
+    @classmethod
+    def get_queryset(cls, queryset, info):
+        if queryset is None:
+            queryset = Run._default_manager.all()
+
+        queryset = super().get_queryset(queryset, info)
+
+        if utils.has_field_named(info, "players"):
+            player_set_name = utils.get_run_player_set_name()
+            queryset = queryset.prefetch_related(player_set_name)
+
+        if utils.has_field_named(info, "instances"):
+            instance_set_name = utils.get_run_instance_set_name()
+            queryset = queryset.prefetch_related(instance_set_name)
+
+        return queryset
+
+    @staticmethod
+    def resolve_players(obj, info):
+        players = utils.get_run_players(obj)
+        return players.filter(user__socialaccount__provider="auth0").values_list(
+            "user__socialaccount__uid", flat=True
+        )
+
+    @staticmethod
+    def resolve_players_unassigned(obj, info):
+        players = utils.get_run_players(obj)
+        return players.filter(
+            user__socialaccount__provider="auth0", character=None
+        ).values_list("user__socialaccount__uid", flat=True)
+
+    @staticmethod
+    def resolve_players_inactive(obj, info):
+        players = utils.get_run_players(obj)
+        return (
+            players.filter(inactive=True)
+            .values_list("user")
+            .filter(user__socialaccount__provider="auth0", character=None)
+            .values_list(f"user__socialaccount__uid", flat=True)
+        )
+
+    @staticmethod
+    def resolve_instances(obj, info):
+        character_set_name = utils.get_instance_character_set_name()
+        instances = utils.get_run_instances(obj)
+        return instances.prefetch_related(
+            Prefetch(
+                f"{character_set_name}__user__socialaccount_set",
+                queryset=SocialAccount.objects.filter(provider="auth0"),
+                to_attr="auth0_accounts",
+            ),
+        )
+
+    @staticmethod
+    def resolve_instances_count(obj, info):
+        return getattr(obj, utils.get_run_instance_set_name()).all().count()
+
+    @staticmethod
+    def resolve_managers(obj, info):
+        return (
+            obj.managers.all()
+            .prefetch_related("users")
+            .filter(socialaccount__provider="auth0")
+            .values_list("socialaccount__uid", flat=True)
+        )
+
+    @staticmethod
+    def resolve_management_url(obj, info):
+        url = reverse("simpl", kwargs={"pk": obj.id})
+        manager_ids = obj.managers.values_list("id")
+        return build_url(url, user_ids=manager_ids, request=info.context)
+
+    @staticmethod
+    def resolve_player_count(obj, info):
+        return getattr(obj, utils.get_run_player_set_name()).all().count()
+
+    @staticmethod
+    def resolve_game_id(obj, info):
+        if obj.game:
+            return obj.game.experience_id
+
+    @staticmethod
+    def resolve_class_id(obj, info):
+        if obj.simpl_class:
+            return obj.simpl_class.id
+
+    @staticmethod
+    def resolve_class_name(obj, info):
+        return obj.simpl_class.name if obj.simpl_class else ""
+
+
+class SimplUserInstance(graphene.ObjectType):
+    """
+    A Simpl game instance, with information specific to a user
+    """
+
+    # Actually based on a Character model instance.
+    name = graphene.String(calculated=graphene.Boolean())
+    status = graphene.Field(InstanceStatus)
+    date_end = graphene.DateTime()
+    url = graphene.Field(graphene.String, deprecation_reason="Use SimplUserRun.url")
+    player_name = graphene.String()
+    player_status = graphene.String()
+    player_finished = graphene.DateTime()
+
+    @staticmethod
+    def resolve_name(obj, info, calculated=True):
+        return str(obj.instance) if calculated else obj.instance.name
+
+    @staticmethod
+    def resolve_status(obj, info):
+        return obj.instance.status
+
+    @staticmethod
+    def resolve_date_end(obj, info):
+        return obj.instance.date_end
+
+    @staticmethod
+    def resolve_player_name(obj, info):
+        return obj.name
+
+    @staticmethod
+    def resolve_player_status(obj, info):
+        return obj.status.name
+
+    @staticmethod
+    def resolve_player_finished(obj, info):
+        return obj.date_finished
+
+
+class SimplUserRun(graphene.ObjectType):
+    """
+    A Simpl Run, with information specific to a user
+    """
+
+    # Actually based on a Player model instance.
+    id = graphene.ID()
+    name = graphene.String()
+    status = graphene.Field(RunStatus)
+    instance = graphene.Field(SimplUserInstance)
+    url = graphene.String()
+
+    @staticmethod
+    def resolve_id(obj, info):
+        return obj.run.pk
+
+    @staticmethod
+    def resolve_name(obj, info):
+        return obj.run.name
+
+    @staticmethod
+    def resolve_status(obj, info):
+        return obj.run.status
+
+    @staticmethod
+    def resolve_instance(obj, info):
+        return obj.character
+
+    @staticmethod
+    def resolve_url(obj: models.Player, info):
+        url = obj.get_play_url()
+        if url:
+            return build_url(url, user_ids=[obj.user_id], request=info.context)
+
+
+class SimplUser(graphene.ObjectType):
+    """
+    A Simpl User
+    """
+
+    auth0_id = graphene.ID()
+    first_name = graphene.String()
+    last_name = graphene.String()
+    runs = graphene.List(SimplUserRun)
+
+    @staticmethod
+    def resolve_auth0_id(obj, info):
+        auth0_id = getattr(obj, "auth0_id", None)
+        if auth0_id:
+            return auth0_id
+        try:
+            return utils.get_auth0_ids(obj)[0]
+        except IndexError:
+            return None
+
+    @staticmethod
+    def resolve_runs(obj, info):
+        return obj.player_set.select_related("run", "character__instance")
+
+
+class SimplGame(DjangoObjectType):
+    """
+    A Simpl game experience
+    """
+
+    id = graphene.UUID()
+    runs = graphene.List(SimplRun)
+
+    class Meta:
+        model = GameExperience
+        skip_registry = True
+        fields = ["name", "continuous"]
+
+    @staticmethod
+    def resolve_runs(obj, info):
+        return obj.run_set.all()
+
+    @staticmethod
+    def resolve_id(obj, info):
+        return obj.experience_id
+
+
+class SimplClass(DjangoObjectType):
+    """
+    A Simpl class
+    """
+
+    class Meta:
+        model = models.Class
+        skip_registry = True
+        fields = ["id", "name"]
