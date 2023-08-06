@@ -1,0 +1,11 @@
+coacd/__init__.py,sha256=G1UjXHY1fSrIC4CujfkU99MIncxgOwfnh2FDnGGZoyU,3948
+coacd/lib_coacd.dll,sha256=Oyydnspb_RbX8vT5mEW57qGpzQPUVYRV9Lw9btsqiBM,25335427
+coacd/libgcc_s_seh-1.dll,sha256=_CEOpZ-oFIYNE5bVe5_q42JqfGO2DlbutWsGaZeaxcc,79374
+coacd/libgomp-1.dll,sha256=6nmqYUHfIOBD6TxwKwBPk9QW1COvO9Mcx1vc5EVnlRg,228878
+coacd/libwinpthread-1.dll,sha256=m009Y6PplChNlJZmhXiRXX658IxFMo44JiKChsqdS4o,59216
+coacd-0.0.5.data/scripts/coacd,sha256=j9577aNLajL1TyzobuJRyh2kdNHLVjCQjdWZsikAwHg,3763
+coacd-0.0.5.dist-info/LICENSE,sha256=_YOt6fXGOaVWLRvQfWXj_KElz4lCdZmzKBppS9y50Eo,1080
+coacd-0.0.5.dist-info/METADATA,sha256=Hoz-alzPH2n5eQgGJBMCF4WwUv1dWplKsdwreQm8Z5o,1195
+coacd-0.0.5.dist-info/WHEEL,sha256=ojU8X58IHYrxyKv1yR2vlVSqnIUf-8ZuUT26hm4pAEE,104
+coacd-0.0.5.dist-info/top_level.txt,sha256=Pjh8PCxYeICheWE0S5TiJr9Q0SZ3lP87FpdxB2wNNVE,6
+coacd-0.0.5.dist-info/RECORD,,
