@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+DeepTpTools/__init__.py
+DeepTpTools/utils.py
+DeepTpTools.egg-info/PKG-INFO
+DeepTpTools.egg-info/SOURCES.txt
+DeepTpTools.egg-info/dependency_links.txt
+DeepTpTools.egg-info/requires.txt
+DeepTpTools.egg-info/top_level.txt
