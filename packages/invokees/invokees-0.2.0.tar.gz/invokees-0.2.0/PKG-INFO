@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: invokees
+Version: 0.2.0
+Summary: 
+License: MIT
+Author: Nicola Coretti
+Author-email: nico.coretti@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: black (>=23.1.0,<24.0.0)
+Requires-Dist: coverage (>=7.1.0,<8.0.0)
+Requires-Dist: invoke (>=2.0.0,<3.0.0)
+Requires-Dist: isort (>=5.12.0,<6.0.0)
+Requires-Dist: mypy (>=1.0.1,<2.0.0)
+Requires-Dist: pre-commit (>=3.1.1,<4.0.0)
+Requires-Dist: prysk (>=0.13.0)
+Requires-Dist: pytest (>=7.2.1,<8.0.0)
+Requires-Dist: pytest-cov (>=4.0.0,<5.0.0)
+Requires-Dist: pytest-xdist (>=3.2.0,<4.0.0)
+Requires-Dist: rich (>=13.3.1,<14.0.0)
+Requires-Dist: ruff (>=0.0.247,<0.0.248)
+Requires-Dist: tomlkit (>=0.11.6,<0.12.0)
+Requires-Dist: types-docutils (>=0.19.1.6,<0.20.0.0)
+Requires-Dist: types-invoke (>=2.0.0.5,<3.0.0.0)
+Requires-Dist: types-pygments (>=2.14.0.5,<3.0.0.0)
+Requires-Dist: types-setuptools (>=67.4.0.3,<68.0.0.0)
+Description-Content-Type: text/markdown
+
+
