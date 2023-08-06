@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: botfleet
+Version: 0.0.5
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Requires-Dist: storedict (==0.0.4)
+
+UNKNOWN
+
+
