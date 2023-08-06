@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+redis
+requests
+pydantic
+colorama
+
+[dev]
+bumpver
+pre-commit
+pytest
