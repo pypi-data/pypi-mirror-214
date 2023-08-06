@@ -1,0 +1,2 @@
+[console_scripts]
+recurtx = recurtx.__main__:main
