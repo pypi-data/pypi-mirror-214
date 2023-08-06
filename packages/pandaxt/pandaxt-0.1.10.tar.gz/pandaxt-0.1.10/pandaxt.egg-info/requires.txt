@@ -1,0 +1,8 @@
+wheel
+setuptools
+requests
+pandas
+Cython
+diskcache
+newtulipy
+regex

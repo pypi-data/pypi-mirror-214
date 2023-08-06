@@ -1,0 +1,6 @@
+requests
+pandas
+Cython
+diskcache
+newtulipy
+regex

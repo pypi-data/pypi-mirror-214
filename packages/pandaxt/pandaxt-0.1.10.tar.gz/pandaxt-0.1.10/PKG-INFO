@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: pandaxt
+Version: 0.1.10
+Summary: A Python 3 'ccxt' wrapper over 'Pandas' lib.
+Home-page: https://github.com/havocesp/pandaxt
+Author: Daniel J. Umpierrez
+Author-email: "Daniel J. Umpierrez" <10012416+havocesp@users.noreply.github.com>
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <http://unlicense.org>
+        
+Project-URL: Homepage, https://github.com/havocesp/pandaxt
+Project-URL: Bug Reports, https://github.com/havocesp/pandaxt/issues
+Project-URL: Source, https://github.com/havocesp/pandaxt
+Keywords: altcoins,altcoin,exchange,pandas,bitcoin,trading
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PandaXT
+
+A Python 3 "__ccxt__" wrapper over __Pandas__ lib.
+
+ - Author: Daniel J. Umpierrez
+ - License: UNLICENSE
+ - Version: 0.1.10
+
+## Description
+
+Python ccxt multi-exchange lib mixed with pandas lib for data handling.
+
+## Requirements
+
+ - [requests](https://pypi.org/project/requests)
+ - [regex](https://pypi.org/project/regex)
+ - [ccxt](https://pypi.org/project/ccxt)
+ - [pandas](https://pypi.org/project/pandas)
+ - [Cython](https://pypi.org/project/Cython)
+ - [diskcache](https://pypi.org/project/diskcache)
+ - [newtulipy](https://pypi.org/project/newtulipy/)
+
+## Usage
+
+### Basic example
+
+```python
+from pandaxt import PandaXT
+api = PandaXT('binance')
+print(api.markets)
+```
+
+## Changelog
+
+Project changes over versions.
+
+### 0.1.10
+ - Update python versions support ti >=3.8
+ - Update some requirements.
+ - Added tox.ini and pyproject.toml files.
+
+### 0.1.9
+ - Removed unnecessary comments and code at utils.py
+ - Added docstring to to_lower function.
+
+### 0.1.8
+ - Minor fixes.
+
+### 0.1.7
+ - Fixed "currencies" method and recursion limit bugs.
+
+### 0.1.6
+- README requirements fixed
+- Removed 'PandaXT._fetch_ohlcv' method.
+
+### 0.1.5
+- Many features added and many errors fixed
+
+### 0.1.4
+- New "model" module.
+- Added dict2class in "utils" module.
+
+### 0.1.3
+- "Binance" specific options added for time adjust and auto fit precision or orders.md.
+
+### 0.1.2
+- New "create_market_order" method.
+- New "sort_by" function in utils module.
+- Unified cancel methods into "cancel_order".
+- Sell and Buy methods auto-fill price and amount if not is supplied as param.
+
+### 0.1.1
+- Added precision related methods to "_PandaXT_" class.
+
+### 0.1.0
+- Initial version
+
+## TODO
+- TODO
