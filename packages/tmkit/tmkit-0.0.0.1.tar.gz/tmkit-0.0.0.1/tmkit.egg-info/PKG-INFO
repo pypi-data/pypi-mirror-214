@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tmkit
+Version: 0.0.0.1
+Summary: TMKit
+Home-page: https://github.com/2003100127/tmkit
+Author: Jianfeng Sun
+Author-email: jianfeng.sun@ndorms.ox.ac.uk
+License: GNU GENERAL V3.0
+Keywords: pip,tmkit
+Platform: any
+Requires-Python: >3.6
+License-File: LICENSE
+
+TMKit
