@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: datarangers-sdk-python
+Version: 1.1.1
+Home-page: 
+Author: DataRangers
+Author-email: datarangers-opensource@bytedance.com
+License: DataRangers
+Requires-Dist: requests
+
