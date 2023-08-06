@@ -1,0 +1,5 @@
+pydantic
+redis
+
+[dev]
+pytest
