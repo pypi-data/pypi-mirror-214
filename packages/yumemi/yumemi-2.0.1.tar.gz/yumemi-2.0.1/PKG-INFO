@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: yumemi
+Version: 2.0.1
+Summary: AniDB API library for Python and simple CLI client
+Home-page: https://github.com/fpob/yumemi
+License: MIT
+Keywords: AniDB
+Author: Filip Pobořil
+Author-email: tsuki@fpob.cz
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Dist: attrs (>=22.1,<23.0)
+Requires-Dist: click (>=8.1,<9.0)
+Requires-Dist: cryptography (>=39.0.1,<40.0.0)
+Requires-Dist: rhash-rhash (>=1.1,<2.0)
+Project-URL: Documentation, https://yumemi.readthedocs.io/
+Project-URL: Repository, https://github.com/fpob/yumemi
+Description-Content-Type: text/x-rst
+
+Yumemi
+======
+
+AniDB API library for Python and simple CLI client to add files to mylist.
+
+
+Installation
+------------
+
+I recommend using pipx_ to install the CLI client ::
+
+    pipx install yumemi
+
+CLI requires LibRHash library. It is recommended to install LibRHash using your
+system package manager, see RHash_ project page.
+
+.. _pipx: https://pypa.github.io/pipx/
+.. _RHash: https://pypi.org/project/rhash-Rhash/
+
