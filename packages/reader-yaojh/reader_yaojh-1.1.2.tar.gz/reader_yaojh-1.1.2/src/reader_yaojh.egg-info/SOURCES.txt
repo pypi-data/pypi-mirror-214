@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/reader_yaojh/__init__.py
+src/reader_yaojh/__main__.py
+src/reader_yaojh/feed.py
+src/reader_yaojh/viewer.py
+src/reader_yaojh.egg-info/PKG-INFO
+src/reader_yaojh.egg-info/SOURCES.txt
+src/reader_yaojh.egg-info/dependency_links.txt
+src/reader_yaojh.egg-info/entry_points.txt
+src/reader_yaojh.egg-info/requires.txt
+src/reader_yaojh.egg-info/top_level.txt
+tests/test_feed.py
+tests/test_viewer.py
