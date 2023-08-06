@@ -1,0 +1,11 @@
+fastmodels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastmodels/cli.py,sha256=na3qfDk4EC8WHLccTlnH4ztq5dlqeH84k0ugqJqL0XE,484
+fastmodels/datavalidator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastmodels/datavalidator/validator.py,sha256=whAaT7p_tUoldqAjc9kawfaoh2Pd4zYz3HVlx8DAc4Q,979
+fastmodels/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastmodels/tests/test_validator.py,sha256=bswOu-QCn5-lJWt93ss8arPWVy30euAgYTpA-_Df5co,649
+fastmodels-0.1.5.dist-info/METADATA,sha256=KkVxJ8MJhHLOm2nwWu8QYZB5R4zJozdLcSYt_zJPKjM,168
+fastmodels-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fastmodels-0.1.5.dist-info/entry_points.txt,sha256=KGbmmSPU-goktlxowAVQEBbITEKQFkYk2OaKUScsKVI,51
+fastmodels-0.1.5.dist-info/top_level.txt,sha256=IJ6cZ1SI3N6O9856cSD5e059LO_Ict2FcwrmPtoJW8M,11
+fastmodels-0.1.5.dist-info/RECORD,,
