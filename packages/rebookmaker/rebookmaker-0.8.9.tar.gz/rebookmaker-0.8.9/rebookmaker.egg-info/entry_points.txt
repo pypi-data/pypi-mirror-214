@@ -1,0 +1,2 @@
+[console_scripts]
+rebookmaker = rebookmaker.__main__:main
