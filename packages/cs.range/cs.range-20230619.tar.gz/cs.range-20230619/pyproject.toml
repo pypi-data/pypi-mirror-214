@@ -1,0 +1,120 @@
+[project]
+name = "cs.range"
+description = "a Range class implementing compact integer ranges with a set-like API, and associated functions"
+authors = [
+    { name = "Cameron Simpson", email = "cs@cskk.id.au" },
+]
+keywords = [
+    "python2",
+    "python3",
+]
+dependencies = [
+    "cs.logutils>=20230212",
+    "cs.seq>=20221118",
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+version = "20230619"
+
+[project.license]
+text = "GNU General Public License v3 or later (GPLv3+)"
+
+[project.urls]
+URL = "https://bitbucket.org/cameron_simpson/css/commits/all"
+
+[project.readme]
+text = """
+A Range is an object resembling a set but optimised for contiguous
+ranges of int members.
+
+*Latest release 20230619*:
+* Span: sanity check .start and .end.
+* Range.issubset: efficient comparison with another Range, also .issuperset.
+
+## Function `overlap(span1, span2)`
+
+Return a list `[start,end]` denoting the overlap of two spans.
+
+Example:
+
+    >>> overlap([1,9], [5,13])
+    [5, 9]
+
+## Class `Range`
+
+A collection of `int`s that collates adjacent ints.
+
+The interface is as for a `set` with additional methods:
+* `spans()`: return an iterable of `Span`s, with `.start`
+  included in each `Span` and `.end` just beyond
+
+Additionally, the update/remove/etc methods have a secondary
+calling signature: `(start,end)`, which is the same as passing
+in `Range(start,end)` but much more efficient.
+
+*Method `Range.__init__(self, start=None, end=None, debug=None)`*:
+Initialise the Range.
+
+Called with `start` and `end`, these specify the initial
+`Span` of the `Range`.
+If called with just one argument that argument instead be an iterable
+of integer values comprising the values in the `Range`.
+
+## Class `Span(Span, builtins.tuple)`
+
+A namedtuple with `.start` and `.end` attributes.
+
+## Function `spans(items)`
+
+Return an iterable of `Spans` for all contiguous sequences in
+`items`.
+
+Example:
+
+    >>> list(spans([1,2,3,7,8,11,5]))
+    [1:4, 7:9, 11:12, 5:6]
+
+# Release Log
+
+
+
+*Release 20230619*:
+* Span: sanity check .start and .end.
+* Range.issubset: efficient comparison with another Range, also .issuperset.
+
+*Release 20230518*:
+Span,Range: new as_list() methods.
+
+*Release 20190102*:
+Span: provide __len__.
+
+*Release 20171231*:
+* Add Range.span0, returning the first Span.
+* Implement __bool__ and__nonzero__.
+* Accept a Span in __contains__.
+* Some small bugfixes.
+
+*Release 20160828*:
+* Add Range.start like existing Range.end.
+* Use \"install_requires\" instead of \"requires\" in DISTINFO.
+* Small bugfix.
+
+*Release 20150116*:
+First PyPI release."""
+content-type = "text/markdown"
+
+[build-system]
+requires = [
+    "setuptools >= 61.2",
+    "trove-classifiers",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
