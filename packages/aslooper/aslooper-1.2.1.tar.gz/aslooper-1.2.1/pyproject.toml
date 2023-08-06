@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "aslooper"
+version = "1.2.1"
+description = "looper-佛跳墙活套：捕获asyncio报错。"
+authors = ["vastxiao <vastxiao@gmail.com>"]
+readme = "README.md"
+
+license = "MIT"
+homepage = "https://vastxiao.github.io/"
+keywords = ["async", "asyncio", "loop"]
+
+include = ["README_zh.md"]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+
+
+[[tool.poetry.source]]
+name = "ali"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "tx"
+url = "https://mirrors.cloud.tencent.com/pypi/simple"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
