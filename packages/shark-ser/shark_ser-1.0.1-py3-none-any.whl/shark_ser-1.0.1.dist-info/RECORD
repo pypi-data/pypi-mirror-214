@@ -1,0 +1,12 @@
+loger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loger/config_server_log.py,sha256=gY1AwbCQTCch0-ltu7onlUKtJwNWa8Jy2_FEwmbKM_A,1133
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/descriptor.py,sha256=YN0_aYNDfdtcaDRhYLLY_dWsL9CAAViSEq7Tg_ODhg0,635
+src/metaclasses.py,sha256=DLYpGBnhXH2jt0tsxOKoZEdxad8onh0sDP9VzzJ6Ego,1569
+src/server.py,sha256=WaxB-3v38JrRDssOT7Hi9_U5JIDayMTXMao9g_pFyzk,41817
+src/utils.py,sha256=9ItPVmIRYxGwYVCx3S5SZfncgspxpqNl1nMZLdskFq8,3650
+src/variables.py,sha256=1J5HMYDUQu1Ela74YvNUDMC1LpI-SG3uazojwRcBFlY,92
+shark_ser-1.0.1.dist-info/METADATA,sha256=cfsYYm1t8ESd_zG8PzRN92yw6kC_BLzEDWVKBoie5y0,230
+shark_ser-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+shark_ser-1.0.1.dist-info/top_level.txt,sha256=XGDBRUj4ET-iIsZOf2DzvaRRpXufFa4Cc139ylx_N8U,10
+shark_ser-1.0.1.dist-info/RECORD,,

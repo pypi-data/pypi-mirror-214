@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: shark-ser
+Version: 1.0.1
+Summary: shark_ser
+Author: taygish
+Author-email: spasedicknew@gmail.com
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
