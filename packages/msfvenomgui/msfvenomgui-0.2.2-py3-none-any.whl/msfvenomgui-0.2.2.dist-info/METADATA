@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: msfvenomgui
+Version: 0.2.2
+Summary: msfvenomgui provides a graphical UI over Metasploit's msfvenom tool.
+License: GPL-3.0-only
+Author: bluesentinelsec
+Author-email: bluesentinel@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+# msfvenomGUI
+
+msfvenomgui provides a graphical UI over Metasploit's msfvenom tool.
+
+This tool was created to satisfy classwork for Dakota State University's CSC-842 Security Tool Development.
+
+Demo video: *coming soon...*
+
+![image](media/msfvenomgui-screenshot.png)
+
+## Prerequisites
+
+- Python 3 Interpreter
+- PIP
+- msfvenom
+
+## Usage
+
+```bash
+# install msfvenomgui with pip
+pip install msfvenomgui
+
+# execute msfvenomgui
+msfvenomgui
+```
+
+## Future Work
+
+1. Expose all payloads and executable formats
+2. Automatically find the msvenom path, without blocking the program
+3. Dynamically expose arguments based on the selected payload
+
