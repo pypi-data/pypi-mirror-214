@@ -1,0 +1,12 @@
+numerical_py/__init__.py,sha256=Akslu1cvRbr9KKUkofBwWQWgHWUsMwE4PaTywfLmdcI,240
+numerical_py/derivative.py,sha256=qfJ1OaUsTZyHNe4utCwEMla9ofF3z-ajviJy9sG6DY8,1426
+numerical_py/differentional.py,sha256=qwaMUekgP_XMW8fCs-U3tsUhXSVxiDqt8vSQNx3ARtc,1126
+numerical_py/eigenvals.py,sha256=8M9X5Ydai8gbpDu94IB17TsgNCsWfPmBKubq-ZCdVGY,1533
+numerical_py/equations.py,sha256=JWNNrzAKfFpfUSziQunJH3dk-lAcE234Uq-6YYBDv5U,4437
+numerical_py/integrals.py,sha256=UM3ZqaVFfvP7a1UOMHZgPiJvF7jWWx0wXmR_OcvQrK4,3763
+numerical_py/interpolation.py,sha256=tHIy2FBx_kp5eQPwgQhCgnJ3FOwl1c4uCv2llr5T6-o,1589
+numerical_py/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numerical_py-0.0.35.dist-info/METADATA,sha256=ZTKZNvpYMF1E3GCqTvkPwLvQgsNubn53RfNU4ruWqVs,147
+numerical_py-0.0.35.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+numerical_py-0.0.35.dist-info/top_level.txt,sha256=d7yZSQhaRUSqcMokRCFGD2Sj5pje1xJWbIMEwnwydJ4,13
+numerical_py-0.0.35.dist-info/RECORD,,
