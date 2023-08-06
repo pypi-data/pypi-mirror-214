@@ -1,0 +1,10 @@
+medit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+medit/cli.py,sha256=jDtR5EvJenO8mUPv8CApZbSJSjJfnFVAslXRAIdZQuE,2291
+medit/meditor.py,sha256=DzjwH63_HYbyObk-e5TZjQQwrvD5ah6n_a8QhF_Xad8,3293
+medit/misc.py,sha256=pcavV1vi5l9rTqBUanaR0twadSNjKfKCsTO8OEHX0E8,2389
+medit/ui.py,sha256=q2A3r71d4G9YwB5uGM2uqkWX3hBHVfYTAcIrt_yOS1M,3702
+medit/yatl.py,sha256=J5zEi4Se7hfLwJVKyr8rLU_XaiQFmy6zq1wmWI41msk,7256
+medit-0.0.1.dist-info/METADATA,sha256=D4p_Q3MSLy4uA8T0L_GithDCorDzleL3GGjE7wKxFJU,1410
+medit-0.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+medit-0.0.1.dist-info/entry_points.txt,sha256=9ARAxOdebtS2o_c7DisxsLB9T57y6RsCztt5T7HVBTg,40
+medit-0.0.1.dist-info/RECORD,,

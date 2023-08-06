@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: medit
+Version: 0.0.1
+Summary: Markup Editor
+Home-page: https://projects.om-office.de/frans/medit.git
+Author: Frans Fürst
+Author-email: frans.fuerst+gitlab@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncinotify (>=4.0.1,<5.0.0)
+Requires-Dist: pyqt6 (>=6.5.1,<7.0.0)
+Requires-Dist: pyqt6-qscintilla (>=2.14.0,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://projects.om-office.de/frans/medit.git
+Description-Content-Type: text/markdown
+
+# MEdit - Markup Editor
+
+
+## Installation
+
+```sh
+[<PYTHON> -m] pip[3] install [--upgrade] medit
+```
+
+
+## Usage
+
+
+## Development & Contribution
+
+```sh
+pip3 install -U poetry pre-commit
+git clone --recurse-submodules https://projects.om-office.de/frans/pocketrockit.git
+cd pocketrockit
+pre-commit install
+# if you need a specific version of Python inside your dev environment
+poetry env use ~/.pyenv/versions/3.10.4/bin/python3
+poetry install
+```
+
+After modifications, this way a newly built wheel can be checked and installed:
+
+```sh
+poetry build
+poetry run twine check dist/pocketrockit-0.0.25-py3-none-any.whl
+python3 -m pip install --user --upgrade dist/pocketrockit-0.0.25-py3-none-any.whl
+```
+
+
