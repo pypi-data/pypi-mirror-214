@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kaxi
+Version: 0.1.0
+Summary: Run pipelines similar to github actions
+Author: Gabriel Guarisa
+Author-email: gabrielguarisa@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: colorlog (>=6.7.0,<7.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# kaxi
