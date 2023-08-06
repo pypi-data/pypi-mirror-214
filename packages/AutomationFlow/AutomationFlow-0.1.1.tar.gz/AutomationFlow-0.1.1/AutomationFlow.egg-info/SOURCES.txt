@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+AutomationFlow/AutomationFlow.py
+AutomationFlow/__init__.py
+AutomationFlow/default_functions.py
+AutomationFlow/defaults.py
+AutomationFlow.egg-info/PKG-INFO
+AutomationFlow.egg-info/SOURCES.txt
+AutomationFlow.egg-info/dependency_links.txt
+AutomationFlow.egg-info/requires.txt
+AutomationFlow.egg-info/top_level.txt
+tests/test_complex.py
+tests/test_core.py
