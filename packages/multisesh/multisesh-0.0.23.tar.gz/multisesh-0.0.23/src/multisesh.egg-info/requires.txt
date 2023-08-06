@@ -1,0 +1,8 @@
+tifffile
+numpy>=1.19.4
+scipy>=1.5.3
+opencv-python>=4.5.0
+scikit-image
+scyjava
+matplotlib
+aicsimageio
