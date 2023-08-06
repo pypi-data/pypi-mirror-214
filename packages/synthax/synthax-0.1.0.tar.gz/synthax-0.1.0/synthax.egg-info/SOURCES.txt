@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+synthax/__init__.py
+synthax/config.py
+synthax/functional.py
+synthax/io.py
+synthax/parameter.py
+synthax/synth.py
+synthax/types.py
+synthax.egg-info/PKG-INFO
+synthax.egg-info/SOURCES.txt
+synthax.egg-info/dependency_links.txt
+synthax.egg-info/requires.txt
+synthax.egg-info/top_level.txt
