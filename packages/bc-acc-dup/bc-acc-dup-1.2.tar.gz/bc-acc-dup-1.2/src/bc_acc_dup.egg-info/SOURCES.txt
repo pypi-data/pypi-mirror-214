@@ -1,0 +1,6 @@
+setup.py
+src/bc_acc_dup.egg-info/PKG-INFO
+src/bc_acc_dup.egg-info/SOURCES.txt
+src/bc_acc_dup.egg-info/dependency_links.txt
+src/bc_acc_dup.egg-info/requires.txt
+src/bc_acc_dup.egg-info/top_level.txt
