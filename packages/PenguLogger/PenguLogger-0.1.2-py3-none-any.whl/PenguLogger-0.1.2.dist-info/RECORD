@@ -1,0 +1,9 @@
+logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logger/helpers.py,sha256=HDAuNVWRvIhiD719ejjToMi8jr7RwkPxuPT1rSsLqPQ,666
+logger/logger.py,sha256=Q14h-x73jON4vuuIMAPPA6_4aVGJtvotBNE_GaxiDf0,2524
+logger/test.py,sha256=3vzu_zs9O_sUuiI2iv2OuIxsyFzLZbEdoECy-9NT2Dw,398
+PenguLogger-0.1.2.dist-info/LICENSE,sha256=qRb6ZbRYlTNg1wZ7Uy3oKwK9UvbD8QHtApJatyxFT8Q,1070
+PenguLogger-0.1.2.dist-info/METADATA,sha256=hTJNomUrDrmnKf0ByXDoPEEwMYPmdn983geULVWKEbs,288
+PenguLogger-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PenguLogger-0.1.2.dist-info/top_level.txt,sha256=4a72cfKcY8dIFCuJ02V62KKPPO_91UXAjcL0R5qkrHs,7
+PenguLogger-0.1.2.dist-info/RECORD,,
