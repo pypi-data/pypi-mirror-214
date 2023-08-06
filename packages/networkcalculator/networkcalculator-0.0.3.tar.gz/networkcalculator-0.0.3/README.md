@@ -1,0 +1,181 @@
+# Network Calculator
+
+
+### "A Deep Dive into the Network Calculator: Understanding IP Address Management in Python"
+
+Hello there! Today we'll be exploring the concept of network calculation and how it is applied in Python. To do so, we'll work with a snippet of Python code that simplifies IP address management tasks such as calculating subnet masks, network IDs, and more.
+
+ In this article, we will explore how to use a Python package called "networkcalculator" to simplify IP address management. The package provides tools to perform calculations such as subnet mask, network ID, next network ID, broadcast ID, first usable IP, last usable IP, and total number of usable IPs in a network. This package was created with the motivation for practicing problem-solving subnet masks problems easier and more efficient.
+This is great practice for the CCNA (Cisco Certified Network Associate) certification covers various networking concepts, including subnetting. Subnetting involves dividing a network into smaller subnetworks, which can be challenging and time-consuming to calculate manually. With the networkcalculator package, we can automate these calculations, making subnetting questions in the CCNA exam or practice exercises much simpler to solve.
+Let's dive into using the networkcalculator package to simplify IP address management and streamline the process of solving subnet masks questions for CCNA and other networking scenarios.
+The What and Why of Network Calculations
+In networking, IP addresses and subnet masks are crucial for defining the structure and reach of the network. However, doing these calculations manually can be cumbersome and error-prone. This is where Python, with its vast library support and simplicity, can be a lifesaver.
+
+##### The What and Why of Network Calculations
+In networking, IP addresses and subnet masks are crucial for defining the structure and reach of the network. However, doing these calculations manually can be cumbersome and error-prone. This is where Python, with its vast library support and simplicity, can be a lifesaver.
+
+In this article, we'll delve into a Python class called I have created called the 'NetworkCalculator'. It is designed to automate common network calculation tasks. To fully understand this, it is recommended you have some basic knowledge of IP addresses, subnet masks, network IDs, broadcast IDs, and CIDR notation. There are a tone of online resources to help your understanding. 
+
+The NetworkCalculator class is initialized with an IP address in CIDR notation as input. CIDR (Classless Inter-Domain Routing) notation represents an IP address and its associated routing prefix. 
+
+For instance, '192.168.1.10/24' is an example of an IP address in CIDR notation.
+The __init__ method splits the IP address and the CIDR subnet prefix, and an IPv4Network object is created with these. The strict=False parameter allows the IP address part to be any IP address inside the network.
+```python 
+def __init__(self, ip_cidr):
+    ...
+    self.network = IPv4Network(f"{self.ip}/{self.cidr}", strict=False)
+
+```
+### Network Calculator Methods you can use in your code 
+```
+
+After creating the NetworkCalculator object, Here are several methods can we create and us to perform network calculations:
+
+get_subnet_mask(): Returns the subnet mask of the network. The subnet mask defines the size of the network.
+
+get_network_id(): Returns the Network ID. This is the first IP address in the network and it identifies the network itself.
+
+get_next_network(): Returns the Network ID of the next network. It's calculated by adding 2^(32 - CIDR) to the network address.
+
+get_broadcast_id(): Returns the last IP address in the network, which is used for broadcasting messages to all devices in the network.
+
+get_first_ip(): Returns the first usable IP address in the network. It's simply the Network ID plus one.
+
+get_last_ip(): Returns the last usable IP address in the network, which is one less than the broadcast ID.
+
+get_total_ips(): Returns the total number of usable IP addresses in the network.
+```
+##### Wrapping it All Up
+At the end of the script, there is a function named print_network_info(ip_list).
+This function is used to print information about a list of networks.
+
+```python
+ ip_list = ['10.1.1.55/28', '192.168.1.10/26', '172.16.0.5/16'] 
+print_network_info(ip_list)
+```
+
+Here's the entire code block:
+```python 
+ipaddress import IPv4Network, IPv4Address
+
+
+
+def print_network_info(ip_list):
+    print("{:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format('CIDR', 'Subnet Mask', 'Network ID', 'Next Network', 'Broadcast ID', 'First IP', 'Last IP', 'Total IPs'))
+
+    for ip_cidr in ip_list:
+        net_calc = NetworkCalculator(ip_cidr)
+
+        print("{:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format(
+            ip_cidr,
+            net_calc.get_subnet_mask(),
+            net_calc.get_network_id(),
+            net_calc.get_next_network(),
+            net_calc.get_broadcast_id(),
+            net_calc.get_first_ip(),
+            net_calc.get_last_ip(),
+            str(net_calc.get_total_ips())
+        ))
+
+# Use it like this:
+ip_list = ['10.1.1.55/28', '192.168.1.10/26', '172.16.0.5/16']
+
+# Call the function with the list of CIDR IP addresses
+print_network_info(ip_list)
+```
+
+
+### Step 1:
+Installation:
+To use the networkcalculator package, we need to install it first. Open your command prompt or terminal and run the following command:
+pip install networkcalculator
+### Step 2:
+
+Importing the Package:
+To use the NetworkCalculator package in our Python program, we need to import it. Add the following line at the beginning of your Python code:
+from networkcalculator import NetworkCalculator
+### Step 3: 
+Calculating Network Information:
+Next, let's create a list of CIDR IP addresses that we want to calculate their network information we can use for problem solving. 
+
+### For example:
+ip_list = ['10.1.1.55/28', '192.168.1.10/26', '172.16.0.5/16']
+Step 4: 
+Printing Network Information:
+
+We can use the `NetworkCalculator` class to calculate and print the network information for each IP address in the list. Add the following code after the `ip_list` definition:
+
+def print_network_info(ip_list):
+    print("{:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format('CIDR', 'Subnet Mask', 'Network ID', 'Next Network', 'Broadcast ID', 'First IP', 'Last IP', 'Total IPs'))
+
+    for ip_cidr in ip_list:
+        net_calc = NetworkCalculator(ip_cidr)
+
+        print("{:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format(
+            ip_cidr,
+            net_calc.get_subnet_mask(),
+            net_calc.get_network_id(),
+            net_calc.get_next_network(),
+            net_calc.get_broadcast_id(),
+            net_calc.get_first_ip(),
+            net_calc.get_last_ip(),
+            str(net_calc.get_total_ips())
+        ))
+
+Step 5: Running the Program:
+
+Save the Python code file and run it using the Python interpreter. You should see the network information printed for each IP address in the `ip_list`.
+
+### Call the function with the list of CIDR IP addresses
+print_network_info(ip_list)
+
+```CIDR            Subnet Mask     Network ID      Next Network    Broadcast ID    First IP        Last IP         Total IPs      
+10.1.1.55/28    255.255.255.240 10.1.1.48       10.1.1.64       10.1.1.63       10.1.1.49       10.1.1.62       14             
+192.168.1.10/26 255.255.255.192 192.168.1.0     192.168.1.64    192.168.1.63    192.168.1.1     192.168.1.62    62             
+172.16.0.5/16   255.255.0.0     172.16.0.0      172.17.0.0      172.16.255.255  172.16.0.1      172.16.255.254  65534
+```
+
+That's it! You have successfully used the networkcalculator package to simplify IP address management in Python.
+Remember, the networkcalculator package is just one example of how Python packages can help us perform complex calculations easily.
+
+```python
+from networkcalculator import NetworkCalculator
+
+def print_network_info(ip_list):
+    ''' 
+    Prints network information for a list of IP addresses in CIDR notation.
+
+    Args:
+        ip_list (list): List of IP addresses in CIDR notation.
+
+    Returns:
+        None
+    '''
+    
+    print("{:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format('CIDR', 'Subnet Mask', 'Network ID', 'Next Network', 'Broadcast ID', 'First IP', 'Last IP', 'Total IPs'))
+
+    for ip_cidr in ip_list:
+        net_calc = NetworkCalculator(ip_cidr)
+
+        print("{:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15} {:<15}".format(
+            ip_cidr,
+            net_calc.get_subnet_mask(),
+            net_calc.get_network_id(),
+            net_calc.get_next_network(),
+            net_calc.get_broadcast_id(),
+            net_calc.get_first_ip(),
+            net_calc.get_last_ip(),
+            str(net_calc.get_total_ips())
+        ))
+
+if __name__ == "__main__":
+    # Example usage
+    ip_list = ['10.1.1.55/28', '192.168.1.10/26', '172.16.0.5/16']
+    print_network_info(ip_list) 
+```
+
+### About: 
+Ray Bernard is a seasoned technologist specializing in cloud-based platforms, data science, and AI. He co-founded SuprFanz, a revolutionary cloud-based marketing company, and has held key roles at EMC, Ticket Master, and Compaq. As an Affiliate Developer, Systems Engineer, and Community Advocate, he demonstrated exceptional technical prowess and innovative thinking. Ray also taught Internet/Intranet Management & Design at Columbia University, further contributing to the field. With his vast experience and proactive problem-solving approach, he consistently drives digital transformation. 
+Contact him: ray.bernard@outlook.com 
+LinkedIn : https://www.linkedin.com/in/ray-bernard-960382/
+Git : https://github.com/raymondbernard/
