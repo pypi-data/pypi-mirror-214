@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: pixivSpiderCreatedByHanXu
+Version: 0.0.7
+Summary: This package can crawl the images at pixiv in two ways.
+Home-page: https://gitee.com/UnderTurrets/pixiv-spider
+Author: Han Xu
+Author-email: 736946693@qq.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+﻿# Make sure that your internet can visit the foreign websites.
+- The package has one module to use.
+
+# Easy use
+```python
+import pixivSpiderCreatedByHanXu as Spider
+if __name__ == '__main__':
+    ex=Spider.pixiv_spider()
+    ex()
+```
+
+# Module:pixivSpiderCreatedByHanXu
+- The module has two ways to crawl images:`Rank` and `keyword`.
+## search by `Rank`
+- Looking at the following example:
+```shell
+{'1': 'Rank', '2': 'Keyword'}
+Type in the target you want to search.
+1
+{'1': 'Simple:Recommended and Fast because the downloaded images are vague.You can view the simple image and select what you love', '2': 'Specific:Not Recommended and Slow because the downloaded images are clear'}
+Type in the requirement of download-mode.
+1
+type in the path where you want to reserve the images:
+rank20230424
+Type in the number of images you want:
+5
+{'1': 'daily', '2': 'weekly', '3': 'monthly', '4': 'rookie', '5': 'daily_ai', '6': 'male', '7': 'female'}
+type in the searchMode you want
+1
+Type in the date you want to search.Follow the format like this:20230423
+20230424
+```
+
+## search by `keyword`
+```shell
+{'1': 'Rank', '2': 'Keyword'}
+Type in the target you want to search.
+2
+{'1': 'Simple:Recommended and Fast because the downloaded images are vague.You can view the simple image and select what you love', '2': 'Specific:Not Recommended and Slow because the downloaded images are clear'}
+Type in the requirement of download-mode.
+1
+type in the path where you want to reserve the images:
+秋山澪图片
+Type in the number of images you want:
+5
+{'1': '500', '2': '1000', '3': '5000', '4': '10000'}
+Type in the requirement of heat.Larger the number is,Less the results are.
+2
+type in the keywords used to search in pixiv:
+秋山澪
+```
+# Download
+```shell
+pip install pixivSpiderCreatedByHanXu
+```
