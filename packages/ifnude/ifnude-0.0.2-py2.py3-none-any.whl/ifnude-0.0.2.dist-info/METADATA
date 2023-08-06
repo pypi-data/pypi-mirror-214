@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: ifnude
+Version: 0.0.2
+Summary: An AI powered nudity detection library
+Home-page: https://github.com/s0md3v/ifnude
+Author: Somdev Sangwan
+Author-email: s0md3v@gmail.com
+License: GPLv3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pillow
+Requires-Dist: opencv-python-headless (>=4.5.1.48)
+Requires-Dist: tqdm
+Requires-Dist: scikit-image
+Requires-Dist: onnxruntime
+
+
+# ifnude
+
+It is a nudity detection library that actually works, on both on humans and drawings.. It tells you exactly what NSFW parts of the body are visible. Optionally, you can censor the said parts.
+
+<img src="https://i.imgur.com/0KPJbl9.jpg" width=600>
+
+### Installation
+```bash
+pip install ifnude
+```
+
+### Example
+```python
+from ifnude import detect
+
+# use mode="fast" for x3 speed with slightly lower accuracy
+print(detect('/path/to/nsfw.png'))
+```
+
+#### Output
+```
+[{'box': [164, 188, 246, 271], 'score': 0.8253238201141357, 'label': 'EXPOSED_BREAST_F'}, {'box': [252, 190, 335, 270], 'score': 0.8235630989074707, 'label': 'EXPOSED_BREAST_F'}]
+```
+
+### Credits
+This is fork of [NudeNet](https://pypi.org/project/NudeNet/) library which doesn't work anymore. I have taken the liberty to remove the video detection functionality as it was prone to crashes. It will be re-implemented in future.
