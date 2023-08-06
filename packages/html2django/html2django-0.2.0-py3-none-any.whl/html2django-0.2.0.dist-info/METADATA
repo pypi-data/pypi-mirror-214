@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: html2django
+Version: 0.2.0
+Summary: A Python script to modify HTML files for Django templates
+Home-page: https://github.com/haxsysgit/html2django
+Author: Elenasulu Arinze
+Author-email: pentacker@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+
+
+<!-- Badges -->
+[![PyPI version](https://badge.fury.io/py/html2django.svg)](https://pypi.org/project/html2django/)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/haxsysgit/html2django/)
+[![License](https://img.shields.io/github/license/haxsysgit/html2django?color=brightgreen)](https://github.com/haxsysgit/html2django/blob/main/license.md)
+[![OpenIssues](https://img.shields.io/github/issues/haxsysgit/html2django?color=important)](https://github.com/haxsysgit/html2django/issues)
+<!--LineBreak-->
+[![Windows](https://img.shields.io/badge/Windows-white?style=flat-square&logo=windows&logoColor=blue)](https://github.com/haxsysgit/html2django/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-white?style=flat-square&logo=ubuntu&logoColor=E95420)](https://github.com/haxsysgit/html2django/)
+<!-- Badges -->
+
+# html2django
+
+- Convert your html static tags to django static template
+
+## Description
+
+Modifies the HTML content of a file to replace all <link> tags' href attributes, all <script> tags' src attributes, and all <img> src attributes by default, also provides support for custom modification of tags and attribute with Django template tags, and adds {% load static %} to the beginning of the file.
+
+
+## Installation
+
+To use the function, simply install the package with pip, by default beautifulsoup4 library will be in install using the code below but incase there is any problem, you can install it via pip:
+
+```bash
+    pip install html2django
+```
+
+## Usage
+
+```python
+
+from djangohtml import djangoify
+
+djangoify('index.html') 
+# modify the index.html file in place
+```
+
+## Example
+
+Suppose you have an HTML file named index.html that looks like this:
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <img src="image.png">
+</body>
+</html>
+```
+
+Running the djangoify() function on this file: 
+
+```python
+
+    djangoify('index.html')
+``` 
+
+will modify the file to look like this:
+
+```html
+
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>My Website</title>
+        <link href="{% static 'styles.css' %}" rel="stylesheet">
+        <script src="{% static 'script.js' %}"></script>
+    </head>
+    <body>
+        <h1>Hello, World!</h1>
+        <img src="{% static 'image.png' %}">
+    </body>
+    </html>
+```
+
+Here, the <link>, <script>, and <img> tags' href and src attributes have been replaced with Django template tags, and {% load static %} has been added to the beginning of the file.
+
+# Parameters
+
+    - file (str): The path to the input HTML file.
+    - custom_tag (str): Custom html tag to modify. To be used with the custom_attr parameter.
+    - custom_attr (str): Custom html attribute of the custom_tag.
+    - custom_value (any): The value of the - custom attribute.
+
+# Returns
+
+None: The function modifies the input file in place.
+
+# Raises
+
+FileNotFoundError: If the input file cannot be found or accessed.
+
+
+
+# Authors
+
+- [@haxsys](https://github.com/devoply-dev)
