@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/audiobook_tags.egg-info/PKG-INFO
+src/audiobook_tags.egg-info/SOURCES.txt
+src/audiobook_tags.egg-info/dependency_links.txt
+src/audiobook_tags.egg-info/entry_points.txt
+src/audiobook_tags.egg-info/requires.txt
+src/audiobook_tags.egg-info/top_level.txt
