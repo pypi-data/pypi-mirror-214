@@ -1,0 +1,2 @@
+[console_scripts]
+screenshot-ocr = screenshot_ocr.cli:main

@@ -1,0 +1,14 @@
+screenshot_ocr/__init__.py,sha256=wewGHOXdOIcFfvbRI1Rya2Qf6HtSQjBsjUWWIW0iOq0,184
+screenshot_ocr/app.py,sha256=hPxVoAgAddTE8SzMFDwLpV9ETBXy7ANztqaM4AgBrWU,5696
+screenshot_ocr/app_paths.py,sha256=uM9CK1aEQtXCzVeM4jfU86LVy3fSOVEMs2TyRGsxdIM,8218
+screenshot_ocr/cli.py,sha256=Phm9eivS6UkVa-BMDTKSMNKI4UalSAGICnfwoyNfiec,3445
+screenshot_ocr/google_sheets.py,sha256=oEqxbbbzpc-Trg43eTlRQWvlMSe_nUJS8plo5CCCtdU,5889
+screenshot_ocr/ocr.py,sha256=Ces9iDLRPqXei-OQFIQdHpKx02TORMRcZSgeyD9tgDI,1300
+screenshot_ocr/trivia.py,sha256=zavIjm4qSC_OYbvED53cvwDLYV_ht6DmGj0R1mssIwA,3934
+screenshot_ocr/utils.py,sha256=2cUgh8QYaI5Lsjj-ahPBAOhnrF2Ix7kOlk1J3Ixh6wg,1301
+screenshot_ocr-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+screenshot_ocr-0.0.1.dist-info/METADATA,sha256=KHKaAmCFmOwJlvy6X1A8JWJbQdT7GAnvvUStVHlI-gA,6532
+screenshot_ocr-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+screenshot_ocr-0.0.1.dist-info/entry_points.txt,sha256=wxJ3uBATgH8Bw8PdfKf_2xqzb0wJG2U6FF6pq3fs90I,59
+screenshot_ocr-0.0.1.dist-info/top_level.txt,sha256=OXqgLxkpUIG09KMaf6uSb9NCtfV92ACCX_AzJv5C_Rg,15
+screenshot_ocr-0.0.1.dist-info/RECORD,,
