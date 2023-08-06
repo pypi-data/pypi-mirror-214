@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+pkg/pipeadapter/__init__.py
+pkg/pipeadapter/pipeadapter.py
+pkg/pipeadapter.egg-info/PKG-INFO
+pkg/pipeadapter.egg-info/SOURCES.txt
+pkg/pipeadapter.egg-info/dependency_links.txt
+pkg/pipeadapter.egg-info/requires.txt
+pkg/pipeadapter.egg-info/top_level.txt
