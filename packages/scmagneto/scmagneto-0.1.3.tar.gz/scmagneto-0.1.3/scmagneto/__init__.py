@@ -1,0 +1,1 @@
+from .scmagneto import magneto

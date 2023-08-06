@@ -1,0 +1,13 @@
+MAGNETO: Marker pAnels GeNEraTor with multi-Objective optimization
+
+MAGNETO is a user-friendly and fully-automatic framework that exploits Multi-objective Evolutionary Algorithms (MOAEs) to solve a tailored bi-objective optimization problem, specifically designed to build effective marker panels.
+MAGNETO can thus help researchers to identify the most promising marker panels, starting from a gene expression matrix with single-cell resolution data and a cell type identity for each cell.
+
+
+For further information please visit: https://gitlab.com/andrea-tango/magneto
+
+
+We're always happy to hear of any suggestions, issues, bug reports, and possible ideas for collaboration.
+
+- Andrea Tangherloni <andrea.tangherloni@unibocconi.it> (Bocconi University, Italy)
+- Simone Riva <simone.riva@imm.ox.ac.uk> <simo.riva15@gmail.com> (University of Oxford, UK)

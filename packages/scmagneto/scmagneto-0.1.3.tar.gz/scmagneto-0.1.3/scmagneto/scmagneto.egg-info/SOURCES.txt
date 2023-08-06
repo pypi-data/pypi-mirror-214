@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+scmagneto/__init__.py
+scmagneto/_version.py
+scmagneto/magneto.py
+scmagneto/scmagneto.egg-info/PKG-INFO
+scmagneto/scmagneto.egg-info/SOURCES.txt
+scmagneto/scmagneto.egg-info/dependency_links.txt
+scmagneto/scmagneto.egg-info/requires.txt
+scmagneto/scmagneto.egg-info/top_level.txt
