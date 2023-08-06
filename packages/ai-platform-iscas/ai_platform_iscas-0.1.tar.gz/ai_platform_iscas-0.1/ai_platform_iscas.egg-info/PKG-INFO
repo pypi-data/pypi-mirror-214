@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ai-platform-iscas
+Version: 0.1
+Summary: A brief description of your package
+Author: vicmeng
+Author-email: 1137998920@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
