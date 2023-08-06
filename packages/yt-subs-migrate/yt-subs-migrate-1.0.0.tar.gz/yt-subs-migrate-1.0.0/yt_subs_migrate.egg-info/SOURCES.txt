@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+yt_subs_migrate/__main__.py
+yt_subs_migrate/cli.py
+yt_subs_migrate/subscriptions.py
+yt_subs_migrate.egg-info/PKG-INFO
+yt_subs_migrate.egg-info/SOURCES.txt
+yt_subs_migrate.egg-info/dependency_links.txt
+yt_subs_migrate.egg-info/entry_points.txt
+yt_subs_migrate.egg-info/requires.txt
+yt_subs_migrate.egg-info/top_level.txt
