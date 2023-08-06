@@ -1,0 +1,9 @@
+pyTitration/__init__.py,sha256=4CN6kMnGXIXPgod1jTgg6Nvx0dO183AQ0eCCqZBpRGA,76
+pyTitration/gui_calculator.py,sha256=G7bNN1BesAhUdzPXg7ppssqvYzzg9Qq9HJVw6XRKRew,7491
+pyTitration/k_values.py,sha256=aNPOK2lwI0sUVIh6kMdln927ceAnOoSiciORnfVKvP8,1755
+pyTitration/titration.py,sha256=GhANpkSD_6bDCN40piMFbesZYSIzqpdU8rKZw3K3hpI,10863
+pyTitration-0.0.1.dist-info/LICENSE,sha256=6buC9P-cbLwfnEzeuYAIvNRhqGgPwbXmuWecfSSRAb8,1095
+pyTitration-0.0.1.dist-info/METADATA,sha256=5M0pxPanE7Hm8wvYiqi5zBAyCv_6sbP1HHKaF8tBozc,1631
+pyTitration-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyTitration-0.0.1.dist-info/top_level.txt,sha256=-bWfVj4kQxvAmQRPA-EEEe-Jlb9C8OpOE1m_nVDOqR4,12
+pyTitration-0.0.1.dist-info/RECORD,,
