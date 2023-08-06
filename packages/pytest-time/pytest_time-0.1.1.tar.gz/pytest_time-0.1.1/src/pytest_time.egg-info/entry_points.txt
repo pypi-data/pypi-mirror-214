@@ -1,0 +1,2 @@
+[pytest11]
+instant_sleep = pytest_time
