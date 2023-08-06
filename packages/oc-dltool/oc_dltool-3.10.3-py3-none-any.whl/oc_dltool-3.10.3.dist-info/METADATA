@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: oc-dltool
+Version: 3.10.3
+Summary: Includes tools for delivery build and release
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: oc-checksumsq
+Requires-Dist: oc-connections
+Requires-Dist: oc-cdt-queue2
+Requires-Dist: oc-dlinterface
+Requires-Dist: oc-portal-commons
+Requires-Dist: oc-delivery-apps
+Requires-Dist: oc-orm-initializator
+Requires-Dist: oc-mailer
+Requires-Dist: oc-sql-helpers
+Requires-Dist: requests
+Requires-Dist: mock
+Requires-Dist: coverage
+Requires-Dist: django
+Requires-Dist: django-tests
+
