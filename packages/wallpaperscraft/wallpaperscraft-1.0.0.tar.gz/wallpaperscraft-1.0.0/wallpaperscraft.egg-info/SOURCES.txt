@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+wallpaperscraft/__init__.py
+wallpaperscraft/api.py
+wallpaperscraft/asyncapi.py
+wallpaperscraft/types.py
+wallpaperscraft.egg-info/PKG-INFO
+wallpaperscraft.egg-info/SOURCES.txt
+wallpaperscraft.egg-info/dependency_links.txt
+wallpaperscraft.egg-info/top_level.txt
