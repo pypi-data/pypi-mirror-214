@@ -1,0 +1,12 @@
+nameOverride: ""
+fullnameOverride: ""
+deployment:
+  maxReplicas: 1
+  minReplicas: 0
+  reservedConcurrency: 10
+  memoryAssigned: "1000"
+  cpu: "1"
+  childProcess: false
+  subscriptionId: ""
+  planName: ""
+  resourceGroup: ""
