@@ -1,0 +1,1 @@
+from .tegro_parser import TegroMoneyParser

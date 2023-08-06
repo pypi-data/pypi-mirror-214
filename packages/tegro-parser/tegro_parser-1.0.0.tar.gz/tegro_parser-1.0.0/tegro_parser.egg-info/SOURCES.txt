@@ -1,0 +1,11 @@
+setup.py
+tegro_parser/__init__.py
+tegro_parser/api.py
+tegro_parser/build_dict.py
+tegro_parser/build_headers.py
+tegro_parser/tegro_parser.py
+tegro_parser.egg-info/PKG-INFO
+tegro_parser.egg-info/SOURCES.txt
+tegro_parser.egg-info/dependency_links.txt
+tegro_parser.egg-info/requires.txt
+tegro_parser.egg-info/top_level.txt
