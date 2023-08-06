@@ -1,0 +1,18 @@
+{
+    "dim": [
+        {
+            "path": "Patient.gender",
+            "W": 1
+        },
+        {
+            "path": "Patient.birthDate",
+            "W": 10
+        },
+        {
+            "path": "Observation.code",
+            "W": 1
+        }
+    ],
+    "min_date": "2016-01-01",
+    "code": []
+}
