@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ConstitutionUz
+Version: 1.0.1
+Summary: Constitution of the Republic of Uzbekistan.
+Home-page: https://github.com/AmoreForever/ConstitutionUZ
+Author: AmoreForever
+Author-email: me.thefarkhodov@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/AmoreForever/constitutionuz
+Keywords: constitution,uzbekistan
+Requires: requests
+Requires: bs4
+
