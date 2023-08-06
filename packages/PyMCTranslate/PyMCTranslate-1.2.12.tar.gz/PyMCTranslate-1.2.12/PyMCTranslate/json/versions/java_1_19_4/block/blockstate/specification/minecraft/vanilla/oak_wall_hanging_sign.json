@@ -1,0 +1,18 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "hanging_sign"
+    ],
+    "snbt": "{}",
+    "properties": {
+        "facing": [
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"north\""
+    }
+}
