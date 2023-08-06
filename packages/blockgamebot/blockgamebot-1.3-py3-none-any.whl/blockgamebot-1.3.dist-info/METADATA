@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: blockgamebot
+Version: 1.3
+Summary: An API Wrapper for the block game bot api
+Author: asov
+Author-email: asov <noemtdev@gmail.com>
+Project-URL: Homepage, https://github.com/noemtdev/api-wrapper
+Project-URL: Bug Tracker, https://github.com/noemtdev/api-wrapper/issues
+Keywords: python,hypixel,skyblock,scammerlist,blockgamebot,blockgamebot
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# block game bot
+
+[![license](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
+[![pypi](https://img.shields.io/pypi/v/blockgamebot?style=for-the-badge)](https://pypi.org/project/blockgamebot/)
+
+block game bot api Wrapper
+
+## Information
+
+Written without any external libraries other than `aiohttp` which is used to fetch data from the block game bot API.
+
+This requires a block game bot API key. You may obtain one by joining [this](https://discord.gg/fruffy) Discord and messaging me (asov#0187).
+
+## Credits
+- [asov](https://github.com/noemtdev/) - Maker of Scammer List
+- [timnoot](https://github.com/timnoot) - Helped me a lot in general
+
+
+## Usage
+
+```py
+import asyncio
+
+from blockgamebot.api import Scammers
+
+scammers = Scammers("BLOCKGAMEBOT_API_KEY")
+images = itemImages()
+
+async def main():
+
+    # Get all scammers
+    all_scammers = await scammers.get_all()
+    print(all_scammers)
+
+    # Lookup a scammer
+    scammer = await scammers.lookup("asov")
+    print(scammer)
+
+asyncio.run(main())
+```
+
+## API
+If you don't want to use the Wrapper you can use the [API](https://api.nom-nom.link/).
