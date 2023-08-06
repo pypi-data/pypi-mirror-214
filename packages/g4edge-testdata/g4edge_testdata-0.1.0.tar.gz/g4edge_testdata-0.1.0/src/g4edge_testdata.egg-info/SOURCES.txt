@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/g4edge_testdata.egg-info/PKG-INFO
+src/g4edge_testdata.egg-info/SOURCES.txt
+src/g4edge_testdata.egg-info/dependency_links.txt
+src/g4edge_testdata.egg-info/not-zip-safe
+src/g4edge_testdata.egg-info/requires.txt
+src/g4edge_testdata.egg-info/top_level.txt
+src/g4edgetestdata/__init__.py
+src/g4edgetestdata/_version.py
+src/g4edgetestdata/core.py
+tests/test_core.py

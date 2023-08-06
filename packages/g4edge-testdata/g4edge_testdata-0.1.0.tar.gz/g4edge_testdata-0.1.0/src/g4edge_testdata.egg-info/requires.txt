@@ -1,0 +1,15 @@
+GitPython
+
+[all]
+g4edge-testdata[docs,test]
+
+[docs]
+furo
+myst-parser
+sphinx
+sphinx-copybutton
+
+[test]
+pre-commit
+pytest>=6.0
+pytest-cov
