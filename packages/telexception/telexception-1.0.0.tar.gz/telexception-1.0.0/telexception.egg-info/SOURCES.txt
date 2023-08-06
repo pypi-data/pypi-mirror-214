@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+telexception/__init__.py
+telexception/telexception.py
+telexception.egg-info/PKG-INFO
+telexception.egg-info/SOURCES.txt
+telexception.egg-info/dependency_links.txt
+telexception.egg-info/requires.txt
+telexception.egg-info/top_level.txt
