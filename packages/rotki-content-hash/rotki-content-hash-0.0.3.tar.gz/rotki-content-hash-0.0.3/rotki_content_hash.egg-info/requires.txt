@@ -1,0 +1,11 @@
+multiformats
+base58check
+pysha3
+typing_extensions==4.5.0
+
+[lint]
+pylint
+
+[test]
+pytest
+pytest-cov
