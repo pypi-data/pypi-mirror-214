@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "letras_custom_israelubeda"
+version = "0.0.2"
+authors = [
+  { name="Israel Ubeda", email="israel.ubedabravo@gmail.com" },
+]
+description = "Una libreria que transforma una letra por otra , ejemplo la letra A ,se transforma en letra Z"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/israelubeda"
+"Bug Tracker" = "https://github.com/israelubeda"
