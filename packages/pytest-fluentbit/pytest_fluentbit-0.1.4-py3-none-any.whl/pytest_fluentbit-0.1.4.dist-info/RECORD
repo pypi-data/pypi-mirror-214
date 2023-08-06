@@ -1,0 +1,10 @@
+pytest_fluentbit/__init__.py,sha256=zmt7phCoa-Fkr-4GtZLhkN3qNnUphoPCR2uop7IPnaE,552
+pytest_fluentbit/additional_information.py,sha256=mU_tVBIuZ3piHiUXr4ZIxvNiRKwdwlJDB2tW1seIowI,837
+pytest_fluentbit/plugin.py,sha256=zwhuSB17JRq1tM6IPoMt1NJl3GPZkM-7pG5gzy7fl8U,13041
+pytest_fluentbit/test_report.py,sha256=dkUNgfabgMcfwevLQovajYLrWwQjG_vVEYqkLoXBpjQ,4750
+pytest_fluentbit-0.1.4.dist-info/LICENSE,sha256=R-7szugcB21LuwTUNuBVA1Re_qareqEGxp7Ni5gDkbM,1086
+pytest_fluentbit-0.1.4.dist-info/METADATA,sha256=MD9D8Fqjyu8_z6znXlqYTcwHmefWJnRy3w8V3M5dNoo,10127
+pytest_fluentbit-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_fluentbit-0.1.4.dist-info/entry_points.txt,sha256=kXmGeXdhIaXcEfbBBXYZcGBidSDqdUsi60w4V-zKu_U,49
+pytest_fluentbit-0.1.4.dist-info/top_level.txt,sha256=nyYzvQhn7lTCoQQ6pmU5HY_KYRdsHUW7_-sXiLf2S_8,17
+pytest_fluentbit-0.1.4.dist-info/RECORD,,
