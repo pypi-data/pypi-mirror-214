@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: UnifiAPIWrapper
+Version: 0.1
+Summary: A python module to interact with Ubiquiti's Unifi
+Home-page: https://github.com/triplesix2001
+Author: Preben Bargum
+License: MiT

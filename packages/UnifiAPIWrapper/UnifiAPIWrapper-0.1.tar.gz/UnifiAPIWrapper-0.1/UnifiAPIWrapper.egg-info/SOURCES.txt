@@ -1,0 +1,5 @@
+setup.py
+UnifiAPIWrapper.egg-info/PKG-INFO
+UnifiAPIWrapper.egg-info/SOURCES.txt
+UnifiAPIWrapper.egg-info/dependency_links.txt
+UnifiAPIWrapper.egg-info/top_level.txt
