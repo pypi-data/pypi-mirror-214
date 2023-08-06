@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: img2tags
+Version: 1.0.0
+Summary: Tag images
+Home-page: https://github.com/shirayu/img2tags
+Author: Yuta Hayashibe
+Author-email: yuta@hayashibe.jp
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: convert
+Provides-Extra: cpu
+Provides-Extra: gpu
+Requires-Dist: huggingface-hub (>=0.15.1,<0.16.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: onnx (>=1.14.0,<2.0.0) ; extra == "convert"
+Requires-Dist: onnxruntime (>=1.15.1,<2.0.0) ; extra == "cpu"
+Requires-Dist: onnxruntime-gpu (>=1.15.1,<2.0.0) ; extra == "gpu"
+Requires-Dist: opencv-python (>=4.7.0.72,<5.0.0.0)
+Requires-Dist: pillow (>=9.5.0,<10.0.0)
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: torch (>=2.0.1,<3.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Project-URL: Repository, https://github.com/shirayu/img2tags
+Description-Content-Type: text/markdown
+
+
+# img2tags
+
+## Setup
+
+```bash
+# For CPU
+pip install 'img2tags[cpu]'
+
+# For GPU
+pip install 'img2tags[gpu]'
+```
+
+## Run
+
+```bash
+# Generate .txt file
+img2tags -i input_dir
+
+# Generate .json file in another directory with CPU
+img2tags --model shirayu/img2tags/SmilingWolf__wd-v1-4-moat-tagger-v2 \
+    --batch 4 \
+    --ext json \
+    --cpu \
+    -i input_dir \
+    -o output_dir
+```
+
+## LICENSE
+
+Apache 2.0
+
+Some codes are based on codes in the following project.
+
+- <https://github.com/kohya-ss/sd-scripts>
+
+## References
+
+- [Convert onnx models](https://github.com/onnx/onnx/issues/2182#issuecomment-881752539)
+
