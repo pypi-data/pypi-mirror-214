@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: trainingimages
+Version: 0.0.1
+Summary: A small example package
+Project-URL: Homepage, https://github.com/Ferret-Dragon/TrainingImages
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Example Author <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+<div class="green">
+
+# TRAININGIMAGES  
+
+### Purpose:  
+Open images from a directory and determine whether they contain a specific feature that the user is looking for 
+
+
+
+</div>
+
+<style>
+.green{
+    color:green;
+    sont-size:30px;
+}
+</style>
