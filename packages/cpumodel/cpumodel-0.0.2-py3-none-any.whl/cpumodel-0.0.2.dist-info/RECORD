@@ -1,0 +1,9 @@
+cpumodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpumodel/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpumodel/amd.py,sha256=YTsFttVa_ib8BQDfnrXJbdi8SDbbopMLxVT6qeXo2oU,2078
+cpumodel/cpumodel.py,sha256=Aaq0G8AK-GcGXBZ0xy7NidErVc1HKUDRuo2pTrAHKpI,3371
+cpumodel/intel.py,sha256=ZQ2jtGSqONrU_ueF1HRR9lrzPEoGsnJAz2B02qt3gTA,5506
+cpumodel-0.0.2.dist-info/METADATA,sha256=BfB6aYexb9-RrFL-mf8IF_csTY9uusZhlgyGWauQo1k,5023
+cpumodel-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cpumodel-0.0.2.dist-info/entry_points.txt,sha256=hFYAMwSlkNXnCkiOn-fe5RtjWObsX45N1bEB2uM1dyU,51
+cpumodel-0.0.2.dist-info/RECORD,,
