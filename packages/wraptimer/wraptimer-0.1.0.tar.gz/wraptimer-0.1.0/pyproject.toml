@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "wraptimer"
+version = "0.1.0"
+description = ""
+authors = ["Anthony Mugendi <ngurumugz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+termcolor = "^2.3.0"
+
+# optional groups
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.doc]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.2"
+flake8 = "^6.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+pre-commit = "^3.3.3"
+
+[tool.poetry.group.doc.dependencies]
+mkdocs = "^1.4.3"
+mkdocstrings = "^0.22.0"
+mkdocstrings-python = "^1.1.2"
+mkdocs-ansible = "^0.1.6"
+markdown-include = "^0.8.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "black"
+
+
+[tool.black]
+line-length = 90
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | docs
+)/
+'''
