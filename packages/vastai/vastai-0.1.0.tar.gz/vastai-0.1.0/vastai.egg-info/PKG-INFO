@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vastai
+Version: 0.1.0
+Summary: Vast.ai Python CLI
+Home-page: https://github.com/vast-ai/vast-python
+Author: Vast.ai
+Author-email: support@vast.ai
+License: MIT
+Keywords: CLI,Vast.ai,vast.ai,vast,vastai
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+
+UNKNOWN
+

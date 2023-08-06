@@ -1,0 +1,3 @@
+[console_scripts]
+vastai = vastai.vast:main
+
