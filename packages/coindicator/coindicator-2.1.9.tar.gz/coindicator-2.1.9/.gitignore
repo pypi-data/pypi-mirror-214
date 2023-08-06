@@ -1,0 +1,9 @@
+__pycache__
+.vscode
+*.cache
+env/
+dist/
+*egg-info/
+coindicator.desktop
+build/
+venv/
