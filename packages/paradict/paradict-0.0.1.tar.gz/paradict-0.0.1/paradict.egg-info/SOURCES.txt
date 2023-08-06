@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.cfg
+setup.py
+paradict/__init__.py
+paradict/__main__.py
+paradict.egg-info/PKG-INFO
+paradict.egg-info/SOURCES.txt
+paradict.egg-info/dependency_links.txt
+paradict.egg-info/entry_points.txt
+paradict.egg-info/not-zip-safe
+paradict.egg-info/top_level.txt
+tests/__init__.py
