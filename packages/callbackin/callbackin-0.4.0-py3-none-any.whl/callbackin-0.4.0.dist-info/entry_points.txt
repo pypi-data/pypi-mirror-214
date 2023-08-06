@@ -1,0 +1,3 @@
+[console_scripts]
+callbackin=callbackin.main:app
+
