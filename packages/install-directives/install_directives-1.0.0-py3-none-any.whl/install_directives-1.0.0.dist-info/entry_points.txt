@@ -1,0 +1,3 @@
+[console_scripts]
+install-directives=python_install_directives.__main__:_entry
+

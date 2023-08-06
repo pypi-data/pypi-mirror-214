@@ -1,0 +1,8 @@
+python_install_directives/__init__.py,sha256=w6CfQ7vgFMADnTwMTk7ZhNDsArHlVmeEPTdhg706z0I,42
+python_install_directives/__main__.py,sha256=HGI73TOZq5YO58SJC02RvCmImvieIFqgyzY3oBFL2KM,1352
+python_install_directives/api.py,sha256=6duqUrs6Q7EQQl9nClcmBM1QxRW8rVVE4iJ23UtzTr0,9152
+install_directives-1.0.0.dist-info/LICENSE,sha256=VAaU2etBxude0d0mcD01uhs4lbMIzKOJ8Zw7wgxbeRo,1068
+install_directives-1.0.0.dist-info/METADATA,sha256=2ZJNE7g4ZYrroA-_Fyyam2TBLhQD8u6wbUpxNBCJNWY,2256
+install_directives-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+install_directives-1.0.0.dist-info/entry_points.txt,sha256=RTLtEt5JOgG5oBCtEyHMrX0krF89ZHAT0d6cWvMQcts,80
+install_directives-1.0.0.dist-info/RECORD,,
