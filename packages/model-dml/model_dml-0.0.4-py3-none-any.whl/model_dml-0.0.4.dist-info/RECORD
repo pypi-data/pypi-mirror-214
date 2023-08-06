@@ -1,0 +1,8 @@
+model_dml/__init__.py,sha256=xWFuSehQXOyXKGPh1gfUrirUBJOQJes585ABP1CfywI,103
+model_dml/dml.py,sha256=pSyGSBUBu0okwEwXZD5GV_MhR8VrT7jJQSfzIi3wscM,8140
+model_dml/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_dml-0.0.4.dist-info/METADATA,sha256=G29uhmWFSIO6UScaNtLqNz5OvubPoHxMFrE0uDFfQZU,3975
+model_dml-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+model_dml-0.0.4.dist-info/licenses/AUTHORS.rst,sha256=Qg5vd3e2w7g5k6rmrqxSFu6bnKBQl6m9HU-XWCeMZig,163
+model_dml-0.0.4.dist-info/licenses/LICENCE,sha256=ocftIHF8tktrZwsl7Wu4xSiTzQxRQKJlPPPU-qQLNA8,1069
+model_dml-0.0.4.dist-info/RECORD,,
