@@ -1,0 +1,7 @@
+af_adapter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+af_adapter/impl/bert/__init__.py,sha256=iFp0HORq7lCAGu2WXj7EazE8Tt4LJZ-Mj1UxS33ZoCM,1214
+af_adapter/impl/bert/att.py,sha256=uQjITHj-cFclQVQWSS96fwI99dL_eSXzPAqdZijoRtk,12502
+af_adapter/impl/bert/ffn.py,sha256=LueiKMwJuiJFEO0EbGWkdo_nwzWPd4FWSjvOj_Rb9Sc,4350
+af_adapter-0.1.0.dist-info/METADATA,sha256=SdMZAh7c4flIb4dAhk--KU4thxidqG7norSMDaxXkbc,1286
+af_adapter-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+af_adapter-0.1.0.dist-info/RECORD,,
