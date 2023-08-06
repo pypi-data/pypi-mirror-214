@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: django-scribe-store
+Version: 0.1.0
+Summary: Djanago module for data copy and track the activities.
+Author-email: Masaaki Yasui <yasu@worgue.com>
+Requires-Python: >= 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Django
+Requires-Dist: requests
+Requires-Dist: django-click
+Project-URL: Home, https://github.com/worgue/django-scribe-store

@@ -1,0 +1,14 @@
+scribe_store/__init__.py,sha256=6s2hQGoBYKc8FaIpWxi6qFOzMcs4Kr-yod4CbkGA8p4,325
+scribe_store/admin.py,sha256=BG1TATGrwrqOsKT5Z5PCEFSpRn-K1-7MKKi31Vv55OE,2749
+scribe_store/apps.py,sha256=ByoGs8B--X-jVqFxdBYBfgltQ-8bszvpEwKXKMg7G3Q,149
+scribe_store/models.py,sha256=PF7AeGAqaktoztecDPYeeIONyfmr41hhWUs576-IaRA,8118
+scribe_store/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scribe_store/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scribe_store/management/commands/scribe.py,sha256=LT9Kbnyb8Ipmk33jfywYyjKeJ2fPxmAsGbLPJiiU-9s,1497
+scribe_store/management/commands/scribe_new.py,sha256=t9vFdDcxauoaWB0ef83631ttSjg1zmN-ELON7T6nDsM,1015
+scribe_store/migrations/0001_initial.py,sha256=Fk1vpWV-aMVx44lXOmpxJig5ht1W4JhFZDvX_86KmTY,4722
+scribe_store/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_scribe_store-0.1.0.dist-info/LICENSE,sha256=b30bhRd2mOz3ZXY_96naK1YQhTWVrVBuyE9pm2MyaNM,1080
+django_scribe_store-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+django_scribe_store-0.1.0.dist-info/METADATA,sha256=XZyi-DKGIWXgg1ilPzWNXiFBESJG4jE3_4Pf-WKqk2c,387
+django_scribe_store-0.1.0.dist-info/RECORD,,
