@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ekspress
+Version: 0.0.0
+Summary: EKSpress - An EKS upgrade tool
+License: MIT
+Keywords: aws,eks,kubernetes,upgrade,ekspress,express,automated,cloud
+Author: Mark Beacom
+Author-email: m@beacom.dev
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26.154,<2.0.0)
+Requires-Dist: kubernetes (>=21.0.0,<28.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# ekspress
+
+EKSpress - An EKS Upgrade Tool
+
+This tool is designed to help you upgrade your EKS clusters to the latest version of Kubernetes.
+

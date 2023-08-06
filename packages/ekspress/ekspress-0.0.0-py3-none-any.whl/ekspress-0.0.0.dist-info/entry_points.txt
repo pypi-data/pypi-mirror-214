@@ -1,0 +1,3 @@
+[console_scripts]
+ekspress=ekspress.cli:app
+

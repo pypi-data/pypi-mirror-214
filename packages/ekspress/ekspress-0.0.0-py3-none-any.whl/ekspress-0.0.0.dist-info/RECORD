@@ -1,0 +1,10 @@
+LICENSE,sha256=7ZlCoGDujxeyvjBTO3al5I-KZZkKxsf6dGWqwH3KYc8,1068
+README.md,sha256=cfP5MBYGvsqv6few5IqbLqRSOFelz3vb-21c6ZpmeQI,141
+ekspress/__init__.py,sha256=58PAGVf-IY3H5nIQ_DRZogppio7EiEZp3_1RHFMfYwY,154
+ekspress/__main__.py,sha256=OKpvcrc7P_ScwVwikpostVRw8tIB3aXL4FTM54ZdBUU,83
+ekspress/cli.py,sha256=DVk8lZ1hXGXDH_f-QdWprZLoBoIS2pcBEiPHLa0XP5M,854
+ekspress-0.0.0.dist-info/LICENSE,sha256=7ZlCoGDujxeyvjBTO3al5I-KZZkKxsf6dGWqwH3KYc8,1068
+ekspress-0.0.0.dist-info/METADATA,sha256=qxb_A0NTntZLWvmWanQR-9qDzGUGd0_S5m91qjcFpTQ,907
+ekspress-0.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ekspress-0.0.0.dist-info/entry_points.txt,sha256=vD2l-ezDIy_DswRm6y_j1epSbUCdlE7T6S6MNmWom2o,45
+ekspress-0.0.0.dist-info/RECORD,,
