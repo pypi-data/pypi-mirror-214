@@ -1,0 +1,8 @@
+formsg/__init__.py,sha256=Y23HP4bNmSSdhLkGnPOGv1CTjxOxGiZ2Y_Hz1Mf4d84,29
+formsg/django.py,sha256=XEaJlMbqltGhtcXhHaGQywoiYt3f1TFsQp3AMGbgs8M,720
+formsg/flask.py,sha256=DMQWCZoZSBFV65Zyy0InOOSejlgwsHHxophKzfuUAvs,683
+formsg/utils.py,sha256=KsHCL4GA0PuxHYuwkx48IWABNQ2t8qIY766l4-TPfYU,4368
+formsg-0.1.8.dist-info/LICENSE,sha256=ez3J290DiGp0yH4C8sraAP5znduASwtZVYeobGwkE3g,1078
+formsg-0.1.8.dist-info/METADATA,sha256=gBAeMDkURo-k753m5oEICyvwIiknXmV7tyhcKA_IBYg,3220
+formsg-0.1.8.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+formsg-0.1.8.dist-info/RECORD,,
