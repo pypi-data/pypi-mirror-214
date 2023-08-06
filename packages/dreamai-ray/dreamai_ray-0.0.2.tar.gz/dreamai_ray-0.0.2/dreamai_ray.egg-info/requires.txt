@@ -1,0 +1,15 @@
+ray[air]
+dreamai
+fastai
+pypdf
+redis
+requests
+sentence_transformers
+setfit
+setuptools
+torch
+transformers
+wasabi
+faiss-cpu
+
+[dev]
