@@ -1,0 +1,15 @@
+CITATION.cff
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pd_cldf/__init__.py
+src/pd_cldf.egg-info/PKG-INFO
+src/pd_cldf.egg-info/SOURCES.txt
+src/pd_cldf.egg-info/dependency_links.txt
+src/pd_cldf.egg-info/not-zip-safe
+src/pd_cldf.egg-info/requires.txt
+src/pd_cldf.egg-info/top_level.txt
+tests/test_load.py
