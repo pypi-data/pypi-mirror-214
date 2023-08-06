@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pytmlib
+Version: 1.1.0.dev2
+Summary: This is the base library for the Python Tool Manager.
+Project-URL: Homepage, https://github.com/ofabel/pytm-bootstrap
+Project-URL: Bug Tracker, https://github.com/ofabel/pytm-bootstrap/issues
+Project-URL: Changelog, https://github.com/ofabel/pytm-bootstrap/blob/main/CHANGELOG.md
+Author-email: Oliver Fabel <oliver.fabel@fhnw.ch>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: FHNW,IBRE,Python Tool Manager,pytm
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: flask-cors==3.0.10
+Requires-Dist: flask==2.3.2
+Requires-Dist: matplotlib>=3.7
+Description-Content-Type: text/markdown
+
+# pytmlib
+
+This is the base library for the Python Tool Manager.
+Is also available on [PyPI](https://pypi.org/project/pytmlib/).
+
+```shell
+pip install pytmlib
+```
