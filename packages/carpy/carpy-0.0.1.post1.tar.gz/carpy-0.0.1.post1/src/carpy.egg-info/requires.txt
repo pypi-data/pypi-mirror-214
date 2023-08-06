@@ -1,0 +1,17 @@
+matplotlib
+numpy
+openpyxl
+pandas
+periodictable
+pytest
+python-metar
+pyyaml
+requests
+scipy
+setuptools>=67.0.0
+streamlit
+sympy
+
+[ipynb]
+jupyter
+notebook
