@@ -1,0 +1,8 @@
+micropython_kx132/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micropython_kx132/i2c_helpers.py,sha256=Sq6BuIOtSk_eWAYKejdap01soygNWhQUOEXCIjoSlBE,3975
+micropython_kx132/kx132.py,sha256=bAen-6Yticj1o8i5kDAVIvtgLi2WqKB-zKOjmSbTN64,15382
+micropython_kx132-0.1.1.dist-info/LICENSE,sha256=RzDRQUi8478TRF8tEO9TZzAIdMZDxwpMRik2l1mwdog,1082
+micropython_kx132-0.1.1.dist-info/METADATA,sha256=KS020HPODluW098XBdvEZ5BDWOs3NXB-9VOY9JXAnoI,3141
+micropython_kx132-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+micropython_kx132-0.1.1.dist-info/top_level.txt,sha256=d9Er6bU5275aEJgGSiDEe7s8JGWAmnA2QLU1vHEq8d4,18
+micropython_kx132-0.1.1.dist-info/RECORD,,
