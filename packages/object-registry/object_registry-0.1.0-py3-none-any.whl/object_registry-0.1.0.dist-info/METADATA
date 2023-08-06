@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: object-registry
+Version: 0.1.0
+Summary: Keep track of all instantiated objects of a class.
+Home-page: https://gitlab.com/deepadmax/object-registry
+License: GPL-3.0-or-later
+Author: Maximillian Strand
+Author-email: maxi@millian.se
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://gitlab.com/deepadmax/object-registry
+Description-Content-Type: text/markdown
+
+# Object Registry
+
+Keep track of all instantiated objects of a class.
+
+## Installation
+
+```shell
+pip install object-registry
+```
+
+## Getting started
+
+For any class whose objects you want to track, inherit from `ObjectRegistry` upon definition.
+
+```python
+from object_registry import ObjectRegistry
+
+class MyClass(ObjectRegistry): ...
+```
+
+Instantiate objects of the derived class as usual. Each object will be automatically added to the registry.
+
+```python
+obj = MyClass()
+```
+
+Use `from_id` to retrieve an object by its Python object ID.
+
+```python
+object_id = id(obj)
+retrieved_obj = MyClass.from_id(object_id)
+```
+
