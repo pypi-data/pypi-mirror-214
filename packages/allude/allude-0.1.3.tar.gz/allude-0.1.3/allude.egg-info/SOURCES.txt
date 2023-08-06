@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+allude/__init__.py
+allude/base.py
+allude/util.py
+allude.egg-info/PKG-INFO
+allude.egg-info/SOURCES.txt
+allude.egg-info/dependency_links.txt
+allude.egg-info/not-zip-safe
+allude.egg-info/requires.txt
+allude.egg-info/top_level.txt
+allude/examples/__init__.py
+allude/examples/gantt.py
+allude/examples/sequence_diagram.py

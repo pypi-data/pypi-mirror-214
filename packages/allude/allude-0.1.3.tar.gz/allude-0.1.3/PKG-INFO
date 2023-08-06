@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: allude
+Version: 0.1.3
+Summary: Building precise functionality from vague specifications
+Home-page: https://github.com/i2mint/allude
+Author: OtoSense
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# allude
+Building precise functionality from vague specifications
+
+
+To install:	```pip install allude```
