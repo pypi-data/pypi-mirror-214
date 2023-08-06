@@ -1,0 +1,9 @@
+symbol_parser/__init__.py,sha256=PRXfRnzsdlrzWojK7CeUFHdpwWiMjF3wo2ltdBPyxSA,40
+symbol_parser/conventions.json,sha256=mTvsKTPE897epuFb36wh8KEUGGHiql6ENIVsWa57ROs,7293
+symbol_parser/parse_conventions_table.py,sha256=OnTnZnwct0EEGDKHMgiaMBUPkExoaemrYIXzA5wNO3Q,2791
+symbol_parser/suffix_regs.py,sha256=hwwNGYj79ksqmg68ta3icmDjj6rH4y7hIvVPVEk7hhU,3306
+symbol_parser/symbol.py,sha256=6x1Y-XHAqx7nvcyx3vjE3bIiheva8GoPGCF_ul0ZYvo,4193
+symbol_parser/utils.py,sha256=X-CHjjx029-C8CIdR2U_-Lq0_Bo09GaUixWPglIqz-Q,1094
+symbol_parser-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+symbol_parser-1.0.0.dist-info/METADATA,sha256=7vaA1G94BUdjNTbmxIklnvSu5T3DK1xoGdKFX7ULLu0,4601
+symbol_parser-1.0.0.dist-info/RECORD,,
