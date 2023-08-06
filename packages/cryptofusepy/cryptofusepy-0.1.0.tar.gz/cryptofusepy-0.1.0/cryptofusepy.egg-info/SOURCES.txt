@@ -1,0 +1,9 @@
+setup.py
+cryptofusepy/__init__.py
+cryptofusepy/client.py
+cryptofusepy.egg-info/PKG-INFO
+cryptofusepy.egg-info/SOURCES.txt
+cryptofusepy.egg-info/dependency_links.txt
+cryptofusepy.egg-info/entry_points.txt
+cryptofusepy.egg-info/requires.txt
+cryptofusepy.egg-info/top_level.txt
