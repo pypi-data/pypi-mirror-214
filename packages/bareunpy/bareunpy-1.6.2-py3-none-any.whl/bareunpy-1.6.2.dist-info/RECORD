@@ -1,0 +1,10 @@
+bareunpy/__init__.py,sha256=KQBUnGnZ3OI0YzJ1_VLhC_1fxXo797x2F-8XMScIwgI,1432
+bareunpy/_custom_dict.py,sha256=IBprUg67juSapTNtcWVRvRX865bJJCKjyaciIcy2mP8,7475
+bareunpy/_custom_dict_client.py,sha256=hTRBAmDL_n_cN0bjRNGeyRcxLzp2BBbS5e3I_zgV_IM,6006
+bareunpy/_lang_service_client.py,sha256=1KgWGShxgDNqNZ4s6ibAtiNJpIlN0g62uhfSgzkUtiI,3427
+bareunpy/_tagger.py,sha256=3zay2Cx6Fs3qP-kwcI9AR1DW4nlj2rPQA92Y9ilSvaM,9452
+bareunpy/_tokenizer.py,sha256=64YHXSf8m0ue4bloXHWILDoNBEpQ5AAWA26mw1-GgSU,9633
+bareunpy-1.6.2.dist-info/LICENSE,sha256=_Rm2ROBvSZZYrcanWE_pj_9Ww9lwC74mh01dLAJzCS0,1547
+bareunpy-1.6.2.dist-info/METADATA,sha256=Nd3C7ciuJBRvePcTGMnl31KabvSAw3yWqMepAb5M8qU,5903
+bareunpy-1.6.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bareunpy-1.6.2.dist-info/RECORD,,
