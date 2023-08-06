@@ -1,0 +1,24 @@
+Screen {
+  layers: bottom top;
+}
+
+#main {
+  layer: bottom;
+  margin-bottom: 2;
+}
+
+#header {
+  padding-top: 2;
+  height: 5;
+}
+
+#header #new {
+  dock: right;
+  background: $secondary;
+}
+
+.spacer {
+  width: 1fr;
+  height: 100%;
+  background: red;
+}
