@@ -1,0 +1,10 @@
+streamlit_chitchat/__init__.py,sha256=cCIq3TkDy5LWDds1QIPytvVTGIUr7ZeGuJf8fADejbw,98
+streamlit_chitchat/streamlit_chitchat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamlit_chitchat/streamlit_chitchat/chitchat.py,sha256=6g_TFt09XcCpQtwyhPkKIHiXGxQILhQTw9k9eew4rvc,4313
+streamlit_chitchat/streamlit_chitchat/data.py,sha256=LkQxnt99sPdDafO5w0H-Hx6Q_gVvm7XmxpSOlpMSEGw,1992
+streamlit_chitchat/streamlit_chitchat/utils.py,sha256=UA-thrwKdYDN8TOjor0F81MnFivyR36DH_DhIRToDDQ,793
+streamlit_chitchat/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamlit_chitchat/tests/main.py,sha256=nUzujdyOFnPc42m72n82pbMSSb0I8PAhWKamVOUjvaE,3508
+streamlit_chitchat-0.1.5.dist-info/METADATA,sha256=d0JxPvYB1TSppzoqimTNHZX4qlJogjIJsOReDKxhaak,1846
+streamlit_chitchat-0.1.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+streamlit_chitchat-0.1.5.dist-info/RECORD,,
