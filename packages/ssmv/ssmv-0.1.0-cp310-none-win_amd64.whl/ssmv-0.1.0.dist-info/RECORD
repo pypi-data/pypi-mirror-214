@@ -1,0 +1,5 @@
+ssmv-0.1.0.dist-info/METADATA,sha256=rVEz7kfsZELSA9GvlOLY03X4gcxfTegtC6Wms1h4z58,48
+ssmv-0.1.0.dist-info/WHEEL,sha256=v44QVAtQrLpVmcAVvaNFU_SHB3TuFAJKOMZxIuRUe4w,95
+ssmv/__init__.py,sha256=JhHHJttLPBbeot7yLDGT1p60zuIt87h-RGv_NK_0qy8,99
+ssmv/ssmv.cp310-win_amd64.pyd,sha256=IIk-YIxUFGPqRueyweU3Hyom53J4d8H-121Q7_J5ptU,28911616
+ssmv-0.1.0.dist-info/RECORD,,
