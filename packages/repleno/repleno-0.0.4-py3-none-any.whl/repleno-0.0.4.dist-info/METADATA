@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: repleno
+Version: 0.0.4
+Summary: Supply chain analytics on Bill Of Materials (BOM) and Material Requirements Planning (MRP)
+Author-email: Afonso Schulz Albrecht <a.schulzalbrecht@gmail.com>
+Keywords: supply chain,bill of materials,material requirements planning,BOM,MRP
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pptree (>=3.1)
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
