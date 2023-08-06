@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+setup.py
+htdb/dict.c
+htdb/dict.h
+htdb/htdb.c
+htdb/htdb.h
+htdb/siphash.c
+htdb/siphash.h
+htdb_py.egg-info/PKG-INFO
+htdb_py.egg-info/SOURCES.txt
+htdb_py.egg-info/dependency_links.txt
+htdb_py.egg-info/not-zip-safe
+htdb_py.egg-info/requires.txt
+htdb_py.egg-info/top_level.txt
+src/bindings.cpp
