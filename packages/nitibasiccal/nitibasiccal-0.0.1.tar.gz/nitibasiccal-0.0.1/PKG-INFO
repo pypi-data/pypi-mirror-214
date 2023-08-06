@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: nitibasiccal
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Niti Shah
+Author-email: nits.shah21@yahoo.com
+License: MIT
+Description: This is a very simple calculator that takes two numbers and performs actions such as add,sub,mul or div
+        
+        
+        
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

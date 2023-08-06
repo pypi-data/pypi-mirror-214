@@ -1,0 +1,7 @@
+MANIFEST.in
+README.txt
+setup.py
+nitibasiccal.egg-info/PKG-INFO
+nitibasiccal.egg-info/SOURCES.txt
+nitibasiccal.egg-info/dependency_links.txt
+nitibasiccal.egg-info/top_level.txt
