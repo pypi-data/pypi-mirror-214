@@ -1,0 +1,17 @@
+prune .github
+include LICENSE
+include *.ipynb
+include *.yaml
+include *.yml
+include *.cff
+include .coveragerc
+include .flake8
+include .git-blame-ignore-revs
+include tox.ini
+recursive-include requirements *.yml
+recursive-include docs *.bat
+recursive-include docs *.ico
+recursive-include docs *.png
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs Makefile
