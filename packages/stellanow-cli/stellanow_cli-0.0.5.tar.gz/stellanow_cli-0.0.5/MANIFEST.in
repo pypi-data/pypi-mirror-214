@@ -1,0 +1,3 @@
+include README.public
+recursive-include stellanow_cli *
+recursive-include tests *

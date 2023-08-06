@@ -1,0 +1,20 @@
+{% include '.header.template' %}
+
+using StellaNowSDK.Messages;
+
+namespace {{ namespace }};
+
+public class {{ className }}Message : StellaNowMessageWrapper
+{
+    public {{ className }}Message({{ constructorArguments }})
+        : base(
+            "{{ eventName }}",
+            new List<EntityType>{ {{ entitiesList }} })
+    {
+        {%- for field in fields %}
+        AddField("{{ field.name }}", {{ field.camel_name }});
+        {%- endfor %}
+    }
+}
+
+{% include '.footer.template' %}
