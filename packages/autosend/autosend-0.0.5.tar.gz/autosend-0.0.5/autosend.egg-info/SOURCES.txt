@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+autosend/__init__.py
+autosend/autosend.py
+autosend.egg-info/PKG-INFO
+autosend.egg-info/SOURCES.txt
+autosend.egg-info/dependency_links.txt
+autosend.egg-info/requires.txt
+autosend.egg-info/top_level.txt
