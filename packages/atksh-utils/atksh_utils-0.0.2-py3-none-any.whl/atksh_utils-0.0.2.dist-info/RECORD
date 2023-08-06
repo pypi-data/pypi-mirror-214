@@ -1,0 +1,10 @@
+atksh_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atksh_utils/version.py,sha256=akDh8M63SIkUdcs4zBTuYU7Q6eQspZu0Ii2tOpXGYNc,160
+atksh_utils/openai/__init__.py,sha256=XzFaVrHKvnn2zyBB6FHOzO0sIyW6H74vTWx2yN_j65I,137
+atksh_utils/openai/api.py,sha256=3IOW3xuMSf8zw4wFBxD1KitBMorntgmTc6SKIZ5p7xE,6150
+atksh_utils/openai/functional.py,sha256=m91shOQcmskzxxhplC2XOtfZDmO3NwXAm_aUayEiZsY,6030
+atksh_utils-0.0.2.dist-info/LICENSE,sha256=nHukE4G7nocUAadXJCBwy1b6MB8OpeGd2TgLlZr-ITA,1062
+atksh_utils-0.0.2.dist-info/METADATA,sha256=HmV7fzc-8dRaWdLTM7JLg3G98h-bTzWvryQ1d6FTjAM,3304
+atksh_utils-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+atksh_utils-0.0.2.dist-info/top_level.txt,sha256=BmJ2Grrn7N7TWlwPmu0ZfexS8Gf-aXz8_H5NHmf6Y88,12
+atksh_utils-0.0.2.dist-info/RECORD,,
