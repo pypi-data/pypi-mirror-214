@@ -1,0 +1,2 @@
+exclude *.log
+include kangforecast/data/special_dates.csv
