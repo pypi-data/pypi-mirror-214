@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: gex-cli
+Version: 1.0.1
+Summary: Command-line project generator using git repo.
+Project-URL: Documentation, https://github.com/woidzero/gex-cli#readme
+Project-URL: Issues, https://github.com/woidzero/gex-cli/issues
+Project-URL: Source, https://github.com/woidzero/gex-cli
+Author-email: woidzero <woidzerov@gmail.com>
+License-Expression: MIT
+Keywords: cli,command-line,console,generator,project managment
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: click
+Requires-Dist: gitpython
+Requires-Dist: mcfc
+Requires-Dist: rich
+Description-Content-Type: text/markdown
+
+# gex-cli
+
+Generate projects using built-in or custom templates via command-line.
+
+
+## Installation
+
+```
+ pip install gex-cli
+```
+
+## Usage
+
+```bash
+  gex g web -n MyWebsite
+```
+
+## Support
+
+For support, email <a href="mailto://woidzeroo@gmail.com">woidzeroo@gmail.com</a>
+
+## License
+
+`mcfc` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
