@@ -1,0 +1,6 @@
+izihawa_loglib-1.0.2.dist-info/METADATA,sha256=Hmsn_T7Eo--L0-5CJmSfdjCj7cTh4xZKIz_0e_erdPg,358
+izihawa_loglib-1.0.2.dist-info/RECORD,,
+izihawa_loglib-1.0.2.dist-info/WHEEL,sha256=sobxWSyDDkdg_rinUth-jxhXHqoNqlmNMJY3aTZn2Us,91
+izihawa_loglib/__init__.py,sha256=rXRM1vrq7F5CeoUJjlVIx8I5Ft0t5o1h3ULQoAMVLGE,1028
+izihawa_loglib/formatters.py,sha256=fFpNdF9PjsW9sQgVDVwVfmFPnKkrbo1RTMvYxFRH114,2750
+izihawa_loglib/handlers.py,sha256=PLqgMnP6Mvb9btW7iRtI5PGCRocTLeiYW5QaiNOEuzk,1073
