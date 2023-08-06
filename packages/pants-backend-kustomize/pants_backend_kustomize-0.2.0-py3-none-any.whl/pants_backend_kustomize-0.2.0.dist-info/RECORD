@@ -1,0 +1,11 @@
+pants_backend_kustomize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants_backend_kustomize/codegen.py,sha256=ZW7aH5_dC3WifLsDwi7TZviDKHYk1KhVuU5GPuM2Gao,2799
+pants_backend_kustomize/register.py,sha256=Nwk29Sg7da04YUau0h7nWBUcwMb2Tb9NNNmbsxZ4l44,465
+pants_backend_kustomize/requests.py,sha256=NgjZK0oINk1GSS6GzV3MEls62XQXWdH0BAERo5tj-CY,2233
+pants_backend_kustomize/subsystem.py,sha256=nIyip91QdIIzmWm_FkrQc2_Qj7dtQFCLrE60oFVbnnY,1299
+pants_backend_kustomize/target_types.py,sha256=lIM9l7B7x86ek0wYnTF-afOAmqaYaY1ycRLTm5jxAY4,1903
+pants_backend_kustomize/util_rules/prepare_context.py,sha256=bp0A48xAGar_QDZ2ga_Mc0HiQ3Xf95jBMaG1R-anoQs,3938
+pants_backend_kustomize-0.2.0.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+pants_backend_kustomize-0.2.0.dist-info/METADATA,sha256=8bgFfZYoufDS9Y9NrUTe5vt8KPPxwCUmC7N-Y_l35NI,2126
+pants_backend_kustomize-0.2.0.dist-info/licenses/LICENSE-MIT.txt,sha256=ZTkm4_hxhGJ4vuyI3HVKvDrnOWhkhdCsJDWm5a8R71g,1068
+pants_backend_kustomize-0.2.0.dist-info/RECORD,,
