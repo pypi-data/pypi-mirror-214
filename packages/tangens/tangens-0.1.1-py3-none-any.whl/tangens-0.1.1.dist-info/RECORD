@@ -1,0 +1,14 @@
+tangens/__init__.py,sha256=c8NMwO6Y5FM_vzAhdws6KJskMMeQ1vTYdvuWaGPugxA,64
+tangens/base/__init__.py,sha256=Sr7Qk0dvmr89y2BQAmitgu_NLyo2pQxTPjiWSUnh_H0,93
+tangens/base/delta.py,sha256=3APz-JeCPNXJSSRkdLka14zStVKSCqOAQy6sECSiXUU,2584
+tangens/base/dual.py,sha256=3q8fhGMZPn8R57mPwXYpDdF4yErw40EaqucSzWzwEko,204
+tangens/base/eval.py,sha256=l050ZGcSBvvoZ8O-FhgE6o1D9pkJyLee4t0FqKTIZfM,1459
+tangens/base/expression.py,sha256=FRg9FNMi698bIhbxFYvLUmkmOA-3hxr28hmirGAk9xo,708
+tangens/base/num.py,sha256=iN69SpZnTy6lfYb4RS1x3vKtP4ev_26KZdNjUTveHek,2045
+tangens/floats/__init__.py,sha256=9Z7cKrOG4IMSQCebBFGVwUbKXXavF5-IWuO-zH7qjgw,34
+tangens/floats/first.py,sha256=KHeFd_32mlwKyaCwjC_3hMaestkxyoe-oDwuBp56ttk,3432
+tangens/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tangens-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tangens-0.1.1.dist-info/METADATA,sha256=pG7QZDVpg5QYd6itgDV2obpKvb9at6A2_mSJUGE9uBY,936
+tangens-0.1.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+tangens-0.1.1.dist-info/RECORD,,
