@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dorispdf/__init__.py
+dorispdf/pdf2image.py
+dorispdf/pdf2text.py
+dorispdf.egg-info/PKG-INFO
+dorispdf.egg-info/SOURCES.txt
+dorispdf.egg-info/dependency_links.txt
+dorispdf.egg-info/top_level.txt
