@@ -1,0 +1,7 @@
+six
+farasapy
+tqdm
+requests
+regex
+pathlib
+natsort==7.1.1
