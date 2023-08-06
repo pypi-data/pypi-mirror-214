@@ -1,0 +1,8 @@
+README.md
+setup.py
+bindlab.egg-info/PKG-INFO
+bindlab.egg-info/SOURCES.txt
+bindlab.egg-info/dependency_links.txt
+bindlab.egg-info/not-zip-safe
+bindlab.egg-info/requires.txt
+bindlab.egg-info/top_level.txt
