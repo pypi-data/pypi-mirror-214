@@ -1,0 +1,49 @@
+# Package Overview
+package_name: wineMLXMV
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict
+target: quality
+
+pipeline_name: LRwine
+pipeline_save_file: LRwine_m
+
+
+features:
+  - alcohol
+  - fixed acidity 
+  - volatile acidity
+  - citric acid
+  - residual sugar
+  - chlorides
+  - free sulfur dioxide
+  - total sulfur dioxide
+  - density
+  - pH
+  - sulphates
+
+# set train/test split
+test_size: 0.3
+
+# to set the random seed
+random_state: 0
+
+
+drop_features:
+  - fixed acidity 
+  - volatile acidity
+  - citric acid
+  - residual sugar
+  - chlorides
+  - free sulfur dioxide
+  - total sulfur dioxide
+  - sulphates
+
+num_features: 
+  - alcohol
+  - density
+  - pH
