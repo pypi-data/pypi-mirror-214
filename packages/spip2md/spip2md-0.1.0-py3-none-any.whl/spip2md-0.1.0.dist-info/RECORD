@@ -1,0 +1,13 @@
+spip2md/__main__.py,sha256=ncQN4r6wkMAnGKbYlgg7Fpc-dVwLUIgtuX0oQFk87dU,108
+spip2md/config.py,sha256=P6iUuYATXCzuGZTjHxN5DP1EBtOnCFvswu8MWrXjmBA,4451
+spip2md/extended_models.py,sha256=d0SkCJghY6XtbbSatvJ7B-R-0VSPNb3KlftJQBrkfGk,32719
+spip2md/lib.py,sha256=CF4aU4u9tyZIRxyjVFMwu4EH3Sd-KYym-h8pmix8BgE,5378
+spip2md/regexmaps.py,sha256=qqWdW_ZYp9IVtVHAVFUZvj5_-Ye33K_GwQwXYyRGTGA,9339
+spip2md/spip_models.py,sha256=QAszCzo43z9IIGyXMBoS44dgaNcnrMoKJRlndVinVdU,26967
+spip2md/style.py,sha256=JHXMMQQzDwcyUaWK5yJvBe8mw_x3UA9IVTotA4ld5gM,1318
+spip2md-0.1.0.dist-info/COPYING,sha256=45StjV0RqaN5Z9WB6oU-vaZHU1kkMBp17twxCdoAIdU,232
+spip2md-0.1.0.dist-info/LICENSE,sha256=45StjV0RqaN5Z9WB6oU-vaZHU1kkMBp17twxCdoAIdU,232
+spip2md-0.1.0.dist-info/METADATA,sha256=0vlst-zWngUxtJphHiIBstue4d3NcQHUO7E4OWYFHfk,6870
+spip2md-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+spip2md-0.1.0.dist-info/entry_points.txt,sha256=fPHJmNiBtLtlTl31v9DbLK2IE5TcOQCXRl_JUrJmQbM,43
+spip2md-0.1.0.dist-info/RECORD,,

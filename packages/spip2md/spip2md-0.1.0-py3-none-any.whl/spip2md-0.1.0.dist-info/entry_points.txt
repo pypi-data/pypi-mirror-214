@@ -1,0 +1,3 @@
+[console_scripts]
+spip2md=spip2md.lib:cli
+
