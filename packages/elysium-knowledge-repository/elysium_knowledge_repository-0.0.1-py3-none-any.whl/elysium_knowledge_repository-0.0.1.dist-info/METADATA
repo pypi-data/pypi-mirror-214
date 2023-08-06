@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: elysium-knowledge-repository
+Version: 0.0.1
+Summary: Elysium Knowledge Repository - Pytorch
+Home-page: https://github.com/Agora-X/EKR
+Author: Kye Gomez
+Author-email: kye@apac.ai
+License: APACHE
+Keywords: artificial intelligence,attention mechanism,transformers
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=1.6)
+Requires-Dist: oceandb
+Requires-Dist: youtube-dl
+Requires-Dist: pytube
+Requires-Dist: tenacity
+Requires-Dist: torchvision
+Requires-Dist: pandasPIL
+
