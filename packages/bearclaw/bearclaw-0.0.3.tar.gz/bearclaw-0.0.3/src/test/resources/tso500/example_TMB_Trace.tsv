@@ -1,0 +1,10 @@
+Chromosome	Position	RefCall	AltCall	VAF	Depth	CytoBand	GeneName	VariantType	CosmicIDs	MaxCosmicCount	AlleleCountsGnomadExome	AlleleCountsGnomadGenome	AlleleCounts1000Genomes	MaxDatabaseAlleleCounts	GermlineFilterDatabase	GermlineFilterProxi	CodingVariant	Nonsynonymous	IncludedInTMBNumerator
+chr3	134825333	C	T	0.3118	93	3q22.2	EPHB1	SNV		0	0	0	0	0	False	False	True	False	True
+chr1	17350501	TC	T	0.162	321	1p36.13	SDHB	deletion	NA	0	0	0	0	0	False	False	True	True	True
+chr1	2488153	A	G	1.0	73	1p36.32	LOC100133445:TNFRSF14:TNFRSF14-AS1	SNV	COSM4143682;COSM4999217	2	121076	16981	3079	121076	True	False	True	True	False
+chr1	243663604	ACAAT	A	0.4742	194	1q43	AKT3:SDCCAG8	deletion	NA	0	0	11074	1876	11074	True	False	False	False	False
+chr1	2494330	G	A	0.3182	22	1p36.32	LOC100996583:TNFRSF14	SNV	COSM4143684	1	31923	3771	570	31923	True	False	True	True	False
+chr1	243664925	A	AATT	0.3922	283	1q43	AKT3:SDCCAG8	insertion	NA	0	0	6553	1023	6553	True	False	False	False	False
+chr6	32163456	G	A	0.181	105	6p21.32	GPSM3:NOTCH4	SNV		0	2	0	0	2	False	False	True	True	True
+chr3	185765580	G	GT	0.5274	328	3q27.2	ETV5	insertion	COSN20099479;COSN20099482;COSN20099480;COSN20099481	0	0	21006	2809	21006	True	False	False	False	False
+chr1	4367323	G	A	1.0	32	1p36.32		SNV		0	0	14940	2507	14940	True	False	False	False	False

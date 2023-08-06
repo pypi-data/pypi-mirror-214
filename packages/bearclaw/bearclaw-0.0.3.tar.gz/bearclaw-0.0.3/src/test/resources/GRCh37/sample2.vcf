@@ -1,0 +1,64 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth">
+##INFO=<ID=ALTDP,Number=1,Type=Integer,Description="Sum of alt-forward and alt-reverse bases">
+##INFO=<ID=MMPM,Number=1,Type=Float,Description="Mutant molecules per ml">
+##INFO=<ID=DP2,Number=1,Type=Integer,Description="Secondary depth measure - high confidence reads">
+##INFO=<ID=ALTDP2,Number=1,Type=Integer,Description="Secondary depth measure of alternate allele">
+##INFO=<ID=AF,Number=.,Type=Float,Description="Reported Allele Frequency">
+##INFO=<ID=NGED,Number=.,Type=Float,Description="Normalized gene error density, higher means gene is more error prone">
+##INFO=<ID=WHITELIST,Number=0,Type=Flag,Description="Is call from whitelist">
+##INFO=<ID=SS,Number=1,Type=Flag,Description="Was read supported on forward and reverse strand">
+##INFO=<ID=SCORE1,Number=1,Type=Float,Description="Score1 for calls, higher means more evidence">
+##INFO=<ID=SCORE2,Number=1,Type=Float,Description="Score2 for calls, higher is more evidence for support">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Is call an indel">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=OLD_MULTIALLELIC,Number=1,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=OLD_VARIANT,Number=.,Type=String,Description="Original chr:pos:ref:alt encoding">
+##SnpEffVersion="4.2 (build 2015-12-05), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  -filterInterval /sc1/groups/onco/Analysis/prog/built_packages/snv-post-filtering/resources_files_from_Bina/RUO_P2B_exon_targets_hg38_09282016_consolidated.bed -noShiftHgvs -no-downstream -no-intergenic -no REGULATION -no UTR_3_PRIME -no UTR_3_DELETED -no UTR_5_DELETED -no TRANSCRIPT GRCh38.82 vt_EfAG_50_Rep1.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO'">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=OLD_CLUMPED,Number=1,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=COSMIC_SITE,Number=.,Type=String,Description="Primary sites associated with this variant in COSMIC">
+##INFO=<ID=EXAC_AF_EAS,Number=A,Type=Float,Description="Allele frequency in the EAS population in EXAC">
+##INFO=<ID=KG_EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS population in 1000 Genomes">
+##INFO=<ID=IN_DBSNP,Number=0,Type=Flag,Description="Variant exists in DBSNP">
+##INFO=<ID=IN_TCGA,Number=0,Type=Flag,Description="Variant exists in TCGA">
+##INFO=<ID=EXAC_AF_NFE,Number=A,Type=Float,Description="Allele frequency in the NFE population in EXAC">
+##INFO=<ID=EXAC_AF,Number=A,Type=Float,Description="Allele frequency in EXAC">
+##INFO=<ID=TCGA_COUNT,Number=1,Type=Integer,Description="Number of times variant appears in TCGA">
+##INFO=<ID=EXAC_AF_AMR,Number=A,Type=Float,Description="Allele frequency in the AMR population in EXAC">
+##INFO=<ID=DBSNP_AQ,Number=.,Type=Integer,Description="Alignment quality in DBSNP. 1=unique mapping, 2=non-unique, 3=many matches">
+##INFO=<ID=KG_SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS population in 1000 Genomes">
+##INFO=<ID=DBSNP_AF,Number=.,Type=Float,Description="Allele frequency in DBSNP">
+##INFO=<ID=COSMIC_SITE_COUNT,Number=.,Type=Integer,Description="Comma separated number of times that this variant appears in COSMIC per primary site. Index of primary sites is as follows: adrenal_gland=0,autonomic_ganglia=1,biliary_tract=2,bone=3,breast=4,central_nervous_system=5,cervix=6,endometrium=7,eye=8,fallopian_tube=9,gastrointestinal_tract=10,genital_tract=11,haematopoietic_and_lymphoid_tissue=12,kidney=13,large_intestine=14,liver=15,lung=16,meninges=17,NS=18,oesophagus=19,ovary=20,pancreas=21,paratesticular_tissues=22,parathyroid=23,penis=24,peritoneum=25,pituitary=26,placenta=27,pleura=28,prostate=29,retroperitoneum=30,salivary_gland=31,skin=32,small_intestine=33,soft_tissue=34,stomach=35,testis=36,thymus=37,thyroid=38,upper_aerodigestive_tract=39,urinary_tract=40,vagina=41,vulva=42">
+##INFO=<ID=DBSNP_COMMON,Number=.,Type=Integer,Description="Common variant in DBSNP">
+##INFO=<ID=DBSNP_ID,Number=.,Type=String,Description="DBSNP id">
+##INFO=<ID=EXAC_AF_SAS,Number=A,Type=Float,Description="Allele frequency in the SAS population in EXAC">
+##INFO=<ID=EXAC_AF_AFR,Number=A,Type=Float,Description="Allele frequency in the AFR population in EXAC">
+##INFO=<ID=COSMIC_COUNT,Number=1,Type=Integer,Description="Number of times variant appears in COSMIC">
+##INFO=<ID=COSMIC_SITE_COUNT_SOMATIC,Number=.,Type=Integer,Description="Comma separated number of times that this somatic variant appears in COSMIC per primary site. Index of primary sites is as follows: adrenal_gland=0,autonomic_ganglia=1,biliary_tract=2,bone=3,breast=4,central_nervous_system=5,cervix=6,endometrium=7,eye=8,fallopian_tube=9,gastrointestinal_tract=10,genital_tract=11,haematopoietic_and_lymphoid_tissue=12,kidney=13,large_intestine=14,liver=15,lung=16,meninges=17,NS=18,oesophagus=19,ovary=20,pancreas=21,paratesticular_tissues=22,parathyroid=23,penis=24,peritoneum=25,pituitary=26,placenta=27,pleura=28,prostate=29,retroperitoneum=30,salivary_gland=31,skin=32,small_intestine=33,soft_tissue=34,stomach=35,testis=36,thymus=37,thyroid=38,upper_aerodigestive_tract=39,urinary_tract=40,vagina=41,vulva=42">
+##INFO=<ID=IN_KG,Number=0,Type=Flag,Description="Variant exists in 1000 Genomes">
+##INFO=<ID=KG_AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR population in 1000 Genomes">
+##INFO=<ID=KG_EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR population in 1000 Genomes">
+##INFO=<ID=EXAC_AF_FIN,Number=A,Type=Float,Description="Allele frequency in the FIN population in EXAC">
+##INFO=<ID=KG_AF,Number=A,Type=Float,Description="Allele frequency in 1000 Genomes">
+##INFO=<ID=EXAC_AF_OTH,Number=A,Type=Float,Description="Allele frequency in the OTH population in EXAC">
+##INFO=<ID=KG_AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR population in 1000 Genomes">
+##INFO=<ID=COSMIC_ID,Number=.,Type=String,Description="Corresponding ids in COSMIC">
+##INFO=<ID=TCGA_TYPE_COUNTS,Number=.,Type=Integer,Description="Comma separated number of times that this variant appears in TCGA per cancer type. Index of cancer types is as follows: LAML=0,ACC=1,BLCA=2,LGG=3,BRCA=4,CESC=5,CHOL=6,COAD=7,ESCA=8,FPPP=9,GBM=10,HNSC=11,KICH=12,KIRC=13,KIRP=14,LIHC=15,LUAD=16,LUSC=17,DLBC=18,MESO=19,OV=20,PAAD=21,PCPG=22,PRAD=23,READ=24,SARC=25,SKCM=26,STAD=27,TGCT=28,THYM=29,THCA=30,UCS=31,UCEC=32,UVM=33">
+##INFO=<ID=IN_COSMIC,Number=0,Type=Flag,Description="Variant exists in COSMIC">
+##INFO=<ID=TCGA_TYPES,Number=.,Type=String,Description="Cancer types associated with this variant in TCGA">
+##INFO=<ID=IN_EXAC,Number=0,Type=Flag,Description="Variant exists in EXAC">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr10	25887170	.	C	A	178	PASS	ANN=A|stop_gained|HIGH|GPR158|ENSG00000151025|transcript|ENST00000376351|protein_coding|11/11|c.2615C>A|p.Ser872*|2974/6959|2615/3648|872/1215||,A|non_coding_transcript_exon_variant|MODIFIER|GPR158|ENSG00000151025|transcript|ENST00000490549|processed_transcript|3/3|n.802C>A||||||
+chrX	151334326	.	C	A	258	PASS	ANN=A|intron_variant|MODIFIER|RP11-329E24.6|ENSG00000231937|transcript|ENST00000453915|antisense|3/3|n.501+1266C>A||||||
+chrX	98928040	.	C	A	192	PASS	ANN=A|intron_variant|MODIFIER|XRCC6P5|ENSG00000215070|transcript|ENST00000399535|processed_pseudogene|2/4|n.1040-16402G>T||||||
+chrX	31891770	.	C	A	222	PASS	ANN=A|intron_variant|MODIFIER|DMD|ENSG00000198947|transcript|ENST00000357033|protein_coding|48/78|c.7098+1535G>T||||||,A|intron_variant|MODIFIER|DMD|ENSG00000198947|transcript|ENST00000358062|protein_coding|1/29|c.186+1535G>T||||||WARNING_TRANSCRIPT_NO_START_CODON,A|intron_variant|MODIFIER|DMD|ENSG00000198947|transcript|ENST00000343523|protein_coding|5/30|c.-283+1535G>T||||||,A|intron_variant|MODIFIER|DMD|ENSG00000198947|transcript|ENST00000359836|protein_coding|5/33|c.-283+1535G>T||||||,A|intron_variant|MODIFIER|DMD|ENSG00000198947|transcript|ENST00000378707|protein_coding|5/35|c.-283+1535G>T||||||,A|intron_variant|MODIFIER|DMD|ENSG00000198947|transcript|ENST00000541735|protein_coding|5/31|c.-283+1535G>T||||||,A|intron_variant|MODIFIER|DMD|ENSG00000198947|transcript|ENST00000378677|protein_coding|48/78|c.7086+1535G>T||||||,A|intron_variant|MODIFIER|DMD|ENSG00000198947|transcript|ENST00000474231|protein_coding|5/34|c.-283+1535G>T||||||
+chr20	41399556	.	C	A	204	PASS	ANN=A|intron_variant|MODIFIER|PTPRT|ENSG00000196090|transcript|ENST00000373198|protein_coding|5/31|c.684+519G>T||||||,A|intron_variant|MODIFIER|PTPRT|ENSG00000196090|transcript|ENST00000356100|protein_coding|5/30|c.684+519G>T||||||,A|intron_variant|MODIFIER|PTPRT|ENSG00000196090|transcript|ENST00000373184|protein_coding|5/30|c.684+519G>T||||||,A|intron_variant|MODIFIER|PTPRT|ENSG00000196090|transcript|ENST00000373187|protein_coding|5/30|c.684+519G>T||||||,A|intron_variant|MODIFIER|PTPRT|ENSG00000196090|transcript|ENST00000373190|protein_coding|5/30|c.684+519G>T||||||,A|intron_variant|MODIFIER|PTPRT|ENSG00000196090|transcript|ENST00000373193|protein_coding|5/30|c.684+519G>T||||||,A|intron_variant|MODIFIER|PTPRT|ENSG00000196090|transcript|ENST00000373201|protein_coding|5/29|c.684+519G>T||||||
+chr18	50183849	.	C	A	205	PASS	ANN=A|intron_variant|MODIFIER|DCC|ENSG00000187323|transcript|ENST00000442544|protein_coding|1/28|c.92-94575C>A||||||
+chr18	3146523	.	C	A	265	PASS	ANN=A|intron_variant|MODIFIER|MYOM1|ENSG00000101605|transcript|ENST00000356443|protein_coding|13/37|c.1900+2620G>T||||||,A|intron_variant|MODIFIER|MYOM1|ENSG00000101605|transcript|ENST00000400569|protein_coding|13/37|c.1900+2620G>T||||||,A|intron_variant|MODIFIER|MYOM1|ENSG00000101605|transcript|ENST00000261606|protein_coding|13/36|c.1900+2620G>T||||||
+chr1	93220794	.	C	A	165	PASS	ANN=A|upstream_gene_variant|MODIFIER|CCNJP2|ENSG00000223896|transcript|ENST00000457810|processed_pseudogene||n.-557C>A|||||557|,A|intron_variant|MODIFIER|EVI5|ENSG00000067208|transcript|ENST00000543509|protein_coding|1/18|c.52-18610G>T||||||,A|intron_variant|MODIFIER|EVI5|ENSG00000067208|transcript|ENST00000370331|protein_coding|1/17|c.52-18610G>T||||||,A|intron_variant|MODIFIER|EVI5|ENSG00000067208|transcript|ENST00000540033|protein_coding|1/18|c.52-18610G>T||||||,A|intron_variant|MODIFIER|EVI5|ENSG00000067208|transcript|ENST00000474806|processed_transcript|1/2|n.271+29599G>T||||||,A|intron_variant|MODIFIER|EVI5|ENSG00000067208|transcript|ENST00000466778|processed_transcript|2/2|n.254-18610G>T||||||
+chr1	70414600	.	C	A	250	PASS	ANN=A|intron_variant|MODIFIER|LRRC7|ENSG00000033122|transcript|ENST00000035383|protein_coding|6/24|c.597+17347C>A||||||,A|intron_variant|MODIFIER|LRRC7|ENSG00000033122|transcript|ENST00000310961|protein_coding|9/26|c.612+17347C>A||||||,A|intron_variant|MODIFIER|LRRC7|ENSG00000033122|transcript|ENST00000415775|protein_coding|6/20|c.-809+17347C>A||||||

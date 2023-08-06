@@ -1,0 +1,72 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth">
+##INFO=<ID=ALTDP,Number=1,Type=Integer,Description="Sum of alt-forward and alt-reverse bases">
+##INFO=<ID=MMPM,Number=1,Type=Float,Description="Mutant molecules per ml">
+##INFO=<ID=DP2,Number=1,Type=Integer,Description="Secondary depth measure - high confidence reads">
+##INFO=<ID=ALTDP2,Number=1,Type=Integer,Description="Secondary depth measure of alternate allele">
+##INFO=<ID=AF,Number=.,Type=Float,Description="Reported Allele Frequency">
+##INFO=<ID=NGED,Number=.,Type=Float,Description="Normalized gene error density, higher means gene is more error prone">
+##INFO=<ID=WHITELIST,Number=0,Type=Flag,Description="Is call from whitelist">
+##INFO=<ID=SS,Number=1,Type=Flag,Description="Was read supported on forward and reverse strand">
+##INFO=<ID=SID,Number=1,Type=String,Description="Sample name">
+##INFO=<ID=SCORE1,Number=1,Type=Float,Description="Score1 for calls, higher means more evidence">
+##INFO=<ID=SCORE2,Number=1,Type=Float,Description="Score2 for calls, higher is more evidence for support">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Is call an indel">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=SMID,Number=.,Type=String,Description="Sample ID's with the same germline mutation call">
+##INFO=<ID=SMAF,Number=.,Type=Float,Description="VAF's of other samples with this germline variant call">
+##INFO=<ID=OLD_MULTIALLELIC,Number=1,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=OLD_VARIANT,Number=.,Type=String,Description="Original chr:pos:ref:alt encoding">
+##SnpEffVersion="4.2 (build 2015-12-05), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  -filterInterval /sc1/groups/onco/Analysis/prog/built_packages/snv-post-filtering/resources_files_from_Bina/RUO_P2B_exon_targets_hg38_09282016_consolidated.bed -noShiftHgvs -no-downstream -no-intergenic -no REGULATION -no UTR_3_PRIME -no UTR_3_DELETED -no UTR_5_DELETED -no TRANSCRIPT GRCh38.82 vt_EfAG_50_Rep1.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO'">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##SnpSiftVersion="SnpSift 4.2 (build 2015-12-05), by Pablo Cingolani"
+##SnpSiftCmd="SnpSift filter '(((exists ANN) & ((ANN[0].EFFECT != 'upstream_gene_variant' & ANN[0].EFFECT != '5_prime_UTR_variant')) & (na WHITELIST)) | (ANN[0].GENE = 'TERT')  | ((exists ANN) & (exists WHITELIST) & (AF > 0.001) & (exists INDEL)) | ((exists ANN) & (exists WHITELIST) & (na INDEL)))' trs_EfAG_50_Rep1.vcf"
+##FILTER=<ID=SnpSift,Description="SnpSift 4.2 (build 2015-12-05), by Pablo Cingolani, Expression used: (((exists ANN) & ((ANN[0].EFFECT != 'upstream_gene_variant' & ANN[0].EFFECT != '5_prime_UTR_variant')) & (na WHITELIST)) | (ANN[0].GENE = 'TERT')  | ((exists ANN) & (exists WHITELIST) & (AF > 0.001) & (exists INDEL)) | ((exists ANN) & (exists WHITELIST) & (na INDEL)))">
+##INFO=<ID=OLD_CLUMPED,Number=1,Type=String,Description="Original chr:pos:ref:alt encoding">
+##SnpSiftCmd="SnpSift annotate /sc1/groups/onco/Analysis/prog/built_packages/snv-post-filtering/resources_files_from_Bina/RUO_default_annotations_08302016.vcf vtblock_EfAG_50_Rep1.vcf"
+##INFO=<ID=COSMIC_SITE,Number=.,Type=String,Description="Primary sites associated with this variant in COSMIC">
+##INFO=<ID=EXAC_AF_EAS,Number=A,Type=Float,Description="Allele frequency in the EAS population in EXAC">
+##INFO=<ID=KG_EAS_AF,Number=A,Type=Float,Description="Allele frequency in the EAS population in 1000 Genomes">
+##INFO=<ID=IN_DBSNP,Number=0,Type=Flag,Description="Variant exists in DBSNP">
+##INFO=<ID=IN_TCGA,Number=0,Type=Flag,Description="Variant exists in TCGA">
+##INFO=<ID=EXAC_AF_NFE,Number=A,Type=Float,Description="Allele frequency in the NFE population in EXAC">
+##INFO=<ID=EXAC_AF,Number=A,Type=Float,Description="Allele frequency in EXAC">
+##INFO=<ID=TCGA_COUNT,Number=1,Type=Integer,Description="Number of times variant appears in TCGA">
+##INFO=<ID=EXAC_AF_AMR,Number=A,Type=Float,Description="Allele frequency in the AMR population in EXAC">
+##INFO=<ID=DBSNP_AQ,Number=.,Type=Integer,Description="Alignment quality in DBSNP. 1=unique mapping, 2=non-unique, 3=many matches">
+##INFO=<ID=KG_SAS_AF,Number=A,Type=Float,Description="Allele frequency in the SAS population in 1000 Genomes">
+##INFO=<ID=DBSNP_AF,Number=.,Type=Float,Description="Allele frequency in DBSNP">
+##INFO=<ID=COSMIC_SITE_COUNT,Number=.,Type=Integer,Description="Comma separated number of times that this variant appears in COSMIC per primary site. Index of primary sites is as follows: adrenal_gland=0,autonomic_ganglia=1,biliary_tract=2,bone=3,breast=4,central_nervous_system=5,cervix=6,endometrium=7,eye=8,fallopian_tube=9,gastrointestinal_tract=10,genital_tract=11,haematopoietic_and_lymphoid_tissue=12,kidney=13,large_intestine=14,liver=15,lung=16,meninges=17,NS=18,oesophagus=19,ovary=20,pancreas=21,paratesticular_tissues=22,parathyroid=23,penis=24,peritoneum=25,pituitary=26,placenta=27,pleura=28,prostate=29,retroperitoneum=30,salivary_gland=31,skin=32,small_intestine=33,soft_tissue=34,stomach=35,testis=36,thymus=37,thyroid=38,upper_aerodigestive_tract=39,urinary_tract=40,vagina=41,vulva=42">
+##INFO=<ID=DBSNP_COMMON,Number=.,Type=Integer,Description="Common variant in DBSNP">
+##INFO=<ID=DBSNP_ID,Number=.,Type=String,Description="DBSNP id">
+##INFO=<ID=EXAC_AF_SAS,Number=A,Type=Float,Description="Allele frequency in the SAS population in EXAC">
+##INFO=<ID=EXAC_AF_AFR,Number=A,Type=Float,Description="Allele frequency in the AFR population in EXAC">
+##INFO=<ID=COSMIC_COUNT,Number=1,Type=Integer,Description="Number of times variant appears in COSMIC">
+##INFO=<ID=COSMIC_SITE_COUNT_SOMATIC,Number=.,Type=Integer,Description="Comma separated number of times that this somatic variant appears in COSMIC per primary site. Index of primary sites is as follows: adrenal_gland=0,autonomic_ganglia=1,biliary_tract=2,bone=3,breast=4,central_nervous_system=5,cervix=6,endometrium=7,eye=8,fallopian_tube=9,gastrointestinal_tract=10,genital_tract=11,haematopoietic_and_lymphoid_tissue=12,kidney=13,large_intestine=14,liver=15,lung=16,meninges=17,NS=18,oesophagus=19,ovary=20,pancreas=21,paratesticular_tissues=22,parathyroid=23,penis=24,peritoneum=25,pituitary=26,placenta=27,pleura=28,prostate=29,retroperitoneum=30,salivary_gland=31,skin=32,small_intestine=33,soft_tissue=34,stomach=35,testis=36,thymus=37,thyroid=38,upper_aerodigestive_tract=39,urinary_tract=40,vagina=41,vulva=42">
+##INFO=<ID=IN_KG,Number=0,Type=Flag,Description="Variant exists in 1000 Genomes">
+##INFO=<ID=KG_AMR_AF,Number=A,Type=Float,Description="Allele frequency in the AMR population in 1000 Genomes">
+##INFO=<ID=KG_EUR_AF,Number=A,Type=Float,Description="Allele frequency in the EUR population in 1000 Genomes">
+##INFO=<ID=EXAC_AF_FIN,Number=A,Type=Float,Description="Allele frequency in the FIN population in EXAC">
+##INFO=<ID=KG_AF,Number=A,Type=Float,Description="Allele frequency in 1000 Genomes">
+##INFO=<ID=EXAC_AF_OTH,Number=A,Type=Float,Description="Allele frequency in the OTH population in EXAC">
+##INFO=<ID=KG_AFR_AF,Number=A,Type=Float,Description="Allele frequency in the AFR population in 1000 Genomes">
+##INFO=<ID=COSMIC_ID,Number=.,Type=String,Description="Corresponding ids in COSMIC">
+##INFO=<ID=TCGA_TYPE_COUNTS,Number=.,Type=Integer,Description="Comma separated number of times that this variant appears in TCGA per cancer type. Index of cancer types is as follows: LAML=0,ACC=1,BLCA=2,LGG=3,BRCA=4,CESC=5,CHOL=6,COAD=7,ESCA=8,FPPP=9,GBM=10,HNSC=11,KICH=12,KIRC=13,KIRP=14,LIHC=15,LUAD=16,LUSC=17,DLBC=18,MESO=19,OV=20,PAAD=21,PCPG=22,PRAD=23,READ=24,SARC=25,SKCM=26,STAD=27,TGCT=28,THYM=29,THCA=30,UCS=31,UCEC=32,UVM=33">
+##INFO=<ID=IN_COSMIC,Number=0,Type=Flag,Description="Variant exists in COSMIC">
+##INFO=<ID=TCGA_TYPES,Number=.,Type=String,Description="Cancer types associated with this variant in TCGA">
+##INFO=<ID=IN_EXAC,Number=0,Type=Flag,Description="Variant exists in EXAC">
+##SnpSiftCmd="SnpSift filter '((exists WHITELIST) | !((exists SMID) & ((EXAC_AF > 0.001) | (KG_AF > 0.001) | (DBSNP_COMMON[*] = 1))))' bina_EfAG_50_Rep1.vcf"
+##FILTER=<ID=SnpSift,Description="SnpSift 4.2 (build 2015-12-05), by Pablo Cingolani, Expression used: ((exists WHITELIST) | !((exists SMID) & ((EXAC_AF > 0.001) | (KG_AF > 0.001) | (DBSNP_COMMON[*] = 1))))">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr1	11121270	rs11121691	C	T	100.0	PASS	DP=3707;ALTDP=55;MMPM=inf;DP2=511;ALTDP2=12;AF=0.0148368;NGED=0.0106851;SS;SCORE1=46;ANN=T|synonymous_variant|LOW|MTOR|ENSG00000198793|transcript|ENST00000361445.8|protein_coding|49/58|c.6909G>A|p.Leu2303Leu|6986/8677|6909/7650|2303/2549||;COSMIC_COUNT=3;COSMIC_ID=COSM3996743;COSMIC_SITE=haematopoietic_and_lymphoid_tissue,large_intestine;COSMIC_SITE_COUNT=0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;COSMIC_SITE_COUNT_SOMATIC=0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;DBSNP_AF=0.220647;DBSNP_AQ=1;DBSNP_COMMON=1;DBSNP_ID=rs11121691;EXAC_AF=0.21843690682512173;EXAC_AF_AFR=0.434008;EXAC_AF_AMR=0.110611;EXAC_AF_EAS=0.059116;EXAC_AF_FIN=0.226749;EXAC_AF_NFE=0.237467;EXAC_AF_OTH=0.205298;EXAC_AF_SAS=0.162383;IN_COSMIC;IN_DBSNP;IN_EXAC;IN_KG;KG_AF=0.220647;KG_AFR_AF=0.4365;KG_AMR_AF=0.1542;KG_EAS_AF=0.0565;KG_EUR_AF=0.2356;KG_SAS_AF=0.1299
+chr1	114713908	rs11554290	T	A	100.0	PASS	DP=7473;ALTDP=10;MMPM=inf;DP2=2113;ALTDP2=2;AF=0.00133815;WHITELIST;SS;SCORE2=16;ANN=A|missense_variant|MODERATE|NRAS|ENSG00000213281|transcript|ENST00000369535.4|protein_coding|3/7|c.182A>T|p.Gln61Leu|436/4449|182/570|61/189||;COSMIC_COUNT=253;COSMIC_ID=COSM583;COSMIC_SITE=autonomic_ganglia,central_nervous_system,endometrium,haematopoietic_and_lymphoid_tissue,large_intestine,liver,lung,meninges,pancreas,prostate,salivary_gland,skin,soft_tissue,thyroid,urinary_tract;COSMIC_SITE_COUNT=0,1,0,0,0,2,0,2,0,0,0,0,45,0,24,6,25,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,124,0,1,0,0,0,12,0,7,0,0;COSMIC_SITE_COUNT_SOMATIC=0,1,0,0,0,2,0,1,0,0,0,0,5,0,3,2,8,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,42,0,1,0,0,0,1,0,2,0,0;DBSNP_AF=0.009804;DBSNP_AQ=1;DBSNP_COMMON=0;DBSNP_ID=rs11554290;IN_COSMIC;IN_DBSNP;IN_TCGA;TCGA_COUNT=29;TCGA_TYPES=COAD,GBM,LUAD,SARC,SKCM;TCGA_TYPE_COUNTS=0,0,0,0,0,0,0,3,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,22,0,0,0,0,0,0,0
+chr4	1801829	.	C	G	100.0	PASS	DP=1032;ALTDP=17;MMPM=inf;DP2=69;ALTDP2=2;AF=0.0164729;NGED=0.0129366;SS;SCORE1=11.3533;ANN=G|splice_region_variant&intron_variant|LOW|FGFR3|ENSG00000068078|transcript|ENST00000481110.6|protein_coding|6/16|c.740-6C>G||||||,G|splice_region_variant&intron_variant|LOW|FGFR3|ENSG00000068078|transcript|ENST00000340107.8|protein_coding|6/17|c.740-6C>G||||||,G|splice_region_variant&intron_variant|LOW|FGFR3|ENSG00000068078|transcript|ENST00000440486.6|protein_coding|6/17|c.740-6C>G||||||
+chr5	112792494	rs397515734	C	T	100.0	PASS	DP=7730;ALTDP=4;MMPM=inf;DP2=2575;ALTDP2=2;AF=0.000517464;WHITELIST;SS;SCORE2=10;ANN=T|stop_gained|HIGH|APC|ENSG00000134982|transcript|ENST00000257430.8|protein_coding|7/16|c.694C>T|p.Arg232*|750/10701|694/8532|232/2843||;LOF=(APC|ENSG00000134982|10|0.40);NMD=(APC|ENSG00000134982|10|0.40);COSMIC_COUNT=51;COSMIC_ID=COSM13130;COSMIC_SITE=endometrium,large_intestine;COSMIC_SITE_COUNT=0,0,0,0,0,0,0,1,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;COSMIC_SITE_COUNT_SOMATIC=0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;DBSNP_AQ=1;DBSNP_COMMON=0;DBSNP_ID=rs397515734;IN_COSMIC;IN_DBSNP;IN_TCGA;TCGA_COUNT=7;TCGA_TYPES=COAD,READ,UCEC;TCGA_TYPE_COUNTS=0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,1,0
+chr4	1806076	rs121913113	G	A	100.0	PASS	DP=3207;ALTDP=20;MMPM=inf;DP2=344;ALTDP2=2;AF=0.00623636;NGED=0.0129366;SS;SCORE1=11;ANN=A|missense_variant|MODERATE|FGFR3|ENSG00000068078|transcript|ENST00000481110.6|protein_coding|14/17|c.1865G>A|p.Arg622His|2126/4217|1865/2379|622/792||,A|missense_variant|MODERATE|FGFR3|ENSG00000068078|transcript|ENST00000340107.8|protein_coding|14/18|c.1868G>A|p.Arg623His|2124/4293|1868/2427|623/808||,A|missense_variant|MODERATE|FGFR3|ENSG00000068078|transcript|ENST00000440486.6|protein_coding|14/18|c.1862G>A|p.Arg621His|2118/4287|1862/2421|621/806||;COSMIC_COUNT=2;COSMIC_ID=COSM1670849,COSM327093;COSMIC_SITE=haematopoietic_and_lymphoid_tissue;COSMIC_SITE_COUNT=0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;COSMIC_SITE_COUNT_SOMATIC=0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;DBSNP_AQ=1;DBSNP_COMMON=0;DBSNP_ID=rs121913113;IN_COSMIC;IN_DBSNP
+chrX	149914846	.	AT	A	188	PASS	ANN=|||||||||||||||
+chrX	149994575	.	T	A	184	PASS	ANN=A|intron_variant|MODIFIER|LINC00894|ENSG00000235703|transcript|ENST00000449111|antisense|11/14|n.2830+33639T>A||||||,A|intron_variant|MODIFIER|LINC00894|ENSG00000235703|transcript|ENST00000444489|antisense|9/11|n.2421-21376T>A||||||
+chr1	149813549	.	CG	C	105	PASS	ANN=C|frameshift_variant|HIGH|HIST2H3D|ENSG00000183598|transcript|ENST00000331491|protein_coding|1/1|c.132delC|p.Gly45fs|132/411|132/411|44/136||

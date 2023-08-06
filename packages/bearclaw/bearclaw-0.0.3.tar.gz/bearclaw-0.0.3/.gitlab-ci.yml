@@ -1,0 +1,72 @@
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  image: registry.gitlab.com/hylkedonker/bearclaw/grch37
+  stage: test
+  tags:
+    - deployment
+  script:
+    - export DEBIAN_FRONTEND="noninteractive"
+    - pip3 install coverage
+    - cd src
+    - coverage run -m --source=bearclaw unittest discover test
+    - coverage report -m
+    - coverage xml
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: src/coverage.xml
+
+build:
+  image: arm64v8/docker
+  stage: build
+  services:
+    - name: arm64v8/docker:dind
+      alias: docker
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+  tags:
+    - deployment
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    # Install dependencies to build multi-architecture Dockerfile.
+    - docker run --privileged --rm tonistiigi/binfmt --install all
+    - docker buildx create --use
+    - docker buildx build
+      --push
+      --platform linux/amd64,linux/arm64,linux/arm/v7
+      -f Dockerfile.GRCh37
+      -t registry.gitlab.com/hylkedonker/bearclaw/grch37:${CI_COMMIT_SHORT_SHA}
+      -t registry.gitlab.com/hylkedonker/bearclaw/grch37:latest
+      .
+    - docker buildx build
+      --push
+      --platform linux/amd64,linux/arm64,linux/arm/v7
+      -f Dockerfile
+      -t registry.gitlab.com/hylkedonker/bearclaw:${CI_COMMIT_SHORT_SHA}
+      -t registry.gitlab.com/hylkedonker/bearclaw:latest
+      .
+  only:
+  - main
+
+pages:
+  image: python:3.10
+  stage: deploy
+  tags:
+    - deployment
+  script:
+  - pip3 install -r requirements.txt
+  - pip3 install pdoc3
+  - mkdir public
+  - pdoc --config latex_math=True --html --output-dir public src/bearclaw
+  - mv public/bearclaw/* public/ && rmdir public/bearclaw/
+  artifacts:
+    paths:
+    - public
+  only:
+  - main

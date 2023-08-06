@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bearclaw"
+version = "0.0.3"
+authors = [
+  { name="Hylke C. Donker", email="h.c.donker@umcg.nl" },
+]
+description = "Pipeline components to extract features from variants."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/hylkedonker/bearclaw"
+"Bug Tracker" = "https://gitlab.com/hylkedonker/bearclaw/-/issues"
