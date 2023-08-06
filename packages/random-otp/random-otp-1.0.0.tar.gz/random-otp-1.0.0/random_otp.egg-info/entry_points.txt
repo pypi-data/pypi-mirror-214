@@ -1,0 +1,3 @@
+[console_scripts]
+random-otp-generator = random_otp.generator:main
+

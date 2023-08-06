@@ -1,0 +1,12 @@
+README.md
+setup.py
+random_otp/__init__.py
+random_otp/generator.py
+random_otp.egg-info/PKG-INFO
+random_otp.egg-info/SOURCES.txt
+random_otp.egg-info/dependency_links.txt
+random_otp.egg-info/entry_points.txt
+random_otp.egg-info/requires.txt
+random_otp.egg-info/top_level.txt
+tests/__init__.py
+tests/test_generator.py
