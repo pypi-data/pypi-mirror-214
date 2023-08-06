@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Cashooo
+Version: 1.0.0
+Summary: Custom errors and middlewares
+Author: yash 
+Author-email: yash.m@royalecheese.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Django (>=3.2)
+
