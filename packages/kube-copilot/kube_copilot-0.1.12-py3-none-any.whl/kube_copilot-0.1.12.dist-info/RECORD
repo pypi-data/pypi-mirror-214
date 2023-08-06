@@ -1,0 +1,11 @@
+kube_copilot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kube_copilot/agent.py,sha256=s1xYG-v0eXp1JCHHxmn_mTPhUFeshtKKTENNOYLFhT0,4244
+kube_copilot/cli.py,sha256=WeTHBS_oSFxfxvBCd0T2x8vG6VYT8GEpZCSJfPMHHPQ,2726
+kube_copilot/llm.py,sha256=MnwnIsV_Wtkrymq6nVQTCKNW0fCNtHuhheO1vTW9pl0,753
+kube_copilot/prompts.py,sha256=bX8BTbEypkm_OBj0C5Vtpf1-O18sM-JIpJsA_Llo594,5683
+kube_copilot/shell.py,sha256=PJqFj9zbAEzboMgztMowZuthlAWRR0NT3GLXh1BUU1k,2022
+kube_copilot-0.1.12.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kube_copilot-0.1.12.dist-info/METADATA,sha256=yZcdghqs5VAO9hUNkq5SlMNrPLpDlvp51NSLl1jaT6s,5516
+kube_copilot-0.1.12.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+kube_copilot-0.1.12.dist-info/entry_points.txt,sha256=wn1Fa7rtgSBtrmxlDRZnwBzC1NkWvct5MC5Cub3-J6Y,54
+kube_copilot-0.1.12.dist-info/RECORD,,
