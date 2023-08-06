@@ -1,0 +1,14 @@
+morel/__init__.py,sha256=c0xuogIjPkkPkmXfElvHvS4fS8LeBMrWUChUsyAuRq0,76
+morel/app.py,sha256=4UHR5skdP23v3UpnPCmoSKbOzw91EfJhOntMWP8Ovlg,3725
+morel/exploit_template.py,sha256=3NZfzn_6fEnMoEv712HSfuiQVw9EFI0Bt54fi4P65xM,693
+morel/exploits.py,sha256=at8PCb8SkU7xaBnRsV12vZivqqArPazvqBwxqKYvAhw,1057
+morel/logger.py,sha256=Xw3TuULMpeGge4WGmXpyIZjwy84rRZIWqt7wy3n6gMk,406
+morel/singleton.py,sha256=xjWrRJhVwbr24dfz79Kf_R6fIiCCezaNb_GNmbSSqGU,1525
+morel/target.py,sha256=Nh-pJnRlCoxxI2At8igmIb1wyqTCuqkqadjKva1zFMQ,2750
+morel/target_template.py,sha256=WhMkzwIC9xJHHVaAq8TWfgI9eKdV0mEtKWLlmNYuuAs,304
+morel-1.2.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+morel-1.2.1.dist-info/METADATA,sha256=vYQnh1ve12ScyazvOpcExr-qVH-v1AOm18ow7xY4z1A,738
+morel-1.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+morel-1.2.1.dist-info/entry_points.txt,sha256=IjQa9lDE4KVE9Jms_0HHt6O04ScCkhB-N1_DLO7CnUo,36
+morel-1.2.1.dist-info/top_level.txt,sha256=jRuLg4BujXX3XosCyUi1iH5IhtZyWYCe5l_sDKEEMrc,6
+morel-1.2.1.dist-info/RECORD,,
