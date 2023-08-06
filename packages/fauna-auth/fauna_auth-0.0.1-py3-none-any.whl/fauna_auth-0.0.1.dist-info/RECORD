@@ -1,0 +1,7 @@
+fauna_auth/__init__.py,sha256=8MKiYFv6Krd2XPUNwKZA2_6ZAhbTkSZsMShf4YsggKQ,60
+fauna_auth/accounts.py,sha256=vw98q6vcm3338yAgfagQO8nWHBKdB5_LJBlrep0TFkQ,47
+fauna_auth/oauth.py,sha256=k65S2JWtDZk_wZG_NULzp_H-dVgGX2gZ3UcqB3DwWk4,2090
+fauna_auth/public_key.py,sha256=GPiz3_KnjLCZvLNXotiosr574unYSG_XEfyYrfX85pw,3812
+fauna_auth-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fauna_auth-0.0.1.dist-info/METADATA,sha256=-GJxei60XG_h2Co6I36g2FcBhc_0VqlLO4RKmQfTIC4,560
+fauna_auth-0.0.1.dist-info/RECORD,,
