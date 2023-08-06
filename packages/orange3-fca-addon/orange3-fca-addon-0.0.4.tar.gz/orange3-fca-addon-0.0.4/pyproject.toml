@@ -1,0 +1,39 @@
+[project]
+name = "orange3-fca-addon"
+version = "0.0.4"
+description = "Orange FCA add-on for Orange data mining software package."
+authors = [
+  {name = "jesus laime", email = "laimejesu@gmail.com"},
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.7"
+keywords= ["orange3 add-on"]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+]
+dependencies = [
+  "Orange3>=3.31",
+  "orange-widget-base>=4.21.0",
+  "orange-canvas-core>=0.1.31"
+]
+
+[project.urls]
+Homepage = "https://github.com/LaimeJesus/orange3-fca-addon"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

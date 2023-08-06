@@ -1,0 +1,5 @@
+[orange.widgets]
+orange3-fca-addon = orangecontrib.orange3_fca.widgets
+
+[orange3.addon]
+orange3-fca-addon = orangecontrib.orange3_fca
