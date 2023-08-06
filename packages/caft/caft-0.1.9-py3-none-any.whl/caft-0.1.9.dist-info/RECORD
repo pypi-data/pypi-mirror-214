@@ -1,0 +1,17 @@
+caft/__init__.py,sha256=XIaxbMbyiP-L3kguR1GhxirFblTXiHR1lMfDVITvHUI,22
+caft/affine.py,sha256=-IBL_2KCI90XbDWOh8H6coaHTJQ24pGeDOuXMJKQ6_s,8375
+caft/exceptions.py,sha256=S-_QHAhrLJJEU5foLwt5IHA3G2AShRkXlBKd5Nxf8QM,285
+caft/odr.py,sha256=ZjRQ5Kp0CW42-SEdIE3sOtzlQ_msY-w3woRNPkI-BOY,7467
+caft/regressors.py,sha256=C6kzXScTjllT6O1fssdPEhYZ4RnkWuzHNx7Buu-2B2A,2926
+caft/utils.py,sha256=rpqFWLDQz3lQIIZTEFf3j8fHWoJ6aZxcmmIJWzwNv4Q,684
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests_caft/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests_caft/test_affine.py,sha256=oaa3Jxe-gd07OHurSXFzEqH6i6aHZHKApUfuuuaQpLg,1632
+tests/tests_caft/test_odr.py,sha256=C1YvRDzDKMji_g_AQzzWAYM3eMkSq0-x0T-8FoyjN6I,1603
+tests/tests_caft/test_regressors.py,sha256=KSnChqcTNYKJFLKPd3zmZU62YH1-93_nyc1LD9BsT5s,705
+tests/tests_caft/test_utils.py,sha256=iSMpYPqYt-aGg8N9ABMA_h9wv1jblhGEhwo7XWDfuGc,1056
+caft-0.1.9.dist-info/LICENSE,sha256=to1Mah0Jmr-PoYSTit09wQOmT2x0foQeZIfZ9SbdQK0,1068
+caft-0.1.9.dist-info/METADATA,sha256=cchGxART5cN_mbKALH9e5S11AdRrjH4gAkjh-ON2KYA,4731
+caft-0.1.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+caft-0.1.9.dist-info/top_level.txt,sha256=S0U9cfg-G8kc4Drb8NhwmQHdX3dr3rQSNoedLTX7COg,11
+caft-0.1.9.dist-info/RECORD,,

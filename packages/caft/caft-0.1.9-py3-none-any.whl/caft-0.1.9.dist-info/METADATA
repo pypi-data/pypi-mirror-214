@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: caft
+Version: 0.1.9
+Summary: Continuous Affine Feature Transformations for feature mapping.
+Home-page: https://github.com/joshdunnlime/caft
+Author: Joshua Dunn
+Author-email: joshua.t.dunn@hotmail.co.uk
+Project-URL: Documentation, https://github.com/joshdunnlime/caft
+Project-URL: Bug Reports, https://github.com/joshdunnlime/caft/issues
+Project-URL: Source Code, https://github.com/joshdunnlime/caft
+Keywords: feature-engineering feature-mapping,anomaly-detection
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sympy (>=1.11.0)
+Requires-Dist: pandas (>=1.3.0)
+Requires-Dist: scikit-learn (>=1.0.0)
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+# CAFT - Continuous Affine Feature Transformer
+
+[![PyPI package](https://img.shields.io/badge/pip%20install-caft-brightgreen)](https://pypi.org/project/caft) [![version number](https://img.shields.io/pypi/v/example-pypi-package?color=green&label=version)](https://github.com/tomchen/example_pypi_package/releases) [![Unit Tests Status](https://github.com/joshdunnlime/caft/actions/workflows/test.yml/badge.svg)](https://github.com/joshdunnlime/caft/actions)
+ [![License](https://img.shields.io/github/license/tomchen/example_pypi_package)](https://github.com/tomchen/example_pypi_package/blob/main/LICENSE)
+
+A custom transformer package that allows users to make affine/geometric transformations on datasets with respect to some curve with a well defined continuous equation.
+
+The transformers attempt to follow the scikit-learn api, however, there are limitations here based on the fact that transformers operate on both `X` and `y` variables. This will likely cause issues when used within a scikit-learn pipeline.
+
+## Installation
+
+Install `caft` via pip with
+
+```bash
+pip install caft
+```
+
+## Documentation
+
+Currently, there is no hosted documentation but most functions are well documented, with examples.
+
+Alternatively, there is a thorough example in the [example.ipynb](./example.ipynb) notebook.
+
+## Useage
+
+The main pattern is as follows.
+
+```python
+import sympy as sp
+import numpy as np
+import matplotlib.pyplot as plt
+
+from caft.odr import SympyODRegressor, ODRegressor
+from caft.affine import ContinuousAffineFeatureTransformer
+
+np.random.seed(42)
+
+n = 10000
+
+# Generate data with some natural noise (not errors)
+X_true = np.linspace(-2, 2, n) + np.random.uniform(-0.5, 0.5, n)
+
+# Add random measurement errors - both small and extreme
+errors_in_X = np.random.normal(0, 0.3, n)
+errors_in_y = np.random.normal(0, 5, n)
+y =  3 * (X_true + errors_in_X) ** 3 + errors_in_y
+fx = 3 * X_true ** 3
+
+# Add systematic error
+n_errs = 100
+X_outliers = -0.5 * np.ones(n_errs) + 0.2 * np.random.uniform(-0.3, 0.5, n_errs)
+y_outliers = -30 * np.ones(n_errs) + np.random.normal(0, 3, n_errs)
+X = np.hstack([X_true, X_outliers]).reshape(-1, 1)
+y = np.hstack([y, y_outliers])
+
+plt.scatter(X, y)
+plt.scatter(X_true, fx, color="r", s=1,)
+```
+
+![Alt text](https://github.com/joshdunnlime/caft/blob/main/fx_scatter_plot.png)
+
+Here we can see the scatter plot of `X` and `y` and the original function $y = f(x)$ without noise. Now we can create an affine transformation with respect to the original function (or at least the SympyRegressor estimate of it).
+
+
+```python
+eq = "a * x ** 3 + b"
+
+X_ = X / X.max()
+y_ = y / y.max()
+
+sodr = SympyODRegressor(eq, beta0={"a": 0.5, "b": 1})
+caft = ContinuousAffineFeatureTransformer(sodr, optimiser="halley")
+caft.fit(X_, y_)
+Xt, yt = caft.transform(X_, y_)
+Xt = Xt.reshape(-1, 1)
+
+plt.scatter(Xt, yt, s=6,)
+plt.show()
+```
+
+![Alt text](https://github.com/joshdunnlime/caft/blob/main/img/fx_scatter_plot.png)
+
+A most thorough example can be found in [example.ipynb](./example.ipynb) notebook.
+
+This is some what of an unusual pattern, using a nested regressor within a transformer. However, the benefit here is that it allows each component to be used individually, either for individual equation regression or by rolling your own regressors to create the regressor equation.
+
+## Development
+
+Deploy new versions to PyPI using GitHub Actions:
+
+Change version number to `__version__ = "X.Y.Z"` in `caft/__init__.py` then
+
+```bash
+git tag -a "vX.Y.Z" -m "deployment message"
+git push --tags
+```
