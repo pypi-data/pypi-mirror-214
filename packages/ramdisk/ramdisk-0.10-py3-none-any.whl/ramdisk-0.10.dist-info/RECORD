@@ -1,0 +1,11 @@
+ramdisk/README.MD,sha256=BkqnFmCx-GkZvzeC4dTdl2V1J8SjordyzpezmVwOryk,3855
+ramdisk/__init__.py,sha256=o4OCfNDp9uxy-vfRjx_3o-obw2R_Zw-_tDpE_ypINaU,4492
+ramdisk/files.cab,sha256=QSk9wp52SvZC-7Uzk5w-vgsF-XKZ1PKsmpcMGDozyAU,505060
+ramdisk/install_imdisk.bat,sha256=1jaDdv87PhrFJq5uK08bNW5KWcF2Akr_ya6Fzigxxjo,173
+ramdisk/requirements.txt,sha256=W4x9kcfaoZzF_4isJGnc7TBkfzfi7uhJjI5Bz2OqaIc,19
+ramdisk/thirdparty.json,sha256=vyW1o8BZ06eQJT5DA559S6vXqnVJB7fkOHaP4UrLvPk,1257
+ramdisk-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+ramdisk-0.10.dist-info/METADATA,sha256=pHWFDNToH1iqzyASlYdTliT7q1mUxU1_KGllqDK6r9Y,4523
+ramdisk-0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ramdisk-0.10.dist-info/top_level.txt,sha256=v7xM0gIwNlTMoBGmwdxnuNnPfhzKyAtRYiA_6657b8Q,8
+ramdisk-0.10.dist-info/RECORD,,
