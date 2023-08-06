@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Denoising-Diffusion-Probabilistic-Models
+Version: 0.0.0
+Summary: Denoising Diffusion Probabilistic Models
+Author: Michiyasu Uchiyama
+License: MIT
+Keywords: c
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Denoising-Diffusion-Probabilistic-Models
+Fork from https://huggingface.co/blog/annotated-diffusion
