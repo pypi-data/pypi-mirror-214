@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: easysurrogate
+Version: 0.23
+Author: CWI
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: h5py
+Requires-Dist: scikit-learn
+Requires-Dist: mogp-emulator
+Requires-Dist: tqdm
+
