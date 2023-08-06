@@ -1,0 +1,9 @@
+appdirs
+cachetools
+getmac
+johnnydep
+paho-mqtt
+psutil
+python-vlc
+pytube
+pyyaml
