@@ -1,0 +1,8 @@
+README.md
+setup.py
+dynamic_username_generator.egg-info/PKG-INFO
+dynamic_username_generator.egg-info/SOURCES.txt
+dynamic_username_generator.egg-info/dependency_links.txt
+dynamic_username_generator.egg-info/top_level.txt
+generate_usernames/__init__.py
+generate_usernames/main.py
