@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: spectroscopy-toolbox
+Version: 0.0.1
+Summary: A small collection of python-based tools useful in the analysis of experimental spectroscopic data
+Requires-Python: >=3.8
+Provides-Extra: testing
+License-File: LICENSE
+
+A small collection of python-based tools useful in the analysis of experimental spectroscopic data

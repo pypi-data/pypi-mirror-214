@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./spectroscopytools/__init__.py
+./spectroscopytools/uvvis.py
+spectroscopy_toolbox.egg-info/PKG-INFO
+spectroscopy_toolbox.egg-info/SOURCES.txt
+spectroscopy_toolbox.egg-info/dependency_links.txt
+spectroscopy_toolbox.egg-info/not-zip-safe
+spectroscopy_toolbox.egg-info/requires.txt
+spectroscopy_toolbox.egg-info/top_level.txt
