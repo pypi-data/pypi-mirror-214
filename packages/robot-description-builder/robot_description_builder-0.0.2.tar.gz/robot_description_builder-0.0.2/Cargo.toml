@@ -1,0 +1,18 @@
+[package]
+name = "robot-description-builder-py"
+version = "0.0.2"
+edition = "2021"
+license = "MIT"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "robot_description_builder_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+itertools = "0.10.5"
+pyo3 = "0.19.0"
+robot-description-builder = { path = "local_dependencies/robot-description-builder", features=["wrapper"] }
+rdb-py-macro = {path = "local_dependencies/rdb-py-macro" }
+thiserror = "1.0.40"

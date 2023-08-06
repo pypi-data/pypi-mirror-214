@@ -1,0 +1,28 @@
+[package]
+name = "robot-description-builder"
+description = "A libary to create (valid) Robot descriptions"
+version = "0.0.2"
+edition = "2021"
+homepage = "https://github.com/SuperJappie08/robot-description-builder"
+repository = "https://github.com/SuperJappie08/robot-description-builder/tree/master/robot-description-builder"
+license = "MIT"
+keywords = ["urdf", "robotics"]
+categories = ["science::robotics", "data-structures", "simulation"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+itertools = "0.10.5"
+log = { version = "0.4.18", optional = true, features = ["std"] }
+quick-xml = { version = "0.28.2", optional = true }
+thiserror = "1.0.40"
+nalgebra = "0.32.2"
+
+[features]
+default = ["urdf"]
+xml = ["dep:quick-xml"]
+urdf = ["xml"]
+sdf = ["xml"]
+logging = ["dep:log"]
+wrapper = ["smart-joint-extension"]
+smart-joint-extension = []
