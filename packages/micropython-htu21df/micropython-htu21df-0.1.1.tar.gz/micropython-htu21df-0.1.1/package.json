@@ -1,0 +1,7 @@
+{
+  "urls": [
+    ["micropython_htu21df/__init__.py", "github:jposada202020/MicroPython_HTU21DF/micropython_htu21df/__init__.py"],
+    ["micropython_htu21df/htu21df.py", "github:jposada202020/MicroPython_HTU21DF/micropython_htu21df/htu21df.py"]
+  ],
+  "version": "0.1"
+}

@@ -1,0 +1,7 @@
+{
+  "urls": [
+    ["micropython_htu21df/examples/htu21df_simpletest.py", "github:jposada202020/MicroPython_HTU21DF/examples/htu21df_simpletest.py"],
+    ["micropython_htu21df/examples/htu21df_resolution.py", "github:jposada202020/MicroPython_HTU21DF/examples/htu21df_resolution.py"]
+  ],
+  "version": "0.1"
+}
