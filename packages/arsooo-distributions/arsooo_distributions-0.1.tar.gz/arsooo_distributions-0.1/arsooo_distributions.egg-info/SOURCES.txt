@@ -1,0 +1,10 @@
+setup.py
+arsooo_distributions/Binomialdistribution.py
+arsooo_distributions/Gaussiandistribution.py
+arsooo_distributions/Generaldistribution.py
+arsooo_distributions/__init__.py
+arsooo_distributions.egg-info/PKG-INFO
+arsooo_distributions.egg-info/SOURCES.txt
+arsooo_distributions.egg-info/dependency_links.txt
+arsooo_distributions.egg-info/not-zip-safe
+arsooo_distributions.egg-info/top_level.txt
