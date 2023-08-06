@@ -1,0 +1,7 @@
+bcrypt
+python-gnupg
+pyopenssl
+selectolax
+orjson
+httpx
+tqdm
