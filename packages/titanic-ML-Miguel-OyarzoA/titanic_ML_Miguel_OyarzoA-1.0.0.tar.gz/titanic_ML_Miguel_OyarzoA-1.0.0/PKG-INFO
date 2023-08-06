@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: titanic_ML_Miguel_OyarzoA
+Version: 1.0.0
+Summary: Prediccion en base a variables pclass, sex, age, fare
+Home-page: UNKNOWN
+Author: Miguel Oyarzo
+Author-email: your@email.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
