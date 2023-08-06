@@ -1,0 +1,11 @@
+vocab_coverage/__init__.py,sha256=WgMPMdDirKWhGH5Jbny-8tYKB9P7o9edez7LPgjHKDs,128
+vocab_coverage/charsets.py,sha256=_INWDF0Q9oJ0t4kNvbxjtg6rgKloogZfLak2qo9LDfg,4166
+vocab_coverage/draw.py,sha256=rBVyPzUl1xfLbOyDCN19-xeV0XCITIP-x19Zo3NHVa8,3002
+vocab_coverage/main.py,sha256=W6rXtkKHZTtTZtd5x5vsu2OlD1M_iOKmIsFQVI4-vUU,1645
+vocab_coverage/model.py,sha256=MJPc-sk5_0nlzfkYd17qTknN6qd0TZ0kpsMQ-qV9Kl8,5196
+vocab_coverage-0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vocab_coverage-0.4.dist-info/METADATA,sha256=KvZUN-5N5V7AIR_8U1-qnFvP1eiWbKl1LN8Y7hpWD14,9292
+vocab_coverage-0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vocab_coverage-0.4.dist-info/entry_points.txt,sha256=VkSxq_95LywRX4g-Ub5rOeP8B_ZHqZfXMhbQId639zA,55
+vocab_coverage-0.4.dist-info/top_level.txt,sha256=iJi6LebW6di2xJ9dM8sk0cgxzofyFLxhUdMvaOSp8ZY,15
+vocab_coverage-0.4.dist-info/RECORD,,
