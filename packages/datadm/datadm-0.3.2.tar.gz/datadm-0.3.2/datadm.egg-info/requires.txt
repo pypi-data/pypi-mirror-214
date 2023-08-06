@@ -1,0 +1,13 @@
+gradio
+guidance==0.0.61
+jupyter
+matplotlib
+pandas
+sketch
+transformers
+
+[all]
+datadm[cuda]
+
+[cuda]
+accelerate
