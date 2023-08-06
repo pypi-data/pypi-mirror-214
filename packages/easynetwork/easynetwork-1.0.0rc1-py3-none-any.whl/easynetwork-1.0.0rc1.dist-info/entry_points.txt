@@ -1,0 +1,2 @@
+[easynetwork.async.backends]
+asyncio = easynetwork_asyncio:AsyncioBackend
