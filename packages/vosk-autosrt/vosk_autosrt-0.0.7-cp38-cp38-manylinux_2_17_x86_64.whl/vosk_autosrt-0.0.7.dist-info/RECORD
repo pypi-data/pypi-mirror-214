@@ -1,0 +1,7 @@
+vosk_autosrt/__init__.py,sha256=6aGDegImUkBhhNuZNjOUrzK3pmjyRTz6KVQFslFow_A,157755
+vosk_autosrt/libvosk.so,sha256=D26C7SdXykIpddIvgR3Xm1d5Mql3Eer6HW6J151G1KQ,25986496
+vosk_autosrt-0.0.7.dist-info/METADATA,sha256=j1jO7HoPCw9dMiBRHqY6VLOGyqWQInwWi6fFi0qz8KM,2270
+vosk_autosrt-0.0.7.dist-info/WHEEL,sha256=_uJ_WOwOYsAeNB-NhiYhoUxGz47b8E6gmSVBnaDzk-Y,112
+vosk_autosrt-0.0.7.dist-info/entry_points.txt,sha256=kdUtINN13aKsx1lQtmSLqBr3YZ30P5AhH8l13i-xLhs,51
+vosk_autosrt-0.0.7.dist-info/top_level.txt,sha256=Y-zUOk5DvFdpLX0mBBxPUu0Mxfq4_1-dpbbNDAaoNB8,13
+vosk_autosrt-0.0.7.dist-info/RECORD,,
