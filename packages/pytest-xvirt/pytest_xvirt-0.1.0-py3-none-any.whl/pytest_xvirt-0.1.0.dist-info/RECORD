@@ -1,0 +1,11 @@
+xvirt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xvirt/collectors.py,sha256=kGO5a3_t9ZAu7b6qQUVbDmLCHPFl5wymDgv2hvItGm0,561
+xvirt/events.py,sha256=O6t3tgY7vdykDsgy69GfLKXiSai_1adFCFaZBi_N8Mk,1520
+xvirt/newhooks.py,sha256=Ok7GeABbu5r16FXrDv8mbj6WhQJ1ATwwdqM3Is6pK3M,361
+xvirt/plugin.py,sha256=mThvd-klr3Lp5Ud9atCqMXqiONg0VuX-gy0TU-x8c8Y,2605
+xvirt/empty/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_xvirt-0.1.0.dist-info/METADATA,sha256=TAs_lmInIu-Zmbld0KQOOJ3--2SlEVA0tffC2lpdhSU,3280
+pytest_xvirt-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_xvirt-0.1.0.dist-info/entry_points.txt,sha256=2lPKxwAPE63pjx45g4nb6uxViqZQA9CU2pQvp42Zjz8,32
+pytest_xvirt-0.1.0.dist-info/top_level.txt,sha256=1vu81Mav39syGVxx0WCj72_25SN2--0nXMHMwKuu1e4,19
+pytest_xvirt-0.1.0.dist-info/RECORD,,
