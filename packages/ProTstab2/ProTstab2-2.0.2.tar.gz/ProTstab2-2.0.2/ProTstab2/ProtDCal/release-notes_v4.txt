@@ -1,0 +1,15 @@
+
+==================================================================
+        RELEASE NOTES PROTDCAL 4.0
+==================================================================
+
+Updates summary:
+
+>> The script "Unsupervised_FilterCSV_Spearman_Correlation" filter located in Utils directory has been 
+   updated.
+   
+>> Scripts for add class values were implemented using Perl. For more information about how run 
+   these script see the options availaible in those files.
+   
+		
+==================================================================

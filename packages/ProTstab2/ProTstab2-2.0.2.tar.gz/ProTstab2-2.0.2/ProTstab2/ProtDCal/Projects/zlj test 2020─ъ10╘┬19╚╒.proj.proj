@@ -1,0 +1,12 @@
+directory:
+Datasets\Fasta_Protein_Format
+indices:
+Gw(U),Gs(U),W(U),Mw,HP,IP,ECI,L1-9,DHf,Z1,Z2,Z3,ISA,Xi,Ap,Pa,Pb,Pt,
+groups:
+PRT,
+invariants:
+N1,
+parameters(t_cont,s_cont,A%,HydGroup,n,bins,K,SubG):
+4.0,8.0,5.0,9.4,3.0,50,5,3
+options(decimals,harmonicMeanType,geometricMeanType,windexID,datasetType,outputOrder):
+3,0,0,-1,fasta,true
