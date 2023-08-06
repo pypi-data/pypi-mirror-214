@@ -1,0 +1,23 @@
+*~
+\#*
+*.qm
+Ui_*
+*_rc.py
+__pycache__/
+
+# debuild
+debian/files
+debian/*debhelper*
+debian/*substvars
+debian/python3-mecavideo/
+data/help/*w32.png
+build/
+pymecavideo.egg-info/
+
+# quilt
+.pc/
+
+#pybuild, python tests
+.pybuild/
+.pytest_cache/
+dist/

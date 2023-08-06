@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pymecavideo</class>
+ <widget class="QMainWindow" name="pymecavideo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>992</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>PyMecavideo : étude d'enregistrements vidéo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/data/icones/pymecavideo.svg</normaloff>:/data/icones/pymecavideo.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="tab_acq">
+       <attribute name="title">
+        <string>Pointage</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="PointageWidget" name="pointage" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_traj">
+       <attribute name="title">
+        <string>Trajectoires</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="TrajectoireWidget" name="trajectoire" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_coord">
+       <attribute name="title">
+        <string>Coordonnées</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="CoordWidget" name="coord" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_grapheur">
+       <attribute name="title">
+        <string>Grapheur</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="GraphWidget" name="graph" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>992</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>&amp;Fichier</string>
+    </property>
+    <widget class="QMenu" name="menuE_xporter_vers">
+     <property name="title">
+      <string>E&amp;xporter vers ...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/data/icones/document-export.svg</normaloff>
+       <normalon>:/data/icones/document-export.svg</normalon>:/data/icones/document-export.svg</iconset>
+     </property>
+    </widget>
+    <addaction name="actionOuvrir_un_fichier"/>
+    <addaction name="actionRouvrirMecavideo"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveData"/>
+    <addaction name="actionCopier_dans_le_presse_papier"/>
+    <addaction name="menuE_xporter_vers"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>&amp;Aide</string>
+    </property>
+    <addaction name="actionAide"/>
+    <addaction name="actionExemples"/>
+    <addaction name="separator"/>
+    <addaction name="action_propos"/>
+   </widget>
+   <widget class="QMenu" name="menu_dition">
+    <property name="title">
+     <string>&amp;Edition</string>
+    </property>
+    <addaction name="actionDefaire"/>
+    <addaction name="actionRefaire"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menu_dition"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOuvrir_un_fichier">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/video.svg</normaloff>:/data/icones/video.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Ouvrir une vidéo</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAvanceimage">
+   <property name="text">
+    <string>avanceimage</string>
+   </property>
+  </action>
+  <action name="actionReculeimage">
+   <property name="text">
+    <string>reculeimage</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/application-exit.svg</normaloff>:/data/icones/application-exit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionSaveData">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/pymecavideo.svg</normaloff>:/data/icones/pymecavideo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Enregistrer le projet mecavideo</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enregistre les données du projet pour pouvoir être réouvert dans PyMecaVideo.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_propos">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/help-about.svg</normaloff>:/data/icones/help-about.svg</iconset>
+   </property>
+   <property name="text">
+    <string>À &amp;propos</string>
+   </property>
+  </action>
+  <action name="actionAide">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/system-help.svg</normaloff>:/data/icones/system-help.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Aide</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">F1</string>
+   </property>
+  </action>
+  <action name="actionExemples">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/folder-black.svg</normaloff>:/data/icones/folder-black.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Exemples ...</string>
+   </property>
+  </action>
+  <action name="actionRouvrirMecavideo">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/pymecavideo.svg</normaloff>:/data/icones/pymecavideo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir un projet &amp;mecavideo</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>&amp;Préférences</string>
+   </property>
+  </action>
+  <action name="actionCopier_dans_le_presse_papier">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/klipper.svg</normaloff>:/data/icones/klipper.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copier dans le presse-papier</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionDefaire">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/undo.svg</normaloff>:/data/icones/undo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Défaire</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRefaire">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/data/icones/redo.svg</normaloff>:/data/icones/redo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Refaire</string>
+   </property>
+   <property name="iconText">
+    <string>Refaire</string>
+   </property>
+   <property name="toolTip">
+    <string>Refaire</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionOpenOffice_org_Calc">
+   <property name="text">
+    <string>LibreOffice &amp;Calc</string>
+   </property>
+  </action>
+  <action name="actionQtiplot">
+   <property name="text">
+    <string>Qti&amp;plot</string>
+   </property>
+  </action>
+  <action name="actionScidavis">
+   <property name="text">
+    <string>Sci&amp;davis</string>
+   </property>
+  </action>
+  <action name="action_Python_source">
+   <property name="text">
+    <string>&amp;Python (source)</string>
+   </property>
+  </action>
+  <action name="action_FichierNumpy">
+   <property name="text">
+    <string>&amp;Fichier numpy</string>
+   </property>
+   <property name="toolTip">
+    <string>Fichier Numpy</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PointageWidget</class>
+   <extends>QWidget</extends>
+   <header>pointageWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TrajectoireWidget</class>
+   <extends>QWidget</extends>
+   <header>trajectoireWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CoordWidget</class>
+   <extends>QWidget</extends>
+   <header>coordWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GraphWidget</class>
+   <extends>QWidget</extends>
+   <header>graphWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
