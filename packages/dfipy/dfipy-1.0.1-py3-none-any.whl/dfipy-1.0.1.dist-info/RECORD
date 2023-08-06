@@ -1,0 +1,13 @@
+LICENCE,sha256=Z3sFIB_ObDxSZgbd81gBUM-4Ef_S5Fwl16a_U2aeeeY,568
+dfi/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+dfi/analyse.py,sha256=HsMysB0KWaBZ--AmS2Br2dcorlsSA5vOKZkw1QI_e04,11774
+dfi/client.py,sha256=QgqwAk1N2KistiH1vY3eaN4dPJaLbyiBrjPc3qkzJJ0,1537
+dfi/connect.py,sha256=37_uJEdwYAqnzh6ZhEkCWiSXBCdE9FN_juXjqm3NYzw,3648
+dfi/get.py,sha256=DbVpmpXOJXz4Qd67AE6PAxMEBdOPH7SF2Izh-VqDL68,20533
+dfi/models.py,sha256=nfv434gS5JiLiDzfHP8i-aKNs41NOv_D-5C8yKGG8VE,351
+dfi/polygons.py,sha256=Xe5DrySrrDZ0pwtLht7twit3xQZflu8xYwj2FXKBuE0,3064
+dfi/show.py,sha256=IY26ECzqFsNJlKsbSmi9h2Ar8dkFmiSBB9lZGJQA51E,5325
+dfi/validate.py,sha256=VZrPQgxzFEKn-7BXqpyCKavXxM8CPau8W4TkD1bIcHk,8731
+dfipy-1.0.1.dist-info/METADATA,sha256=KOKivxsB_RSKf9majAshNn5lBg40Z1YuKLAkwgax-do,2593
+dfipy-1.0.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+dfipy-1.0.1.dist-info/RECORD,,
