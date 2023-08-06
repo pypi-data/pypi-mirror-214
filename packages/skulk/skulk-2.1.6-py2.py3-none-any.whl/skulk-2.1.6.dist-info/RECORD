@@ -1,0 +1,12 @@
+skulk/VERSION,sha256=JPUCseOr-o6i21WmLdCf175ZHUFbkfgq8M6QzXpEMGM,5
+skulk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skulk/bumper.py,sha256=ojOfmd0IlMcyedAPFMIntkLgrrGcVzHH6_yjZY882TM,10677
+skulk/questions.py,sha256=ihDx7B1JNw4wQnwjox6BRHpDUM_VzTajmf867IugP-U,2294
+skulk/questions_fallback.py,sha256=aQrtgxnHr6VUlJHO4OcVvPbzJj5V8U2OwXyJ4hBwHi8,2601
+skulk/skulk.py,sha256=OfT4HjKv_1PhjNW2RRs--P6D2GUULrcFXptpQdgjDoY,10237
+skulk/util.py,sha256=uBlyNpq_8RsuD2oOKxk4cL7-2zqXotcBPjI-QHacsHo,3586
+skulk-2.1.6.dist-info/METADATA,sha256=yr4nKLguGVIi51O7OTCOdrV-KehEyQYtWrZMabClwxQ,675
+skulk-2.1.6.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+skulk-2.1.6.dist-info/entry_points.txt,sha256=8DGRFZ3C46ZQBYFsfNj4eYw5ZGq8NWW8uKe-2xC-c34,43
+skulk-2.1.6.dist-info/top_level.txt,sha256=EOnQuA1Vdf2WjOz9xLTPLCynTq2IdzLPGQ54LdhP7oY,6
+skulk-2.1.6.dist-info/RECORD,,
