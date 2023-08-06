@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: django-business-metrics
+Version: 1.0.0
+Summary: Django Prometheus business metrics
+License: MIT
+Author: Reef Technologies
+Author-email: vykintas.baltrusaitis@reef.pl
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Requires-Dist: Django (>=3)
+Requires-Dist: black (>=22.6.0); extra == "dev"
+Requires-Dist: django-stubs (>=1.12.0); extra == "dev"
+Requires-Dist: mypy (>=0.971); extra == "dev"
+Requires-Dist: nox (>=2023); extra == "dev"
+Requires-Dist: prometheus-client (>=0.13.0)
+Requires-Dist: pytest (>=6); extra == "dev"
+Requires-Dist: pytest-django; extra == "dev"
+Requires-Dist: ruff (>=0.0.272); extra == "dev"
+Description-Content-Type: text/markdown
+
+# Django Prometheus business metrics
+
+This Django app provides a Prometheus metrics endpoint serving so-called business metrics. These are metrics that are calculated when Prometheus hits the metrics endpoint.
+
+## Usage
+
+> This project uses [ApiVer](https://www.youtube.com/watch?v=FgcoAKchPjk).
+> Always import from `django_business_metrics.v0` namespace and not from `django_business_metrics`.
+
+
+1. Create a `BusinessMetricsManager` object and register some metrics:
+
+    ```
+    # project/business_metrics.py
+
+    from django_business_metrics.v0 import BusinessMetricsManager, users
+
+    metrics_manager = BusinessMetricsManager()
+
+    # Add a pre-defined metric
+    metrics_manager.add(users)
+
+    # Add some custom metrics
+    @metrics_manager.metric(name='name', documentation='documentation')
+    def my_metric():
+        return 10
+    ```
+
+2. Register a Prometheus endpoint:
+
+
+    ```
+    # project/urls.py
+
+    ...
+    from .business_metrics import metrics_manager
+
+    ...
+    urlpatterns = [
+        ...
+        path('business-metrics', metrics_manager.view),
+        ...
+    ]
+    ```
+
+3. Setup your Prometheus agent to scrape metrics from `/business-metrics` endpoint.
+
+
+## Development
+
+```
+poetry install
+```
+
+Before committing make sure to run:
+
+```
+nox -s format test
+```
