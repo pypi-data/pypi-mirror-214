@@ -1,0 +1,9 @@
+pillow
+pandas
+opencv-python
+numpy
+scipy
+cython
+apex
+tqdm
+argparse
