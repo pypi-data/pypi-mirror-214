@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: SimplePyDB
+Version: 1.0.0
+Summary: A Python package for managing a simple database structure
+Author: CodeSoft
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# SimplePyDB
+
+SimplePyDB is a Python package that provides functionality to create and manage a simple database structure.
+
+## Installation
+
+You can install SimplePyDB using pip:
+
+pip install simplepydb
+
+## Usage
+
+Here's an example of how to use SimplePyDB:
+
+```python
+
+from simplepydb import database
+
+  
+
+# Create a bank
+
+database.createBank("bank1")
+
+  
+
+# Create a notebook
+
+database.createNotebook(bank="bank1", notebook="notebook1", value="value")
+
+  
+
+# Create a key
+
+database.createKey(bank="bank1", notebook="notebook1", key="key1", value="value")
+
+  
+
+# Create a subkey
+
+database.createSubKey(bank="bank1", notebook="notebook1", key="key1", subkey="subkey1", value="value")
+
+  
+
+# Read a key value
+
+key_value = database.readKey(bank="bank1", notebook="notebook1")
+
+print(key_value)
+
+
+
+# Read a subkey value
+
+subkey_value = database.readSubKey(bank="bank1", notebook="notebook1", key="key1")
+
+print(subkey_value)
+
+  ```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file  for details.
