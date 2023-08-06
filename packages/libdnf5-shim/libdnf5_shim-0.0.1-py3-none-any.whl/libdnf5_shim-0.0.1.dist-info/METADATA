@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: libdnf5-shim
+Version: 0.0.1
+Summary: libdnf5 shim module for usage in virtualenvs
+Project-URL: Source, https://git.sr.ht/~gotmax23/libdnf5-shim
+Project-URL: Mailing List, https://lists.sr.ht/~gotmax23/libdnf5-shim
+Project-URL: Changelog, https://git.sr.ht/~gotmax23/libdnf5-shim/tree/main/item/NEWS.md
+Author-email: Maxwell G <maxwell@gtmx.me>
+License-Expression: MIT
+License-File: LICENSES/MIT.txt
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Provides-Extra: codeqa
+Requires-Dist: reuse; extra == 'codeqa'
+Requires-Dist: ruff; extra == 'codeqa'
+Provides-Extra: dev
+Requires-Dist: libdnf5-shim[formatters]; extra == 'dev'
+Requires-Dist: libdnf5-shim[test]; extra == 'dev'
+Requires-Dist: libdnf5-shim[typing]; extra == 'dev'
+Requires-Dist: nox; extra == 'dev'
+Provides-Extra: formatters
+Requires-Dist: black; extra == 'formatters'
+Requires-Dist: isort; extra == 'formatters'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-forked; extra == 'test'
+Requires-Dist: pytest-mock; extra == 'test'
+Provides-Extra: typing
+Requires-Dist: mypy; extra == 'typing'
+Requires-Dist: nox; extra == 'typing'
+Requires-Dist: pytest; extra == 'typing'
+Requires-Dist: pytest-mock; extra == 'typing'
+Requires-Dist: typing-extensions; extra == 'typing'
+Description-Content-Type: text/markdown
+
+<!--
+Copyright (C) 2023 Maxwell G <maxwell@gtmx.me>
+SPDX-License-Identifier: MIT
+-->
+
+# libdnf5-shim
+
+[![builds.sr.ht status](https://builds.sr.ht/~gotmax23/libdnf5-shim/commits/main.svg)](https://builds.sr.ht/~gotmax23/libdnf5-shim/commits/main?)
+
+libdnf5 shim module for usage in virtualenvs.
+
+Inspired by <https://github.com/packit/rpm-shim>.
+
+## Links
+
+- [libdnf5-shim project hub](https://sr.ht/~gotmax23/libdnf5-shim)
+- [libdnf5-shim git.sr.ht repo](https://git.sr.ht/~gotmax23/libdnf5-shim)
+- [libdnf5-shim tracker](https://todo.sr.ht/~gotmax23/libdnf5-shim)
+- [libdnf5-shim mailing list][archives] ([~gotmax/libdnf5-shim@lists.sr.ht][mailto])
+
+[archives]: https://lists.sr.ht/~gotmax23/libdnf5-shim
+[mailto]: mailto:~gotmax/libdnf5-shim@lists.sr.ht
+
+## Contributing
+
+See [CONTRIBUTING.md](https://git.sr.ht/~gotmax23/libdnf5-shim/tree/main/item/CONTRIBUTING.md).
+
+## License
+
+This repository is licensed under
+
+    SPDX-License-Identifer: MIT

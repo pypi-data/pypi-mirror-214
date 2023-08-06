@@ -1,0 +1,8 @@
+_libdnf5_shim/__init__.py,sha256=jqCnuf_v7TXLYyEqPHsnyJmVHZaxL5UKTpjJBaunan0,193
+_libdnf5_shim/_impl.py,sha256=D_rFBPAdkQfmuIpgTtQURiX4d4ffBUI1k1lBAOOrrsY,2444
+_libdnf5_shim/initialize.py,sha256=AYjepY7LLcxYycHo22Pkim8yD3Q1XX5BXqfYz1thVho,220
+libdnf5/__init__.py,sha256=Jtz09_ZZJiZc5VYxWl-SZb2k9RfXw40d1NCMBNypmfE,205
+libdnf5_shim-0.0.1.dist-info/METADATA,sha256=H8zD04zbJuMcJMKFv_2JgqKWoMm-V0XnrPLmEHly3to,2740
+libdnf5_shim-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+libdnf5_shim-0.0.1.dist-info/licenses/LICENSES/MIT.txt,sha256=uF3NPkU9BZglUsUrX8ngvdbSPG-OhEuYSoivMlcLDMA,1078
+libdnf5_shim-0.0.1.dist-info/RECORD,,
