@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/Oasys.gRPC.egg-info/PKG-INFO
+src/Oasys.gRPC.egg-info/SOURCES.txt
+src/Oasys.gRPC.egg-info/dependency_links.txt
+src/Oasys.gRPC.egg-info/top_level.txt
+src/Oasys/gRPC/__init__.py
+src/Oasys/gRPC/placeholder.py

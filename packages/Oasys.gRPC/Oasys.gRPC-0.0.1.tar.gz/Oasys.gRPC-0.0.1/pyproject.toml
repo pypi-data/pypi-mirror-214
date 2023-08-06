@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "Oasys.gRPC"
+version = "0.0.1"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+keywords = ["Oasys", "gRPC"]
+description = "gRPC functions for Oasys D3PLOT, PRIMER, REPORTER and T/HIS"
+authors = [
+  {name = "Miles Thornton"},
+]
+maintainers = [
+  {email = "dyna.support@example.com"},
+]
+
+
+[project.urls]
+"Homepage" = "https://www.oasys-software.com/dyna/"
