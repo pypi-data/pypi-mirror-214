@@ -1,0 +1,4 @@
+bitcoinlib
+blockcypher
+requests
+eth_account
