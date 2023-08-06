@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: foxops
+Version: 2.0.0a4
+Summary: Foxops 🦊
+License: Apache-2.0
+Author: Alexander Hungenberg
+Author-email: alexander.hungenberg@roche.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Jinja2 (>=3.0.3,<4.0.0)
+Requires-Dist: SQLAlchemy[asyncio] (>=2.0.2,<3.0.0)
+Requires-Dist: aiopath (>=0.6.10,<0.7.0)
+Requires-Dist: aiosqlite (>=0.19.0,<0.20.0)
+Requires-Dist: alembic[tz] (>=1.8.1,<2.0.0)
+Requires-Dist: asyncpg (>=0.27.0,<0.28.0)
+Requires-Dist: fastapi (>=0.95.2,<0.96.0)
+Requires-Dist: greenlet (>=2.0.0,<3.0.0)
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.20,<0.18.0)
+Requires-Dist: structlog (>=23.1.0,<24.0.0)
+Requires-Dist: tenacity (>=8.2.1,<9.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Requires-Dist: uvicorn (>=0.22.0,<0.23.0)
+Description-Content-Type: text/markdown
+
+# foxops 🦊
+
+A modest templating tool to keep your projects up-to-date.
+
+more coming soon, stay tuned! 🚧
+
+## Documentation
+
+The documentation is available on rtd: https://foxops.readthedocs.io
+
+## Installation
+
+The `foxops` package is available on PyPI and can be installed using `pip`:
+
+```shell
+python -m pip install foxops
+```
+
+The `foxops` is available in a container image hosted on [ghcr](https://github.com/Roche/foxops/pkgs/container/foxops):
+
+```shell
+docker run -it --rm ghcr.io/roche/foxops --help
+```
