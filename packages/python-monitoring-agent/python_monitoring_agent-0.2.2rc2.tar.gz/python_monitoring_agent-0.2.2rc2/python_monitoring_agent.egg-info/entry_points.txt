@@ -1,0 +1,2 @@
+[console_scripts]
+pma = python_monitoring_agent.start:start
