@@ -1,0 +1,2 @@
+include requirements.txt
+include grad_june/configs/default.yaml
