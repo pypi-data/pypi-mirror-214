@@ -1,0 +1,274 @@
+import logging
+import shutil
+import webbrowser
+from calendar import monthrange
+from datetime import datetime, time
+from pathlib import Path
+from typing import List, Optional
+
+import calplot
+import pandas as pd
+import plotly.express as px
+from jinja2 import Environment, FileSystemLoader
+from nemreader.output_db import get_nmis
+
+from .model import (
+    DB_PATH,
+    db,
+    get_date_range,
+    get_day_data,
+    get_season_data,
+    get_usage_df,
+    get_annual_data,
+)
+from .prepare_db import update_nem_database
+
+log = logging.getLogger(__name__)
+this_dir = Path(__file__).parent
+template_dir = this_dir / "templates"
+env = Environment(loader=FileSystemLoader(template_dir))
+output_dir = Path("output")
+output_dir.mkdir(exist_ok=True)
+
+
+def format_month(dt: datetime) -> str:
+    return dt.strftime("%b %Y")
+
+
+env.filters["yearmonth"] = format_month
+
+
+def build_daily_usage_chart(nmi: str, kind: str) -> Optional[Path]:
+    """Save calendar plot"""
+    days = []
+    data = []
+    for dt, imp, exp, _, _, _, _ in get_day_data(nmi):
+        days.append(dt)
+        exp = -exp  # Make export negative
+        if kind == "import":
+            data.append(imp)
+        elif kind == "export":
+            data.append(exp)
+        elif kind == "total":
+            val = imp + exp
+            data.append(val)
+        else:
+            raise ValueError("Invalid usage chart kind")
+
+    if kind == "export":
+        if min(data) == 0.0:
+            return None
+
+    vmin = max(-35, min(data))
+    vmax = min(35, max(data))
+
+    data = pd.Series(data, index=days)
+    plot = calplot.calplot(
+        data,
+        suptitle=f"Daily kWh for {nmi} ({kind})",
+        how=None,
+        vmin=vmin,
+        vmax=vmax,
+        cmap="YlOrRd",
+        daylabels="MTWTFSS",
+        colorbar=True,
+    )
+    fig = plot[0]
+    file_path = output_dir / f"{nmi}_daily_{kind}.png"
+    fig.savefig(file_path, bbox_inches="tight")
+    log.info("Created %s", file_path)
+    return file_path
+
+
+def build_daily_plot(nmi: str) -> str:
+    """Save calendar plot"""
+
+    day_data = list(get_day_data(nmi))
+    data = {
+        "morning": [x[3] for x in day_data],
+        "day": [x[4] for x in day_data],
+        "evening": [x[5] for x in day_data],
+        "night": [x[6] for x in day_data],
+        "export": [-x[2] for x in day_data],
+    }
+    index = [x[0] for x in day_data]
+    df = pd.DataFrame(index=index, data=data)
+    color_dict = {
+        "export": "green",
+        "morning": "tan",
+        "day": "skyblue",
+        "evening": "orangered",
+        "night": "slategrey",
+    }
+    fig = px.bar(df, x=df.index, y=list(data.keys()), color_discrete_map=color_dict)
+    fig.update_xaxes(
+        rangeslider_visible=False,
+        rangeselector=dict(
+            buttons=list(
+                [
+                    dict(count=1, label="1m", step="month", stepmode="backward"),
+                    dict(count=6, label="6m", step="month", stepmode="backward"),
+                    dict(count=1, label="1y", step="year", stepmode="backward"),
+                    dict(step="all"),
+                ]
+            )
+        ),
+    )
+    file_path = output_dir / f"{nmi}_daily_plot.html"
+    fig.write_html(file_path, full_html=False, include_plotlyjs="cdn")
+    log.info("Created %s", file_path)
+    return file_path
+
+
+def build_usage_histogram(nmi: str) -> str:
+    """Save heatmap of power usage"""
+    df = get_usage_df(nmi)
+    df["power"] = df["consumption"] + df["export"]
+    df["power"] = df["power"].apply(lambda x: x * 12)
+    has_export = True if len(df["export"].unique()) > 1 else False
+    colorscale = "Geyser" if has_export else "YlOrRd"
+    midpoint = 0.0 if has_export else None
+    start, end = get_date_range(nmi)
+    numdays = (end - start).days
+    nbinsx = numdays
+    nbinsy = 96
+    fig = px.density_heatmap(
+        df,
+        x=df.index.date,
+        y=df.index.time,
+        z=df["power"],
+        nbinsx=nbinsx,
+        nbinsy=nbinsy,
+        histfunc="avg",
+        color_continuous_scale=colorscale,
+        color_continuous_midpoint=midpoint,
+    )
+
+    xmin = min(df.index.date)
+    xmax = max(df.index.date)
+    y_values = [time(4, 0), time(9, 0), time(16, 0), time(21, 0)]
+    for y in y_values:
+        fig.add_shape(
+            type="line",
+            x0=xmin,
+            y0=y,
+            x1=xmax,
+            y1=y,
+            line=dict(color="black", width=1, dash="dash"),
+        )
+
+    fig.update_layout(
+        xaxis_title=None,
+        yaxis_title=None,
+        margin=dict(l=20, r=20, t=20, b=20),
+    )
+    fig.update_layout(coloraxis=dict(colorbar=dict(title="kW")))
+    fig.update_xaxes(dtick="M3", tickformat="%b\n%Y", ticklabelmode="period")
+    fig.update_yaxes(dtick=12)
+
+    file_path = output_dir / f"{nmi}_usage_histogram.html"
+    fig.write_html(file_path, full_html=False, include_plotlyjs="cdn")
+    log.info("Created %s", file_path)
+    return file_path
+
+
+def copy_static_data():
+    """Copy static files"""
+    files = []
+    for file in files:
+        from_loc = template_dir / file
+        to_loc = output_dir / file
+        shutil.copy(from_loc, to_loc)
+
+
+def get_seasonal_data(nmi: str):
+    season_data = {}
+    all_exp = 0
+    all_imp = 0
+    total_days = 0
+    for row in get_season_data(nmi):
+        season = row["Season"]
+        num_days = row["num_days"]
+        imp = row["imp"]
+        exp = row["exp"]
+        all_imp += imp
+        all_exp += exp
+        total_days += num_days
+        season_data[season] = imp / num_days
+
+    season_data["EXPORT"] = all_exp / total_days
+    season_data["TOTAL"] = all_imp / total_days
+    return season_data
+
+
+def get_month_data(nmi: str):
+    sql = "SELECT * from monthly_reads where nmi = :nmi"
+    rows = []
+    for row in db.query(sql, {"nmi": nmi}):
+        month_desc = row["month"]
+        num_days = row["num_days"]
+        year, month = [int(x) for x in month_desc.split("-")]
+        _, exp_num_days = monthrange(year, month)
+        row["incomplete"] = True if num_days < exp_num_days else False
+        rows.append(row)
+    return rows
+
+
+def build_report(nmi: str):
+    template = env.get_template("nmi-report.html")
+    start, end = get_date_range(nmi)
+    fp_imp = build_daily_usage_chart(nmi, "import")
+    fp_exp = build_daily_usage_chart(nmi, "export")
+    build_daily_usage_chart(nmi, "total")
+    has_export = True if fp_exp else None
+
+    """
+    ch_daily_fp = build_daily_plot(nmi)
+    with open(ch_daily_fp, "r") as fh:
+        daily_chart = fh.read()
+    """
+
+    ch_tou_fp = build_usage_histogram(nmi)
+    with open(ch_tou_fp, "r") as fh:
+        tou_chart = fh.read()
+
+    report_data = {
+        "start": start,
+        "end": end,
+        "has_export": has_export,
+        "daily_chart": "",
+        "tou_chart": tou_chart,
+        "imp_overview_chart": fp_imp.name,
+        "exp_overview_chart": fp_exp.name if has_export else None,
+        "season_data": get_seasonal_data(nmi),
+        "annual_data": get_annual_data(nmi),
+        "month_data": get_month_data(nmi),
+    }
+
+    output_html = template.render(nmi=nmi, **report_data)
+    file_path = output_dir / f"{nmi}.html"
+    with open(file_path, "w", encoding="utf-8") as fh:
+        fh.write(output_html)
+    logging.info("Created %s", file_path)
+    return file_path
+
+
+def build_index(nmis: List[str]):
+    template = env.get_template("index.html")
+    output_html = template.render(nmis=nmis)
+    file_path = output_dir / "index.html"
+    with open(file_path, "w", encoding="utf-8") as fh:
+        fh.write(output_html)
+    logging.info("Created %s", file_path)
+    return file_path
+
+
+def build_reports():
+    if "daily_reads" not in db.table_names():
+        update_nem_database()
+    copy_static_data()
+    nmis = get_nmis(DB_PATH)
+    for nmi in nmis:
+        build_report(nmi)
+    fp = Path(build_index(nmis)).resolve()
+    webbrowser.open(fp.as_uri())
