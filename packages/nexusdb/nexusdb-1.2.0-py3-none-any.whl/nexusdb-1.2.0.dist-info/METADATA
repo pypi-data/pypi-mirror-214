@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nexusdb
+Version: 1.2.0
+Summary: A lightweight JSON-based database system for Python
+Home-page: https://github.com/E491K8/nexusdb
+Author: Pawan kumar
+Author-email: control@vvfin.in
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytz
+Requires-Dist: uuid
+
+# Python nexusdb
+
+Your nexusdb is a lightweight JSON-based database system for Python, providing an easy way to store and manage structured data within your Python applications.
+
+## Installation
+
+You can install nexusdb using pip:
+
+```shell
+pip install nexusdb
