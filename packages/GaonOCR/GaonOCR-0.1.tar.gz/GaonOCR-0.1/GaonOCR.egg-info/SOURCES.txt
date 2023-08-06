@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+GaonOCR.egg-info/PKG-INFO
+GaonOCR.egg-info/SOURCES.txt
+GaonOCR.egg-info/dependency_links.txt
+GaonOCR.egg-info/requires.txt
+GaonOCR.egg-info/top_level.txt
+Library/__init__.py
+Library/main.py
+Library/utils.py
+tests/__init__.py
+tests/test_main.py
