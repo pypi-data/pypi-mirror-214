@@ -1,0 +1,3 @@
+forfiles==4.0.2
+fortext==0.0.3
+Requests==2.31.0
