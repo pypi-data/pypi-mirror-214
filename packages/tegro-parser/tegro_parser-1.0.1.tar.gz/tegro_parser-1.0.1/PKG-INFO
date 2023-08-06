@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tegro_parser
+Version: 1.0.1
+Summary: TegroParser - module for working with tegro.money API
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: TegroParser - module for working with https://tegro.money API 
+        Made by @PyDevNik
+Platform: UNKNOWN
