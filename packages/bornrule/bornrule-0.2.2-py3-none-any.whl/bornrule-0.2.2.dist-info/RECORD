@@ -1,0 +1,13 @@
+bornrule/__init__.py,sha256=A4VDoVybgwwbsYR7_IdaRtDP_G0y7MQKJOEpZn-0QSg,62
+bornrule/born.py,sha256=8lNiyz_7KJJVDiYOyyXz5dkau4CC7MkIdE97uOIzbJw,15645
+bornrule/sql/__init__.py,sha256=aZU1pdTHo2XUXzmnsNbCXLV53plkLd3Rk1-jmarzZmI,70
+bornrule/sql/born.py,sha256=VZTK38FhfApBQabE1l9pnEcnDc3cDU00eExBagq2QT0,14893
+bornrule/sql/database.py,sha256=oordi5s042QjJm_P6RCen5EOQ-cquHEsKeB01zRB6h8,18607
+bornrule/sql/postgresql.py,sha256=ousmPLNMH_J9WUS9kFerOmw6pYg36T84mPEJUZDYjHE,120
+bornrule/sql/sqlite.py,sha256=-i2dWqCZtDQm8lvKfWmULkL2RsbpLksRyCplOjnyqdc,541
+bornrule/torch/__init__.py,sha256=z1AhKUcBdQjaNP99y_hkR90F9eBy9ss5AoRvS1TM1Xc,42
+bornrule/torch/born.py,sha256=Ydm0Aj1OjndcUjINN-YtZlsj3J193XwOWNl59Y0pfRg,3111
+bornrule-0.2.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bornrule-0.2.2.dist-info/METADATA,sha256=PbN-tJUBFzAxXgFEeaDpyt2CBtkK-frRfWsq1AW7ZTg,1324
+bornrule-0.2.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bornrule-0.2.2.dist-info/RECORD,,
