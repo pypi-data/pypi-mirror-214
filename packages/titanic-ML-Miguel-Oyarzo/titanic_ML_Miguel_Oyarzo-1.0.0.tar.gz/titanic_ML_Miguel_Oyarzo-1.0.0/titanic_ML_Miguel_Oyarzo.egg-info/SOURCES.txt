@@ -1,0 +1,9 @@
+README.md
+setup.py
+my_package/__init__.py
+my_package/model.py
+titanic_ML_Miguel_Oyarzo.egg-info/PKG-INFO
+titanic_ML_Miguel_Oyarzo.egg-info/SOURCES.txt
+titanic_ML_Miguel_Oyarzo.egg-info/dependency_links.txt
+titanic_ML_Miguel_Oyarzo.egg-info/requires.txt
+titanic_ML_Miguel_Oyarzo.egg-info/top_level.txt
