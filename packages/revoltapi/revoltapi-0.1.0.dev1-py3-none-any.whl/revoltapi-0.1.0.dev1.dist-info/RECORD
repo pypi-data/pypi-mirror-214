@@ -1,0 +1,8 @@
+revoltapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+revoltapi/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+revoltapi/api/api.py,sha256=AAEWJBiJbhBUwu_LPFtVmoyaRcNZ8zo9-AtrbpAdzIc,1612
+revoltapi/api/excetions.py,sha256=WoKesQGtG4e8yK_IakSJ4L0Gb49i4weEIYobtL1dZU0,174
+revoltapi-0.1.0.dev1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+revoltapi-0.1.0.dev1.dist-info/METADATA,sha256=J95cyj_JVYmnenTP8P0r7zh1C4BO6RbwruL0DTdJ-aA,1315
+revoltapi-0.1.0.dev1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+revoltapi-0.1.0.dev1.dist-info/RECORD,,
