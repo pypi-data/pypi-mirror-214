@@ -1,0 +1,10 @@
+admin
+build_image
+check
+cleanup
+main
+new_client
+replay
+run_game
+web_server
+zip
