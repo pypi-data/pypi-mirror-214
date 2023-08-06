@@ -1,0 +1,2 @@
+[console_scripts]
+jupyterkernelgen = jupyterkernelgen.jupyterkernelgen:main

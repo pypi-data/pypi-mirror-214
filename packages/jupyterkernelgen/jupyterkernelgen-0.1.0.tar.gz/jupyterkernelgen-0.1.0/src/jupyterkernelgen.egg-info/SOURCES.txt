@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/jupyterkernelgen/__init__.py
+src/jupyterkernelgen/__main__.py
+src/jupyterkernelgen/jupyterkernelgen.py
+src/jupyterkernelgen.egg-info/PKG-INFO
+src/jupyterkernelgen.egg-info/SOURCES.txt
+src/jupyterkernelgen.egg-info/dependency_links.txt
+src/jupyterkernelgen.egg-info/entry_points.txt
+src/jupyterkernelgen.egg-info/top_level.txt
