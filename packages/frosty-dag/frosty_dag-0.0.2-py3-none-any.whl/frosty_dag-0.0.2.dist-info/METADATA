@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: frosty-dag
+Version: 0.0.2
+Summary: Implementation of the FROSTY algorithm
+Home-page: https://github.com/joshuaybang/frosty-dag
+Author: Joshua Bang
+Author-email: joshuaybang@gmail.com
+License: UNKNOWN
+Keywords: bayesian network structure learning
+Platform: UNKNOWN
+Requires-Python: >=3.6, <3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: Cython
+Requires-Dist: skggm
+Requires-Dist: scikit-sparse
+Requires-Dist: robust-selection
+Requires-Dist: networkx
+
+# FROSTY
+
+Python Package for the FROSTY algorithm by Joshua Bang and Sang-Yun Oh
+
+Bang, J., Oh, S.-Y. (2023). FROSTY: A High-Dimensional Scale-Free Bayesian Network Learning Method. Journal of Data Science. \[[JDS](https://jds-online.org/journal/JDS/article/1329/info)\]
+
+## Installation
+
+Installation of `scikit-sparse` depends on `suite-sparse` library, which can be installed via:
+```bash
+# mac
+brew install suite-sparse
+
+# debian
+sudo apt-get install libsuitesparse-dev
+```
+
+Then install FROSTY from PyPI:
+```bash
+pip install frosty-dag
+```
+
+## Example (scale-free graph, p=50, n=1000)
+
+ - True and estimated graphs
+
+![estimation](https://github.com/joshuaybang/frosty/raw/main/examples/images/frosty-estimation.png)
+
+ - Confusion matrix
+
+![confusion matrix](https://github.com/joshuaybang/frosty/raw/main/examples/images/confusion-matrix.png)
+
