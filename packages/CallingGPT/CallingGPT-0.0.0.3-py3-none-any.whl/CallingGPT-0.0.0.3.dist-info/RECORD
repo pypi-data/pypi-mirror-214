@@ -1,0 +1,9 @@
+cli/__init__.py,sha256=S6UhKPU8FUNKysgdrC7kyKGg4YQTuCZfrVtU6KkmqGA,1062
+entities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entities/namespace.py,sha256=Y-RZ_iBg7vJ6wcAm11F5ywMLSptamrebgsiHwhjLedg,4420
+session/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+session/session.py,sha256=N7Pi7sWCOE3BCC9-38zzeJwX_rNZAmKZaLD4RrSl608,2287
+CallingGPT-0.0.0.3.dist-info/METADATA,sha256=8Uj05rYVwiQPTE5YKfE19zOJ8PKWCGUOXxP3WWftS8g,3528
+CallingGPT-0.0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CallingGPT-0.0.0.3.dist-info/top_level.txt,sha256=SGhlH_Vft7Q7fa7VRvddeEnFjJSuYOOVisuiE77SFJY,21
+CallingGPT-0.0.0.3.dist-info/RECORD,,
