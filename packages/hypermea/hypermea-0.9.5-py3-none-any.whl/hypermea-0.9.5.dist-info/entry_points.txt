@@ -1,0 +1,3 @@
+[console_scripts]
+eu = hypermea.commands:initialize
+hypermea = hypermea.commands:initialize
