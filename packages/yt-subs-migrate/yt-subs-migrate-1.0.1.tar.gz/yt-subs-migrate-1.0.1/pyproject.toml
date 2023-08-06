@@ -1,0 +1,31 @@
+[project]
+name = "yt-subs-migrate"
+version = "1.0.1"
+authors = [
+  { name="Trần Nam Tuấn", email="tuantran1632001@gmail.com" },
+]
+description = "Migrate YouTube subscriptions from one account to another"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "google-auth-oauthlib>=1.0.0",
+  "google-api-python-client>=2.89.0",
+  "tqdm"
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/TheBill2001/yt-subs-migrate"
+"Bug Tracker" = "https://gitlab.com/TheBill2001/yt-subs-migrate/-/issues"
+
+[project.scripts]
+yt-subs-migrate = "yt_subs_migrate.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
