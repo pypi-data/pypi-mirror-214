@@ -1,0 +1,4 @@
+[console_scripts]
+garmin = rowing.analysis.garmin:main [GARMIN]
+gpx = rowing.analysis.files:main [GPX]
+worldrowing = rowing.worldrowing.app:main [WORLDROWING]
