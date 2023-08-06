@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/genepierre.egg-info/PKG-INFO
+src/genepierre.egg-info/SOURCES.txt
+src/genepierre.egg-info/dependency_links.txt
+src/genepierre.egg-info/top_level.txt
