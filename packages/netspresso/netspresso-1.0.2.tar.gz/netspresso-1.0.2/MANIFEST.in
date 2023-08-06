@@ -1,0 +1,9 @@
+include LICENSE
+
+include requirements.txt
+
+inclued README.md
+
+graft imgs
+
+graft netspresso
