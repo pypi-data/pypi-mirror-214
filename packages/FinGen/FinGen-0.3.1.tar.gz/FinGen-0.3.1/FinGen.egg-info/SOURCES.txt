@@ -1,0 +1,12 @@
+LICENSE.txt
+setup.cfg
+setup.py
+FinGen/FindingsGenerator.py
+FinGen/Loader.py
+FinGen/__init__.py
+FinGen/__main__.py
+FinGen.egg-info/PKG-INFO
+FinGen.egg-info/SOURCES.txt
+FinGen.egg-info/dependency_links.txt
+FinGen.egg-info/requires.txt
+FinGen.egg-info/top_level.txt
