@@ -1,0 +1,7 @@
+lightgbm>=3.3
+numpy
+pandas
+regex
+requests
+tqdm
+typer>=0.3.2
