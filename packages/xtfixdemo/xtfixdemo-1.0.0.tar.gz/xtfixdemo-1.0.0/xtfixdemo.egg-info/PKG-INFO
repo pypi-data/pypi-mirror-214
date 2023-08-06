@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xtfixdemo
+Version: 1.0.0
+Summary: A demo Python module
+Home-page: https://github.com/your_username/hello
+Author: Your Name
+Author-email: your_email@example.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

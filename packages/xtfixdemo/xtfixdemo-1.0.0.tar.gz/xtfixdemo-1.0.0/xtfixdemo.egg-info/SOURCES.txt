@@ -1,0 +1,8 @@
+setup.py
+xtfixdemo/__init__.py
+xtfixdemo/xt_print.py
+xtfixdemo.egg-info/PKG-INFO
+xtfixdemo.egg-info/SOURCES.txt
+xtfixdemo.egg-info/dependency_links.txt
+xtfixdemo.egg-info/not-zip-safe
+xtfixdemo.egg-info/top_level.txt
