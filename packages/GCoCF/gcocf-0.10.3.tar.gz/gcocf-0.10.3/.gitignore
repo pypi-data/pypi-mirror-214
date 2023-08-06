@@ -1,0 +1,14 @@
+build
+.pytest_cache
+__pycache__
+.coverage
+.cache
+*.egg-info
+.direnv
+warlog*
+dist
+.envrc
+.env
+pytestdebug.log
+service_bot.db
+test_service_bot.db

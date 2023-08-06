@@ -1,0 +1,33 @@
+version = 1
+
+test_patterns = [
+  "test_everything.py",
+  "test*"
+]
+
+exclude_patterns = [
+  "__pycache__",
+  "master.py"
+]
+
+[[analyzers]]
+name = "python"
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
+
+[[transformers]]
+name = "black"
+
+[[transformers]]
+name = "isort"
+
+[[transformers]]
+name = "autopep8"
+
+[[transformers]]
+name = "yapf"
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true
