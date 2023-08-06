@@ -1,0 +1,5 @@
+[console_scripts]
+featherplot = featherplot.commands:run_add_sidecars
+
+[nbdev]
+featherplot = featherplot._modidx:d
