@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+dev_requirements.txt
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+src/pytraced/__init__.py
+src/pytraced/py.typed
+src/pytraced.egg-info/PKG-INFO
+src/pytraced.egg-info/SOURCES.txt
+src/pytraced.egg-info/dependency_links.txt
+src/pytraced.egg-info/requires.txt
+src/pytraced.egg-info/top_level.txt
+tests/test_metadata.py
