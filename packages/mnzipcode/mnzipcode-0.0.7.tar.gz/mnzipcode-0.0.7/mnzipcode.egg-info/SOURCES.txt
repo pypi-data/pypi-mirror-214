@@ -1,0 +1,11 @@
+README.md
+setup.py
+mnzipcode/__init__.py
+mnzipcode/mnZipCodes.py
+mnzipcode.egg-info/PKG-INFO
+mnzipcode.egg-info/SOURCES.txt
+mnzipcode.egg-info/dependency_links.txt
+mnzipcode.egg-info/top_level.txt
+mnzipcode/data/province_info.json
+mnzipcode/data/sum_info.json
+mnzipcode/data/zip.json
