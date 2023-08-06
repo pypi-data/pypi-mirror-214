@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gridgraph-importer
+Version: 1.0
+Summary: gridgraph importer library
+Home-page: https://github.com
+Author: TaoHe
+Author-email: super_super_tao@163.com
+License: Apache 2.0
+Keywords: gridgraph,importer
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# gridgraph python importer
+gridgraph python importer provides the python interfaces for importing csv data.
+## requirements
+
+## example
+
+## log
