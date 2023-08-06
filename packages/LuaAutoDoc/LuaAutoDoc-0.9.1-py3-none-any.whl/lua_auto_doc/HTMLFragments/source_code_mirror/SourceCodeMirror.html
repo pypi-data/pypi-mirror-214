@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+	<title>#LuaAutoDoc-ProjectName documentation &mdash; LuaModTools 0.1 documentation</title>
+	#LuaAutoDoc-Favicon
+	#LuaAutoDoc-StylesheetEntry
+	#LuaAutoDoc-ScriptEntry
+	#LuaAutoDoc-HighlightFallback
+
+	<script>
+		// Listen for Ctrl+A to select all text in the code field if it exists.
+		document.addEventListener('keydown', function (event) {
+			if ((event.ctrlKey || event.metaKey) && event.key === 'a') {
+				event.preventDefault();
+				let range = document.createRange();
+				range.selectNodeContents(document.querySelector('#code-field'));
+				let selection = window.getSelection();
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+		});
+	</script>
+</head>
+<body id="LuaAutoDoc-body">
+	<div id="main-container">
+		#LuaAutoDoc-NavBar
+		<div id="main-center">
+			#LuaAutoDoc-MirrorSourceCodeHeaderBar
+			<h1 class="page-title">#LuaAutoDoc-FileName</h1>
+			<section>
+				<article>
+					<pre id="code-field">#LuaAutoDoc-SourceCode</pre>
+				</article>
+			</section>
+		</div>
+		#LuaAutoDoc-Footer
+	</div>
+</body>
+</html>

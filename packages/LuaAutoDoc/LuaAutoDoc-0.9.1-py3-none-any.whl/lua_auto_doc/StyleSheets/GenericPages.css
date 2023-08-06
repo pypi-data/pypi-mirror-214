@@ -1,0 +1,14 @@
+/* Categories
+1. Generic pages
+*/
+
+/******************************************
+************* 1 Generic pages *************
+*******************************************/
+#main-page {
+	max-width: 60em;
+}
+
+#main-page-description {
+	max-width: 50em;
+}
