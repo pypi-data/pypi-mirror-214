@@ -1,0 +1,2 @@
+from CToolKit.amalgamation import  generate_amalgamated_code
+from CToolKit.comand_line_functions import compile_project_by_command
