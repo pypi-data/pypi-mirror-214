@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PyNihongo.egg-info/PKG-INFO
+PyNihongo.egg-info/SOURCES.txt
+PyNihongo.egg-info/dependency_links.txt
+PyNihongo.egg-info/top_level.txt
+pynihongo/__init__.py
+pynihongo/kana.py
+pynihongo/method.py
