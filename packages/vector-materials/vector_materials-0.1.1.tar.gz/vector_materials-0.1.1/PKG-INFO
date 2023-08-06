@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vector-materials
+Version: 0.1.1
+Summary: A library of useful functions for materials-science data-analysis. Maintained by Vector Homes.
+License: LICENSE
+Author: Vicente Orts
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: google-auth (>=2.20.0,<3.0.0)
+Requires-Dist: gspread (>=5.9.0,<6.0.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Vector Materials
+
+This repository hosts the 'Vector Materials' package. This package contains multiple function libraries covering data processing, analysis, and visualisation for material science.
+
