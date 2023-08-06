@@ -1,0 +1,7 @@
+Shandows.py
+setup.py
+Shandows.egg-info/PKG-INFO
+Shandows.egg-info/SOURCES.txt
+Shandows.egg-info/dependency_links.txt
+Shandows.egg-info/entry_points.txt
+Shandows.egg-info/top_level.txt
