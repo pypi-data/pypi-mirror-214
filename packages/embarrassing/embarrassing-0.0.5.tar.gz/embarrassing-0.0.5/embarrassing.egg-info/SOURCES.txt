@@ -1,0 +1,8 @@
+setup.py
+embarrassing/__init__.py
+embarrassing/main.py
+embarrassing.egg-info/PKG-INFO
+embarrassing.egg-info/SOURCES.txt
+embarrassing.egg-info/dependency_links.txt
+embarrassing.egg-info/requires.txt
+embarrassing.egg-info/top_level.txt
