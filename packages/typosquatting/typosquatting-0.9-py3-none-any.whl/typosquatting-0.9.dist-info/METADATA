@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: typosquatting
+Version: 0.9
+Summary: typosquatting
+Home-page: https://github.com/hariskamal43/typosquatting
+Author: Haris Kamal
+Author-email: hariskamal43@gmail.com
+Requires-Dist: fuzzywuzzy
+Requires-Dist: wordninja
+
