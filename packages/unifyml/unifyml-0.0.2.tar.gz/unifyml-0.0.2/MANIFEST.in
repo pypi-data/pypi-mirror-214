@@ -1,0 +1,3 @@
+include unifyml/VERSION
+include documentation/Package_Info.md
+recursive-include unifyml/backend/tf/cuda/build *
