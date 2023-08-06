@@ -1,0 +1,12 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "cython", "libcythonconst==1.0.0"]
+
+[project]
+name = "cythonconst"
+version = "1.1.0"
+description = "An example client with const in Cython"
+requires-python = ">=3.11"
+dependencies = [
+    "libcythonconst"  # Boom! This fails cause the package is built with 1.0.0 (not const), but installed alongside 1.0.1 (const)
+]
