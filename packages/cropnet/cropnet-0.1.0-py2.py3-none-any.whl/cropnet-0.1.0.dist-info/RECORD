@@ -1,0 +1,8 @@
+dataset/__init__.py,sha256=MyJ4105REajE0zHeq4NQBV_1M3YWSVIeNbu9B1eoZxs,55
+dataset/hrrr_computed_dataset.py,sha256=U3PeejprROhlsdEOUBXZKLkmHBnymVKEebR3wde53fg,6300
+dataset/sentinel2_imagery.py,sha256=cGLdiv0JXLJXAjcJmcgYaxmNmBjMvkCine4YY5ddNUA,2021
+dataset/usda_crop_dataset.py,sha256=Iq78EeGLQTtt0bP354oPf7_tJNxw2Iq7k4GxyDjNbBU,2456
+cropnet-0.1.0.dist-info/METADATA,sha256=X7YL1T3f06B1kbPEp498B7TXKMqArU2W9WijsRbi6Yk,813
+cropnet-0.1.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+cropnet-0.1.0.dist-info/top_level.txt,sha256=azD5Wy9MBv9bfMbTscYXdFdDxcIUlm2bl46qT0i1ra4,8
+cropnet-0.1.0.dist-info/RECORD,,
