@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2f7208b-b877-4e02-a0bc-f8618637fd2b" name="Changes" comment="update `README.md`" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RDsUdgMZcuPeeA2LdpClDVhswr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "update__README",
+    "last_opened_file_path": "E:/Project/pbaa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Project\pbaa\src\pbaa\core" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2f7208b-b877-4e02-a0bc-f8618637fd2b" name="Changes" comment="" />
+      <created>1686796002414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686796002414</updated>
+      <workItem from="1686796003529" duration="129000" />
+      <workItem from="1686796228365" duration="7038000" />
+      <workItem from="1686806972828" duration="10267000" />
+      <workItem from="1686875422348" duration="11383000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1686797494142</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686797494142</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix minor">
+      <created>1686802528841</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686802528841</updated>
+    </task>
+    <task id="LOCAL-00003" summary="support python38">
+      <created>1686802701430</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686802701430</updated>
+    </task>
+    <task id="LOCAL-00004" summary="support python38">
+      <created>1686803347271</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686803347271</updated>
+    </task>
+    <task id="LOCAL-00005" summary="support python38">
+      <created>1686803641853</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686803641853</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix minor">
+      <created>1686803739900</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686803739900</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update dependency">
+      <created>1686813658818</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686813658818</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix minors">
+      <created>1686816778617</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686816778617</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix minors">
+      <created>1686818997853</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686818997853</updated>
+    </task>
+    <task id="LOCAL-00010" summary="change ci">
+      <created>1686819320696</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686819320697</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix typo">
+      <created>1686819390060</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686819390060</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix minor">
+      <created>1686819551629</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686819551629</updated>
+    </task>
+    <task id="LOCAL-00013" summary="only linux">
+      <created>1686819658200</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686819658200</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix `check_dependency`">
+      <created>1686876297931</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686876297931</updated>
+    </task>
+    <task id="LOCAL-00015" summary="change architecture">
+      <created>1686879413722</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686879413722</updated>
+    </task>
+    <task id="LOCAL-00016" summary="change architecture">
+      <created>1686879758619</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686879758619</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix tree">
+      <created>1686880009134</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686880009134</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix sequence">
+      <created>1686880081279</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686880081279</updated>
+    </task>
+    <task id="LOCAL-00019" summary="change architecture">
+      <created>1686880509033</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686880509033</updated>
+    </task>
+    <task id="LOCAL-00020" summary="change architecture">
+      <created>1686880674394</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686880674394</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix reference">
+      <created>1686881654686</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686881654686</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add dependency test">
+      <created>1686882153497</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1686882153497</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add dependency test">
+      <created>1686882204639</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686882204639</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix minors">
+      <created>1686882281076</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686882281076</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add dummy method">
+      <created>1686882478321</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686882478321</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add dependency `opencv_python`">
+      <created>1686883471175</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1686883471175</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix minor">
+      <created>1686891458332</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1686891458332</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update `README.md`">
+      <created>1686891786240</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1686891786240</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="support python38" />
+    <MESSAGE value="update dependency" />
+    <MESSAGE value="change ci" />
+    <MESSAGE value="fix typo" />
+    <MESSAGE value="only linux" />
+    <MESSAGE value="fix `check_dependency`" />
+    <MESSAGE value="fix tree" />
+    <MESSAGE value="fix sequence" />
+    <MESSAGE value="change architecture" />
+    <MESSAGE value="fix reference" />
+    <MESSAGE value="add dependency test" />
+    <MESSAGE value="fix minors" />
+    <MESSAGE value="add dummy method" />
+    <MESSAGE value="add dependency `opencv_python`" />
+    <MESSAGE value="fix minor" />
+    <MESSAGE value="update `README.md`" />
+    <option name="LAST_COMMIT_MESSAGE" value="update `README.md`" />
+  </component>
+</project>

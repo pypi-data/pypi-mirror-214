@@ -1,0 +1,66 @@
+Index: src/pbaa/demo.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from pathlib import Path\n\nimport cv2\nimport numpy as np\nimport supervision as sv\nimport torch\nimport torchvision\nimport wget\nfrom loguru import logger\n\nfrom groundingdino.config.GroundingDINO_SwinT_OGC import __file__ as GROUNDING_DINO_CONFIG_PATH\nfrom groundingdino.util.inference import Model\nfrom segment_anything import SamPredictor, sam_model_registry\n\nHQ = False\n\n# GroundingDINO config and checkpoint\nGROUNDING_DINO_CHECKPOINT_PATH = Path(\"groundingdino_swint_ogc.pth\")\nif not GROUNDING_DINO_CHECKPOINT_PATH.exists():\n    logger.warning(\"GROUNDING_DINO_CHECKPOINT doesn't exist\")\n    logger.info(\"Start download\")\n    wget.download(\n        \"https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth\"\n    )\n\n# Segment-Anything checkpoint\nSAM_ENCODER_VERSION = \"vit_h\"\nif HQ:\n    SAM_CHECKPOINT_PATH = Path(\"sam_hq_vit_h.pth\")\n    url = \"https://blueclairvoyancestorage.blob.core.windows.net/package/sam_hq_vit_h.pth\"\nelse:\n    SAM_CHECKPOINT_PATH = Path(\"sam_vit_h_4b8939.pth\")\n    url = \"https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth\"\nif not SAM_CHECKPOINT_PATH.exists():\n    logger.warning(\"SAM_CHECKPOINT_PATH doesn't exist\")\n    logger.info(\"Start download\")\n    wget.download(url)\n\ndef segment(sam_predictor: SamPredictor, image: np.ndarray, xyxy: np.ndarray) -> np.ndarray:\n    sam_predictor.set_image(image)\n    result_masks = []\n    for box in xyxy:\n        masks, scores, logits = sam_predictor.predict(box=box, multimask_output=True)\n        index = np.argmax(scores)\n        result_masks.append(masks[index])\n    return np.array(result_masks)\n\n\ndef run(src, _prompt):\n    # Building GroundingDINO inference model\n    grounding_dino_model = Model(\n        model_config_path=GROUNDING_DINO_CONFIG_PATH, model_checkpoint_path=GROUNDING_DINO_CHECKPOINT_PATH\n    )\n\n    # Building SAM Model and SAM Predictor\n    sam_predictor = SamPredictor(sam_model_registry[SAM_ENCODER_VERSION](checkpoint=SAM_CHECKPOINT_PATH))\n\n    # Predict classes and hyper-param for GroundingDINO\n    SOURCE_IMAGE_PATH = src\n    prompt = [*map(str.lower, _prompt.keys())]\n    BOX_THRESHOLD = 0.25\n    NMS_THRESHOLD = 0.8\n\n    # load image\n    image = cv2.imread(SOURCE_IMAGE_PATH)\n\n    # detect objects\n    detections = grounding_dino_model.predict_with_classes(\n        image=image, classes=prompt, box_threshold=BOX_THRESHOLD, text_threshold=BOX_THRESHOLD\n    )\n\n    # annotate image with detections\n    box_annotator = sv.BoxAnnotator()\n    labels = [f\"{_prompt[prompt[class_id]]} {confidence:0.2f}\" for _, _, confidence, class_id, _ in detections]\n    annotated_frame = box_annotator.annotate(scene=image.copy(), detections=detections, labels=labels)\n\n    # save the annotated grounding dino image\n    cv2.imwrite(\"groundingdino_annotated_image.jpg\", annotated_frame)\n\n    # NMS post process\n    logger.info(f\"Before NMS: {len(detections.xyxy)} boxes\")\n    nms_idx = (\n        torchvision.ops.nms(torch.from_numpy(detections.xyxy), torch.from_numpy(detections.confidence), NMS_THRESHOLD)\n        .numpy()\n        .tolist()\n    )\n\n    detections.xyxy = detections.xyxy[nms_idx]\n    detections.confidence = detections.confidence[nms_idx]\n    detections.class_id = detections.class_id[nms_idx]\n\n    logger.info(f\"After NMS: {len(detections.xyxy)} boxes\")\n\n    # Prompting SAM with detected boxes\n    # convert detections to masks\n    detections.mask = segment(\n        sam_predictor=sam_predictor, image=cv2.cvtColor(image, cv2.COLOR_BGR2RGB), xyxy=detections.xyxy\n    )\n\n    # annotate image with detections\n    box_annotator = sv.BoxAnnotator()\n    mask_annotator = sv.MaskAnnotator()\n    labels = [f\"{_prompt[prompt[class_id]]} {confidence:0.2f}\" for _, _, confidence, class_id, _ in detections]\n    annotated_image = mask_annotator.annotate(scene=image.copy(), detections=detections)\n    annotated_image = box_annotator.annotate(scene=annotated_image, detections=detections, labels=labels)\n\n    # save the annotated grounded-sam image\n    cv2.imwrite(\"grounded_sam_annotated_image.jpg\", annotated_image)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pbaa/demo.py b/src/pbaa/demo.py
+--- a/src/pbaa/demo.py	(revision c71fc77589ab1517f1eeec74fc487d3fab50a492)
++++ b/src/pbaa/demo.py	(date 1686818912732)
+@@ -8,7 +8,7 @@
+ import wget
+ from loguru import logger
+ 
+-from groundingdino.config.GroundingDINO_SwinT_OGC import __file__ as GROUNDING_DINO_CONFIG_PATH
++from groundingdino.config.GroundingDINO_SwinT_OGC import __file__ as grounding_dino_config_path
+ from groundingdino.util.inference import Model
+ from segment_anything import SamPredictor, sam_model_registry
+ 
+@@ -36,6 +36,7 @@
+     logger.info("Start download")
+     wget.download(url)
+ 
++
+ def segment(sam_predictor: SamPredictor, image: np.ndarray, xyxy: np.ndarray) -> np.ndarray:
+     sam_predictor.set_image(image)
+     result_masks = []
+@@ -49,24 +50,23 @@
+ def run(src, _prompt):
+     # Building GroundingDINO inference model
+     grounding_dino_model = Model(
+-        model_config_path=GROUNDING_DINO_CONFIG_PATH, model_checkpoint_path=GROUNDING_DINO_CHECKPOINT_PATH
++        model_config_path=grounding_dino_config_path, model_checkpoint_path=GROUNDING_DINO_CHECKPOINT_PATH
+     )
+ 
+     # Building SAM Model and SAM Predictor
+     sam_predictor = SamPredictor(sam_model_registry[SAM_ENCODER_VERSION](checkpoint=SAM_CHECKPOINT_PATH))
+ 
+     # Predict classes and hyper-param for GroundingDINO
+-    SOURCE_IMAGE_PATH = src
+     prompt = [*map(str.lower, _prompt.keys())]
+-    BOX_THRESHOLD = 0.25
+-    NMS_THRESHOLD = 0.8
++    box_threshold = 0.25
++    nms_threshold = 0.8
+ 
+     # load image
+-    image = cv2.imread(SOURCE_IMAGE_PATH)
++    image = cv2.imread(src)
+ 
+     # detect objects
+     detections = grounding_dino_model.predict_with_classes(
+-        image=image, classes=prompt, box_threshold=BOX_THRESHOLD, text_threshold=BOX_THRESHOLD
++        image=image, classes=prompt, box_threshold=box_threshold, text_threshold=box_threshold
+     )
+ 
+     # annotate image with detections
+@@ -80,7 +80,7 @@
+     # NMS post process
+     logger.info(f"Before NMS: {len(detections.xyxy)} boxes")
+     nms_idx = (
+-        torchvision.ops.nms(torch.from_numpy(detections.xyxy), torch.from_numpy(detections.confidence), NMS_THRESHOLD)
++        torchvision.ops.nms(torch.from_numpy(detections.xyxy), torch.from_numpy(detections.confidence), nms_threshold)
+         .numpy()
+         .tolist()
+     )

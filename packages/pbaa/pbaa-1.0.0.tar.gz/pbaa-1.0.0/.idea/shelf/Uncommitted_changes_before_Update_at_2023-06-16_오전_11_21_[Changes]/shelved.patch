@@ -1,0 +1,79 @@
+Index: src/pbaa/core/check.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># SPDX-FileCopyrightText: 2023-present dh031200 <imbird0312@gmail.com>\n#\n# SPDX-License-Identifier: Apache-2.0\nimport importlib\nimport os\nimport platform\nimport subprocess\nimport sys\nfrom collections import defaultdict\n\nfrom loguru import logger\n\nfrom pbaa.__about__ import PYTHON_VERSION_MAJOR, PYTHON_VERSION_MINOR\n\n\ndef init():\n    sys.path.append(f\"{os.getcwd()}/GroundingDINO\")\n    sys.path.append(f\"{os.getcwd()}/segment-anything\")\n\n\ndef check_cuda():\n    import torch\n\n    return torch.cuda.is_available()\n\n\ndef get_dependencies():\n    if __name__ == \"__main__\":\n        from prerequisite import dependencies\n    else:\n        from pbaa.core.prerequisite import dependencies\n\n    return dependencies.split()\n\n\ndef python_version_check():\n    major, minor, patch = map(int, platform.python_version().split(\".\"))\n    logger.info(f\"Python Version : {major}.{minor}\")\n    return all([major == PYTHON_VERSION_MAJOR, minor == PYTHON_VERSION_MINOR])\n\n\ndef get_installed_packages():\n    packages = defaultdict(str)\n    for p in subprocess.check_output([\"pip\", \"list\"]).decode(\"utf-8\").splitlines()[2:]:\n        n, v = p.split()[:2]\n        packages[n] = v\n    return packages\n\n\ndef package_rename(_name):\n    if _name == \"opencv\":\n        _name = \"opencv-python\"\n    elif _name == \"segment_anything\":\n        _name = \"segment-anything\"\n\n    return _name\n\n\ndef dependency_check(_dependency):\n    checked = False\n    try:\n        importlib.import_module(_dependency)\n        checked = True\n    except ImportError:\n        logger.warning(f\"{_dependency} is not installed.\")\n\n    return checked\n\n\ndef install_dependency(_dependency, _version):\n    s = f\"=={_version}\" if _version else \"\"\n    logger.info(subprocess.check_output(f\"pip install --no-cache {_dependency}{s}\", shell=True).decode())\n\n\ndef install_torch_arm():\n    logger.info(subprocess.check_output(\"sudo apt-get -y update\", shell=True).decode())\n    logger.info(\n        subprocess.check_output(\n            \"sudo apt-get -y install \"\n            \"autoconf bc build-essential \"\n            \"g++-8 gcc-8 clang-8 lld-8 gettext-base gfortran-8 \"\n            \"iputils-ping libbz2-dev libc++-dev libcgal-dev libffi-dev \"\n            \"libfreetype6-dev libhdf5-dev libjpeg-dev liblzma-dev \"\n            \"libncurses5-dev libncursesw5-dev libpng-dev libreadline-dev \"\n            \"libssl-dev libsqlite3-dev libxml2-dev libxslt-dev locales \"\n            \"moreutils openssl python-openssl rsync scons python3-pip libopenblas-dev\",\n            shell=True,\n        ).decode()\n    )\n    logger.info(\n        subprocess.check_output('export \"LD_LIBRARY_PATH=/usr/lib/llvm-8/lib:$LD_LIBRARY_PATH\"', shell=True).decode()\n    )\n    logger.info(subprocess.check_output(\"pip install --upgrade protobuf\", shell=True).decode())\n    logger.info(\n        subprocess.check_output(\n            \"pip install --no-cache https://developer.download.nvidia.com/\"\n            \"compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl\",\n            shell=True,\n        ).decode()\n    )\n\n\ndef install_torchvision_arm():\n    logger.info(subprocess.check_output(\"sudo apt-get -y update\", shell=True).decode())\n    logger.info(\n        subprocess.check_output(\n            \"sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev\",\n            shell=True,\n        ).decode()\n    )\n    logger.info(\n        subprocess.check_output(\n            \"git clone --branch release/0.15 https://github.com/pytorch/vision torchvision\", shell=True\n        ).decode()\n    )\n    logger.info(\n        subprocess.check_output(\n            \"cd torchvision && export BUILD_VERSION=0.15.0 && python setup.py install --user\", shell=True\n        ).decode()\n    )\n\n\ndef install_torchvision_linux_cuda():\n    logger.info(\n        subprocess.check_output(\n            \"pip install --no-cache torchvision\",\n            shell=True,\n        ).decode()\n    )\n\n\ndef install_torchvision_linux_cpu():\n    logger.info(subprocess.check_output(\"pip uninstall -y torch\", shell=True).decode())\n    logger.info(\n        subprocess.check_output(\n            \"pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu\",\n            shell=True,\n        ).decode()\n    )\n\n\ndef install_from_git(name):\n    if name == \"groundingdino\":\n        logger.info(\n            subprocess.check_output(\n                \"pip install git+https://github.com/IDEA-Research/GroundingDINO\", shell=True\n            ).decode()\n        )\n    elif name == \"segment-anything\":\n        logger.info(\n            subprocess.check_output(\n                \"pip install git+https://github.com/facebookresearch/segment-anything\", shell=True\n            ).decode()\n        )\n    elif name == \"pycocotools\":\n        logger.info(\n            subprocess.check_output(\n                'pip install \"git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI\"',\n                shell=True,\n            ).decode()\n        )\n    else:\n        raise ModuleNotFoundError\n\n\ndef check():\n    is_mac_os, is_linux, is_windows = (platform.system() == x for x in [\"Darwin\", \"Linux\", \"Windows\"])\n    is_arm = platform.processor() == \"aarch64\"\n    _os = None\n    if is_windows:\n        _os = \"Windows\"\n    elif is_linux:\n        _os = \"Linux\"\n    elif is_mac_os:\n        _os = \"MacOS\"\n    else:\n        raise OSError\n\n    logger.info(f\"Running on {_os}\")\n\n    installed_packages = get_installed_packages()\n    dependencies = get_dependencies()\n\n    for dependency in dependencies:\n        parsed = [i for i in dependency.split(\"=\") if i]\n        if len(parsed) == 1:\n            name, version = parsed[0], None\n        else:\n            name, version = parsed\n\n        name = package_rename(name)\n        if name == \"python\":\n            python_version_check()\n        elif name == \"pip\":\n            pass\n        else:\n            if not installed_packages[name]:\n                if name == \"torch\" and is_arm:\n                    install_torch_arm()\n                elif name == \"torchvision\":\n                    if is_arm:\n                        install_torchvision_arm()\n                    elif is_linux:\n                        if check_cuda():\n                            install_torchvision_linux_cuda()\n                        else:\n                            install_torchvision_linux_cpu()\n                    elif is_windows:\n                        install_dependency(name, version)\n                elif name in [\"groundingdino\", \"segment-anything\"]:\n                    install_from_git(name)\n                else:\n                    install_dependency(name, version)\n                installed_packages = get_installed_packages()\n            else:\n                logger.info(f\"{name} : {installed_packages[name]}\")\n\n            if not installed_packages[name]:\n                raise ModuleNotFoundError\n\n\nif __name__ == \"__main__\":\n    check()\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pbaa/core/check.py b/src/pbaa/core/check.py
+--- a/src/pbaa/core/check.py	(revision 1da17b7755977ffdd88ac8c10f41f3ee49db4491)
++++ b/src/pbaa/core/check.py	(date 1686881779337)
+@@ -13,11 +13,6 @@
+ from pbaa.__about__ import PYTHON_VERSION_MAJOR, PYTHON_VERSION_MINOR
+ 
+ 
+-def init():
+-    sys.path.append(f"{os.getcwd()}/GroundingDINO")
+-    sys.path.append(f"{os.getcwd()}/segment-anything")
+-
+-
+ def check_cuda():
+     import torch
+ 
+Index: src/pbaa/core/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># SPDX-FileCopyrightText: 2023-present dh031200 <imbird0312@gmail.com>\n#\n# SPDX-License-Identifier: Apache-2.0\nfrom .check import check, init\n\ninit()\ncheck()\n\nfrom .grounded_sam import model_init, run  # noqa\n\n__all__ = \"model_init\", \"run\"\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pbaa/core/__init__.py b/src/pbaa/core/__init__.py
+--- a/src/pbaa/core/__init__.py	(revision 1da17b7755977ffdd88ac8c10f41f3ee49db4491)
++++ b/src/pbaa/core/__init__.py	(date 1686881779332)
+@@ -1,9 +1,8 @@
+ # SPDX-FileCopyrightText: 2023-present dh031200 <imbird0312@gmail.com>
+ #
+ # SPDX-License-Identifier: Apache-2.0
+-from .check import check, init
++from .check import check
+ 
+-init()
+ check()
+ 
+ from .grounded_sam import model_init, run  # noqa
+Index: .github/workflows/test.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>name: test\n\non:\n  push:\n    branches: [ main ]\n  pull_request:\n    branches: [ main ]\n\npermissions:\n  contents: read\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n\n      - uses: actions/setup-python@v4\n        with:\n          python-version: '3.8'\n\n      - name: Install dependencies\n        run: pip install .\n\n  lint:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n\n      - uses: actions/setup-python@v4\n        with:\n          python-version: '3.8'\n\n      - uses: chartboost/ruff-action@v1\n        with:\n          args: --fix\n\n      - name: Install black\n        run: pip install black\n\n      - name: Run black\n        run: black src\n\n  check_dependency:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n\n      - uses: actions/setup-python@v4\n        with:\n          python-version: '3.8'\n\n      - name: Install loguru\n        run: pip install loguru\n\n      - name: Install pbaa\n        run: pip install .\n\n      - name: Check dependency\n        run: python src/pbaa/core/check.py\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.github/workflows/test.yml b/.github/workflows/test.yml
+--- a/.github/workflows/test.yml	(revision 1da17b7755977ffdd88ac8c10f41f3ee49db4491)
++++ b/.github/workflows/test.yml	(date 1686882109156)
+@@ -56,4 +56,4 @@
+         run: pip install .
+ 
+       - name: Check dependency
+-        run: python src/pbaa/core/check.py
++        run: python tests/test_dependencies.py
+Index: tests/test_dependencies.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/test_dependencies.py b/tests/test_dependencies.py
+new file mode 100644
+--- /dev/null	(date 1686882079849)
++++ b/tests/test_dependencies.py	(date 1686882079849)
+@@ -0,0 +1,10 @@
++# SPDX-FileCopyrightText: 2023-present dh031200 <imbird0312@gmail.com>
++#
++# SPDX-License-Identifier: Apache-2.0
++from loguru import logger
++
++try:
++    import pbaa
++except Exception as E:
++    logger.error(pbaa)
++    raise ImportError

@@ -1,0 +1,59 @@
+name: test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: pip install .
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - uses: chartboost/ruff-action@v1
+        with:
+          args: --fix
+
+      - name: Install black
+        run: pip install black
+
+      - name: Run black
+        run: black src
+
+  check_dependency:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install loguru
+        run: pip install loguru
+
+      - name: Install pbaa
+        run: pip install .
+
+      - name: Check dependency
+        run: python tests/test_dependencies.py
