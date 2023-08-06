@@ -1,0 +1,42 @@
+---
+name: translate-shell
+description: Translate .po of one repo
+inputs:
+  files:
+    description: files need to be translated, support glob
+    required: false
+    default: "**/*.po"
+  target_lang:
+    description: target language, po's metadata's Language override it
+    required: false
+    default: zh-cn
+  source_lang:
+    description: source language
+    required: false
+    default: en
+  translator:
+    description: translator
+    required: false
+    default: google
+  wrapwidth:
+    description: wrap the width by polib
+    required: false
+    default: "76"
+  progress:
+    description: display progress of translation
+    required: false
+    default: "false"
+  verbose:
+    description: display diff of translation
+    required: false
+    default: "true"
+  dry_run:
+    description: don't translate
+    required: false
+    default: "false"
+branding:
+  icon: check
+  color: yellow
+runs:
+  using: docker
+  image: Dockerfile
