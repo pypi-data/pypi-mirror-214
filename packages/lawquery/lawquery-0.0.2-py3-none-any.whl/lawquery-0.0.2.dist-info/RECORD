@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lawquery/__init__.py,sha256=6e6LB05vNc5rKhF8dpub8KILYFn8VEgrVHQ06P1tAEU,43
+lawquery/engine.py,sha256=GOLOsjiMWkkS68GJp0ToIHYuJ_vJL4lAmdNm3T05cq8,4760
+lawquery/documents/bo-luat-dan-su-2015.json.gz,sha256=RdUNWAM9henZvnurn3zjcPCWNaIh79taUl5zTeIMBes,176864
+lawquery/documents/bo-luat-hang-hai-viet-nam-2015.json.gz,sha256=DqiWMhW-rpFZp0Z4LCwkAL_KeBWHJXit9H-wP1Q5IlA,147387
+lawquery/documents/bo-luat-hinh-su-2015.json.gz,sha256=4S_HA_Pj-IurCA7bjG5l0qplfQk7qOYxv_77GHuaUDg,199369
+lawquery/documents/bo-luat-lao-dong-2019.json.gz,sha256=owKO8bbg7v7998X510BTLUsmczcYUYboyNF0fLo5fsg,96965
+lawquery/documents/bo-luat-to-tung-dan-su-2015.json.gz,sha256=sPV7kQK2O4stkh0UkgR2dA70bXUepWVWQpQnj4pbL3Q,210277
+lawquery/documents/bo-luat-to-tung-hinh-su-2015.json.gz,sha256=j-oX0hmKA2J56hsl9XNnHZXhpVxuv6shR9cnI7UAUpw,228269
+lawquery-0.0.2.dist-info/LICENSE,sha256=sdhvPlTTLs7FirEe6YbIdKD9XQFjbH6llw6bX3_I2hE,1065
+lawquery-0.0.2.dist-info/METADATA,sha256=KQOJoqFXyrIuFPXXEu4yOBDa0Kv1qsgBE8hMeD2eg5Y,1937
+lawquery-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lawquery-0.0.2.dist-info/top_level.txt,sha256=EzcjrfXQIGI5GiwMdcBUPeTSr3ol1lFspKBAOcUMd0U,18
+lawquery-0.0.2.dist-info/RECORD,,
