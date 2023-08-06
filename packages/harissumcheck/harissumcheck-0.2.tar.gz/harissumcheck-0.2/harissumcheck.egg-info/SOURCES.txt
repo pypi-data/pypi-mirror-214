@@ -1,0 +1,8 @@
+setup.py
+harissumcheck/__init__.py
+harissumcheck/harissumcheck.py
+harissumcheck/number.py
+harissumcheck.egg-info/PKG-INFO
+harissumcheck.egg-info/SOURCES.txt
+harissumcheck.egg-info/dependency_links.txt
+harissumcheck.egg-info/top_level.txt
