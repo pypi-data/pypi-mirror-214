@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: NameGenderFA
+Version: 0.0.3
+Summary: Detecting the gender of Persian names with automatic cleaning of input
+Author: Amirmahdi Mohammadi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NameGenderFA
+Detecting the gender of Persian names with automatic cleaning of input
+
+__________________________________________________
+Example:
+
+from NameGenderFA import NameGenderFA
+
+gd=NameGenderFA.Gender_detector()
+
+name='Ø¹Ù„ÛŒ123! Ø¹Ø²ÛŒØ²ÛŒ'
+
+gender, cleaned_name=gd.detect(name)
+__________________________________________________
+output:
+('male', 'Ø¹Ù„ÛŒ')
+__________________________________________________
+gender: male/female/None
+
+cleaned_name: cleaned name
+
+Gender_detector.perfixes: removes some perfixes like "Ø³ÛŒØ¯", you can set it manually
+
+Gender_detector.replace_chars: replace some characters like 'ÙŠ' to 'ÛŒ' or 'Ø§Ù„Ø³Ø§Ø¯Ø§Øª' to ''
+
+also punctuations and numbers will be remove.
