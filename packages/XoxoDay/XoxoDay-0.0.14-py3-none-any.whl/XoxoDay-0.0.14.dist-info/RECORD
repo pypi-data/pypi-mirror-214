@@ -1,0 +1,17 @@
+XoxoDay/__init__.py,sha256=vxGCyd3BE0YR6RQXJF9ic7jM-5cbRgtjXD-RaKveJJ8,163
+XoxoDay/exception.py,sha256=jWE1KIFsDxIeWo2AhiCZzfJKUACk7czMbkRu0RHOHrw,577
+XoxoDay/serializer.py,sha256=uegt6yMJZdMz8wSrUwiFGXNTopqWN8Azn5MNEFKGgmA,499
+XoxoDay/helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+XoxoDay/helper/sqlite.py,sha256=LYvguV7ukwI5pgSPEPa6oUIIqFEEIdSxE-L92MOqQWI,469
+XoxoDay/helper/token.py,sha256=0GLdPrLWqzR11pj7cTJhVkb_AM08HEiYiOeeIjv86K4,947
+XoxoDay/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+XoxoDay/service/http_service.py,sha256=34K3pa_kqPCUnwehKQVpphDz3SdW-O4FUszZMSadDvI,1121
+XoxoDay/service/placeOrder.json,sha256=sZaTDMS_vbdj_9F8AqKszvLO6pinvIPJONKrs79-CKo,286
+XoxoDay/service/token_service.py,sha256=-n3YZRQOoJVxM7KlXAjdOXp_UNfuDdra3zKB5TDGmbw,1850
+XoxoDay/service/voucher.json,sha256=bjoR-PGARP3FRsGbMV7IyrxWKp4qpkWvlCh1CutMWJo,300
+XoxoDay/service/xoxoday_service.py,sha256=_4DRuhE0hyR_FlbgeNamlGGknf7sp7psDkfsXAK69kw,4588
+XoxoDay-0.0.14.dist-info/LICENSE,sha256=kMDUYTNnummGMZiwFP-gcNFZ2zLkL7HnTQG4WZHlBCc,1071
+XoxoDay-0.0.14.dist-info/METADATA,sha256=CmmG0UwMgU1H5tR3DQ72kk-scD3EXOCGPs3okU4Wg0c,2347
+XoxoDay-0.0.14.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+XoxoDay-0.0.14.dist-info/top_level.txt,sha256=uyAp4JX2srhg3iXWv5Fx0Pmc_H_fUMUwqMb3peGcJSU,8
+XoxoDay-0.0.14.dist-info/RECORD,,
