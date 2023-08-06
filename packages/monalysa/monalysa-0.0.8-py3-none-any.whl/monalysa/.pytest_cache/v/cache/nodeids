@@ -1,0 +1,9 @@
+[
+  "tests/test_basic.py::test_is_integer_num",
+  "tests/test_misc.py::test_is_binary_signal",
+  "tests/test_misc.py::test_is_integer_num",
+  "tests/test_misc.py::test_monalysa_import",
+  "tests/test_ulfunc.py::test_fulfunc_import",
+  "tests/test_ulfunc.py::test_monalysa_import",
+  "tests/test_ulfunc.py::test_ulfunc_import"
+]
