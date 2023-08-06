@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hqdragondownload
+Version: 1.1.3
+Summary: CLI para baixar hqs no site.
+Home-page: https://github.com/MrPowerUp82/hqdragondownload
+Author: MrPowerUp
+Author-email: gustavohenrique8282@hotmail.com
+License: MIT
+Project-URL: Código fonte, https://github.com/MrPowerUp82/hqdragondownload
+Keywords: CLI hqdragon HQ
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE.txt
+
+CLI para baixar hqs no site.
+python3 -m pip install hqdragondownload
+python3 -m hqdragon
