@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "magicfunc"
+version = "1.0.1"
+description = "magicfunc is a Python library that uses LLM to generate function bodies for function signatures and dynamically proxies them at runtime."
+authors = ["jawide <596929059@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "magicfunc"}]
+
+[tool.poetry.dependencies]
+python = "^3.7,>=3.7.1"
+openai = "^0.27.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
