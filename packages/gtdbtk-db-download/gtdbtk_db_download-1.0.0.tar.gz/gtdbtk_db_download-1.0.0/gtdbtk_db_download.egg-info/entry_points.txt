@@ -1,0 +1,2 @@
+[console_scripts]
+gtdbtk_db_download = gtdbtk_db_download.__main__:main

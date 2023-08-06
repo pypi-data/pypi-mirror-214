@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gtdbtk-db-download
+Version: 1.0.0
+Summary: Minimal toolkit for downloading the GTDB-Tk database to disk.
+Home-page: https://github.com/Ecogenomics/gtdbtk-db-download
+Author: Aaron Mussig
+Author-email: aaronmussig@gmail.com
+License: GNU GPLv3
+Project-URL: Bug Tracker, https://github.com/Ecogenomics/gtdbtk-db-download/issues
+Project-URL: Documentation, https://github.com/Ecogenomics/gtdbtk-db-download
+Project-URL: Source Code, https://github.com/Ecogenomics/gtdbtk-db-download
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gtdbtk-db-download
+Minimal toolkit for downloading the GTDB-Tk database to disk.
