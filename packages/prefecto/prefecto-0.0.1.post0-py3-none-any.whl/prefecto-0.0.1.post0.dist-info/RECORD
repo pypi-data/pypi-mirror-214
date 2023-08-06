@@ -1,0 +1,15 @@
+prefecto/__init__.py,sha256=jMVE6eKegndV9O0lmGwPddirpw8Rn7Pdlqw5tyj2c4w,73
+prefecto/_version.py,sha256=XqJmt6t-8P2_89j9RWkOhnRT_M6KmHIS1niC71frJ9A,503
+prefecto/concurrency.py,sha256=WD5pRcouOGGin2lkvXfrVuq9eQETFGaAKa9nPMmndU0,6994
+prefecto/logging.py,sha256=kEBGJYb_8qeWGcG0HBFottyaWYfeJHWSuZq-7bp9nyg,830
+prefecto/states.py,sha256=dJDN3ndRvYBQxJPr6O1xqyqylzjM_iWwJ-_XcyVFh9M,513
+prefecto/serializers/__init__.py,sha256=A99oMEZm-iSBtpUqe_tlk2_7bH6sS1jn42mTynqradA,286
+prefecto/serializers/core.py,sha256=qhfWACF7xmlzO5aUfQNxSxilqJgF3VeKWWJtxMhSC9c,8270
+prefecto/serializers/pandas.py,sha256=GMOXdjeGncJUpmqceTeO8oQ3M2vHCfP4cyWEY_vBWMc,3482
+prefecto/serializers/polars.py,sha256=gyBK8L_LHx12lGDgtVnN4M8beJvVc1zApfkanWI9rLE,3225
+prefecto-0.0.1.post0.dist-info/LICENSE,sha256=TApPv77b4idISWgNyVVhTwxbl274cGTgs1jOTT05Z4Y,1070
+prefecto-0.0.1.post0.dist-info/METADATA,sha256=2Pu5qMyskb_avEvhZNSNjn-Jivfmc5Lu6olpLGQUzls,2909
+prefecto-0.0.1.post0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+prefecto-0.0.1.post0.dist-info/top_level.txt,sha256=olncvCyIaZTSiREImubwFpWpQf4QwB5Mn54zlv8T7c0,9
+prefecto-0.0.1.post0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+prefecto-0.0.1.post0.dist-info/RECORD,,
