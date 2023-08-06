@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pants_backend_mdbook
+Version: 0.2.0
+Summary: A  MdBook documentation builder plugin for the Pants buildsystem.
+Keywords: pantsbuild,pants,backend,mdbook,markdown
+Author-email: Tom Solberg <me@sbg.dev>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Build Tools
+Project-URL: Changelog, https://github.com/tgolsson/pants-backends/tree/main/pants-plugins/mdbook/CHANGELOG.md
+Project-URL: Code, https://github.com/tgolsson/pants-backends/tree/main/pants-plugins/mdbook
+Project-URL: Repository, https://github.com/tgolsson/pants-backends
+Description-Content-Type: text/markdown
+
+# MDBook backend for Pants
+
+![PyPI](https://img.shields.io/pypi/v/pants-backend-mdbook?label=Latest%20release)
+
+> **Warning**
+> This plugin is in development. No stability is guaranteed! Contributions welcome.
+
+This provides a tool for building mdbook targets with pants. There is currently a single very simple rule:
+
+``` python
+md_book(
+    name="my-docs",
+    sources=["book.toml", "src/*"],
+)
+```
+
+| Argument | Meaning | Default value |
+| --- | --- | --- |
+| `name` | The target name | Same as any other target, which is the directory name |
+| `sources` | Files included when building the book | `book.toml` and the `src` directory |
+| `decsription` | A description of the target | `""` |
+| `tags` | List of tags | `[]` |
+
