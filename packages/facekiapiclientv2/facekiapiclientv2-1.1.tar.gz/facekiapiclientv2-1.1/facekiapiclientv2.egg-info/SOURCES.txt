@@ -1,0 +1,10 @@
+README.md
+setup.py
+faceki-kyc-python/__init__.py
+faceki-kyc-python/client.py
+faceki-kyc-python/test.py
+facekiapiclientv2.egg-info/PKG-INFO
+facekiapiclientv2.egg-info/SOURCES.txt
+facekiapiclientv2.egg-info/dependency_links.txt
+facekiapiclientv2.egg-info/requires.txt
+facekiapiclientv2.egg-info/top_level.txt
