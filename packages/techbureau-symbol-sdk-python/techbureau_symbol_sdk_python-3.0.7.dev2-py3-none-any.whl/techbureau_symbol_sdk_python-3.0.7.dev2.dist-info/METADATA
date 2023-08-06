@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: techbureau-symbol-sdk-python
+Version: 3.0.7.dev2
+Summary: Symbol SDK
+Home-page: https://github.com/tech-bureau-jp/symbol/tree/dev/sdk/python
+Author: Techbureau Contributors
+Author-email: development@techbureau.jp
+Maintainer: Techbureau Contributors
+Maintainer-email: development@techbureau.jp
+Requires-Python: >=3.7,<4.0
+Requires-Dist: cryptography (==41.0.1)
+Requires-Dist: mnemonic (==0.20)
+Requires-Dist: Pillow (==9.5.0)
+Requires-Dist: pynacl (==1.5.0)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: pyzbar (==0.1.9)
+Requires-Dist: qrcode (==7.4.2)
+Requires-Dist: ripemd-hash (==1.0.0)
+Requires-Dist: safe-pysha3 (==1.0.4)
+
+This is symbol project core sdk python library.
