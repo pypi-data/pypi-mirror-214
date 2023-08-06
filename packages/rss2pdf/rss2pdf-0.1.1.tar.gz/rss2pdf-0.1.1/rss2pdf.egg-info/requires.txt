@@ -1,0 +1,4 @@
+feedparser
+pypdf
+pdfkit
+argtoml

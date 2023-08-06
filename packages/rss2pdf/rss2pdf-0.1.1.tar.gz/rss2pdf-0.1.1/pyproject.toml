@@ -1,0 +1,51 @@
+
+[project]
+name = "rss2pdf"
+version = "0.1.1"
+description = ""
+dependencies = [
+    "feedparser",
+    "pypdf",
+    "pdfkit",
+    "argtoml"
+]
+dynamic = ["readme"]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://github.com/JJJHolscher/rss2pdf"
+
+[[project.authors]]
+name = "Jochem Hölscher"
+email = "a.fake@e.mail"
+
+[git]
+github = "JJJHolscher"
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rss2pdf"]
+
+[tool.setuptools.package-data]
+"*" = ["**.toml"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[tool.jupytext]
+formats = "ipynb,py"
+
+[tool.pyright]
+exclude = ".venv"
+venvPath = "."
+venv = ".venv"
