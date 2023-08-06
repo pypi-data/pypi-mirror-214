@@ -1,0 +1,4 @@
+toxicbuild-core>=0.10.0
+toxiccommon>=0.10.0
+mongomotor>=0.16.2
+aiobotocore==2.5.0

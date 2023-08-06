@@ -1,0 +1,2 @@
+[console_scripts]
+toxicmaster = toxicmaster.cmds:main
