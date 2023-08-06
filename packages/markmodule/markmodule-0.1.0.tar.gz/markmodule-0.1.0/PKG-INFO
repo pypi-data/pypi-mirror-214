@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: markmodule
+Version: 0.1.0
+Summary: Import python code in markdown as module
+Home-page: https://github.com/matthewdeanmartin/markmodule
+License: MIT
+Keywords: markdown
+Author: Matthew Martin
+Author-email: matthewdeanmartin@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mistune (<3.0.0)
+Requires-Dist: pillow
+Requires-Dist: tabulate
+Requires-Dist: typing-extensions (>=4.0.0,<5.0) ; python_full_version <= "3.9.0"
+Project-URL: Bug Tracker, https://github.com/matthewdeanmartin/markmodule/issues
+Project-URL: Change Log, https://github.com/matthewdeanmartin/markmodule/blob/main/CHANGES.md
+Project-URL: Documentation, https://github.com/matthewdeanmartin/markmodule
+Project-URL: Repository, https://github.com/matthewdeanmartin/markmodule
+Description-Content-Type: text/markdown
+
+# markmodule
+Import python from markdown files.
+
+## Markdown is a hammer, everything is a nail
+
+You can use markdown:
+
+- as a place to put module code  (markmodule, this library)
+- as a Makefile alternative
+- as a place to put scripts
+- as a place to put unit tests
+- as a string template
+
+## Usage
+
+```python
+import markmodule
+import_md("hello_module.md")
+import hello_module
+
+print(hello_module.some_function("yo!"))
+```
+
+## Development Setup
+
+```bash
+cargo install mask
+```
