@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: connect-python
+Version: 0.1.0.dev2
+Summary: Client implementation for the Connect RPC protocol
+Project-URL: Homepage, https://github.com/mattrobenolt/connect-python
+Project-URL: Bug Tracker, https://github.com/mattrobenolt/connect-python/issues
+Author-email: matt@ydekproductions.com
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: httpcore
+Requires-Dist: protobuf
+Provides-Extra: http2
+Requires-Dist: h2; extra == 'http2'
+Description-Content-Type: text/markdown
+
+# connect-python
+
+Python client implementation for the [Connect](https://connect.build) RPC protocol.
