@@ -1,0 +1,78 @@
+# LitChat 🔥 <img src="docs/images/LitChat_logo.png" align="right" width="200" />
+
+LitChat is an AI powered tool that employs OpenAI's gpt-3.5-turbo-16k model and llamaindex vector database to interact with a literature corpus. It answers questions and writes reviews based on the literature data it interacts with. It comes with a user-friendly chat interface and the ability to configure custom literature datasets. Users can also provide a flexible literature review template that will be populated by LitChat.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **GPT-3.5-turbo-16k powered:** LitChat uses OpenAI's advanced language model for high quality responses.
+- **llamaindex integration:** Utilises a vector database to query literature for the most relevant context.
+- **Chat Interface:** LitChat offers an intuitive chat interface, making it easy for users to interact with the system.
+- **Customizable Literature Datasets:** LitChat can be configured to use custom literature datasets.
+- **Literature Review Generation:** Provides a flexible template system for literature review generation.
+
+## Installation
+
+To get LitChat up and running on your local machine, follow these steps:
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/yourusername/LitChat.git
+```
+
+2. **Navigate into the cloned directory:**
+
+```bash
+cd LitChat
+```
+
+3. **Install the dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Add environment variables:**
+
+You will need to get your own API keys for OpenAI and llamaindex. Once you have them, add them to a `.env` file:
+
+```bash
+echo "OPENAI_API_KEY=your_key_here" >> .env
+echo "LLAMAINDEX_API_KEY=your_key_here" >> .env
+```
+
+5. **Run LitChat:**
+
+```bash
+python main.py
+```
+
+## Usage
+
+To interact with LitChat, simply input your question or prompt into the chat interface. If you want to generate a literature review, provide the template in the correct format.
+
+For detailed instructions, please refer to the [User Guide](USER_GUIDE.md).
+
+## Contributing
+
+Contributions to LitChat are welcomed! If you found a bug, have an idea for a feature, or think you can improve the code, we'd love to know. Please refer to the [Contributing Guide](CONTRIBUTING.md) for more information.
+
+## License
+
+LitChat is licensed under the [MIT license](LICENSE.txt).
+
+## Acknowledgements
+
+LitChat would not be possible without the amazing work by the OpenAI and llamaindex teams. This project is not affiliated with OpenAI or llamaindex.
+
+## Support
+
+For any issues, please contact [LitChat Support](mailto:litchat_support@example.com).
