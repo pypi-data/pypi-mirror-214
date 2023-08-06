@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: blin
+Version: 0.1.0
+Summary: Python client library for Blin API (natural language to API service)
+Author: lemeni.com
+License-File: license.txt
