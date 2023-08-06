@@ -1,0 +1,17 @@
+ammico/__init__.py,sha256=YB9vsBFGukqvFE8TD_oqCYvp9gAebhrdyMVKTqO09eM,989
+ammico/cropposts.py,sha256=y308r241hICL8k8sX7lq2I9sOC8PSs5meIzkl0a4WzI,13362
+ammico/display.py,sha256=Mwb41ajewKjvdDPW7sZ0aZ9z4GMMFPLgDEOB_gIlTZg,7630
+ammico/faces.py,sha256=lzLOeFkFsd-TkAMQufXnLTIpHL2XfpTrk2MDOISbsHg,10705
+ammico/multimodal_search.py,sha256=AJeDFJ1YeI2NrZaYg_CORKYOU0ohIfrQ1SzNo0K5v1I,37468
+ammico/objects.py,sha256=DaDFNjyYBGqXLLHB_o3JOID3PrlIrAIG7qWHk_JnV7M,1623
+ammico/objects_cvlib.py,sha256=cZDSLYJM3rZWKpPD7aMIZnMBMfVPLNmZ57SlFt9BdyU,1893
+ammico/summary.py,sha256=w7pHuEyT5AEOYawA5xeP3z1zg8lHVc-upvupG78ctCQ,4931
+ammico/testing_all.py,sha256=LUoTTBwuOx06fJV4W4AOCowdsFmpYaE89vTQuKlJgJQ,392
+ammico/text.py,sha256=8iZKJBolOzIbmmlCUOBzPYUCh9VGKVoLzs3SW6zfHWk,11045
+ammico/utils.py,sha256=tq29R3p1rXFW1c2AZJsNrDQRTr9grlMC-wP-292dG14,3603
+ammico-0.0.1.dist-info/LICENSE,sha256=7taolKXdfhTnEfOFEyhQdu_MvQ-BEkPmnSVHlM8XKbo,1060
+ammico-0.0.1.dist-info/METADATA,sha256=ALgNzApd9BkmM40yVFWCmVkT2bemMLDu1u78ORlUVr4,8748
+ammico-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ammico-0.0.1.dist-info/entry_points.txt,sha256=hKuBEnTHmNoYhjIgMHa3cK2MrFS6tkhaC4HLyJonVmM,79
+ammico-0.0.1.dist-info/top_level.txt,sha256=_ltOz5TatqsS-PJzJLRvIFwS2qVNk4j_Z-l-3nr-EfM,7
+ammico-0.0.1.dist-info/RECORD,,
