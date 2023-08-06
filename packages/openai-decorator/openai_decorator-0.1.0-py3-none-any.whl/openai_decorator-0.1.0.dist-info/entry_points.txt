@@ -1,0 +1,3 @@
+[console_scripts]
+add-docstring=openai_decorator.main:main
+
