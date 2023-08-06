@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hotpot-zzy"
+version = "0.2.6"
+dependencies = [
+    "numpy",
+    "pandas",
+    "thermo",
+    "cclib",
+    "tqdm",
+    'rdkit',
+    'periodictable'
+]
+
+[tool.setuptools]
+include-package-data = true
