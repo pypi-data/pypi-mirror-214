@@ -1,0 +1,33 @@
+[build-system]
+requires = ["maturin>=0.15,<0.16"]
+build-backend = "maturin"
+
+[project]
+name = "bonn"
+version = "0.1.4"
+description = "Created for ONS. Proof-of-concept mmap'd Rust word2vec implementation linked with category matching"
+readme = "README.md"
+license = { "file" = "LICENSE.md" }
+authors = [
+    { "name" = "Chris Nixon", "email" = "chris.nixon@flaxandteal.co.uk" },
+    { "name" = "Phil Weir", "email" = "phil.weir@flaxandteal.co.uk" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "nltk~=3.7",
+    "sortedcontainers~=2.4.0",
+    "elasticsearch2~=2.5.1",
+    "elasticsearch-dsl~=2.0",
+    "numpy",
+    "finalfusion",
+    "dynaconf"
+]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.maturin]
+python-source = "python"
+module-name = "bonn._bonn"

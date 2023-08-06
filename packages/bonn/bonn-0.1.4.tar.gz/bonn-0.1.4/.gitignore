@@ -1,0 +1,12 @@
+/target
+/bonn/*.so
+__pycache__
+*.egg-info
+Dockerfile
+*.whl
+*.tar.gz
+.mypy_cache
+.idea
+/cache.json
+.env
+.vscode
