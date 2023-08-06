@@ -1,0 +1,8 @@
+setup.py
+typosquatting/__init__.py
+typosquatting/typosquatting.py
+typosquatting.egg-info/PKG-INFO
+typosquatting.egg-info/SOURCES.txt
+typosquatting.egg-info/dependency_links.txt
+typosquatting.egg-info/requires.txt
+typosquatting.egg-info/top_level.txt
