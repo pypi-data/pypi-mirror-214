@@ -1,0 +1,13 @@
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[docs]
+sphinx==5.0.2
+furo
+sphinx-copybutton
+
+[tests]
+pytest
+pytest-cov
+pytest-asyncio
