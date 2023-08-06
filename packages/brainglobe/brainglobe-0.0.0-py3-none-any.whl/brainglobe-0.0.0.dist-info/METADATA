@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: brainglobe
+Version: 0.0.0
+Summary: Python-based tools for computational neuroanatomy.
+Author-email: BrainGlobe <code@adamltyson.com>
+License: BSD-3-Clause
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: napari[all]
+Requires-Dist: bg-space (>=0.5.0)
+Requires-Dist: cellfinder-core (>=0.3)
+Requires-Dist: imio
+Requires-Dist: bg-atlasapi (>=1.0.0)
+Requires-Dist: brainglobe-napari-io
+Requires-Dist: morphapi (>=0.1.3.0)
+Requires-Dist: cellfinder-napari
+Requires-Dist: brainreg-segment (>=0.0.2)
+Requires-Dist: brainreg
+Requires-Dist: brainreg-napari
+Requires-Dist: cellfinder
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: setuptools-scm ; extra == 'dev'
+
+# brainglobe
+
+The BrainGlobe Initiative exists to facilitate the development of interoperable
+Python-based tools for computational neuroanatomy.
+
+We have three aims:
+
+- Develop specialist software for specific analysis and visualisation needs,
+  such as [cellfinder](https://github.com/brainglobe/cellfinder) and
+  [brainrender](https://github.com/brainglobe/brainrender).
+
+- Develop core tools to facilitate others to build interoperable tools in Python, e.g. the
+  [BrainGlobe Atlas API](https://github.com/brainglobe/bg-atlasapi).
+
+- Build a community of neuroscientists and developers to share knowledge, build software and engage
+  with the scientific, and open-source community (e.g. by organising hackathons).
+
+The BrainGlobe project is generously supported by the Sainsbury Wellcome Centre and the Institute of Neuroscience, Technical University of Munich, with funding from the Chan Zuckerberg Initiative, Wellcome, the Gatsby Charitable Foundation and the Munich Cluster for Systems Neurology - Synergy.
+
+<p>
+<img src='https://brainglobe.info/images/SWC.png' width="150">
+<img src='https://brainglobe.info/images/TUM.png' width="150">
+<img src='https://brainglobe.info/images/CZI.png' width="150">
+</p>
