@@ -1,0 +1,2 @@
+[console_scripts]
+jira2json = jira2json.__main__:_main
