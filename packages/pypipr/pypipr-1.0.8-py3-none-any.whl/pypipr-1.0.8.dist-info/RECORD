@@ -1,0 +1,14 @@
+pypipr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypipr/console.py,sha256=KatmpMkEPRm6RlzocPgGmMDkK37ujNb31rLW-2izVNo,4037
+pypipr/engineering.py,sha256=Rug0VTQvbffno6Dzzppl4ZTnGY_I92LfeX_u5Awry8U,854
+pypipr/flow.py,sha256=guXMZJ_stOsX5EX9apb-qiqdCQgbWO0-zqUEBKPfc04,1148
+pypipr/ifunctions.py,sha256=CSbDSePbN8QDOXyynv3ZVrY6JzDN0t1bgp2iuKvCSss,9143
+pypipr/lib.py,sha256=C3_WTcRA-hnFw5cKwv2qzuu8X5B-C-SPKMi7QyNUvYQ,436
+pypipr/libstd.py,sha256=Sqzb_vH2J6VGbBBSk2SGBkrTtrseuQn2IcM2UTWB1Oc,665
+pypipr/libvendor.py,sha256=bHg3Si1t06v6SJQOt3VFFTRnHhVXUchd4aLIXGWxLrs,348
+pypipr/pypipr copy.py,sha256=C_bE8nNPORt9pjttcwEUbqVgw_5pWrC47aFHJzDlECU,42809
+pypipr/pypipr.py,sha256=Ci6xziZpCiV6sq0FHUcuIJPhSmnONqbDEiRjVu1Hb1M,332
+pypipr/uncategorize.py,sha256=RTclFU3ponWYTJSzniqjFWG63xDr9fw-gH0ml57Vhio,25749
+pypipr-1.0.8.dist-info/METADATA,sha256=DKzNpFKMXCpHHN2wSZoCjKOQpR2v7ulY8BTTOBjMCCw,652
+pypipr-1.0.8.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pypipr-1.0.8.dist-info/RECORD,,
