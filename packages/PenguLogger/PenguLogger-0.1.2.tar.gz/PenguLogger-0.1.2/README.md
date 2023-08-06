@@ -1,0 +1,1 @@
+Simple logger class that i created to use in my other projects because it was too annoying to make one every time. Also I hate the logging module.
