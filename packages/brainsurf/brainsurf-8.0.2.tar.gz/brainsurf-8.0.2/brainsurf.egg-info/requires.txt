@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+mne
+pyabf
+nolds
+pytest
+pyedflib
