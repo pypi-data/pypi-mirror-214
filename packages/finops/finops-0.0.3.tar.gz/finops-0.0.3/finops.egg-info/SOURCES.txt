@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+finops/__init__.py
+finops.egg-info/PKG-INFO
+finops.egg-info/SOURCES.txt
+finops.egg-info/dependency_links.txt
+finops.egg-info/requires.txt
+finops.egg-info/top_level.txt
+finops/data/__init__.py
+finops/data/shareholders.py
+tests/__init__.py
+tests/test_shareholders.py
