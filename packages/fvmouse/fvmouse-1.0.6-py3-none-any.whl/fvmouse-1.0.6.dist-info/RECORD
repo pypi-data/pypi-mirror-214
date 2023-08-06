@@ -1,0 +1,11 @@
+detection/__init__.py,sha256=gi3U220zPCIBfXI0Ag1Bpd49cjCl5IOc0xyb7rbBerk,477
+detection/face_detection.py,sha256=LjDt_GsgKQIgI6q_um3WIytTb9hWe1oycKPwuSXg9JA,14027
+detection/full_detection.py,sha256=a5b6vPTJXwpFg5NWYcqksdF3Z1TiAU2vw6FrWRiiBbI,12402
+detection/voice_detection.py,sha256=yU83GKR4gCn-oTM1_0KAHQpcjF7CVqlVqGYNP48tiu4,9926
+fvmouse-1.0.6.data/data/detection/data/optimized_model.eim,sha256=yDKzCM_UMeWbml_RlN7gD5jhcib-0n-KewofBRKCNDc,5792060
+fvmouse-1.0.6.data/data/detection/data/shape_predictor_68_face_landmarks.dat,sha256=-9wsuA65qnp1hnLL_doyumMA7-m25seimf9-c2sRuS8,99693937
+fvmouse-1.0.6.dist-info/METADATA,sha256=SflCVE_64I83_c4cqit6gSnXCvNDbDWO16ifnBNbGvY,2429
+fvmouse-1.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fvmouse-1.0.6.dist-info/entry_points.txt,sha256=7NGa6KDLW8IDqS1lD0Fe0dVOaHAAmO0_HfT7qSV1ioI,59
+fvmouse-1.0.6.dist-info/top_level.txt,sha256=dwpSm7t-_zoUYI18HPzfqEoScA0CVEwpLFDmQUrcLKI,10
+fvmouse-1.0.6.dist-info/RECORD,,
