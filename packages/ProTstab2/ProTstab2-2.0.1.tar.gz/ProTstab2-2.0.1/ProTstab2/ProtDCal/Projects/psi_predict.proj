@@ -1,0 +1,14 @@
+directory:
+        D:\_code\_github\ProTstab2\ProTstab2\ProtDCal\Inputs\psi-20230615
+        indices:
+Gw(U),Gs(U),W(U),Mw,HP,IP,ECI,L1-9,DHf,Z1,Z2,Z3,ISA,Xi,Ap,Pa,Pb,Pt,
+cdk:
+Energy,
+groups:
+PRT,
+invariants:
+N1,
+parameters(t_cont,s_cont,A%,HydGroup,n,bins,K,SubG):
+4.0,8.0,5.0,9.4,3.0,50,5,3
+options(decimals,harmonicMeanType,geometricMeanType,windexID,datasetType,outputOrder):
+3,0,0,-1,fasta,true

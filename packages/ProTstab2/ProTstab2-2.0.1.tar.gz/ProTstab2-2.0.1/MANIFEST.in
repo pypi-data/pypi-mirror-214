@@ -1,0 +1,2 @@
+recursive-include ProTstab2/models *
+recursive-include ProTstab2/ProtDCal *
