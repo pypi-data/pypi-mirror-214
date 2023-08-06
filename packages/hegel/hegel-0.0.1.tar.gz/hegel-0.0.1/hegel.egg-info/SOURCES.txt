@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+hegel.egg-info/PKG-INFO
+hegel.egg-info/SOURCES.txt
+hegel.egg-info/dependency_links.txt
+hegel.egg-info/top_level.txt
