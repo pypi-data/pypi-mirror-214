@@ -1,0 +1,62 @@
+[build-system]
+requires = [
+    "setuptools==61",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ammico"
+version = "0.0.1"
+description = "AI Media and Misinformation Content Analysis Tool"
+readme = "README.md"
+maintainers = [
+    { name = "Inga Ulusoy", email = "ssc@iwr.uni-heidelberg.de" },
+    { name = "Dominic Kempf", email = "ssc@iwr.uni-heidelberg.de" },
+    { name = "Petr Andriushchenko", email = "ssc@iwr.uni-heidelberg.de" },
+]
+requires-python = ">=3.8"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "bertopic<=0.14.1",
+    "cvlib",
+    "dash",
+    "dash_renderjson",
+    "deepface<=0.0.75",
+    "googletrans==3.1.0a0",
+    "google-cloud-vision",
+    "grpcio",
+    "importlib_metadata",
+    "ipython",
+    "jupyter_dash",
+    "matplotlib",
+    "numpy<=1.23.4",
+    "pandas",
+    "Pillow",
+    "pooch",
+    "protobuf",
+    "pytest",
+    "pytest-cov",
+    "Requests",
+    "retina_face",
+    "salesforce-lavis",
+    "setuptools",
+    "spacy",
+    "tensorflow",
+    "torch",
+    "transformers",
+]
+
+[project.scripts]
+ammico_prefetch_models = "ammico.utils:ammico_prefetch_models"
+
+[tool.setuptools]
+packages = ["ammico"]
+
+[tool.setuptools.package-data]
+# Include any png files found in the "data" subdirectory of "ammico"
+"ammico.data" = ["*.png"]
