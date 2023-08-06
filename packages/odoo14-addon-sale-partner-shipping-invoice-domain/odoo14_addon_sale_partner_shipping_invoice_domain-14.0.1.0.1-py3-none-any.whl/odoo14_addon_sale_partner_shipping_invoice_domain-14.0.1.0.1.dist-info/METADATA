@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-sale-partner-shipping-invoice-domain
+Version: 14.0.1.0.1
+Summary: Adds a sensible domain to the shipping and invoicing addresses on sale form view
+Home-page: https://github.com/OCA/sale-workflow
+Author: Akretion,Odoo Community Association (OCA)
+Author-email: support@odoo-community.org
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.6
+Requires-Dist: odoo14-addon-sale-commercial-partner
+Requires-Dist: odoo14-addon-web-domain-field
+Requires-Dist: odoo (<14.1dev,>=14.0a)
+
+UNKNOWN
+
