@@ -1,0 +1,16 @@
+openai
+langchain
+llama_index
+panel
+jupyter_bokeh
+bokeh<=3.1.0
+loguru
+outlines
+pyperclip
+
+[docs]
+mkdocs-material
+mkdocs
+
+[tests]
+pytest
