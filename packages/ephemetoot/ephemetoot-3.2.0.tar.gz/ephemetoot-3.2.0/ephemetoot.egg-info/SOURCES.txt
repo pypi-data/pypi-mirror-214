@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pypi-readme.md
+pyproject.toml
+ephemetoot/__init__.py
+ephemetoot/console.py
+ephemetoot/ephemetoot.py
+ephemetoot/plist.py
+ephemetoot.egg-info/PKG-INFO
+ephemetoot.egg-info/SOURCES.txt
+ephemetoot.egg-info/dependency_links.txt
+ephemetoot.egg-info/entry_points.txt
+ephemetoot.egg-info/requires.txt
+ephemetoot.egg-info/top_level.txt
+tests/test_ephemetoot.py
