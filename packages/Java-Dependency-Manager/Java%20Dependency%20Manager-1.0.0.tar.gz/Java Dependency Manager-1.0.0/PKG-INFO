@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Java Dependency Manager
+Version: 1.0.0
+Summary: Generates Dependency tree for any java project also compares dependencies between two versions, use jdm in commandline to use this tool
+Home-page: https://github.com/Nagaraju6242/javadepsmanager
+Author: Repala Nagaraju
+Author-email: nagarajrepala@gmail.com
+Description-Content-Type: text/markdown
+
+# Java Dependency Manager
+
+The Java Dependency Manager (JDM) is a powerful tool for managing dependencies in Java projects. It allows you to generate a dependency tree for any Java project and compare dependencies between two different versions.
+
+## Features
+
+- Generate a visual dependency tree for a Java project.
+- Compare dependencies between two different versions of a project.
+- Includes Search functionality 
+
+## Installation
+
+You can install JDM using pip:
+
+```
+pip install Java-Dependency-Manager
+```
+
+## Usage
+Once installed, you can use JDM through the command-line interface (CLI). Simply run the following command:
+
+```
+jdm
+```
+This will launch the Java Dependency Manager and provide you with various options and commands to work with.
+
+
+## Requirements
+
+Make sure you have the following before running jdm
+
+1. Java JDK Installed and `JAVA_HOME` added to path
+2. Apache Maven  
+
+## Contact
+For any inquiries or feedback, feel free to reach out to the author, `Repala Nagaraju`, via email at nagarajrepala@gmail.com.
