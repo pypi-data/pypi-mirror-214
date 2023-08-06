@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: GCoCF
+Version: 0.9.4
+Summary: Clash of Clans war moniting for Discord.
+Home-page: https://github.com/GILLESMaster/GCoCF
+Keywords: coc clashofclans discord
+Author: Gustavo Schip
+Author-email: gustavoschip@proton.me
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests
+Requires-Dist: jdatetime
+Requires-Dist: pytz
+Requires-Dist: python-dateutil
+Requires-Dist: click
+Requires-Dist: discord
+Requires-Dist: babel ; extra == "i18n"
+Requires-Dist: pytest ; extra == "test"
+Provides-Extra: i18n
+Provides-Extra: test
+
+# Under construction!
+
+Not done...

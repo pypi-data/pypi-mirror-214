@@ -1,0 +1,75 @@
+name: Testing
+
+on: [push, pull_request]
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.11]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3.1.4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flit
+          flit install --symlink --extras=require
+
+      - name: Run tests
+        run: |
+          pip install pytest
+          py.test test_everything.py
+
+  build-and-publish:
+    needs: [build-and-test]
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v3.1.4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flit
+
+    - name: Build package
+      run: |
+        flit build
+
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@v1.8.6
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
+
+  send-summary:
+    runs-on: ubuntu-latest
+    if: always()
+    needs:
+      - build-and-test
+      - build-and-publish
+
+    steps:
+      - name: Send Test Summary
+        uses: CalmDownVal/webhook-summary@v1
+        with:
+          token: ${{ secrets.TOKEN }}
+          url: ${{ secrets.WEBHOOK_URL }}
