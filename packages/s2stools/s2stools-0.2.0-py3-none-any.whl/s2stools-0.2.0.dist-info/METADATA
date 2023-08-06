@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: s2stools
+Version: 0.2.0
+Summary: python tools for handling s2s forecast data
+Author: Jonas Spaeth
+Author-email: jonas.spaeth@physik.uni-muenchen.de
+License: LICENSE.txt
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+python tools for handling s2s forecast data.

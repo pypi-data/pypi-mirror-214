@@ -1,0 +1,10 @@
+s2stools/__init__.py,sha256=-zQyq419LxptEC1JwAZTVYqDZx4dQhj-0J1BhlXnwNA,107
+s2stools/clim.py,sha256=c6INpEmaSn-ZFFKocCm2Vx0OiAf-8O8ptQXNlSjbwN8,5911
+s2stools/events.py,sha256=vYpcYMEB22HSGMD-I4tVqvSiAyCqE9JI98Ttnx2grkc,1974
+s2stools/plot.py,sha256=jTOyGZRTvvHclLvGJbMa8a0WIqlqFMheKUK8UUPk3wk,3145
+s2stools/process.py,sha256=sId5ygKOmEEXk2YIgyl_IFCd7uaYTj2s6hRNFRw6nNI,4182
+s2stools-0.2.0.dist-info/LICENSE,sha256=cWvP9InpKFymR2reNdK-rJjmodKDAwi3GnR7zbfuufM,1053
+s2stools-0.2.0.dist-info/METADATA,sha256=KWq8R4W0H_TC_tuPFZNL-kQB8y5XyjoJx2t-EI26C_U,376
+s2stools-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+s2stools-0.2.0.dist-info/top_level.txt,sha256=bUp9JxSIDQwDCUjK13942hytk0B4g3ob4A1xES4vzmo,9
+s2stools-0.2.0.dist-info/RECORD,,
