@@ -1,0 +1,15 @@
+markdown
+feedgenerator
+jinja2
+pygments
+
+[dev]
+build
+sphinx
+twine
+wheel
+pytest
+pytest-cov
+flake8
+mypy
+types-markdown
