@@ -1,0 +1,8 @@
+pyproject.toml
+src/pdf-docx-pic/__init__.py
+src/pdf-docx-pic/main.py
+src/pdf_docx_pic.egg-info/PKG-INFO
+src/pdf_docx_pic.egg-info/SOURCES.txt
+src/pdf_docx_pic.egg-info/dependency_links.txt
+src/pdf_docx_pic.egg-info/requires.txt
+src/pdf_docx_pic.egg-info/top_level.txt
