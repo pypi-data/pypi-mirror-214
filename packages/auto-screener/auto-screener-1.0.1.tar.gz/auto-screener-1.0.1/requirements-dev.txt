@@ -1,0 +1,10 @@
+pdoc3
+
+numpy
+pandas
+tqdm
+ccxt
+cryptofeed
+
+pyrepresent
+pymultithreading
