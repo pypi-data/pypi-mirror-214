@@ -1,0 +1,16 @@
+
+[dev]
+mypy
+flake8
+black
+pytest
+coverage
+pymarkdownlnt
+
+[local]
+werkzeug
+
+[pub]
+build
+wheel
+twine
