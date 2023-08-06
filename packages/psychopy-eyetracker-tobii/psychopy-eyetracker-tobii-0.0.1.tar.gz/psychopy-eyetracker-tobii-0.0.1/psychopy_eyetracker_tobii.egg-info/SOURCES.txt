@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+psychopy_eyetracker_tobii/__init__.py
+psychopy_eyetracker_tobii.egg-info/PKG-INFO
+psychopy_eyetracker_tobii.egg-info/SOURCES.txt
+psychopy_eyetracker_tobii.egg-info/dependency_links.txt
+psychopy_eyetracker_tobii.egg-info/requires.txt
+psychopy_eyetracker_tobii.egg-info/top_level.txt
+psychopy_eyetracker_tobii/tobii/__init__.py
+psychopy_eyetracker_tobii/tobii/calibration.py
+psychopy_eyetracker_tobii/tobii/default_eyetracker.yaml
+psychopy_eyetracker_tobii/tobii/eyetracker.py
+psychopy_eyetracker_tobii/tobii/supported_config_settings.yaml
+psychopy_eyetracker_tobii/tobii/tobiiwrapper.py
