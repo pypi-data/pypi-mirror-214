@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: yabin
+Version: 0.1.0
+Summary: CLI client for YAbin
+Author: Soham Sen
+Author-email: contact@sohamsen.me
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pycryptodome (>=3.18.0,<4.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# YABin CLI Client
+
+## Installation
+
+```bash
+pip install yabin
+```
+
