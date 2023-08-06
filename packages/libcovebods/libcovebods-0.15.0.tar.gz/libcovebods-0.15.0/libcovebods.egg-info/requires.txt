@@ -1,0 +1,15 @@
+ijson
+jsonschema<4.10
+libcove2
+packaging
+python-dateutil
+pytz
+rfc3339-validator
+rfc3987
+
+[dev]
+black==22.3.0
+flake8
+isort
+mypy
+pytest
