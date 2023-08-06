@@ -1,0 +1,10 @@
+aws_cdk/aws_rolesanywhere/__init__.py,sha256=_Ul_jEgbV2mi3hFfzKmtQuePOG3K4Lngr8T8312jEV0,69783
+aws_cdk/aws_rolesanywhere/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_rolesanywhere/_jsii/__init__.py,sha256=L7Ergo0jL7OwmoVTg1jJ-jq4oUZ2rizqE-seXIGOIWA,432
+aws_cdk/aws_rolesanywhere/_jsii/aws-rolesanywhere@1.204.0.jsii.tgz,sha256=3LAO_MbpcdVhJQ3JkCT_AGMaA_9jbKrFZBbzuOF3DFA,35769
+aws_cdk.aws_rolesanywhere-1.204.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_rolesanywhere-1.204.0.dist-info/METADATA,sha256=luJwmzLHdKba4kCsDVqd68siURXn-OcAvLQA9y-WOaY,3346
+aws_cdk.aws_rolesanywhere-1.204.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_rolesanywhere-1.204.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_cdk.aws_rolesanywhere-1.204.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_rolesanywhere-1.204.0.dist-info/RECORD,,
