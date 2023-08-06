@@ -1,0 +1,3 @@
+[console_scripts]
+luban_parser = luban_parser:main
+
