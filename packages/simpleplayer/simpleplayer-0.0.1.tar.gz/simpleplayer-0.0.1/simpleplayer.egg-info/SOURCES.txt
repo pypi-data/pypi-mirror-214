@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+simpleplayer/__init__.py
+simpleplayer/simpleplayer.py
+simpleplayer/voicegen.py
+simpleplayer.egg-info/PKG-INFO
+simpleplayer.egg-info/SOURCES.txt
+simpleplayer.egg-info/dependency_links.txt
+simpleplayer.egg-info/entry_points.txt
+simpleplayer.egg-info/requires.txt
+simpleplayer.egg-info/top_level.txt

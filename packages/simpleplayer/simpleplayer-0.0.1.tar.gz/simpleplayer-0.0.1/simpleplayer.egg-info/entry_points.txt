@@ -1,0 +1,3 @@
+[console_scripts]
+simpleplayer = simpleplayer.simpleplayer:main
+voicegen = simpleplayer.voicegen:main
