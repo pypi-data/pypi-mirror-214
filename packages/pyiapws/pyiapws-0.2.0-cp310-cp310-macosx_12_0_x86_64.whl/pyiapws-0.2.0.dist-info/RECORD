@@ -1,0 +1,11 @@
+pyiapws/__init__.py,sha256=uCp5a4kXdwWLH903kJ9HDiDxah6gYkdUphiQxoPkYxg,102
+pyiapws/g704.cpython-310-darwin.so,sha256=UJiFmjpdbhJ6ntqtRyEGMs38yz2IZRxX3Fs65V50fmU,52112
+pyiapws/libiapws.dylib,sha256=g22HUHHnQ5kru-DGMzwCOJSV4IE7LWDJrcWukBtbcxQ,3874632
+pyiapws/version.py,sha256=_GFiqph_gFjvkH6JRdQ9bO5s7lYqIHzBE_GsD80Npbg,554
+pyiapws/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyiapws/tests/test_g704.py,sha256=Bl6rmTZiXA0RX3mDL34-r0SRd_gEFJEhEG9u8LMpOpc,2138
+pyiapws-0.2.0.dist-info/LICENSE.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pyiapws-0.2.0.dist-info/METADATA,sha256=BimMrDzoicuhTXrDlZqVg7aa6QEva1gthYMy5NuVp0s,1152
+pyiapws-0.2.0.dist-info/WHEEL,sha256=zFnUaQQkvRv8QmCks5Sg4hgR6r0KOQq3q1ybu442QwY,111
+pyiapws-0.2.0.dist-info/top_level.txt,sha256=ggYw7wHwjJOaZitfcjCdg6gPpTA7Cs-gsR1M5IfF7bA,8
+pyiapws-0.2.0.dist-info/RECORD,,
