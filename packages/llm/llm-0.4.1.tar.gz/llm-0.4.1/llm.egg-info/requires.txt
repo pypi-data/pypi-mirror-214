@@ -1,0 +1,10 @@
+click
+openai
+click-default-group-wheel
+sqlite-utils
+pydantic
+PyYAML
+
+[test]
+pytest
+requests-mock
