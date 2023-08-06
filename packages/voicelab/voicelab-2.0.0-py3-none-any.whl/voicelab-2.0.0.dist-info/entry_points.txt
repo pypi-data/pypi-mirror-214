@@ -1,0 +1,3 @@
+[console_scripts]
+voicelab=voicelab.src.Voicelab.voicelab_script:main
+
