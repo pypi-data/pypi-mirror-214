@@ -1,0 +1,2 @@
+[console_scripts]
+localizer_pack_fill = localizer.scripts.localizer_pack_fill.py:main
