@@ -1,0 +1,49 @@
+html, body {
+    display: block;
+    margin: 0;
+    padding: 0 0 30px 0;
+    font-family: sans-serif;
+  
+    /* testing */
+    border: 0px solid blue;
+    box-sizing: border-box;
+
+    overflow: scroll;
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+    /* display: none; */
+}
+#root, #appWrapper {
+    display: block;
+    margin: 0;
+    padding: 0;
+  
+    /* testing */
+    border: 0px solid green;
+    box-sizing: border-box;
+}
+.hide {
+    display: none !important;
+}
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: rgba(0,0,0,0);
+    -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0,0,0,0.2);
+    -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0,0,0,0.4); 
+    -webkit-border-radius: 100px;
+}
+.scroll-bar-wrap:hover .cover-bar {
+    opacity: 0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}

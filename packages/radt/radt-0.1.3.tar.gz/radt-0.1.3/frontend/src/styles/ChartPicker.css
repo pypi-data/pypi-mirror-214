@@ -1,0 +1,165 @@
+/******************************************* CHART PICKER */
+#chartPickerWrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#chartPickerWrapper #pickChartBtn {
+    position: relative;
+    display: block;
+    width: 80%;
+    max-width: 1500px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+    color: white;
+    border: 0px solid #34495e;   
+    background-color: #34495e;
+}
+#chartPickerWrapper #pickChartBtn:hover:not([disabled]) {
+    filter: brightness(1.25);
+}
+#chartPickerWrapper #pickChartBtn:disabled {
+    cursor: default;
+    background-color: #4d4d4d;
+}
+.loadingIcon {
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#chartPickerWrapper #metricBtnList {
+    display: block;
+    max-height: 500px;
+    width: 80%;
+    max-width: 1500px;
+    margin: auto;
+    text-align: left;;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
+    border: 1px solid #34495e;
+    box-sizing: border-box;
+
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+#chartPickerWrapper #metricBtnList::-webkit-scrollbar {
+    /* display: none; */
+}
+#chartPickerWrapper .metricBtn {
+    width: 48%;
+    font-size: 16px;
+    margin: 5px 0.75% 5px 0.75%;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));
+    background-color: white;
+}
+#chartPickerWrapper .metricBtn:hover {
+    background-color: #34495e;
+    color: white;
+}
+#noData {
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+#chartsWrapper {
+    margin: 25px 0 0 0;
+}
+
+/************************************** DATA PICKER */
+#dataLogo {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-color: #f39c12;
+    border: none;
+}
+#dataLogo:hover {
+    background-color: white;
+    border: 2px solid #f39c12;
+    box-sizing: border-box;
+}
+.dataSVG {
+    width: 35px;
+    filter: invert(89%) sepia(23%) saturate(0%) hue-rotate(76deg) brightness(108%) contrast(103%);
+}
+#dataLogo:hover .dataSVG { 
+    filter: invert(63%) sepia(51%) saturate(1315%) hue-rotate(355deg) brightness(100%) contrast(91%);
+}
+
+/***************************** DOWNLOAD/UPLOAD BUTTONS */
+#downloadUploadWrapper {
+    position: fixed;
+    width: 65px;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+#downloadUploadWrapper .upload {
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 0 auto 10px auto;
+    background-color: transparent;
+    border: none;
+    background-color: #3498db;
+}
+.uploadSVG {
+    position: relative;
+    top: 13px;
+    width: 35px;
+    filter: invert(89%) sepia(23%) saturate(0%) hue-rotate(76deg) brightness(108%) contrast(103%); /* white */
+}
+#downloadUploadWrapper .upload:hover {
+    background-color: white;
+    border: 2px solid #3498db;
+    box-sizing: border-box;
+}
+#downloadUploadWrapper .upload:hover .uploadSVG {
+    filter: invert(52%) sepia(98%) saturate(1376%) hue-rotate(177deg) brightness(92%) contrast(86%); /* #3498db */
+}
+#downloadUploadWrapper .download {
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: auto;
+    background-color: transparent;
+    border: none; 
+    background-color: #f1c40f;
+}
+.downloadSVG {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    width: 35px;
+    filter: invert(89%) sepia(23%) saturate(0%) hue-rotate(76deg) brightness(108%) contrast(103%); /* white */
+}
+#downloadUploadWrapper .download:hover {
+    background-color: white;
+    border: 2px solid #f1c40f;
+    box-sizing: border-box;
+}
+#downloadUploadWrapper .download:hover .downloadSVG {
+    filter: invert(76%) sepia(79%) saturate(1490%) hue-rotate(359deg) brightness(104%) contrast(89%); /* #f39c12 */ 
+}
+#downloadUploadWrapper #hiddenUpload {
+    display: none;
+}
