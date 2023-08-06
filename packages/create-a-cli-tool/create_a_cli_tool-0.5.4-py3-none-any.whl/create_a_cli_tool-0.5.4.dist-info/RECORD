@@ -1,0 +1,12 @@
+cli/__init__.py,sha256=74WIfsfu7j5mMU2yY2BgkK8x-PekB1Cz5Si0UC1rlhY,156
+cli/cli.py,sha256=ZwUnieWX5c5cyo7mC71au4iFcoLRtQ-n_GZO_569MtA,8360
+cli/commands.py,sha256=wFe2SEFl5j7e16yCrqDZFq36RePu77G-8UmNlTtNFR0,2716
+cli/errors.py,sha256=dTmTcGnqlZwPfriG6lb_4w4sZCV3PsAduGjspPYd0PU,362
+cli/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cli/ext/__init__.py,sha256=WchaJLXOE4CLf94x26cGhdvOeBR78dx7OQ-Kx_my8Z0,21
+cli/ext/shard.py,sha256=btmUV4tWmRaGng7JC7cgvE_qiy_XD3eTbvt1iJsbtcg,918
+create_a_cli_tool-0.5.4.dist-info/LICENSE,sha256=Cq7bR4O7NGG1uJeCHoYwhuXoHu70ZcUNvAfq4sy1vU8,1076
+create_a_cli_tool-0.5.4.dist-info/METADATA,sha256=bKTPrWpLDjSGiEAcsvb1gB37f9w08P8Rlym7UqTxgdM,2044
+create_a_cli_tool-0.5.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+create_a_cli_tool-0.5.4.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+create_a_cli_tool-0.5.4.dist-info/RECORD,,
