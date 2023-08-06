@@ -1,0 +1,9 @@
+fastsession/__init__.py,sha256=DVcyBf5eVn1tsuc0z9OZ_bAABBsdhjulajjyCh-2ZTs,165
+fastsession/fast_session_middleware.py,sha256=-u3cIsh8rPIs2dQZx4gwFXWtY1wBKCHmLyQ-B46o-tE,14059
+fastsession/memory_store.py,sha256=Ag8zXtuexzfvUR053isnCwwi9KB31gM_8P57hzkcBhw,3703
+fastsession/timed_signature_serializer.py,sha256=9HOYgQtQSVJXZ6Tu6AWklwBS2CjYezpMLcd6HfU9AKw,3020
+fastsession-0.2.1.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+fastsession-0.2.1.dist-info/METADATA,sha256=B9ySzm6cbfR0nuDgWd-vuvOh0Qn2sg48AzbfTzxnrNM,3494
+fastsession-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fastsession-0.2.1.dist-info/top_level.txt,sha256=2t-w2Q6yaayTyBN08wwm-HN1ZbuZHgyyIh1rrqbWAvs,12
+fastsession-0.2.1.dist-info/RECORD,,
