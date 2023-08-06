@@ -1,0 +1,11 @@
+winnie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winnie/connection.py,sha256=Yqfo4PskSCQ4PcXsdIKpb_EjQIZqzzWPp1C53fZ3aOw,5397
+winnie/constants.py,sha256=39Tjd4PgeJCq_5B4CduakIODqKzrBr5HPPI6ntsCjRU,694
+winnie/formatting.py,sha256=KbAQrx55vj9wqgvvXSAwpM0NGNeeDjg8PK5roi3e5kM,238
+winnie/listops.py,sha256=Y6O27KrWu-F4mmxMqtxr_QBqzt3ManyGPoG6WiAp-zo,648
+winnie/resourceMask.py,sha256=Pkuuk-yKzaQA9DlbfWE7xTk2wgizIVJ3tUfnRg0nPks,457
+winnie/verification.py,sha256=oo6hK75l1tZnA_jMxjgmrGzfU1gx-dzG4SiV_s9hx_o,1220
+winnie-0.0.5.dist-info/METADATA,sha256=cNLr1kUG6xQ_sVtEeh5S0BJiICd0HxyN0oc2Mulc5jQ,989
+winnie-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+winnie-0.0.5.dist-info/top_level.txt,sha256=XC9sK95ug8yMcBO4DeXXudZIrT8132SkHEdlBIecfUg,7
+winnie-0.0.5.dist-info/RECORD,,
