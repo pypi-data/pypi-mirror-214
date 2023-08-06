@@ -1,0 +1,11 @@
+h3r-0.1.0.dist-info/RECORD,,
+h3r-0.1.0.dist-info/WHEEL,sha256=SgVylnh_6Rlb06CxTNb1ia0DXCzuM5HrLBmqAFlSdXw,107
+h3r-0.1.0.dist-info/METADATA,sha256=fcFFoew5oYbfNZXn4nMupZcdWLIERkiW2vpdTpKovoA,519
+h3r/path_like.py,sha256=uPpdpxkB6XPCRIeXRmTUv9aNfEpIO4zyl-7CzaZPdNI,72
+h3r/h3result.py,sha256=SdqzyzF-J8zNEQUnMzjm9V7E42CYtBd6oGkq8TltJ7c,1470
+h3r/error.py,sha256=VvRfa-wSLTX-0yZqxfCYZ0HFOQrngwxaBy6acJNVfo8,237
+h3r/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h3r/interface.h,sha256=IQQTsLYTpFussE7FM_v8sBZ4pvc6bxXhCmpFyektoL0,820
+h3r/cffi.cpython-310-darwin.so,sha256=TN06bwEGKKiwtw-vEtNGKpLa5yWj-P2hiPwsCuWh8Zs,59280
+h3r/lib/libh3r.0.dylib,sha256=Yx8H5S1Kf84EkMm_tg1blFqNWExTVqb_GjjAlrBaVSY,73280
+h3r/lib/liblip.0.dylib,sha256=dfaB2cYsu1TCI3BG3_VZV6bqPK2gMMGFTkPjh5oc0Oo,79552
