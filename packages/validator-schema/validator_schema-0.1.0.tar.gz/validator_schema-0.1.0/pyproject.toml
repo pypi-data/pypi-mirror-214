@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "validator-schema"
+version = "0.1.0"
+description = "Um validador para schema json usado em APIs Rest"
+authors = ["Marcos Felipe <plimo263@gmail.com>"]
+readme = "README.md"
+packages = [{include = "validator_schema"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+jsonschema = "^4.17.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
