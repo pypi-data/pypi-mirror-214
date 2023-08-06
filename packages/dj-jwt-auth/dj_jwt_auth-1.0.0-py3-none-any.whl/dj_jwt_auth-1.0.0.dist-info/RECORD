@@ -1,0 +1,14 @@
+django_jwt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_jwt/middleware.py,sha256=irnPsbYMkbWJkO7Tnq2Lo3vJB1yeKFWyn7IYikWHA5E,1092
+django_jwt/settings.py,sha256=0VS9-91JGzPE5tBH7mroVn1dQzidkmQIiJcH8214jgo,981
+django_jwt/user.py,sha256=Mfg02xhFPVD_gyQvIoQjFtSOXR0_lmoqGHvupVqKbpE,3064
+django_jwt/utils.py,sha256=CeayoLBrrDGKWHbebvVzzBwA3jPmH9z_OeLYGBJoOqY,1482
+django_jwt/views.py,sha256=44viU0eu9DQAwqJrcTYzDyjFWFG35CcpVz5dQMgnwFE,200
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=K5e0QCgyZeLLHS6i3KRMQHooql47g7qqni7f9tKQrIY,251
+tests/test.py,sha256=35jQslb7JWVKKZ6N-8OE_ih3wPCgTYmEMCQSTl9gvaU,5139
+tests/urls.py,sha256=D5FhDSVAudurkrpkCZZPnDvgXSgifwFVB3nAlYBg7uQ,212
+dj_jwt_auth-1.0.0.dist-info/METADATA,sha256=pX0-0OkgIKgBBR2Ly6WBvHWz9UQtGcEzF60OQOXcqt4,2855
+dj_jwt_auth-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dj_jwt_auth-1.0.0.dist-info/top_level.txt,sha256=58O7TdK-yECZcbmPc52KNlBFpjIUlENuZubCxaSOxus,17
+dj_jwt_auth-1.0.0.dist-info/RECORD,,
