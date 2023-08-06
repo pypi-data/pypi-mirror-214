@@ -1,0 +1,26 @@
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unitcell"
+authors = [
+{ name="Angel Yanguas-Gil"}]
+version = "0.1.0"
+description = "Utility package to work and operate on periodic lattices an crystal structures"
+readme = "README.md"
+keywords = ["crystal structure", "unit cell", "periodic lattice"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Utilities"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/anglyan/unitcell.git"
+
