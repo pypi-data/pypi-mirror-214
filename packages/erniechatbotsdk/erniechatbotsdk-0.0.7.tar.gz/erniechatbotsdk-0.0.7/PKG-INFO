@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: erniechatbotsdk
+Version: 0.0.7
+Summary: Baidu Wenxin word api package
+Author: Tk
+Author-email: tkzhu66@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 百度文心一言聊天API简单封装
+这是一个针对百度文心一言api的简单封装，主要是针对
+ErnieBot请求地址：https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions
+ErnieBot-turbo请求地址： https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/eb-instant
+的简单封装
+
+# 安装
+使用pip进行安装
+```
+pip install erniechatbotsdk
+```
+# 使用教程
+## 首先构建请求参数
+```
+class RequestBody:
+    def __init__(self,messages,temperature=None,top_p=None,penalty_score=None,stream=None,user_id=None):
+        self.messages=messages
+        self.temperature = temperature
+        self.top_p=top_p
+        self.penalty_score=penalty_score
+        self.stream=stream
+        self.user_id=user_id
+
+#messages是一个包含Message的列表
+
+class Message:
+    def __init__(self,role,content):
+        self.role = role
+        self.content = content
+```
+## 请求示例
+```
+from erniebot import Erniebot
+if __name__ == '__main__':
+    role = "user"
+    content = "介绍一下你自己"
+    message = Message(role,content)
+    #这块可以定义多个message
+    messages=[]
+    messages.append(message)
+
+    requestBody = RequestBody(messages)
+    enrniebot = Erniebot(apikey,secretkey)
+    resp = enrniebot.chat(requestBody,"erniebot")
+    print(resp)
+```
+
+# 输出示例
+```
+{
+  "id": "as-bcmt5ct4iy",
+  "object": "chat.completion",
+  "created": 1680167072,
+  "result": "您好，我是百度研发的知识增强大语言模型，中文名是文心一言，英文名是ERNIE Bot。我能够与人对话互动，回答问题，协助创作，高效便捷地帮助人们获取信息、知识和灵感。",
+  "need_clear_history": false,
+  "usage": {
+    "prompt_tokens": 7,
+    "completion_tokens": 67,
+    "total_tokens": 74
+  }
+}
+```
+
