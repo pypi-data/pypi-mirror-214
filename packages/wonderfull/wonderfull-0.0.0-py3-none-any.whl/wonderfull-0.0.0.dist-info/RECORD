@@ -1,0 +1,15 @@
+wonderfull/__init__.py,sha256=Nc3JnqkTXe6MGzd_lHUD9sydacac_TfK6ImIiKy09ms,37
+wonderfull/abstractions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wonderfull/abstractions/agents.py,sha256=pDo4FcaK-DHCH-NOJIFj1gcVItCDUEPGky_ulva9dqk,245
+wonderfull/abstractions/envs.py,sha256=7qubb8gpafpiG0WG_wtrTLcfwwVscyKw4o-aXVjDn5c,1625
+wonderfull/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wonderfull/envs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wonderfull/envs/implementations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wonderfull/envs/implementations/sequential.py,sha256=Q19C9psJ4P24uIcmx5W9JGoz9UivYD2S6A25XyAwj9U,1825
+wonderfull/memories/__init__.py,sha256=Uq5CSz9sSXrOKAAjHPiMxVsPOoC0snyijZoo8NtT2ds,480
+wonderfull/trainers.py,sha256=GNWWimjEZGV-cy7mlfsae0kgeERSNF2Dou_QGMWeJ7g,24
+wonderfull/utils/__init__.py,sha256=H3PmiXbjS0F_9FAJiNtZnweD53UMvAc5D-24cl8qKUM,431
+wonderfull-0.0.0.dist-info/LICENSE.md,sha256=_lmQSpFfbO_l-MKd2P5GSWfX7i4QM4gu_KS2QD_Tdl0,11346
+wonderfull-0.0.0.dist-info/METADATA,sha256=n5dAj64oN95KRYGBYvb9yjr_LGuhxtlU1hVUhcmUyK8,1127
+wonderfull-0.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+wonderfull-0.0.0.dist-info/RECORD,,
