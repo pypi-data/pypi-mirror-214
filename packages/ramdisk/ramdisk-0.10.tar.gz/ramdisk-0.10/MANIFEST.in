@@ -1,0 +1,5 @@
+include ramdisk/requirements.txt
+include ramdisk/thirdparty.json
+include ramdisk/README.MD
+include ramdisk/files.cab
+include ramdisk/install_imdisk.bat
