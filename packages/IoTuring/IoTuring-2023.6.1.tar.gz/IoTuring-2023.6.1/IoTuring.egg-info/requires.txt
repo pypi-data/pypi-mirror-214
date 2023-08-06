@@ -1,0 +1,12 @@
+paho-mqtt
+psutil
+PyYAML
+importlib_metadata
+requests
+
+[:sys_platform == "darwin"]
+PyObjC
+IoTuring-applesmc
+
+[:sys_platform == "win32"]
+tinyWinToast
