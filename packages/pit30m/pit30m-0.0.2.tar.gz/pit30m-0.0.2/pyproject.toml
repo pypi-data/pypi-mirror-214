@@ -1,0 +1,92 @@
+[tool.poetry]
+name = "pit30m"
+version = "0.0.2"
+description = "Development kit for the Pit30M large scale localization dataset"
+authors = ["Andrei Bârsan"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/pit30m/pit30m"
+classifiers = [
+    "Framework :: Robot Framework :: Library",
+    "Framework :: Robot Framework :: Tool",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fsspec = ">=2022"     # seamlessly talk to local or remote (S3) filesystems
+s3fs = "*"            # provides S3 for fsspec
+geopandas = ">=0.10"  # handle geospatial data, e.g. for partitions
+pygeos = ">=0.12"     # backend for geopandas
+numpy = ">=1.20"      # numerical computation, array operations
+fire = ">=0.5"        # helper for command-line interface programs
+joblib = "*"          # parallelization
+pillow = ">=9"        # image processing
+tqdm = ">=4"          # progress bars
+lz4 = ">=4"           # LZ4 compression, similar to gzip but faster, great for loading lots of data
+matplotlib = ">=3.4"  # plotting, visualization, etc.
+pyyaml = ">=5"        # load YAML data, e.g., some of our calibration files
+utm = ">=0.7.0"       # additional geospatial computations concerning UTM projections
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7"
+pytest-mock = "*"
+ipdb = "^0.13"
+black = "^23.1"
+pytest-xdist = "^3.2"
+# TODO(andrei): Special group and special build for these optional deps.
+torch = "^1.13"
+torchdata = "^0.5"
+pylint = "^2.16"
+boto3 = "^1"
+ruff = "^0.0.270"
+mypy = "^1.3.0"
+types-pyyaml = "^6.0.12.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint]
+max-line-length = 120
+# Exceptions for invalid names
+good-names = "f,fs,e,err"
+# Disable missing docstring warnings
+disable = "missing-function-docstring,missing-module-docstring,missing-class-docstring"
+
+[tool.black]
+line-length = 120 # override black's default line-length
+target-version = ['py38']
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | venv
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
+
+[tool.ruff]
+line-length = 120 # consistent witth black
