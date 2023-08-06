@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Algorithm-Selection
+Version: 0.0.11
+Summary: Functions dedicated to The Algoritm Selection problem with a focus on a metalearning approach
+Home-page: https://github.com/Junior-Prado/Algorithm-Selection
+Author: valfridojr
+Author-email: juniorprado@alu.ufc.br
+License: MIT License
+Keywords: metalearning
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: os
+
+readme.MD
