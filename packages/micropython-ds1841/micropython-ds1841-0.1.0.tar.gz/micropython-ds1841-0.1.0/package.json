@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_ds1841/__init__.py", "github:jposada202020/MicroPython_DS1841/micropython_ds1841/__init__.py"],
+    ["micropython_ds1841/i2c_helpers.py", "github:jposada202020/MicroPython_DS1841/micropython_ds1841/i2c_helpers.py"],
+    ["micropython_ds1841/ds1841.py", "github:jposada202020/MicroPython_DS1841/micropython_ds1841/ds1841.py"]
+  ],
+  "version": "0.1"
+}
