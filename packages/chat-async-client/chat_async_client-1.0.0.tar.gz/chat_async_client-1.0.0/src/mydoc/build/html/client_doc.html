@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Client Module &#8212; документация async_chat </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="Server Module" href="server_doc.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="client-module">
+<h1>Client Module<a class="headerlink" href="#client-module" title="Permalink to this heading">¶</a></h1>
+<p>Клиентское приложение для обмена сообщениями. Поддерживает отправку сообщений пользователям. Использует механизм
+сквозного шифрования, с помощью алгоритма шифрования RSA для публичных и приватных ключей и с помощью алгоритма AES
+для симметричных ключей. В папке «secret» хранятся публичные и приватные ключи пользователей</p>
+<p>Использование</p>
+<p>Модуль поддерживает аргументы командной строки:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>-p - Порт, к которому будет подключаться клиент</p></li>
+<li><p>-a - Адрес, к которому будет подключаться клиент</p></li>
+</ol>
+</div></blockquote>
+<p>Примеры использования:</p>
+<p>Запуск клиента к серверу на порту 8000 с адресом «localhost»:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>client.py
+</pre></div>
+</div>
+<p>Запуск клиента к серверу на выбранном порту и адресе:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>client.py<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span><span class="w"> </span>-a<span class="w"> </span><span class="m">172</span>.107.198.234
+</pre></div>
+</div>
+<section id="module-frontend.client_ui">
+<span id="client-ui-py"></span><h2>client_ui.py<a class="headerlink" href="#module-frontend.client_ui" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_ui.AdminWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_ui.</span></span><span class="sig-name descname"><span class="pre">AdminWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_ui.AdminWidget" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Класс AdminWidget является ui, который отображает панель администратора</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_ui.LoginWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_ui.</span></span><span class="sig-name descname"><span class="pre">LoginWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_ui.LoginWidget" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Класс LoginWidget является ui, который отображает окно авторизации пользователя</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_ui.MessageUserWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_ui.</span></span><span class="sig-name descname"><span class="pre">MessageUserWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_ui.MessageUserWidget" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Класс MessageUserWidget является ui, который отображает окно переписки с пользователем</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_ui.MessageWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_ui.</span></span><span class="sig-name descname"><span class="pre">MessageWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_ui.MessageWidget" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_ui.RegisterWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_ui.</span></span><span class="sig-name descname"><span class="pre">RegisterWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_ui.RegisterWidget" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Класс RegisterWidget является ui, который отображает окно регистрации пользователя</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_ui.SearchContactWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_ui.</span></span><span class="sig-name descname"><span class="pre">SearchContactWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_ui.SearchContactWidget" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Класс SearchContactWidget является ui, который осуществляет поиск контактов в базе данных сервера и клиента</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_ui.ServerGUI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_ui.</span></span><span class="sig-name descname"><span class="pre">ServerGUI</span></span><a class="headerlink" href="#frontend.client_ui.ServerGUI" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Класс ServerGUI является основным ui, который связывает весь функционал других модулей ui</p>
+</dd></dl>
+
+</section>
+<section id="module-frontend.client">
+<span id="client-py"></span><h2>client.py<a class="headerlink" href="#module-frontend.client" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client.ClientRecipient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client.</span></span><span class="sig-name descname"><span class="pre">ClientRecipient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client.ClientRecipient" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="frontend.client.ClientRecipient.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client.ClientRecipient.run" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method representing the thread’s activity.</p>
+<p>You may override this method in a subclass. The standard run() method
+invokes the callable object passed to the object’s constructor as the
+target argument, if any, with sequential and keyword arguments taken
+from the args and kwargs arguments, respectively.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client.ClientSender">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client.</span></span><span class="sig-name descname"><span class="pre">ClientSender</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client.ClientSender" title="Ссылка на это определение">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="frontend.client.ClientSender.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client.ClientSender.run" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Method representing the thread’s activity.</p>
+<p>You may override this method in a subclass. The standard run() method
+invokes the callable object passed to the object’s constructor as the
+target argument, if any, with sequential and keyword arguments taken
+from the args and kwargs arguments, respectively.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.client.authorization">
+<span class="sig-prename descclassname"><span class="pre">frontend.client.</span></span><span class="sig-name descname"><span class="pre">authorization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">login</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client.authorization" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Фукнция авторизирует пользователя на сервере. Создается приватный и публичный ключ пользователя. Приватный ключ
+сохраняется в файл. Публичный сохраняется в базу данных клиента. Также функция отправляет запрос на получение
+публичного ключа сервера и сохраняет его в базу данных.
+:param login:
+:param password:
+:param server:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.client.registration">
+<span class="sig-prename descclassname"><span class="pre">frontend.client.</span></span><span class="sig-name descname"><span class="pre">registration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">login</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client.registration" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Функция регистрирует новый аккаунт для пользователя. Генерируется приватный, публичный и симметричный ключ
+пользователя для шифрования данных и дальнейшей их передачи. Данные пока никуда не сохраняются.
+:param server:
+:param login:
+:param password:
+:return:</p>
+</dd></dl>
+
+</section>
+<section id="module-frontend.metaclasses">
+<span id="metaclasses-py"></span><h2>metaclasses.py<a class="headerlink" href="#module-frontend.metaclasses" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-frontend.utils_client">
+<span id="utils-client-py"></span><h2>utils_client.py<a class="headerlink" href="#module-frontend.utils_client" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.deserialization_message">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">deserialization_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.deserialization_message" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Десериализация сообщения</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.encrypted_symmetric_key">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">encrypted_symmetric_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sym_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.encrypted_symmetric_key" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Функция шифрует сообщение. Принимает сообщение и симметричный ключ в строковом виде. Возвращает шифрованное
+сообщение в бинарном виде
+:param message:
+:param sym_key:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.generic_public_and_privat_key_client">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">generic_public_and_privat_key_client</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.generic_public_and_privat_key_client" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Генерируем публичный и приватный ключи для шифровки сообщения и возвращаем их в строковом формате</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.generic_symmetric_key_client">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">generic_symmetric_key_client</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.generic_symmetric_key_client" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Фукнция генерирует симметричный ключ для шифровки сообщения. Возвращает его в строковом формате</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.get_public_key">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">get_public_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.get_public_key" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Сериализуем сообщение и отправляем запрос на получение публичного ключа сервера.
+Получаем и возвращаем публичный ключ сервера в строковом формате</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.init_socket_tcp">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">init_socket_tcp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.init_socket_tcp" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Инициализация сокета</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.install_param_in_socket_client">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">install_param_in_socket_client</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.install_param_in_socket_client" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Устанавливаем введенные пользователем параметры подключения к серверу/создания сервера</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.serialization_message">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">serialization_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.serialization_message" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Сериализуем сообщение</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="frontend.utils_client.sys_param_reboot">
+<span class="sig-prename descclassname"><span class="pre">frontend.utils_client.</span></span><span class="sig-name descname"><span class="pre">sys_param_reboot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#frontend.utils_client.sys_param_reboot" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Обновление параметров командной строки</p>
+</dd></dl>
+
+</section>
+<section id="module-frontend.variables_client">
+<span id="variables-client-py"></span><h2>variables_client.py<a class="headerlink" href="#module-frontend.variables_client" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-frontend.client_database.crud">
+<span id="crud-py"></span><h2>crud.py<a class="headerlink" href="#module-frontend.client_database.crud" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-frontend.client_database.model">
+<span id="model-py"></span><h2>model.py<a class="headerlink" href="#module-frontend.client_database.model" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_database.model.Contacts">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_database.model.</span></span><span class="sig-name descname"><span class="pre">Contacts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_database.model.Contacts" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_database.model.History">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_database.model.</span></span><span class="sig-name descname"><span class="pre">History</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_database.model.History" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="frontend.client_database.model.ServerInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">frontend.client_database.model.</span></span><span class="sig-name descname"><span class="pre">ServerInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#frontend.client_database.model.ServerInfo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>В этой модели хранятся публичные ключи сервера и пользователя</p>
+</dd></dl>
+
+</section>
+<section id="module-frontend.log.log_client.client_log_config">
+<span id="client-log-config-py"></span><h2>client_log_config.py<a class="headerlink" href="#module-frontend.log.log_client.client_log_config" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">async_chat</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Содержание:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="server_doc.html">Server Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Client Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-frontend.client_ui">client_ui.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-frontend.client">client.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-frontend.metaclasses">metaclasses.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-frontend.utils_client">utils_client.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-frontend.variables_client">variables_client.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-frontend.client_database.crud">crud.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-frontend.client_database.model">model.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-frontend.log.log_client.client_log_config">client_log_config.py</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="server_doc.html" title="предыдущая глава">Server Module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, mixeil.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/client_doc.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

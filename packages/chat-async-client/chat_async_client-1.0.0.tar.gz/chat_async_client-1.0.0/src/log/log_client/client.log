@@ -1,0 +1,141 @@
+2023-06-14 12:20:59,935 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-14 12:20:59,935 INFO client.py Сокет инициализирован
+2023-06-14 12:20:59,935 INFO client.py Подключение к серверу...
+2023-06-14 12:21:01,042 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-14 12:21:01,042 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1, порт: 56288, имя пользователя: vlad@mail.ru
+2023-06-14 12:21:01,071 INFO client.py Сообщение создано
+2023-06-14 12:21:02,066 INFO client.py Ответ получен. 202 []
+2023-06-14 12:21:02,068 DEBUG client.py Запущен процесс
+2023-06-14 12:21:02,068 DEBUG client.py Запущен процесс
+2023-06-14 12:21:03,326 INFO client.py Сообщение создано
+2023-06-14 12:21:04,098 INFO client.py Ответ получен. 200 Пользователь вышел
+2023-06-14 12:21:04,098 INFO client.py Пользователь vlad@mail.ru вышел
+2023-06-15 17:49:41,414 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 17:49:41,416 INFO client.py Сокет инициализирован
+2023-06-15 17:49:41,416 INFO client.py Подключение к серверу...
+2023-06-15 17:51:06,754 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 17:51:06,754 INFO client.py Сокет инициализирован
+2023-06-15 17:51:06,754 INFO client.py Подключение к серверу...
+2023-06-15 17:51:19,209 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 17:51:19,209 INFO client.py Сокет инициализирован
+2023-06-15 17:51:19,209 INFO client.py Подключение к серверу...
+2023-06-15 17:51:21,336 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-15 17:51:34,002 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 17:51:34,002 INFO client.py Сокет инициализирован
+2023-06-15 17:51:34,002 INFO client.py Подключение к серверу...
+2023-06-15 17:51:36,171 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-15 17:51:46,967 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 17:51:46,967 INFO client.py Сокет инициализирован
+2023-06-15 17:51:46,967 INFO client.py Подключение к серверу...
+2023-06-15 17:51:48,131 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-15 17:51:48,131 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1, порт: 50536, имя пользователя: mixeil@mail.ru
+2023-06-15 17:51:48,237 INFO client.py Сообщение создано
+2023-06-15 17:51:49,152 INFO client.py Ответ получен. 202 []
+2023-06-15 17:51:49,160 DEBUG client.py Запущен процесс
+2023-06-15 17:51:49,160 DEBUG client.py Запущен процесс
+2023-06-15 17:51:56,433 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 17:51:56,433 INFO client.py Сокет инициализирован
+2023-06-15 17:51:56,433 INFO client.py Подключение к серверу...
+2023-06-15 17:51:57,552 INFO client.py Соединение с сервером не установлено. Ответ сервера: 401
+2023-06-15 17:52:08,023 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 17:52:08,023 INFO client.py Сокет инициализирован
+2023-06-15 17:52:08,023 INFO client.py Подключение к серверу...
+2023-06-15 17:52:09,196 INFO client.py Соединение с сервером не установлено. Ответ сервера: 409
+2023-06-15 17:52:25,864 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 17:52:25,864 INFO client.py Сокет инициализирован
+2023-06-15 17:52:25,864 INFO client.py Подключение к серверу...
+2023-06-15 17:52:27,033 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-15 17:52:27,033 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1, порт: 41900, имя пользователя: vlad@mail.ru
+2023-06-15 17:52:27,098 INFO client.py Сообщение создано
+2023-06-15 17:52:28,062 INFO client.py Ответ получен. 202 []
+2023-06-15 17:52:28,067 DEBUG client.py Запущен процесс
+2023-06-15 17:52:28,067 DEBUG client.py Запущен процесс
+2023-06-15 17:52:41,582 INFO client.py Сообщение создано
+2023-06-15 17:52:42,128 INFO client.py Ответ получен. 202 ['vlad@mail.ru']
+2023-06-15 17:52:52,428 INFO client.py Сообщение создано
+2023-06-15 17:52:53,207 INFO client.py Ответ получен. 200 Пользователь добавлен в контакты
+2023-06-15 17:52:53,238 INFO client.py Ответ получен. 200 Пользователь добавлен в контакты
+2023-06-15 17:52:54,349 INFO client.py Ответ получен. 200 Симметричный ключ получен
+2023-06-15 17:52:54,397 INFO client.py Ответ получен. 200 Симметричный ключ получен
+2023-06-15 17:53:05,779 INFO client.py Ответ получен. 200 Симметричный ключ получен
+2023-06-15 17:53:07,453 INFO client.py Сообщение создано
+2023-06-15 17:53:07,931 INFO client.py Ответ получен. 202 Сообщения отправлены
+2023-06-15 17:53:07,931 INFO client.py Ответ получен. 202 []
+2023-06-15 17:54:19,974 INFO client.py Сообщение создано
+2023-06-15 17:54:20,106 INFO client.py Ответ получен. 200 Сообщение доставлено
+2023-06-15 17:54:20,107 INFO client.py Ответ получен. 200 {'message': 'QAQew9KnCsJIdu07Q167DYSVFvNWLQH6Zgq8J0585zsaNhpxwMRykuBl5+wW0nxlMkYJahf8r8Znr9WjyyYVF2Me2qX/fS4UsJOydujvg0d2iITB1vUlVDSoEtBHODyaxcB9ah4uft/ZBjTryI86T5wBHuQOM3j8BJthnmjxFHCU/j+rrt3JQZ8YF8+u0qk+H5UF2Bafig0/bdxx0j14zYFdv+7HDU8Zp/fjEucM+Ak7e0aTAvNx0XaFFSqM0Ec+LZO+JNJH2Tk8Gqwogba6omG5cqcxkh3hQk5yWTEhM9buHx+NZgHd0FbuPcpBoc1d9KV4iTZxGhiqg5sfJMJKtGqrsdc4Pjfd4YyWLBOXmq9MTi/vCg==', 'symmetric_key': 'Pzppytyh10PXBL+mXATHPCWj1ruZKdTNk/Pa36WAb/InVjdZWr/VHTpxrj44Po5D0RQENWQy6yZqls2yk+yzlWcam+KBc8bl3fSJrIk1WC80aA1gmwDg/qwZKYilmv7NHKT6Nr4fh8lTmLCt7ZER7AFH4LreK7TJdF2skfq4TFE=', 'nonce': 'FUAilmasJVYdyWM50q8Ajw=='}
+2023-06-15 17:54:30,230 INFO client.py Ответ получен. 200 Симметричный ключ получен
+2023-06-15 17:54:32,121 INFO client.py Сообщение создано
+2023-06-15 17:54:32,327 INFO client.py Ответ получен. 202 Сообщения отправлены
+2023-06-15 17:54:32,327 INFO client.py Ответ получен. 202 [{'message': 'QAQew9KnCsJIdu07Q167DYSVFvNWLQH6Zgq8J0585zsaNhpxwMRykuBl5+wW0nxlMkYJahf8r8Znr9WjyyYVF2Me2qX/fS4UsJOydujvg0d2iITB1vUlVDSoEtBHODyaxcB9ah4uft/ZBjTryI86T5wBHuQOM3j8BJthnmjxFHCU/j+rrt3JQZ8YF8+u0qk+H5UF2Bafig0/bdxx0j14zYFdv+7HDU8Zp/fjEucM+Ak7e0aTAvNx0XaFFSqM0Ec+LZO+JNJH2Tk8Gqwogba6omG5cqcxkh3hQk5yWTEhM9buHx+NZgHd0FbuPcpBoc1d9KV4iTZxGhiqg5sfJMJKtGqrsdc4Pjfd4YyWLBOXmq9MTi/vCg==', 'from_user': 'mixeil@mail.ru', 'to_user': 'vlad@mail.ru', 'date': '15-06-2023 17-28-35', 'hash_message': '255202445490978002228241344564097825971', 'nonce': 'FUAilmasJVYdyWM50q8Ajw=='}]
+2023-06-15 17:54:45,708 INFO client.py Сообщение создано
+2023-06-15 17:54:46,456 INFO client.py Ответ получен. 200 Сообщение доставлено
+2023-06-15 17:54:46,458 INFO client.py Ответ получен. 200 {'message': '0IwoMlROAitWZmVQgMr6Mtv8RT7JCivMxMpnNCtikM6dAhO97BAAyxV//SyxT34c0qveL8OexEtrYNmwVYXUpHFxs25N7g9Xagm27M/PWRsfFp3QlYAiVBjgQNrVpdIHqcUCLCa+Zpma4JHNI0SYR59B+Vrh/e702ZgoHXlnQ9QAhkPVtjgGNKjt10LBI2a5Tp5Z1TL4ru3XMpkbFyxuexvvfinp0KPD5OkM5jeg1BRKadHgGMtiEG2TaZN0h0OctFQhG+QNbGZPlTK9p0pi2WSTuaJ8fjq57ME1NNsWh6bhO2tfq8GOWjx/ABuX5Rc3OKGVTKFa3mzZ0+s4svA/BSgQphyuMeasYRBg7zL3H758tjXy7oxzFYH/KfiF', 'symmetric_key': 'nJiq04ELKzlug0gNg9y5JqomCbIpelyhsUQkbqfMt1u2U3HQbSfQldyiquVDoYVy7jxQ4s9adcp3CZT4MA/lTTHifeikk/4SAXat/2Do3L7GNfqkp+QYfGRT7xuTrcM8hmgPkade8L198mlvrjZTYPnqumIF/xIi/Df4WJ1mfyY=', 'nonce': 'RlGX60rIdqlD6V0RIOzZ7g=='}
+2023-06-15 17:54:49,701 INFO client.py Сообщение создано
+2023-06-15 17:54:50,547 INFO client.py Ответ получен. 200 Сообщение доставлено
+2023-06-15 17:54:50,547 INFO client.py Ответ получен. 200 {'message': 'OaujCnX1P6Pa2FZnuZuUG8zo/9RO7teNwPOom2GshGbSZOaCdGF8mbjnj7tNxPWQtF7G/Eoo7WRd5mk9eEkyjKEJl02tiydGbPP+Yh+7QotYD0scyRIYDCQgrQFvVTUAmoSHSshZABOvi7HY2dpQEvHjmVOtg3gVmku1lx/sermjZj76nvg8muCONXshBorWbEoEgLICEB2R477j/ihxM1GmmdDTbYrVQVg7TQeisvWzV52PS6rSq5hXoz4Pg/Rk5QjrILm7N1RcR0XDkZlfjO3PaOGdIkaux5+XKcM5MDwFXWSxXXvCIJmYQzrVNYLK0hBAzGzTiQ==', 'symmetric_key': 'pQ+8VJY/9Fvu6BjNMTjfEY01GPkPN0G7yb0XXY23AW+dXlpm+3xXAC1/TJB3A/RaLvK4/kUQJZho1vf3T1t1BBJKrUG9UjCXcI6yvBEAk99dr3UN2yUCO4iiWFyf4Is0YkIvn4KU7zkQcN/ZiEIf3M5OuoFoIAAdZld9LT1dllk=', 'nonce': 'DNjSkYtO8O9MtfSMmZf4nA=='}
+2023-06-15 17:54:53,274 INFO client.py Сообщение создано
+2023-06-15 17:54:53,655 INFO client.py Ответ получен. 200 Сообщение доставлено
+2023-06-15 17:54:53,655 INFO client.py Ответ получен. 200 {'message': 'zHBRNHn560jvByDFFVzi8jI8R5neSOPB+az6EFzsgVbFJEdDZZ0RLHiYm/KFEhKo0V0goSxlSsQ4MzriOcW+ZUWFg1PQCTNYzE7hzkSUrS3qAjsRCLE6e6GVv2HunNnBsYnIbBcSuppxom3KM+nGjOtkZs1L8JLvRN/kwnUePLj5WED7fOfEmMFadeH8cTzoqXRFr4f9C7Gs1zIEJAC+384wh9VoU4aysgW0TzlbZmOMvHCm0ZKud6aJaJ3ZX+M660x3LldiBjPmZOIFcjp+aJgiBE5HGcg4pU+JhRFw/0ryS1bjcH30nNbNMnzuIKqr7vkYOsYHUWsBZhRJvfzQTvPxtQ==', 'symmetric_key': 'E6euJ6+QhS0LS+CA1svB7vtV9xaODT+BPXiAwBCzINlc35U2yeePt8BfZaCCRp90TqiIVB1F3NGc4YF3QhLePK3gyLX9U5sJ1bO/tIIL5wY2f7ilgZgcZHTBaqFBUQnbW02erDlV0F5nkE4ENkWt5ydBjR94Bju7gaJu5GIiQXM=', 'nonce': 'kX2halwZ3UpkxRn1VUBR0A=='}
+2023-06-15 17:55:10,982 INFO client.py Сообщение создано
+2023-06-15 17:55:11,776 INFO client.py Ответ получен. 200 Пользователь вышел
+2023-06-15 17:55:11,776 INFO client.py Пользователь mixeil@mail.ru вышел
+2023-06-15 18:01:05,265 INFO client.py Сообщение создано
+2023-06-15 18:01:06,369 INFO client.py Ответ получен. 200 Пользователь вышел
+2023-06-15 18:01:06,369 INFO client.py Пользователь vlad@mail.ru вышел
+2023-06-15 18:02:00,766 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 18:02:00,766 INFO client.py Сокет инициализирован
+2023-06-15 18:02:00,766 INFO client.py Подключение к серверу...
+2023-06-15 18:02:18,775 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 18:02:18,775 INFO client.py Сокет инициализирован
+2023-06-15 18:02:18,776 INFO client.py Подключение к серверу...
+2023-06-15 18:02:20,929 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-15 18:02:36,127 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 18:02:36,127 INFO client.py Сокет инициализирован
+2023-06-15 18:02:36,127 INFO client.py Подключение к серверу...
+2023-06-15 18:02:38,257 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-15 18:02:44,685 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 18:02:44,686 INFO client.py Сокет инициализирован
+2023-06-15 18:02:44,686 INFO client.py Подключение к серверу...
+2023-06-15 18:02:45,840 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-15 18:02:45,840 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1, порт: 47826, имя пользователя: bob@mail.ru
+2023-06-15 18:02:45,915 INFO client.py Сообщение создано
+2023-06-15 18:02:46,905 INFO client.py Ответ получен. 202 []
+2023-06-15 18:02:46,907 DEBUG client.py Запущен процесс
+2023-06-15 18:02:46,907 DEBUG client.py Запущен процесс
+2023-06-15 18:03:06,282 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 18:03:06,282 INFO client.py Сокет инициализирован
+2023-06-15 18:03:06,282 INFO client.py Подключение к серверу...
+2023-06-15 18:03:07,461 INFO client.py Соединение с сервером не установлено. Ответ сервера: 409
+2023-06-15 18:03:23,694 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 18:03:23,694 INFO client.py Сокет инициализирован
+2023-06-15 18:03:23,694 INFO client.py Подключение к серверу...
+2023-06-15 18:03:25,836 INFO client.py Соединение с сервером не установлено. Ответ сервера: 401
+2023-06-15 18:03:37,921 INFO utils_client.py Параметры сокета успешно заданы
+2023-06-15 18:03:37,921 INFO client.py Сокет инициализирован
+2023-06-15 18:03:37,921 INFO client.py Подключение к серверу...
+2023-06-15 18:03:39,035 INFO client.py Установлено соединение с сервером. Ответ сервера: 200
+2023-06-15 18:03:39,035 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1, порт: 38032, имя пользователя: misha@mail.ru
+2023-06-15 18:03:39,109 INFO client.py Сообщение создано
+2023-06-15 18:03:40,088 INFO client.py Ответ получен. 202 []
+2023-06-15 18:03:40,090 DEBUG client.py Запущен процесс
+2023-06-15 18:03:40,091 DEBUG client.py Запущен процесс
+2023-06-15 18:03:54,840 INFO client.py Сообщение создано
+2023-06-15 18:03:55,142 INFO client.py Ответ получен. 202 ['misha@mail.ru', 'mixeil@mail.ru', 'vlad@mail.ru']
+2023-06-15 18:04:03,410 INFO client.py Сообщение создано
+2023-06-15 18:04:04,187 INFO client.py Ответ получен. 202 ['misha@mail.ru']
+2023-06-15 18:04:12,057 INFO client.py Сообщение создано
+2023-06-15 18:04:12,274 INFO client.py Ответ получен. 200 Пользователь добавлен в контакты
+2023-06-15 18:04:12,309 INFO client.py Ответ получен. 200 Пользователь добавлен в контакты
+2023-06-15 18:04:13,464 INFO client.py Ответ получен. 200 Симметричный ключ получен
+2023-06-15 18:04:13,490 INFO client.py Ответ получен. 200 Симметричный ключ получен
+2023-06-15 18:04:39,745 INFO client.py Ответ получен. 200 Симметричный ключ получен
+2023-06-15 18:04:40,850 INFO client.py Сообщение создано
+2023-06-15 18:04:41,848 INFO client.py Ответ получен. 202 Сообщения отправлены
+2023-06-15 18:04:41,848 INFO client.py Ответ получен. 202 []
+2023-06-15 18:05:03,215 INFO client.py Сообщение создано
+2023-06-15 18:05:03,977 INFO client.py Ответ получен. 200 Сообщение доставлено
+2023-06-15 18:05:03,977 INFO client.py Ответ получен. 200 {'message': 'KT8JBh7RXdlPCBWNKg1dM2o8AsiuSvrUl+I8vWBaYbzmYpeM8uvXp8E0bksn7jy4S09pQeVJSoBw2uqeBH0itsgOb9g/amdxNbnLyl893gWsw6G8MRxISYcr4j9PHQ/OaiGP7/kjkVQ4dclmyz0m46pms1uq/0sb4ItnaPhZxRvEeNr/DviwcSAhLdeodU01smiB8OVMS0pePBSAUTabdBYhqmtiQI1u4b6lROXaGUEnJS9AsRe3v42o2XzZ0Lzv/aWz9LB8JtcTQpGCPQI32LUsog/8+SzGhoaOzK1MaUnNLDoqeye3A6j5OChOdwsvcEKv0ncKBTyK508VBxfQvihjVCG2JxOtL3XiYrRR66+g5OS88w==', 'symmetric_key': 'fdmWrlH3Nqb5xNIV9xuimut1n5i3ONNZpQ5iEioQYedCY+lkmKiNRhbbDMcjJmropj0TU3BSs1ugKAX0Nie+XpdXNNx7gIo/XCwAxPigM8vPhVAajfGp/SWjsdNceuZstdWzWHtYqLAPAD000gSueNP8ohStvl+3MzV7+DqsiRc=', 'nonce': 'x2Mmbzc0FGg48pXOxvHV0w=='}
+2023-06-15 18:05:16,059 INFO client.py Ответ получен. 200 Симметричный ключ получен
+2023-06-15 18:05:17,021 INFO client.py Сообщение создано
+2023-06-15 18:05:25,372 INFO client.py Сообщение создано
