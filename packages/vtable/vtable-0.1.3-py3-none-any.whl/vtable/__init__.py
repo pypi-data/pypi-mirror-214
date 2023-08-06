@@ -1,0 +1,1 @@
+from main import MainWin as VTable
