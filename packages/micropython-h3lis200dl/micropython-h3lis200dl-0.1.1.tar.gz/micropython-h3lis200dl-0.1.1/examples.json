@@ -1,0 +1,11 @@
+{
+  "urls": [
+    ["micropython_h3lis200dl/examples/h3lis200dl_high_pass_filter_cutoff.py", "github:jposada202020/MicroPython_H3LIS200DL/examples/h3lis200dl_high_pass_filter_cutoff.py"],
+    ["micropython_h3lis200dl/examples/h3lis200dl_simpletest.py", "github:jposada202020/MicroPython_H3LIS200DL/examples/h3lis200dl_simpletest.py"],
+    ["micropython_h3lis200dl/examples/h3lis200dl_interrupt_example.py", "github:jposada202020/MicroPython_H3LIS200DL/examples/h3lis200dl_interrupt_example.py"],
+    ["micropython_h3lis200dl/examples/h3lis200dl_operation_mode.py", "github:jposada202020/MicroPython_H3LIS200DL/examples/h3lis200dl_operation_mode.py"],
+    ["micropython_h3lis200dl/examples/h3lis200dl_full_scale_selection.py", "github:jposada202020/MicroPython_H3LIS200DL/examples/h3lis200dl_full_scale_selection.py"],
+    ["micropython_h3lis200dl/examples/h3lis200dl_data_rate.py", "github:jposada202020/MicroPython_H3LIS200DL/examples/h3lis200dl_data_rate.py"]
+  ],
+  "version": "0.1"
+}
