@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: aio-pygo
+Version: 1.0.2
+Summary: Write Python code in a Go-like fashion.
+Author: Gael Lz
+Project-URL: Homepage, https://github.com/GaelLnz/pygo
+Project-URL: Bug Tracker, https://github.com/GaelLnz/pygo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pygo
+
+[![PyPI version](https://badge.fury.io/py/aio-pygo.svg)](https://badge.fury.io/py/aio-pygo) [![codecov](https://codecov.io/gh/GaelLnz/pygo/branch/main/graph/badge.svg?token=PPVXA3VIQB)](https://codecov.io/gh/GaelLnz/pygo)
+
+Pygo is fully typed & zero dependency Python library that enables you to code in a Go-like fashion. It brings some of the key features from the Go programming language such as goroutines and channels.
+
+## Features
+
+- **Goroutines**: Execute functions concurrently using asyncio coroutines.
+- **Channels**: Enable communication and synchronization between coroutines using channels.
+- **Select Statement**: Choose the first ready communication operation from multiple channels.
+- **Time Management**: Schedule and manage timed operations using channels.
+- **Deferring**: Defer operations using a context manager.
+
+## Installation
+
+To install Pygo, you can use pip:
+
+```shell
+pip install aio-pygo
+```
+
+## Usage
+
+### Goroutines
+
+```python
+from asyncio import run
+from pygo import go
+
+async def worker():
+    # some async operations
+    ...
+
+async def main():
+    # Start a goroutine
+    go(worker())
+
+    # Continue with the main execution
+    print("Main thread continues...")
+
+if __name__ == "__main__":
+    run(main())
+```
+
+### Channels
+
+```python
+from asyncio import run
+from pygo import Chan
+
+async def main():
+    # Create a channel
+    ch = Chan[str]()
+
+    # Send data to the channel
+    await ch.send("Hello, Pygo!")
+
+    # Receive data from the channel
+    data, _ = await ch.receive()
+    print(data)
+
+if __name__ == "__main__":
+    run(main())
+```
+
+### And more
+
+To help you get started with Pygo, we provide a [collection of examples](https://github.com/GaelLnz/pygo/examples). These examples showcase various use cases and demonstrate how to leverage the features of Pygo in your projects.
+
+## Testing
+
+The Pygo library is 100% tested. To run the tests, you can use the following command:
+
+```shell
+make test
+```
+
+## Comming up next
+
+Here's a list of features that we may implement in the near future:
+
+* context management
+* dedicated python compiler to allow multiprocessed coroutines
+
+## Contributions
+
+Contributions to Pygo are welcome! If you find a bug, have a suggestion, or want to contribute new features or improvements, please create an issue or submit a pull request on the [GitHub repository](https://github.com/GaelLnz/pygo).
+
+## License
+
+Pygo is licensed under the GPL 3.0 License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+Thank you for using Pygo. We hope this library enhances your concurrent and asynchronous programming experience in Python. Happy coding!
