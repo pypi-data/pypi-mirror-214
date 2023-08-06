@@ -1,0 +1,10 @@
+fs_s3fs/__init__.py,sha256=tCADfiFuRDmCbzJkC3WIZf6eXvimLVBLEASdwOWD4Ik,58
+fs_s3fs/_s3fs.py,sha256=Xq7PCOs2bCUEmaO2G8BrvRZ_xTBNJLGAJn2uN3KF_IU,27906
+fs_s3fs/_version.py,sha256=u9ExJqoMv3fQc8WmLTw4I2FnQo6u4xRrBc6DLy6G1IE,22
+fs_s3fs/opener.py,sha256=dAjQL7Ea58vx9uPrNdOpIt6i-y3srKKN37Nbo1QiIQc,1258
+fs_s3fs_forked-1.1.3.dist-info/LICENSE,sha256=l19sSKIIAqX04EEKC1Wbt_B9z0Kh7jGBUpgbEw_0FA8,1069
+fs_s3fs_forked-1.1.3.dist-info/METADATA,sha256=5fuRickE1Un-qGyL7TgJpCmJTNIAbqNvhQGBv3TZU1w,4496
+fs_s3fs_forked-1.1.3.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+fs_s3fs_forked-1.1.3.dist-info/entry_points.txt,sha256=Trs043lkAzkEjuWoHE_M73r0ijzBMzDPQkJ8rJtz-s8,43
+fs_s3fs_forked-1.1.3.dist-info/top_level.txt,sha256=kGwF-vxPlBgt58CHpQ3fjkJLEzUL9RO6MAReTiVJ0wk,8
+fs_s3fs_forked-1.1.3.dist-info/RECORD,,
