@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: redis-limit
+Version: 0.0.3
+Summary: 基于redis的限流器以及锁
+Author: huangkewei
