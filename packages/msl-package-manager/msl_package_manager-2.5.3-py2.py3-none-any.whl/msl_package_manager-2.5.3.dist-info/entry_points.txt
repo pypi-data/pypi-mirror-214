@@ -1,0 +1,2 @@
+[console_scripts]
+msl = msl.package_manager.cli:main
