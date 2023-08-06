@@ -1,0 +1,11 @@
+LICENSE,sha256=1NxDvOEr3gND6ycwdeBmzpKcGrre63evpUB8XEW2z64,1059
+nonebot_plugin_7s_roll/__init__.py,sha256=-KUFFJZ3b9mm4z269SIgV5dhhv8ihKnEqqMiSf4NMPk,317
+nonebot_plugin_7s_roll/command.py,sha256=hfb620QiDOuj4HtQVoJXR-QgWUXBvRkG3xkQ7PEY0aM,2067
+nonebot_plugin_7s_roll/common.py,sha256=8NOHyfFJM0y_LEiz2ASEWVw-wxQatPaPBsgNOU7DFkI,212
+nonebot_plugin_7s_roll/config.py,sha256=GYgsRHYpcWr_mZj0zfW47LrCtPRWDjlPFhYeUYPF3xo,178
+nonebot_plugin_7s_roll/expr.py,sha256=aHNyvtAUBZ6Q3Bv_aiNRPH7vp0pf7oiOGNpW5vyivic,5736
+nonebot_plugin_7s_roll/roll.py,sha256=hJmcBXub8xGqHWIRPkMz2dNUNXXiIpmRG8TJ9qfieW0,2003
+nonebot_plugin_7s_roll-0.2.0a1.dist-info/LICENSE,sha256=1NxDvOEr3gND6ycwdeBmzpKcGrre63evpUB8XEW2z64,1059
+nonebot_plugin_7s_roll-0.2.0a1.dist-info/METADATA,sha256=P9a48EuXqScLDilbSwrruFjLtxcWvxLswCN0JW475U4,2593
+nonebot_plugin_7s_roll-0.2.0a1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+nonebot_plugin_7s_roll-0.2.0a1.dist-info/RECORD,,
