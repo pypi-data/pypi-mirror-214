@@ -1,0 +1,10 @@
+paikalta/__init__.py,sha256=T2jGHMZxqu7McJtD6bfNN0Sb4ifjsZLg_7PDxGkxVFA,2719
+paikalta/__main__.py,sha256=7y7iTfbkPQ70MovgxPFmVCAdzZ56_IuF_YWeSxG7HLU,121
+paikalta/api.py,sha256=2AmhbGigiolCXZbKFp3kNZjswyIferluPf3RmjuLOgA,2662
+paikalta/cli.py,sha256=zPk__Vat3hm7AuMLuUMU_OIaJ3bH9I6CXJb03vbU8p4,1960
+paikalta-2023.6.18.dist-info/LICENSE,sha256=a9GBBsUGDvTGs1rmHMujUJiPhEY6vtKCdGlW6XmWoTw,1069
+paikalta-2023.6.18.dist-info/METADATA,sha256=AAwnPjpl8TWaijpS9aLBVaHpZ5Vtg065lEovwP9PtN4,3926
+paikalta-2023.6.18.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+paikalta-2023.6.18.dist-info/entry_points.txt,sha256=9JuiOUvuRvAfK0MYvcQot_E-LuoPLdtmu0cmiCiQPxQ,46
+paikalta-2023.6.18.dist-info/top_level.txt,sha256=qDYAkbmfV_6jo_liI5T2oaQ4oVnex_KsjMipsTmqrfk,9
+paikalta-2023.6.18.dist-info/RECORD,,
