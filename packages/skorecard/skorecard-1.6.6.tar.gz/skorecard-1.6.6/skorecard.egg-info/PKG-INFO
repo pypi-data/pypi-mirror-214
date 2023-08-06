@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: skorecard
+Version: 1.6.6
+Summary: Tools for building scorecard models in python, with a sklearn-compatible API
+Author-email: "ING Bank N.V." <anilkumar.panda@ing.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2020 ING Bank NV
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://ing-bank.github.io/skorecard/
+Project-URL: Documentation, https://ing-bank.github.io/skorecard/api/bucketers/OptimalBucketer/
+Project-URL: Repository, https://github.com/ing-bank/skorecard.git
+Project-URL: Changelog, https://github.com/ing-bank/skorecard/blob/main/CHANGELOG.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: all
+License-File: LICENSE
+
+<img src="https://github.com/ing-bank/skorecard/raw/main/docs/assets/img/skorecard_logo.svg" width="150" align="right">
+
+# skorecard
+
+<!-- ![pytest](https://github.com/ing-bank/skorecard/workflows/Release/badge.svg) -->
+![pytest](https://github.com/ing-bank/skorecard/workflows/Development/badge.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/skorecard)
+![PyPI](https://img.shields.io/pypi/v/skorecard)
+![PyPI - License](https://img.shields.io/pypi/l/skorecard)
+![GitHub contributors](https://img.shields.io/github/contributors/ing-bank/skorecard)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/skorecard)](#)
+[![Downloads](https://pepy.tech/badge/skorecard)](https://pepy.tech/project/skorecard)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+`skorecard` is a scikit-learn compatible python package that helps streamline the development of credit risk acceptance models (scorecards).
+
+Scorecards are ‘traditional’ models used by banks in the credit decision process. Internally, scorecards are Logistic Regression models that make use of features that are binned into different groups. The process of binning is usually done manually by experts, and `skorecard` provides tools to makes this process easier. `skorecard` is built on top of [scikit-learn](https://pypi.org/project/scikit-learn/) as well as other excellent open source projects like [optbinning](https://pypi.org/project/optbinning/), [dash](https://pypi.org/project/dash/) and [plotly](https://pypi.org/project/plotly/).
+
+:point_right: Read the [blogpost introducing skorecard](https://timvink.nl/introducing-skorecard/)
+
+## Features ⭐
+
+- Automate bucketing of features inside scikit-learn pipelines.
+- Dash webapp to help manually tweak bucketing of features with business knowledge
+- Extension to `sklearn.linear_model.LogisticRegression` that is also able to report p-values
+- Plots and reports to speed up analysis and writing technical documentation.
+
+## Quick demo
+
+`skorecard` offers a range of [bucketers](https://ing-bank.github.io/skorecard/api/bucketers/OptimalBucketer/):
+
+```python
+import pandas as pd
+from skorecard.bucketers import EqualWidthBucketer
+
+df = pd.DataFrame({'column' : range(100)})
+
+ewb = EqualWidthBucketer(n_bins=5)
+ewb.fit_transform(df)
+
+ewb.bucket_table('column')
+#>    bucket                       label  Count  Count (%)
+#> 0      -1                     Missing    0.0        0.0
+#> 1       0                (-inf, 19.8]   20.0       20.0
+#> 2       1                (19.8, 39.6]   20.0       20.0
+#> 3       2  (39.6, 59.400000000000006]   20.0       20.0
+#> 4       3  (59.400000000000006, 79.2]   20.0       20.0
+#> 5       4                 (79.2, inf]   20.0       20.0
+```
+
+That also support a dash app to explore and update bucket boundaries:
+
+```python
+ewb.fit_interactive(df)
+#> Dash app running on http://127.0.0.1:8050/
+```
+
+![](docs/assets/img/dash_app_unsupervised_bucketer.png)
+
+## Installation
+
+```shell
+pip3 install skorecard
+```
+
+## Documentation
+
+See [ing-bank.github.io/skorecard/](https://ing-bank.github.io/skorecard/).
+
+## Presentations
+
+| Title                                              | Host                    | Date         | Speaker(s)                                   |
+|----------------------------------------------------|-------------------------|--------------|----------------------------------------------|
+| Skorecard: Making logistic regressions great again | [ING Data Science Meetup](https://www.youtube.com/watch?v=UR_1XZxEuCw) | 10 June 2021 | Daniel Timbrell, Sandro Bjelogrlic, Tim Vink |
