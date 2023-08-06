@@ -1,0 +1,4 @@
+[console_scripts]
+sshc=sshclick.main:cli
+ssht=sshclick.main_tui:tui
+
