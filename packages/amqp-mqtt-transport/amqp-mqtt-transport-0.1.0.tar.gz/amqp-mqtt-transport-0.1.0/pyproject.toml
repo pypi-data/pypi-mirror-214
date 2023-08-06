@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amqp-mqtt-transport"
+version = "0.1.0"
+authors = [
+  { name="Igor Toropov", email="it.cups.54@gmail.com" },
+]
+description = "Small wrapper for pykka-amqp and paho-mqtt packages. Makes it easier to create consumers/publishers"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "tenacity==8.0.1",
+    "aio-pika==8.2.5",
+    "autopep8==2.0.2",
+    "paho-mqtt==1.5.1",
+    "build==0.10.0",
+    "twine==4.0.2"
+]
+
+[tool.autopep8]
+max_line_length = 120
+ignore = []
+recursive = true
+aggressive = 5

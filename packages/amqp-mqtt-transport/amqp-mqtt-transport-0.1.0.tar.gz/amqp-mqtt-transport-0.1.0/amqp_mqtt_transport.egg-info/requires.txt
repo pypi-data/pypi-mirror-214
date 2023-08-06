@@ -1,0 +1,6 @@
+tenacity==8.0.1
+aio-pika==8.2.5
+autopep8==2.0.2
+paho-mqtt==1.5.1
+build==0.10.0
+twine==4.0.2
