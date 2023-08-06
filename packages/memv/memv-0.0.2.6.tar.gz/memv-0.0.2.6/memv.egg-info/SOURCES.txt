@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+memv/__init__.py
+memv/memv.py
+memv/utils.py
+memv.egg-info/PKG-INFO
+memv.egg-info/SOURCES.txt
+memv.egg-info/dependency_links.txt
+memv.egg-info/entry_points.txt
+memv.egg-info/requires.txt
+memv.egg-info/top_level.txt
