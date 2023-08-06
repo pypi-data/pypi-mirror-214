@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+doe_box/__init__.py
+doe_box/bbdesign.py
+doe_box/ccdesign.py
+doe_box/fracfact.py
+doe_box/fracfactgen.py
+doe_box/fullfact.py
+doe_box/lhs.py
+doe_box/parser.py
+doe_toolbox.egg-info/PKG-INFO
+doe_toolbox.egg-info/SOURCES.txt
+doe_toolbox.egg-info/dependency_links.txt
+doe_toolbox.egg-info/requires.txt
+doe_toolbox.egg-info/top_level.txt
