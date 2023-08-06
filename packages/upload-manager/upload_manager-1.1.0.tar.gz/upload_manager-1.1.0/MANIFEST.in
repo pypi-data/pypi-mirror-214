@@ -1,0 +1,5 @@
+include *.txt
+recursive-include upload_manager *.py
+recursive-include images *.png
+prune build
+prune .pytest_cache

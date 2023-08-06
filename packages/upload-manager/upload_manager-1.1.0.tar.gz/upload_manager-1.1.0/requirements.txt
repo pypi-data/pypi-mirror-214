@@ -1,0 +1,4 @@
+boto3==1.10.38
+chardet==4.0.0
+django==2.1.4
+python-environ==0.4.54
