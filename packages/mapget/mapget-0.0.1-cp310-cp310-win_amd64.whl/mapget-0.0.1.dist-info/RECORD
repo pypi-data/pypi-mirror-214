@@ -1,0 +1,10 @@
+LICENSE.txt,sha256=82HFE2tG6k1v7YD065fi3PSy0tCuV68AM7WXaA4Y2Mc,1557
+libcrypto-1_1-x64.dll,sha256=luO755txrsAa57nCHQY-Fr_7uYoLBEp8r_D9SA9REv4,3417600
+libssl-1_1-x64.dll,sha256=j8k2jlbbPkT2hmcY6pESOIZQisIcCuI1CrjMTkgOVUo,686080
+mapget-datasource.lib,sha256=qoT7sKb0ZO4DI7fKkd3ANfsRdRsl1kUQnFzxp-mzMRo,2011142
+mapget-model.lib,sha256=AdY8LKORP65CWmtkbwNxN8AwvOTpIbBp3PrLwe7RGOo,4451122
+mapget.cp310-win_amd64.pyd,sha256=E0A8bNzh6uZFk1DCrGHUBYA8v_yrwDByh1z3XcvPPlw,1196032
+mapget-0.0.1.dist-info/METADATA,sha256=0A5pzY2mGjphxxj9FkEJlWIFSiSiyT2DkePeOhtUpFc,234
+mapget-0.0.1.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+mapget-0.0.1.dist-info/top_level.txt,sha256=b8nHQSACTRmu2oGH4FSZTfJwrZA3vbGLBo_okY1L6RM,7
+mapget-0.0.1.dist-info/RECORD,,
