@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Replay-Highlights-Stream
+Version: 2023613.14.58
+Summary: Replay de las mejores jugadas de capturadas por apps de Overwolf
+Home-page: https://github.com/Alderan-Smile/Replay-Highlights-Stream
+Author: Oliver Consterla Araya
+Author-email: oliver_consterla@yahoo.cl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Utilizando aplicaciones y tecnologia de python para crear un programa que permita reproducir los mejores momentos de un juego obtenido por medio de una app del software Overwolf como Outplayed.

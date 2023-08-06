@@ -1,0 +1,4 @@
+watchdog
+moviepy
+pyglet
+pydub
