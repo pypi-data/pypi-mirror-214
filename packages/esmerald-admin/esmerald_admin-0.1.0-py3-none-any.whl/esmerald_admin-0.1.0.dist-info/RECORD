@@ -1,0 +1,11 @@
+esmerald_admin/__init__.py,sha256=NhrrmDNI7oFLC6-Np_YsjSwGFWdqTBfXlETaaLz4WIE,121
+esmerald_admin/application.py,sha256=2_IfWAHucLBUFBLT877r-0Ee4Sr0XNL_8vBR9ceH4_4,4180
+esmerald_admin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esmerald_admin/backends/__init__.py,sha256=Oij02VqwgTqLUtbjuir6BaNKPsHEOk95CV8UngSG9rg,125
+esmerald_admin/backends/base.py,sha256=-oBhzWSdkPyyvzHnsYA3JRO6VBbuVk3vU6vBPCeNwCA,3733
+esmerald_admin/backends/email.py,sha256=mo2xeAQB7m2PhppnvO9WBNc-UznZjLg4MX0C1ZcV4Vk,1145
+esmerald_admin/backends/username.py,sha256=uSWCSC7L5T3WavQC0KVbuocNqggvuGeQ2KuUapvqcj4,1157
+esmerald_admin-0.1.0.dist-info/METADATA,sha256=Ub1hNXcd78Bnc15_eXrU_uB8svKofDZdzt43yDSNSLo,10647
+esmerald_admin-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+esmerald_admin-0.1.0.dist-info/licenses/LICENSE,sha256=PgYGMXz80_iw8taitoDZ3KITfzK7bQMjsUx9OCIiUe8,1078
+esmerald_admin-0.1.0.dist-info/RECORD,,
