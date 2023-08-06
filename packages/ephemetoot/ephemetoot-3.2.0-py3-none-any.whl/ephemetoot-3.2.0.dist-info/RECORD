@@ -1,0 +1,10 @@
+ephemetoot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ephemetoot/console.py,sha256=qSYRymSkHC2yQXtCptOQ8JN8-67jzxPLkTPXzOo7NQQ,5560
+ephemetoot/ephemetoot.py,sha256=cUxk6xCFwQBO4rIwa7P4LLkz-bCRDMjoZCNGYpgBf_Y,23495
+ephemetoot/plist.py,sha256=7-rM8o9BmKpjhfkkzo8MJTAcS5NdcDd8bRvThDhuDEE,780
+ephemetoot-3.2.0.dist-info/LICENSE,sha256=0ElQUwUZZ-vnb7H6zSh9edHtgA2hvnXPUBpVa8OaBHI,32471
+ephemetoot-3.2.0.dist-info/METADATA,sha256=lZbqZAQGLHkOGXnCchCPjE5gqg_8hcJCNgjVSCOahVg,1831
+ephemetoot-3.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ephemetoot-3.2.0.dist-info/entry_points.txt,sha256=RbHXMcrn9YVmL4TJiwdR6V85Lv3XLvJXRaK946S6kog,55
+ephemetoot-3.2.0.dist-info/top_level.txt,sha256=nVAnbL7W-nyeyhUGTenv7PzmnwL4Ajxj8CmKSKRIwgo,11
+ephemetoot-3.2.0.dist-info/RECORD,,
