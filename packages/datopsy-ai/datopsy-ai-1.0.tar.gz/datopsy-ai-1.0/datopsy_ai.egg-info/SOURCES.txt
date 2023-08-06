@@ -1,0 +1,8 @@
+README.md
+setup.py
+datopsy/__init__.py
+datopsy_ai.egg-info/PKG-INFO
+datopsy_ai.egg-info/SOURCES.txt
+datopsy_ai.egg-info/dependency_links.txt
+datopsy_ai.egg-info/requires.txt
+datopsy_ai.egg-info/top_level.txt
