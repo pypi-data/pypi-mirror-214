@@ -1,0 +1,16 @@
+01:26:36:353 PM |   color.py    |    Line  331  |  DEBUG   ﰲ  Color Name -> magenta
+------------------------------
+01:26:36:353 PM |   color.py    |    Line  236  |  DEBUG   ﰲ  called Color.__hash__()
+01:26:36:353 PM |   color.py    |    Line  237  |  DEBUG   ﰲ  Hashing magenta, initial value: 0
+01:26:36:353 PM |   color.py    |    Line  240  |  DEBUG   ﰲ  Hashing m at index 0: ord(m) = 109
+01:26:36:353 PM |   color.py    |    Line  240  |  DEBUG   ﰲ  Hashing a at index 1: ord(a) = 97
+01:26:36:353 PM |   color.py    |    Line  240  |  DEBUG   ﰲ  Hashing g at index 2: ord(g) = 103
+01:26:36:353 PM |   color.py    |    Line  240  |  DEBUG   ﰲ  Hashing e at index 3: ord(e) = 101
+01:26:36:353 PM |   color.py    |    Line  240  |  DEBUG   ﰲ  Hashing n at index 4: ord(n) = 110
+01:26:36:354 PM |   color.py    |    Line  240  |  DEBUG   ﰲ  Hashing t at index 5: ord(t) = 116
+01:26:36:354 PM |   color.py    |    Line  240  |  DEBUG   ﰲ  Hashing a at index 6: ord(a) = 97
+01:26:36:354 PM |   color.py    |    Line  137  |   INFO   ﰲ  Parsing color: magenta
+01:26:36:354 PM |   color.py    |    Line  146  |  DEBUG   ﰲ  Color is a string.
+01:26:36:354 PM |   color.py    |    Line  150  |  DEBUG   ﰲ  Color is a named color: ('magenta', 'violet', 'purple', 'blue', 'lightblue', 'cyan', 'lime', 'yellow', 'orange', 'red') magenta
+01:26:36:354 PM |   color.py    |    Line  331  |  DEBUG   ﰲ  Color Name -> magenta
+------------------------------
