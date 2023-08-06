@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/pyconju/__init__.py
+src/pyconju/csv.py
+src/pyconju/xls.py
+src/pyconju/xlsx.py
+src/pyconju.egg-info/PKG-INFO
+src/pyconju.egg-info/SOURCES.txt
+src/pyconju.egg-info/dependency_links.txt
+src/pyconju.egg-info/requires.txt
+src/pyconju.egg-info/top_level.txt
+test/test_example.py
+test/test_example2.py
