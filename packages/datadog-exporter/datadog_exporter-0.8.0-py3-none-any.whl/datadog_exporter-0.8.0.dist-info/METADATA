@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: datadog-exporter
+Version: 0.8.0
+Summary: CLI for exporting datadog metrics
+Home-page: https://github.com/binxio/datadog-exporter
+Author: Mark van Holsteijn
+Author-email: mark@binx.io
+License: Apache2
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: pytz
+Requires-Dist: durations
+Requires-Dist: tzlocal
+Requires-Dist: datadog
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+
+A simple command line utility to export datadog metrics.
+
+## events
+to export datadog events that where reported in the last 24 hours, type:
+
+```
+datadog-exporter events \
+    --iso-datetime \
+    --pretty-print \
+    --start-time -24h
+```
+
+## metric names
+to export all available database metric names, type:
+
+```
+datadog-exporter names
+```
+
+## metrics
+to export specific metrics from the last 24 hours, type:
+
+```
+ datadog_export metrics \
+    --iso-datetime \
+    --pretty-print \
+    --start-time -2h \
+    --window 30m \
+    'docker.cpu.system{*}'     
+```
+The `--window` option allows you to influence the resolution of the values returned. 
+
+# credentials
+Add your Datadog Application and API key in the file `$HOME/.datadog.ini` in the
+section DEFAULT:
+
+	[DEFAULT]
+	api_key=a77aaaaaaaaaaaaaaaaaaaaa
+	app_key=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+Alternatively, you can set the environment variable `DATADOG_API_KEY`  and `DATADOG_APP_KEY`.
