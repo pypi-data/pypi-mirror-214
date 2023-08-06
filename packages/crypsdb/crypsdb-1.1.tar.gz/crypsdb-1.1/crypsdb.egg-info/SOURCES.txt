@@ -1,0 +1,7 @@
+README.md
+crypsdb.py
+setup.py
+crypsdb.egg-info/PKG-INFO
+crypsdb.egg-info/SOURCES.txt
+crypsdb.egg-info/dependency_links.txt
+crypsdb.egg-info/top_level.txt
