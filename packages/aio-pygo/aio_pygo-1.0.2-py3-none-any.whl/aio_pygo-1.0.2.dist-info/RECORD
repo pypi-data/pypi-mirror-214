@@ -1,0 +1,15 @@
+pygo/__init__.py,sha256=XP6mLL06EO-vVMghfy3E3_saHvJvN3ml2FMeFrHqHCc,228
+pygo/chan.py,sha256=1rZz_YMONCf7urlh8q5eACB2gkPFBRcayIwvr1a4ueE,1863
+pygo/chan_test.py,sha256=pWwIVnAXoibnDzoy6_r4r74qcBg3ohu4dMF06VjD5bA,3897
+pygo/conftest.py,sha256=RI9ec0Lw-baTL5vpn-hGN1vEZqBe4ilHT0mdRCPbCls,100
+pygo/defer.py,sha256=I1IYz86Knq8HH2WRYOhmgXgNrNFWjpqxq29Eg9kZZXc,558
+pygo/defer_test.py,sha256=BNXmRAealszfp6UpYQ9Oo9G-kcu0wSD4yxlbM_1tG_I,553
+pygo/go.py,sha256=8V9Il_2p1OUIIZArNoCzTG7b8tr60BO5oA_LN2xl7Qw,537
+pygo/go_test.py,sha256=VRbGBxOxKXwOtzwytFem8X1v9oQNRmrzd6zrNZWuT9M,590
+pygo/time.py,sha256=-UcDx6BeOzEw8nDVpWR-lW4jsxeM-yhq9hQWLNr1h-s,375
+pygo/time_test.py,sha256=-SWVqK3dUYO8UTLFNDVRvSf25Rdkk4EHoW-rUwI4p8E,336
+aio_pygo-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aio_pygo-1.0.2.dist-info/METADATA,sha256=cV-xHnadFR2rYzXjyxSNbMQ62-n61sviRQQaghDn2BY,3102
+aio_pygo-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aio_pygo-1.0.2.dist-info/top_level.txt,sha256=g_0hCmEq63t2nJbr5b0hJ08cy5Syqskk3Kx1DN1-siA,5
+aio_pygo-1.0.2.dist-info/RECORD,,
