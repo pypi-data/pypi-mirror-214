@@ -1,0 +1,16 @@
+FileHandler.py,sha256=CiikRcgYaTvRPw5YYcVPJ_u1eOLzASf8q3_0mtfwOpY,1520
+__init__.py,sha256=9xm8uHxh5hBPMjjh-Md1kckXah7GWyR4XKlnJDmEr2I,70
+examples.py,sha256=659Y4Vbx5vFeW9_5ARG1pjOg5I78XMeTW7137FqzgKc,5958
+language_pack.py,sha256=MGxYBe8BUprmR_T24K_JyBwx1_pHXeZe-St-FgDU_Mw,8853
+print_replace.py,sha256=JQj6OoLTR8iYCozp94eMCFFRi2ec1AwbaYEJ0XDnmG4,2880
+documentation/source/conf.py,sha256=HpTPkdg_JqM8Wxd1GeMwkXah417cWDnL1PiCOzME3wY,981
+scripts/localizer_pack_fill.py,sha256=eWYbmuKelwqIK4iYYN4lLYm7jMJxakRLQrQRfLd43Hg,4041
+scripts/update_version.py,sha256=W_Bjs2zFdNZFI8Z5g_F1WuXUQ5zMrQ3X9ZufhQmqpWM,1502
+supported_file_types/__init__.py,sha256=kbs2WkzoFOXRsDJWv8geROQSZHIfFIYuGGgGMb6pkS0,220
+supported_file_types/dot_csv.py,sha256=tn1LSEsEbfZrIGST3rt7HL16FUBBogK1ePgjTAc_4bg,1452
+supported_file_types/dot_json.py,sha256=2owRI042A4KzO4M_3EHmnCvWccIQMKC4MAE4O0CBCTk,651
+perfect_localizer-1.3.dist-info/METADATA,sha256=JtnEmO-fQNfe1xh4JyLJ3EZ4TxxHYqKCHQPwrGYXjic,697
+perfect_localizer-1.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+perfect_localizer-1.3.dist-info/entry_points.txt,sha256=5mXta3PBYtw3VMG1dumSDo7gcoD5EDXIgNlzslysD5o,81
+perfect_localizer-1.3.dist-info/licenses/LICENSE,sha256=Vkqi0QUVOpPZ_RfOyd5xfrll-sepNaOipZzPMHWdgB4,1084
+perfect_localizer-1.3.dist-info/RECORD,,

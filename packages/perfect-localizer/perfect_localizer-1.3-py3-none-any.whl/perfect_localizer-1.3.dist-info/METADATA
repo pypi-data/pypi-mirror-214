@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: perfect_localizer
+Version: 1.3
+Summary: An easy way to translate the application interfaces.
+Project-URL: Homepage, https://github.com/Vbrawl/localizer
+Author-email: Vbrawl <konstantosjim@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Localizer
+A library focused on easily translating the strings of an application in different languages.
+
+The library is easy to use and has auto-translating features.
+
+To see examples of using the library inspect the "examples.py" file.
