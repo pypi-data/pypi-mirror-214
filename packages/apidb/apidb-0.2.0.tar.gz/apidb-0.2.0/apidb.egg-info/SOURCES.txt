@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+apidb/__init__.py
+apidb/apidb_core.py
+apidb.egg-info/PKG-INFO
+apidb.egg-info/SOURCES.txt
+apidb.egg-info/dependency_links.txt
+apidb.egg-info/requires.txt
+apidb.egg-info/top_level.txt
