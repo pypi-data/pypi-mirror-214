@@ -1,0 +1,6 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/test_module.py,sha256=1F8pc5N9E7ZnuTzGgA-z7qIjsjulF_rlWBlEJyGDdpQ,21
+test_package_with_bump2_pipline-0.1.1.dist-info/METADATA,sha256=9Do90TRDzCj4LVFAAuqZll6xaRD_bCIkzv-xqRw1BH4,267
+test_package_with_bump2_pipline-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+test_package_with_bump2_pipline-0.1.1.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+test_package_with_bump2_pipline-0.1.1.dist-info/RECORD,,
