@@ -1,0 +1,12 @@
+pydantic
+pyfiglet
+tapipy
+pyperclip
+py2neo
+psycopg
+blessed
+prompt_toolkit
+TapisFederatedAuthClientAPI
+requests
+
+[dev]
