@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+requriements.txt
+setup.py
+json2schema/__init__.py
+json2schema/json2schema.py
+json2schema/schema2list.py
+json2schema.egg-info/PKG-INFO
+json2schema.egg-info/SOURCES.txt
+json2schema.egg-info/dependency_links.txt
+json2schema.egg-info/top_level.txt
+json2schema.egg-info/zip-safe
+tests/test_json2schema.py
