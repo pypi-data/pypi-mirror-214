@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: bob.measure
+Version: 6.1.0
+Summary: Evaluation metrics for Bob
+Author-email: Andre Anjos <andre.anjos@idiap.ch>
+License: BSD 3-Clause License
+Project-URL: documentation, https://www.idiap.ch/software/bob/docs/bob/bob.measure/v6.1.0/sphinx/
+Project-URL: homepage, https://pypi.org/project/bob.measure/
+Project-URL: repository, https://gitlab.idiap.ch/bob/bob.measure
+Project-URL: changelog, https://gitlab.idiap.ch/bob/bob.measure/-/releases
+Keywords: bob,pipelines
+Classifier: Framework :: Bob
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bob (==12.0.0)
+Requires-Dist: bob.io.base (==5.1.0)
+Requires-Dist: clapper (==1.0.1)
+Requires-Dist: h5py (==3.7.0)
+Requires-Dist: matplotlib (==3.6.2)
+Requires-Dist: numba (==0.56.4)
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: scipy (==1.10.0)
+Requires-Dist: tabulate (==0.9.0)
+Provides-Extra: doc
+Requires-Dist: sphinx (==5.3.0) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (==1.1.1) ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints (==1.21.8) ; extra == 'doc'
+Requires-Dist: auto-intersphinx (==1.0.2) ; extra == 'doc'
+Requires-Dist: sphinxcontrib-programoutput (==0.17) ; extra == 'doc'
+Requires-Dist: matplotlib (==3.6.2) ; extra == 'doc'
+Provides-Extra: qa
+Requires-Dist: pre-commit ; extra == 'qa'
+Provides-Extra: test
+Requires-Dist: pytest (==7.2.1) ; extra == 'test'
+Requires-Dist: pytest-cov (==4.0.0) ; extra == 'test'
+Requires-Dist: coverage (==7.0.5) ; extra == 'test'
+
+[![badge doc](https://img.shields.io/badge/docs-v6.1.0-orange.svg)](https://www.idiap.ch/software/bob/docs/bob/bob.measure/v6.1.0/sphinx/index.html)
+[![badge pipeline](https://gitlab.idiap.ch/bob/bob.measure/badges/v6.1.0/pipeline.svg)](https://gitlab.idiap.ch/bob/bob.measure/commits/v6.1.0)
+[![badge coverage](https://gitlab.idiap.ch/bob/bob.measure/badges/v6.1.0/coverage.svg)](https://www.idiap.ch/software/bob/docs/bob/bob.measure/v6.1.0/coverage/)
+[![badge gitlab](https://img.shields.io/badge/gitlab-project-0000c0.svg)](https://gitlab.idiap.ch/bob/bob.measure)
+
+# Experiment Evaluation Metrics for Bob
+
+This package is part of the signal-processing and machine learning toolbox
+[Bob](https://www.idiap.ch/software/bob). It contains common routines for
+assessing performance of machine learning experiments.
+
+## Installation
+
+Complete Bob's
+[installation instructions](https://www.idiap.ch/software/bob/install).
+
+Then, to install this package, run:
+
+``` sh
+conda install bob.measure
+```
+
+## Contact
+
+For questions or reporting issues to this software package, contact our
+development [mailing list](https://www.idiap.ch/software/bob/discuss).
