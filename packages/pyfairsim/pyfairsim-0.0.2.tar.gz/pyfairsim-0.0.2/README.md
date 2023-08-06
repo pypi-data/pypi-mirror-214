@@ -1,0 +1,42 @@
+# pyFairSIM
+
+python version of the fast sim project
+
+# install
+run:
+
+`pip install pyfairsim`
+
+# settings
+
+All settings and physical parameters are read from a json file.
+To get an example file run python -m create_example_settings.py and change all the explaining texts to the values you need.
+
+# run parameter estimation
+
+To run a parameter estimation for a given sim-stack use
+
+`python -m pyfairsim.parameter_estimation -f <path-to-image> -s <path-to-settings> -o <path-to-save-settings>`
+
+For help use python -m parameter_estimation.py -h. Settings and save settings path can be the same then the obtained values overwrite the old values.
+
+# run reconstruction
+
+To run a reconstruction for a given sim-stack use
+
+`python -m pyfairsim.reconstruction -f <path-to-image> -s <path-to-settings> -o <path-to-save-reconstructed-image>`
+
+For help use python -m reconstruction.py -h
+
+# run batch reconstruction
+
+Runs a parameter estimation and then a reconstruction on all .tiff/.tif files in given folder and all subfolders.
+Command:
+
+`python -m pyfairsim.batch_reconstruction`
+
+# run absolute phase estimation
+
+Runs a non-iterative phase estimation based on auto-correlation by Wicker et al. For it to work parameter estimation needs to be executed first.
+
+`python -m pyfairsim.phase_estimation -f <path-to-image> -s <path-to-settings> -o <path-to-save-settings>`  
