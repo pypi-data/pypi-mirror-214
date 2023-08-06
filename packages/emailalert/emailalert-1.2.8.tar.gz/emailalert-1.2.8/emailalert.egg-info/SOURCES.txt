@@ -1,0 +1,8 @@
+README.md
+setup.py
+emailalert.egg-info/PKG-INFO
+emailalert.egg-info/SOURCES.txt
+emailalert.egg-info/dependency_links.txt
+emailalert.egg-info/top_level.txt
+sck/__init__.py
+sck/emailalert.py
