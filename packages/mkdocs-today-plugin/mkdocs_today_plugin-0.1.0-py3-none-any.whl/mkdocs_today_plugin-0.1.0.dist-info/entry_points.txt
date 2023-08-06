@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+today=today.plugin:TodayPlugin
+
