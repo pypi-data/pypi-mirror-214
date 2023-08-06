@@ -1,0 +1,13 @@
+papis==0.13
+
+[develop]
+flake8
+flake8-bugbear
+flake8-quotes
+mypy>=0.7
+pep8-naming
+pytest
+pytest-cov
+python-coveralls
+types-PyYAML
+types-tqdm
