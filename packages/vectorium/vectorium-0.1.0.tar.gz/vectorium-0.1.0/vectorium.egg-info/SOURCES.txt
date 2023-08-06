@@ -1,0 +1,10 @@
+README.md
+setup.py
+vectorium/__init__.py
+vectorium/database.py
+vectorium/utils.py
+vectorium.egg-info/PKG-INFO
+vectorium.egg-info/SOURCES.txt
+vectorium.egg-info/dependency_links.txt
+vectorium.egg-info/requires.txt
+vectorium.egg-info/top_level.txt
