@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-labelprop = napari_labelprop:napari.yaml
