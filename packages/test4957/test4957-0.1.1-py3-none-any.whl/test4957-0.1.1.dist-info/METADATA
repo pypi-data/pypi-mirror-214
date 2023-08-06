@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: test4957
+Version: 0.1.1
+Summary: pydfe development version
+Author: Nate Mauney
+Author-email: <nmauney4@uncc.edu>
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+pydfe development version long description.
