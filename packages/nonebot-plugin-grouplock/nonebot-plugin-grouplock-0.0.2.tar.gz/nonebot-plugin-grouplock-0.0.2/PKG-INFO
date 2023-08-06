@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-grouplock
+Version: 0.0.2
+Summary: 一个基于nonebot2和go-cqhttp的群聊人数锁定插件
+Home-page: https://github.com/ZM25XC/nonebot-plugin-grouplock
+License: MIT
+Author: ZM25XC
+Author-email: xingling25@qq.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: nonebot-adapter-onebot (>=2.2.3,<3.0.0)
+Requires-Dist: nonebot2 (>=2.0.0,<3.0.0)
+Requires-Dist: tortoise-orm (>=0.19.3,<0.20.0)
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a href="https://v2.nonebot.dev/"><img src="https://v2.nonebot.dev/logo.png" width="200" height="200" alt="nonebot"></a>
+</p>
+
+<div align="center">
+
+#  nonebot-plugin-grouplock
+一个基于nonebot2和go-cqhttp的群聊人数锁定插件
+
+## 指令
+
+
+| 命令 | 示例 |
+|:--------:|:-------------:|
+| 锁定人数  |  锁定人数开 锁定人数500 锁定人数关 |
+|检查人数|   检查人数开 检查人数关 检查人数|
