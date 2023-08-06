@@ -1,0 +1,56 @@
+bool: "{{val|lower}}"
+
+expr: "{{value}};"
+
+if: "if ({{condition}}) {{body}} {{els}}"
+elif: "else if ({{condition}}) {{body}} {{els}}"
+else: "else {{body}}"
+ternary: "({{condition}}?{{body}}:{{els}})"
+
+operators:
+  "or": "||"
+  "and": "&&"
+  "not": "!"
+
+assign: "{{var}} = {{value}};"
+
+c_like_for:
+  meta:
+    var_prototype: yes
+  tmp: >-
+    for ({{var}} = {{start}}; 
+    {%- if step < 0-%}
+    {{var}} > {{finish}}
+    {%- elif step > 0 -%}
+    {{var}} < {{finish}}
+    {%- else -%}
+    ({{step}}<0?{{var}}>{{finish}}:{{var}}<{{finish}})
+    {%- endif -%};
+    {{var}} += {{step}})
+    {{body}}
+
+while: "while ({{condition}}) {{body}}"
+
+break: "break;"
+continue: "continue;"
+global: no
+nonlocal: no
+
+
+func: "function {{name}}({{args|join(', ')}}) {{body}}"
+return: "return {{value}};"
+
+body: |-
+  {{'{'}}{% for st in body %}
+  {{'    '*nl}}{{st}}{% endfor %}
+  {{'    '*(nl-1)}}}
+
+list[any].__getitem__:
+  meta: {"gen_negative_indexes": yes}
+
+slice:
+  meta: {"gen_negative_indexes": yes}
+  tmp: ~
+steped_slice:
+  meta: {"gen_negative_indexes": yes}
+  tmp: ~
