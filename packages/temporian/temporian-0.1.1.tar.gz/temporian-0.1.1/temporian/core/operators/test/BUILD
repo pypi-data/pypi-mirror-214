@@ -1,0 +1,18 @@
+package(
+    default_visibility = ["//visibility:public"],
+    licenses = ["notice"],
+)
+
+# Tests
+# =====
+py_test(
+    name = "propagate_test",
+    srcs = ["propagate_test.py"],
+    srcs_version = "PY3",
+    deps = [
+        # already_there/absl/testing:absltest
+        "//temporian/core/data/dtypes:dtype",
+        "//temporian/core/data:node",
+        "//temporian/core/operators:propagate",
+    ],
+)
