@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: SVARpy
+Version: 0.1.7
+Summary: SVAR estimation
+Home-page: https://github.com/Saschakew/SVARpy
+Author: Sascha Keweloh
+Author-email: sascha.keweloh@tu-dortmund.de
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: multiprocess
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: tabulate
+Requires-Dist: pathos
+Requires-Dist: pytest
+
+# SVARpy
+ 
+
+
