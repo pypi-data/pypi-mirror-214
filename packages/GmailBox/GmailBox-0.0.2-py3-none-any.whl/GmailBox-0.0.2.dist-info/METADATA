@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: GmailBox
+Version: 0.0.2
+Summary: With this library, you can create random Gmail and receive messages
+Author: Hamo
+License: LGPLv3
+Keywords: gmail,mail,GmailBox,inbox
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+<p align="center">
+    <a href="https://github.com/H7AM0/GmailBox">
+        <img src="https://telegra.ph/file/19f7cbbf3959941cda6b5.jpg" alt="Hamo" width="128">
+    </a>
+    <br>
+    <b>Hamo • حـمــو</b>
+    <br>
+    <a href="https://www.instagram.com/4.4cq/">
+        Instagram
+    </a>
+     • 
+    <a href="https://t.me/hamo_back">
+        Telegram
+    </a>
+</p>
+
+# GmailBox
+
+> With this library, you can create random Gmail and receive messages
+
+``` python
+from GmailBox import GmailBox
+
+Gmail = GmailBox()
+```
+## Generate a random Gmail
+``` python
+New_Gmail = Gmail.newEmail()
+print(New_Gmail)
+```
+## to get the inbox
+``` python
+email = New_Gmail['email']
+inbox = Gmail.inbox(email)
+print(inbox)
+```
+### Installing
+
+``` bash
+pip3 install GmailBox
+```
+### On github
+* <a href="https://github.com/H7AM0/GmailBox">GmailBox</a>
