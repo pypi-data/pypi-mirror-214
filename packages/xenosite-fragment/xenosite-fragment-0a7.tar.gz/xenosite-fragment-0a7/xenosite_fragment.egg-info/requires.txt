@@ -1,0 +1,8 @@
+rdkit
+numpy
+numba
+rich
+typer
+networkx
+pandas
+pynauty==2.8.6
