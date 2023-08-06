@@ -1,0 +1,2 @@
+[console_scripts]
+couchdb_storage = couchdb_storage.cli:main
