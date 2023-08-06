@@ -1,0 +1,2 @@
+[console_scripts]
+exs = experiment_scheduler.submitter.exs:main
