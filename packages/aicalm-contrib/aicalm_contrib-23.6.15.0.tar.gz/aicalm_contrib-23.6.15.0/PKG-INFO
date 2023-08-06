@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: aicalm-contrib
+Version: 23.6.15.0
+Summary: AICALM Contrib
+Home-page: https://github.com/aitomatic/aicalm-contrib
+License: Apache-2.0
+Author: Aitomatic, Inc.
+Author-email: engineering@aitomatic.com
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: DRF-Writable-Nested (>=0.7.0)
+Requires-Dist: Django (>=4.2.2)
+Requires-Dist: Django-CORS-Headers (>=4.1.0)
+Requires-Dist: Django-Configurations (>=2.4.1)
+Requires-Dist: Django-Environ (>=0.10.0)
+Requires-Dist: Django-Extensions (>=3.2.3)
+Requires-Dist: Django-Silk (>=5.0.3)
+Requires-Dist: DjangoRESTFramework (>=3.14.0)
+Requires-Dist: H1st-Contrib (>=2.1.2.dev0)
+Requires-Dist: LangChain (>=0.0.201)
+Requires-Dist: PandasAI (>=0.5.3)
+Requires-Dist: Pillow (>=9.5.0)
+Requires-Dist: PsycoPG (>=3.1.9)
+Requires-Dist: PsycoPG2-binary (>=2.9.6)
+Requires-Dist: PyCOCOTools (>=2.0.6)
+Requires-Dist: Transformers (>=4.30.2)
+Project-URL: Repository, https://github.com/aitomatic/aicalm-contrib
+Description-Content-Type: text/markdown
+
+# H1st Contrib
+
+Contributions that may or may not eventually be incorporated into the core `h1st` repo.
+

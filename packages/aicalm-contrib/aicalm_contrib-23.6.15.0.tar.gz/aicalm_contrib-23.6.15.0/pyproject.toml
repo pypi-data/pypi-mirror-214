@@ -1,0 +1,52 @@
+[tool.poetry]
+name = 'AICALM-Contrib'
+version = '23.6.15.0'
+description = 'AICALM Contrib'
+authors = ['Aitomatic, Inc. <engineering@aitomatic.com>']
+license = 'Apache-2.0'
+readme = 'README.md'
+homepage = 'https://github.com/aitomatic/aicalm-contrib'
+repository = 'https://github.com/aitomatic/aicalm-contrib'
+packages = [
+  {include = 'aicalm_contrib'},
+  {include = 'k1st_contrib'},
+]
+
+
+[tool.poetry.dependencies]
+Python = '>= 3.11'
+
+# H1st
+H1st-Contrib = '>= 2.1.2.dev0'
+
+# Image Processing
+Pillow = '>= 9.5.0'
+PyCOCOTools = '>= 2.0.6'
+
+# Hugging Face
+Transformers = '>= 4.30.2'
+
+# LLM & related
+LangChain = '>= 0.0.201'
+PandasAI = '>= 0.5.3'
+
+# Django & related
+Django = '>= 4.2.2'
+Django-Configurations = '>= 2.4.1'
+Django-CORS-Headers = '>= 4.1.0'
+Django-Environ = '>= 0.10.0'
+Django-Extensions = '>= 3.2.3'
+DjangoRESTFramework = '>= 3.14.0'
+Django-Silk = '>= 5.0.3'
+DRF-Writable-Nested = '>= 0.7.0'
+
+# DB-related
+PsycoPG = '>= 3.1.9'
+PsycoPG2-binary = '>= 2.9.6'
+
+
+[build-system]
+requires = [
+  'Poetry-Core >= 1.6.1',
+]
+build-backend = 'poetry.core.masonry.api'
