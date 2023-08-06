@@ -1,0 +1,13 @@
+erniebot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+erniebot/erniebot.py,sha256=kYg8x5IvfOrFD5W5rHAjtTJRG2S7vXW6Eje-O0DIOQs,487
+erniebot/baiduinfo/__init__.py,sha256=uilbMqTSJZtjdjxOBo_RcsS59RPVSrUIGYwfAutNbVQ,24
+erniebot/baiduinfo/baidu.py,sha256=zcV5RKcBJxxgAMQfgvSW08ZYmbtYfHoqqiyJQn6Aaww,454
+erniebot/error/__init__.py,sha256=8psp3VWJ-XfpoGhD29GHuMm84QbnlSuCFSABKRuH5UA,36
+erniebot/error/customerror.py,sha256=Rd9KKQn9uVCrkNK68LrAODfJz8SducDCNWzC2Iql8bA,148
+erniebot/service/__init__.py,sha256=aX731BbAK4QpwqUMV3Q9BTyzVLzGYItn-arWetRu0zY,28
+erniebot/service/explain.py,sha256=A97ShOzy4LoiifKzOxE4YbCShKO9HZ9xGjdSyOvZUYE,2301
+erniechatbotsdk-0.0.4.dist-info/LICENSE,sha256=TjWvuaqOu_Y90foZqIlWeEd78zs23DtChlHl35ZCINw,1058
+erniechatbotsdk-0.0.4.dist-info/METADATA,sha256=XQmVzP_YJg1xfAPPOPTSl4Cgz7XTjZP_o5dVlMoBvSs,2426
+erniechatbotsdk-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+erniechatbotsdk-0.0.4.dist-info/top_level.txt,sha256=Cw1D5syw_LwcQbnjfKsYtUCxR45w64VicOZ2edCG20o,9
+erniechatbotsdk-0.0.4.dist-info/RECORD,,
