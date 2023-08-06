@@ -1,0 +1,6 @@
+langchain
+numpy
+pandas
+colorama
+wikipedia
+openai
