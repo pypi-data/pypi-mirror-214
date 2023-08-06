@@ -1,0 +1,11 @@
+component_include_tags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+component_include_tags/apps.py,sha256=tWotH76wUWQuhfm4KHjkFP9rHnD2fLX9dn_YdNedtYM,174
+component_include_tags/tests.py,sha256=qvn22yYiqVd4lCK4gOtuuzISFiQOS1gsxo7eB-FQ9Cg,1176
+component_include_tags/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+component_include_tags/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+component_include_tags/templatetags/components.py,sha256=es_Xw0qANuKoin03cS8BndAJVVGl1ETGp2TTb_RZxjE,3817
+django_component_include_tags-0.0.2.dist-info/LICENCE,sha256=eB4P0MpUviH2KbR0I5mHcgyuNiZMavlMBFWiWLO7M3c,1061
+django_component_include_tags-0.0.2.dist-info/METADATA,sha256=IdP01nNR2QkVMAag1P5zSfn3yjffVMJpFORPokJH8h0,4777
+django_component_include_tags-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_component_include_tags-0.0.2.dist-info/top_level.txt,sha256=6u1mWeXU57r4ciQvFrrLSNb6QJLSylPe-5tARyYJwUM,23
+django_component_include_tags-0.0.2.dist-info/RECORD,,
