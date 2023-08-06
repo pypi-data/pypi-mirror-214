@@ -1,0 +1,8 @@
+setup.py
+invoicing-zaid/__init__.py
+invoicing-zaid/invoice.py
+invoicing_zaid.egg-info/PKG-INFO
+invoicing_zaid.egg-info/SOURCES.txt
+invoicing_zaid.egg-info/dependency_links.txt
+invoicing_zaid.egg-info/requires.txt
+invoicing_zaid.egg-info/top_level.txt
