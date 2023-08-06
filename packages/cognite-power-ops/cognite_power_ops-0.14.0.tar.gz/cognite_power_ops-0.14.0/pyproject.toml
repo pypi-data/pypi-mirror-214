@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "cognite-power-ops"
+version = "0.14.0"
+description = "SDK for power markets operations on Cognite Data Fusion"
+readme = "README.md"
+authors = ["Cognite <support@cognite.com>"]
+license = "Apache 2.0"
+packages = [{include = "cognite", from = "."}]
+
+[tool.black]
+line-length = 120
+target_version = ['py39']
+include = '\.py$'
+
+[tool.isort]
+line_length=120                # corresponds to -w  flag
+multi_line_output=3            # corresponds to -m  flag
+include_trailing_comma=true    # corresponds to -tc flag
+skip_glob = '^((?!py$).)*$'    # this makes sort all Python files
+
+[tool.ruff]
+line-length = 120
+target-version = 'py39'
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]  # unused import
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.9.0"
+PyYAML = "^6.0"
+cognite-sdk = {version = "^5.9.0", extras = ["pandas"]}
+pydantic = "^1.9.0"
+cachelib = "^0.10.2"
+loguru = "^0.6.0"
+deepdiff = "^6.3.0"
+cognite-gql-pygen = "0.4.4"
+dacite = "^1.8.1"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.scripts]
+powerops = "cognite.powerops.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pytest-regressions = "^2.4.2"
+pre-commit = "^3.2.2"
+twine = "^4.0.2"
+pytest-cov = "^4.0.0"
+profilehooks = "^1.12.0"
+pytest-mock = "^3.10.0"
+toml = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --ignore-glob=examples/* --ignore-glob=cognite/powerops/preprocessor/test_data/otta_base.py"
