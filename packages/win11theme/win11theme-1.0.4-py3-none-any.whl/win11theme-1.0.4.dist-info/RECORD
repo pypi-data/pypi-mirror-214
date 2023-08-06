@@ -1,0 +1,15 @@
+qframelesswindow/__init__.py,sha256=goPG2ILgFDA-GDVgpNE5pl-GeBJj1BEn9hpNL7wyb7I,1915
+qframelesswindow/_rc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qframelesswindow/_rc/resource.py,sha256=I2GEkaVYY4_baWscEARd6B_ycqT6qbX3Crzr3NVVQOI,2730
+qframelesswindow/titlebar/__init__.py,sha256=66p4OjnihsXfUmgeEpDkRGIRQEjTJ5aV2Ep4-DTXZek,4944
+qframelesswindow/titlebar/title_bar_buttons.py,sha256=ULXR0bO00G5_tsciA-Z5VAtEnKlKoZlzMOew_RLNBfk,9039
+qframelesswindow/utils/__init__.py,sha256=YgSBWSF1Wgc8UMK5SzdBvygijAjFMuJ2XePDe79EKzQ,781
+qframelesswindow/utils/win32_utils.py,sha256=uuGdtRmUH13V4QzD3Y18jEZD4w5sCGTfixHxKSULrBo,7973
+qframelesswindow/windows/__init__.py,sha256=UXd_CJH1KelFv5QoC4Up9xw30SY9tfBjAR6pm0LaF04,8490
+qframelesswindow/windows/c_structures.py,sha256=QBteYdoL3vHIpf2uZ82CHCjjTH49Xu9A3cbcFIqoWpA,4013
+qframelesswindow/windows/window_effect.py,sha256=DLkogSsBmFsQ2BerNjY8S_BMVy3dk6AUX4Vji1CtBVI,8346
+win11theme-1.0.4.dist-info/LICENSE.txt,sha256=a_88XNdSF3E4O73qnQpDbC6Vq9jiTUG-i2p3smMXt0o,1075
+win11theme-1.0.4.dist-info/METADATA,sha256=jxAR7iSV6t_5lmszoJeYa_S3yXQxydHOCDZg0BSGgyU,1549104
+win11theme-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+win11theme-1.0.4.dist-info/top_level.txt,sha256=sqanvfrwhgcO_CaZH8GOYDdPZBW77UuKd4wWCIhQsDQ,17
+win11theme-1.0.4.dist-info/RECORD,,
