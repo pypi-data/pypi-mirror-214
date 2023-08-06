@@ -1,0 +1,12 @@
+screeninfo
+pandas
+pyautogui
+pytube
+pytube3
+firebase_admin
+customtkinter
+requests
+flask
+ttkbootstrap
+configparse
+pywinauto
