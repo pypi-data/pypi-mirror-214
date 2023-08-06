@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+Cinemx.egg-info/PKG-INFO
+Cinemx.egg-info/SOURCES.txt
+Cinemx.egg-info/dependency_links.txt
+Cinemx.egg-info/top_level.txt
+docu/__init__.py
+docu/asientos.py
+docu/prog/__init__.py
+docu/prog/asientos.py
