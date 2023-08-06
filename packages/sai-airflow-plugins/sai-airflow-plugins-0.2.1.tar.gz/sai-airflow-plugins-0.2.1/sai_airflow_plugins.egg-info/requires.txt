@@ -1,0 +1,13 @@
+apache-airflow[ssh]>=1.10
+fabric>=2.5
+
+[docs]
+sphinx<6,>=5
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+sphinx-versions==1.0.1
+click<8
+
+[tests]
+pytest
+faker
