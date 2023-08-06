@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+2.20.4
+------
+
+* WatchContext add  interval  paramter
+* update doc
+* improve IniterOfADBWifi
+* add IniterOfADBWifi
+* update changelog
+* trigger by push tag
+* fix  bug of  compatible
+* update atx-agent
+* fix bug of app\_current
+* support  stop app by user id
