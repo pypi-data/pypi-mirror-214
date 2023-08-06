@@ -1,0 +1,3 @@
+include sociallink/requirements.txt
+include sociallink/thirdparty.json
+include sociallink/README.MD

@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sociallink/README.MD
+sociallink/__init__.py
+sociallink/requirements.txt
+sociallink/thirdparty.json
+sociallink.egg-info/PKG-INFO
+sociallink.egg-info/SOURCES.txt
+sociallink.egg-info/dependency_links.txt
+sociallink.egg-info/top_level.txt
