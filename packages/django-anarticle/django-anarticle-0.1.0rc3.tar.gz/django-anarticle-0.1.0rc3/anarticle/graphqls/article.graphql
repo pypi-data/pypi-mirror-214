@@ -1,0 +1,30 @@
+type AnArticle implements Node {
+    id: ID!
+    title: String!
+    slug: String!
+    summary: String!
+    imageUrl: String
+    isPublished: Boolean!
+    publishedAt: DateTime
+    createdAt: DateTime!
+    updatedAt: DateTime
+    author: User
+    paragraphs: [AnArticleParagraph]
+    tags: AnArticleTagConnection
+}
+
+type AnArticleConnection {
+    edges: [AnArticleEdge]
+    pageInfo: PageInfo!
+}
+
+type AnArticleEdge {
+    cursor: String!
+    node: AnArticle
+}
+
+type AnArticleParagraph {
+    content: String
+    imageUrl: String
+    imageText: String
+}

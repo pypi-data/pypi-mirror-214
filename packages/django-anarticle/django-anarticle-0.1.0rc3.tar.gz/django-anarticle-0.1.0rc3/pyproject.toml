@@ -1,0 +1,70 @@
+# Copyright (c) 2014-present, aglean Inc.
+
+[build-system]
+requires = ["setuptools>=66.1.1", "setuptools_scm[toml]>=7.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-anarticle"
+authors = [{ name = "Chiu", email = "chiutung.chen@aglean.com"}]
+description = "App for publishing articles with tags and categories"
+keywords = ["django", "graphql", "ariadne", "aglean", "article", "tag", "category"]
+readme = "README.rst"
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System"
+]
+requires-python = ">= 3.10"
+dependencies = [
+    "django >= 4.0",
+    "pillow >= 9.4.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+graphql = [
+    "ariadne >= 0.16.0",
+    "ariadne-relay >= 0.1.0a8",
+]
+dev = [
+    "python-lsp-server[rope,pyflakes,mccabe,pycodestyle,autopep8]",
+    "pylsp-rope",
+]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-django",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/aglean/django-anarticle"
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]

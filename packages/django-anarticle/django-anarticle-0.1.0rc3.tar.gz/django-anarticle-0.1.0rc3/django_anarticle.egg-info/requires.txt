@@ -1,0 +1,16 @@
+django>=4.0
+pillow>=9.4.0
+
+[dev]
+python-lsp-server[autopep8,mccabe,pycodestyle,pyflakes,rope]
+pylsp-rope
+
+[graphql]
+ariadne>=0.16.0
+ariadne-relay>=0.1.0a8
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+pytest-django
