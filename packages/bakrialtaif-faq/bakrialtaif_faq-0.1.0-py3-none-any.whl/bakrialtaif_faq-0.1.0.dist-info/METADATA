@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bakrialtaif-faq
+Version: 0.1.0
+Summary: A example Python package
+Home-page: https://github.com/Bakrialtaif/bakrialtaif_faq
+Author: Bakri Altaif
+Author-email: altaif.bakri@gmail.com
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Funniest
+--------
+
+To use (with caution), simply do::
+
+    >>> import bakrialtaif
