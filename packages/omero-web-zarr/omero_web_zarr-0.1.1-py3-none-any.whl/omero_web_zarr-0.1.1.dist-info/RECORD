@@ -1,0 +1,12 @@
+omero_web_zarr/__init__.py,sha256=NqZ9UZSDqjsjOh8bt8jm4uR7a63tKkYPLwX9OFB7q98,65
+omero_web_zarr/apps.py,sha256=i7QX8bNxPT8owAyDD0P_k6pe4AGuX3dzXC_gjqe9alc,879
+omero_web_zarr/urls.py,sha256=SVD8VoMjvg0XhUOsErBusjuJGY6A-H-mXRXQf6uXmgY,1655
+omero_web_zarr/utils.py,sha256=Mp99335XIQeyS6o5LnekgutiVCdwSrimNxMiau6wXKs,3132
+omero_web_zarr/views.py,sha256=gvjhXOwjoaL6wjBS9dDHemXX8h6niJLqc5kX7as4u7Q,10207
+omero_web_zarr/static/omero_web_zarr/openwith.js,sha256=WTUiJPiaEsw7h4VZBR0P2NQ-h_HD4pvQbqjxkleRK1M,317
+omero_web_zarr/static/omero_web_zarr/openwith_validator.js,sha256=aDPzs2qnBaxx6jjWWIo3CDHNB0qmkNliNTuq0n5K-BA,323
+omero_web_zarr-0.1.1.dist-info/LICENSE,sha256=iEtDSVe6aIMRlZDRzkl_1ESpyLcDC278TeglQBxnJb8,34501
+omero_web_zarr-0.1.1.dist-info/METADATA,sha256=-E1JU91bdH0otDFqrVPn-ANmBSpfDyKJxIe-Jl2-rNc,3953
+omero_web_zarr-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+omero_web_zarr-0.1.1.dist-info/top_level.txt,sha256=ndy3ENW7U96uEzWRCUml8f_Y2xKlaMptRID3DTuy19k,15
+omero_web_zarr-0.1.1.dist-info/RECORD,,
