@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+beau_ssi_converter.egg-info/PKG-INFO
+beau_ssi_converter.egg-info/SOURCES.txt
+beau_ssi_converter.egg-info/dependency_links.txt
+beau_ssi_converter.egg-info/top_level.txt
+converter/__init__.py
+converter/main.py
