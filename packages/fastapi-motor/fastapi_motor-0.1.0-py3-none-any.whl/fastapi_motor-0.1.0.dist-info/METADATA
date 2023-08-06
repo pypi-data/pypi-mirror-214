@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fastapi-motor
+Version: 0.1.0
+Summary: FastAPI asyncio motor MongoDB
+Home-page: https://kgithub.com/JiehuiSun/fastapi_motor.git
+Author: huihui
+Author-email: sunjiehuimail@foxmail.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: AsyncIO
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: motor (>=3.1.2)
+Requires-Dist: fastapi (>=0.97.0)
+Requires-Dist: pytz (>=2023.3)
+
+FastAPI asyncio motor MongoDB
