@@ -1,0 +1,9 @@
+knmi/__init__.py,sha256=mNX3Br_kQAgrZF01AgFHISYdtEsVwS53gojlYOnp5Ro,217
+knmi/knmi.py,sha256=SWhLpzdIOmeuQeqqU1ICeE7MEHIy6MN22x7ly80Noyk,7734
+knmi/metadata.py,sha256=9mf3F-CFxktosVEuuxJTNDmzimeGbKyfvT4Rl5rIsYg,17802
+knmi/parsers.py,sha256=umlbrtwh-10jaMknJ4I6mfc5Ic3Fk_whk_XzjbxS1VM,4224
+knmi_py-0.1.10.dist-info/LICENSE,sha256=VpjJxTXQTHn8Ndlp9dSn6smnQqI1omIo2Z1QRDSt4gg,1084
+knmi_py-0.1.10.dist-info/METADATA,sha256=DeQbVT0BmAdepjFZWqowEfYLmzUeUuBwYqpcdDe8iGs,2301
+knmi_py-0.1.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+knmi_py-0.1.10.dist-info/top_level.txt,sha256=afZY2Qydl60Xu029ekGbFO2XOwEyFPLVXt1Wnhu8QH4,5
+knmi_py-0.1.10.dist-info/RECORD,,
