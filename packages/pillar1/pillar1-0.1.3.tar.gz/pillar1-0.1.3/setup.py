@@ -1,0 +1,26 @@
+from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setup(
+    name='pillar1',
+    version='0.1.3',
+    packages=find_packages(),
+    description='Official package for Pillar1 company',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    author='Ayman Hajja',
+    author_email='amhajja@gmail.com',
+    url='https://github.com/amhajja/pillar1',
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+    ],
+    python_requires='>=3.11',
+    install_requires=[
+        'boto3>=1.26.156',
+        'matplotlib>=3.1.2',
+        'pandas>=1.0.1'
+    ],
+)
