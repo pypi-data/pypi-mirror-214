@@ -1,0 +1,10 @@
+arch_github_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arch_github_package/gh.py,sha256=-gkmZn-EKkzRdLrV955N6o8RxBbBAdtXHsGQSslqpas,2550
+arch_github_package/main.py,sha256=s6Z9BjPipeVEjjjktbBNO3vIUruo9azSC92W7PckE-M,3317
+arch_github_package/pm.py,sha256=TB3y0Qy3jWNxPv3FBl8TLt8AbB9ZRGeRcgfPdi1rbKI,4296
+arch_github_package/state.py,sha256=1anKx1Ci_ZtOvsG8_DY_PdNS-qlyMOdtnxWJWgwlaEg,2055
+arch_github_package-0.0.4.dist-info/METADATA,sha256=DJ_YL84HK4WwG3NXneJbswqyrLMZYdRATfGrUvz0Lrk,3213
+arch_github_package-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+arch_github_package-0.0.4.dist-info/entry_points.txt,sha256=dAbNz6JVY7PObA1AygUDZAcaEbX9YTka5P8laEuDPnU,53
+arch_github_package-0.0.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+arch_github_package-0.0.4.dist-info/RECORD,,
