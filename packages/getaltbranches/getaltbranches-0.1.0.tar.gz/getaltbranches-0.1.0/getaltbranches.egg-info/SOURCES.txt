@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+getaltbranches/__init__.py
+getaltbranches/main.py
+getaltbranches.egg-info/PKG-INFO
+getaltbranches.egg-info/SOURCES.txt
+getaltbranches.egg-info/dependency_links.txt
+getaltbranches.egg-info/requires.txt
+getaltbranches.egg-info/top_level.txt
