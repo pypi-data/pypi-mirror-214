@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: autopyre
+Version: 0.0.2
+Summary: A tool that automatically formats Python code to conform to the PEP 8 style guide and This project based on autopep8
+Home-page: https://github.com/CSID-DGU/2023-1-OPPS1-CGS-08
+Author: Hideo Hattori, 2023-1-OPPS1-CGS-08
+Author-email: kys00919@gmail.com
+License: MIT
+Keywords: automation,pep8,format,pycodestyle,autopyre,pyrestyle
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.6
+License-File: LICENSE
