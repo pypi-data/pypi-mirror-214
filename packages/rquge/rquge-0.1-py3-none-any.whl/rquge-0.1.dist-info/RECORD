@@ -1,0 +1,10 @@
+rquge_score/__init__.py,sha256=X92RoSUj4sCjcDvYZ1xDcL9tD21LN0lUorchlRkY9mQ,42
+rquge_score/scorer.py,sha256=kMksCbsfhvDKV_LBzdsUhgv45lw0dV_BuWnj_IEkaCo,2837
+rquge_score_cli/__init__.py,sha256=4W8VliAYUP1KY2gLJ_YDy2TmcXYVm-PY7XikQD_bFwA,2
+rquge_score_cli/scorer_cli.py,sha256=grlUgM5KpAT01sX-APQE5df9aQFZ7I1Dm7O2KkMm3cI,3137
+rquge-0.1.dist-info/LICENSE,sha256=hKhLYvB-iQXAVLXC8xmlqAajx0QbYYaUTZxatDOpNLE,1078
+rquge-0.1.dist-info/METADATA,sha256=3bb9uEqQTbRa8ovxxTiow8wxirWvX_B9kpjAKE362p0,5060
+rquge-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rquge-0.1.dist-info/entry_points.txt,sha256=nm3Oc6R_Fh3Uj59_Bsc_yNLhfzi8K6a1LFWW9jPZLSM,58
+rquge-0.1.dist-info/top_level.txt,sha256=uQzPKH3lCcUiOwZ-DGU2-S0_v9oPln143m9ViS8L_FI,28
+rquge-0.1.dist-info/RECORD,,
