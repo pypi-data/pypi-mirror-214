@@ -1,0 +1,47 @@
+
+# Key Auth
+
+Authentication Tool for Authenticating Users, HWIDs and Licenses to keep your Code secure from malicious activities.
+
+
+## Installation
+
+Install keyauth-tech with pip
+
+```bash
+pip install keyauth-tech
+```
+    
+## Usage/Examples
+
+```python
+from keyauth import KeyAuth
+
+def main():
+    print("Hack the matrix!") # Replace with your Code (success)
+
+def exit_program():
+    print("Authentication failed.") # Replace with your Code (fail)
+    authenticator.exit()
+
+# Creating the authenticator instance
+authenticator = KeyAuth(app_id="", max_tries=3, success=main, fail=exit_program) # Replace with your APP ID
+
+# Authenticating
+authenticator.authenticate()
+
+# Install Packages if not installed 
+authenticator.install(["requests", "random"]) # Replace with your Packages
+
+# Print your HWID
+print(authenticator.get_hwid())
+
+```
+
+## Note
+
+To get your `APP_ID` make an Account on https://keyauth.tech/signup, you can get a Auth Key by contacting Support for completly free. 
+
+## Support
+
+For support, email `keyauthtech@gmail.com` or contact `flankdev` on Discord.
