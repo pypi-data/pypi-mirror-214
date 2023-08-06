@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+proga_ex/__init__.py
+proga_ex/exam.py
+proga_ex.egg-info/PKG-INFO
+proga_ex.egg-info/SOURCES.txt
+proga_ex.egg-info/dependency_links.txt
+proga_ex.egg-info/top_level.txt
