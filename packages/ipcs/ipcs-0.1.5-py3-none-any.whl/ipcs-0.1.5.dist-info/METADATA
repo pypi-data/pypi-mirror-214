@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ipcs
+Version: 0.1.5
+Summary: Simple IPC server/client
+Project-URL: Source, https://github.com/tasuren/ipcs
+Project-URL: Documentation, https://ipcs.readthedocs.io/
+Project-URL: Donate, https://www.buymeacoffee.com/tasuren
+Project-URL: Chat, https://discord.gg/kfMwZUyGFG
+Author-email: Takagi Tasuku <tasuren@outlook.jp>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: ipc,networking
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: orjson~=3.9.1
+Requires-Dist: websockets~=11.0.3
