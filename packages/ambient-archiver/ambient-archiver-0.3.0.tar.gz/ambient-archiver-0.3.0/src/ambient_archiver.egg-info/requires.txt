@@ -1,0 +1,5 @@
+requests
+click
+
+[dev]
+types-requests
