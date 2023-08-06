@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: justMulti
+Version: 0.0.1
+Summary: Parse html strings
+Author: Vrushank Desai
+Author-email: <vrushdesai0@gmail.com>
+Keywords: html,parsing
+Description-Content-Type: text/markdown
+
+Parse html strings and remove boilerplate material while extracting useful text/images/video/audio.

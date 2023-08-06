@@ -1,0 +1,12 @@
+setup.py
+justMulti/__init__.py
+justMulti/__main__.py
+justMulti/_compat.py
+justMulti/core.py
+justMulti/paragraph.py
+justMulti/utils.py
+justMulti.egg-info/PKG-INFO
+justMulti.egg-info/SOURCES.txt
+justMulti.egg-info/dependency_links.txt
+justMulti.egg-info/requires.txt
+justMulti.egg-info/top_level.txt
