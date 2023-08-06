@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bs-common-fastapi-mongodb"
+version = "0.1.0"
+description = ""
+authors = ["Bruno Segato <brunosegatoit@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bs_common_fastapi_mongodb"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+motor = "^3.1.2"
+bs-common-fastapi = "^0.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
