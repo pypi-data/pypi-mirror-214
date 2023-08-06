@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: eng-spacysentiment
+Version: 2.1.0
+Summary: sentiment analysis using spacy pipelines
+Home-page: https://github.com/Vishnunkumar/eng_spacysentiment
+Author: Vishnu
+Author-email: vishnunkumar25@gmail.com
+License: MIT
+
+sentiment analysis using spacy pipelines
+
+| Feature | Description |
+| --- | --- |
+| **Name** | `eng_spacysentiment` |
+| **Version** | `2.1.0` |
+| **spaCy** | `>=3.0.9,<3.1.0` |
+| **Default Pipeline** | `textcat` |
+| **Components** | `textcat` |
+| **Vectors** | 0 keys, 0 unique vectors (0 dimensions) |
+| **Sources** | n/a |
+| **License** | `MIT` |
+| **Author** | [Vishnu](https://github.com/Vishnunkumar/eng_spacysentiment) |
+
+### Label Scheme
+
+<details>
+
+<summary>View label scheme (2 labels for 1 components)</summary>
+
+| Component | Labels |
+| --- | --- |
+| **`textcat`** | `positive`, `negative` |
+
+</details>

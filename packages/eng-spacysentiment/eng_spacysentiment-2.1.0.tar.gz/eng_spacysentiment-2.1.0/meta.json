@@ -1,0 +1,36 @@
+{
+  "lang":"eng",
+  "name":"spacysentiment",
+  "version":"2.1.0",
+  "description":"sentiment analysis using spacy pipelines",
+  "author":"Vishnu",
+  "email":"vishnunkumar25@gmail.com",
+  "url":"https://github.com/Vishnunkumar/eng_spacysentiment",
+  "license":"MIT",
+  "spacy_version":">=3.0.9,<3.1.0",
+  "spacy_git_version":"Unknown",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null
+  },
+  "labels":{
+    "textcat":[
+      "positive",
+      "negative"
+    ]
+  },
+  "pipeline":[
+    "textcat"
+  ],
+  "components":[
+    "textcat"
+  ],
+  "disabled":[
+
+  ],
+  "requirements":[
+
+  ]
+}
