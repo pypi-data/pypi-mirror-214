@@ -1,0 +1,9 @@
+numpy>=1.6
+six>=1.9
+
+[docs]
+mock
+numpydoc
+sphinx
+sphinx_rtd_theme
+sphinx-automodapi
