@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: croqueta
+Version: 0.2.1
+Summary: A bunch of utilities to code even faster.
+Home-page: https://github.com/juanluisrto/croqueta
+Author: juanluisrto
+Author-email: juanluis.rto@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Croqueta
+
+Deploying to PyPI
+-----------------
+
+```
+python setup.py sdist bdist_wheel
+twine upload dist/*
+python setup.py clean --all
+```
+
+
