@@ -1,0 +1,20 @@
+BEGIN YODA_SCATTER2D_V2 /CMS_2019_I1753720/d01-x01-y01
+ErrorBreakdown: {0: {"": {up: 0.10000005869363279, dn: 0.10000005869363279}}}
+Path: /CMS_2019_I1753720/d01-x01-y01
+Title: SM as BG. No exclusion; expected\newline exclusion was 0\%
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+1.000000e+00	5.000000e-01	5.000000e-01	1.000735e+00	1.000001e-01	1.000001e-01
+END YODA_SCATTER2D_V2
+
+BEGIN YODA_SCATTER2D_V2 /CMS_2019_I1753720/d01-x01-y01
+ErrorBreakdown: {0: {"": {up: 0.10000005869363279, dn: 0.10000005869363279}}}
+Path: /CMS_2019_I1753720/d01-x01-y01
+Title: SM as BG. No exclusion; expected\newline exclusion was 0\%
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+1.000000e+00	5.000000e-01	5.000000e-01	1.000735e+00	1.000001e-01	1.000001e-01
+END YODA_SCATTER2D_V2
+
