@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ipycrawl
+Version: 0.0.2
+Summary: 파일 다운로드 및 각종 RESTful OpenAPI 를 사용하여 데이타를 수집하는 Innovata Web Crawler 라이브러리 패키지
+Home-page: https://github.com/innovata/iCrawler
+Author: innovata
+Author-email: iinnovata@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# iCrawler
+파일 다운로드 및 각종 RESTful OpenAPI 를 사용하여 데이타를 수집하는 Innovata Web Crawler
