@@ -1,0 +1,4 @@
+[console_scripts]
+bev = bev.main:main
+romp = romp.main:main
+trace2 = trace2.main:main
