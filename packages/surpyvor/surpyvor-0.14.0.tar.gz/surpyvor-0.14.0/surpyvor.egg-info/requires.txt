@@ -1,0 +1,8 @@
+matplotlib
+matplotlib-venn
+cyvcf2==0.30.18
+numpy
+UpSetPlot
+pysam
+cigar
+pyfaidx
