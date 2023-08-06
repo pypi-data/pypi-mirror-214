@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: chartstag
+Version: 0.8.2
+Summary: Charting and diagram extension for SciStag
+Home-page: https://github.com/scistag/chartstag
+License: MIT
+Keywords: Data Science,Data Engineering,Data Visualization
+Author: Michael Ikemann
+Requires-Python: >=3.9
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Documentation, https://scistag.readthedocs.io
+Project-URL: Repository, https://github.com/scistag/chartstag
+Description-Content-Type: text/markdown
+
+# ChartStag
+
+## v0.8.2
+
+ChartStag is an extension for the [SciStag](https://github.com/scistag/scistag) package
+which supports you in your computer vision, data science and data engineering
+projects.
+
+It extends SciStag with diagram and chart plotting capabilities. As of now solely by
+integrating [mermaid](https://github.com/mermaid-js/mermaid), an awesome diagram and
+charting tool written in JavaScript, into SciStag VisualLog.
+
+mermaid is licensed under the terms of
+the [MIT license](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE) -
+for further details about mermaid visit https://github.com/mermaid-js/mermaid or
+https://mermaid.js.org/.
+
+At this point huge thanks to [Knut Sveidqvist](https://github.com/knsv) and the whole
+mermaid team for their awesome work.
+
+Embedded tools versions:
+
+* **Mermaid 10.2.3**
+
+---
+
+ChartStag itself is as well licensed under the terms of the MIT license and
+Copyright (c) 2023 [Michael Ikemann](https://github.com/alyxion).
+
+For examples about how to use ChartStag in SciStag install scistag
+via `pip install scistag[common]`
+and see https://github.com/SciStag/SciStag/tree/main/scistag/examples/vislog.
