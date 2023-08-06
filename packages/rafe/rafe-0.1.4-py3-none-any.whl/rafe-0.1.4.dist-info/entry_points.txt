@@ -1,0 +1,3 @@
+[console_scripts]
+rafe = rafe.main:cli
+
