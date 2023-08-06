@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: bob.io.base
+Version: 5.1.0
+Summary: Basic IO for Bob
+Author-email: Andre Anjos <andre.anjos@idiap.ch>
+License: BSD 3-Clause License
+Project-URL: documentation, https://www.idiap.ch/software/bob/docs/bob/bob.io.base/v5.1.0/sphinx
+Project-URL: homepage, https://pypi.org/project/bob.io.base
+Project-URL: repository, https://gitlab.idiap.ch/bob/bob.io.base
+Project-URL: changelog, https://gitlab.idiap.ch/bob/bob.io.base/-/releases
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: qa
+Provides-Extra: doc
+Provides-Extra: test
+License-File: LICENSE
+
+[![latest-docs](https://img.shields.io/badge/docs-v5.1.0-orange.svg)](https://www.idiap.ch/software/bob/docs/bob/bob.io.base/v5.1.0/sphinx/index.html)
+[![build](https://gitlab.idiap.ch/bob/bob.io.base/badges/v5.1.0/pipeline.svg)](https://gitlab.idiap.ch/bob/bob.io.base/commits/v5.1.0)
+[![coverage](https://gitlab.idiap.ch/bob/bob.io.base/badges/v5.1.0/coverage.svg)](https://www.idiap.ch/software/bob/docs/bob/bob.io.base/v5.1.0/coverage/index.html)
+[![repository](https://img.shields.io/badge/gitlab-project-0000c0.svg)](https://gitlab.idiap.ch/bob/bob.io.base)
+
+# bob.io.base
+
+This package is part of the signal-processing and machine learning toolbox
+[Bob](https://www.idiap.ch/software/bob). It contains Bob's basic I/O functionality.
+
+> :warning: **This is a deprecated package** that will be soon removed from bob. Use
+with caution.
+
+Contains utilities to load and save data files and adapt the format of images.
+
+Also contains some remnants of utility (notably for testing) functions that will need
+to be moved to a new package.
+
+For installation and usage instructions, check-out our documentation.
