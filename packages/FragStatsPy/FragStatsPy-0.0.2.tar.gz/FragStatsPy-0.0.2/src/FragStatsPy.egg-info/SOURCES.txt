@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/FragStatsPy/__init__.py
+src/FragStatsPy/__main__.py
+src/FragStatsPy/frag_model.py
+src/FragStatsPy.egg-info/PKG-INFO
+src/FragStatsPy.egg-info/SOURCES.txt
+src/FragStatsPy.egg-info/dependency_links.txt
+src/FragStatsPy.egg-info/requires.txt
+src/FragStatsPy.egg-info/top_level.txt
