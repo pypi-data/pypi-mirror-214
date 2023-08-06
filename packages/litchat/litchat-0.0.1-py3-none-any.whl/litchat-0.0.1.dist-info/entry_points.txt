@@ -1,0 +1,2 @@
+[console_scripts]
+litchat = litchat.cli:litchat
