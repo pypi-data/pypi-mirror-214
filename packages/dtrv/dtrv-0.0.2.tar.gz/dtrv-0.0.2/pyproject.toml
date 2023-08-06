@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "dtrv"
+version = "0.0.1"
+description = "读取 vault secret 并维护 token 租期"
+readme = "README.md"
+authors = [
+    "Jones <hotstoneio@qq.com>",
+]
+maintainers = []
+repository = ""
+documentation = ""
+license = "Apache-2.0"
+keywords = ["dingtalk-robot-vault"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+pandas = "^1.5.0"
+pytz = "^2022.7"
+
+[tool.poetry.dev-dependencies]
+python = "^3.6.2"
+pandas = "^1.5.0"
+pytz = "^2022.7"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

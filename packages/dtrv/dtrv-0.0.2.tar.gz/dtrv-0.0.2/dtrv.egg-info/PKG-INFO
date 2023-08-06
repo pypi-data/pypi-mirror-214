@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: dtrv
+Version: 0.0.2
+Summary: Python client library for the dtrv
+Author: dtrv
+Author-email: hotstoneio@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.1
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# dingtalk robot vault
+
+通过 vault 获取 钉钉机器人 token/secret.
+
+提供 vault 方法:
+
+```
+1、通过 vault 获取所需 token/secret.
+2、对 vault 的 token 进行续签
+3、发送 钉钉 机器人消息(不管)
+```
+
+Example:
+
+```python
+import dtrv
+from dtrv import Method
+
+# 定义 vault 地址
+dtrv.vault_host = "http://127.0.0.1:8200"
+# 定义 vault Token
+dtrv.vault_token = "hvs.CAESIJvcUSdaPO9JRX7-FJfkuVS-dtooFJmsRfCx06cigPJtGh4KHGh2cy5OM1NGT0NaMWFBRDBDNGJGcUI1ZTVUMzM"
+# 定义所需 keyName
+dtrv.vault_kv_secret_namelist = ["robot/mypath", "robot/mypath2"]
+
+
+# 装饰器, 获取租期当不足 1 小时时需要续租
+@Method.InitializeTheVaultTokenLease
+def a():
+    """自定义方法 A"""
+    pass
+
+
+# 装饰器, 使用 keyName 获取 vault 对应数据
+@Method.UpdateDingtalkKvData
+def b():
+    """自定义方法 B"""
+    pass
+
+
+# 实验性质
+# 装饰器, 获取方法执行时间
+@Method.ChekcExecutionTime(__name__)
+def main():
+    a()
+    b()
+    # 打印当前 token 过期时间(hour)
+    print(dtrv.vault_token_timestamp)
+    # 获取 robot token/secret 列表
+    print(dtrv.dingtalk_robot_token_list)
+
+
+main()
+
+```
+
+### vault 方法
+
+```
+export VAULT_ADDR=http://localhost:8200
+export VAULT_TOKEN=hvs.R2gXj5FZlNcKLtbV8T9jCyrd
+
+vault kv put dingtalk/robot/mypath token=aaaa secret=bbbb
+vault kv put dingtalk/robot/mypath2 token=cccc secret=dddd
+
+vault secrets enable -path=dingtalk kv-v2
+
+cat >limit-token.hcl<<EOF
+path "dingtalk/+/*" {
+capabilities = ["read"]
+}
+path "auth/token/lookup-self" {
+    capabilities = ["read"]
+}
+# Allow tokens to renew themselves
+path "auth/token/renew-self" {
+    capabilities = ["update"]
+}
+EOF
+
+vault policy write test-read-policy ./limit-token.hcl
+vault token create -policy=test-read-policy -ttl 100m -no-default-policy -orphan
+
+export VAULT_TOKEN=hvs.CAESIKlV23gAKIIT5JJT-mbZQBrKkFNse5-SVo-gMJ1Zayt6Gh4KHGh2cy52dEd2NjBvTTNXRlFWQXBITXhpZFA5WWQ
+vault kv get -format=json dingtalk/robot/mypath
+```
+
