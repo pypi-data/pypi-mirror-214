@@ -1,0 +1,10 @@
+neural_network_model/VERSION,sha256=C4j3pj86QPw4Cq8hq8csyN7ZzSjX7pAbxzJ0l7toMRY,5
+neural_network_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neural_network_model/bit_vision.py,sha256=m1EHvnDPyPauRZtWyLQY_7c5KRwioACCBaXu2mxy6gM,25121
+neural_network_model/model.py,sha256=S46hDpWiozyqPp0NSBaECTnNWm8gZyGziT8hLN3YO4E,5927
+neural_network_model/process_data.py,sha256=cjEIhUhkboZc1B469KlBuFSbpitK3cJbZJkRpw6JlZI,14883
+neural_network_model/s3.py,sha256=JO7u5DDXYF9o6EgWT6rDugs5FpgAxmEBBecpMhhqFSM,2843
+drillvision-0.0.5.dist-info/METADATA,sha256=SS4oIwrdhTJASOUsmSXLzG7CV4RvwehyuXbaYfUG-W0,8800
+drillvision-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+drillvision-0.0.5.dist-info/top_level.txt,sha256=kQnnl8vwWu3-zJJu0sYn3zcPUtoXOhAWiipv1w9cJeY,21
+drillvision-0.0.5.dist-info/RECORD,,
