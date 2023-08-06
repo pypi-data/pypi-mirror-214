@@ -1,0 +1,8 @@
+langchain
+numpy
+pandas
+colorama
+wikipedia
+openai
+datasets
+tiktoken
