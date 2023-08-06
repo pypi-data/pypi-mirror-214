@@ -1,0 +1,10 @@
+README.md
+setup.py
+simple_interpolator/__init__.py
+simple_interpolator/interpolator.py
+simple_interpolator/stylizer.py
+simple_interpolator.egg-info/PKG-INFO
+simple_interpolator.egg-info/SOURCES.txt
+simple_interpolator.egg-info/dependency_links.txt
+simple_interpolator.egg-info/requires.txt
+simple_interpolator.egg-info/top_level.txt
