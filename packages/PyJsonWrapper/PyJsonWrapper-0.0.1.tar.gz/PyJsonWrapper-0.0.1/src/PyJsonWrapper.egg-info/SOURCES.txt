@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/json_wrapper.py
+src/PyJsonWrapper.egg-info/PKG-INFO
+src/PyJsonWrapper.egg-info/SOURCES.txt
+src/PyJsonWrapper.egg-info/dependency_links.txt
+src/PyJsonWrapper.egg-info/top_level.txt
+tests/test_json_wrapper.py
