@@ -1,0 +1,12 @@
+cidr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cidr/networkcalculator.py,sha256=nEJpPCXGUbuzyWJ9kb4FLNgUqEhHSaySoyoeJFtdGDQ,3763
+feeds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+feeds/bandwidth_calculator.py,sha256=S6wlES8l105vJvX_oHBQLRtabjbcMt0mCNJahxoAfQQ,8078
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/bandwidth_calculator_test.py,sha256=unHOWPIpRX3Yp87WXhEAC92yNSv5tsEP1XMdFekUO58,2993
+tests/networkcalculator_test.py,sha256=Q2TQLGMbemBofTFl6nEK9myK7V9QJMIrqsmvUeozg0k,1137
+networkcalculator-0.0.3.dist-info/LICENSE.txt,sha256=Q_V_7Ewd20FMaR-WYIhVZGlmQ3SNwkAVz5TJm8m28zs,1094
+networkcalculator-0.0.3.dist-info/METADATA,sha256=XVNFqAhNPvoqpBXNh1ZXqdUJBHx7LdLODKH8LOWDaDY,11994
+networkcalculator-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+networkcalculator-0.0.3.dist-info/top_level.txt,sha256=xh4wm165yJNAXavDk-cqBtci5ZzFWDYtJcZPGkoduCQ,17
+networkcalculator-0.0.3.dist-info/RECORD,,
