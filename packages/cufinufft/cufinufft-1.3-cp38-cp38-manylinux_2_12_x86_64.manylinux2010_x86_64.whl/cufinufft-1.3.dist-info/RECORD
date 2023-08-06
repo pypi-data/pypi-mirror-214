@@ -1,0 +1,14 @@
+cufinufftc.cpython-38-x86_64-linux-gnu.so,sha256=XvmuuRHXKwyTTJA4TDYH6gAYlScaX6buEOqwAtvcyXY,13008
+cufinufft.libs/libcufft-a10fe89f.so.10.1.1.243,sha256=cDdgY82Kfdv57M5BXhXd882I4b0tH-zqg_f4E7wl2CE,138162520
+cufinufft.libs/libcudart-1b201d85.so.10.1.243,sha256=QeGXqPnYZDgwXiYfVlSiHkyiVOSFsZ4EjGXf3s4j7_w,519008
+cufinufft.libs/libcuda-e9fe71a6.so.510.108.03,sha256=VOSWtBZv9MiRI0VUFZr4im845fDpW4qXg_mR9yRY59I,22977952
+cufinufft.libs/libcufinufft-3b7037dd.so,sha256=pRneTlHJW6XWH1b8McUMrJYCh1oNu0mRNCtZUvjeGYo,36458272
+cufinufft.libs/libnvToolsExt-3965bdd0.so.1.0.0,sha256=S4UebkLEjQYZsiODLSBG9QLNb4UnbkVd_Xizg-Fb6PU,42984
+cufinufft/_cufinufft.py,sha256=fAxdwCmo0eCSjxcvLVJ163z94GDIipp41TH1G6dC8-Q,4234
+cufinufft/__init__.py,sha256=v9qUkzU1sYhdDPPtSRz3SGo02WPNsGIZBShwjMKdQqU,87
+cufinufft/cufinufft.py,sha256=c79vmjfszSyw3zTTnli2mYnReiozLGAypxnEsHv1vu0,9140
+cufinufft-1.3.dist-info/top_level.txt,sha256=mRZvR6-NaLn9ySoHEShp-LR0jjjtBEn5hkJlRCcyJiI,21
+cufinufft-1.3.dist-info/WHEEL,sha256=VC8YzyxoGiXrzl8xKL9ftgvyZU-Uz6pGPrSATb2mDHw,148
+cufinufft-1.3.dist-info/LICENSE,sha256=UCxx7eyp44K9IV-_hObNbyJmM0Z9I18TCuzkpElS1mo,1597
+cufinufft-1.3.dist-info/METADATA,sha256=GmC6Gft8fmIrpBxOJ_RtoGe-C-C3G_zzdrL8ZW7EYOE,2305
+cufinufft-1.3.dist-info/RECORD,,
