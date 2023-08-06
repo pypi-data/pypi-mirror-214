@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: alphagram
+Version: 1.0.0
+Summary: Easier access and Less Waits library for pyrogram
+Home-page: https://github.com/ShutupKeshav/alphagram
+Download-URL: https://github.com/ShutupKeshav/alphagram/releases/latest
+Author: ShutupKeshav
+Author-email: keshavatripathi@yahoo.com
+License: MIT
+Project-URL: Tracker, https://github.com/ShutupKeshav/alphagram/issues
+Project-URL: Community, https://t.me/SpLBots
+Project-URL: Source, https://github.com/ShutupKeshav/alphagram
+Project-URL: Documentation, https://t.me/SpLBots
+Keywords: alphagram library pyrogram tgcrypto telegram telethon python-telegram-bot
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyrogram (==2.0.100)
+Requires-Dist: tgcrypto
+
+# alphagram <= advanced pyrogram
+
+## Less FloodWaits
+## Faster API Calls
+## Callables Made Easy 
