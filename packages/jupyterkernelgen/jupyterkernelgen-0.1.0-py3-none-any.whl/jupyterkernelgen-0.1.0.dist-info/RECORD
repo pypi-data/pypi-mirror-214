@@ -1,0 +1,9 @@
+jupyterkernelgen/__init__.py,sha256=ubJLY8-4YYarc7Uqw2-WHtTDCMbU2Ir55EXIB31ey2k,38
+jupyterkernelgen/__main__.py,sha256=1MAZaKLO4fRwXj4N8dGdaaiVcP6JVsID5-ReUolD2ko,43
+jupyterkernelgen/jupyterkernelgen.py,sha256=s1crGNvSLQf_ck6iB-K2izIRKfQp8bnmjG9ycqs7EaI,17133
+jupyterkernelgen-0.1.0.dist-info/LICENSE,sha256=yVuuHRzgI17MzTVgt3LsHvuX80innw--CmNPDCzO_iw,11358
+jupyterkernelgen-0.1.0.dist-info/METADATA,sha256=gdsoE_Acq_Wqv11zO4XNs2VMSKT220HGwpO1Xf1Lc8g,5098
+jupyterkernelgen-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jupyterkernelgen-0.1.0.dist-info/entry_points.txt,sha256=o7z2Rh8ffEP7qY9NtSk3Q9rmq_xa5DB3QtR-424eMFU,76
+jupyterkernelgen-0.1.0.dist-info/top_level.txt,sha256=901oB93JhQeeVIDZ5xEV77tpbvXHj65amAWo4rLOLoU,17
+jupyterkernelgen-0.1.0.dist-info/RECORD,,
