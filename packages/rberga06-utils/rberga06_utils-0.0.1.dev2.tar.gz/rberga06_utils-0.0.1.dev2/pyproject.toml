@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "rberga06-utils"
+version = "0.0.1.dev2"
+description = "Useful utilities for Python projects."
+authors = ["RBerga06 <78449715+RBerga06@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "rberga06", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+# pydantic = {git = "https://github.com/pydantic/pydantic"}
+pydantic = {version = "^2.0b2", allow-prereleases = true}
+packaging = "^23.1"
+pyyaml = "^6.0"
+typing-extensions = "^4.6.3"
+
+[tool.poetry.group.dev.dependencies]
+types-pyyaml = "^6.0.12.10"
+pytest = "^7.3.2"
+pytest-cov = "^4.1.0"
+pytest-mypy-testing = "^0.1.1"
+# pytest-benchmark = "^4.0.0"
+
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+addopts = """\
+    --durations=5 \
+    --cov=rberga06.utils \
+    --cov-report term \
+    --cov-report html \
+"""
+#   --benchmark-autosave \
+norecursedirs = [
+    "tests/plugins/*",
+]
+
+
+[tool.mypy]
+mypy_path = [
+    "src",
+]
+explicit_package_bases = true
+packages = [
+    "rberga06.utils",
+]
+plugins = [
+    "pydantic.mypy",
+]
+strict = true
+warn_unused_ignores = false
+
+
+[tool.pyright]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
