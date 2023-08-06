@@ -1,0 +1,7 @@
+setup.py
+isTrue/__init__.py
+isTrue/isTrue.py
+isTrue.egg-info/PKG-INFO
+isTrue.egg-info/SOURCES.txt
+isTrue.egg-info/dependency_links.txt
+isTrue.egg-info/top_level.txt
