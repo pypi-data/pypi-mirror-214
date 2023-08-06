@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+tepgacast/__init__.py
+tepgacast/tepgacast.py
+tepgacast.egg-info/PKG-INFO
+tepgacast.egg-info/SOURCES.txt
+tepgacast.egg-info/dependency_links.txt
+tepgacast.egg-info/requires.txt
+tepgacast.egg-info/top_level.txt
