@@ -1,0 +1,14 @@
+ndx_miniscope/__init__.py,sha256=znmXC2qp2T89jtw3ylu4fEN7IKHeBbXv-gg4w6Q3Bws,294
+ndx_miniscope/spec/ndx-miniscope.extensions.yaml,sha256=VYJamtQZICpBTHWBSkhu7dcpqCR7O9yn2UPG4L0mMZg,1255
+ndx_miniscope/spec/ndx-miniscope.namespace.yaml,sha256=IMBk1ZTQX1iaF4etwqOWXY_ca7xwCPVoYmcD-BTin4Y,277
+ndx_miniscope/utils/__init__.py,sha256=QeMJd1kuaBx_Mj9AeANMBLmaNCIjjRJK7_00v2QJUMk,289
+ndx_miniscope/utils/notes.py,sha256=A6ui3aTHlSbJi-Dy1XiyioYLqxh9YlkVjL5MOc6wMIk,1055
+ndx_miniscope/utils/nwb.py,sha256=ahdrqTgK7L6Ji4i1-pxyl6ycZUWUxYHKNn1QyOShiBg,4062
+ndx_miniscope/utils/settings.py,sha256=BK-41Q4FqTXuycsxTgZjKFjofOKTRN0Jysmy6VsbTtU,3240
+ndx_miniscope/utils/timestamps.py,sha256=tT7MnDwutNOTSMF_v0cOPR9ffi9O6NL-zLqG-IzoiXU,4124
+ndx_miniscope/utils/video.py,sha256=02klY48gNum6v4HCCEpYDSYE4m6s-Tj-Unfmu_zv33E,1398
+ndx_miniscope-0.5.0.dist-info/LICENSE.txt,sha256=gPsr0u4J9LZCKwuVKsOkRLO-pS9YDPwNelgswkJuO0o,1559
+ndx_miniscope-0.5.0.dist-info/METADATA,sha256=bD90R-GbvHZVpuK_LRCymVcQXErusIDtZxC3b4WJ478,5715
+ndx_miniscope-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ndx_miniscope-0.5.0.dist-info/top_level.txt,sha256=xsojWEsqWbmdozfVRMUeYPeO_lHSZZxjdMLg0QzeDDs,14
+ndx_miniscope-0.5.0.dist-info/RECORD,,
