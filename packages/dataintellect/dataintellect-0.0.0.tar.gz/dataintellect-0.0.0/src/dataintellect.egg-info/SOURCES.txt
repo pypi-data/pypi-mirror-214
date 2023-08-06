@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/DataIntellect/__init__.py
+src/DataIntellect/flag.py
+src/dataintellect.egg-info/PKG-INFO
+src/dataintellect.egg-info/SOURCES.txt
+src/dataintellect.egg-info/dependency_links.txt
+src/dataintellect.egg-info/top_level.txt
