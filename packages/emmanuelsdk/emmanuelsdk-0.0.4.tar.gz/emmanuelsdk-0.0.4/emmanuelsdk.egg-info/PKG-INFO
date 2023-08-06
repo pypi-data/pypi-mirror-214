@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: emmanuelsdk
+Version: 0.0.4
+Summary: A SDK for the-one-api.dev API updated 
+Author: Emmanuel Felipe
+Author-email: hi@emmanuel.cloud
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11
