@@ -1,0 +1,16 @@
+screenshotgenerator/__init__.py,sha256=Uqg5yKwZP8AAk1_K_ltcNq1pi8hmi-6Wr3GmxT8aKQs,147
+screenshotgenerator/click_enum_type.py,sha256=RqwivoWM-Yr3CTDYkoWLj9wtd0ZVciiXT-xi11UHdBc,370
+screenshotgenerator/common.py,sha256=-WMFiwsOlFXp71GDeu9sEmkdvTqCtlhHs6Uxxbihyg8,352
+screenshotgenerator/defaults.py,sha256=iyCFeTVPQOsXrIaq_FqiKg_ie1CPP08y_CSHfkNRgNo,540
+screenshotgenerator/generate.py,sha256=yg-qUclhmht6RuMyLqc3b8JIKlzFo0dDBUyH_0E6KNU,3081
+screenshotgenerator/portrait_preference.py,sha256=y4CiIBvYmeJtgNa4fFO_vA7Yy6Rj82GIdZ_UjCHFtRY,136
+screenshotgenerator/screenshot.py,sha256=EM5d_Qsz1f6VsfcKAdX9EeOpAG0Pro7jAJ2__6BqmR0,286
+screenshotgenerator/screenshotgenerator.py,sha256=cSuMrDuTS3q6C0lNQ60FeqmzTP7MyqZ-lH-Ii0IRFH8,3860
+screenshotgenerator/screenshotselector.py,sha256=9i_g1xktwdac9a5j3czPvqT27ZfUFxytIs1hUfWoVEA,2743
+screenshotgenerator/select.py,sha256=DGPfbaDekbMyTz14JKw6_PmWcx1-DQifBbUXUAhrpvo,4254
+screenshotgenerator-0.4.0.dist-info/LICENSE,sha256=GSmNgItDXJPNSKzWkblyiQKWGnDqcOulx8-nvIuwW2k,1076
+screenshotgenerator-0.4.0.dist-info/METADATA,sha256=wykXc3PdH4PbIrOmp8euabdlU7GpjJxuUwa7qaqw90o,9615
+screenshotgenerator-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+screenshotgenerator-0.4.0.dist-info/entry_points.txt,sha256=5g30EKZZDFTf2v037b4TpcIR6vXmwsB29FpXf4z4-aQ,150
+screenshotgenerator-0.4.0.dist-info/top_level.txt,sha256=nCk3Z6ErLkhkgGcOWluGVujsbJjDrc3GihjoiApdt3M,20
+screenshotgenerator-0.4.0.dist-info/RECORD,,
