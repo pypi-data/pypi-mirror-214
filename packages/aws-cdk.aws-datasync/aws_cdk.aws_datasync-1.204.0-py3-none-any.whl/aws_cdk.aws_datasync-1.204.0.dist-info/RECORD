@@ -1,0 +1,10 @@
+aws_cdk/aws_datasync/__init__.py,sha256=gUQVxhRr6zcLU1BSxgRKpkGypIh1iR97RLF-hWfep8Y,493104
+aws_cdk/aws_datasync/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_datasync/_jsii/__init__.py,sha256=mihUkaQmHpvaTJhijtc6mLncPle-DqMbApDI7xnlErI,385
+aws_cdk/aws_datasync/_jsii/aws-datasync@1.204.0.jsii.tgz,sha256=NK80hrQ0bbrQp7t7qAQRE4MudXBFX-RVJZnYTo0WZ0o,162861
+aws_cdk.aws_datasync-1.204.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_datasync-1.204.0.dist-info/METADATA,sha256=oJABR2QgzxgeotHPeY-GFK7ef23XqkUBI48qgcsr2oU,3259
+aws_cdk.aws_datasync-1.204.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_datasync-1.204.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_cdk.aws_datasync-1.204.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_datasync-1.204.0.dist-info/RECORD,,
