@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pypi-changes
+Version: 1.2.1
+Summary: check out when packages changed
+Project-URL: Homepage, http://pypi_changes.readthedocs.org
+Project-URL: Source, https://github.com/gaborbernat/pypi_changes
+Project-URL: Tracker, https://github.com/gaborbernat/pypi_changes/issues
+Author-email: Bernát Gábor <gaborjbernat@gmail.com>
+Maintainer-email: Bernát Gábor <gaborjbernat@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: environments,isolated,testing,virtual
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: tox
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Requires-Dist: backports-cached-property>=1.0.2; python_version < '3.8'
+Requires-Dist: humanize>=4.6
+Requires-Dist: importlib-metadata>=6.6; python_version < '3.8'
+Requires-Dist: packaging>=23.1
+Requires-Dist: platformdirs>=3.5.3
+Requires-Dist: pypi-simple>=1.1
+Requires-Dist: requests-cache>=1.0.1
+Requires-Dist: requests>=2.31
+Requires-Dist: rich>=13.4.2
+Provides-Extra: docs
+Requires-Dist: furo>=2023.5.20; extra == 'docs'
+Requires-Dist: sphinx-argparse-cli>=1.11; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints!=1.23.4,>=1.23.1; extra == 'docs'
+Requires-Dist: sphinx-copybutton>=0.5.2; extra == 'docs'
+Requires-Dist: sphinx-inline-tabs>=2023.4.21; extra == 'docs'
+Requires-Dist: sphinx>=7.0.1; extra == 'docs'
+Requires-Dist: sphinxcontrib-towncrier>=0.2.1a0; extra == 'docs'
+Requires-Dist: towncrier>=23.6; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: covdefaults>=2.3; extra == 'testing'
+Requires-Dist: pytest-cov>=4.1; extra == 'testing'
+Requires-Dist: pytest-mock>=3.11.1; extra == 'testing'
+Requires-Dist: pytest>=7.3.2; extra == 'testing'
+Requires-Dist: urllib3<2; extra == 'testing'
+Requires-Dist: vcrpy>=4.3.1; extra == 'testing'
+Requires-Dist: virtualenv>=20.23; extra == 'testing'
+Description-Content-Type: text/markdown
+
+# pypi_changes
+
+[![PyPI](https://img.shields.io/pypi/v/pypi-changes?style=flat-square)](https://pypi.org/project/pypi-changes/)
+[![Supported Python
+versions](https://img.shields.io/pypi/pyversions/pypi-changes.svg)](https://pypi.org/project/pypi-changes/)
+[![check](https://github.com/gaborbernat/pypi_changes/actions/workflows/check.yml/badge.svg)](https://github.com/gaborbernat/pypi_changes/actions/workflows/check.yml)
+[![Documentation Status](https://readthedocs.org/projects/pypi-changes/badge/?version=latest)](https://pypi-changes.readthedocs.io/en/latest/?badge=latest)
+[![Code style:
+black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Downloads](https://pepy.tech/badge/pypi-changes/month)](https://pepy.tech/project/pypi-changes/month)
+
+[![asciicast](https://asciinema.org/a/446966.svg)](https://asciinema.org/a/446966)
