@@ -1,0 +1,3 @@
+[console_scripts]
+osmchange-generator=src.osmchange_generator_cli.main:app
+
