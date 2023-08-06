@@ -1,0 +1,8 @@
+dorispdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dorispdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dorispdf/pdf2text.py,sha256=EkdgVZsDuD89tk6oSmchzEkVExkj194iphv1TixaW3E,43
+dorispdf-1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+dorispdf-1.0.dist-info/METADATA,sha256=1NcZYg9b3YP16nXYSudbo43UU02iK4-iLu8jw1tTVaM,116
+dorispdf-1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dorispdf-1.0.dist-info/top_level.txt,sha256=XktKMF-nYceBKxZXxEzkx5tSoKfhczBVjNwghO9XVN0,9
+dorispdf-1.0.dist-info/RECORD,,
