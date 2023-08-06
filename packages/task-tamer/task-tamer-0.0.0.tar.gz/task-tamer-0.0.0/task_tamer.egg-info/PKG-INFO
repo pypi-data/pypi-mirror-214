@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: task-tamer
+Version: 0.0.0
+Home-page: https://github.com/sderev/task-tamer
+Author: Sébastien De Revière
+License: Apache Licence, Version 2.0
+Project-URL: Documentation, https://github.com/sderev/task-tamer
+Project-URL: Issues, http://github.com/sderev/task-tamer/issues
+Project-URL: Changelog, https://github.com/sderev/task-tamer/releases
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# task-tamer
