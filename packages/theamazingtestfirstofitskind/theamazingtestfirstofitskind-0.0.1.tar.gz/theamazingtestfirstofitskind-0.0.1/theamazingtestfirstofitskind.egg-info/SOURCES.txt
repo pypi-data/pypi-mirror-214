@@ -1,0 +1,7 @@
+setup.py
+testops/__init__.py
+testops/test.py
+theamazingtestfirstofitskind.egg-info/PKG-INFO
+theamazingtestfirstofitskind.egg-info/SOURCES.txt
+theamazingtestfirstofitskind.egg-info/dependency_links.txt
+theamazingtestfirstofitskind.egg-info/top_level.txt
