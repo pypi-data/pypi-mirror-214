@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: infonaut
+Version: 0.0.0
+Home-page: https://github.com/sderev/infonaut
+Author: Sébastien De Revière
+License: Apache Licence, Version 2.0
+Project-URL: Documentation, https://github.com/sderev/infonaut
+Project-URL: Issues, http://github.com/sderev/infonaut/issues
+Project-URL: Changelog, https://github.com/sderev/infonaut/releases
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# infonaut
+Supercharge your research with AI. Explore and summarize articles, evaluate sources, and uncover insights from a vast knowledge base. Infonaut makes your research process faster.

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+infonaut.egg-info/PKG-INFO
+infonaut.egg-info/SOURCES.txt
+infonaut.egg-info/dependency_links.txt
+infonaut.egg-info/requires.txt
+infonaut.egg-info/top_level.txt
