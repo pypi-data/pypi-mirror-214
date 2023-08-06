@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ddv
+Version: 0.0.3
+Summary: A basic dutch document validator
+Home-page: UNKNOWN
+Author: Ankit Gupta
+Author-email: devankitgupta01@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: dutch-docs-validator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
