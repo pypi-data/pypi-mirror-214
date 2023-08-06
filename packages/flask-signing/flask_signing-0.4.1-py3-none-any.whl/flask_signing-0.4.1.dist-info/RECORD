@@ -1,0 +1,7 @@
+flask_signing/__init__.py,sha256=sWdE8ZAoZMyTNowjmzk9m_oUt-iars-b7TbtIQIEGes,15435
+tests/__init__.py,sha256=QmmKZT1J32rN3XBsVCjG22cKjGRcKzzLtsrbEdkUIU4,9760
+flask_signing-0.4.1.dist-info/LICENSE,sha256=pzry0jNUfeJOxUjUwTek1WKMGWbyX-lOP8qfDOnM7sA,1503
+flask_signing-0.4.1.dist-info/METADATA,sha256=5EPAhjT7mfjfcaQs6U92VnzZY6EQtcPX5edguEoyOik,3961
+flask_signing-0.4.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+flask_signing-0.4.1.dist-info/top_level.txt,sha256=ZE6BfuPMj9ZaYBqkifVUlDPnknOGOdlGj-xxqadgg7A,20
+flask_signing-0.4.1.dist-info/RECORD,,
