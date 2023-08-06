@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: la-headers
+Version: 0.0.2
+Summary: Headers generator
+License: MIT
+Keywords: headers,request,browser
+Author-email: thiagola92 <thiagola92@gmail.com>
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: Homepage, https://github.com/thiagola92/la-headers
+Description-Content-Type: text/markdown
+
+# la-headers
+A dumb headers generator.  
+
+# install
+`pip install la-headers`
+
