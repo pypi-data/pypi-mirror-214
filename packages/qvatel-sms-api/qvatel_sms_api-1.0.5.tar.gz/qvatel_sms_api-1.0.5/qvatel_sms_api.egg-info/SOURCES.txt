@@ -1,0 +1,9 @@
+README.md
+setup.py
+qvatel/__init__.py
+qvatel/client.py
+qvatel_sms_api.egg-info/PKG-INFO
+qvatel_sms_api.egg-info/SOURCES.txt
+qvatel_sms_api.egg-info/dependency_links.txt
+qvatel_sms_api.egg-info/requires.txt
+qvatel_sms_api.egg-info/top_level.txt
