@@ -1,0 +1,10 @@
+srsly_cli/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+srsly_cli/__main__.py,sha256=_N7lvRin3-JMw0PqMN8838feFcF0B1IAcVpGR6pQ8qA,137
+srsly_cli/srsly_convert.py,sha256=Ihqx0KKZweKgoMJO3DBZzLjzCTbqRtwmTZwA71wC8Oc,1988
+srsly_cli/utils.py,sha256=wZEENRlpkGw4igOG3CMO4vj4Vx6Xdnu2Pm5xsOPKIYA,280
+srsly_cli-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+srsly_cli-0.0.1.dist-info/METADATA,sha256=9QP-PpJQnT8zgmy_vpcGbiJeDVJS3_Kel6HAs_GH6BQ,819
+srsly_cli-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+srsly_cli-0.0.1.dist-info/entry_points.txt,sha256=AlMLiBhalgrQb5zKxcHKpBFgr8qoYPwifp1cDbN5gdM,50
+srsly_cli-0.0.1.dist-info/top_level.txt,sha256=vx6-7IsBzP_pHsekC_Bg0LbnjJMi9gkA7T2Rdsyzas4,10
+srsly_cli-0.0.1.dist-info/RECORD,,
