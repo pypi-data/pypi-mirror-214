@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: ready-logger
+Version: 1.0.0
+Summary: Easily configure Python loggers.
+Home-page: https://github.com/djkelleher/ready-logger
+License: MIT
+Keywords: logs,logger,loggers,logging
+Author: Dan Kelleher
+Author-email: kelleherjdan@gmail.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Logging
+Project-URL: Repository, https://github.com/djkelleher/ready-logger
+Description-Content-Type: text/markdown
+
+## Easily configure Python loggers
+
+### Install
+`pip install ready_logger`
+
+
+### Usage
+There is one function: `get_logger`
+```py
+from ready_logger import get_logger
+```
+
+#### Signature
+```py
+def get_logger(
+    name: Optional[str] = None,
+    level: Optional[Union[str, int]] = None,
+    show_file_path: Optional[bool] = None,
+    file_dir: Optional[Union[str, Path]] = None,
+    max_bytes: Optional[int] = 20_000_000,
+    backup_count: Optional[int] = 2,
+) -> Logger:
+    """Create a new logger or return an existing logger with the given name.
+
+    All arguments besides for `name` can be set via environment variables in the form `{LOGGER NAME}_{VARIABLE NAME}` or `READY_LOGGER_{VARIABLE NAME}`.
+    Variables including logger name will be chosen before `READY_LOGGER_` variables. Variables can be uppercase or lowercase.
+
+    Args:
+        name (Optional[str], optional): Name for the logger. Defaults to None.
+        level (Optional[Union[str, int]], optional): Logging level -- CRITICAL: 50, ERROR: 40, WARNING: 30, INFO: 20, DEBUG: 10.
+        show_file_path (Optional[bool], optional): Show absolute file path in log string prefix rather than just filename. Defaults to True if level is DEBUG, else False.
+        file_dir (Optional[Union[str, Path]], optional): Directory where log files should be written.
+        max_bytes (int): Max number of bytes to store in one log file.
+        backup_count (int): Number of log rotations to keep.
+
+    Returns:
+        Logger: The configured logger.
+    """
+```
+
