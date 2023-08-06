@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: myCalculate
+Version: 0.0.0
+Summary: My first Python package
+Author: Godspower Maurice
+Author-email: verbosetwomillion@gmail.com
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+This Python module serve as a calculator. Am just implementing my skills on paging your module to pypi.
