@@ -1,0 +1,8 @@
+torch>=1.11.0
+numpy
+torchvision
+numpy
+pandas
+h5py
+Pillow
+einops
