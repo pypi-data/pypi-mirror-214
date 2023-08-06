@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: yunopyutils
+Version: 1.0.0a1
+Summary: Utils for python
+Author-email: yunopayments <utils-tech@y.uno>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: python-dotenv>=1.0.0
+Description-Content-Type: text/markdown
+
+# yuno-py-utils
+
+Utils for python
