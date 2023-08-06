@@ -1,0 +1,180 @@
+site_name: "RLLTE"
+site_url: https://docs.rllte.dev/
+copyright: Copyright &copy; 2023 Reinforcement Learning Evolution Foundation
+theme:
+  name: material
+  logo: assets/images/icon.svg
+  favicon: assets/images/icon.svg
+  palette:
+    - scheme: rllte
+      primary: rllte
+      accent: rllte
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+        
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - content.code.select
+    - content.code.copy
+    - content.code.select
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+
+repo_url: https://github.com/RLE-Foundation/rllte
+repo_name: RLE-Foundation/rllte
+
+extra:
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/RLE-Foundation/rllte
+    - icon: fontawesome/solid/paper-plane
+      link: friedrichyuan19990827@gmail.com
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/rllte/
+  
+nav:
+  - Overview: 
+    - Overview: index.md
+    - Tenet: tenet.md
+    - Changelog: changelog.md
+    - Contribution: contributing.md
+    - License: license.md
+
+  - Getting Started:
+    - Installation: getting_started.md
+    - Verification: verification.md
+  
+  - Tutorials: 
+    - Overview: tutorials/index.md
+
+  - API Documentation:
+    - Overview: api.md
+    - Common: 
+      - BaseAgent: api_docs/common/base_agent.md
+      - OnPolicyAgent: api_docs/common/on_policy_agent.md
+      - OffPolicyAgent: api_docs/common/off_policy_agent.md
+      - DistributedAgent: api_docs/common/distributed_agent.md
+      - BaseEncoder: api_docs/common/base_encoder.md
+      - BaseStorage: api_docs/common/base_storage.md
+      - BaseDistribution: api_docs/common/base_distribution.md
+      - BaseAugmentation: api_docs/common/base_augmentation.md
+      - BaseIntrinsicRewardModule: api_docs/common/base_reward.md
+      - Logger: api_docs/common/logger.md
+      - Timer: api_docs/common/timer.md
+
+    - Xploit:
+      - agent:
+        - SAC: api_docs/xploit/agent/sac.md
+        - DrQ: api_docs/xploit/agent/sac.md
+        - DrQv2: api_docs/xploit/agent/drqv2.md
+        - DDPG: api_docs/xploit/agent/drqv2.md
+        - DAAC: api_docs/xploit/agent/daac.md
+        - PPO: api_docs/xploit/agent/ppo.md
+        - DrAC: api_docs/xploit/agent/ppo.md
+        - IMPALA: api_docs/xploit/agent/impala.md
+      
+      - encoder:
+        - EspeholtResidualEncoder: api_docs/xploit/encoder/espeholt_residual_encoder.md
+        - MnihCnnEncoder: api_docs/xploit/encoder/mnih_cnn_encoder.md
+        - TassaCnnEncoder: api_docs/xploit/encoder/tassa_cnn_encoder.md
+        - PathakCnnEncoder: api_docs/xploit/encoder/pathak_cnn_encoder.md
+        - VanillaMlpEncoder: api_docs/xploit/encoder/vanilla_mlp_encoder.md
+        - IdentityEncoder: api_docs/xploit/encoder/identity_encoder.md
+
+      - storage:
+        - DistributedStorage: api_docs/xploit/storage/distributed_storage.md
+        - VanillaRolloutStorage: api_docs/xploit/storage/vanilla_rollout_storage.md
+        - VanillaReplayStorage: api_docs/xploit/storage/vanilla_replay_storage.md
+        - NStepReplayStorage: api_docs/xploit/storage/nstep_replay_storage.md
+        - PrioritizedReplayStorage: api_docs/xploit/storage/prioritized_replay_storage.md
+
+    - Xplore:
+      - reward:
+        - PseudoCounts: api_docs/xplore/reward/pseudo_counts.md
+        - ICM: api_docs/xplore/reward/icm.md
+        - RND: api_docs/xplore/reward/rnd.md
+        - GIRM: api_docs/xplore/reward/girm.md
+        - NGU: api_docs/xplore/reward/ngu.md
+        - RIDE: api_docs/xplore/reward/ride.md
+        - RE3: api_docs/xplore/reward/re3.md
+        - RISE: api_docs/xplore/reward/rise.md
+        - REVD: api_docs/xplore/reward/revd.md
+
+      - augmentation:
+        - GaussianNoise: api_docs/xplore/augmentation/gaussian_noise.md
+        - RandomAmplitudeScaling: api_docs/xplore/augmentation/random_amplitude_scaling.md
+        - GrayScale: api_docs/xplore/augmentation/grayscale.md
+        - Identity: api_docs/xplore/augmentation/identity.md
+        - RandomColorJitter: api_docs/xplore/augmentation/random_colorjitter.md
+        - RandomConvolution: api_docs/xplore/augmentation/random_convolution.md
+        - RandomCrop: api_docs/xplore/augmentation/random_crop.md
+        - RandomCutout: api_docs/xplore/augmentation/random_cutout.md
+        - RandomCutoutColor: api_docs/xplore/augmentation/random_cutoutcolor.md
+        - RandomFlip: api_docs/xplore/augmentation/random_flip.md
+        - RandomRotate: api_docs/xplore/augmentation/random_rotate.md
+        - RandomShift: api_docs/xplore/augmentation/random_shift.md
+        - RandomTranslate: api_docs/xplore/augmentation/random_translate.md
+
+      - distribution:
+        - Bernoulli: api_docs/xplore/distribution/bernoulli.md
+        - Categorical: api_docs/xplore/distribution/categorical.md
+        - DiagonalGaussian: api_docs/xplore/distribution/diagonal_gaussian.md
+        - SquashedNormal: api_docs/xplore/distribution/squashed_normal.md
+        - NormalNoise: api_docs/xplore/distribution/normal_noise.md
+        - OrnsteinUhlenbeckNoise: api_docs/xplore/distribution/ornstein_uhlenbeck_noise.md
+        - TruncatedNormalNoise: api_docs/xplore/distribution/truncated_normal_noise.md
+    
+    - Env:
+      - make_atari_env: api_docs/env/atari/__init__.md
+      - make_bullet_env: api_docs/env/bullet/__init__.md
+      - make_dmc_env: api_docs/env/dmc/__init__.md
+      - make_minigrid_env: api_docs/env/minigrid/__init__.md
+      - make_multibinary_env: api_docs/env/multibinary/__init__.md
+      - make_procgen_env: api_docs/env/procgen/__init__.md
+      - make_robosuite_env: api_docs/env/robosuite/__init__.md
+      - make_rllte_env: api_docs/env/utils.md
+    
+    - Evaluation:
+      - Comparison: api_docs/evaluation/comparison.md
+      - Performance: api_docs/evaluation/performance.md
+      - Visualization: api_docs/evaluation/visualization.md
+
+    - Pre-training: tutorials/pre-training.md
+    
+    - Deployment: tutorials/deployment.md
+  - Benchmarks: benchmarks.md
