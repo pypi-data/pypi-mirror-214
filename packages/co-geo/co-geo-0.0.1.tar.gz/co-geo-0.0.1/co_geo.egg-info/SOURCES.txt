@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+co-geo/__init__.py
+co_geo.egg-info/PKG-INFO
+co_geo.egg-info/SOURCES.txt
+co_geo.egg-info/dependency_links.txt
+co_geo.egg-info/top_level.txt
