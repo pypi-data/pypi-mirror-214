@@ -1,0 +1,10 @@
+scraple/TreeCore.py,sha256=u5KfspNZCNpELKFWuQljMVvfUNNHSAYJzchajkXpHtY,1296
+scraple/Tree_search_engine.py,sha256=hcqmdYgB11qDLlnaP4jHMFwlQ173BqgrIsc1ZDNWepg,3068
+scraple/__init__.py,sha256=xbUZjx8nVeOWvgrLOTTewNCYx9BHYkHJqDoGtU5V3ec,1380
+scraple/error.py,sha256=hAtHbDoGP93VQbILis5i0CB3pcPuSFM0iLkBVNrvuS8,1156
+scraple/extract.py,sha256=JibczN7H4szFLXRTLrwxLhl7Cbve1TvXh-pTLUk8kBA,7869
+scraple/pipeline.py,sha256=CeiLhuCMkK3FY6gGGh4lR5I5h4wUsluFow76FBVgOXg,719
+scraple-0.1.0.dist-info/METADATA,sha256=TqmfTwOOfYSleu4WTKgp4CXuf4tLNzrMcu93Cdn6f4w,3720
+scraple-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+scraple-0.1.0.dist-info/licenses/LICENSE,sha256=3DqrdMr6TNc41l2HmG6NM4yY2p_NSFtH0w7ZymRHIUw,1084
+scraple-0.1.0.dist-info/RECORD,,
