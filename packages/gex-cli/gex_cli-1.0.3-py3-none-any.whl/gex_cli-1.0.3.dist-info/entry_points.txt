@@ -1,0 +1,2 @@
+[console_scripts]
+gex = src.gex-cli.cli:main
