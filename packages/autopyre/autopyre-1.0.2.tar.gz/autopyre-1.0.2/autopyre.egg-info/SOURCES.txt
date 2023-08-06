@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+autopyre.py
+setup.py
+autopyre.egg-info/PKG-INFO
+autopyre.egg-info/SOURCES.txt
+autopyre.egg-info/dependency_links.txt
+autopyre.egg-info/entry_points.txt
+autopyre.egg-info/not-zip-safe
+autopyre.egg-info/requires.txt
+autopyre.egg-info/top_level.txt
