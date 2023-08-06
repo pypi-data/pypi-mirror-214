@@ -1,0 +1,9 @@
+setup.py
+coursera_scraper.egg-info/PKG-INFO
+coursera_scraper.egg-info/SOURCES.txt
+coursera_scraper.egg-info/dependency_links.txt
+coursera_scraper.egg-info/requires.txt
+coursera_scraper.egg-info/top_level.txt
+scraper/constants.py
+scraper/main.py
+scraper/utils.py
