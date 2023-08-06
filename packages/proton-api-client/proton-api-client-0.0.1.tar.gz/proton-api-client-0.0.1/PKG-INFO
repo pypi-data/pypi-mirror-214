@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: proton-api-client
+Version: 0.0.1
+Summary: Proton Mail API
+Home-page: https://github.com/trevorhobenshield/proton-api-client
+Author: Trevor Hobenshield
+Author-email: trevorhobenshield@gmail.com
+Keywords: proton api client async search automation bot scrape mail email
+Requires-Python: >=3.10.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+
+### Proton Mail API
+
