@@ -1,0 +1,9 @@
+dorito/__init__.py,sha256=NGdvqrrl-REhb5Jd73cjE6443nmU72NuD3rqR4XQH-8,402
+dorito/generative_agent.py,sha256=ScBF6t-gh3NEA3BZLp94Y-bsxCRPBwxUJARiLU_2P2A,8722
+dorito/memory.py,sha256=xs9GMIi79vfrBimY5yONIha8o-Jhp0oDFMF4-G_Zx8g,5530
+dorito/utils.py,sha256=ys0oKkUH-69uqMrJ7ZMhFxX1Lk-Qopbk0OnqRD1ILVw,2516
+dorito-0.1.dist-info/LICENSE,sha256=ouMgTB-RwuK6M6o25T268eHr-Vp2dDaw259F7Ehe4RY,1072
+dorito-0.1.dist-info/METADATA,sha256=KKwXocWxtooKp8VLTjdiln2QQjHneBfx2-87uEFJMYw,99
+dorito-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dorito-0.1.dist-info/top_level.txt,sha256=cVWg9GJhrmSkxP02BD7QMCk9TfDLFtVJfONZqfsT5t4,7
+dorito-0.1.dist-info/RECORD,,
