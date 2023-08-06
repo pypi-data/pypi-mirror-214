@@ -1,0 +1,52 @@
+# Calculadora-Fabeliz
+
+Esta es una calculadora que permite hacer operaciones matematicas. 
+
+Operaciones basicas: Suma, Resta, Multiplicacion, Division. 
+Otras Operaciones: Valor Absoluto, Raíz cuadrada, Seno, Coseno Tangente, Cotangente, Logaritmo, Radian.
+
+## Autor/Author:
+Fabeliz Irene Alvarez Salazar
+FIAS Tecnologia
+
+## Instalation/Instalacion:
+
+```bash
+pip install calculator-fabeliz
+pipenv install calculator-fabeliz
+```
+
+## Use/Uso:
+
+Para su uso se debe importar la libreria y crear un objeto como se muestra
+a continuacion:
+
+```bash
+from calculadorafabeliz import basicOperations
+from calculadorafabeliz import mathOperations
+
+
+c = basicOperations.calculadora()
+print('Valor de la sumatoria: ', c.suma(1, 2, 4))
+print('Valor de la sumatoria: ', c.resta(2, 1))
+
+o = mathOperations.otrasoperaciones()
+print('Valor del logaritmo: ', o.logaritmo(1))
+print('Valor absoluto: ', o.absoluto(-51))
+print('Raiz cuadrada: ', o.raizCuadrada(4))
+print('Seno: ', o.seno(1))
+print('Coseno: ', o.coseno(1))
+print('Tangente: ', o.tangente(1))
+print('Cotangente: ', o.cotangente(0.5))
+print('Hipotenusa: ', o.hipotenusa(3, 4))
+print('Radian: ', o.radian(180))
+```
+
+## License/Licencia:
+[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+
+
+
+
+
+
