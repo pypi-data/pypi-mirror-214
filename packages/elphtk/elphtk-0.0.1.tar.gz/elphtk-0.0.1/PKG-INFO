@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: elphtk
+Version: 0.0.1
+Summary: Python library for (electron)-phonon-related analysis
+Home-page: 
+Download-URL: 
+Author: Shunhong Zhang
+Author-email: zhangshunhong.pku@gmail.com
+License: MIT License
+Keywords: Python,Phonon,Electron-phonon
+Platform: Linux
+Provides: qe_lambda
+Provides: phplot
+Provides: qe2epw
+Provides: post_epw
+License-File: LICENSE.txt
+
+An open-source Python library for phonon-related data processing

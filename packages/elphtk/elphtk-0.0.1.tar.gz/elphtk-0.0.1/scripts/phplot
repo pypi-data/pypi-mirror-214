@@ -1,0 +1,153 @@
+#!/usr/bin/env python
+
+
+#===========================================================================#
+#                                                                           #
+#  File:       readphonon.py                                                #
+#  Dependence: none                                                         #
+#  Usage:      parse data from band.yaml and plot the phonon spectra        #      
+#  Author:     Shunhong Zhang <szhang2@ustc.edu.cn>                         #
+#  Date:       Jan 31, 2020                                                 #
+#                                                                           #
+#===========================================================================#
+
+from __future__ import print_function
+import numpy as np
+import os
+import re
+import phonopy.units as units
+try:    import yaml
+except: ImportError("You need to install python-yaml")
+try:
+    from yaml import CLoader as Loader
+    from yaml import CDumper as Dumper
+except ImportError:
+    from yaml import Loader, Dumper
+
+
+def get_yaml_data(filename):
+    if not os.path.isfile(filename):
+        exit('cannot find {0}'.format(filename))
+    print ('parsing file: {0}'.format(filename))
+    return yaml.load(open(filename), Loader=Loader)
+    
+
+def parse_yaml(filename,evec=False):
+    data = get_yaml_data(filename)
+    frequencies = []
+    distances = []
+    labels = []
+    eigenvec=[]
+    seg_points=[]
+    qpt=[]
+    data_mode='band'
+    try:
+        nx,ny,nz=data['mesh']
+        print ('uniform q-mesh:',data['mesh'])
+        data_mode='mesh'
+    except: print ('band mode')
+    for j, v in enumerate(data['phonon']):
+        qpt.append([float(item) for item in v['q-position']])
+        if 'label' in v: labels.append(v['label'])
+        else: pass
+        frequencies.append([f['frequency'] for f in v['band']])
+        try: distances.append(v['distance'])
+        except: data_mode='mesh'
+        if evec:
+           try: eigenvec.append([f['eigenvector'] for f in v['band']])
+           except: raise Exception('not eigenvector read!')
+    try: seg_points=[0]+data['segment_nqpoint']
+    except: pass
+    if labels: labels=[labels[0]]+labels[1::2]
+    else:
+        try:
+            for j, v in enumerate(data['labels']):
+                labels+=v
+            labels=[labels[0]]+labels[1::2]
+        except:
+            pass
+    freq=np.array(frequencies)
+    qpt=np.array(qpt)
+    distances=np.array(distances)
+    eigenvec=np.array(eigenvec)
+    xsym=np.append(0,distances[np.cumsum(seg_points)-1][1:])
+    return (data_mode,qpt,distances,freq,eigenvec,xsym,labels)
+
+
+def check_imag_freq(freq):
+    if np.min(freq)>=0: return
+    idx=np.where(freq==np.min(freq))
+    print ('\n{0}'.format('-'*40))
+    print ('Imaginary mode detected:')
+    print ('freq (THz) : {0:10.4f} i'.format(np.min(freq)))
+    print ('imode      : {0:10d}'.format(idx[1][0]+1))
+    print ('iqpt       : {0:10d}'.format(idx[0][0]+1))
+    print ('{0}\n'.format('-'*40))
+    return idx
+
+
+def write_freq(distance,freq):
+    nqpt,nband=freq.shape
+    with open('freq.dat','w') as fw:
+        for iband in range(nband):
+            fw.write('\n'.join(['{0:12.7f} {1:12.7f}'.format(*tuple(item)) for item in zip(distance,freq[:,iband])])+'\n\n')
+    with open('phonopy.freq.gp','w') as fw:
+        for iqpt in range(nqpt):
+            fw.write('{:12.7f}'.format(distance[iqpt]))
+            fw.write(('{:12.7f}'*nband+'\n').format(*tuple(freq[iqpt])))
+
+
+def get_args(prog='phonon_plot.py'):
+    import argparse
+    from elphtk import arguments
+    desc_str='processing phonon files'
+    parser = argparse.ArgumentParser(prog=prog, description = desc_str)
+    arguments.add_control_arguments(parser)
+    arguments.add_io_arguments(parser)
+    arguments.add_fig_arguments(parser)
+    arguments.add_plot_arguments(parser)
+    arguments.add_phonon_arguments(parser)
+    parser.add_argument('--prefix',type=str,default=None)
+    parser.add_argument('--phlw',type=arguments.str2bool,nargs='?',const=False,default=False,help='phonon linewidth, need linewidth file')
+    parser.add_argument('--sc',type=eval,default=(1,1,1),help='size of supercell')
+    parser.add_argument('--plot_gamma',type=arguments.str2bool,nargs='?',const=False,default=False,help='plot gamma on phonon spectra')
+    parser.add_argument('--isigma',type=int,default=1,help='index of gamma files, represent the smearing')
+    args = parser.parse_args()
+    args.freq_unit='cm^{-1}'
+    return parser, args
+
+
+def main(args):
+    from elphtk.qe_phonon import get_qe_freq, get_k_node_from_matdyn
+    from elphtk.phonon_plot import plot_qe_ph, plot_phband, plot_gibbs
+    print ('File to plot phonon : {}'.format(args.filph))
+    if not args.enable_plot:
+        print ('Plotting disabled')
+        print ('Use dat files to plot manually')
+        print ('Or set --enable_plot=True to plot')
+
+    if args.source=='QE':
+        distance,freq=get_qe_freq(args)
+        k_node=get_k_node_from_matdyn(distance)
+        fig = plot_qe_ph(distance,freq,k_node,args)
+
+    elif args.source=='phonopy':
+        data_mode,qpts,distance,freq,eigenvec,xsym,xlabels=parse_yaml(args.filph)
+        if args.filph=='band.yaml': write_freq(distance,freq)
+        if data_mode=='band':   fig = plot_phband(distance,freq,xsym,xlabels,args)
+        if args.task=='gibbs':  fig = plot_gibbs()
+
+    elif args.source=='abinit':
+        print ('Abinit phonon not yet processible!')
+
+    else:
+        print ('Illegal source {} specified!'.format(args.source))
+
+
+parser, args=get_args()
+ 
+if __name__=='__main__':
+    from elphtk import __version__
+    from elphtk.pkg_info import verbose_pkg_info
+    verbose_pkg_info(__version__)
+    main(args)
