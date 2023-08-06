@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/EntroPy/EntroPy.py
+src/EntroPy/__init__.py
+src/EntroPy_Toolbox.egg-info/PKG-INFO
+src/EntroPy_Toolbox.egg-info/SOURCES.txt
+src/EntroPy_Toolbox.egg-info/dependency_links.txt
+src/EntroPy_Toolbox.egg-info/requires.txt
+src/EntroPy_Toolbox.egg-info/top_level.txt

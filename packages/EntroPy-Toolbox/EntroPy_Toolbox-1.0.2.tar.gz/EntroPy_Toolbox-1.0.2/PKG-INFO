@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: EntroPy_Toolbox
+Version: 1.0.2
+Summary: A Python toolbox for calculating various kinds of entropy of sequences
+Home-page: https://github.com/nicolasmcnair/EntroPy
+Author: Nicolas McNair
+Author-email: nicolas.mcnair@sydney.edu.au
+License: UNKNOWN
+Description: A Python toolbox for calculating various kinds of entropy of sequences
+Keywords: entropy
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.3
