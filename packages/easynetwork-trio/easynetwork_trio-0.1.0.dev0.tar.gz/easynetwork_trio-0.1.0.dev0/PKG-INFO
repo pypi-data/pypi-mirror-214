@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: easynetwork-trio
+Version: 0.1.0.dev0
+Summary: Plugin to use trio as an asynchronous engine for EasyNetwork
+Project-URL: Homepage, https://github.com/francis-clairicia/easynetwork-trio
+Author-email: FrankySnow9 <clairicia.rcj.francis@gmail.com>
+License-File: LICENSE
+Keywords: async,asynchronous,client,communication,networking,serialization,server,socket
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: easynetwork[sniffio]==1.0.0rc1
+Requires-Dist: trio-typing>=0.8.0
+Requires-Dist: trio>=0.22.0
+Description-Content-Type: text/markdown
+
+# easynetwork-trio
+Plugin to use trio as an asynchronous engine for EasyNetwork
