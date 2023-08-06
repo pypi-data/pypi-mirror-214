@@ -1,0 +1,12 @@
+protaska/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protaska/describer.py,sha256=qFGM4NcezYy-UeVNuydOKst1MZ8x8RayDLI4Azf584w,2009
+protaska/ideate.py,sha256=0V94NKYwpcgWvubkHupysE_d68XqsrfEUkMpapNOEFQ,3143
+protaska/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protaska/data/data_utils.py,sha256=cXQwPMA6kJbSvzZ3WPsMDhubP1KeG9rpdh_SzDTt1BY,4396
+protaska/data/ingestion.py,sha256=1rJn9QFxSOAftkltUqIwg6wqCwln3e-Bv71cUFeSaXc,2327
+protaska/data/loader.py,sha256=K1tMTqKTg6MaL1nDJ8THt6JMl-CGCfi9SSmHZL5Pl6w,5317
+ProTaska_GPT-0.0.4.dist-info/LICENSE,sha256=0f_bnf9BkfeW6l1ZlC3qNtQLkNUSzXQKT3OELiq79hI,1092
+ProTaska_GPT-0.0.4.dist-info/METADATA,sha256=h4VZ9M40LXsHgRfGb5hzIfrnd_R-tIZgtr4lQ7DItLw,2312
+ProTaska_GPT-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ProTaska_GPT-0.0.4.dist-info/top_level.txt,sha256=py4Og5419i0nW1NZhMFbqai9J2xyr1KLcYzEwmsilC0,9
+ProTaska_GPT-0.0.4.dist-info/RECORD,,
