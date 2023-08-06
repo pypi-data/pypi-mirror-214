@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: nzbn
+Version: 1.0.0
+Summary: New Zealand Business Number library
+Home-page: https://github.com/procuret/nzbn-python
+Author: Procuret
+Author-email: hugh@procuret.com
+License: UNKNOWN
+Project-URL: Github Repository, https://github.com/procuret/nzbn-python
+Project-URL: About, https://github.com/procuret/nzbn-python
+Keywords: library http api web payments finance nzbn new-zealand nz business business-number
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Office/Business :: Financial
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# New Zealand Business Number Python Library
+
+A Python library for interacting with New Zealand Business Number (NZBN)
+services provided by the New Zealand Ministry of Business, Innovation, and
+Employment (MBIE).
+
+## Installation
+
+```
+$ pip install nzbn
+```
+
+## Nomenclature
+
+The MBIE NZBN API has two main "Entity" types, where "Entity" is used to refer
+to a legal person recorded in the New Zealand Business Register (NZBR). The
+firs is included in vector results from search queries, and is called
+`SearchEntity`. The second is returned in response to requests for a specific
+NBZN, and is called `FullEntity`.
+
+The authors of this library find referring to these as `AbbreviatedEntity`
+and `Entity` to be more natural, and therefore those names are used. You can
+also use `SearchEntity` and `FullEntity` in your Python code, as those names
+are effectively type-aliases for `AbbreviatedEntity` and `Entity`.
+
+## Example Usage
+
+### Get a list of abbreviated entities
+
+```python
+from nzbn import AbbreviatedEntity
+
+entities: List[AbbreviatedEntity] = AbbreviatedEntity.retrieve_many(
+    api_key="your nzbn API access token",
+    search_text="some entity name",
+    page=0,    # defaults to 0
+    limit=20   # per page count, defaults to 20
+)
+```
+
+### Get detailed data about an entity
+
+```python
+from nzbn import Entity
+
+entity: Optional[Entity] = Entity.retrieve(
+    api_key="your nzbn API access token",
+    nzbn="9429049541410",
+    sandbox=False  # defaults to False
+)
+```
+
+
