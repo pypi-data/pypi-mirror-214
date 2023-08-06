@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: biosmoother
+Version: 0.3.4
+Summary: On-the-fly processing and visualization of contact mapping data
+Home-page: https://github.com/Siegel-Lab/biosmoother
+Author: Markus Schmidt
+Author-email: markus.rainer.schmidt@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: libbiosmoother
+Requires-Dist: bokeh (==2.3.2)
+Requires-Dist: psutil
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+
+        On-the-fly processing and visualization of contact mapping data
+    
+
