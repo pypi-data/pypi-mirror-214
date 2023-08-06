@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/QuMADA.egg-info/PKG-INFO
+src/QuMADA.egg-info/SOURCES.txt
+src/QuMADA.egg-info/dependency_links.txt
+src/QuMADA.egg-info/requires.txt
+src/QuMADA.egg-info/top_level.txt
