@@ -1,0 +1,2 @@
+[console_scripts]
+qeh = qeh.qeh:main
