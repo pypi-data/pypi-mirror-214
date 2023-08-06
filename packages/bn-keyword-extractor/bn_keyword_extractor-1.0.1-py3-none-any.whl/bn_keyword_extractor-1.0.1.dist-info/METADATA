@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bn-keyword-extractor
+Version: 1.0.1
+Summary: A package for Bangla keyword extraction
+Author: Tonmoy Talukder
+Author-email: tonmoytalukder2000@gmail.com
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: requests
+Requires-Dist: pandas
+
