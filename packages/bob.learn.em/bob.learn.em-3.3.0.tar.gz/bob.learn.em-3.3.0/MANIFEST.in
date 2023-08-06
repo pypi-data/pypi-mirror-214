@@ -1,0 +1,3 @@
+include LICENSE README.md
+recursive-include doc conf.py *.rst
+recursive-include src/bob/learn/em/data *.*
