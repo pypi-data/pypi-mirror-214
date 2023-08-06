@@ -1,0 +1,14 @@
+xsdata
+
+[dev]
+pre-commit
+bump2version
+
+[test]
+bandit[toml]
+flake8
+flake8-bugbear
+flake8-pyi
+mypy
+pytest
+tox
