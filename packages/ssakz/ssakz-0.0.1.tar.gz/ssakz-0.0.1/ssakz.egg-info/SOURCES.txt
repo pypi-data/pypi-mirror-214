@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ssakz.py
+ssakz.egg-info/PKG-INFO
+ssakz.egg-info/SOURCES.txt
+ssakz.egg-info/dependency_links.txt
+ssakz.egg-info/not-zip-safe
+ssakz.egg-info/requires.txt
+ssakz.egg-info/top_level.txt
