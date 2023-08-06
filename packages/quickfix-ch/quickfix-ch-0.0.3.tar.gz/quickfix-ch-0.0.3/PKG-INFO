@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: quickfix-ch
+Version: 0.0.3
+Summary: A python FIX library that supports ARM Macs
+Author: Coinhako (Javier)
+Author-email: <javier.phon@coinhako.com>
+Keywords: python,FIX,finance
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A python FIX library that supports ARM Macs
