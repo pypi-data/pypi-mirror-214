@@ -1,0 +1,14 @@
+uniem/__init__.py,sha256=zCCoubE6UaM1vZlzFEYdnyDM6eXGuJAgvfNkNNWIdoc,104
+uniem/criteria.py,sha256=xxl7NWImPzD_eak0Y7rlcQ-nhAsAiI7wOWh3U1PngzQ,7166
+uniem/data.py,sha256=N1bF9XIT0UcOj-NwVuHM4uQlWAve8b9EZ9ANgdhiVLE,10988
+uniem/data_structures.py,sha256=K4IT1Ae-tGhJV9SAxg_ud5M3ztI1HxxEo2MpL7ZGaEA,1089
+uniem/finetuner.py,sha256=YiSz0xePScb1lElBPk2m7b3c0KsmaF9iZMrPeTAqqDk,13985
+uniem/model.py,sha256=ndSh_QCDYfa__FJr5VHPtXJdPoJBO5be6Efdg0kfYak,13796
+uniem/trainer.py,sha256=CuK2_fXLeH1il58WdKodwOYh_D3lCRzZl0oE43lR8hA,6025
+uniem/types.py,sha256=xw9TW9s3P0sTD-eDRI9Q82tMjR5_736aqHmyB8L1_rg,658
+uniem/utils.py,sha256=7S07v06VCPsHwcNUHDzGiVQNmzmJU7nM985Uk6D2eXM,1663
+uniem/version.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+uniem-0.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+uniem-0.2.2.dist-info/METADATA,sha256=G0B5lpir00pVeDImGpj-IX7SKg_ciPahviAvrcfOYhA,5887
+uniem-0.2.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+uniem-0.2.2.dist-info/RECORD,,
