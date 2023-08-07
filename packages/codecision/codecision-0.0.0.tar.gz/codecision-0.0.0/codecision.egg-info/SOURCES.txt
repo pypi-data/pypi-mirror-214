@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+codecision/__init__.py
+codecision.egg-info/PKG-INFO
+codecision.egg-info/SOURCES.txt
+codecision.egg-info/dependency_links.txt
+codecision.egg-info/top_level.txt
