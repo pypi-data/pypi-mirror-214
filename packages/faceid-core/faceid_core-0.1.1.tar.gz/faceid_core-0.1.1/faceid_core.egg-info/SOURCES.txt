@@ -1,0 +1,9 @@
+setup.py
+faceid_core/__init__.py
+faceid_core/deploy_configuration.py
+faceid_core/face_recognition.py
+faceid_core.egg-info/PKG-INFO
+faceid_core.egg-info/SOURCES.txt
+faceid_core.egg-info/dependency_links.txt
+faceid_core.egg-info/requires.txt
+faceid_core.egg-info/top_level.txt

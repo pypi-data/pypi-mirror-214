@@ -1,0 +1,6 @@
+opencv-python
+insightface
+numpy
+pathlib
+sklearn
+pyyaml
