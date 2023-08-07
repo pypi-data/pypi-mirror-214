@@ -1,0 +1,15 @@
+adbc_driver_manager/adbc_driver_manager.h,sha256=pBD2H0s26sGcYcmohsGdYMOOKx02_FAUg5O1eULoFvY,3460
+adbc_driver_manager/__init__.py,sha256=LrlsRmLpPF1gs9B71bc2Q21ZZUO_-Hud0PvjGmiRZtw,3188
+adbc_driver_manager/adbc_driver_manager.cc,sha256=n2jLKmYz9IhLc3Fy96lZoXs74oILD-H_ta9UAhgvZ2s,30449
+adbc_driver_manager/_lib.pyx,sha256=ZVw4WA6C0gSaQ9FkgbamS43jxAQPZMi94vJMNyk_Qx8,36290
+adbc_driver_manager/dbapi.py,sha256=CI1iutstCkIBs4AaCfmR1qr8tkQbLfVC3_8b2xVVuTc,30804
+adbc_driver_manager/_static_version.py,sha256=9P3LZVum8wVFaFLpKChYDLvWmn_1eUQFXJANT2rRXN0,60
+adbc_driver_manager/_lib.cpython-311-x86_64-linux-gnu.so,sha256=YvO1kdvvR7TNwbX1PreuIRBzHlJEwANu2lHt4cURrMg,2152952
+adbc_driver_manager/_version.py,sha256=90XJ0YVfNMVV5LO2o_Od-JbLxo9qkDrMSXCUFootTSw,7108
+adbc_driver_manager/adbc.h,sha256=rbbq_wSalWjAw2j_cTjmfutV3jsBy9GtEA0EMjBAXDo,49487
+adbc_driver_manager-0.5.0.dist-info/METADATA,sha256=Xz_JFju-mRktSkF4ZuOuNywkasBC230UfvmbZQUp-jo,684
+adbc_driver_manager-0.5.0.dist-info/LICENSE.txt,sha256=UZe2GB7QA20gLXjiqdLmEKTFTKs0CiUvHw3rp6lQsPE,84816
+adbc_driver_manager-0.5.0.dist-info/WHEEL,sha256=8KU227XctfdX2qUwyjQUO-ciQuZtmyPUCKmeGV6Byto,152
+adbc_driver_manager-0.5.0.dist-info/NOTICE.txt,sha256=ork4LFdNC7tkM_o0ZVZZBsBc3mUQAnu9tKovmU3-w60,166
+adbc_driver_manager-0.5.0.dist-info/top_level.txt,sha256=mDcKQErjAAj_tTVBqA3LLh9T69P_YY_P2bFkUsshgT4,20
+adbc_driver_manager-0.5.0.dist-info/RECORD,,
