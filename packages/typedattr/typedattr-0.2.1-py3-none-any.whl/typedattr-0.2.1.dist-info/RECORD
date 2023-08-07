@@ -1,0 +1,16 @@
+typedattr/__init__.py,sha256=jfSaGSNfX30HVgLOH_UXfOGOnTBLbVMgiP9lRUjFMqc,209
+typedattr/_typedattr.py,sha256=J99nLwrRTjMnIWlOv52r9fr6Vug9RC0CmnAAVlKxEX4,12187
+typedattr/const.py,sha256=HKNYFcgoCQAleJIOz_7LsYI4oUoiUqxZYMX0oWBVS24,5520
+typedattr/typext.py,sha256=mmtSnBIttoeEVz5rKuqYgQU2EfIxcDPtbv1rdS6o6gA,715
+typedattr/utils/__init__.py,sha256=AHgimxaPUJb0aY7N3Uk1jTNVmdd_MmEWuKbf9OXtj34,40
+typedattr/utils/caching.py,sha256=ffdJDzlkFvLNuBj2L6J2rdl5FT9_Oc2_nLU1UZZnJK8,3090
+typedattr/utils/debugging.py,sha256=W-biyxM_Mm353p_oF_EeTHAq486B9DytWbYVOLP1GAo,394
+typedattr/utils/dtime.py,sha256=cjo5pcrzOwtfbP3YFGrRWuY7fFnsrMDKRZTC06laQxM,470
+typedattr/utils/log.py,sha256=Qu7vP2r62AmFMuo6KOW-L5m8Wn6S7-4JeMQLM0-xwzQ,4229
+typedattr/utils/objects.py,sha256=ibx-Qpho7pzTY_SEhD7Jmiu1Pd2F0IFU2kuSJxzTpPs,9298
+typedattr-0.2.1.dist-info/LICENSE,sha256=LYghLc_68nnra4mdQKJWTd0oum3TyGMXM8RkDTPOVUo,11336
+typedattr-0.2.1.dist-info/METADATA,sha256=tqnASpphIsA4Mb5G_OB5W_AZubxjCNq5D2ZXa9rkn2o,5106
+typedattr-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+typedattr-0.2.1.dist-info/top_level.txt,sha256=cNjMdakeJ1LOe4m9FBv-zffHUbvqnep4jGOyBHWI1C0,10
+typedattr-0.2.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+typedattr-0.2.1.dist-info/RECORD,,
