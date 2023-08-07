@@ -1,0 +1,3 @@
+[console_scripts]
+aria2_dht_dat_parser = aria2_dht_dat_parser.__main__:main
+
