@@ -1,0 +1,13 @@
+airflow/providers/mongo/__init__.py,sha256=8U720Ss-QuuV2AS2oyuRg4OcvlEhQA9iNDJz2C1evP8,1530
+airflow/providers/mongo/get_provider_info.py,sha256=flgK0Z3wHKcz3pT5gGCWemZ8ZLhYZkId78y9rLzqlHk,2370
+airflow/providers/mongo/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/mongo/hooks/mongo.py,sha256=sw22F1TBHVE4jZdLSoIEHoEG4vK-pqSOasFcWW_HDvA,13773
+airflow/providers/mongo/sensors/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/mongo/sensors/mongo.py,sha256=Pt91Bb6nsH74qR-oKNooMrV22_Ni1qXA1n-kVpzeGy4,2422
+apache_airflow_providers_mongo-3.2.1rc1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_mongo-3.2.1rc1.dist-info/METADATA,sha256=tOdBogwHR12rzjKabAst7T0qevCeJP2oeZM8KcjvNnI,10879
+apache_airflow_providers_mongo-3.2.1rc1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_mongo-3.2.1rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apache_airflow_providers_mongo-3.2.1rc1.dist-info/entry_points.txt,sha256=z6beMR9ws_OHJYV7mx1ECQL8423WvNVeVuRKyEHsVgw,102
+apache_airflow_providers_mongo-3.2.1rc1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_mongo-3.2.1rc1.dist-info/RECORD,,
