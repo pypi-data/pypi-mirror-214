@@ -1,0 +1,10 @@
+typedparser/__init__.py,sha256=cd3PTE_Q8GwLggb-YQ0g99vBCuvxOSfxED8dvUMP4Fc,245
+typedparser/_typedparser.py,sha256=PYHv5grIqTrq5V0V7GlsiMqsQunBMQDM76ko-b3pU00,3518
+typedparser/custom_format.py,sha256=GEZG3B9KUzta8X3_jJPLTjG7XYtV-iAlpoZmlQ_LE4E,2321
+typedparser/funcs.py,sha256=pQO41qBnz_oYXzYAnz4hFWwSXmalEYZs7pClS6CzV4A,5406
+typedparser-0.2.1.dist-info/LICENSE,sha256=LYghLc_68nnra4mdQKJWTd0oum3TyGMXM8RkDTPOVUo,11336
+typedparser-0.2.1.dist-info/METADATA,sha256=R_r0APtHt7-DD1heSwmkOgGPdKeCTJfS124CnWoDH-M,3602
+typedparser-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+typedparser-0.2.1.dist-info/top_level.txt,sha256=EHk4vdx3Mnts9xnmFCLZ7q6TYBBcLixZJ2vTfssFtJk,12
+typedparser-0.2.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+typedparser-0.2.1.dist-info/RECORD,,
