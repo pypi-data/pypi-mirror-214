@@ -1,0 +1,12 @@
+urpautils/__about__.py,sha256=AdC68F3LaWCP5CFGb_eS2z8TcARtWPsQnFJVNOTM8Cg,322
+urpautils/__init__.py,sha256=Adj7uI2zifdWQJvjtatkrYHFCWWY7JacQ7Xe7-lrXc0,101
+urpautils/csv_utils.py,sha256=fGIksTPRvVt9SJj1PYdNeEgUhGZIWPdx20luvyI9WTk,6413
+urpautils/file_utils.py,sha256=eO7AqqvGDl6yq0KJu6IXHaLeswJXgcxtxgtbBCtTQNg,9743
+urpautils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+urpautils/robot.py,sha256=93k37OaKw-DEG49TwFOH_nL0ZDLdYwNqsyfB0IArw3U,14603
+urpautils/universal.py,sha256=EjyINTR7ndgIzlXJ4fP3Pp-4OsJ0xBlC0QhWGbnKciE,15412
+urpautils-0.7.1.dist-info/LICENSE,sha256=Y_sVL9M6XJreO8SV5Y__v7fKc417EsUnHhtZ5qFRtr8,1089
+urpautils-0.7.1.dist-info/METADATA,sha256=BxcTbw0OWQGcpa8Y8x741YFa73_fzFk1ukhaBNLEk9k,11100
+urpautils-0.7.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+urpautils-0.7.1.dist-info/top_level.txt,sha256=8CIVEUazwWVqyN8_WnkL2wMURNHBd-t9IJDh4KrrUPE,10
+urpautils-0.7.1.dist-info/RECORD,,
