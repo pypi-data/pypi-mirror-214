@@ -1,0 +1,8 @@
+README.md
+setup.py
+DppNowe.egg-info/PKG-INFO
+DppNowe.egg-info/SOURCES.txt
+DppNowe.egg-info/dependency_links.txt
+DppNowe.egg-info/top_level.txt
+api_client/__init__.py
+data_processing/__init__.py
