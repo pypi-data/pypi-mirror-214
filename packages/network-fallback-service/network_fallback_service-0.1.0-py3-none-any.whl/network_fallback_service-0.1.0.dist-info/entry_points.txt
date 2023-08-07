@@ -1,0 +1,4 @@
+[console_scripts]
+network-fallback = network_fallback_service.__init__:default_entry
+network-fallback-config = network_fallback_service.configure:interactive_config_maker
+network-fallback-launch = network_fallback_service.main:main

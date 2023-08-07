@@ -1,0 +1,16 @@
+network_fallback_service/__init__.py,sha256=UH-KscN_CY1r5svunpTuUJNPCVWAD7JK8X43J3_8F0I,475
+network_fallback_service/configure.py,sha256=6wYLEb9NFA1bcZ027QAJ_-dnHZutugY252o9h82FViA,6547
+network_fallback_service/main.py,sha256=1h5HKKTckDrl3YA-dDFjPTKfPOrdmMMWhQExykxn9XQ,983
+network_fallback_service/network/__init__.py,sha256=yTVEItQTjZf4XM3pu0ZRyWJC6vOWRDZZKf-etvG66Sw,7939
+network_fallback_service/network/checks.py,sha256=kPlKS_i_UIsunEVUq_OorS2HB4WgIO3fnmBoVXp5agU,4279
+network_fallback_service/network/devices.py,sha256=QghF8bDiOu1clPBTVHinVm0vBeEFUHHddpHy0nvSMxA,684
+network_fallback_service/network/routes.py,sha256=ae_zhbUu7VccEBGD3mpmPoWizG6XMxn8ZW0OF3h7TDc,2953
+network_fallback_service/network/device_types/NetworkManager.py,sha256=Ek-f2-5duLUeCMnl2qWrkx1PQdKNqEGZDjuDnraySZw,1575
+network_fallback_service/network/device_types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+network_fallback_service/network/device_types/ifupdown.py,sha256=zn3e0ll5os1rlgg5eDlfdMymFfWZWoGeZ_t8MubRq9c,1447
+network_fallback_service-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+network_fallback_service-0.1.0.dist-info/METADATA,sha256=lm_rZdpYxwNyoJbg4NJvcP0tJFq5FUcrEwgZ4xDyf8w,4267
+network_fallback_service-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+network_fallback_service-0.1.0.dist-info/entry_points.txt,sha256=ZYYBacI1iVEKbHBzta3elrQba_LfqyEnX3_2H46_BlI,232
+network_fallback_service-0.1.0.dist-info/top_level.txt,sha256=VWwSuvLZ6RwQyFfRwAeRg2G3vox6JWWEKDyozdH2-CE,25
+network_fallback_service-0.1.0.dist-info/RECORD,,
