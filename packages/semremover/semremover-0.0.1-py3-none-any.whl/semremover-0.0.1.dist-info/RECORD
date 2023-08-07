@@ -1,0 +1,11 @@
+semremover/__init__.py,sha256=HNv5MaUkWQjuOOSqw2CwE9e1JmbLDoY2Jn8jKPnJnAc,42
+semremover/__main__.py,sha256=XW6_S6em-i5iQEVU16LTUC87pcVmYM2ToLshGnAL8SI,3832
+semremover/models/__init__.py,sha256=3mEJa1WFRfZkriphdE1gxLeovIbfAR4bgQeyX6hR3hw,166
+semremover/models/lama.py,sha256=M3gmaB7j8X5oVYEatqA2nVM5QoLf5xpuSr_s4Du9jM0,2678
+semremover/models/maskformer.py,sha256=5i2HDqPqpb0NDVg8v8bDqRYmei6R7yVISX8M3tM7YgI,1381
+semremover/models/semremover.py,sha256=3vb-6rLMCmqfYD9BWAD0CEitWLHJEFINGhsgt_liyaM,2140
+semremover-0.0.1.dist-info/LICENSE,sha256=1uDyZuLLQClQ_swoJT-rZoTFAEjxDbl7x97NG30xFoE,1069
+semremover-0.0.1.dist-info/METADATA,sha256=LuotJWBF1tpKoIe8qc2ceYqGyqB0j5LA7rn7nBpCoFA,1918
+semremover-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+semremover-0.0.1.dist-info/top_level.txt,sha256=BcQZ-4WLG34tyhdzEtb_O9usjBKOcUfKj_JoLJkulsg,11
+semremover-0.0.1.dist-info/RECORD,,
