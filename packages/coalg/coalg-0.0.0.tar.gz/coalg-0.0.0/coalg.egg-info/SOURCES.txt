@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coalg/__init__.py
+coalg.egg-info/PKG-INFO
+coalg.egg-info/SOURCES.txt
+coalg.egg-info/dependency_links.txt
+coalg.egg-info/top_level.txt
