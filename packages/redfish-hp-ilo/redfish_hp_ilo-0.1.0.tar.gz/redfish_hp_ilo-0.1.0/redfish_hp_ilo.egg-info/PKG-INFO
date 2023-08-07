@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: redfish-hp-ilo
+Version: 0.1.0
+Summary: Redfish API for HP iLO.
+Home-page: https://github.com/null-none/redfish-hp-ilo
+Author: Kalinin Dmitry <kalinin.mitko@gmail.com>
+License: MIT
+Keywords: python,hp ilo,rest api,hp,ipmi
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+Redfish API implementation on HPE servers with iLO RESTful API.
