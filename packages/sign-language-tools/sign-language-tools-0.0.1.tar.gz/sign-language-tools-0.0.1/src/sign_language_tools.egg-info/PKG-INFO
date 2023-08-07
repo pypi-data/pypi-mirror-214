@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: sign-language-tools
+Version: 0.0.1
+Summary: Python library containing various tools for sign language processing
+Author-email: Pierre Poitier <pierre.poitier@unamur.be>, Jérôme Fink <jerome.fink@unamur.be>
+License: MIT License
+        
+        Copyright (c) 2023 Pierre Poitier
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/ppoitier/sign-language-tools
+Keywords: sign language,machine learning,data augmentation,visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Sign Language Tools
+
+Python library containing various tools for sign language processing.
+
+This project is in an early stage of development.
+Do not hesitate to contribute !
+
+# Why?
+
+Why not? It is useful to us, therefore it may be useful to you?
+
+# What's included?
+
+* Video Player to visualize sign language videos with corresponding annotations and landmarks.
+* Data augmentation tools like transforms that can be used with Pytorch or Tensorflow, etc.
+* Preprocessing of pose data with interpolation, resampling, smoothing, etc.
+* Plotting functions using Matplotlib.
+
+# What's next?
+
+* More data augmentation and plotting!
+* More tools for annotations.
+* Tools for image processing.
+* To be discussed...

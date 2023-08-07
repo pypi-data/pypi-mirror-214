@@ -1,0 +1,12 @@
+matplotlib
+mediapipe
+numpy
+opencv-python
+pandas
+scipy
+tqdm
+
+[dev]
+black
+pip-tools
+pytest
