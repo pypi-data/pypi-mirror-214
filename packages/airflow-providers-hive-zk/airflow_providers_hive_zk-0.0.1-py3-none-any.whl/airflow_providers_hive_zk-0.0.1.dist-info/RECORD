@@ -1,0 +1,7 @@
+airflow/providers/hive_zk/provider.yaml,sha256=n79okIF6IdyrBtnH0cr8bJpHgCgLSx28KzuI5P7Is54,1511
+airflow/providers/hive_zk/hooks/hive.py,sha256=cIe8JolwVYd1EMwq6nlbO_0XSCIMF8eMj9z7RNveSHg,6220
+airflow_providers_hive_zk-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_providers_hive_zk-0.0.1.dist-info/METADATA,sha256=eEfOB5G_fbXfsOpQd9swuYVobESkVS3kGEjVjtLv5b0,1037
+airflow_providers_hive_zk-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+airflow_providers_hive_zk-0.0.1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+airflow_providers_hive_zk-0.0.1.dist-info/RECORD,,
