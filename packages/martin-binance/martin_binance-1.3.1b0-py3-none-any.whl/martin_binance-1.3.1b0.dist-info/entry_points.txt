@@ -1,0 +1,3 @@
+[console_scripts]
+init=martin_binance:__init__
+
