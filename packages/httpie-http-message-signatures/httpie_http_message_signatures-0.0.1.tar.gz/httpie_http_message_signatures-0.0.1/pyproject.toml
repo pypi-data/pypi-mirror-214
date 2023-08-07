@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "httpie-http-message-signatures"
+version = "0.0.1"
+description = "HTTP Message Signatures plugin for HTTPie"
+authors = ["David Zentgraf <david@kunststube.net>"]
+readme = "README.md"
+packages = [{include = "httpie_http_message_signatures.py"}]
+homepage = "https://github.com/deceze/httpie-http-message-signatures"
+repository = "https://github.com/deceze/httpie-http-message-signatures"
+documentation = "https://github.com/deceze/httpie-http-message-signatures"
+keywords = ["httpie", "http-signature", "message-signatures"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Internet :: WWW/HTTP"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+http-message-signatures = "^0.4.4"
+httpie = "^3.2.2"
+
+[tool.poetry.plugins."httpie.plugins.auth.v1"]
+httpie_http_message_signatures = "httpie_http_message_signatures:HttpSignatureAuthPlugin"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
