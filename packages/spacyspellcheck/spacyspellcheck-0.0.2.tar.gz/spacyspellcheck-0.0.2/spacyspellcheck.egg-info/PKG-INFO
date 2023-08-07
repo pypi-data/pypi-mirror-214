@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: spacyspellcheck
+Version: 0.0.2
+Summary: spell check using spacy vocab and in built levenshtein distance
+Home-page: https://github.com/Vishnunkumar/spacyspellcheck
+Author: Vishnu Nandakumar
+Author-email: nkumarvishnu25@gmail.com
+License: MIT license
+Keywords: spacyspellcheck
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# spacyspellcheck
+
+Spell check using spacy vocab and in-built Levenshtein distance.
+
+```bash
+pip install -U spacyspellcheck
+```
+
+## Implementation
+
+```python
+spacyspell = SpellCorrector('word')
+spacyspell.get_candidates(3) # get top three candidates
+spacyspell.get_best() # gets the top corrected word
+```
