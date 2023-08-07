@@ -1,0 +1,68 @@
+# Dict2XLSX
+
+Dict2XLSX is a Python package that allows you to convert a dictionary into an XLSX (Excel) file.
+
+
+## Introduction
+
+- [Installation](#installation)
+- [Features](#features)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+
+<br />
+
+## Installation
+
+
+You can install Dict2XLSX using pip:
+
+```shell
+pip install dict2xlsx
+```
+
+## Features
+
+* `Dictionary to XLSX Conversion`: Convert a dictionary into an XLSX file with ease.
+* `Columnar Organization`: Automatically organizes dictionary * key-value pairs into separate columns in the XLSX file.
+* `Data Integrity`: Maintains the order of keys and values from the original dictionary during the conversion process.
+* `Simple Integration`: Easy-to-use API allows for seamless integration into existing Python projects.
+* `Customization Options`: Customize the output file name, sheet name, and formatting options.
+
+## Usage
+
+```python
+from dict2xlsx import Dict2XLSX
+
+data = [
+    {'first_name': 'Satyam', 'last_name': 'Lohiya', 'age': '21'},
+    {'first_name': 'Shivam', 'age': '28'},
+    {'first_name': 'Rahul', 'last_name': 'Sharma'},
+]
+
+
+xlsx_obj = Dict2XLSX(data)
+xlsx_obj.save('output.xlsx')
+```
+
+![Screenshot 2023-06-20 144745](https://github.com/Satyam-2001/Dumb-Charades/assets/88069082/17c85e71-4a32-44f5-8071-b3bfba06a41e)
+
+## Dependencies
+
+Dict2XLSX has the following dependencies:
+
+* openpyxl: A Python library for reading and writing Excel (XLSX) files.
+
+## Contributing
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on the GitHub repository.
+
+To contribute to Dict2XLSX, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Implement your changes.
+4. Write tests to ensure the correctness of your code (if applicable).
+5. Run the test suite to make sure all tests pass.
+6. Submit a pull request.
