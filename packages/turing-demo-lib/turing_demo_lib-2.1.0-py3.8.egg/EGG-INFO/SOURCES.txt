@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+turing_demo_lib/__init__.py
+turing_demo_lib.egg-info/PKG-INFO
+turing_demo_lib.egg-info/SOURCES.txt
+turing_demo_lib.egg-info/dependency_links.txt
+turing_demo_lib.egg-info/requires.txt
+turing_demo_lib.egg-info/top_level.txt
