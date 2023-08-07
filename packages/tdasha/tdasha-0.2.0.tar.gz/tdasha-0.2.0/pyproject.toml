@@ -1,0 +1,37 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
+
+[project]
+authors = [
+  {name = "Stanisław Lasocki"},
+  {name = "Francis Tong"},
+]
+description = "Time-dependent Anthropogenic Seismic Hazard Assessment"
+name = "tdasha"
+version = "0.2.0"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Intended Audience :: Developers",
+	"Intended Audience :: Science/Research",
+	"Topic :: Scientific/Engineering",
+	"Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dependencies = [
+    "numpy >=1.21.6",
+    "scipy >=1.7.3",
+]
+
+[project.urls]
+Source = "https://github.com/francistong/tdasha"
+
+[tool.flit.sdist]
+exclude = ["./docs"]
