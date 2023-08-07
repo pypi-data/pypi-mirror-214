@@ -1,0 +1,14 @@
+deepthink/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepthink/activations.py,sha256=rG47-MYbgh-9wxXOatkzF-qYwzf-jxH9lD2bu1QU8L8,6885
+deepthink/history.py,sha256=6Mv_VlKgGfXdd4K6YTm2rfMIZn9aREY2ocaVGoy5Wqw,6990
+deepthink/layers.py,sha256=Bfg1K-xvYZCoGMN3juNLTDe-tLIbo2ALz11S6QjF0c8,34989
+deepthink/loss.py,sha256=NkviMnXmH_GK3dWmzSTljNtZTs1B3ShsjeKdbU7TZqU,5239
+deepthink/metrics.py,sha256=vyg235xhtrlw8U2BH1qXtyhpkHk_qOlZ0Isqrn_76O8,3769
+deepthink/model.py,sha256=BXniT4OI6eixF95hddL5OmcrdDGcCi2ymfW0rwLDaes,13377
+deepthink/optimizers.py,sha256=-0Tzau36Ci5LBLuyhlSZxrzzaKx5A8EXbpIv-lorqcE,14734
+deepthink/utils.py,sha256=e-qdWZ8HnBrNJZ3z0LgbUE0qNLvSEsE68GbhI_zzTLI,7406
+deepthink-0.1.9.dist-info/LICENSE,sha256=T2yJWlfklxF6n1PWcu6Kr_J1wv42ClL7Tf-7b5PkPm4,1059
+deepthink-0.1.9.dist-info/METADATA,sha256=igH5mpQ9NCcJl9Axf7NkeZ-pp1M1Guuy4FrmEeGYq-w,2798
+deepthink-0.1.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+deepthink-0.1.9.dist-info/top_level.txt,sha256=qfA6xrh1V_6xxJVgohZ2ePAObg14NXlbEwJqfSxx4w8,10
+deepthink-0.1.9.dist-info/RECORD,,
