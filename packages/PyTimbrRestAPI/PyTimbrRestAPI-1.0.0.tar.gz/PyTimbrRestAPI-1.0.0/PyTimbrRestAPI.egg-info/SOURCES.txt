@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PyTimbrRestAPI/__init__.py
+PyTimbrRestAPI/timbr_http_connector.py
+PyTimbrRestAPI.egg-info/PKG-INFO
+PyTimbrRestAPI.egg-info/SOURCES.txt
+PyTimbrRestAPI.egg-info/dependency_links.txt
+PyTimbrRestAPI.egg-info/top_level.txt
