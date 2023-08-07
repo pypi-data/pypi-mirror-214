@@ -1,0 +1,40 @@
+[tool.black]
+line-length = 80
+target-version = ["py39"]
+paths = ["tes_shopify", "tests"]
+
+[tool.vulture]
+ignore_names = ["context", "*_mock"]
+make_whitelist = true
+min_confidence = 80
+paths = ["tes_shopify", "tests"]
+sort_by_size = true
+
+[tool.bandit.assert_used]
+skips = ['*_test.py', '*test_*.py']
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python_tes_shopify"
+version = "1.0.2"
+authors = [
+    { name="Johannes Eimer", email="johannes.eimer@jep-dev.com" },
+]
+description = "Python TES Business Objects"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = ["TES", "Shopify", "Python"]
+dependencies = [
+    "python_tes~=0.3.19",
+    "requests==2.31.0",
+]
+
+[tool.hatch.build.targets.sdist]
+include = ["tes_shopify"]
+
+[tool.hatch.build.targets.wheel]
+package = ["tes_shopify"]
