@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+comrp/__init__.py
+comrp.egg-info/PKG-INFO
+comrp.egg-info/SOURCES.txt
+comrp.egg-info/dependency_links.txt
+comrp.egg-info/top_level.txt
