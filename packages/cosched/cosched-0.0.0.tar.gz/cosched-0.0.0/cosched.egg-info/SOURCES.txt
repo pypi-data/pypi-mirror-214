@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cosched/__init__.py
+cosched.egg-info/PKG-INFO
+cosched.egg-info/SOURCES.txt
+cosched.egg-info/dependency_links.txt
+cosched.egg-info/top_level.txt
