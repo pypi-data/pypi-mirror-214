@@ -1,0 +1,9 @@
+- description: A distributed mulmti servers architecture that allows remote generation of text. On your own network or through internet.
+  icon: /bindings/remote_lollms/logo.png
+  filename: lollms service
+  license: depends
+  owner_link: https://github.com/ParisNeo
+  owner: ParisNeo
+  server: https://github.com
+  sha256: ~
+  model_type: api
