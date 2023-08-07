@@ -1,0 +1,9 @@
+gpt_commands/__init__.py,sha256=mT23Vcv68OJTA-IxTNX4ZkFf90Wgovmg8ET5weOpFLc,37
+gpt_commands/client.py,sha256=Hsw0Zv4ftwnxyLjifBql5AB-JyqVs8hy6R74bbc9YKI,9013
+gpt_commands/introspection.py,sha256=Fk00AmG1IsRXkrL3jF6yesvARkk62c94BHSuPsx82RU,8873
+gpt_commands/utils.py,sha256=8MJrIHdlgN0lgl-qtl205KmHRH9FvGX3K0AC7X4DJaI,524
+gpt_commands_python-0.1.0.dist-info/LICENSE.txt,sha256=ZggDEO2M7p9FGmOH6GqG7C-ChkWSdR0P67ZS9Au-j9w,1077
+gpt_commands_python-0.1.0.dist-info/METADATA,sha256=5JtfNWNQOtDZXJdvpj9rrYdyAA8iujYQ37fHw7hcnDY,3791
+gpt_commands_python-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gpt_commands_python-0.1.0.dist-info/top_level.txt,sha256=scCYaxd14cO-z9uCKig6maDAMkZ9NOCOU7hEEv4UgCw,13
+gpt_commands_python-0.1.0.dist-info/RECORD,,
