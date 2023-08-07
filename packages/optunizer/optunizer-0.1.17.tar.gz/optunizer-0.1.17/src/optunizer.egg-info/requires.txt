@@ -1,0 +1,10 @@
+optuna
+python-dotenv
+pyyaml
+
+[psycopg]
+psycopg2
+
+[viz]
+streamlit
+plotly
