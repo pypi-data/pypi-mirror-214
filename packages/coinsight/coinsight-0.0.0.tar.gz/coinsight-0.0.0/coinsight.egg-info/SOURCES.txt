@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coinsight/__init__.py
+coinsight.egg-info/PKG-INFO
+coinsight.egg-info/SOURCES.txt
+coinsight.egg-info/dependency_links.txt
+coinsight.egg-info/top_level.txt
