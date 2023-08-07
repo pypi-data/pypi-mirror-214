@@ -1,0 +1,2 @@
+[console_scripts]
+sound-extraction = src.sound_extraction:main
