@@ -1,0 +1,3 @@
+[console_scripts]
+eventhub-analyzer=eventhub_analyzer.main:cli
+
