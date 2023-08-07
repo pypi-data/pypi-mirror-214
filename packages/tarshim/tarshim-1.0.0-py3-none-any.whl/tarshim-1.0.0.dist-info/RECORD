@@ -1,0 +1,10 @@
+tarshim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tarshim/demo_utils.py,sha256=xHZy-dZl253KOBPVEwojbJfyzr9nLSSZ3P5xy5vt5bU,1211
+tarshim/notebook_image_handling.py,sha256=Ye0irssU0HQ2u8-JclzZtPlxp5qTLBJExO4BBwIPYpQ,6661
+tarshim/tarshim.py,sha256=eoJGPY09aHXcDcBx8YXFLSC5MXzhOeX2gXDFUjwbHYo,4841
+tarshim/tmp.py,sha256=XhB5GtHhifoAG9NjP8awsTkPPuEKyRqE337hMM1Jj8I,2669
+tarshim-1.0.0.dist-info/LICENSE,sha256=EUR-j1O9Nlo9ekbYTLz7aEnwrhcoC5919EA5L6FG4_c,1070
+tarshim-1.0.0.dist-info/METADATA,sha256=fPcG42c_KHOsxHPkjJ2WEOjsWR3_RSOA8lDov-KBv3k,529
+tarshim-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tarshim-1.0.0.dist-info/top_level.txt,sha256=2tD4aTy3MRqbWVL1Jjx3Is0KXwHKtCJBBIrOmrgALLY,8
+tarshim-1.0.0.dist-info/RECORD,,
