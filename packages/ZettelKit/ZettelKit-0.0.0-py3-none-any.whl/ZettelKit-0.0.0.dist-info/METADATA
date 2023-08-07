@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ZettelKit
+Version: 0.0.0
+Home-page: https://github.com/sderev/zettelkit
+Author: Sébastien De Revière
+License: Apache Licence, Version 2.0
+Project-URL: Documentation, https://github.com/sderev/zettelkit
+Project-URL: Issues, http://github.com/sderev/zettelkit/issues
+Project-URL: Changelog, https://github.com/sderev/zettelkit/releases
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+
+# ZettelKit
+
+A modern Zettelkasten experience in your terminal. ZettelKit transforms the way you manage and organize your notes. This user-centric CLI tool makes it effortless to create, link, and retrieve notes. Experience the ease of weaving your own interconnected knowledge network with ZettelKit, alwasa ready to grow with you.
+
