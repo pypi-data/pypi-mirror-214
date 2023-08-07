@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/arg_parser.py
+src/clidir.py
+src/command_loader.py
+src/help.py
+src/clidir.egg-info/PKG-INFO
+src/clidir.egg-info/SOURCES.txt
+src/clidir.egg-info/dependency_links.txt
+src/clidir.egg-info/top_level.txt
