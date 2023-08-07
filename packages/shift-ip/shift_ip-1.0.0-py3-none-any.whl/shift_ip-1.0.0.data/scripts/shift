@@ -1,0 +1,43 @@
+import sys
+import requests
+
+def print_tool_info():
+    tool_info = """
+ _____  _   _  _____ ______  _____ 
+/  ___|| | | ||_   _||  ___||_   _|
+\ `--. | |_| |  | |  | |_     | |  
+ `--. \|  _  |  | |  |  _|    | |  
+/\__/ /| | | | _| |_ | |      | |  
+\____/ \_| |_/ \___/ \_| [IP] \_/
+______________ V1.0.0 ______________
+SHIFT: Shared Hosting IP Finder Tool. 
+https://github.com/n4j1Br4ch1D/SHIFT
+------------------------------------
+ """
+    print(tool_info)
+
+def check_domain_ip(ip, domain):
+    headers = {'Host': domain}
+    response = requests.get(f"http://{ip}", headers=headers, allow_redirects=False)
+    return response
+
+def shift_command():
+    ip_range = sys.argv[1]
+    domain = sys.argv[2]
+
+    print_tool_info()
+    print(f"Domain: {domain}")
+    print(f"IP Range: {ip_range}\n")
+    
+    ip_parts = ip_range.split('/')
+    ip_base = '.'.join(ip_parts[0].split('.')[:3])
+    ip_start = int(ip_parts[0].split('.')[-1])
+    ip_end = int(ip_parts[1])
+
+    for i in range(ip_start, ip_end): 
+        ip = f"{ip_base}.{i}"
+        response = check_domain_ip(ip, domain)
+        print(f"{domain} - {ip} [{response.status_code}]") 
+        
+
+shift_command()
