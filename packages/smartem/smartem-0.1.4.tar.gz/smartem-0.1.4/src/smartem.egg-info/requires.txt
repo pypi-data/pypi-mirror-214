@@ -1,0 +1,11 @@
+gemmi
+matplotlib
+xmltodict
+mrcfile
+pyyaml
+psycopg2
+sqlalchemy<2.0
+PyQt5
+pandas
+plotly
+tifffile
