@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cosimulation/__init__.py
+cosimulation.egg-info/PKG-INFO
+cosimulation.egg-info/SOURCES.txt
+cosimulation.egg-info/dependency_links.txt
+cosimulation.egg-info/top_level.txt
