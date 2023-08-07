@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arg_parser.py,sha256=CYUPXPz3y2cAiaS9jKlR-B0XXRkimPrVWdMHytU7USQ,603
+clidir.py,sha256=mf8OZd-aR9e_Kr6JDnhivIetl_2t72KA-g0QdYm70Vg,830
+command_loader.py,sha256=UO8JU8d9t8IWhhJkW2qC1nAUDCcUOTEfS_gZ06HaVGc,511
+help.py,sha256=bYKywZMTSgrQBzqT4MBYNgETWU3tyq1xkxwdCpLrMm0,1024
+clidir-0.1.1.dist-info/LICENSE,sha256=ADPEGF3sYvVvQnWRb8eXC67RUGA9xldIe4Z15GOoX1U,1079
+clidir-0.1.1.dist-info/METADATA,sha256=5uV54BO9qGObDpC9gB6nR-imA72y7QPfZ8lAtbJqk4I,2464
+clidir-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+clidir-0.1.1.dist-info/top_level.txt,sha256=X0dvF--EXb67Ltc8Ewz_RlnoI5AD6GyG-12v8oKY9Pc,47
+clidir-0.1.1.dist-info/RECORD,,
