@@ -1,0 +1,21 @@
+{
+  "user_name": "Your name", 
+  "date": ["{% now 'utc', '%Y-%m-%d' %}"],
+  "project_name": "Project name",
+  "project_id": ["{{cookiecutter.project_name.lower().replace(' ', '_') }}"],
+  "genome": "hg38",
+  "chromosome_sizes": "path/to/hg38.chrom.sizes",
+  "indicies": "/databank/igenomes/Homo_sapiens/UCSC/hg38/Sequence/Bowtie2Index/genome",
+  "gtf": "/databank/igenomes/Homo_sapiens/UCSC/hg38/Annotation/Genes/genes.gtf",
+  "read_type": ["paired", "single"],
+  "split_fastq": ["yes", "no"],
+  "remove_pcr_duplicates_method": ["picard", "deeptools"],
+  "remove_blacklist": ["yes", "no"],
+  "blacklist": "path/to/hg38-blacklist.v2.bed.gz",
+  "make_bigwigs": ["yes", "no"],
+  "pileup_method": ["deeptools", "homer"],
+  "make_ucsc_hub": ["yes", "no"],
+  "UCSC_hub_directory": "path/to/ publically accessible location on the server",
+  "email": "Email address (UCSC required)",
+  "color_by": ["samplename"]
+  }

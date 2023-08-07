@@ -1,0 +1,20 @@
+{
+  "user_name": "Your name", 
+  "date": ["{% now 'utc', '%Y-%m-%d' %}"],
+  "project_name": "Project name",
+  "project_id": ["{{cookiecutter.project_name.lower().replace(' ', '_') }}"],
+  "genome": "hg38",
+  "fasta": "path/to/reference_genome.fa",
+  "fasta_index": "path/to/reference_genome.fa.fai",
+  "chromosome_sizes": "path/to/hg38.chrom.sizes",
+  "indicies": "/databank/igenomes/Homo_sapiens/UCSC/hg38/Sequence/Bowtie2Index/genome",
+  "read_type": ["paired", "single"],
+  "split_fastq": ["yes", "no"],
+  "split_fastq_parts": "int",
+  "remove_blacklist": ["yes", "no"],
+  "blacklist": "path/to/hg38-blacklist.v2.bed.gz",
+  "call_snps": ["yes", "no"],
+  "annotate_snps": ["yes", "no"],
+  "snp_database": "path/to/snp_database.vcf.gz",
+  "remove_pcr_duplicates_method": ["picard", "deeptools"]
+  }
