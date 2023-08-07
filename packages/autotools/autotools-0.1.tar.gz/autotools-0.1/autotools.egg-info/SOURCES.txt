@@ -1,0 +1,8 @@
+setup.py
+autotools/__init__.py
+autotools/chatgpt.py
+autotools.egg-info/PKG-INFO
+autotools.egg-info/SOURCES.txt
+autotools.egg-info/dependency_links.txt
+autotools.egg-info/not-zip-safe
+autotools.egg-info/top_level.txt
