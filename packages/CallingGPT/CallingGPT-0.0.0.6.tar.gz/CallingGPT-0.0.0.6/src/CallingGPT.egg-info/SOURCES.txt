@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/CallingGPT/__init__.py
+src/CallingGPT.egg-info/PKG-INFO
+src/CallingGPT.egg-info/SOURCES.txt
+src/CallingGPT.egg-info/dependency_links.txt
+src/CallingGPT.egg-info/requires.txt
+src/CallingGPT.egg-info/top_level.txt
+src/CallingGPT/cli/__init__.py
+src/CallingGPT/entities/__init__.py
+src/CallingGPT/entities/namespace.py
+src/CallingGPT/session/__init__.py
+src/CallingGPT/session/session.py
