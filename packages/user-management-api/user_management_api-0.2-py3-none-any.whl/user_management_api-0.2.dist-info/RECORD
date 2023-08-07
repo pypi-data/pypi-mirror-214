@@ -1,0 +1,16 @@
+user_management_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+user_management_api/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+user_management_api/apps.py,sha256=cleKiKOmXWtyO9Tc4Ze26VpPh6LqHlm0qVUA1KXuxpU,174
+user_management_api/filters.py,sha256=utEbOFP47FgaDd9p5ItIK1P-B5KW41lGXr8yV6fC5xw,840
+user_management_api/models.py,sha256=4OVMcDDx9fVgBEJ91B7dfMEG2Ni1LRSLJOKzIkVPsKo,60
+user_management_api/pagination.py,sha256=UpJlRyepHBI6vMFWze0Pb02V2rM7x295WZ3tdQJRVX4,132
+user_management_api/serializers.py,sha256=INf4VDQJ_2j4M3WbFiydbo1t_1V9jh74ZbrplYvLruw,1246
+user_management_api/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+user_management_api/urls.py,sha256=7DuL_LnJMgDXoeuB_F5J8LzISKO404RFeasvw1pKa4k,437
+user_management_api/views.py,sha256=lt7SwRfKxVPPmUL4dMdpDC1sE2mCGTDNEv7ouQqm0sc,2964
+user_management_api/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+user_management_api-0.2.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+user_management_api-0.2.dist-info/METADATA,sha256=mmAQFWsuX-etaHBijxDfLnRXQ2JJRo_ehlGkQfRBYw4,511
+user_management_api-0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+user_management_api-0.2.dist-info/top_level.txt,sha256=3DUsz_ZzAK2T_-_TBmUF2j6tVrd4rLCUn5plL1ytx9w,20
+user_management_api-0.2.dist-info/RECORD,,
