@@ -1,0 +1,44 @@
+[project]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas"
+]
+name = "minipti"
+version = "1.9.3"
+authors = [
+    { name = "Jonas Bilal", email = "jonasbilal@outlook.com" },
+]
+
+description = "Provides algorithm and GUI for photo thermal interferometry and 3x3 couplers"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+algorithm = [
+    "minipti",
+    "beartype",
+    "dacite",
+    "h5py",
+    "nptyping",
+]
+
+gui = [
+    "minipti[algorithm]",
+    # Hardware
+    "fastcrc",
+    "pyserial",
+    # GUI
+    "PyQt5",
+    "pyqtgraph"
+]
+
+[project.urls]
+"Homepage" = "https://www.fhnw.ch/en/about-fhnw/schools/school-of-engineering/institutes/institute-for-sensors-and-electronics/aerosol-measurement-technology"
+"Source" = "https://github.com/bilaljo/MiniPTI"
+"Bug Tracker" = "https://github.com/bilaljo/MiniPTI/issues"

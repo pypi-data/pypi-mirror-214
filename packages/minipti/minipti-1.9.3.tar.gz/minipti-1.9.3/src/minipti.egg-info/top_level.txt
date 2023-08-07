@@ -1,0 +1,6 @@
+__init__
+__main__
+algorithm
+gui
+hardware
+json_parser

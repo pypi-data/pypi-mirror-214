@@ -1,0 +1,17 @@
+numpy
+scipy
+pandas
+
+[algorithm]
+minipti
+beartype
+dacite
+h5py
+nptyping
+
+[gui]
+minipti[algorithm]
+fastcrc
+pyserial
+PyQt5
+pyqtgraph
