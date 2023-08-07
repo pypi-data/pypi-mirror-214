@@ -1,0 +1,2 @@
+[console_scripts]
+itc_ai = itc_ai:main
