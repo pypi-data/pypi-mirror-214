@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+comatrix/__init__.py
+comatrix.egg-info/PKG-INFO
+comatrix.egg-info/SOURCES.txt
+comatrix.egg-info/dependency_links.txt
+comatrix.egg-info/top_level.txt
