@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spacyspellcheck/__init__.py
+spacyspellcheck/spellcheck.py
+spacyspellcheck.egg-info/PKG-INFO
+spacyspellcheck.egg-info/SOURCES.txt
+spacyspellcheck.egg-info/dependency_links.txt
+spacyspellcheck.egg-info/not-zip-safe
+spacyspellcheck.egg-info/requires.txt
+spacyspellcheck.egg-info/top_level.txt
