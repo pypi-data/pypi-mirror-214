@@ -1,0 +1,11 @@
+[console_scripts]
+dcc = commands.dockertools:dcc
+dtail = commands.dockertools:dtail
+dtclean = commands.dockertools:dtclean
+dtins = commands.dockertools:dtins
+dtls = commands.dockertools:dtls
+dtsh = commands.dockertools:dtsh
+sumount = commands.sshutils:sumount
+surtun = commands.sshutils:surtun
+sussh = commands.sshutils:sussh
+xpgl = commands.devutils:xpgl
