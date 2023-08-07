@@ -1,0 +1,7 @@
+subseq-1.0.4.dist-info/METADATA,sha256=SxYOwuf6C8mtz2OuRU5oKs-yfXuTjfRDVyWZa0upVHk,1806
+subseq-1.0.4.dist-info/LICENSE,sha256=JvZMgDsH386oLqMXkLh_z1v8dk1jUTz-xq-Be2LWvrw,1056
+subseq-1.0.4.dist-info/WHEEL,sha256=MXkSmZj-ucMvJEZe-5F9uGaWQfgqj_gRjwLyMfC10Vs,152
+subseq-1.0.4.dist-info/top_level.txt,sha256=JAX1oBhdtEc59OiDuSiRROa7wz7jTEE9N0UuCyiXq_g,7
+subseq-1.0.4.dist-info/RECORD,,
+subseq/subseq.cpython-311-x86_64-linux-gnu.so,sha256=Al2QP4GXzLf6uDQB8RfgALEbzqNzlmcPIm4sC9tik-s,3530040
+subseq/alphabet.cpython-311-x86_64-linux-gnu.so,sha256=9qxxdcTB9j0HcUeAr_xmMqUWqUdBXTA1oLdqO7E3k5E,3108744
