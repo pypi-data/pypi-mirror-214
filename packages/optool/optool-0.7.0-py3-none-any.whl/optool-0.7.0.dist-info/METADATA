@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: optool
+Version: 0.7.0
+Summary: Optimization tools
+Author: Andreas Ritter
+Author-email: anritter@idsc.mavt.ethz.ch
+License: MIT
+Project-URL: Source, https://gitlab.com/ocsept/optool
+Project-URL: Documentation, https://ocsept.gitlab.io/optool
+Project-URL: API, https://ocsept.gitlab.io/optool/api/index.html
+Keywords: Serialization,Numerical optimization,Units of measurement,JSON,Pydantic,Pint,CasADi
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+Requires-Dist: casadi
+Requires-Dist: humanize
+Requires-Dist: loguru
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pint
+Requires-Dist: pint-pandas
+Requires-Dist: pydantic
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+[![PyPI-Server](https://img.shields.io/pypi/v/optool.svg)](https://pypi.org/project/optool/)
+[![Built Status](https://gitlab.com/ocsept/optool/badges/main/pipeline.svg)](https://gitlab.com/ocsept/optool/)
+[![Coverage](https://gitlab.com/ocsept/optool/badges/main/coverage.svg)](https://gitlab.com/ocsept/optool/)
+[![ReadTheDocs](https://readthedocs.org/projects/optool/badge/?version=latest)](https://ocsept.gitlab.io/optool)
+
+# Optool - Optimization tools
+
+Generally usable utilities related to optimization problems.
+
+Optool is a comprehensive Python package that simplifies the formulation of numerical optimization problems by
+supporting the use of units of measurements and parallel execution of optimizations.
+In addition, the package includes advanced data validation capabilities and provides out of the box serialization of a
+variety of well-known data types.
+
+## Highlights
+
+- Easy to use optimization framework built around [CasADi], allowing to specify the problem with units of measurements.
+- Integrated data validation using [Pydantic].
+- Additional Pydantic-compatible fields for a variety of well-known data types such as [Numpy] arrays, [Pandas] Series
+  and DataFrame objects, unit and quantity objects of [Pint].
+- Out of the box serialization to JSON of a variety of well-known data types within data models.
+- Parallelization of optimizations with convenient redirection of logging statements.
+
+## Installation
+
+`optool` can be installed from PyPI:
+
+```shell
+python -m pip install optool
+```
+
+## Getting Started
+
+The main purpose of this package is to simplify the formulation of optimization problems.
+Following an [example application](https://web.casadi.org/blog/nlp-scaling/) of [CasADi], which aims to find the lowest
+fuel consumption of a rocket in order to reach a certain target height, the corresponding optimization problem can be
+formulated as follows:
+
+```python
+import numpy as np
+
+from optool.optimization.ode import OrdinaryDifferentialEquation, ForwardEuler
+from optool.optimization.problem import OptimizationProblem
+from optool.uom import Quantity
+
+# Define general parameters
+time = Quantity(np.arange(0, 101, 1), "s")
+gravitational_acceleration = Quantity(9.81, "m/s²")
+fuel_consumption = Quantity(0.3, "g/(N*s)")
+target_height = Quantity(100.0, "km")
+initial_mass = Quantity(500.0, "t")
+
+# Setup problem
+prb = OptimizationProblem.casadi("Rocket launch")
+integration_method = ForwardEuler
+
+# Decision variables
+height = prb.new_variable("height", len(time), "m")
+height.lower_bounds = Quantity(np.hstack([np.zeros(len(time) - 1), target_height.m]), target_height.u)
+height.upper_bounds = Quantity(np.hstack([0.0, np.full(len(time) - 2, np.inf), target_height.m]), target_height.u)
+height.nominal_values = target_height
+
+speed = prb.new_variable("speed", len(time), "m/s")
+speed.lower_bounds = Quantity(np.hstack([0.0, np.full(len(time) - 1, -np.inf)]), "m/s")
+speed.upper_bounds = Quantity(np.hstack([0.0, np.full(len(time) - 1, np.inf)]), "m/s")
+speed.nominal_values = Quantity(1500.0, "m/s")
+
+mass = prb.new_variable("mass", len(time), "kg")
+mass.lower_bounds = Quantity(np.hstack([initial_mass.m, np.zeros(len(time) - 1)]), initial_mass.u)
+mass.upper_bounds = Quantity(np.hstack([initial_mass.m, np.full(len(time) - 1, np.inf)]), initial_mass.u)
+mass.initial_guess = initial_mass
+mass.nominal_values = initial_mass
+
+thrust = prb.new_variable("control", len(time) - 1, "N")
+thrust.lower_bounds = Quantity(0.0, "N")
+thrust.nominal_values = Quantity(1.5e8, "N")
+
+# Dynamic constraints
+ode = OrdinaryDifferentialEquation(name="height_dynamics",
+                                   state_variable=height.regular,
+                                   input_variable=speed.regular[:-1],
+                                   function=lambda x, u: u)
+prb.add_equation(integration_method.integrate(ode, time))
+
+ode = OrdinaryDifferentialEquation(name="velocity_dynamics",
+                                   state_variable=speed.regular,
+                                   input_variable=thrust.regular / mass.regular[:-1],
+                                   function=lambda x, u: u - gravitational_acceleration)
+prb.add_equation(integration_method.integrate(ode, time))
+
+ode = OrdinaryDifferentialEquation(name="mass_dynamics",
+                                   state_variable=mass.regular,
+                                   input_variable=thrust.regular,
+                                   function=lambda x, u: -fuel_consumption * u)
+prb.add_equation(integration_method.integrate(ode, time))
+
+# Objective
+prb.objective = mass.regular[0] - mass.regular[-1]
+
+# Solve
+prb.parse('ipopt')
+response = prb.solve()
+for val in response.debug_info.get_details():
+    print(val)
+response.guarantee_success()
+```
+
+As a result, the optimal control strategy is to get the rocket to a high speed as quickly as possible, using a lot of
+fuel, so that it is lighter and requires less thrust.
+The propulsion is cut off after less than 10 seconds so that the rocket reaches the desired altitude in glide flight.
+
+![rocket.jpg](docs/_static/rocket.jpg)
+
+The complete code is available [here](docs/_static/rocket_demo.py).
+
+## Dependencies
+
+The following libraries are necessary to run the program code.
+
+- [CasADi] is a symbolic framework for numeric optimization implementing automatic differentiation.
+- [Humanize] provides various common string-related utilities like turning a number into a fuzzy human-readable
+  duration (e.g. *3 minutes ago*).
+- [Loguru] intends to make Python logging less painful by adding a bunch of useful functionalities that solve caveats of
+  the standard loggers.
+- [Numpy] is the fundamental package for scientific computing with Python.
+- [Pandas] provides fast, powerful, flexible and easy to use features for data analysis and manipulation.
+- [Pint] allows to define, operate and manipulate physical quantities.
+  It allows arithmetic operations between them and conversions from and to different units.
+- [Pint-pandas] provides an extension to Pandas, which allows Pandas to recognize the quantities and store them in
+  Pandas data frames and series.
+- [Pydantic] provides extensive data validation features and serialization capabilities using Python type hints.
+
+Extra dependencies are needed for development, which can all be installed via
+
+```shell
+ pip install -r requirements.txt
+```
+
+However, all processes are automated using [Tox], which automatically installs the
+required dependencies.
+Hence, [Tox] is the only Python package stringently necessary.
+
+
+[CasADi]: https://pypi.org/project/casadi
+
+[Humanize]: https://pypi.org/project/humanize
+
+[Loguru]: https://pypi.org/project/loguru
+
+[Numpy]: https://pypi.org/project/numpy
+
+[Pandas]: https://pypi.org/project/pandas
+
+[Pint-pandas]: https://pypi.org/project/pint-pandas
+
+[Pint]: https://pypi.org/project/Pint
+
+[Pydantic]: https://pypi.org/project/pydantic
+
+[Tox]: https://pypi.org/project/tox
