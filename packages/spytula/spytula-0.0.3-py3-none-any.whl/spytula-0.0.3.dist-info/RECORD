@@ -1,0 +1,7 @@
+spytula/__init__.py,sha256=S-n_cqBUeyY0dihMrfT2z9gqE5pqODqFmVbBj0bSDYk,21
+spytula/builder.py,sha256=tNFGSrzHkrRQnWz6Q2wJEfkPVr7R_Sd_yibASfDOk4E,9615
+spytula/mixins/format.py,sha256=PqkCtQV_nujLwFlCgVVZmHTGSKy_9zKd0gLRD_EK-Sw,2729
+spytula-0.0.3.dist-info/METADATA,sha256=1MrO59gyXY8W2Vjw1Fd9ky5OYEYNxOsLo0A3ejMK2WI,3302
+spytula-0.0.3.dist-info/LICENSE.md,sha256=Wb2Sc4uaQmoDglZ_K-u5k2ZZPeS3YfxdIX5bGMOebrI,1098
+spytula-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+spytula-0.0.3.dist-info/RECORD,,
