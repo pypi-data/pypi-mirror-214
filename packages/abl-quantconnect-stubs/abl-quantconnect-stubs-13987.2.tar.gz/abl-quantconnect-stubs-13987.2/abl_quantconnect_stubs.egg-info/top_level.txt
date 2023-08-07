@@ -1,0 +1,11 @@
+AlgorithmImports
+Calculators
+FtxApi
+Internal
+MS
+Microsoft
+MomCrypto
+QuantConnect
+QuantConnectStubsGenerator
+System
+clr
