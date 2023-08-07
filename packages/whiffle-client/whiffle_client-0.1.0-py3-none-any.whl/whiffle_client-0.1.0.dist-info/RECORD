@@ -1,0 +1,11 @@
+whiffle_client/__init__.py,sha256=rnOMwSb8sTYjPWqtFUI9rRARY3MvAgq1Vef4aLuCyN4,120
+whiffle_client/client.py,sha256=sStInRclpvyKy2EmYR6DLGnrluwHcWgko76ygOhbIOM,7145
+whiffle_client/entrypoints.py,sha256=uWDTZmXkvFC8_olyWeYaRJ2SAIbgxpK7BqP8cfYQHIg,1855
+whiffle_client/resources/example_generic_params.json,sha256=sL1TE7rGqRRSU6OOBHik92c6p7buZgiRAuVwFEBbj7o,2624
+whiffle_client/resources/whiffle_config.yaml,sha256=PGauZW-ue1ppmNCf0TVmrO1YE7GMuRuAoi0w4j2AYKA,60
+whiffle_client-0.1.0.dist-info/LICENCE.txt,sha256=W_oMz0KuvW1HGFXmlbypjpfBZjDs0Uu7S-7axSMWHtU,1069
+whiffle_client-0.1.0.dist-info/METADATA,sha256=DSQFI6wlibZ1q6ewMy0ZkQAXPiMJViDT0a_oergq0RQ,1184
+whiffle_client-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+whiffle_client-0.1.0.dist-info/entry_points.txt,sha256=83T0_1bqwsqbCMIqaGMJ16r0bW5JJJymOMUlEVwk4OM,63
+whiffle_client-0.1.0.dist-info/top_level.txt,sha256=_mJrxhG3E27kmSjd0oNOrXR5Z8xUPmJQWorDVhouV_c,15
+whiffle_client-0.1.0.dist-info/RECORD,,
