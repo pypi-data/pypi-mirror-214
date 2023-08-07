@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: faceid-core
+Version: 0.0.5
+Summary: Face Recognition
+Home-page: https://github.com/Or1onn/faceid-core
+Download-URL: https://pypi.org/project/faceid-core/
+Author: Orhan Salahetdinov
+Author-email: salahetdinovorxan@gmail.com
+License: MIT
+Keywords: FaceId,Face Recognition,Python 3
+Description-Content-Type: text/markdown
