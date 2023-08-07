@@ -1,0 +1,15 @@
+airflow/providers/discord/__init__.py,sha256=A8QvEI_gfqyyNBCG1rkWj-vFrLGpY0p3Gx35bkAGfFg,1532
+airflow/providers/discord/get_provider_info.py,sha256=w1zcFIAxqy0yMBh6qHTGRttkQYFlPonwlWE4tT-Ol4w,2600
+airflow/providers/discord/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/discord/hooks/discord_webhook.py,sha256=Yx-tKbjRRU4E9DHDyh3zn2pEMWV6PcSEi_EFs08xK5Y,5393
+airflow/providers/discord/notifications/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/discord/notifications/discord.py,sha256=iFrDF-SjEfw1hfwDm4nIeaBAcjLXmj5YWghhCOqI3Dk,3105
+airflow/providers/discord/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/discord/operators/discord_webhook.py,sha256=zJc2bnmgZEuQ5566qEhbqqKwcWam01mFFD_hgZ64IOw,3688
+apache_airflow_providers_discord-3.3.0rc1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_discord-3.3.0rc1.dist-info/METADATA,sha256=TcZq5xcdjNWZhvVuu9SEuxMekrklQjFb7n77lefuQUg,11367
+apache_airflow_providers_discord-3.3.0rc1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_discord-3.3.0rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apache_airflow_providers_discord-3.3.0rc1.dist-info/entry_points.txt,sha256=PHS518RYQ-UadrBBdyTYHtphZM7rMdq3Ez2TNG5d9Wo,104
+apache_airflow_providers_discord-3.3.0rc1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_discord-3.3.0rc1.dist-info/RECORD,,
