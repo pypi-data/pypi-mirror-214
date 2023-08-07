@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.cfg
+setup.py
+bkapi_plugins/files/ruby-3.1.2-141.module_el8.7.0+1180+5395fc58.src.rpm
+bkapi_plugins/files/ruby-3.1.2-141.module_el8.7.0+1180+5395fc58.x86_64.rpm
+bkapi_plugins_py.egg-info/PKG-INFO
+bkapi_plugins_py.egg-info/SOURCES.txt
+bkapi_plugins_py.egg-info/dependency_links.txt
+bkapi_plugins_py.egg-info/top_level.txt
