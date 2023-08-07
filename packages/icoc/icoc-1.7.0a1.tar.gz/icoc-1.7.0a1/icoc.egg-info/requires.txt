@@ -1,0 +1,26 @@
+bidict
+dynaconf>=3.1.12
+matplotlib
+netaddr
+pdfrw
+pint>=0.22
+platformdirs>=3.5.0
+python-can[pcan]>=4.0
+reportlab
+tables>=3.6
+tqdm>=4.65
+semantic_version
+
+[:os_name == "nt"]
+pywin32
+windows-curses
+
+[dev]
+flake8
+mypy
+toml
+
+[test]
+icolyzer>=1.5.0
+prysk[pytest-plugin]>=0.13.1
+pytest
