@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coplaniverse/__init__.py
+coplaniverse.egg-info/PKG-INFO
+coplaniverse.egg-info/SOURCES.txt
+coplaniverse.egg-info/dependency_links.txt
+coplaniverse.egg-info/top_level.txt
