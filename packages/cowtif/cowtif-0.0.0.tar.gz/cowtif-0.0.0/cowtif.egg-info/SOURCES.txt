@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cowtif/__init__.py
+cowtif.egg-info/PKG-INFO
+cowtif.egg-info/SOURCES.txt
+cowtif.egg-info/dependency_links.txt
+cowtif.egg-info/top_level.txt
