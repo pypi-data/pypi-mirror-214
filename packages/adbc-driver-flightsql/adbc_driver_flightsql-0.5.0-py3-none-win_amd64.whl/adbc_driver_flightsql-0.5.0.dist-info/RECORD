@@ -1,0 +1,11 @@
+adbc_driver_flightsql/__init__.py,sha256=ny0ZMgGwDUg4-a5__Q5QIX4eE4LWsBgiQSU9Ri-Pj5w,7077
+adbc_driver_flightsql/_static_version.py,sha256=1rzVXGmLG9hgLK3fqDJY_yoRi-f0eTXjJG8JP7coX0s,62
+adbc_driver_flightsql/_version.py,sha256=90XJ0YVfNMVV5LO2o_Od-JbLxo9qkDrMSXCUFootTSw,7108
+adbc_driver_flightsql/dbapi.py,sha256=Vv9YlhlP4MNLD8_SbA9dil18sglfghchZmkLGkINg1w,3998
+adbc_driver_flightsql/libadbc_driver_flightsql.so,sha256=R3gCVZ7yBSWFwgqmrUuD55nScfyIt0ESaDlrza7B4Pk,16226304
+adbc_driver_flightsql-0.5.0.dist-info/LICENSE.txt,sha256=UZe2GB7QA20gLXjiqdLmEKTFTKs0CiUvHw3rp6lQsPE,84816
+adbc_driver_flightsql-0.5.0.dist-info/METADATA,sha256=CTYGttHrU0B8kTF9dT0MGh-RSn6X_L7OLlaaw7NfdNE,719
+adbc_driver_flightsql-0.5.0.dist-info/NOTICE.txt,sha256=ork4LFdNC7tkM_o0ZVZZBsBc3mUQAnu9tKovmU3-w60,166
+adbc_driver_flightsql-0.5.0.dist-info/WHEEL,sha256=yJBWEiNdYDPpAflg_7c8gA0pb9Rrw55tD1-U531Wrko,104
+adbc_driver_flightsql-0.5.0.dist-info/top_level.txt,sha256=vDYVMIyuGsoa8zUmgIFJk6CdD69iBujrD1GlaGV2vCQ,22
+adbc_driver_flightsql-0.5.0.dist-info/RECORD,,
