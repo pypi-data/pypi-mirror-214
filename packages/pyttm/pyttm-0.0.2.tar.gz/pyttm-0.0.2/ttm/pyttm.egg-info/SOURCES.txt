@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ttm/pyttm.egg-info/PKG-INFO
+ttm/pyttm.egg-info/SOURCES.txt
+ttm/pyttm.egg-info/dependency_links.txt
+ttm/pyttm.egg-info/entry_points.txt
+ttm/pyttm.egg-info/requires.txt
+ttm/pyttm.egg-info/top_level.txt
