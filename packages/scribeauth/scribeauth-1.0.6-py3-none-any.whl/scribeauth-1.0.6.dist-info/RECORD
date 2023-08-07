@@ -1,0 +1,9 @@
+scribeauth/__init__.py,sha256=2-RDsb4wzEH_M6fa1C_QVx5qQylNuMw0I1K1tNDtz8o,66
+scribeauth/__main__.py,sha256=G5QJGPflFoSlMPoUNyP9y9xKmDy2udBUeDOZyF_-RpE,664
+scribeauth/scribeauth.py,sha256=5_egs_T1zO291rM9mLFsyVz_OM6_6JVPrKIauRmOWwI,14309
+scribeauth/scribeauthfederation.py,sha256=hcuxU437ejJVDgzxoClSemUwlNfVEXBhB52ETfhTxRk,1351
+scribeauth-1.0.6.dist-info/LICENSE.md,sha256=UxWtngnKh5L97bck8adZy5mU_kPYjXQmpzoQW3UBZgA,1097
+scribeauth-1.0.6.dist-info/METADATA,sha256=tjjjZktV1pC29Xpb5K61ucyqaRlM5Fz6cyzJ8t6Kr2I,5008
+scribeauth-1.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scribeauth-1.0.6.dist-info/top_level.txt,sha256=u_gWgkGGrMYmNcBINraxlpw1j0QerxKxy9dTD9yXgnE,11
+scribeauth-1.0.6.dist-info/RECORD,,
