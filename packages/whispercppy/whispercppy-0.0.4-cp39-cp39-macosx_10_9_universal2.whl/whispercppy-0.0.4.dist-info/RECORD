@@ -1,0 +1,12 @@
+whispercppy/api_cpp2py_export.cpython-39-darwin.so,sha256=38xakFPZg3U_vJZu1s6E_nioyZygKLTnczveaXpTxgU,2223840
+whispercppy/__init__.pyi,sha256=1JC7Q4ORBytQrNsWGPhqzZaV0RvGACu6cssVwIQTumM,1632
+whispercppy/__init__.py,sha256=HD-I88qnpa5VLiGpR9MdS8VtBB_W4Wbb2Karl6s9fdo,7504
+whispercppy/api.pyi,sha256=NkvKlvhDHBwvdjDXcaOxq8iHzcs5iqVHthBdwc2BIKs,8389
+whispercppy/utils.py,sha256=zi8N2bMpInLMGETZ7ae1tWU0NSEPBEqDCu-QHS488Ng,5050
+whispercppy/libwhisper.dylib,sha256=0A-uzYRq_Xxj9gL9f0Lgu04DRcGtZYPcfIwihBkGnZw,1012989
+whispercppy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whispercppy-0.0.4.dist-info/RECORD,,
+whispercppy-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+whispercppy-0.0.4.dist-info/WHEEL,sha256=1a9Ko9a-gG650SIesHUh7EtH5_pEhiq-7Cid2T8u5h0,113
+whispercppy-0.0.4.dist-info/top_level.txt,sha256=kyFKm8th9F0Sh7c4XlpUq-27Iq6OHVzuRoocoUVimSM,12
+whispercppy-0.0.4.dist-info/METADATA,sha256=W5SRSv9Mrp4HU15mxMoAy9KUmaOB3thOvaL-rqmBJ6Q,493
