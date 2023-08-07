@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cowhatif/__init__.py
+cowhatif.egg-info/PKG-INFO
+cowhatif.egg-info/SOURCES.txt
+cowhatif.egg-info/dependency_links.txt
+cowhatif.egg-info/top_level.txt
