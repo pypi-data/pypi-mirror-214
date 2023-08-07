@@ -1,0 +1,11 @@
+airflow/providers/openfaas/__init__.py,sha256=q8inVt0x1V90N7shM63cKnQM3nC4v3iVqQVLQxCFyE0,1533
+airflow/providers/openfaas/get_provider_info.py,sha256=45qlC_04B8xAPgEEyCJXPYC4ZD9s1DcWQKEvQ5siKTA,1992
+airflow/providers/openfaas/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/openfaas/hooks/openfaas.py,sha256=octDjirPwXAv0fmDaiVpvoMMhbOcWpC1Fw9WebjVOzk,4890
+apache_airflow_providers_openfaas-3.2.1rc1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_openfaas-3.2.1rc1.dist-info/METADATA,sha256=KTfv64swQ-YadR_7J2NY2b9X0pJqYHB2bVDSxafnETY,9528
+apache_airflow_providers_openfaas-3.2.1rc1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_openfaas-3.2.1rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apache_airflow_providers_openfaas-3.2.1rc1.dist-info/entry_points.txt,sha256=uWoQwHYUDpnFYqvE1F33FXb5NvVltldiuaZDMBbrFiQ,105
+apache_airflow_providers_openfaas-3.2.1rc1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_openfaas-3.2.1rc1.dist-info/RECORD,,
