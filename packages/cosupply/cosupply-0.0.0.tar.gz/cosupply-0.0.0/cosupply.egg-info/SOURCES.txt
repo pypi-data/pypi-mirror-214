@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cosupply/__init__.py
+cosupply.egg-info/PKG-INFO
+cosupply.egg-info/SOURCES.txt
+cosupply.egg-info/dependency_links.txt
+cosupply.egg-info/top_level.txt
