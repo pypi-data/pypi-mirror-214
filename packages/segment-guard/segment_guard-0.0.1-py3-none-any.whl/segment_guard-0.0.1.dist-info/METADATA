@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: segment-guard
+Version: 0.0.1
+Summary: A library for detecting critical data segments in structured and unstructured data based on features, metadata and model predictions.
+Author-email: Renumics GmbH <info@renumics.com>, Daniel Klitzke <daniel.klitzke@renumics.com>
+Project-URL: Homepage, https://github.com/Renumics/segment-guard
+Project-URL: Bug Tracker, https://github.com/Renumics/segment-guard/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# segment-guard
+A library for detecting critical data segments in structured and unstructured data based on features, metadata and model predictions.
+
