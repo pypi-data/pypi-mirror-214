@@ -1,0 +1,7 @@
+faceid_core/__init__.py,sha256=J-2ibygNjMGrx-7Bho4xWshOD5uGVyUbQwD3pn3jMY0,137
+faceid_core/deploy_configuration.py,sha256=weAxngQOdQ1JJ0apvF4rm4lOZdMAnTdWs8anOeTJGb8,589
+faceid_core/face_recognition.py,sha256=fIDTqoxjSEBYMhbWKygks-y_zUim55hypCFYXT0CfB8,3707
+faceid_core-0.0.3.dist-info/METADATA,sha256=tCp5Z0hr0mY5PLrqYi31TwMfANuPD4H08yG68JGe_dU,488
+faceid_core-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+faceid_core-0.0.3.dist-info/top_level.txt,sha256=8NM-R7Kmbt9bm4pVLzkRbPcROZBoesodYo8SN9D20nQ,12
+faceid_core-0.0.3.dist-info/RECORD,,
