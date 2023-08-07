@@ -1,0 +1,10 @@
+img_processor/__init__.py,sha256=tWgA9yGGBfivhRc0RSnpot_7HQdUgGm1Zw6BoYd0UnE,194
+img_processor/cli.py,sha256=QvJVhqkp_rEgCW9DTrczLqhhykr1FI5xME5s_DRHzKQ,363
+img_processor/img_processor.py,sha256=UGC-GrsmOxnUIurJRMHJGCFzyDwMHP4Owa4Z6Y-cLjY,9743
+img_processor-0.20.0.dist-info/AUTHORS.rst,sha256=RHWg5V0_3uTmqStfbS_IjunJltbmBf1fgvpp_nN4DIw,166
+img_processor-0.20.0.dist-info/LICENSE,sha256=GfFEAOG9D0mWkGAEyGIyVUFnZ86Or7C2nbLc-S8fLy0,1072
+img_processor-0.20.0.dist-info/METADATA,sha256=6a43n_U1y5kKvZ4P1nND6KLBM-NPK_0vsXyQ35Qb1UE,2771
+img_processor-0.20.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+img_processor-0.20.0.dist-info/entry_points.txt,sha256=WIugcdjMoHRyp9fXJrGW62r9Tcc5dky5nESVZAPDKqw,57
+img_processor-0.20.0.dist-info/top_level.txt,sha256=X4S27AQ1g1XzP8393O_bMxzicIYlRv_md-6lTrrJOw0,14
+img_processor-0.20.0.dist-info/RECORD,,
