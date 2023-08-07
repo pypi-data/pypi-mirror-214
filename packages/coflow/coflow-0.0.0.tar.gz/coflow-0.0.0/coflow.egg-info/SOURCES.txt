@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coflow/__init__.py
+coflow.egg-info/PKG-INFO
+coflow.egg-info/SOURCES.txt
+coflow.egg-info/dependency_links.txt
+coflow.egg-info/top_level.txt
