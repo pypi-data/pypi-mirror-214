@@ -1,0 +1,17 @@
+airflow/providers/oracle/__init__.py,sha256=cqvTpGBmjYv1328ZVV2qHUCiNmA8OY9_tRdDNSQ1H4o,1531
+airflow/providers/oracle/get_provider_info.py,sha256=IQWlFsj-k5SWNMUimz8GWhktqOh9FqE_sjfJLjeBbaY,2971
+airflow/providers/oracle/example_dags/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/oracle/example_dags/example_oracle.py,sha256=j4PnxKSjBTNWk84ClTXyIQGNhYyQ9zhJBcAUrnMBCOo,2193
+airflow/providers/oracle/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/oracle/hooks/oracle.py,sha256=GuOgZZaKt7SqBjsMMNv23MzxdB0LepXzdvmJ-oKBaUE,17488
+airflow/providers/oracle/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/oracle/operators/oracle.py,sha256=BWEo3TIyozQYZohVLVA2HbpGU9qA2dDEz2hjTLKuoOg,4111
+airflow/providers/oracle/transfers/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/oracle/transfers/oracle_to_oracle.py,sha256=DGpzNch4wmXcA9BECi7wpcb5HbNKD7LJTUBX8A3od8Q,3647
+apache_airflow_providers_oracle-3.7.1rc1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_oracle-3.7.1rc1.dist-info/METADATA,sha256=xkr3PrqmYM5aJEb0cg024nxBcLxtoy8JR68SHHnpEOE,14265
+apache_airflow_providers_oracle-3.7.1rc1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_oracle-3.7.1rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apache_airflow_providers_oracle-3.7.1rc1.dist-info/entry_points.txt,sha256=7RYEYM2Y0PRHYOeVQZfdSoY5As10p0Xeh2psFNXEV1o,103
+apache_airflow_providers_oracle-3.7.1rc1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_oracle-3.7.1rc1.dist-info/RECORD,,
