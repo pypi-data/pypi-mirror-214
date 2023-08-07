@@ -1,0 +1,11 @@
+airflow/providers/sendgrid/__init__.py,sha256=a3KUqNUymHFOLK5N5aCvuo9DyHGwPDOlEp_aPiqmx1A,1533
+airflow/providers/sendgrid/get_provider_info.py,sha256=-_d54dTAwxw5sxfrFEW1vrzws-yfs8mVd9-TpxFBL-Q,1604
+airflow/providers/sendgrid/utils/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/sendgrid/utils/emailer.py,sha256=PGidaZ_Y-78IfqEDbkvifbD7E-u9sRp0arqLFI0qpzU,5019
+apache_airflow_providers_sendgrid-3.2.1rc1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_sendgrid-3.2.1rc1.dist-info/METADATA,sha256=Ypl4fwHVtwXoMmMd0ZJBdyC3qWfUyTPk5o6LL7zbqMY,9605
+apache_airflow_providers_sendgrid-3.2.1rc1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_sendgrid-3.2.1rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apache_airflow_providers_sendgrid-3.2.1rc1.dist-info/entry_points.txt,sha256=4UfZeO-9yLS7Op9JcZ0S0JzT5KXvXJTOfhkG3h0HmOo,105
+apache_airflow_providers_sendgrid-3.2.1rc1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_sendgrid-3.2.1rc1.dist-info/RECORD,,
