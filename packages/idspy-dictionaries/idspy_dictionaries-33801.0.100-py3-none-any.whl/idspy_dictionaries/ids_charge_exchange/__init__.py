@@ -1,0 +1,51 @@
+# __version__= "033801.1.0"
+# __version_data_dictionary__= "3.38.1"
+# __git_version_hash__= "dd6854b4d073482810a23839e6e51386c7f20fd3"
+# 
+from idspy_dictionaries.ids_charge_exchange.idspy_charge_exchange import (
+    ChargeExchange,
+    ChargeExchangeChannel,
+    ChargeExchangeChannelBes,
+    ChargeExchangeChannelIon,
+    ChargeExchangeChannelIonFast,
+    ChargeExchangeChannelProcessedLine,
+    ChargeExchangeChannelSpectrum,
+    Code,
+    DetectorAperture,
+    Identifier,
+    IdentifierStatic,
+    IdsProperties,
+    IdsProvenance,
+    IdsProvenanceNode,
+    Library,
+    Rzphi0DStatic,
+    Rzphi1DDynamicAos1,
+    SignalFlt1D,
+    SignalFlt2D,
+    X1X21DStatic,
+    Xyz0DStatic,
+)
+
+__all__ = [
+    "ChargeExchange",
+    "ChargeExchangeChannel",
+    "ChargeExchangeChannelBes",
+    "ChargeExchangeChannelIon",
+    "ChargeExchangeChannelIonFast",
+    "ChargeExchangeChannelProcessedLine",
+    "ChargeExchangeChannelSpectrum",
+    "Code",
+    "DetectorAperture",
+    "Identifier",
+    "IdentifierStatic",
+    "IdsProperties",
+    "IdsProvenance",
+    "IdsProvenanceNode",
+    "Library",
+    "Rzphi0DStatic",
+    "Rzphi1DDynamicAos1",
+    "SignalFlt1D",
+    "SignalFlt2D",
+    "X1X21DStatic",
+    "Xyz0DStatic",
+]
