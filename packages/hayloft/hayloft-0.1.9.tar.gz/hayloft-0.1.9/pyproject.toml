@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hayloft"
+version = "0.1.9"
+description = "UI tool for LLM frameworks"
+authors = []
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/eturchenkov/hayloft"
+keywords = ["llm framework", "llm app tracking", "ui for llm app"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^2.3.2"
+flask-cors = "^3.0.10"
+flask-sqlalchemy = "^3.0.4"
+nanoid = "^2.0.0"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+hayloft = "hayloft.app:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
