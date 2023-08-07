@@ -1,0 +1,3 @@
+[init]
+init_package=martin_binance.__init__:init
+
