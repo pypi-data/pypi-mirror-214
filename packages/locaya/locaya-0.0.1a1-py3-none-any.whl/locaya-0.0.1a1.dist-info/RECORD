@@ -1,0 +1,10 @@
+locaya/__init__.py,sha256=uugEPz9aKcFXx3WFKDSwZpFIKc06teizDBSzDKXR0_g,199
+locaya/language.py,sha256=x7ynfPstGQL3FT71Tf5Nqjfpw7E7l0O1EgPuqR4Kip4,864
+locaya/loader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+locaya/loader/base.py,sha256=G9TLih7BQGhNBnNeI5vGsfIsy4NQvfpViHG1Kr0AUyU,212
+locaya/loader/yaml.py,sha256=NWae4eiVgdp76dt49tkzfPQX3eop5tQ_-1Np0Cjo1_4,1331
+locaya/localization.py,sha256=TWJmDtJ9MY5uwXBxPRmb2eKGzzweSitjNUvM7sMwrws,689
+locaya/locaya.py,sha256=SKw2YHvRV2UrkMhzzZTl-JU8qQFPiv6KjeMM6UJq6fA,970
+locaya-0.0.1a1.dist-info/METADATA,sha256=me6gXqcJ5KxPYO47YJuBN7EnqyVvb8MyCQlTqiOA9vo,628
+locaya-0.0.1a1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+locaya-0.0.1a1.dist-info/RECORD,,
