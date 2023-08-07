@@ -1,0 +1,9 @@
+werkzeug
+starlette
+
+[dev]
+tox
+pylint
+pre-commit
+bump2version
+commitizen
