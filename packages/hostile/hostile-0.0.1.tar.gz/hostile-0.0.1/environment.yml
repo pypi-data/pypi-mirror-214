@@ -1,0 +1,12 @@
+name: hostile
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.10
+  - pip
+  - samtools
+  - minimap2
+  - bowtie2
+  - gawk
