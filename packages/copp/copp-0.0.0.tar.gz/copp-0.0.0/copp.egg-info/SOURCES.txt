@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+copp/__init__.py
+copp.egg-info/PKG-INFO
+copp.egg-info/SOURCES.txt
+copp.egg-info/dependency_links.txt
+copp.egg-info/top_level.txt
