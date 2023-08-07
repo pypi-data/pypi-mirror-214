@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+sumformer2/__init__.py
+sumformer2/main.py
+sumformer2/modules.py
+sumformer2/transformer.py
+sumformer2/utils.py
+sumformer2.egg-info/PKG-INFO
+sumformer2.egg-info/SOURCES.txt
+sumformer2.egg-info/dependency_links.txt
+sumformer2.egg-info/entry_points.txt
+sumformer2.egg-info/requires.txt
+sumformer2.egg-info/top_level.txt
