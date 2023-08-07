@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cosim/__init__.py
+cosim.egg-info/PKG-INFO
+cosim.egg-info/SOURCES.txt
+cosim.egg-info/dependency_links.txt
+cosim.egg-info/top_level.txt
