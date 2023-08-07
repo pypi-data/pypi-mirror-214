@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ZettelKit.egg-info/PKG-INFO
+ZettelKit.egg-info/SOURCES.txt
+ZettelKit.egg-info/dependency_links.txt
+ZettelKit.egg-info/requires.txt
+ZettelKit.egg-info/top_level.txt
