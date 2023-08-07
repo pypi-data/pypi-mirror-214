@@ -1,0 +1,6 @@
+appdirs
+colorlog
+fpdf
+pyexcel_ods
+pyyaml
+cmd2
