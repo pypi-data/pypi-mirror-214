@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coplan/__init__.py
+coplan.egg-info/PKG-INFO
+coplan.egg-info/SOURCES.txt
+coplan.egg-info/dependency_links.txt
+coplan.egg-info/top_level.txt
