@@ -1,0 +1,145 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Regional Data Mart Upload Service REST API Documentation",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8090",
+      "description": "Generated server url"
+    }
+  ],
+  "tags": [
+    {
+      "name": "API для загрузки данных из ЭЖД"
+    }
+  ],
+  "paths": {
+    "/{version}/datamarts/{datamart_name}/tables/{table_name}/upload": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "version",
+          "schema": {
+            "type": "string"
+          },
+          "required": true
+        },
+        {
+          "in": "path",
+          "name": "datamart_name",
+          "schema": {
+            "type": "string"
+          },
+          "required": true
+        }
+      ],
+      "post": {
+        "tags": [
+          "API для загрузки данных из ЭЖД"
+        ],
+        "summary": "Загрузить сведения одним файлом.",
+        "operationId": "upload",
+        "parameters": [
+          {
+            "name": "table_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/octet-stream": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "example": "3b051a83-fc5c-4b85-9ac6-e1c50333d066"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка входных данных."
+          },
+          "401": {
+            "description": "Идентификатор Системы-источника не допустимый или подпись ошибочная."
+          },
+          "500": {
+            "description": "Внутренняя ошибка."
+          }
+        }
+      }
+    },
+    "/{version}/requests/{request_id}/status": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "version",
+          "schema": {
+            "type": "string"
+          },
+          "required": true
+        },
+        {
+          "in": "path",
+          "name": "request_id",
+          "schema": {
+            "type": "string"
+          },
+          "required": true
+        }
+      ],
+      "get": {
+        "tags": [
+          "API для загрузки данных из ЭЖД"
+        ],
+        "summary": "Получить статус загрузки данных в РВД.",
+        "operationId": "status",
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                      "code": "3",
+                      "description": "успешно обработан"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка входных данных."
+          },
+          "401": {
+            "description": "Идентификатор Системы-источника не допустимый или подпись ошибочная."
+          },
+          "500": {
+            "description": "Внутренняя ошибка."
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}
