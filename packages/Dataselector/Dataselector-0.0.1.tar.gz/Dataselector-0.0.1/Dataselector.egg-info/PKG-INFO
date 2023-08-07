@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Dataselector
+Version: 0.0.1
+Summary: A handy library to import dataset from various excel file types and URls
+Home-page: 
+Author: Siddharth Mishra
+Author-email: Siddharth.mishra@ganitinc.co.in
+License: MIT
+Keywords: Dataset,Import,URl,CSV
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+A Onestop Library to import data from CSV, Parquet and excel files with having ability to import from HTML Database as well
+
+Change Log
+==========
+
+0.0.1 (20/06/2023)
+-------------------
+- First Release
