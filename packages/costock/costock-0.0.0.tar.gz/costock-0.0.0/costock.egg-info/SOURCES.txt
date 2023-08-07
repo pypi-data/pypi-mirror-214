@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+costock/__init__.py
+costock.egg-info/PKG-INFO
+costock.egg-info/SOURCES.txt
+costock.egg-info/dependency_links.txt
+costock.egg-info/top_level.txt
