@@ -1,0 +1,11 @@
+hop/__about__.py,sha256=PosXohwTHDFhedTnbZeL0i0Iy2dLnq0BsQBiNqb3qZQ,108
+hop/__init__.py,sha256=NnJJdLtppQ4wBhSlEAyTC-8QPiy1C8P321BWSLPieH0,77
+hop/__main__.py,sha256=h4tzO9GCt5PWwXpw4ZPTiZHICLNNctmmFWJdfHQAbhM,120
+hop/app.py,sha256=ASu1qbBtWVpOvDeNBzT8FVHsp3cvWCxZU7FBCcByg4U,5580
+hop/hop_functions.py,sha256=_1JN-Q6j-U6rdEdvo0xkTBzmCzo15mqRkYRZjMdkLho,1969
+hop/icons.py,sha256=XQGx_DBjkCp9zETImY3AWxDk_pUykRnkVi9_PUlPDNc,1248
+hop_file_browser-2.0.3.dist-info/METADATA,sha256=_98AwFhNGrjXuEQ5xmmSF5qVxK78IRNZeFNRL3dKsmM,2161
+hop_file_browser-2.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+hop_file_browser-2.0.3.dist-info/entry_points.txt,sha256=Byt7D48SU1EJFinH0gk__FZ1VhtldtpphcBoj_kM-1M,32
+hop_file_browser-2.0.3.dist-info/licenses/LICENSE,sha256=eUlJeWKqOWslXhkhFTUPC8RUypNlRI97z3JLUa8-Rfs,1091
+hop_file_browser-2.0.3.dist-info/RECORD,,
