@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kaliapay-modpy-beta-0.0.2
+Version: 0.0.2
+Summary: Module de paiement Kaliapay
+Author: Fabio
+Author-email: <nadefabrice83@gmail.com>
+Keywords: python,paiement,kaliapay,module
+Description-Content-Type: text/markdown
+
+Module de paiement développer pour faciliter l'intégration de Kaliapay dans vos projets.

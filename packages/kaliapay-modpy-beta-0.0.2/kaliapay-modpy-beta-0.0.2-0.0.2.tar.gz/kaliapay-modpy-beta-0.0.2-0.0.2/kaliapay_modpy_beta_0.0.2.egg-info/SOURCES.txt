@@ -1,0 +1,8 @@
+setup.py
+kaliapay_modpy/__init__.py
+kaliapay_modpy/kaliapay.py
+kaliapay_modpy_beta_0.0.2.egg-info/PKG-INFO
+kaliapay_modpy_beta_0.0.2.egg-info/SOURCES.txt
+kaliapay_modpy_beta_0.0.2.egg-info/dependency_links.txt
+kaliapay_modpy_beta_0.0.2.egg-info/requires.txt
+kaliapay_modpy_beta_0.0.2.egg-info/top_level.txt
