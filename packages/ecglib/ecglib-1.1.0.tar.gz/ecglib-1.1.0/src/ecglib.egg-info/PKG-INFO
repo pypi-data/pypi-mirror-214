@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ecglib
+Version: 1.1.0
+Summary: ECG library with pretrained models and tools for ECG analysis
+Home-page: https://github.com/ispras/EcgLib
+Author: Aram Avetisyan
+Author-email: a.a.avetisyan@gmail.com
+License: Apache License 2.0
+Keywords: {"ecg analysis","pytorch","pretrained models","ecg preprocessing","ecg datasets"}
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
