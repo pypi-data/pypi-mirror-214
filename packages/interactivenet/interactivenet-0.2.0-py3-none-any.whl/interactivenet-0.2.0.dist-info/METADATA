@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: interactivenet
+Version: 0.2.0
+Summary: InteractiveNet, a framework for minimally interactive medical image segmentation.
+Home-page: https://github.com/Douwe-Spaanderman/InteractiveNet
+Author: Biomedical Imaging Group Rotterdam (BIGR)
+Author-email: d.spaanderman@erasmusmc.nl
+License: Apache License, Version 2.0
+Download-URL: https://github.com/Douwe-Spaanderman/InteractiveNet/archive/refs/tags/v0.2.0.tar.gz
+Keywords: deep learning,medical image analysis,interactive segmentation,medical image segmentation,soft-tissue tumors,interactivenet
+Platform: UNKNOWN
+Requires-Python: >3.9.0
+Requires-Dist: SimpleITK (>=2.1.1.2)
+Requires-Dist: GeodisTK (>=0.1.7)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: mlflow (>=1.24.0)
+Requires-Dist: monai (>=1.0.0)
+Requires-Dist: nibabel (>=3.2.2)
+Requires-Dist: numpy (>=1.22.3)
+Requires-Dist: Pillow (>=9.2.0)
+Requires-Dist: psutil (>=5.9.0)
+Requires-Dist: pytorch-lightning (<2.0.0,>=1.5.10)
+Requires-Dist: scikit-image (>=0.19.2)
+Requires-Dist: scikit-learn (>=1.1.1)
+Requires-Dist: scipy (>=1.8.0)
+Requires-Dist: seaborn (>=0.12.2)
+Requires-Dist: pyradiomics (>=3.0.1)
+
+UNKNOWN
+
+
