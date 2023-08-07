@@ -1,0 +1,5 @@
+pygments
+pillow<10
+numpy
+opencv-python
+colorama
