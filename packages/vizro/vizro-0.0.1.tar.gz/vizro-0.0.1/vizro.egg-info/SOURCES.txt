@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+vizro/__init__.py
+vizro.egg-info/PKG-INFO
+vizro.egg-info/SOURCES.txt
+vizro.egg-info/dependency_links.txt
+vizro.egg-info/top_level.txt
