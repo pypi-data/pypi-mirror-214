@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: tomlize
+Version: 0.2.0
+Summary: Move all your configuration to pyproject.toml
+Author-email: Mario Corchero <mariocj89@gmail.com>
+Project-URL: Code, https://github.com/mariocj89/tomlize
+Project-URL: Issue tracker, https://github.com/mariocj89/tomlize/issues
+Project-URL: Download, https://pypi.org/project/tomlize/#files
+Keywords: pyproject,configuration,python,tool
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tomlkit
+Requires-Dist: coloredlogs
+Requires-Dist: packaging
+
+# tomlize
+
+[![CI](https://github.com/mariocj89/tomlize/actions/workflows/valdiate.yaml/badge.svg)](https://github.com/mariocj89/tomlizer/actions/workflows/valdiate.yaml)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tomlize)
+![PyPI](https://img.shields.io/pypi/v/tomlize)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/tomlize)
+![Code Style](https://img.shields.io/badge/code%20style-black,%20isort-000000.svg)
+
+Move the configuration of all your tools to `pyproject.toml`.
+
+```
+$ tomlize --help
+usage: tomlize [-h] input_file
+
+positional arguments:
+  input_file
+
+options:
+  -h, --help  show this help message and exit
+```
+
+The tool can be used to port the configuration from the following files:
+
+## `setup.py`
+
+```
+tomlize setup.py
+```

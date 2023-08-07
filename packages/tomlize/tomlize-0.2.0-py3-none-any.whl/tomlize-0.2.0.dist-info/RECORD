@@ -1,0 +1,17 @@
+tomlize/__init__.py,sha256=C46Rw5x3RgYposplbDZuOQ0tlDQ87t135378su1t6zo,63
+tomlize/__main__.py,sha256=hPN-69Nk56yQqnvwyn_4xmMI9SCX9zPOqGpFvbLQ1Tw,86
+tomlize/cli.py,sha256=afH8zqckyQiuPWt5_uIaEkq61XjiSUEo6TW2ht7q91A,191
+tomlize/converter.py,sha256=4PF1jKw7dCxaoJ6xawmUVPKtmU0QUJaSNYmBT6IuPr0,507
+tomlize/exceptions.py,sha256=utsjTsBTYLPF6KuqIG4JEc2Ffq9Rxltl4xsXa8IYfIU,373
+tomlize/main.py,sha256=Eq4q8bgpBONrYAvOQNeb7LBPmlKViRVcESmdkKUlpN8,840
+tomlize/merger.py,sha256=oQ0O3D-gY6y5pGvyUSTFdwxfg9GPyktUnZ_JPReAw3E,1545
+tomlize/setup_py/__init__.py,sha256=qXOIMiqfE5kMDOvSIhAUG0QWzHLZUeqQxIdDg1KoLH0,56
+tomlize/setup_py/fields_mapping.py,sha256=50LovgvgEVlY-00_8pYup1NDdiW1X9_eeHn7OsYyHX0,2916
+tomlize/setup_py/reader.py,sha256=sC6JdqNxEugv23auLX4SaoX9Z5EEsqvgNd9K6QPJRIk,1104
+tomlize/setup_py/remover.py,sha256=sKLYAAubZFF5Mqam2HvvcNQPtdNVcKEzD1QiHzMKJUI,1948
+tomlize/setup_py/transformer.py,sha256=OZ8N0Q0mknMJVXMGQg9jl4cVcqNxTMiJffhtrEw5Uh0,2645
+tomlize-0.2.0.dist-info/METADATA,sha256=8oybPdTZ8MjvhjBwd1caaMrzPzlN2WDemZb9KKcRdt8,1495
+tomlize-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tomlize-0.2.0.dist-info/entry_points.txt,sha256=UNP3PH4lr4APTF5pPotVwQddtVoCxHsr9aQE3IsBkcE,46
+tomlize-0.2.0.dist-info/top_level.txt,sha256=MGnAqlBNFXizAxWMWJtppuQyps-QbpxTDVpO2M9bKjs,8
+tomlize-0.2.0.dist-info/RECORD,,
