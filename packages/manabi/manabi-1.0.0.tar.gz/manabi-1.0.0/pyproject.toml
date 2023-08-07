@@ -1,0 +1,105 @@
+[tool.poetry]
+name = "manabi"
+version = "1.0.0"
+description = "Provide WebDAV access for documents."
+homepage = "https://github.com/projectcaluma/manabi"
+repository = "https://github.com/projectcaluma/manabi"
+authors = ["Adfinis AG"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+include = ["CHANGELOG.md"]
+exclude = [
+    "manabi/__main__.py",
+    "manabi/conftest.py",
+    "manabi/mock.py",
+    "manabi/*_test.py",
+    "manabi/data",
+]
+packages = [
+    { include = "manabi" },
+    { include = "manabi_migrations", from = "manabi_django" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+WsgiDAV = "^4.0.2"
+pybranca = "^0.5.0"
+pybase62 = "^1.0.0"
+attrs = "^23.1.0"
+django = "^3.2.15"
+psycopg2-binary = "^2.9.3"
+u-msgpack-python = "^2.8.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+cheroot = "^10.0.0"
+flake8 = "^6.0.0"
+flake8-bugbear = "^23.5.9"
+flake8-debugger = "^4.1.2"
+flake8-docstrings = "^1.7.0"
+flake8-isort = "^6.0.0"
+flake8-string-format = "^0.3.0"
+flake8-tuple = "^0.4.1"
+hypothesis = "^6.54.6"
+mypy = "^1.3.0"
+pdbpp = "^0.10.3"
+pytest = "^7.3.1"
+python-semantic-release = "^7.32.0"
+requests = "^2.28.1"
+types-psycopg2 = "^2.9.21"
+types-requests = "^2.28.11"
+python-lsp-server = "^1.7.3"
+python-lsp-black = "^1.3.0"
+python-lsp-isort = "^0.1"
+flake8-pyproject = "^1.2.3"
+requests-mock = "^1.11.0"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+combine_as_imports = true
+line_length = 88
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:tool.poetry.version"
+branch = "main"
+major_on_zero = false
+upload_to_repository = true
+upload_to_release = true
+build_command = "poetry build"
+commit_subject = "chore(release): v{version}"
+commit_author = "github-actions <github-actions@github.com>"
+
+[tool.mypy]
+check_untyped_defs = true
+
+[tool.flake8]
+ignore = """
+    E501,
+    D100,
+    D101,
+    D102,
+    D103,
+    D104,
+    D105,
+    D106,
+    D107,
+    W503
+    E203,
+"""
+max_line_length = 88
+doctests = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
