@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+planiverse/__init__.py
+planiverse.egg-info/PKG-INFO
+planiverse.egg-info/SOURCES.txt
+planiverse.egg-info/dependency_links.txt
+planiverse.egg-info/top_level.txt
