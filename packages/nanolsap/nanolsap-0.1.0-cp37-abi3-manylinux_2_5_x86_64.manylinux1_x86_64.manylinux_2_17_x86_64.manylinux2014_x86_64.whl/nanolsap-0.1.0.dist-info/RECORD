@@ -1,0 +1,12 @@
+nanolsap-0.1.0.dist-info/METADATA,sha256=_NZotk7UMZehaZ4TelWOtb_FuMISIseuNlDLjBLcGlw,3698
+nanolsap-0.1.0.dist-info/LICENSE,sha256=RTilDJ5sBi2gQli-c5_y0W0VeV5rN4dnEVbYxyeomy4,1494
+nanolsap-0.1.0.dist-info/WHEEL,sha256=BYLmI099UGNS0tEwzn9qBl3C4zgSDtIWfTLsmxUYLbo,217
+nanolsap-0.1.0.dist-info/top_level.txt,sha256=ww4bNRQKje7HYvcV29w7CJEHdcTSuxaceNEB6Dl4QBE,9
+nanolsap-0.1.0.dist-info/RECORD,,
+nanolsap/__init__.py,sha256=U-JUAWYl0uvGL9uDdM6MfUtH8Xdd6cua6jowiYfa1s0,84
+nanolsap/_lsap.c,sha256=JmTeHSduKvcxv6v-izeBJ8PlIA9yKlarvfHAU6UYnF4,10488
+nanolsap/_lsap.pyi,sha256=x25MI2PWnxRWoDEHtm_lNprxsXyR_D1yzG5f6A57kU8,305
+nanolsap/_lsap.abi3.so,sha256=NuWvkIRRT5zH2oRASEVAJqqrzg4GetvjdKKBLHHc8DU,2089752
+nanolsap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nanolsap/rectangular_lsap/rectangular_lsap.cpp,sha256=Y0-1l6HnurM-k5RjC2eJEVBLog26_RGWy99UQjMWzYA,12229
+nanolsap/rectangular_lsap/rectangular_lsap.h,sha256=37jZ9gRDF7WxC7g3Zp-AGBjFAD830X0MQPs3NWuOFgA,2510
