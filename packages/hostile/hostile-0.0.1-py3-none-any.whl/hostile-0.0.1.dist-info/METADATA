@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hostile
+Version: 0.0.1
+Summary: Hostile: host read removal
+Author-email: Bede Constantinides <bedeabc@gmail.com>
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: defopt>=6.4.0
+Requires-Dist: httpx>=0.24.1
+Requires-Dist: platformdirs>=3.5.1
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: pytest>=7.3.1 ; extra == "dev"
+Requires-Dist: pre-commit>=3.3.2 ; extra == "dev"
+Requires-Dist: flit>=3.9.0 ; extra == "dev"
+Project-URL: Home, https://github.com/bede/hostile
+Provides-Extra: dev
