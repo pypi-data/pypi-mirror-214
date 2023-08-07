@@ -1,0 +1,13 @@
+airflow/providers/segment/__init__.py,sha256=MRZiqoWDS9S9YAD9COD6WC5rFLx5Gu8er6_Gu7DaeVA,1532
+airflow/providers/segment/get_provider_info.py,sha256=cTRuh2sQ4G0C_KM_vnKMYtGfj46M13VuOJ4A4FpQ0gU,2413
+airflow/providers/segment/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/segment/hooks/segment.py,sha256=5YcSwmcXPEGFT8snrfUKhjRmca_cc21sU8eUD3A-NlA,3488
+airflow/providers/segment/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/segment/operators/segment_track_event.py,sha256=nqE6cR1WhN_hJFV4BqjiflsfQYCefgI9e-MZ5WmzStA,2646
+apache_airflow_providers_segment-3.2.1rc1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_segment-3.2.1rc1.dist-info/METADATA,sha256=OG9bpz-qom3Bqwb7-aFdWhcEE7RBzARPMQdrtD3XlJw,10069
+apache_airflow_providers_segment-3.2.1rc1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_segment-3.2.1rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apache_airflow_providers_segment-3.2.1rc1.dist-info/entry_points.txt,sha256=rUDQTiis-3EAf8rEzQamQvzLD7dkaCx6BpCTH6RfSvQ,104
+apache_airflow_providers_segment-3.2.1rc1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_segment-3.2.1rc1.dist-info/RECORD,,
