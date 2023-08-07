@@ -1,0 +1,14 @@
+ExampleHaskellWheel/Binding.hs,sha256=QZ8uiyOB2rNLRGiuMh_Fl_uZ3LNsbrnhrlS-We2whkU,1658
+example_haskell_wheel/__init__.py,sha256=sAZdKDDBeXB-BGbPBwazfQS4skfgG3naqaEF1tNqdUs,548
+example_haskell_wheel/__main__.py,sha256=3sFeRZWHzXve3lnhVUOKgQYiDkq8X52V6pNX1EsB9f0,153
+example_haskell_wheel/_binding.cp39-win_amd64.pyd,sha256=YMDk_LSf-SbRYTQ0bd2p--HUlfGmvDObu-nti4g_WaU,12545536
+example_haskell_wheel/_binding.py,sha256=ICqyFEFXpHDWkon209MQAx5_nMldz1ZzZQh8gBm2lyw,597
+example_haskell_wheel/binding.def,sha256=1LCHNMrMeviho0mKw0r4-Kf9GrPIty34P12yAUyuovw,28
+example_haskell_wheel/binding.i,sha256=7BzeIx2ODMUgIEa0hGEuXTzqvDWcETurMpS6she8F24,1218
+example_haskell_wheel/binding.py,sha256=JU8N1uZ5iipbGjQ1PLbioxt_fFAL_6bv3YkwSfGFskM,2394
+example_haskell_wheel-1.1.0.dist-info/LICENSE,sha256=Rixi_PXAnLnj0OCXlKynIqt9PWhoheCU3htCRCJhcGQ,1075
+example_haskell_wheel-1.1.0.dist-info/METADATA,sha256=VtgPqe8-UEv9ImAe3Mkz_E6-Vmk7sS2okdXgzsvzx_k,2113
+example_haskell_wheel-1.1.0.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+example_haskell_wheel-1.1.0.dist-info/entry_points.txt,sha256=gaWDiPzFGI34Cit7U2p4C5KYPSr4yLDunG49C9w3AKc,78
+example_haskell_wheel-1.1.0.dist-info/top_level.txt,sha256=XgRwAoCA0cncXocSk5s7nErBioiIGC8bIMUx8t425Z0,42
+example_haskell_wheel-1.1.0.dist-info/RECORD,,
