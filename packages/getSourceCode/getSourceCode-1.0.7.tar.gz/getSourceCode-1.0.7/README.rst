@@ -1,0 +1,174 @@
+getSourceCode
+=============
+
+This tool is designed to quickly download the code of open source
+contracts on the blockchain explorer.
+
+The downloaded code maintains the file directory structure at the time
+of verification.
+
+Supported Chain Platforms:
+
+::
+
+    Heco|ETH|BSC|Fantom|Poly|AVAX|ARBI|Tron
+
+    Cronos|moonbeam|moonriver|boba|okex|opt
+
+    avax-testnet|arbi-testnet|poly-testnet
+
+    bsc-testnet|heco-testnet|ftm-testnet
+
+    Goerli|Kovan|Rinkeby|Ropsten
+
+    moonbase|boba-testnet|gnosis
+
+Get code by tx only supports:
+
+::
+
+    BSC|ETH|BOBA|ARBI|HECO
+
+
+
+Install
+=======
+
+::
+
+   pip install getSourceCode
+
+Usage
+=====
+
+::
+
+   getCode [-h] [-i INPUTFILE] [-o OUTPUTFOLDER] [-a ADDRESS] [-n NETWORK] [-k] [-p PROXY]
+
+For example:
+
+::
+
+   getCode -n bsc -a 0xb51eaa437AC67A631e2FEca0a18dA7a6391c0D07
+
+or
+
+::
+
+   getCode -n eth -a 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 -p 127.0.0.1:7890 -o myFolder
+
+The command execution result is as follows:
+
+::
+
+    [root@hxzy test]# getCode -n bsc -a 0xb51eaa437AC67A631e2FEca0a18dA7a6391c0D07
+    0: SynthereumManager/deploy/@openzeppelin/contracts/access/AccessControl.sol
+    1: SynthereumManager/deploy/@openzeppelin/contracts/access/IAccessControl.sol
+    2: SynthereumManager/deploy/@openzeppelin/contracts/utils/Context.sol
+    3: SynthereumManager/deploy/@openzeppelin/contracts/utils/Strings.sol
+    4: SynthereumManager/deploy/@openzeppelin/contracts/utils/introspection/ERC165.sol
+    5: SynthereumManager/deploy/@openzeppelin/contracts/utils/introspection/IERC165.sol
+    6: SynthereumManager/deploy/@openzeppelin/contracts/access/AccessControlEnumerable.sol
+    7: SynthereumManager/deploy/@openzeppelin/contracts/access/IAccessControlEnumerable.sol
+    8: SynthereumManager/deploy/@openzeppelin/contracts/utils/structs/EnumerableSet.sol
+    9: SynthereumManager/deploy/contracts/core/Manager.sol
+    10: SynthereumManager/deploy/contracts/core/interfaces/IFinder.sol
+    11: SynthereumManager/deploy/contracts/core/interfaces/IManager.sol
+    12: SynthereumManager/deploy/contracts/common/interfaces/IEmergencyShutdown.sol
+    13: SynthereumManager/deploy/contracts/core/Constants.sol
+    14: SynthereumManager/deploy/contracts/core/Finder.sol
+
+    Success.
+
+The directory structure looks like this:
+
+::
+
+    [root@hxzy test]# tree
+    .
+    └── SynthereumManager
+        └── deploy
+            ├── contracts
+            │   ├── common
+            │   │   └── interfaces
+            │   │       └── IEmergencyShutdown.sol
+            │   └── core
+            │       ├── Constants.sol
+            │       ├── Finder.sol
+            │       ├── interfaces
+            │       │   ├── IFinder.sol
+            │       │   └── IManager.sol
+            │       └── Manager.sol
+            └── @openzeppelin
+                └── contracts
+                    ├── access
+                    │   ├── AccessControlEnumerable.sol
+                    │   ├── AccessControl.sol
+                    │   ├── IAccessControlEnumerable.sol
+                    │   └── IAccessControl.sol
+                    └── utils
+                        ├── Context.sol
+                        ├── introspection
+                        │   ├── ERC165.sol
+                        │   └── IERC165.sol
+                        ├── Strings.sol
+                        └── structs
+                            └── EnumerableSet.sol
+
+    13 directories, 15 files
+
+Get code by tx only:
+
+::
+
+    getCode -n eth -t 0x8dda3f4a1c4bbc85ed50d7a78096f805f2c9382e35800e42f066abaa7b17a71b -p 127.0.0.1:7890
+
+"Address->Contract Name" is stored in contractInfo.txt, and the address without the corresponding contract name is an unopened contract\EOA.
+
+Like this:
+
+::
+
+    [root@hxzy test]#getCode -n eth -t 0x8dda3f4a1c4bbc85ed50d7a78096f805f2c9382e35800e42f066abaa7b17a71b -p 127.0.0.1:7890
+    0: contract/AnyswapV6ERC20.sol
+    1: contract/FiatTokenV2_1.sol
+    2: contract/FiatTokenProxy.sol
+    3: contract/AnyswapV6Router.sol
+
+    Address => ContractName:
+    0xea928a8d09e11c66e074fbf2f6804e19821f438d      AnyswapV6ERC20
+    0xe19105463d6fe2f2bd86c69ad478f4b76ce49c53
+    0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf      FiatTokenV2_1
+    0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48      FiatTokenProxy
+    0x7782046601e7b9b05ca55a3899780ce6ee6b8b2b      AnyswapV6Router
+
+    Success.
+
+If there is a proxy contract, it will be displayed like this:
+
+::
+
+    Proxy => Implementation:
+    0xff970a61a04b1ca14834a43f5de4533ebddb5cc8      0x1efb3f88bc88f03fd1804a5c53b7141bbef5ded8
+    0x82af49447d8a07e3bd95bd0d56f35241523fbab1      0x8b194beae1d3e0788a1a35173978001acdfba668
+
+
+Parameter description:
+
+::
+
+    optional arguments:
+      -h, --help       show this help message and exit
+      -i INPUTFILE     Input file path including contract addresses.
+      -o OUTPUTFOLDER  Choose a folder to export.
+      -a ADDRESS       A string including contract addresses.
+      -n NETWORK       Which network to get source code.
+      -k               Provide some api keys.
+      -p PROXY         Use a proxy.
+      -t TXHASH        Get the relevant contract source code in the specified transaction.
+
+
+Contact
+=======
+
+If you have any suggestions or needs please contact: th35tr0n9@gmail.com
