@@ -1,0 +1,2 @@
+[console_scripts]
+itc_ai = api.itc_cli:main
