@@ -1,0 +1,16 @@
+airflow/providers/apache/druid/__init__.py,sha256=7r4LXJdkbdt-fCB4R-sHxYbQQVM2d45SqhgwTKSFpCQ,1537
+airflow/providers/apache/druid/get_provider_info.py,sha256=RiegmKq2S7W9MeUBgxi3WwG6xVnw05R86eNjA4MwY9A,3245
+airflow/providers/apache/druid/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/druid/hooks/druid.py,sha256=dbcQQ5USoHqGCmSjKQ5Sn6AY_FK_CvvcFNfhxuTZtxE,6903
+airflow/providers/apache/druid/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/apache/druid/operators/druid.py,sha256=BrSstggd4GjL4bFFemIbOix1T8iU7dXxQQESovQZq8k,2526
+airflow/providers/apache/druid/operators/druid_check.py,sha256=dICOHP4W-8BVzc0RsGmE0aFO13-ToPgS7xMdGi7iM6c,1536
+airflow/providers/apache/druid/transfers/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/druid/transfers/hive_to_druid.py,sha256=8zH0q8uvmS1R5Hpc3v-PfjYWESoXkEzDAoOC9zjOrGk,10081
+apache_airflow_providers_apache_druid-3.4.1rc1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_apache_druid-3.4.1rc1.dist-info/METADATA,sha256=Lrw12DbiSSZlhMN_bHyV6oKUbGuAJUEwSS2vdp4ja8A,14226
+apache_airflow_providers_apache_druid-3.4.1rc1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_apache_druid-3.4.1rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apache_airflow_providers_apache_druid-3.4.1rc1.dist-info/entry_points.txt,sha256=WbOS2sv4KXFwdq243Kfx8XqQvUsLnWchVlSrjuh3hEA,109
+apache_airflow_providers_apache_druid-3.4.1rc1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_apache_druid-3.4.1rc1.dist-info/RECORD,,
