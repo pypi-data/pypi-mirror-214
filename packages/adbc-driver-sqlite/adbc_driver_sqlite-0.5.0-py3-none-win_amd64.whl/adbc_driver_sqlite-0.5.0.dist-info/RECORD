@@ -1,0 +1,11 @@
+adbc_driver_sqlite/__init__.py,sha256=TnR7MpdTC5c5RRCGVf9xqUdjOuTEtcc_m2kVoA8kpWc,2468
+adbc_driver_sqlite/_static_version.py,sha256=1rzVXGmLG9hgLK3fqDJY_yoRi-f0eTXjJG8JP7coX0s,62
+adbc_driver_sqlite/_version.py,sha256=90XJ0YVfNMVV5LO2o_Od-JbLxo9qkDrMSXCUFootTSw,7108
+adbc_driver_sqlite/dbapi.py,sha256=NWCW8sOY47k9pejaUrCz2U2IJMURpWy1idLQvLFF7Ew,3460
+adbc_driver_sqlite/libadbc_driver_sqlite.so,sha256=S-H6Nlniw_YqatFCLSp8AiDTp9cEZDsf8Ig60FLFlOE,1095168
+adbc_driver_sqlite-0.5.0.dist-info/LICENSE.txt,sha256=UZe2GB7QA20gLXjiqdLmEKTFTKs0CiUvHw3rp6lQsPE,84816
+adbc_driver_sqlite-0.5.0.dist-info/METADATA,sha256=Hs20H8tZyR4nPIPuUqhhRItpkvJqI0dqOejEJOrjLTk,699
+adbc_driver_sqlite-0.5.0.dist-info/NOTICE.txt,sha256=ork4LFdNC7tkM_o0ZVZZBsBc3mUQAnu9tKovmU3-w60,166
+adbc_driver_sqlite-0.5.0.dist-info/WHEEL,sha256=yJBWEiNdYDPpAflg_7c8gA0pb9Rrw55tD1-U531Wrko,104
+adbc_driver_sqlite-0.5.0.dist-info/top_level.txt,sha256=NtIbLKwTX2Kqn4bcW6_RUdfjnNOrLTCedorcjLxOXwA,19
+adbc_driver_sqlite-0.5.0.dist-info/RECORD,,
