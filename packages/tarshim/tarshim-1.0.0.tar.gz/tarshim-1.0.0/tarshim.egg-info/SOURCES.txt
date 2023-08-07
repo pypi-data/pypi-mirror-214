@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tarshim/__init__.py
+tarshim/demo_utils.py
+tarshim/notebook_image_handling.py
+tarshim/tarshim.py
+tarshim/tmp.py
+tarshim.egg-info/PKG-INFO
+tarshim.egg-info/SOURCES.txt
+tarshim.egg-info/dependency_links.txt
+tarshim.egg-info/requires.txt
+tarshim.egg-info/top_level.txt
