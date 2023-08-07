@@ -1,0 +1,12 @@
+basil/__init__.py,sha256=vXnRG7j0k8b7ASEck4aBAz_M7I-kaZj9fjeQtfGrq-Q,198
+basil/_dashboard.py,sha256=7W2yikU_bkCR-d8iP1H68doRUNtHik8tZPzflz5Jiuo,4457
+basil/benchmark.py,sha256=pBdyEYSolglODJgXS-3mRRsQFzZb8sZLe7BD4D33Mh8,260
+basil/dashboard.py,sha256=jQ93nl1zDJul_cHeKscXW86d3uCtohpzUaLJScADGQY,448
+basil/main.py,sha256=VRYXzxE-CSq0Sh4lmqE2Xk45uqd-d2lRUZSMVx7QIm4,814
+basil/register.py,sha256=p6N_d39w5mqTRFn9lUYbJeKnin4srYt8Sy3sfs8o2W4,3064
+basil/solver.py,sha256=oLQaNNKUPFIFj5a34jD6jt7HxVl1AJfQZmJttMNhUdo,3347
+basil/utils.py,sha256=6kmyq56YVykIAqWMPaNc22DIaRPJvGi7Dey7aR7vlyY,2262
+basil_suite-0.0.1.dist-info/METADATA,sha256=SUNlJvLTisL2h0o1OEnGjLIYufyvKI9O1HEbHMdppBE,4113
+basil_suite-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+basil_suite-0.0.1.dist-info/entry_points.txt,sha256=yIijYrKdDkqdy8EvS0BZeDb8Nr_VQhUYWAKSVoCcvps,41
+basil_suite-0.0.1.dist-info/RECORD,,
