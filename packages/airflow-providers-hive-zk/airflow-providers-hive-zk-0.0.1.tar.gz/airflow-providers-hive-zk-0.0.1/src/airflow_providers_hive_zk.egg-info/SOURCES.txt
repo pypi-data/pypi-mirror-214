@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/airflow/providers/hive_zk/provider.yaml
+src/airflow/providers/hive_zk/hooks/hive.py
+src/airflow_providers_hive_zk.egg-info/PKG-INFO
+src/airflow_providers_hive_zk.egg-info/SOURCES.txt
+src/airflow_providers_hive_zk.egg-info/dependency_links.txt
+src/airflow_providers_hive_zk.egg-info/top_level.txt
