@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+Tool.py
+setup.py
+cxy_addons/__init__.py
+cxy_addons/szlibone.py
+cxy_addons.egg-info/PKG-INFO
+cxy_addons.egg-info/SOURCES.txt
+cxy_addons.egg-info/dependency_links.txt
+cxy_addons.egg-info/top_level.txt
