@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]>=7.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gs-netsuite-api"
+dynamic = ["version"]
+requires-python = ">=3.8"
+dependencies = [
+    "netsuite",
+    "netsuite[soap_api]",
+    "zeep==4.1",
+    "python-dotenv",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+# [project.scripts]
+# odoo-env2config = "odoo_env_config.cli:env_to_config"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+write_to = "src/gs_netsuite_api/_version.py"
+
+[tool.bdist_wheel]
+python-tag = "py3"
+
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
