@@ -1,0 +1,12 @@
+LICENCE
+MANIFEST.in
+setup.py
+MouseTracks_Generate/__init__.py
+MouseTracks_Generate/generate.py
+MouseTracks_Generate/length_analysis.csv
+MouseTracks_Generate/model2.h5
+MouseTracks_Generate.egg-info/PKG-INFO
+MouseTracks_Generate.egg-info/SOURCES.txt
+MouseTracks_Generate.egg-info/dependency_links.txt
+MouseTracks_Generate.egg-info/requires.txt
+MouseTracks_Generate.egg-info/top_level.txt
