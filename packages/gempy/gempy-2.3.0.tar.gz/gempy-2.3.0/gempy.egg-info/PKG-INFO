@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gempy
+Version: 2.3.0
+Summary: An Open-source, Python-based 3-D structural geological modeling software.
+Home-page: https://github.com/cgre-aachen/gempy
+Author: Miguel de la Varga, Alexander Zimmerman, Elisa Heim, Alexander Schaaf, Fabian Stamm, Florian Wellmann, Jan Niederau, Andrew Annex, Alexander Juestel
+Author-email: miguel@terranigma-solutions.com
+License: LGPL v3
+Keywords: geology,3-D modeling,structural geology,uncertainty
+License-File: LICENSE
+
+GemPy is a Python-based, open-source geomodeling library. It is capable of constructing complex 3D geological models of folded structures, fault networks and unconformities, based on the underlying powerful implicit representation approach.
