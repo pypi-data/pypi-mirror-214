@@ -1,0 +1,12 @@
+sshot/__init__.py,sha256=2vDs5qQvEKz4n83BT4q7tBC1AA2dD3jbv35FizIam98,7018
+sshot/background.py,sha256=rXI0XlEGL9XQwNrgA4vBGdfaQ4F3Bw4C2gsrVm3Iwio,2894
+sshot/config.py,sha256=iHAxcWPvDA2kJyWooEmKjLtQaRXzMMjFWnKRnF-pK30,2847
+sshot/debug.py,sha256=iV_l_La0ndqh6w5h2pTsYdgwSSIcrFtOS_ITZWPW7dc,275
+sshot/easy.py,sha256=fyrkb53WcbjcRbKlHuK7_b6Kb2ZFPuBL0n3NCkc8HAc,1223
+sshot/imageproc.py,sha256=htVbivfjbNyVX9rd0L3EsnptmcSHYJepwZbgCmiy2aY,2695
+sshot/tokenproc.py,sha256=1kSln8M9-V_I1P1zllZhjwu9WO49CZwiSq40zwZprFc,453
+sourceshot-1.0.2.dist-info/METADATA,sha256=BZCJM6ZRhwPmcBhYE8bbxQlDE31EmiMqURXwuWMw6hE,1630
+sourceshot-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sourceshot-1.0.2.dist-info/entry_points.txt,sha256=NLVbxdhIGALihO_Rc8ZjWi4rpM9ZxgmuOK0CzKvyCIo,37
+sourceshot-1.0.2.dist-info/top_level.txt,sha256=RDIybvB7qJRdQtcqANUkAiaTpqHWA0fWEAuUP3VwfYs,6
+sourceshot-1.0.2.dist-info/RECORD,,
