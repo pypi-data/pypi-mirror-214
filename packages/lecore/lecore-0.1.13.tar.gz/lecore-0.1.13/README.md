@@ -1,0 +1,84 @@
+# LE core package
+
+This is package of core python utils for LE containing:
+- Looger
+- Proprietary LeBin protocol
+- Proprietary Modbus RTU register map handling - VisualModbus
+- Test frame
+- Logic Elements devices
+
+## Install
+
+Install or update version
+```
+pip install lecore
+pip install --upgrade lecore
+```
+
+## Import
+
+Import package as usual
+
+```python
+import lecore
+```
+
+# LE devices - Modbus RTU slave
+
+The following Modbus RTU devices are supported:
+
+## RTD Emulator
+
+4-channel RTD emulator, see https://logicelements.cz/en/products/rtd-emulator.
+
+Example of usage:
+
+```python
+import lecore.Devices.RtdEmul as RE
+
+# Create RTD emulator object
+rtd = RE.RtdEmul()
+
+# Open communication at COM2 (default is COM1) with default COM parameters
+rtd.open(comport='COM2')
+
+# Read serial number
+sn = rtd.read(RE.Reg.FACT_SERIAL_NUMBER)
+
+# Write stock resistance and beta
+rtd.write(RE.Regs.EMUL_NTC_STOCK_RES, 10000)
+rtd.write(RE.Regs.EMUL_NTC_BETA, 3977)
+
+# Write emulated temperature at output 1
+rtd.write(RE.Regs.EMUL_TEMPERATURE_1, 30.5)
+```
+
+# Looger
+
+Class Looger allows for sending debug data into Development Debug Server (DDS) a.k.a. 
+Looger. Public instance run at https://looger.jablotron.cz
+
+Create instance when default public endpoint is to be used 
+
+```python
+import lecore
+
+# Create Looger object
+looger = lecore.Looger()
+
+# Set device properties
+looger.set_device(0x111CC1234, 0, None)
+
+# Send data collection and text message
+data = {'data_1': 1, 'data_2': 2}
+log = f"Message to log"
+looger.send(data, log, 0)
+
+# Send just log message
+looger.send_log(log)
+```
+
+
+
+
+
