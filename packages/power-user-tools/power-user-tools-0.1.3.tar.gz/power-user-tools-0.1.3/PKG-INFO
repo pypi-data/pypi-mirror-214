@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: power-user-tools
+Version: 0.1.3
+Summary: Power User Tools make your life so much easier
+Home-page: https://github.com/dameyerdave/power-user-tools
+Author: dameyerdave
+Author-email: dameyerdave@gmail.com
+License: MIT
+Keywords: power user tools ssh sshd reverse tunnel docker easy development
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Power User Tools make your life so much easier.
