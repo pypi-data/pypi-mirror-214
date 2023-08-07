@@ -1,0 +1,8 @@
+[console_scripts]
+kalm=kalm:main
+kalm_dns=kalm.dns:main
+kalm_gitea=kalm.gitea:main
+kalm_inabox=kalm.inabox:main
+kalm_jenkins=kalm.jenkins:main
+kalm_netbox=kalm.netbox:main
+
