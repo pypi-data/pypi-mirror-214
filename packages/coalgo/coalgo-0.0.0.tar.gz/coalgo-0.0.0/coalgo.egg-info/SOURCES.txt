@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coalgo/__init__.py
+coalgo.egg-info/PKG-INFO
+coalgo.egg-info/SOURCES.txt
+coalgo.egg-info/dependency_links.txt
+coalgo.egg-info/top_level.txt
