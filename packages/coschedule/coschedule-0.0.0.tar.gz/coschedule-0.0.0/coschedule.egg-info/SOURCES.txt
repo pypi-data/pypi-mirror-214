@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coschedule/__init__.py
+coschedule.egg-info/PKG-INFO
+coschedule.egg-info/SOURCES.txt
+coschedule.egg-info/dependency_links.txt
+coschedule.egg-info/top_level.txt
