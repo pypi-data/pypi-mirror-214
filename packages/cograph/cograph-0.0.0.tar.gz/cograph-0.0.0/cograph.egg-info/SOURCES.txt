@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cograph/__init__.py
+cograph.egg-info/PKG-INFO
+cograph.egg-info/SOURCES.txt
+cograph.egg-info/dependency_links.txt
+cograph.egg-info/top_level.txt
