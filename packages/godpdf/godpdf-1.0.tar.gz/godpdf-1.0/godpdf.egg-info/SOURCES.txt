@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+godpdf/__init__.py
+godpdf/pdf2text.py
+godpdf.egg-info/PKG-INFO
+godpdf.egg-info/SOURCES.txt
+godpdf.egg-info/dependency_links.txt
+godpdf.egg-info/top_level.txt
