@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: python-pycg
+Version: 0.6.0
+Summary: PyCG: Toolbox for CG-related visualizations and computations
+Home-page: https://github.com/heiwang1997/pycg
+Author: Jiahui Huang
+Author-email: huangjh.work@outlook.com
+Keywords: pycg,graphics,3d,visualization
+Classifier: Operating System :: Unix
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pyquaternion
+Requires-Dist: pyyaml
+Requires-Dist: omegaconf
+Requires-Dist: tqdm
+Requires-Dist: pynvml
+Requires-Dist: calmsize
+Requires-Dist: rich
+Provides-Extra: all
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: screeninfo ; extra == 'all'
+Requires-Dist: pillow ; extra == 'all'
+Requires-Dist: usd-core ; extra == 'all'
+Requires-Dist: open3d-cpu (>=0.17.0) ; extra == 'all'
+Provides-Extra: full
+Requires-Dist: scipy ; extra == 'full'
+Requires-Dist: screeninfo ; extra == 'full'
+Requires-Dist: pillow ; extra == 'full'
+Requires-Dist: usd-core ; extra == 'full'
+Requires-Dist: open3d-cpu (==0.17.0+0c29de37f) ; extra == 'full'
+
+# PyCG: Toolbox for CG-related visualizations and computations
+
+[![Publish to PyPI.org](https://github.com/heiwang1997/pycg/actions/workflows/publish.yml/badge.svg)](https://github.com/heiwang1997/pycg/actions/workflows/publish.yml)
+[![Documentation Status](https://readthedocs.org/projects/pycg/badge/?version=latest)](https://pycg.readthedocs.io/en/latest/?badge=latest)
+
+I'm writing the document of this. Please do not use it unless you are someone internal.
+
+## Install
+
+To install a full-fledged version, use:
+```bash
+pip install -U python-pycg[full] -f https://pycg.s3.ap-northeast-1.amazonaws.com/packages/index.html
+```
+
+> Note that the need for the extra index URL if for our [customized version of Open3D](https://github.com/heiwang1997/Open3D) (with support for multi-window camera/light synchronization, animation maker and visualizer, scalar analyzer, etc).
+
+If you don't want to use our customized Open3D, simply do:
+```shell
+pip install -U python-pycg[all]
+```
+
+By default, Open3D will not be installed if you do `pip install python-pycg` directly, but all other non-visualization-related functions should work!
+
+For developers, clone this repository and install it if you want to use newest features:
+```shell
+git clone --recursive https://github.com/heiwang1997/pycg
+pip install -e .[full]      # Most modern, but some static analyzing tool (e.g. pylance) will fail!
+                            #   Now it will create weird __editable__.*.pth files!
+python setup.py develop     # Deprecated by the community, but it works better.
+```
