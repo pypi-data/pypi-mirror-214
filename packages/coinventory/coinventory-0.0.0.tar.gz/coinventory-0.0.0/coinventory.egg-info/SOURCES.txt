@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coinventory/__init__.py
+coinventory.egg-info/PKG-INFO
+coinventory.egg-info/SOURCES.txt
+coinventory.egg-info/dependency_links.txt
+coinventory.egg-info/top_level.txt
